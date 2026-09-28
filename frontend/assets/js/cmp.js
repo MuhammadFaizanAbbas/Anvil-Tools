@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const saveConsent = (obj) => {
     try { localStorage.setItem(CONSENT_KEY, JSON.stringify(obj)); } catch (_) { /* Choices still apply when storage is unavailable. */ }
+    banner.hidden = true;
     banner.setAttribute('aria-hidden', 'true');
     banner.style.display = 'none';
     // Dispatch a custom event so other scripts can react
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const showBanner = () => {
+    banner.hidden = false;
     banner.setAttribute('aria-hidden', 'false');
     banner.style.removeProperty('display');
   };
@@ -38,14 +40,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize UI from stored consent
   const existing = readConsent();
   if (existing) {
+    banner.hidden = true;
     banner.setAttribute('aria-hidden', 'true');
     banner.style.display = 'none';
     window.dispatchEvent(new CustomEvent('anvil:consent', { detail: existing }));
-    return;
   }
 
   // Show banner
-  showBanner();
+  if (!existing) showBanner();
+  document.getElementById('privacy-settings')?.addEventListener('click', () => {
+    showBanner();
+    acceptBtn.focus();
+  });
 
   acceptBtn.addEventListener('click', () => {
     // A simple acknowledgement does not opt users into optional tracking.

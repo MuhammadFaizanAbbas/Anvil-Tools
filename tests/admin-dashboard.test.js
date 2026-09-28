@@ -8,7 +8,7 @@ function setup() {
     if (!nodes.has(id)) nodes.set(id, { innerHTML: '', value: '', addEventListener() {}, classList: { toggle() {} } });
     return nodes.get(id);
   };
-  const context = vm.createContext({ document: { getElementById: node, querySelectorAll: () => [] } });
+  const context = vm.createContext({ location: { hash: '' }, window: { addEventListener() {} }, document: { getElementById: node, querySelectorAll: () => [] } });
   const source = fs.readFileSync('frontend/assets/js/admin.js', 'utf8').replace(/    refresh\(\);\s*$/, '');
   vm.runInContext(source, context);
   return { node, run: script => vm.runInContext(script, context) };

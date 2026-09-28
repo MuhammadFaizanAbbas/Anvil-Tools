@@ -5,15 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Email tools | Anvil Tools</title>
 <meta name="description" content="Tools for handling email addresses without exposing your real inbox.">
-<link rel="canonical" href="https://www.example.com/categories/email-tools.html">
+<link rel="canonical" href="https://anviltools.vercel.app/categories/email-tools.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/refinements.css">
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
+<link rel="stylesheet" href="../assets/css/design.css">
 </head>
-<body>
+<body class="public-site">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
   <div class="header-row">
@@ -22,7 +23,7 @@
       Anvil Tools
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span aria-hidden="true">&#9776;</span></button>
-    <nav class="main-nav"><a href="../">Home</a><a href="../tools/index.html" aria-current="page">All tools</a><a href="../blog/index.html">Blog</a><a href="../about.html">About</a></nav>
+    <nav class="main-nav"><a href="../">Home</a><a href="../tools/index.html" aria-current="page">All tools</a><a href="../blog/index.html">Guides</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav>
   </div>
 </header>
 <main class="wrap" id="main-content">
@@ -39,7 +40,7 @@
   <span class="category-tag">Email tools</span>
   <h3>Temporary Email Generator</h3>
   <p>Get a disposable inbox in one click for signups you don't want landing in your real email.</p>
-  <a class="tool-link" href="../tools/temp-mail.html">Open tool →</a>
+  <span class="processing-label">External email service</span><a class="tool-link" href="../tools/temp-mail.html">Open tool →</a>
 </div>
   </div>
 </section>
@@ -66,7 +67,7 @@
         <h4>Company</h4>
         <ul>
           <li><a href="../about.html">About</a></li>
-          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../blog/index.html">Guides</a></li>
           <li><a href="../contact.html">Contact</a></li>
         </ul>
       </div>
@@ -82,13 +83,15 @@
     </div>
     <div class="footer-bottom">
       <span>© <span class="current-year"></span> Anvil Tools. All rights reserved.</span>
-      <span>Developed by VelloxTech</span>
+      <button type="button" class="privacy-settings" id="privacy-settings">Privacy settings</button><span>Developed by VelloxTech</span>
     </div>
   </div>
 </footer>
-<div id="consent-banner">
-  <p>This site uses cookies and, once ads are enabled, may show ads personalized using your visits to this and other sites. See our <a href="../cookie-policy.html">cookie policy</a> and <a href="../privacy-policy.html">privacy policy</a> for details.</p>
-  <div class="btn-row"><button class="btn amber" id="consent-accept">Got it</button></div>
+<div id="consent-banner" hidden aria-hidden="true" role="region" aria-label="Privacy preferences">
+  <strong>Your privacy, your choice</strong>
+  <p>Choose your preferences for optional analytics and personalized advertising. Advertising is currently disabled. Read our <a href="../cookie-policy.html">cookie policy</a> and <a href="../privacy-policy.html">privacy policy</a>. You can change your choices from the footer anytime.</p>
+  <div class="btn-row"><button type="button" class="btn" id="consent-reject">Reject optional</button><button type="button" class="btn" id="consent-customize" aria-expanded="false" aria-controls="consent-custom-panel">Customize</button><button type="button" class="btn primary" id="consent-accept">Accept optional</button></div>
+  <div id="consent-custom-panel" hidden><label><input type="checkbox" id="consent-analytics"> Allow analytics</label><label><input type="checkbox" id="consent-personalized"> Allow personalized advertising</label><button type="button" class="btn" id="consent-save">Save preferences</button></div>
 </div>
 <script src="../assets/js/cmp.js"></script>
 <script src="../assets/js/ads.js"></script>

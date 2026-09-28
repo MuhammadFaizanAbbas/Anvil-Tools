@@ -5,9 +5,19 @@
       notice.textContent = message;
       notice.classList.toggle('error', error);
     }
-    document.querySelectorAll('.nav-item').forEach(link => link.addEventListener('click', () => {
-      document.querySelectorAll('.nav-item').forEach(item => item.classList.toggle('active', item === link));
-    }));
+    function selectPanel() {
+      const selected = ['tools', 'posts', 'analytics'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
+      document.querySelectorAll('.nav-item').forEach(link => {
+        const active = link.hash === `#${selected}`;
+        link.classList.toggle('active', active);
+        if (active) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+      });
+      document.querySelectorAll('.content > section').forEach(section => {
+        section.hidden = selected === 'overview' ? !['overview', 'analytics'].includes(section.id) : section.id !== selected;
+      });
+    }
+    window.addEventListener('hashchange', selectPanel);
+    selectPanel();
     const statsGrid = document.getElementById('statsGrid');
     const toolsTable = document.getElementById('toolsTable');
     const postsList = document.getElementById('postsList');

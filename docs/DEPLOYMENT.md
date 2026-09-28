@@ -94,3 +94,9 @@ Older Railway/demo notes are retained under `docs/archive/` for historical refer
 ## Repository-specific deployment configuration
 
 The Anvil-Tools frontend repository now has a root vercel.json with Framework Other and outputDirectory frontend. Its Vercel Root Directory can remain the repository root. Alternatively, Root Directory frontend uses frontend/vercel.json with outputDirectory dot. The Anvil-Tools-Backend repository has its own Express root configuration and startup files. Do not copy the frontend root vercel.json into the backend repository.
+
+## Responsive design release
+
+Public pages use design.css for the shared design; admin uses admin.css. Consent starts hidden in HTML and opens only when no stored choice exists, or from the footer Privacy settings control. All public pages offer reject, customize, and accept. This preference UI is not a Google-certified CMP; advertising remains disabled until the documented launch requirements are met. No dummy publisher entry is served. Admin pages and API responses are marked noindex.
+
+Validated representative public/admin pages at 320, 375, 768, and 1440 pixels with headless Chrome, including saved-consent navigation, reopening preferences, and admin panel switching. Supabase configuration is still required for live admin data.

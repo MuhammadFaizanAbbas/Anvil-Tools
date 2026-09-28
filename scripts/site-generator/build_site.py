@@ -6,7 +6,7 @@ import os
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../frontend"))
 SITE_NAME = "Anvil Tools"
 SITE_TAGLINE = "Free browser tools that just work"
-SITE_URL = "https://www.example.com"  # placeholder — replace with your real domain before launch
+SITE_URL = "https://anviltools.vercel.app"  # placeholder — replace with your real domain before launch
 CONTACT_EMAIL = "hello@example.com"    # placeholder — replace with your real inbox
 
 def icon(path_d, viewbox="0 0 24 24"):
@@ -96,11 +96,11 @@ def footer_html(depth_prefix):
     </div>
     <div class="footer-bottom">
       <span>© <span class="current-year"></span> {SITE_NAME}. All rights reserved.</span>
-      <span>Developed by VelloxTech</span>
+      <button type="button" class="privacy-settings" id="privacy-settings">Privacy settings</button><span>Developed by VelloxTech</span>
     </div>
   </div>
 </footer>
-<div id="consent-banner" aria-hidden="true">
+<div id="consent-banner" hidden aria-hidden="true" role="region" aria-label="Privacy preferences">
   <div class="consent-inner">
     <p>This site uses cookies and, when ads are enabled, may show personalized ads. See our <a href="{p}cookie-policy.html">cookie policy</a> and <a href="{p}privacy-policy.html">privacy policy</a> for details.</p>
     <div class="btn-row">
@@ -131,9 +131,10 @@ def page(title, description, active_path, depth_prefix, body_html, extra_head=""
 <link rel="stylesheet" href="{depth_prefix}assets/css/style.css">
 <link rel="stylesheet" href="{depth_prefix}assets/css/refinements.css">
 <link rel="icon" type="image/svg+xml" href="{depth_prefix}assets/images/anvil-mark.svg">
+<link rel="stylesheet" href="{depth_prefix}assets/css/design.css">
 {extra_head}
 </head>
-<body>
+<body class="public-site">
 <a class="skip-link" href="#main-content">Skip to content</a>
 {header_html(active_path, depth_prefix)}
 <main class="wrap" id="main-content">

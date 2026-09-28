@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Background Remover | Anvil Tools</title>
 <meta name="description" content="Remove the background from a photo automatically, processed locally in your browser.">
-<link rel="canonical" href="https://www.example.com/tools/background-remover.html">
+<link rel="canonical" href="https://anviltools.vercel.app/tools/background-remover.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
@@ -15,8 +15,9 @@ import { removeBackground } from "https://cdn.jsdelivr.net/npm/@imgly/background
 window.removeBackgroundLib = removeBackground;
 </script>
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
+<link rel="stylesheet" href="../assets/css/design.css">
 </head>
-<body>
+<body class="public-site">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
   <div class="header-row">
@@ -25,7 +26,7 @@ window.removeBackgroundLib = removeBackground;
       Anvil Tools
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span aria-hidden="true">&#9776;</span></button>
-    <nav class="main-nav"><a href="../">Home</a><a href="../tools/index.html" aria-current="page">All tools</a><a href="../blog/index.html">Blog</a><a href="../about.html">About</a></nav>
+    <nav class="main-nav"><a href="../">Home</a><a href="../tools/index.html" aria-current="page">All tools</a><a href="../blog/index.html">Guides</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav>
   </div>
 </header>
 <main class="wrap" id="main-content">
@@ -84,21 +85,21 @@ window.removeBackgroundLib = removeBackground;
   <span class="category-tag">Email tools</span>
   <h3>Temporary Email Generator</h3>
   <p>Get a disposable inbox in one click for signups you don't want landing in your real email.</p>
-  <a class="tool-link" href="../tools/temp-mail.html">Open tool →</a>
+  <span class="processing-label">External email service</span><a class="tool-link" href="../tools/temp-mail.html">Open tool →</a>
 </div>
 <div class="tool-card">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 16h6"/></svg></div>
   <span class="category-tag">PDF tools</span>
   <h3>PDF Merge</h3>
   <p>Combine multiple PDF files into a single document in the order you choose.</p>
-  <a class="tool-link" href="../tools/pdf-merge.html">Open tool →</a>
+  <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/pdf-merge.html">Open tool →</a>
 </div>
 <div class="tool-card">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><circle cx="10" cy="12" r="1"/><path d="M9 17l2-2 2 2 3-3"/></svg></div>
   <span class="category-tag">PDF tools</span>
   <h3>Image to PDF Converter</h3>
   <p>Turn one or more JPG or PNG images into a single downloadable PDF.</p>
-  <a class="tool-link" href="../tools/image-to-pdf.html">Open tool →</a>
+  <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/image-to-pdf.html">Open tool →</a>
 </div>
   </div>
 </section>
@@ -124,7 +125,7 @@ window.removeBackgroundLib = removeBackground;
         <h4>Company</h4>
         <ul>
           <li><a href="../about.html">About</a></li>
-          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../blog/index.html">Guides</a></li>
           <li><a href="../contact.html">Contact</a></li>
         </ul>
       </div>
@@ -140,13 +141,15 @@ window.removeBackgroundLib = removeBackground;
     </div>
     <div class="footer-bottom">
       <span>© <span class="current-year"></span> Anvil Tools. All rights reserved.</span>
-      <span>Developed by VelloxTech</span>
+      <button type="button" class="privacy-settings" id="privacy-settings">Privacy settings</button><span>Developed by VelloxTech</span>
     </div>
   </div>
 </footer>
-<div id="consent-banner">
-  <p>This site uses cookies and, once ads are enabled, may show ads personalized using your visits to this and other sites. See our <a href="../cookie-policy.html">cookie policy</a> and <a href="../privacy-policy.html">privacy policy</a> for details.</p>
-  <div class="btn-row"><button class="btn amber" id="consent-accept">Got it</button></div>
+<div id="consent-banner" hidden aria-hidden="true" role="region" aria-label="Privacy preferences">
+  <strong>Your privacy, your choice</strong>
+  <p>Choose your preferences for optional analytics and personalized advertising. Advertising is currently disabled. Read our <a href="../cookie-policy.html">cookie policy</a> and <a href="../privacy-policy.html">privacy policy</a>. You can change your choices from the footer anytime.</p>
+  <div class="btn-row"><button type="button" class="btn" id="consent-reject">Reject optional</button><button type="button" class="btn" id="consent-customize" aria-expanded="false" aria-controls="consent-custom-panel">Customize</button><button type="button" class="btn primary" id="consent-accept">Accept optional</button></div>
+  <div id="consent-custom-panel" hidden><label><input type="checkbox" id="consent-analytics"> Allow analytics</label><label><input type="checkbox" id="consent-personalized"> Allow personalized advertising</label><button type="button" class="btn" id="consent-save">Save preferences</button></div>
 </div>
 <script src="../assets/js/cmp.js"></script>
 <script src="../assets/js/ads.js"></script>

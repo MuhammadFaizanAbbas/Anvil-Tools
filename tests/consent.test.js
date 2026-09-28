@@ -50,3 +50,19 @@ test('full consent controls preserve accept, reject, and custom choices', () => 
   assert.equal(state.events.at(-1).detail.analytics, true);
   assert.equal(state.events.at(-1).detail.personalized, false);
 });
+
+test('every public page keeps consent hidden before scripts run', () => {
+  function check(dir) {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const file = `${dir}/${entry.name}`;
+      if (entry.isDirectory()) check(file);
+      else if (file.endsWith('.html') && !file.includes('/admin-panel/')) {
+        const html = fs.readFileSync(file, 'utf8');
+        assert.match(html, /id="consent-banner" hidden aria-hidden="true"/, file);
+        assert.match(html, /id="privacy-settings"/, file);
+        assert.match(html, /id="consent-reject"/, file);
+      }
+    }
+  }
+  check('frontend');
+});

@@ -122,3 +122,31 @@ td:first-child { min-width: 170px; }
   .page-heading { align-items: flex-start; flex-direction: column; } .panel-heading { flex-wrap: wrap; }
 }
 @media(max-width:480px) { .summary-strip { flex-direction: column; } .stat-value { font-size: 26px; } .stat-icon { width: 26px; height: 26px; } .chart-legend { grid-template-columns: 1fr; } }
+/* Responsive management workspace */
+.admin-dashboard .topbar { box-shadow:0 2px 12px #20345105; }
+.admin-dashboard .sidebar { background:#15243e; }
+.admin-dashboard .nav-item { border:1px solid transparent; }
+.admin-dashboard .nav-item.active { background:#edf2ff; color:#2449b5; border-color:#c9d7ff; box-shadow:none; }
+.admin-dashboard .content { padding:36px 40px; }
+.admin-dashboard .stat-card { border-radius:18px; padding:24px; border-bottom:3px solid #ccd7ff; }
+.admin-dashboard .stat-1 { border-bottom-color:#a7e2d2; }.admin-dashboard .stat-2 { border-bottom-color:#dbc8f5; }.admin-dashboard .stat-3 { border-bottom-color:#f2d99d; }
+.admin-dashboard .panel { box-shadow:0 5px 24px #1b335405; padding:28px; }
+.admin-dashboard .eyebrow { padding:0; background:none; }
+.admin-dashboard .panel-heading { margin-bottom:18px; }
+.admin-dashboard .analytics-grid { margin-top:24px; }
+.admin-dashboard table tbody tr:hover { background:#f8faff; }
+.admin-dashboard .sidebar { position:sticky; top:80px; height:calc(100dvh - 80px); }
+.admin-dashboard .content > section { scroll-margin-top:110px; }
+.admin-dashboard .summary-strip { border:1px solid #e1e8f3; border-radius:10px; padding:12px 16px; background:#fff; }
+.login-page { grid-template-columns:1fr 1fr; gap:40px; padding:60px max(32px,calc((100vw - 1160px)/2)); }
+.login-story { align-self:stretch; display:flex; flex-direction:column; justify-content:center; }
+.login-story .brand { margin-bottom:90px; }.login-story .section-kicker { color:#557298; font-size:11px; letter-spacing:.12em; }
+.login-story h2 { font-size:clamp(32px,4vw,54px); letter-spacing:-.05em; line-height:1.15; margin:20px 0; }
+.login-story p { color:#60728a; font-size:16px; line-height:1.8; }
+.login-credit { margin-top:90px; font-size:12px; color:#60728a; }
+.login-page .card { width:100%; max-width:460px; padding:40px; }
+@media(max-width:1100px) { .admin-dashboard .content { padding:26px; } }
+@media(max-width:800px) { .admin-dashboard .sidebar { position:static; height:auto; } .admin-dashboard .content { padding:20px 16px; } .admin-dashboard .panel { padding:20px; } .login-page { grid-template-columns:1fr; padding:24px; } .login-story { display:none; } .login-page .card { margin:auto; } }
+@media(max-width:480px) { .admin-dashboard .stats { grid-template-columns:1fr; } .admin-dashboard .stat-card { padding:20px; } .admin-dashboard .actions { flex-wrap:wrap; } .admin-dashboard .brand { font-size:17px; } .admin-dashboard .chart-caption { font-size:11px; } .login-page .card { padding:26px; } .admin-dashboard .search-label,.admin-dashboard .search-label input { width:100%; } }
+
+.admin-dashboard .eyebrow { border:0; border-radius:0; }
