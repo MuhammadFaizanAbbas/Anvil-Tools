@@ -59,3 +59,5 @@ The optional generator now writes to `frontend/`. It overwrites generated pages,
 The admin workspace includes KPI cards, tool-view ranking, a category donut chart, catalog search, content management, and retryable connection errors. Charts use real stored counts. No daily history, unique-visitor metrics, or traffic-source estimates are fabricated. Public pages currently do not automatically send tool-view events; the usage chart stays empty until `/api/analytics/event` receives events.
 
 Contact submissions, email receipts/alerts, and admin replies use the private support inbox and SMTP. Follow [docs/CONTACT_SETUP.md](docs/CONTACT_SETUP.md) before enabling production delivery.
+
+Complete database setup, Google admin login, team access, and optional Edge Functions: [docs/SUPABASE_SETUP.md](docs/SUPABASE_SETUP.md). New projects can run [supabase/full-schema.sql](supabase/full-schema.sql); existing projects apply missing numbered migrations.

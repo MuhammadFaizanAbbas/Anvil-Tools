@@ -6,14 +6,14 @@
       notice.classList.toggle('error', error);
     }
     function selectPanel() {
-      const selected = ['tools', 'posts', 'analytics', 'contacts'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
+      const selected = ['tools', 'posts', 'analytics', 'contacts', 'users', 'categories', 'audit', 'settings'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
       document.querySelectorAll('.nav-item').forEach(link => {
         const active = link.hash === `#${selected}`;
         link.classList.toggle('active', active);
         if (active) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
       });
       document.querySelectorAll('.content > section').forEach(section => {
-        section.hidden = selected === 'overview' ? !['overview', 'analytics'].includes(section.id) : section.id !== selected;
+        section.hidden = section.id !== selected;
       });
     }
     window.addEventListener('hashchange', selectPanel);
@@ -33,6 +33,7 @@
       if (!res.ok) throw new Error('Backend unavailable. Check Supabase environment variables and FRONTEND_ORIGINS in Vercel.');
       const data = await res.json();
       userEmail.textContent = data.user?.email || 'Admin';
+      document.getElementById('currentRole').textContent = data.user?.role || 'admin';
       return true;
     }
 
@@ -109,14 +110,8 @@
     }
 
     function renderPosts(posts) {
-      if (!posts.length) { postsList.innerHTML = '<p class="muted">No posts yet. Create your first post above.</p>'; return; }
-      postsList.innerHTML = posts.map((post) => `
-        <div class="panel" style="margin-top: 12px;">
-          <strong>${escapeHtml(post.title)}</strong>
-          <div class="small muted">${escapeHtml(post.slug)} · ${escapeHtml(post.status)}</div>
-          <p class="small">${escapeHtml(post.excerpt || 'No excerpt')}</p>
-        </div>
-      `).join('');
+      window.workspacePosts = posts;
+      postsList.innerHTML = posts.length ? posts.map(post => `<button class="article-row" data-post="${escapeHtml(post.id)}"><span><strong>${escapeHtml(post.title)}</strong><small>${escapeHtml(post.slug)}</small></span><span class="pill ${post.status === 'draft' ? 'inactive' : ''}">${escapeHtml(post.status)}</span><span aria-hidden="true">&#8599;</span></button>`).join('') : '<p class="empty-state">Your next article starts here. Create a draft above.</p>';
     }
 
     function renderAnalytics(tools) {
@@ -150,33 +145,6 @@
       document.getElementById('connectionStatus').textContent = 'Connected to your workspace';
       document.getElementById('lastUpdated').textContent = `Updated ${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
     }
-
-    document.getElementById('postForm').addEventListener('submit', async (event) => {
-      event.preventDefault();
-      const payload = {
-        title: document.getElementById('postTitle').value,
-        slug: document.getElementById('postSlug').value,
-        excerpt: document.getElementById('postExcerpt').value,
-        status: document.getElementById('postStatus').value,
-      };
-
-      const button = event.currentTarget.querySelector('button[type=submit]');
-      button.disabled = true;
-      button.textContent = 'Saving...';
-      try {
-      const response = await AnvilAPI.fetch('/api/posts', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-
-      if (!response.ok) throw new Error((await response.json()).error || 'Could not create post.');
-      document.getElementById('postForm').reset();
-      await loadDashboard();
-      showNotice('Post saved.');
-      } catch (error) { showNotice(error.message, true); }
-      finally { button.disabled = false; button.textContent = 'Create post'; }
-    });
 
     document.getElementById('logoutBtn').addEventListener('click', async () => {
       try { await AnvilAPI.fetch('/api/admin/logout', { method: 'POST' }); }

@@ -12,7 +12,7 @@
   <header class="topbar">
     <a class="brand" href="../index.html"><img src="../assets/images/anvil-mark.svg" width="34" height="34" alt=""> Anvil Tools <span class="workspace-label">WORKSPACE</span></a>
     <div class="actions">
-      <a class="site-link" href="../index.html">View website &#8599;</a><span id="userEmail" class="muted">Admin</span>
+      <a class="site-link" href="../index.html">View website &#8599;</a><span id="currentRole" class="role-badge">Workspace</span><span id="userEmail" class="muted">Admin</span>
       <button class="btn secondary" id="logoutBtn">Logout</button>
     </div>
   </header>
@@ -23,50 +23,49 @@
       <a class="nav-item" href="#tools"><span aria-hidden="true">&#9881;</span> Tool library</a>
       <a class="nav-item" href="#posts"><span aria-hidden="true">&#9998;</span> Content</a>
       <a class="nav-item" href="#analytics"><span aria-hidden="true">&#9636;</span> Analytics</a>
-    <a class="nav-item" href="#contacts"><span aria-hidden="true">&#9993;</span> Contact inbox</a><div class="sidebar-note"><span class="status-dot"></span> Anvil control center<p>Developed by VelloxTech</p></div></aside>
+    <a class="nav-item" href="#contacts"><span aria-hidden="true">&#9993;</span> Contact inbox</a><a class="nav-item" href="#users"><span aria-hidden="true">&#9786;</span> Team &amp; access</a><a class="nav-item" href="#categories"><span aria-hidden="true">&#9639;</span> Categories</a><a class="nav-item" href="#audit"><span aria-hidden="true">&#9776;</span> Audit log</a><a class="nav-item" href="#settings"><span aria-hidden="true">&#9881;</span> Settings</a><div class="sidebar-note"><span class="status-dot"></span> Anvil control center<p>Developed by VelloxTech</p></div></aside>
 
     <main class="content" id="main-content">
       <div id="dashboardMessage" class="dashboard-message" role="status" hidden></div>
       <section id="overview">
-        <div class="page-heading"><div><p class="eyebrow">YOUR WORKSPACE AT A GLANCE</p><h1>Dashboard overview</h1><p class="muted">A clearer view of your tools, content, and performance.</p></div><button class="btn primary" id="refreshBtn">&#8635; Refresh data</button></div>
+        <div class="page-heading"><div><p class="eyebrow">YOUR WORKSPACE AT A GLANCE</p><h1>Welcome to your workspace.</h1><p class="muted">Everything you need to keep Anvil Tools moving.</p></div><button class="btn primary" id="refreshBtn">&#8635; Refresh data</button></div>
         <div class="summary-strip"><span id="connectionStatus" role="status">Connecting to your workspace...</span><span id="lastUpdated">Waiting for data</span></div>
         <div class="stats" id="statsGrid"><div class="stat-card"><div class="stat-label">Tracked tool views</div><div class="stat-value">&mdash;</div><span class="muted small">Waiting for data</span></div><div class="stat-card"><div class="stat-label">Active tools</div><div class="stat-value">&mdash;</div><span class="muted small">Waiting for data</span></div><div class="stat-card"><div class="stat-label">Published posts</div><div class="stat-value">&mdash;</div><span class="muted small">Waiting for data</span></div><div class="stat-card"><div class="stat-label">Draft posts</div><div class="stat-value">&mdash;</div><span class="muted small">Waiting for data</span></div></div>
-      </section>
+      <div class="workspace-shortcuts"><a href="#posts"><span>01 / PUBLISH</span><h2>Write something useful.</h2><p>Draft a guide, revise an article, or publish an update.</p><strong>Open content studio &#8594;</strong></a><a href="#contacts"><span>02 / CONNECT</span><h2>Keep the conversation going.</h2><p>Read requests and reply to the people using your tools.</p><strong>Open your inbox &#8594;</strong></a><a href="#users"><span>03 / COLLABORATE</span><h2>Make room for your team.</h2><p>Invite people and keep access under your control.</p><strong>Manage access &#8594;</strong></a></div></section>
 
-      <section id="analytics" class="analytics-grid">
+      <section id="analytics" hidden class="analytics-grid"><div class="panel daily-panel"><p class="eyebrow">LAST 30 DAYS</p><h2>Recorded tool activity</h2><div id="dailyChart" class="daily-chart"></div></div>
         <div class="panel"><div class="panel-heading"><div><p class="eyebrow">PERFORMANCE</p><h2>Most used tools</h2></div><span class="period-label">All time</span></div><p class="muted small">Recorded tool views, ranked by popularity.</p><div id="analyticsChart" class="chart-body"><p class="empty-state">Your usage chart will appear when data is available.</p></div></div>
         <div class="panel"><div class="panel-heading"><div><p class="eyebrow">YOUR CATALOG</p><h2>Category mix</h2></div></div><p class="muted small">How your tool library is distributed.</p><div id="categoryChart"><p class="empty-state">Waiting for your tool catalog.</p></div></div>
       </section>
-      <section id="tools" class="panel" style="margin-top: 20px;">
+      <section id="tools" hidden class="panel" style="margin-top: 20px;">
         <div class="panel-heading"><div><p class="eyebrow">TOOL LIBRARY</p><h2>Manage your tools</h2></div><label class="search-label">Search tools<input id="toolSearch" type="search" placeholder="Name or category"></label></div>
         <div id="toolsTable"><p class="empty-state">Your tool catalog will appear here.</p></div>
       </section>
 
-      <section id="posts" class="panel" style="margin-top: 20px;">
-        <div class="panel-heading"><div><p class="eyebrow">CONTENT STUDIO</p><h2>Posts &amp; updates</h2></div><span class="period-label">Editorial workspace</span></div><p class="muted small">Save catalog entries here. Public article pages are published separately with your frontend.</p>
-        <form id="postForm">
-          <label>Title
-            <input type="text" id="postTitle" placeholder="Post title" required>
-          </label>
-          <label>Slug
-            <input type="text" id="postSlug" placeholder="post-slug" required>
-          </label>
-          <label>Excerpt
-            <textarea id="postExcerpt" placeholder="Short description"></textarea>
-          </label>
-          <label>Status
-            <select id="postStatus">
-              <option value="draft">Draft</option>
-              <option value="published">Published</option>
-            </select>
-          </label>
-          <button class="btn primary" type="submit">Create post</button>
+      <section id="posts" hidden class="panel" style="margin-top: 20px;">
+        <div class="panel-heading"><div><p class="eyebrow">CONTENT STUDIO</p><h2>Posts &amp; updates</h2></div><span class="period-label">Editorial workspace</span></div><p class="muted small">Write, revise, and publish complete articles. Every saved version is recorded.</p>
+        <button class="btn primary" id="newPost">New article</button>
+        <form id="postForm" hidden>
+          <input id="postId" type="hidden">
+          <label>Title<input id="postTitle" maxlength="300" required></label>
+          <label>URL slug<input id="postSlug" maxlength="150" pattern="[a-z0-9]+(-[a-z0-9]+)*" required></label>
+          <label>Excerpt<textarea id="postExcerpt" maxlength="5000"></textarea></label>
+          <label class="editor-body">Article content<textarea id="postBody" rows="16" maxlength="100000" placeholder="Write the complete article. Blank lines create paragraphs."></textarea></label>
+          <label>Category<select id="postCategory"><option value="">Uncategorized</option></select></label>
+          <label>Status<select id="postStatus"><option value="draft">Draft</option><option value="published">Published</option></select></label>
+          <label>SEO title<input id="postSeoTitle" maxlength="160"></label>
+          <label>SEO description<textarea id="postSeoDescription" maxlength="320"></textarea></label>
+          <div class="editor-actions"><button class="btn primary" type="submit">Save article</button><button class="btn secondary" type="button" id="cancelPost">Close editor</button><button class="btn secondary" type="button" id="postHistory">Revision history</button></div><div id="postRevisions"></div>
         </form>
         <div id="postsList" style="margin-top: 16px;"></div>
       </section>
 
 
       <section id="contacts" hidden><div class="page-heading"><div><p class="eyebrow">CONVERSATIONS</p><h1>Contact inbox</h1><p class="muted">Every submission, receipt, and reply in one place.</p></div><button class="btn secondary" id="contactsRefresh">Refresh inbox</button></div><p id="inboxStatus" role="status"></p><div class="inbox-layout"><div class="panel"><div id="contactList"><p class="muted">Open the inbox to load messages.</p></div><div class="inbox-pagination"><button class="btn secondary small" id="contactsPrev">Previous</button><span id="contactsPage"></span><button class="btn secondary small" id="contactsNext">Next</button></div></div><div class="panel" id="contactThread"><p class="empty-state">Select a message to read it, check delivery, and reply.</p></div></div></section>
+      <section id="users" hidden><div class="page-heading"><div><p class="eyebrow">PEOPLE &amp; PERMISSIONS</p><h1>Your team.</h1><p class="muted">Invite collaborators and manage who can access this workspace.</p></div></div><form id="inviteForm" class="panel inline-form"><label>Email address<input id="inviteEmail" type="email" required placeholder="colleague@example.com"></label><label>Access<select id="inviteRole"><option value="member">Member</option><option value="admin">Admin</option></select></label><button class="btn primary">Send invitation</button></form><div class="panel" id="usersTable"></div><div class="team-pager"><button class="btn secondary" id="usersPrev">Previous</button><span id="usersPage"></span><button class="btn secondary" id="usersNext">Next</button></div></section>
+      <section id="categories" hidden><div class="page-heading"><div><p class="eyebrow">A PLACE FOR EVERYTHING</p><h1>Categories.</h1><p class="muted">Organize your editorial library.</p></div></div><form id="categoryForm" class="panel inline-form"><label>Slug<input id="categorySlug" required pattern="[a-z0-9]+(-[a-z0-9]+)*" maxlength="100"></label><label>Name<input id="categoryName" required maxlength="100"></label><label>Description<input id="categoryDescription" maxlength="2000"></label><button class="btn primary">Save category</button></form><div id="categoriesList" class="category-admin-grid"></div></section>
+      <section id="audit" hidden><div class="page-heading"><div><p class="eyebrow">ACCOUNTABILITY</p><h1>Workspace activity.</h1><p class="muted">The latest 100 recorded access and editorial changes.</p></div></div><div class="panel" id="auditList"></div></section>
+      <section id="settings" hidden><div class="page-heading"><div><p class="eyebrow">WORKSPACE HEALTH</p><h1>Connections &amp; settings.</h1><p class="muted">Check the services that power your workspace.</p></div></div><div id="systemCards" class="category-admin-grid"></div></section>
     </main>
   </div>
 
@@ -74,5 +73,6 @@
   <script src="../assets/js/api.js"></script>
   <script src="../assets/js/admin.js"></script>
 <script src="../assets/js/admin-contacts.js"></script>
+<script src="../assets/js/admin-workspace.js"></script>
 </body>
 </html>
