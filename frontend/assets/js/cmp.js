@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const analyticsCheck = document.getElementById('consent-analytics');
   const personalizedCheck = document.getElementById('consent-personalized');
 
-  if (!banner || !acceptBtn || !rejectBtn || !customizeBtn || !saveBtn) return;
+  if (!banner || !acceptBtn) return;
 
   const CONSENT_KEY = 'anvil_consent_v1';
 
@@ -32,12 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const showBanner = () => {
     banner.setAttribute('aria-hidden', 'false');
-    banner.style.display = 'block';
+    banner.style.removeProperty('display');
   };
 
   // Initialize UI from stored consent
   const existing = readConsent();
   if (existing) {
+    banner.setAttribute('aria-hidden', 'true');
     banner.style.display = 'none';
     window.dispatchEvent(new CustomEvent('anvil:consent', { detail: existing }));
     return;
@@ -47,23 +48,26 @@ document.addEventListener('DOMContentLoaded', () => {
   showBanner();
 
   acceptBtn.addEventListener('click', () => {
-    saveConsent({ analytics: true, personalized: true, timestamp: new Date().toISOString() });
+    // A simple acknowledgement does not opt users into optional tracking.
+    const hasChoices = !!rejectBtn;
+    saveConsent({ analytics: hasChoices, personalized: hasChoices, timestamp: new Date().toISOString() });
   });
 
-  rejectBtn.addEventListener('click', () => {
+  rejectBtn?.addEventListener('click', () => {
     saveConsent({ analytics: false, personalized: false, timestamp: new Date().toISOString() });
   });
 
-  customizeBtn.addEventListener('click', () => {
+  customizeBtn?.addEventListener('click', () => {
+    if (!customPanel) return;
     customPanel.hidden = !customPanel.hidden;
     customizeBtn.setAttribute('aria-expanded', String(!customPanel.hidden));
     if (!customPanel.hidden) customPanel.querySelector('input')?.focus();
   });
 
-  saveBtn.addEventListener('click', () => {
+  saveBtn?.addEventListener('click', () => {
     const obj = {
-      analytics: !!analyticsCheck.checked,
-      personalized: !!personalizedCheck.checked,
+      analytics: !!analyticsCheck?.checked,
+      personalized: !!personalizedCheck?.checked,
       timestamp: new Date().toISOString(),
     };
     saveConsent(obj);

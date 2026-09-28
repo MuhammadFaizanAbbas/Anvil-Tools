@@ -50,7 +50,7 @@ def header_html(active_path, depth_prefix):
     return f'''<header class="site-header">
   <div class="header-row">
     <a class="logo" href="{logo_href}">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15l6-6 3 3 7-7"/><path d="M20 5h-4v4"/><path d="M4 19h16"/></svg>
+      <img class="brand-mark" src="{depth_prefix}assets/images/anvil-mark.svg" width="36" height="36" alt="">
       {SITE_NAME}
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
@@ -64,7 +64,7 @@ def footer_html(depth_prefix):
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="logo" style="margin-bottom:10px;">{SITE_NAME}</div>
+        <div class="logo" style="margin-bottom:10px;"><img class="brand-mark" src="{p}assets/images/anvil-mark.svg" width="36" height="36" alt="">{SITE_NAME}</div>
         <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
       </div>
       <div>
@@ -96,7 +96,7 @@ def footer_html(depth_prefix):
     </div>
     <div class="footer-bottom">
       <span>© <span class="current-year"></span> {SITE_NAME}. All rights reserved.</span>
-      <span>Built with plain HTML, CSS, and JavaScript.</span>
+      <span>Developed by VelloxTech</span>
     </div>
   </div>
 </footer>
@@ -130,6 +130,7 @@ def page(title, description, active_path, depth_prefix, body_html, extra_head=""
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{depth_prefix}assets/css/style.css">
 <link rel="stylesheet" href="{depth_prefix}assets/css/refinements.css">
+<link rel="icon" type="image/svg+xml" href="{depth_prefix}assets/images/anvil-mark.svg">
 {extra_head}
 </head>
 <body>

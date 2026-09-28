@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anvil Tools Admin Login</title>
   <link rel="stylesheet" href="../assets/css/admin.css">
+<link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
 </head>
 <body class="login-page">
   <main class="card">
     <a href="../index.html">&larr; Back to website</a>
-    <h1>Anvil Tools</h1>
+    <img class="login-mark" src="../assets/images/anvil-mark.svg" width="52" height="52" alt="Anvil Tools"><p class="eyebrow">ANVIL WORKSPACE</p><h1>Welcome back.</h1>
     <p>Sign in to manage your tools and posts.</p>
     <form id="loginForm">
       <label for="email">Email</label>
@@ -33,7 +34,7 @@
       event.preventDefault();
       const button = form.querySelector('button');
       button.disabled = true;
-      button.textContent = 'Signing in?';
+      button.textContent = 'Signing in...';
       msg.textContent = '';
       msg.classList.remove('error');
 

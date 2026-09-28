@@ -5,38 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anvil Tools Admin</title>
   <link rel="stylesheet" href="../assets/css/admin.css">
+<link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
 </head>
-<body>
+<body class="admin-dashboard">
   <header class="topbar">
-    <div class="brand">Anvil Tools Admin</div>
+    <a class="brand" href="../index.html"><img src="../assets/images/anvil-mark.svg" width="34" height="34" alt=""> Anvil Tools <span class="workspace-label">WORKSPACE</span></a>
     <div class="actions">
-      <span id="userEmail" class="muted">Admin</span>
+      <a class="site-link" href="../index.html">View website &#8599;</a><span id="userEmail" class="muted">Admin</span>
       <button class="btn secondary" id="logoutBtn">Logout</button>
     </div>
   </header>
 
   <div class="layout">
     <aside class="sidebar" aria-label="Dashboard navigation">
-      <a class="nav-item active" href="#overview">Overview</a>
-      <a class="nav-item" href="#tools">Tools</a>
-      <a class="nav-item" href="#posts">Posts</a>
-      <a class="nav-item" href="#analytics">Analytics</a>
-    </aside>
+      <p class="sidebar-label">MANAGE YOUR SITE</p><a class="nav-item active" href="#overview"><span aria-hidden="true">&#9638;</span> Overview</a>
+      <a class="nav-item" href="#tools"><span aria-hidden="true">&#9881;</span> Tool library</a>
+      <a class="nav-item" href="#posts"><span aria-hidden="true">&#9998;</span> Content</a>
+      <a class="nav-item" href="#analytics"><span aria-hidden="true">&#9636;</span> Analytics</a>
+    <div class="sidebar-note"><span class="status-dot"></span> Anvil control center<p>Developed by VelloxTech</p></div></aside>
 
     <main class="content">
       <div id="dashboardMessage" class="dashboard-message" role="status" hidden></div>
       <section id="overview">
-        <h2>Overview</h2>
-        <div class="stats" id="statsGrid"><p class="muted">Loading dashboard?</p></div>
+        <div class="page-heading"><div><p class="eyebrow">YOUR WORKSPACE AT A GLANCE</p><h1>Dashboard overview</h1><p class="muted">A clearer view of your tools, content, and performance.</p></div><button class="btn primary" id="refreshBtn">&#8635; Refresh data</button></div>
+        <div class="summary-strip"><span id="connectionStatus" role="status">Connecting to your workspace...</span><span id="lastUpdated">Waiting for data</span></div>
+        <div class="stats" id="statsGrid"><div class="stat-card"><div class="stat-label">Tracked tool views</div><div class="stat-value">&mdash;</div><span class="muted small">Waiting for data</span></div><div class="stat-card"><div class="stat-label">Active tools</div><div class="stat-value">&mdash;</div><span class="muted small">Waiting for data</span></div><div class="stat-card"><div class="stat-label">Published posts</div><div class="stat-value">&mdash;</div><span class="muted small">Waiting for data</span></div><div class="stat-card"><div class="stat-label">Draft posts</div><div class="stat-value">&mdash;</div><span class="muted small">Waiting for data</span></div></div>
       </section>
 
+      <section id="analytics" class="analytics-grid">
+        <div class="panel"><div class="panel-heading"><div><p class="eyebrow">PERFORMANCE</p><h2>Most used tools</h2></div><span class="period-label">All time</span></div><p class="muted small">Recorded tool views, ranked by popularity.</p><div id="analyticsChart" class="chart-body"><p class="empty-state">Your usage chart will appear when data is available.</p></div></div>
+        <div class="panel"><div class="panel-heading"><div><p class="eyebrow">YOUR CATALOG</p><h2>Category mix</h2></div></div><p class="muted small">How your tool library is distributed.</p><div id="categoryChart"><p class="empty-state">Waiting for your tool catalog.</p></div></div>
+      </section>
       <section id="tools" class="panel" style="margin-top: 20px;">
-        <h3>Tools</h3>
-        <div id="toolsTable"></div>
+        <div class="panel-heading"><div><p class="eyebrow">TOOL LIBRARY</p><h2>Manage your tools</h2></div><label class="search-label">Search tools<input id="toolSearch" type="search" placeholder="Name or category"></label></div>
+        <div id="toolsTable"><p class="empty-state">Your tool catalog will appear here.</p></div>
       </section>
 
       <section id="posts" class="panel" style="margin-top: 20px;">
-        <h3>Posts</h3>
+        <div class="panel-heading"><div><p class="eyebrow">CONTENT STUDIO</p><h2>Posts &amp; updates</h2></div><span class="period-label">Editorial workspace</span></div><p class="muted small">Save catalog entries here. Public article pages are published separately with your frontend.</p>
         <form id="postForm">
           <label>Title
             <input type="text" id="postTitle" placeholder="Post title" required>
@@ -58,193 +64,12 @@
         <div id="postsList" style="margin-top: 16px;"></div>
       </section>
 
-      <section id="analytics" class="panel" style="margin-top: 20px;">
-        <h3>Analytics</h3>
-        <div id="analyticsChart"></div>
-      </section>
+
     </main>
   </div>
 
   <script src="../assets/js/config.js"></script>
   <script src="../assets/js/api.js"></script>
-  <script>
-    const notice = document.getElementById('dashboardMessage');
-    function showNotice(message, error = false) {
-      notice.hidden = !message;
-      notice.textContent = message;
-      notice.classList.toggle('error', error);
-    }
-    document.querySelectorAll('.nav-item').forEach(link => link.addEventListener('click', () => {
-      document.querySelectorAll('.nav-item').forEach(item => item.classList.toggle('active', item === link));
-    }));
-    const statsGrid = document.getElementById('statsGrid');
-    const toolsTable = document.getElementById('toolsTable');
-    const postsList = document.getElementById('postsList');
-    const analyticsChart = document.getElementById('analyticsChart');
-    const userEmail = document.getElementById('userEmail');
-
-    async function loadSession() {
-      const res = await AnvilAPI.fetch('/api/admin/me');
-      if (!res.ok) {
-        window.location.href = '/admin-panel/login.html';
-        return;
-      }
-      const data = await res.json();
-      userEmail.textContent = data.user?.email || 'Admin';
-      return true;
-    }
-
-    async function fetchJson(url) {
-      const response = await AnvilAPI.fetch(url);
-      if (response.status === 401) window.location.href = '/admin-panel/login.html';
-      if (!response.ok) throw new Error('API request failed');
-      return response.json();
-    }
-
-    function escapeHtml(value) {
-      return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
-    }
-
-    function renderStats(data) {
-      const cards = [
-        { label: 'Tracked Tool Views', value: data.totalVisitors.toLocaleString() },
-        { label: 'Average Session', value: data.avgSessionTime },
-        { label: 'Top Source', value: data.topSource },
-        { label: 'Total Tools', value: data.totalTools }
-      ];
-
-      statsGrid.innerHTML = cards.map((card) => `
-        <div class="stat-card">
-          <div class="stat-label">${card.label}</div>
-          <div class="stat-value">${card.value}</div>
-        </div>
-      `).join('');
-    }
-
-    function renderTools(tools) {
-      toolsTable.innerHTML = `
-        <table>
-          <thead>
-            <tr>
-              <th>Tool</th>
-              <th>Category</th>
-              <th>Views</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${tools.map((tool) => `
-              <tr>
-                <td>${escapeHtml(tool.name)}</td>
-                <td>${escapeHtml(tool.category)}</td>
-                <td>${tool.views || 0}</td>
-                <td><span class="pill">${escapeHtml(tool.status || 'active')}</span></td>
-                <td><button class="btn secondary small" data-tool="${escapeHtml(tool.slug)}">Edit</button></td>
-              </tr>
-            `).join('')}
-          </tbody>
-        </table>
-      `;
-
-      toolsTable.querySelectorAll('[data-tool]').forEach((btn) => {
-        btn.addEventListener('click', async () => {
-          const slug = btn.dataset.tool;
-          const tool = tools.find((item) => item.slug === slug);
-          const newName = prompt('Update tool name', tool.name);
-          if (!newName) return;
-          btn.disabled = true;
-          try {
-          const response = await AnvilAPI.fetch(`/api/tools/${slug}`, {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ ...tool, name: newName })
-          });
-          if (!response.ok) throw new Error((await response.json()).error || 'Could not save tool.');
-          await loadDashboard();
-          showNotice('Tool updated.');
-          } catch (error) { showNotice(error.message, true); }
-          finally { btn.disabled = false; }
-        });
-      });
-    }
-
-    function renderPosts(posts) {
-      if (!posts.length) { postsList.innerHTML = '<p class="muted">No posts yet. Create your first post above.</p>'; return; }
-      postsList.innerHTML = posts.map((post) => `
-        <div class="panel" style="margin-top: 12px;">
-          <strong>${escapeHtml(post.title)}</strong>
-          <div class="small muted">${escapeHtml(post.slug)} · ${escapeHtml(post.status)}</div>
-          <p class="small">${escapeHtml(post.excerpt || 'No excerpt')}</p>
-        </div>
-      `).join('');
-    }
-
-    function renderAnalytics(data) {
-      const items = data.toolBreakdown || [];
-      analyticsChart.innerHTML = items.map((item) => `
-        <div style="margin-bottom: 10px;">
-          <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-            <span>${escapeHtml(item.name)}</span>
-            <strong>${item.views}</strong>
-          </div>
-          <div style="height: 10px; background: #eef2ff; border-radius: 999px; overflow: hidden;">
-            <div style="width: ${(item.views / Math.max(...items.map(i => i.views), 1)) * 100}%; height: 100%; background: linear-gradient(90deg, #2563eb, #60a5fa); border-radius: 999px;"></div>
-          </div>
-        </div>
-      `).join('');
-    }
-
-    async function loadDashboard() {
-      const [overview, tools, posts] = await Promise.all([
-        fetchJson('/api/site/overview'),
-        fetchJson('/api/tools'),
-        fetchJson('/api/posts')
-      ]);
-
-      renderStats(overview);
-      renderTools(tools);
-      renderPosts(posts);
-      renderAnalytics(overview);
-    }
-
-    document.getElementById('postForm').addEventListener('submit', async (event) => {
-      event.preventDefault();
-      const payload = {
-        title: document.getElementById('postTitle').value,
-        slug: document.getElementById('postSlug').value,
-        excerpt: document.getElementById('postExcerpt').value,
-        status: document.getElementById('postStatus').value,
-      };
-
-      const button = event.currentTarget.querySelector('button[type=submit]');
-      button.disabled = true;
-      button.textContent = 'Saving?';
-      try {
-      const response = await AnvilAPI.fetch('/api/posts', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-
-      if (!response.ok) throw new Error((await response.json()).error || 'Could not create post.');
-      document.getElementById('postForm').reset();
-      await loadDashboard();
-      showNotice('Post saved.');
-      } catch (error) { showNotice(error.message, true); }
-      finally { button.disabled = false; button.textContent = 'Create post'; }
-    });
-
-    document.getElementById('logoutBtn').addEventListener('click', async () => {
-      try { await AnvilAPI.fetch('/api/admin/logout', { method: 'POST' }); }
-      finally {
-        AnvilAPI.clearSession();
-        window.location.href = '/admin-panel/login.html';
-      }
-    });
-
-    loadSession().then(authenticated => { if (authenticated) return loadDashboard(); })
-      .catch(() => { statsGrid.innerHTML = ''; showNotice('Unable to load your dashboard. Check your connection and try reloading.', true); });
-  </script>
+  <script src="../assets/js/admin.js"></script>
 </body>
 </html>

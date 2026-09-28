@@ -1,6 +1,6 @@
 # Anvil Tools
 
-Static frontend on **cPanel**, Express API on **Vercel**, and database + admin authentication on **Supabase**.
+Static frontend on **Vercel or cPanel**, Express API on **Vercel**, and database + admin authentication on **Supabase**.
 
 ```text
 frontend/                   Upload contents to cPanel public_html
@@ -50,8 +50,10 @@ npm run verify
 
 ## Deployment
 
-Follow [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). Deploy the repository root to Vercel; upload **only the contents of `frontend/`** to cPanel. Configure the API URL in `frontend/assets/js/config.js` and allow the cPanel origin in Vercel's `FRONTEND_ORIGINS`.
+Follow [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). For separate Vercel projects, deploy the repository root as the Express backend and set the frontend project Root Directory to `frontend` (Framework: Other, Output Directory: `.`). Alternatively, upload **only the contents of `frontend/`** to cPanel. Configure the API URL in `frontend/assets/js/config.js` and allow the frontend origin in Vercel's `FRONTEND_ORIGINS`.
 
 The API stores catalog changes in Supabase. Public HTML remains static: creating a post in the dashboard does not generate or publish an HTML page. Rendering database content into the public frontend is future application work. Analytics currently reports tracked tool views, not unique visitors; session duration and traffic sources are not collected. The browser tools' existing design and behavior are preserved.
 
 The optional generator now writes to `frontend/`. It overwrites generated pages, so update its templates before regenerating manually edited pages. Existing domain, contact email and ad publisher placeholders still need your real values before launch.
+
+The admin workspace includes KPI cards, tool-view ranking, a category donut chart, catalog search, content management, and retryable connection errors. Charts use real stored counts. No daily history, unique-visitor metrics, or traffic-source estimates are fabricated. Public pages currently do not automatically send tool-view events; the usage chart stays empty until `/api/analytics/event` receives events.

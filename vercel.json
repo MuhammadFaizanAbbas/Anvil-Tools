@@ -1,4 +1,19 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "express"
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "frontend",
+  "redirects": [
+    {
+      "source": "/admin",
+      "destination": "/admin-panel/index.html",
+      "permanent": false
+    },
+    {
+      "source": "/admin/login",
+      "destination": "/admin-panel/login.html",
+      "permanent": false
+    }
+  ]
 }
