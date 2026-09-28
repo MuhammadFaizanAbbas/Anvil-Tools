@@ -91,12 +91,13 @@ def footer_html(depth_prefix):
           <li><a href="{p}terms-of-service.html">Terms of service</a></li>
           <li><a href="{p}cookie-policy.html">Cookie policy</a></li>
           <li><a href="{p}disclaimer.html">Disclaimer</a></li>
+          <li><button type="button" class="privacy-settings" id="privacy-settings" aria-controls="consent-banner" aria-expanded="false">Privacy settings</button></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© <span class="current-year"></span> {SITE_NAME}. All rights reserved.</span>
-      <button type="button" class="privacy-settings" id="privacy-settings" aria-controls="consent-banner" aria-expanded="false">Privacy settings</button><span>Developed by VelloxTech</span>
+      <span>Developed by VelloxTech</span>
     </div>
   </div>
 </footer>
