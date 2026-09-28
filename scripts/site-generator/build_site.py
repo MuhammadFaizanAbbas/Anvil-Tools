@@ -7,7 +7,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../frontend")
 SITE_NAME = "Anvil Tools"
 SITE_TAGLINE = "Free browser tools that just work"
 SITE_URL = "https://anviltools.vercel.app"  # placeholder — replace with your real domain before launch
-CONTACT_EMAIL = "hello@example.com"    # placeholder — replace with your real inbox
+CONTACT_EMAIL = "info@velloxtech.com"    # placeholder — replace with your real inbox
 
 def icon(path_d, viewbox="0 0 24 24"):
     return (f'<svg viewBox="{viewbox}" width="20" height="20" fill="none" '
@@ -96,7 +96,7 @@ def footer_html(depth_prefix):
     </div>
     <div class="footer-bottom">
       <span>© <span class="current-year"></span> {SITE_NAME}. All rights reserved.</span>
-      <button type="button" class="privacy-settings" id="privacy-settings">Privacy settings</button><span>Developed by VelloxTech</span>
+      <button type="button" class="privacy-settings" id="privacy-settings" aria-controls="consent-banner" aria-expanded="false">Privacy settings</button><span>Developed by VelloxTech</span>
     </div>
   </div>
 </footer>

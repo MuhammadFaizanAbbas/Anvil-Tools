@@ -23,19 +23,27 @@
       Anvil Tools
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span aria-hidden="true">&#9776;</span></button>
-    <nav class="main-nav"><a href="">Home</a><a href="tools/index.html">All tools</a><a href="blog/index.html">Guides</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <nav class="main-nav"><a href="index.html">Home</a><a href="tools/index.html">All tools</a><a href="blog/index.html">Guides</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a></nav>
   </div>
 </header>
 <main class="wrap" id="main-content">
 
 <p class="breadcrumbs"><a href="index.html">Home</a> / <span>Contact</span></p>
-<section class="hero"><h1>Contact</h1>
-<p class="lede">Found a bug, have a tool request, or need to report a policy concern? We'd like to hear from you.</p></section>
-<section class="info-section">
-<p>Email us at <a href="mailto:hello@example.com">hello@example.com</a> and include the tool name and a short description of what happened. Screenshots help a lot if you're reporting something that isn't working correctly.</p>
-<p>For copyright or legal notices, please include full details so we can look into it promptly.</p>
-</section>
-
+<section class="hero contact-hero"><span class="eyebrow">LET'S TALK</span><h1>A question, an idea,<br><span>or a little help?</span></h1><p class="lede">Tell us what you have in mind. Report a problem, suggest a tool, or get in touch with the VelloxTech team.</p></section>
+<div class="contact-layout">
+  <section class="contact-form-card" aria-labelledby="contact-title"><div class="contact-form-heading"><span class="section-kicker">SEND A MESSAGE</span><h2 id="contact-title">We're listening.</h2><p>Give us a few details so we can help.</p></div>
+    <form id="contactForm">
+      <div class="contact-fields"><label for="contactName">Your name<input id="contactName" name="name" autocomplete="name" maxlength="100" placeholder="How should we address you?" required></label><label for="contactEmail">Email address<input id="contactEmail" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required></label></div>
+      <label for="contactSubject">What is it about?<input id="contactSubject" name="subject" maxlength="160" placeholder="A question, tool request, or bug report" required></label>
+      <label for="contactMessage">Your message<textarea id="contactMessage" name="message" rows="7" minlength="10" maxlength="5000" placeholder="Include the tool name and what happened if you are reporting a problem." required></textarea></label>
+      <div class="contact-trap" aria-hidden="true"><label>Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <p class="contact-disclosure">We store your message and email to handle your request and send a receipt and replies. Please don't include passwords or sensitive files. See our <a href="privacy-policy.html">privacy policy</a>.</p>
+      <button type="submit" class="btn primary">Send message <span aria-hidden="true">&#8599;</span></button>
+      <p id="contactStatus" role="status" aria-live="polite" tabindex="-1"></p>
+    </form><noscript><p>Enable JavaScript to use this form, or email <a href="mailto:info@velloxtech.com">info@velloxtech.com</a>.</p></noscript>
+  </section>
+  <aside class="contact-details"><div class="contact-note"><span class="section-kicker">A DIRECT CONNECTION</span><h2>Prefer email?</h2><p>Reach the team at any of these addresses.</p><a href="mailto:info@velloxtech.com"><span>General enquiries</span><strong>info@velloxtech.com</strong><span aria-hidden="true">&#8599;</span></a><a href="mailto:faizan@velloxtech.com"><span>Faizan</span><strong>faizan@velloxtech.com</strong><span aria-hidden="true">&#8599;</span></a><a href="mailto:farhan@velloxtech.com"><span>Farhan</span><strong>farhan@velloxtech.com</strong><span aria-hidden="true">&#8599;</span></a><a href="mailto:nauman@velloxtech.com"><span>Nauman</span><strong>nauman@velloxtech.com</strong><span aria-hidden="true">&#8599;</span></a></div><div class="contact-tip"><h3>A useful bug report</h3><p>Tell us which tool you used, your device and browser, what you expected, and what happened instead.</p></div><a class="contact-home" href="index.html">&#8592; Back to the homepage</a></aside>
+</div>
 </main>
 <footer class="site-footer">
   <div class="wrap">
@@ -73,12 +81,12 @@
     </div>
     <div class="footer-bottom">
       <span>© <span class="current-year"></span> Anvil Tools. All rights reserved.</span>
-      <button type="button" class="privacy-settings" id="privacy-settings">Privacy settings</button><span>Developed by VelloxTech</span>
+      <button type="button" class="privacy-settings" id="privacy-settings" aria-controls="consent-banner" aria-expanded="false">Privacy settings</button><span>Developed by VelloxTech</span>
     </div>
   </div>
 </footer>
 <div id="consent-banner" hidden aria-hidden="true" role="region" aria-label="Privacy preferences">
-  <strong>Your privacy, your choice</strong>
+  <div class="consent-heading"><strong>Your privacy, your choice</strong><button type="button" id="consent-close" aria-label="Close privacy preferences">&#215;</button></div>
   <p>Choose your preferences for optional analytics and personalized advertising. Advertising is currently disabled. Read our <a href="cookie-policy.html">cookie policy</a> and <a href="privacy-policy.html">privacy policy</a>. You can change your choices from the footer anytime.</p>
   <div class="btn-row"><button type="button" class="btn" id="consent-reject">Reject optional</button><button type="button" class="btn" id="consent-customize" aria-expanded="false" aria-controls="consent-custom-panel">Customize</button><button type="button" class="btn primary" id="consent-accept">Accept optional</button></div>
   <div id="consent-custom-panel" hidden><label><input type="checkbox" id="consent-analytics"> Allow analytics</label><label><input type="checkbox" id="consent-personalized"> Allow personalized advertising</label><button type="button" class="btn" id="consent-save">Save preferences</button></div>
@@ -87,5 +95,8 @@
 <script src="assets/js/ads.js"></script>
 <script src="assets/js/main.js"></script>
 
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/contact.js"></script>
 </body>
 </html>

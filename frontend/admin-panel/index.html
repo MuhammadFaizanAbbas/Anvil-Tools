@@ -23,7 +23,7 @@
       <a class="nav-item" href="#tools"><span aria-hidden="true">&#9881;</span> Tool library</a>
       <a class="nav-item" href="#posts"><span aria-hidden="true">&#9998;</span> Content</a>
       <a class="nav-item" href="#analytics"><span aria-hidden="true">&#9636;</span> Analytics</a>
-    <div class="sidebar-note"><span class="status-dot"></span> Anvil control center<p>Developed by VelloxTech</p></div></aside>
+    <a class="nav-item" href="#contacts"><span aria-hidden="true">&#9993;</span> Contact inbox</a><div class="sidebar-note"><span class="status-dot"></span> Anvil control center<p>Developed by VelloxTech</p></div></aside>
 
     <main class="content" id="main-content">
       <div id="dashboardMessage" class="dashboard-message" role="status" hidden></div>
@@ -66,11 +66,13 @@
       </section>
 
 
+      <section id="contacts" hidden><div class="page-heading"><div><p class="eyebrow">CONVERSATIONS</p><h1>Contact inbox</h1><p class="muted">Every submission, receipt, and reply in one place.</p></div><button class="btn secondary" id="contactsRefresh">Refresh inbox</button></div><p id="inboxStatus" role="status"></p><div class="inbox-layout"><div class="panel"><div id="contactList"><p class="muted">Open the inbox to load messages.</p></div><div class="inbox-pagination"><button class="btn secondary small" id="contactsPrev">Previous</button><span id="contactsPage"></span><button class="btn secondary small" id="contactsNext">Next</button></div></div><div class="panel" id="contactThread"><p class="empty-state">Select a message to read it, check delivery, and reply.</p></div></div></section>
     </main>
   </div>
 
   <script src="../assets/js/config.js"></script>
   <script src="../assets/js/api.js"></script>
   <script src="../assets/js/admin.js"></script>
+<script src="../assets/js/admin-contacts.js"></script>
 </body>
 </html>

@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!banner || !acceptBtn) return;
 
+  const settingsBtn = document.getElementById('privacy-settings');
+  const closeBtn = document.getElementById('consent-close');
   const CONSENT_KEY = 'anvil_consent_v1';
 
   const readConsent = () => {
@@ -24,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const saveConsent = (obj) => {
     try { localStorage.setItem(CONSENT_KEY, JSON.stringify(obj)); } catch (_) { /* Choices still apply when storage is unavailable. */ }
+    settingsBtn?.setAttribute('aria-expanded', 'false');
     banner.hidden = true;
     banner.setAttribute('aria-hidden', 'true');
     banner.style.display = 'none';
@@ -32,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const showBanner = () => {
+    settingsBtn?.setAttribute('aria-expanded', 'true');
     banner.hidden = false;
     banner.setAttribute('aria-hidden', 'false');
     banner.style.removeProperty('display');
@@ -40,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize UI from stored consent
   const existing = readConsent();
   if (existing) {
+    settingsBtn?.setAttribute('aria-expanded', 'false');
     banner.hidden = true;
     banner.setAttribute('aria-hidden', 'true');
     banner.style.display = 'none';
@@ -49,8 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Show banner
   if (!existing) showBanner();
   document.getElementById('privacy-settings')?.addEventListener('click', () => {
+    const current = readConsent();
+    if (analyticsCheck) analyticsCheck.checked = !!current?.analytics;
+    if (personalizedCheck) personalizedCheck.checked = !!current?.personalized;
     showBanner();
-    acceptBtn.focus();
+    (rejectBtn || acceptBtn).focus();
+  });
+
+  closeBtn?.addEventListener('click', () => {
+    banner.hidden = true;
+    banner.setAttribute('aria-hidden', 'true');
+    settingsBtn?.setAttribute('aria-expanded', 'false');
+    settingsBtn?.focus();
   });
 
   acceptBtn.addEventListener('click', () => {

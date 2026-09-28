@@ -6,7 +6,7 @@
       notice.classList.toggle('error', error);
     }
     function selectPanel() {
-      const selected = ['tools', 'posts', 'analytics'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
+      const selected = ['tools', 'posts', 'analytics', 'contacts'].includes(location.hash.slice(1)) ? location.hash.slice(1) : 'overview';
       document.querySelectorAll('.nav-item').forEach(link => {
         const active = link.hash === `#${selected}`;
         link.classList.toggle('active', active);

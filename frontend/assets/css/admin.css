@@ -150,3 +150,22 @@ td:first-child { min-width: 170px; }
 @media(max-width:480px) { .admin-dashboard .stats { grid-template-columns:1fr; } .admin-dashboard .stat-card { padding:20px; } .admin-dashboard .actions { flex-wrap:wrap; } .admin-dashboard .brand { font-size:17px; } .admin-dashboard .chart-caption { font-size:11px; } .login-page .card { padding:26px; } .admin-dashboard .search-label,.admin-dashboard .search-label input { width:100%; } }
 
 .admin-dashboard .eyebrow { border:0; border-radius:0; }
+.inbox-layout { display:grid; grid-template-columns:minmax(230px,.8fr) minmax(0,1.4fr); gap:22px; align-items:start; }
+.inbox-layout .panel { padding:20px; }
+.inbox-item { display:block; width:100%; background:white; border:1px solid #e0e6f1; border-radius:10px; margin-bottom:10px; padding:15px; text-align:left; color:#213657; cursor:pointer; }
+.inbox-item:hover,.inbox-item.selected { border-color:#8099ee; background:#f1f5ff; }
+.inbox-item > span { display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px; font-size:12px; }
+.inbox-item strong { display:block; margin:8px 0; font-size:14px; overflow-wrap:anywhere; }
+.inbox-item small { font-size:10px; color:#657792; overflow-wrap:anywhere; }
+.inbox-pagination { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px; margin-top:20px; font-size:11px; }
+.thread-heading p { margin:10px 0; } .thread-heading small { color:#6c7c94; font-size:11px; overflow-wrap:anywhere; }
+.contact-message,.reply-copy { white-space:pre-wrap; overflow-wrap:anywhere; font-size:14px; }
+.contact-message { margin:24px 0; padding:20px; background:#f5f7fc; border:1px solid #e4e9f2; border-radius:12px; }
+.delivery-title { font-size:16px; margin:25px 0 10px; }
+.delivery-item { padding:14px 0; border-bottom:1px solid #e4e9f2; }
+.delivery-item > div { display:flex; gap:12px; align-items:center; justify-content:space-between; }
+.delivery-item strong { font-size:13px; text-transform:capitalize; } .delivery-item small { font-size:11px; color:#65758d; overflow-wrap:anywhere; }
+.delivery-state { padding:3px 9px; border-radius:20px; font-size:10px; background:#edf1f8; }
+.delivery-state.sent { color:#176442; background:#e5f5ec; }.delivery-state.failed,.delivery-state.unknown { color:#92392c; background:#fff0e8; }
+.delivery-item .btn { margin-top:8px; } #replyForm { margin-top:28px; } #replyForm label { font-size:13px; } #replyForm button { margin-top:14px; } #replyStatus { font-size:13px; }
+@media(max-width:1100px) { .inbox-layout { grid-template-columns:1fr; } }
