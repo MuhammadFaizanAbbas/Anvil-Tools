@@ -50,9 +50,9 @@ npm run verify
 
 ## Deployment
 
-Follow [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). For separate Vercel projects, deploy the repository root as the Express backend and set the frontend project Root Directory to `frontend` (Framework: Other, Output Directory: `.`). Alternatively, upload **only the contents of `frontend/`** to cPanel. Configure the API URL in `frontend/assets/js/config.js` and allow the frontend origin in Vercel's `FRONTEND_ORIGINS`.
+Follow [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). For separate Vercel projects, use Anvil-Tools for the frontend (repository root, Framework: Other, Output Directory: `frontend`) and Anvil-Tools-Backend for the Express backend. The frontend can alternatively use Root Directory `frontend` and Output Directory `.`. Alternatively, upload **only the contents of `frontend/`** to cPanel. Configure the API URL in `frontend/assets/js/config.js` and allow the frontend origin in Vercel's `FRONTEND_ORIGINS`.
 
-The API stores catalog changes in Supabase. Public HTML remains static: creating a post in the dashboard does not generate or publish an HTML page. Rendering database content into the public frontend is future application work. Analytics currently reports tracked tool views, not unique visitors; session duration and traffic sources are not collected. The browser tools' existing design and behavior are preserved.
+The API stores catalog changes in Supabase. Published articles appear on Guides and have server-rendered `/journal/slug` pages with SEO metadata, social previews, and a dynamic sitemap. The content studio supports optimized cover uploads, reusable media, alt text, tags, categories, and revisions. Apply migration 005 to an existing workspace before using these features. Analytics currently reports tracked tool views, not unique visitors; session duration and traffic sources are not collected. The browser tools' existing design and behavior are preserved.
 
 The optional generator now writes to `frontend/`. It overwrites generated pages, so update its templates before regenerating manually edited pages. Existing domain, contact email and ad publisher placeholders still need your real values before launch.
 

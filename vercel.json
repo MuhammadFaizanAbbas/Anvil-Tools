@@ -15,5 +15,19 @@
       "destination": "/admin-panel/login.html",
       "permanent": false
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/journal/:slug",
+      "destination": "https://anvil-tools-backend.vercel.app/api/public/articles/:slug"
+    },
+    {
+      "source": "/journal-images/:id",
+      "destination": "https://anvil-tools-backend.vercel.app/api/public/post-images/:id"
+    },
+    {
+      "source": "/journal-sitemap.xml",
+      "destination": "https://anvil-tools-backend.vercel.app/api/public/sitemap.xml"
+    }
   ]
 }
