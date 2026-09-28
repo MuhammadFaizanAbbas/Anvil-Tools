@@ -1,0 +1,10 @@
+const express = require('express');
+const path = require('node:path');
+const app = express();
+const root = path.resolve(__dirname, '../frontend');
+app.get('/admin/login', (req, res) => res.redirect('/admin-panel/login.html'));
+app.get('/admin', (req, res) => res.redirect('/admin-panel/index.html'));
+app.use(express.static(root));
+app.use((req, res) => res.status(404).sendFile(path.join(root, '404.html')));
+const port = Number(process.env.FRONTEND_PORT || 8080);
+app.listen(port, () => console.log(`Anvil frontend: http://localhost:${port}`));

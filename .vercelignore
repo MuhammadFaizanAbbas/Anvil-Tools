@@ -1,0 +1,10 @@
+frontend/
+docs/
+scripts/
+tests/
+supabase/
+verify.js
+README.md
+*.log
+.env
+.env.*

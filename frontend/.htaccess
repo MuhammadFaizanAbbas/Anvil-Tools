@@ -1,0 +1,8 @@
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^admin/login/?$ /admin-panel/login.html [R=302,L]
+  RewriteRule ^admin/?$ /admin-panel/index.html [R=302,L]
+</IfModule>

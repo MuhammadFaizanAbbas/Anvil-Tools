@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Agent Generator | Anvil Tools</title>
+<meta name="description" content="Grab realistic browser and bot user-agent strings for testing how your site responds.">
+<link rel="canonical" href="https://www.example.com/tools/user-agent-generator.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/refinements.css">
+
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="header-row">
+    <a class="logo" href="../index.html">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15l6-6 3 3 7-7"/><path d="M20 5h-4v4"/><path d="M4 19h16"/></svg>
+      Anvil Tools
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span aria-hidden="true">&#9776;</span></button>
+    <nav class="main-nav"><a href="../">Home</a><a href="../tools/index.html" aria-current="page">All tools</a><a href="../blog/index.html">Blog</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main class="wrap" id="main-content">
+
+<p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="../categories/developer-tools.html">Developer tools</a> / <span>User Agent Generator</span></p>
+<section class="hero" style="padding-bottom:8px;">
+  <span class="eyebrow">Developer tools</span>
+  <h1>User Agent Generator</h1>
+  <p class="lede">A quick reference list of real-world user-agent strings for common browsers, devices, and crawlers, useful when testing how a site or script behaves under different clients. This is a reference and testing utility, not a way to disguise real traffic; most browsers' developer tools let you actually apply one of these strings to a test request.</p>
+</section>
+
+<div class="tool-app">
+  
+      <h2>Get a user-agent string</h2>
+      <div class="field-row">
+        <label for="ua-select">Choose a browser or device</label>
+        <select id="ua-select"></select>
+      </div>
+      <div class="btn-row">
+        <button class="btn secondary" id="ua-random">Random pick</button>
+        <button class="btn amber" id="ua-copy">Copy</button>
+      </div>
+      <p class="status-msg" id="ua-status"></p>
+      <div class="output-box" id="ua-output"></div>
+    
+</div>
+
+<div class="ad-slot"><span class="ad-label">Advertisement</span>Ad space — activate after AdSense approval</div>
+
+<section class="info-section">
+  <h2>How it works</h2>
+  <ul><li>Pick a browser or device from the list, or click random pick.</li>
+<li>The matching user-agent string appears in the box below.</li>
+<li>Copy it and paste it into your browser's device toolbar override, an API testing tool, or your own test scripts.</li></ul>
+
+  <h2>Common uses</h2>
+  <ul><li>Testing that a responsive site correctly detects mobile versus desktop.</li>
+<li>Checking how a page renders for a search engine crawler like Googlebot.</li>
+<li>Reproducing a bug report that only happens on a specific browser or device.</li></ul>
+
+  <div class="callout">Your privacy matters here: check the FAQ below for exactly what happens to anything you enter into this tool.</div>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq-item"><h3>Does picking a string change my real browser?</h3><p>No. This tool only displays reference text for you to copy. To actually change what your browser sends, use your browser's built-in developer tools or a testing proxy.</p></div>
+<div class="faq-item"><h3>Are these real, current user-agent strings?</h3><p>They're realistic examples of the current format used by each browser or crawler, meant for testing rather than as a live, constantly updated database.</p></div>
+<div class="faq-item"><h3>Can I use this to scrape sites while hiding my identity?</h3><p>This tool is meant for legitimate testing of your own sites and code. Using a fake user agent to evade a site's terms of service or access controls is a separate matter between you and that site's policies.</p></div>
+</section>
+
+<section>
+  <h2>Related tools</h2>
+  <div class="tool-grid">
+  <div class="tool-card">
+  <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6-6 6-6M15 6l6 6-6 6"/></svg></div>
+  <span class="category-tag">Developer tools</span>
+  <h3>JSON Formatter & Validator</h3>
+  <p>Pretty-print, minify, and validate JSON directly in your browser.</p>
+  <a class="tool-link" href="../tools/json-formatter.html">Open tool →</a>
+</div>
+<div class="tool-card">
+  <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 11v2M11 10v4M15 10.5v3M19 11v2"/></svg></div>
+  <span class="category-tag">Developer tools</span>
+  <h3>Base64 Encoder & Decoder</h3>
+  <p>Convert text to Base64 and back, entirely in your browser.</p>
+  <a class="tool-link" href="../tools/base64-tool.html">Open tool →</a>
+</div>
+<div class="tool-card">
+  <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+  <span class="category-tag">Email tools</span>
+  <h3>Temporary Email Generator</h3>
+  <p>Get a disposable inbox in one click for signups you don't want landing in your real email.</p>
+  <a class="tool-link" href="../tools/temp-mail.html">Open tool →</a>
+</div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:10px;">Anvil Tools</div>
+        <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="../tools/temp-mail.html">Temp mail</a></li>
+          <li><a href="../tools/background-remover.html">Background remover</a></li>
+          <li><a href="../tools/pdf-merge.html">PDF merge</a></li>
+          <li><a href="../tools/index.html">View all tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="../privacy-policy.html">Privacy policy</a></li>
+          <li><a href="../terms-of-service.html">Terms of service</a></li>
+          <li><a href="../cookie-policy.html">Cookie policy</a></li>
+          <li><a href="../disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="current-year"></span> Anvil Tools. All rights reserved.</span>
+      <span>Built with plain HTML, CSS, and JavaScript.</span>
+    </div>
+  </div>
+</footer>
+<div id="consent-banner">
+  <p>This site uses cookies and, once ads are enabled, may show ads personalized using your visits to this and other sites. See our <a href="../cookie-policy.html">cookie policy</a> and <a href="../privacy-policy.html">privacy policy</a> for details.</p>
+  <div class="btn-row"><button class="btn amber" id="consent-accept">Got it</button></div>
+</div>
+<script src="../assets/js/cmp.js"></script>
+<script src="../assets/js/ads.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/tools/user-agent-generator.js"></script>
+</body>
+</html>
