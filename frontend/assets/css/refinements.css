@@ -11,6 +11,8 @@ button:disabled, .btn:disabled { opacity: .55; cursor: not-allowed; transform: n
 .header-row { min-height: 76px; }
 .logo { letter-spacing: -.035em; font-size: 1.25rem; flex-shrink: 0; }
 .logo svg { color: var(--primary); }
+.brand-mark { display: block; flex-shrink: 0; }
+#consent-accept { white-space: nowrap; }
 .main-nav { gap: 6px; }
 .main-nav a { padding: 10px 14px; border-radius: 8px; font-size: .9rem; }
 .main-nav a:hover, .main-nav a[aria-current="page"] { background: var(--surface-alt); color: var(--primary-dark); }

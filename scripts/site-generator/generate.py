@@ -293,16 +293,9 @@ def build_static_pages():
 '''
     write("about.html", page("About", f"About {SITE_NAME} and how our tools work.", "/about.html", depth, about_body, canonical_path="about.html"))
 
-    contact_body = f'''
-{breadcrumbs(depth, [("Home","index.html"), ("Contact", None)])}
-<section class="hero"><h1>Contact</h1>
-<p class="lede">Found a bug, have a tool request, or need to report a policy concern? We'd like to hear from you.</p></section>
-<section class="info-section">
-<p>Email us at <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a> and include the tool name and a short description of what happened. Screenshots help a lot if you're reporting something that isn't working correctly.</p>
-<p>For copyright or legal notices, please include full details so we can look into it promptly.</p>
-</section>
-'''
-    write("contact.html", page("Contact", f"Get in touch with {SITE_NAME}.", "/contact.html", depth, contact_body, canonical_path="contact.html"))
+    with open(os.path.join(os.path.dirname(__file__), "templates/contact.html"), encoding="utf-8") as contact_template:
+        contact_body = contact_template.read()
+    write("contact.html", page("Contact", f"Get in touch with {SITE_NAME}.", "/contact.html", depth, contact_body, extra_scripts='<script src="assets/js/contact.js"></script>', canonical_path="contact.html"))
 
     privacy_body = f'''
 {breadcrumbs(depth, [("Home","index.html"), ("Privacy policy", None)])}

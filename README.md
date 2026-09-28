@@ -1,6 +1,6 @@
 # Anvil Tools
 
-Static frontend on **cPanel**, Express API on **Vercel**, and database + admin authentication on **Supabase**.
+Static frontend on **Vercel or cPanel**, Express API on **Vercel**, and database + admin authentication on **Supabase**.
 
 ```text
 frontend/                   Upload contents to cPanel public_html
@@ -50,8 +50,14 @@ npm run verify
 
 ## Deployment
 
-Follow [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). Deploy the repository root to Vercel; upload **only the contents of `frontend/`** to cPanel. Configure the API URL in `frontend/assets/js/config.js` and allow the cPanel origin in Vercel's `FRONTEND_ORIGINS`.
+Follow [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). For separate Vercel projects, use Anvil-Tools for the frontend (repository root, Framework: Other, Output Directory: `frontend`) and Anvil-Tools-Backend for the Express backend. The frontend can alternatively use Root Directory `frontend` and Output Directory `.`. Alternatively, upload **only the contents of `frontend/`** to cPanel. Configure the API URL in `frontend/assets/js/config.js` and allow the frontend origin in Vercel's `FRONTEND_ORIGINS`.
 
-The API stores catalog changes in Supabase. Public HTML remains static: creating a post in the dashboard does not generate or publish an HTML page. Rendering database content into the public frontend is future application work. Analytics currently reports tracked tool views, not unique visitors; session duration and traffic sources are not collected. The browser tools' existing design and behavior are preserved.
+The API stores catalog changes in Supabase. Published articles appear on Guides and have server-rendered `/journal/slug` pages with SEO metadata, social previews, and a dynamic sitemap. The content studio supports optimized cover uploads, reusable media, alt text, tags, categories, and revisions. Apply migration 005 to an existing workspace before using these features. Analytics currently reports tracked tool views, not unique visitors; session duration and traffic sources are not collected. The browser tools' existing design and behavior are preserved.
 
 The optional generator now writes to `frontend/`. It overwrites generated pages, so update its templates before regenerating manually edited pages. Existing domain, contact email and ad publisher placeholders still need your real values before launch.
+
+The admin workspace includes KPI cards, tool-view ranking, a category donut chart, catalog search, content management, and retryable connection errors. Charts use real stored counts. No daily history, unique-visitor metrics, or traffic-source estimates are fabricated. Public pages currently do not automatically send tool-view events; the usage chart stays empty until `/api/analytics/event` receives events.
+
+Contact submissions, email receipts/alerts, and admin replies use the private support inbox and SMTP. Follow [docs/CONTACT_SETUP.md](docs/CONTACT_SETUP.md) before enabling production delivery.
+
+Complete database setup, Google admin login, team access, and optional Edge Functions: [docs/SUPABASE_SETUP.md](docs/SUPABASE_SETUP.md). New projects can run [supabase/full-schema.sql](supabase/full-schema.sql); existing projects apply missing numbered migrations.

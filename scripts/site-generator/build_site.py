@@ -6,8 +6,8 @@ import os
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../frontend"))
 SITE_NAME = "Anvil Tools"
 SITE_TAGLINE = "Free browser tools that just work"
-SITE_URL = "https://www.example.com"  # placeholder — replace with your real domain before launch
-CONTACT_EMAIL = "hello@example.com"    # placeholder — replace with your real inbox
+SITE_URL = "https://anviltools.vercel.app"  # placeholder — replace with your real domain before launch
+CONTACT_EMAIL = "info@velloxtech.com"    # placeholder — replace with your real inbox
 
 def icon(path_d, viewbox="0 0 24 24"):
     return (f'<svg viewBox="{viewbox}" width="20" height="20" fill="none" '
@@ -50,7 +50,7 @@ def header_html(active_path, depth_prefix):
     return f'''<header class="site-header">
   <div class="header-row">
     <a class="logo" href="{logo_href}">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15l6-6 3 3 7-7"/><path d="M20 5h-4v4"/><path d="M4 19h16"/></svg>
+      <img class="brand-mark" src="{depth_prefix}assets/images/anvil-mark.svg" width="36" height="36" alt="">
       {SITE_NAME}
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
@@ -64,7 +64,7 @@ def footer_html(depth_prefix):
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="logo" style="margin-bottom:10px;">{SITE_NAME}</div>
+        <div class="logo" style="margin-bottom:10px;"><img class="brand-mark" src="{p}assets/images/anvil-mark.svg" width="36" height="36" alt="">{SITE_NAME}</div>
         <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
       </div>
       <div>
@@ -96,11 +96,11 @@ def footer_html(depth_prefix):
     </div>
     <div class="footer-bottom">
       <span>© <span class="current-year"></span> {SITE_NAME}. All rights reserved.</span>
-      <span>Built with plain HTML, CSS, and JavaScript.</span>
+      <button type="button" class="privacy-settings" id="privacy-settings" aria-controls="consent-banner" aria-expanded="false">Privacy settings</button><span>Developed by VelloxTech</span>
     </div>
   </div>
 </footer>
-<div id="consent-banner" aria-hidden="true">
+<div id="consent-banner" hidden aria-hidden="true" role="region" aria-label="Privacy preferences">
   <div class="consent-inner">
     <p>This site uses cookies and, when ads are enabled, may show personalized ads. See our <a href="{p}cookie-policy.html">cookie policy</a> and <a href="{p}privacy-policy.html">privacy policy</a> for details.</p>
     <div class="btn-row">
@@ -130,9 +130,11 @@ def page(title, description, active_path, depth_prefix, body_html, extra_head=""
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{depth_prefix}assets/css/style.css">
 <link rel="stylesheet" href="{depth_prefix}assets/css/refinements.css">
+<link rel="icon" type="image/svg+xml" href="{depth_prefix}assets/images/anvil-mark.svg">
+<link rel="stylesheet" href="{depth_prefix}assets/css/design.css">
 {extra_head}
 </head>
-<body>
+<body class="public-site">
 <a class="skip-link" href="#main-content">Skip to content</a>
 {header_html(active_path, depth_prefix)}
 <main class="wrap" id="main-content">

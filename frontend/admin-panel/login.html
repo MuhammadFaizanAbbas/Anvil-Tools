@@ -5,68 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anvil Tools Admin Login</title>
   <link rel="stylesheet" href="../assets/css/admin.css">
+<link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
+<meta name="robots" content="noindex, nofollow">
 </head>
 <body class="login-page">
-  <main class="card">
+  <div class="login-story"><a class="brand" href="../index.html"><img src="../assets/images/anvil-mark.svg" width="36" height="36" alt="">Anvil Tools</a><span class="section-kicker">THE SPACE BEHIND YOUR TOOLS</span><h2>Your ideas.<br>Your workspace.</h2><p>Publish helpful guides. Manage your team.<br>Keep every conversation in view.</p><span class="login-credit">Developed by VelloxTech</span></div><main class="card">
     <a href="../index.html">&larr; Back to website</a>
-    <h1>Anvil Tools</h1>
-    <p>Sign in to manage your tools and posts.</p>
+    <img class="login-mark" src="../assets/images/anvil-mark.svg" width="52" height="52" alt="Anvil Tools"><p class="eyebrow">ANVIL WORKSPACE</p><h1>Welcome back.</h1>
+    <p>Your workspace is ready when you are.</p><button type="button" id="googleLogin" class="google-login"><span aria-hidden="true">G</span> Continue with Google</button><div class="login-divider"><span>or use your email</span></div>
     <form id="loginForm">
       <label for="email">Email</label>
       <input id="email" name="email" type="email" autocomplete="username" required />
 
       <label for="password">Password</label>
-      <input id="password" name="password" type="password" autocomplete="current-password" required />
+      <div class="password-wrap"><input id="password" name="password" type="password" autocomplete="current-password" required /><button id="togglePassword" type="button">Show</button></div>
 
       <button class="btn primary" type="submit">Sign in</button>
       <div id="message" class="msg" role="status"></div>
-    </form>
+    </form><p class="login-access-note">Access is restricted to authorized team members. Signing in does not automatically grant admin access.</p>
   </main>
 
   <script src="../assets/js/config.js"></script>
   <script src="../assets/js/api.js"></script>
-  <script>
-    const form = document.getElementById('loginForm');
-    const msg = document.getElementById('message');
-
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      const button = form.querySelector('button');
-      button.disabled = true;
-      button.textContent = 'Signing in?';
-      msg.textContent = '';
-      msg.classList.remove('error');
-
-      const payload = {
-        email: document.getElementById('email').value,
-        password: document.getElementById('password').value,
-      };
-
-      try {
-      const response = await AnvilAPI.fetch('/api/admin/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-
-      const data = await response.json();
-      if (!response.ok) {
-        msg.textContent = data.error || 'Login failed';
-        msg.classList.add('error');
-        return;
-      }
-
-      AnvilAPI.setSession(data);
-      msg.textContent = 'Logged in.';
-      window.location.href = '/admin-panel/index.html';
-      } catch (error) {
-        msg.textContent = 'Could not reach the API. Check the connection and API URL.';
-        msg.classList.add('error');
-      } finally {
-        button.disabled = false;
-        button.textContent = 'Sign in';
-      }
-    });
-  </script>
-</body>
-</html>
+  <script src="../assets/js/vendor/supabase.js"></script>
+  <script src="../assets/js/admin-login.js"></script>
+</body></html>

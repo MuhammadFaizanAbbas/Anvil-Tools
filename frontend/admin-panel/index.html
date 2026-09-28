@@ -5,246 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anvil Tools Admin</title>
   <link rel="stylesheet" href="../assets/css/admin.css">
+<link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
+<meta name="robots" content="noindex, nofollow">
 </head>
-<body>
+<body class="admin-dashboard"><a class="skip-link" href="#main-content">Skip to dashboard</a>
   <header class="topbar">
-    <div class="brand">Anvil Tools Admin</div>
+    <a class="brand" href="../index.html"><img src="../assets/images/anvil-mark.svg" width="34" height="34" alt=""> Anvil Tools <span class="workspace-label">WORKSPACE</span></a>
     <div class="actions">
-      <span id="userEmail" class="muted">Admin</span>
+      <a class="site-link" href="../index.html">View website &#8599;</a><span id="currentRole" class="role-badge">Workspace</span><span id="userEmail" class="muted">Admin</span>
       <button class="btn secondary" id="logoutBtn">Logout</button>
     </div>
   </header>
 
   <div class="layout">
     <aside class="sidebar" aria-label="Dashboard navigation">
-      <a class="nav-item active" href="#overview">Overview</a>
-      <a class="nav-item" href="#tools">Tools</a>
-      <a class="nav-item" href="#posts">Posts</a>
-      <a class="nav-item" href="#analytics">Analytics</a>
-    </aside>
+      <p class="sidebar-label">MANAGE YOUR SITE</p><a class="nav-item active" href="#overview"><span aria-hidden="true">&#9638;</span> Overview</a>
+      <a class="nav-item" href="#tools"><span aria-hidden="true">&#9881;</span> Tool library</a>
+      <a class="nav-item" href="#posts"><span aria-hidden="true">&#9998;</span> Content</a>
+      <a class="nav-item" href="#analytics"><span aria-hidden="true">&#9636;</span> Analytics</a>
+    <a class="nav-item" href="#contacts"><span aria-hidden="true">&#9993;</span> Contact inbox</a><a class="nav-item" href="#users"><span aria-hidden="true">&#9786;</span> Team &amp; access</a><a class="nav-item" href="#categories"><span aria-hidden="true">&#9639;</span> Categories</a><a class="nav-item" href="#audit"><span aria-hidden="true">&#9776;</span> Audit log</a><a class="nav-item" href="#settings"><span aria-hidden="true">&#9881;</span> Settings</a><div class="sidebar-note"><span class="status-dot"></span> Anvil control center<p>Developed by VelloxTech</p></div></aside>
 
-    <main class="content">
+    <main class="content studio-workspace" id="main-content">
       <div id="dashboardMessage" class="dashboard-message" role="status" hidden></div>
       <section id="overview">
-        <h2>Overview</h2>
-        <div class="stats" id="statsGrid"><p class="muted">Loading dashboard?</p></div>
+        <div class="page-heading"><div><p class="eyebrow">YOUR WORKSPACE AT A GLANCE</p><h1>Make something<br><span>worth sharing.</span></h1><p class="muted">Your tools, stories, and conversations. A little more organized.</p></div><button class="btn primary" id="refreshBtn">&#8635; Refresh data</button></div>
+        <div class="summary-strip"><span id="connectionStatus" role="status">Connecting to your workspace...</span><span id="lastUpdated">Waiting for data</span></div>
+        <div class="stats" id="statsGrid"><div class="stat-card"><div class="stat-label">Tracked tool views</div><div class="stat-value">&mdash;</div><span class="muted small">Waiting for data</span></div><div class="stat-card"><div class="stat-label">Active tools</div><div class="stat-value">&mdash;</div><span class="muted small">Waiting for data</span></div><div class="stat-card"><div class="stat-label">Published posts</div><div class="stat-value">&mdash;</div><span class="muted small">Waiting for data</span></div><div class="stat-card"><div class="stat-label">Draft posts</div><div class="stat-value">&mdash;</div><span class="muted small">Waiting for data</span></div></div>
+      <div class="workspace-shortcuts"><a href="#posts"><span>01 / PUBLISH</span><h2>Write something useful.</h2><p>Draft a guide, revise an article, or publish an update.</p><strong>Open content studio &#8594;</strong></a><a href="#contacts"><span>02 / CONNECT</span><h2>Keep the conversation going.</h2><p>Read requests and reply to the people using your tools.</p><strong>Open your inbox &#8594;</strong></a><a href="#users"><span>03 / COLLABORATE</span><h2>Make room for your team.</h2><p>Invite people and keep access under your control.</p><strong>Manage access &#8594;</strong></a></div></section>
+
+      <section id="analytics" hidden class="analytics-grid"><div class="panel daily-panel"><p class="eyebrow">LAST 30 DAYS</p><h2>Recorded tool activity</h2><div id="dailyChart" class="daily-chart"></div></div>
+        <div class="panel"><div class="panel-heading"><div><p class="eyebrow">PERFORMANCE</p><h2>Most used tools</h2></div><span class="period-label">All time</span></div><p class="muted small">Recorded tool views, ranked by popularity.</p><div id="analyticsChart" class="chart-body"><p class="empty-state">Your usage chart will appear when data is available.</p></div></div>
+        <div class="panel"><div class="panel-heading"><div><p class="eyebrow">YOUR CATALOG</p><h2>Category mix</h2></div></div><p class="muted small">How your tool library is distributed.</p><div id="categoryChart"><p class="empty-state">Waiting for your tool catalog.</p></div></div>
+      </section>
+      <section id="tools" hidden class="panel" style="margin-top: 20px;">
+        <div class="panel-heading"><div><p class="eyebrow">TOOL LIBRARY</p><h2>Manage your tools</h2></div><label class="search-label">Search tools<input id="toolSearch" type="search" placeholder="Name or category"></label></div>
+        <div id="toolsTable"><p class="empty-state">Your tool catalog will appear here.</p></div>
       </section>
 
-      <section id="tools" class="panel" style="margin-top: 20px;">
-        <h3>Tools</h3>
-        <div id="toolsTable"></div>
-      </section>
-
-      <section id="posts" class="panel" style="margin-top: 20px;">
-        <h3>Posts</h3>
-        <form id="postForm">
-          <label>Title
-            <input type="text" id="postTitle" placeholder="Post title" required>
-          </label>
-          <label>Slug
-            <input type="text" id="postSlug" placeholder="post-slug" required>
-          </label>
-          <label>Excerpt
-            <textarea id="postExcerpt" placeholder="Short description"></textarea>
-          </label>
-          <label>Status
-            <select id="postStatus">
-              <option value="draft">Draft</option>
-              <option value="published">Published</option>
-            </select>
-          </label>
-          <button class="btn primary" type="submit">Create post</button>
+      <section id="posts" hidden class="panel" style="margin-top: 20px;">
+        <div class="panel-heading"><div><p class="eyebrow">IDEAS INTO STORIES</p><h2>Your publishing studio.</h2></div><span class="period-label">Editorial workspace</span></div><p class="muted small">Shape your stories with photos, categories, tags, and search previews.</p>
+        <button class="btn primary" id="newPost">New article</button>
+        <form id="postForm" class="studio-editor" hidden>
+          <input id="postId" type="hidden"><input id="postCoverId" type="hidden">
+          <div class="editor-toolbar"><div><span class="studio-kicker">CONTENT STUDIO</span><h2 id="editorHeading">New article</h2></div><div class="editor-actions"><button class="btn secondary" type="button" id="cancelPost">Close</button><button class="btn primary" type="submit">Save article</button></div></div>
+          <div class="editor-layout"><div class="editor-main">
+            <div class="editor-card"><label for="postTitle">Article title</label><input id="postTitle" class="article-title-input" maxlength="300" placeholder="A title worth clicking" required><label for="postExcerpt">Short introduction</label><textarea id="postExcerpt" maxlength="5000" rows="3" placeholder="Tell readers what they'll learn."></textarea><div class="body-label"><label for="postBody">The story</label><span id="wordCount">0 words</span></div><textarea id="postBody" rows="18" maxlength="100000" placeholder="Start writing. Use blank lines to separate paragraphs."></textarea><p class="field-hint">Plain text keeps your articles fast and accessible. HTML is displayed as text.</p></div>
+            <div class="editor-card seo-card"><div class="studio-section-heading"><span class="studio-icon">&#8981;</span><div><h3>Search appearance</h3><p>Control how this article is described in search and link previews.</p></div></div><label for="postSeoTitle">SEO title <span id="seoTitleCount">0 / 160</span></label><input id="postSeoTitle" maxlength="160" placeholder="Defaults to your article title"><label for="postSeoDescription">Meta description <span id="seoDescriptionCount">0 / 320</span></label><textarea id="postSeoDescription" maxlength="320" rows="3" placeholder="A clear summary of the article"></textarea><div class="search-preview"><small>SEARCH PREVIEW &middot; APPROXIMATE</small><span id="searchUrl"></span><strong id="searchTitle">Your article title</strong><p id="searchDescription">Add a short description to help readers understand your article.</p></div></div>
+          </div><aside class="editor-side">
+            <div class="editor-card"><h3>Publish</h3><label for="postStatus">Visibility</label><select id="postStatus"><option value="draft">Draft &middot; only your team</option><option value="published">Published &middot; public</option></select><label for="postSlug">URL slug</label><input id="postSlug" maxlength="150" pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="your-article-title" required><p class="field-hint">Published at /journal/your-slug</p><a id="viewPublished" class="btn secondary" hidden target="_blank" rel="noopener">View published article &#8599;</a></div>
+            <div class="editor-card"><h3>Cover image</h3><div class="cover-stage" id="coverStage"><span aria-hidden="true">&#9635;</span><strong>Give your story a cover</strong><p>JPEG, PNG or WebP &middot; up to 3 MB</p></div><label class="upload-button" for="postImageFile">Upload photo<input id="postImageFile" type="file" accept="image/jpeg,image/png,image/webp"></label><div class="cover-actions"><button type="button" class="btn secondary small" id="chooseMedia">Media library</button><button type="button" class="btn secondary small" id="removeCover" hidden>Remove</button></div><p id="imageUploadStatus" role="status"></p><label for="postCoverAlt">Image description (alt text)</label><input id="postCoverAlt" maxlength="300" placeholder="Describe what the image shows"><p class="field-hint">Required for a published cover. Helps readers using screen readers.</p></div>
+            <div class="editor-card"><h3>Organize</h3><label for="postCategory">Category</label><select id="postCategory"><option value="">Uncategorized</option></select><a href="#categories" class="field-link">Manage categories &#8599;</a><label for="postTags">Tags</label><input id="postTags" placeholder="pdf, productivity, how-to"><p class="field-hint">Comma-separated. Up to 12 tags, 40 characters each.</p><div id="tagPreview" class="tag-preview"></div></div>
+            <div class="editor-card"><h3>Revision history</h3><p class="field-hint">Every save keeps a copy of your article.</p><button class="btn secondary" type="button" id="postHistory">Show versions</button><div id="postRevisions"></div></div>
+          </aside></div>
         </form>
+        <dialog id="mediaPicker" class="media-dialog"><div class="studio-section-heading"><div><span class="studio-kicker">YOUR IMAGE LIBRARY</span><h2>Choose a cover</h2></div><button type="button" id="closeMedia" class="btn secondary">Close</button></div><div id="mediaPickerGrid" class="media-grid"></div><div class="media-pagination"><button id="mediaPrev" type="button" class="btn secondary">Previous</button><span id="mediaPage"></span><button id="mediaNext" type="button" class="btn secondary">Next</button></div></dialog>
         <div id="postsList" style="margin-top: 16px;"></div>
       </section>
 
-      <section id="analytics" class="panel" style="margin-top: 20px;">
-        <h3>Analytics</h3>
-        <div id="analyticsChart"></div>
-      </section>
+
+      <section id="contacts" hidden><div class="page-heading"><div><p class="eyebrow">CONVERSATIONS</p><h1>Contact inbox</h1><p class="muted">Every submission, receipt, and reply in one place.</p></div><button class="btn secondary" id="contactsRefresh">Refresh inbox</button></div><p id="inboxStatus" role="status"></p><div class="inbox-layout"><div class="panel"><div id="contactList"><p class="muted">Open the inbox to load messages.</p></div><div class="inbox-pagination"><button class="btn secondary small" id="contactsPrev">Previous</button><span id="contactsPage"></span><button class="btn secondary small" id="contactsNext">Next</button></div></div><div class="panel" id="contactThread"><p class="empty-state">Select a message to read it, check delivery, and reply.</p></div></div></section>
+      <section id="users" hidden><div class="page-heading"><div><p class="eyebrow">PEOPLE &amp; PERMISSIONS</p><h1>Your team.</h1><p class="muted">Invite collaborators and manage who can access this workspace.</p></div></div><form id="inviteForm" class="panel inline-form"><label>Email address<input id="inviteEmail" type="email" required placeholder="colleague@example.com"></label><label>Access<select id="inviteRole"><option value="member">Member</option><option value="admin">Admin</option></select></label><button class="btn primary">Send invitation</button></form><div class="panel" id="usersTable"></div><div class="team-pager"><button class="btn secondary" id="usersPrev">Previous</button><span id="usersPage"></span><button class="btn secondary" id="usersNext">Next</button></div></section>
+      <section id="categories" hidden><div class="page-heading"><div><p class="eyebrow">A PLACE FOR EVERYTHING</p><h1>Categories.</h1><p class="muted">Organize your editorial library.</p></div></div><form id="categoryForm" class="panel inline-form"><label>Slug<input id="categorySlug" required pattern="[a-z0-9]+(-[a-z0-9]+)*" maxlength="100"></label><label>Name<input id="categoryName" required maxlength="100"></label><label>Description<input id="categoryDescription" maxlength="2000"></label><button class="btn primary">Save category</button></form><div id="categoriesList" class="category-admin-grid"></div></section>
+      <section id="audit" hidden><div class="page-heading"><div><p class="eyebrow">ACCOUNTABILITY</p><h1>Workspace activity.</h1><p class="muted">The latest 100 recorded access and editorial changes.</p></div></div><div class="panel" id="auditList"></div></section>
+      <section id="settings" hidden><div class="page-heading"><div><p class="eyebrow">WORKSPACE HEALTH</p><h1>Connections &amp; settings.</h1><p class="muted">Check the services that power your workspace.</p></div></div><div id="systemCards" class="category-admin-grid"></div></section>
     </main>
   </div>
 
   <script src="../assets/js/config.js"></script>
   <script src="../assets/js/api.js"></script>
-  <script>
-    const notice = document.getElementById('dashboardMessage');
-    function showNotice(message, error = false) {
-      notice.hidden = !message;
-      notice.textContent = message;
-      notice.classList.toggle('error', error);
-    }
-    document.querySelectorAll('.nav-item').forEach(link => link.addEventListener('click', () => {
-      document.querySelectorAll('.nav-item').forEach(item => item.classList.toggle('active', item === link));
-    }));
-    const statsGrid = document.getElementById('statsGrid');
-    const toolsTable = document.getElementById('toolsTable');
-    const postsList = document.getElementById('postsList');
-    const analyticsChart = document.getElementById('analyticsChart');
-    const userEmail = document.getElementById('userEmail');
-
-    async function loadSession() {
-      const res = await AnvilAPI.fetch('/api/admin/me');
-      if (!res.ok) {
-        window.location.href = '/admin-panel/login.html';
-        return;
-      }
-      const data = await res.json();
-      userEmail.textContent = data.user?.email || 'Admin';
-      return true;
-    }
-
-    async function fetchJson(url) {
-      const response = await AnvilAPI.fetch(url);
-      if (response.status === 401) window.location.href = '/admin-panel/login.html';
-      if (!response.ok) throw new Error('API request failed');
-      return response.json();
-    }
-
-    function escapeHtml(value) {
-      return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
-    }
-
-    function renderStats(data) {
-      const cards = [
-        { label: 'Tracked Tool Views', value: data.totalVisitors.toLocaleString() },
-        { label: 'Average Session', value: data.avgSessionTime },
-        { label: 'Top Source', value: data.topSource },
-        { label: 'Total Tools', value: data.totalTools }
-      ];
-
-      statsGrid.innerHTML = cards.map((card) => `
-        <div class="stat-card">
-          <div class="stat-label">${card.label}</div>
-          <div class="stat-value">${card.value}</div>
-        </div>
-      `).join('');
-    }
-
-    function renderTools(tools) {
-      toolsTable.innerHTML = `
-        <table>
-          <thead>
-            <tr>
-              <th>Tool</th>
-              <th>Category</th>
-              <th>Views</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${tools.map((tool) => `
-              <tr>
-                <td>${escapeHtml(tool.name)}</td>
-                <td>${escapeHtml(tool.category)}</td>
-                <td>${tool.views || 0}</td>
-                <td><span class="pill">${escapeHtml(tool.status || 'active')}</span></td>
-                <td><button class="btn secondary small" data-tool="${escapeHtml(tool.slug)}">Edit</button></td>
-              </tr>
-            `).join('')}
-          </tbody>
-        </table>
-      `;
-
-      toolsTable.querySelectorAll('[data-tool]').forEach((btn) => {
-        btn.addEventListener('click', async () => {
-          const slug = btn.dataset.tool;
-          const tool = tools.find((item) => item.slug === slug);
-          const newName = prompt('Update tool name', tool.name);
-          if (!newName) return;
-          btn.disabled = true;
-          try {
-          const response = await AnvilAPI.fetch(`/api/tools/${slug}`, {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ ...tool, name: newName })
-          });
-          if (!response.ok) throw new Error((await response.json()).error || 'Could not save tool.');
-          await loadDashboard();
-          showNotice('Tool updated.');
-          } catch (error) { showNotice(error.message, true); }
-          finally { btn.disabled = false; }
-        });
-      });
-    }
-
-    function renderPosts(posts) {
-      if (!posts.length) { postsList.innerHTML = '<p class="muted">No posts yet. Create your first post above.</p>'; return; }
-      postsList.innerHTML = posts.map((post) => `
-        <div class="panel" style="margin-top: 12px;">
-          <strong>${escapeHtml(post.title)}</strong>
-          <div class="small muted">${escapeHtml(post.slug)} · ${escapeHtml(post.status)}</div>
-          <p class="small">${escapeHtml(post.excerpt || 'No excerpt')}</p>
-        </div>
-      `).join('');
-    }
-
-    function renderAnalytics(data) {
-      const items = data.toolBreakdown || [];
-      analyticsChart.innerHTML = items.map((item) => `
-        <div style="margin-bottom: 10px;">
-          <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-            <span>${escapeHtml(item.name)}</span>
-            <strong>${item.views}</strong>
-          </div>
-          <div style="height: 10px; background: #eef2ff; border-radius: 999px; overflow: hidden;">
-            <div style="width: ${(item.views / Math.max(...items.map(i => i.views), 1)) * 100}%; height: 100%; background: linear-gradient(90deg, #2563eb, #60a5fa); border-radius: 999px;"></div>
-          </div>
-        </div>
-      `).join('');
-    }
-
-    async function loadDashboard() {
-      const [overview, tools, posts] = await Promise.all([
-        fetchJson('/api/site/overview'),
-        fetchJson('/api/tools'),
-        fetchJson('/api/posts')
-      ]);
-
-      renderStats(overview);
-      renderTools(tools);
-      renderPosts(posts);
-      renderAnalytics(overview);
-    }
-
-    document.getElementById('postForm').addEventListener('submit', async (event) => {
-      event.preventDefault();
-      const payload = {
-        title: document.getElementById('postTitle').value,
-        slug: document.getElementById('postSlug').value,
-        excerpt: document.getElementById('postExcerpt').value,
-        status: document.getElementById('postStatus').value,
-      };
-
-      const button = event.currentTarget.querySelector('button[type=submit]');
-      button.disabled = true;
-      button.textContent = 'Saving?';
-      try {
-      const response = await AnvilAPI.fetch('/api/posts', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-
-      if (!response.ok) throw new Error((await response.json()).error || 'Could not create post.');
-      document.getElementById('postForm').reset();
-      await loadDashboard();
-      showNotice('Post saved.');
-      } catch (error) { showNotice(error.message, true); }
-      finally { button.disabled = false; button.textContent = 'Create post'; }
-    });
-
-    document.getElementById('logoutBtn').addEventListener('click', async () => {
-      try { await AnvilAPI.fetch('/api/admin/logout', { method: 'POST' }); }
-      finally {
-        AnvilAPI.clearSession();
-        window.location.href = '/admin-panel/login.html';
-      }
-    });
-
-    loadSession().then(authenticated => { if (authenticated) return loadDashboard(); })
-      .catch(() => { statsGrid.innerHTML = ''; showNotice('Unable to load your dashboard. Check your connection and try reloading.', true); });
-  </script>
+  <script src="../assets/js/admin.js"></script>
+<script src="../assets/js/admin-contacts.js"></script>
+<script src="../assets/js/admin-workspace.js"></script>
 </body>
 </html>
