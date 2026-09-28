@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word & Character Counter | Anvil Tools</title>
+<meta name="description" content="Count words, characters, sentences, and estimated reading time as you type.">
+<link rel="canonical" href="https://www.example.com/tools/word-counter.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="header-row">
+    <a class="logo" href="../index.html">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15l6-6 3 3 7-7"/><path d="M20 5h-4v4"/><path d="M4 19h16"/></svg>
+      Anvil Tools
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav"><a href="../">Home</a><a href="../tools/index.html" aria-current="page">All tools</a><a href="../blog/index.html">Blog</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main class="wrap">
+
+<p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="../categories/text-tools.html">Text tools</a> / <span>Word & Character Counter</span></p>
+<section class="hero" style="padding-bottom:8px;">
+  <span class="eyebrow">Text tools</span>
+  <h1>Word & Character Counter</h1>
+  <p class="lede">Paste in any text and see live counts update as you type or edit: words, characters, sentences, paragraphs, and an estimated reading time based on an average adult reading speed.</p>
+</section>
+
+<div class="tool-app">
+  
+      <h2>Count your text</h2>
+      <textarea id="wc-input" placeholder="Paste or type your text here…"></textarea>
+      <div class="tool-grid" style="margin-top:16px;">
+        <div class="tool-card"><span class="category-tag">Words</span><h3 id="wc-words">0</h3></div>
+        <div class="tool-card"><span class="category-tag">Characters</span><h3 id="wc-chars">0</h3></div>
+        <div class="tool-card"><span class="category-tag">Characters (no spaces)</span><h3 id="wc-chars-nospace">0</h3></div>
+        <div class="tool-card"><span class="category-tag">Sentences</span><h3 id="wc-sentences">0</h3></div>
+        <div class="tool-card"><span class="category-tag">Paragraphs</span><h3 id="wc-paragraphs">0</h3></div>
+        <div class="tool-card"><span class="category-tag">Reading time</span><h3 id="wc-readtime">0 min</h3></div>
+      </div>
+    
+</div>
+
+<div class="ad-slot"><span class="ad-label">Advertisement</span>Ad space — activate after AdSense approval</div>
+
+<section class="info-section">
+  <h2>How it works</h2>
+  <ul><li>Type or paste text into the box.</li>
+<li>Counts update instantly with every keystroke.</li>
+<li>Reading time is estimated at 200 words per minute, a common average for adult silent reading.</li></ul>
+
+  <h2>Common uses</h2>
+  <ul><li>Checking whether a social media post or bio fits a character limit.</li>
+<li>Estimating how long a blog post or script will take to read aloud.</li>
+<li>Tracking word count progress while drafting an essay or article.</li></ul>
+
+  <div class="callout">Your privacy matters here: check the FAQ below for exactly what happens to anything you enter into this tool.</div>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq-item"><h3>Is my text saved or sent anywhere?</h3><p>No. All counting happens locally in your browser as you type; nothing is transmitted or stored.</p></div>
+<div class="faq-item"><h3>How is reading time calculated?</h3><p>Word count divided by 200 words per minute, rounded up to the nearest minute.</p></div>
+<div class="faq-item"><h3>Does it count numbers and punctuation as words?</h3><p>Numbers are counted as words if they're separated by spaces. Punctuation attached to a word doesn't count separately.</p></div>
+</section>
+
+<section>
+  <h2>Related tools</h2>
+  <div class="tool-grid">
+  <div class="tool-card">
+  <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+  <span class="category-tag">Email tools</span>
+  <h3>Temporary Email Generator</h3>
+  <p>Get a disposable inbox in one click for signups you don't want landing in your real email.</p>
+  <a class="tool-link" href="../tools/temp-mail.html">Open tool →</a>
+</div>
+<div class="tool-card">
+  <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg></div>
+  <span class="category-tag">Image tools</span>
+  <h3>Background Remover</h3>
+  <p>Remove the background from a photo automatically, processed locally in your browser.</p>
+  <a class="tool-link" href="../tools/background-remover.html">Open tool →</a>
+</div>
+<div class="tool-card">
+  <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 16h6"/></svg></div>
+  <span class="category-tag">PDF tools</span>
+  <h3>PDF Merge</h3>
+  <p>Combine multiple PDF files into a single document in the order you choose.</p>
+  <a class="tool-link" href="../tools/pdf-merge.html">Open tool →</a>
+</div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:10px;">Anvil Tools</div>
+        <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="../tools/temp-mail.html">Temp mail</a></li>
+          <li><a href="../tools/background-remover.html">Background remover</a></li>
+          <li><a href="../tools/pdf-merge.html">PDF merge</a></li>
+          <li><a href="../tools/index.html">View all tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="../privacy-policy.html">Privacy policy</a></li>
+          <li><a href="../terms-of-service.html">Terms of service</a></li>
+          <li><a href="../cookie-policy.html">Cookie policy</a></li>
+          <li><a href="../disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="current-year"></span> Anvil Tools. All rights reserved.</span>
+      <span>Built with plain HTML, CSS, and JavaScript.</span>
+    </div>
+  </div>
+</footer>
+<div id="consent-banner">
+  <p>This site uses cookies and, once ads are enabled, may show ads personalized using your visits to this and other sites. See our <a href="../cookie-policy.html">cookie policy</a> and <a href="../privacy-policy.html">privacy policy</a> for details.</p>
+  <div class="btn-row"><button class="btn amber" id="consent-accept">Got it</button></div>
+</div>
+<script src="../assets/js/cmp.js"></script>
+<script src="../assets/js/ads.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/tools/word-counter.js"></script>
+</body>
+</html>

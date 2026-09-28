@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anvil Tools Admin</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --panel: #ffffff;
+      --primary: #2563eb;
+      --primary-soft: #dfeeff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --success: #16a34a;
+      --warning: #f59e0b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 24px;
+      background: white;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    .brand { font-weight: 800; font-size: 1.3rem; }
+    .actions { display: flex; gap: 12px; align-items: center; }
+    .btn {
+      border: none;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .btn.primary { background: var(--primary); color: white; }
+    .btn.secondary { background: #eef2ff; color: #1d4ed8; }
+    .layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      min-height: calc(100vh - 72px);
+    }
+    .sidebar {
+      background: #0f172a;
+      color: white;
+      padding: 18px 14px;
+    }
+    .nav-item {
+      display: block;
+      padding: 12px 14px;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      color: white;
+      text-decoration: none;
+      background: rgba(255,255,255,0.04);
+    }
+    .nav-item.active { background: rgba(37, 99, 235, 0.2); }
+    .content {
+      padding: 24px;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .stat-card, .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+    }
+    .stat-label { color: var(--muted); font-size: 0.85rem; }
+    .stat-value { font-size: 2rem; font-weight: 800; margin-top: 8px; }
+    .panel h3 { margin-top: 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    input, textarea, select {
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+    }
+    textarea { min-height: 120px; }
+    .muted { color: var(--muted); }
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      background: var(--primary-soft);
+      border-radius: 999px;
+      color: #1d4ed8;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .small { font-size: 0.9rem; }
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Anvil Tools Admin</div>
+    <div class="actions">
+      <span id="userEmail" class="muted">Admin</span>
+      <button class="btn secondary" id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="nav-item active" href="#overview">Overview</a>
+      <a class="nav-item" href="#tools">Tools</a>
+      <a class="nav-item" href="#posts">Posts</a>
+      <a class="nav-item" href="#analytics">Analytics</a>
+    </aside>
+
+    <main class="content">
+      <section id="overview">
+        <h2>Overview</h2>
+        <div class="stats" id="statsGrid"></div>
+      </section>
+
+      <section id="tools" class="panel" style="margin-top: 20px;">
+        <h3>Tools</h3>
+        <div id="toolsTable"></div>
+      </section>
+
+      <section id="posts" class="panel" style="margin-top: 20px;">
+        <h3>Posts</h3>
+        <form id="postForm">
+          <label>Title
+            <input type="text" id="postTitle" placeholder="Post title" required>
+          </label>
+          <label>Slug
+            <input type="text" id="postSlug" placeholder="post-slug" required>
+          </label>
+          <label>Excerpt
+            <textarea id="postExcerpt" placeholder="Short description"></textarea>
+          </label>
+          <label>Status
+            <select id="postStatus">
+              <option value="draft">Draft</option>
+              <option value="published">Published</option>
+            </select>
+          </label>
+          <button class="btn primary" type="submit">Create post</button>
+        </form>
+        <div id="postsList" style="margin-top: 16px;"></div>
+      </section>
+
+      <section id="analytics" class="panel" style="margin-top: 20px;">
+        <h3>Analytics</h3>
+        <div id="analyticsChart"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const statsGrid = document.getElementById('statsGrid');
+    const toolsTable = document.getElementById('toolsTable');
+    const postsList = document.getElementById('postsList');
+    const analyticsChart = document.getElementById('analyticsChart');
+    const userEmail = document.getElementById('userEmail');
+
+    async function loadSession() {
+      const res = await fetch('/api/admin/me');
+      if (!res.ok) {
+        window.location.href = '/admin/login';
+        return;
+      }
+      const data = await res.json();
+      userEmail.textContent = data.user?.email || 'Admin';
+    }
+
+    async function fetchJson(url) {
+      const response = await fetch(url);
+      return response.json();
+    }
+
+    function renderStats(data) {
+      const cards = [
+        { label: 'Total Visitors', value: data.totalVisitors.toLocaleString() },
+        { label: 'Average Session', value: data.avgSessionTime },
+        { label: 'Top Source', value: data.topSource },
+        { label: 'Total Tools', value: data.totalTools }
+      ];
+
+      statsGrid.innerHTML = cards.map((card) => `
+        <div class="stat-card">
+          <div class="stat-label">${card.label}</div>
+          <div class="stat-value">${card.value}</div>
+        </div>
+      `).join('');
+    }
+
+    function renderTools(tools) {
+      toolsTable.innerHTML = `
+        <table>
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Category</th>
+              <th>Views</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${tools.map((tool) => `
+              <tr>
+                <td>${tool.name}</td>
+                <td>${tool.category}</td>
+                <td>${tool.views || 0}</td>
+                <td><span class="pill">${tool.status || 'active'}</span></td>
+                <td><button class="btn secondary small" data-tool="${tool.slug}">Edit</button></td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      `;
+
+      toolsTable.querySelectorAll('[data-tool]').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          const slug = btn.dataset.tool;
+          const tool = tools.find((item) => item.slug === slug);
+          const newName = prompt('Update tool name', tool.name);
+          if (!newName) return;
+          const response = await fetch(`/api/tools/${slug}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ...tool, name: newName })
+          });
+          if (response.ok) {
+            loadDashboard();
+          }
+        });
+      });
+    }
+
+    function renderPosts(posts) {
+      postsList.innerHTML = posts.map((post) => `
+        <div class="panel" style="margin-top: 12px;">
+          <strong>${post.title}</strong>
+          <div class="small muted">${post.slug} · ${post.status}</div>
+          <p class="small">${post.excerpt || 'No excerpt'}</p>
+        </div>
+      `).join('');
+    }
+
+    function renderAnalytics(data) {
+      const items = data.toolBreakdown || [];
+      analyticsChart.innerHTML = items.map((item) => `
+        <div style="margin-bottom: 10px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+            <span>${item.name}</span>
+            <strong>${item.views}</strong>
+          </div>
+          <div style="height: 10px; background: #eef2ff; border-radius: 999px; overflow: hidden;">
+            <div style="width: ${(item.views / Math.max(...items.map(i => i.views), 1)) * 100}%; height: 100%; background: linear-gradient(90deg, #2563eb, #60a5fa); border-radius: 999px;"></div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    async function loadDashboard() {
+      const [overview, tools, posts] = await Promise.all([
+        fetchJson('/api/site/overview'),
+        fetchJson('/api/tools'),
+        fetchJson('/api/posts')
+      ]);
+
+      renderStats(overview);
+      renderTools(tools);
+      renderPosts(posts);
+      renderAnalytics(overview);
+    }
+
+    document.getElementById('postForm').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const payload = {
+        title: document.getElementById('postTitle').value,
+        slug: document.getElementById('postSlug').value,
+        excerpt: document.getElementById('postExcerpt').value,
+        status: document.getElementById('postStatus').value,
+      };
+
+      const response = await fetch('/api/posts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (response.ok) {
+        document.getElementById('postForm').reset();
+        loadDashboard();
+      }
+    });
+
+    document.getElementById('logoutBtn').addEventListener('click', async () => {
+      await fetch('/api/admin/logout', { method: 'POST' });
+      window.location.href = '/admin/login';
+    });
+
+    loadSession();
+    loadDashboard();
+  </script>
+</body>
+</html>

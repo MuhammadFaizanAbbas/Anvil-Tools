@@ -1,0 +1,23 @@
+{
+  "name": "anvil-tools-admin",
+  "version": "1.0.0",
+  "description": "Admin-enabled Node.js backend for the Anvil Tools static site with Supabase-ready data layer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "static-site",
+    "admin-panel",
+    "supabase",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
