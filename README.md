@@ -60,4 +60,4 @@ The admin workspace includes KPI cards, tool-view ranking, a category donut char
 
 Contact submissions, email receipts/alerts, and admin replies use the private support inbox and SMTP. Follow [docs/CONTACT_SETUP.md](docs/CONTACT_SETUP.md) before enabling production delivery.
 
-Complete database setup, Google admin login, team access, and optional Edge Functions: [docs/SUPABASE_SETUP.md](docs/SUPABASE_SETUP.md). New projects can run [supabase/full-schema.sql](supabase/full-schema.sql); existing projects apply missing numbered migrations.
+Complete database setup, Google admin login, team access, and optional Edge Functions: [docs/SUPABASE_SETUP.md](docs/SUPABASE_SETUP.md). New projects can run [supabase/full-schema.sql](supabase/full-schema.sql); existing projects must first compare their actual migration history. Production project `epxzxcqsonxscyvbopqt` must not run these scripts; see [production integration](docs/PRODUCTION_INTEGRATION.md).

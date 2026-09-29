@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const handleFile = async (file) => {
     if (!file) return;
+    processedImage = null;
+    downloadBtn.style.display = 'none';
+    if (!file.type.startsWith('image/')) { setStatus('Choose an image file.'); return; }
     setStatus('Processing image…');
     preview.innerHTML = '';
     const reader = new FileReader();
@@ -35,13 +38,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const original = reader.result;
       showImage(original, 'Original');
       try {
-        const result = await window.removeBackgroundLib(file);
+        if (!window.removeBackgroundLib) throw Error('Background removal could not load. Check your connection and reload.');
+        const result = await window.removeBackgroundLib(file, { model: 'small', progress: (key, current, total) => {
+          if (key.startsWith('fetch:')) setStatus(`Downloading image model… ${total ? Math.round(current / total * 100) : 0}%`);
+          else setStatus('Removing background…');
+        } });
         processedImage = result;
         showImage(URL.createObjectURL(result), 'Result');
         downloadBtn.style.display = 'inline-block';
         setStatus('Background removed successfully.');
       } catch (error) {
-        setStatus('Unable to remove the background from this image. Try another one.', true);
+        setStatus('Unable to process this image. Check your connection for the model download, then try again.');
       }
     };
     reader.readAsDataURL(file);

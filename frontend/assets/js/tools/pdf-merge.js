@@ -60,7 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   mergeBtn.addEventListener('click', async () => {
-    if (!window.PDFLib || files.length < 2) return;
+    if (!window.PDFLib) { status.textContent = 'PDF library could not load. Check your connection and reload.'; return; }
+    if (files.length < 2) return;
+    mergeBtn.disabled = true;
+    try {
     status.textContent = 'Merging PDFs…';
     const { PDFDocument } = window.PDFLib;
     const mergedPdf = await PDFDocument.create();
@@ -80,6 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
     a.download = 'merged-document.pdf';
     a.click();
     status.textContent = 'Merged PDF downloaded.';
+    } catch (_) { status.textContent = 'Could not merge these files. Use valid PDFs without password protection.'; }
+    finally { mergeBtn.disabled = files.length < 2; }
   });
 
   refreshList();

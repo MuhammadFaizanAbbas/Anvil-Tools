@@ -11,13 +11,14 @@
     return null;
   }
   window.AnvilAPI = {
+    getSession,
     setSession(data) { sessionStorage.setItem(key, JSON.stringify({ accessToken: data.accessToken, expiresAt: data.expiresAt })); },
     clearSession,
     async fetch(path, options = {}) {
       if (!path.startsWith('/api/')) throw new Error('Invalid API path');
       const headers = new Headers(options.headers);
       const session = getSession();
-      if (session) headers.set('Authorization', `Bearer ${session.accessToken}`);
+      if (session && !headers.has('Authorization')) headers.set('Authorization', `Bearer ${session.accessToken}`);
       const response = await fetch(`${base}${path}`, { ...options, headers, credentials: 'omit' });
       if (response.status === 401) clearSession();
       return response;

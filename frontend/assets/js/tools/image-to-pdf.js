@@ -42,14 +42,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   convertBtn.addEventListener('click', async () => {
-    if (!window.PDFLib || files.length === 0) return;
+    if (!window.PDFLib) { status.textContent = 'PDF library could not load. Check your connection and reload.'; return; }
+    if (files.length === 0) return;
+    convertBtn.disabled = true;
+    try {
     status.textContent = 'Creating PDF…';
     const { PDFDocument, rgb } = window.PDFLib;
     const pdf = await PDFDocument.create();
 
     for (const file of files) {
-      const bytes = await file.arrayBuffer();
-      const image = await (file.type === 'image/png' ? pdf.embedPng(bytes) : pdf.embedJpg(bytes));
+      let bytes = await file.arrayBuffer();
+      let png = file.type === 'image/png';
+      if (!['image/png', 'image/jpeg'].includes(file.type)) {
+        const bitmap = await createImageBitmap(file);
+        try {
+          const canvas = document.createElement('canvas');
+          canvas.width = bitmap.width; canvas.height = bitmap.height;
+          canvas.getContext('2d').drawImage(bitmap, 0, 0);
+          const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+          if (!blob) throw Error('Image conversion failed');
+          bytes = await blob.arrayBuffer(); png = true;
+        } finally { bitmap.close(); }
+      }
+      const image = await (png ? pdf.embedPng(bytes) : pdf.embedJpg(bytes));
       const page = pdf.addPage([image.width, image.height]);
       page.drawImage(image, {
         x: 0,
@@ -67,5 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     a.download = 'images-to-pdf.pdf';
     a.click();
     status.textContent = 'PDF downloaded.';
+    } catch (_) { status.textContent = 'Could not convert this image. Use a valid PNG, JPEG, or WebP image.'; }
+    finally { convertBtn.disabled = files.length === 0; }
   });
 });

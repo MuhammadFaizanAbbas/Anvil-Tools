@@ -5,146 +5,129 @@ document.addEventListener('DOMContentLoaded', () => {
   const viewerEl = document.getElementById('tm-viewer');
   const copyBtn = document.getElementById('tm-copy');
   const newBtn = document.getElementById('tm-new');
-
+  const refreshBtn = document.getElementById('tm-refresh');
   if (!addressEl || !statusEl || !messagesEl || !viewerEl || !copyBtn || !newBtn) return;
 
-  let inboxId = null;
-  let pollTimer = null;
-  let capability = sessionStorage.getItem('tm_cap') || null;
-
-  const setStatus = (text, isError = false) => {
+  const storage = (operation, value) => { try { return sessionStorage[operation]('tm_cap', value); } catch (_) { return null; } };
+  let capability = storage('getItem');
+  let generation = 0, selection = 0, pollTimer, creating = false, polling = false;
+  let messageSnapshot = '';
+  const setStatus = (text, error = false) => {
     statusEl.textContent = text;
-    statusEl.style.color = isError ? '#b42318' : '#5d6b85';
+    statusEl.style.color = error ? '#b42318' : '#5d6b85';
   };
-
-  const escapeHtml = (str) => {
-    if (!str) return '';
-    return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
+  const decode = text => {
+    const element = document.createElement('textarea');
+    element.innerHTML = String(text || '').replace(/</g, '&lt;');
+    return element.value;
   };
-
-  const textFromHtml = (html) => {
-    if (!html) return '';
-    const div = document.createElement('div');
-    // Parsing into a detached element to obtain text content (no script execution)
-    div.innerHTML = html;
-    return div.textContent || div.innerText || '';
+  const buttons = () => {
+    newBtn.disabled = creating;
+    copyBtn.disabled = creating || !capability || !addressEl.textContent.includes('@');
+    if (refreshBtn) refreshBtn.disabled = creating || polling || !capability;
   };
-
-  const renderMessages = (messages) => {
-    messagesEl.innerHTML = '';
-    if (!messages || !messages.length) {
-      const li = document.createElement('li');
-      li.textContent = 'No messages yet.';
-      messagesEl.appendChild(li);
-      return;
+  const expire = () => {
+    generation++; selection++; capability = null;
+    storage('removeItem'); clearTimeout(pollTimer);
+    addressEl.textContent = 'No active inbox';
+    messagesEl.replaceChildren(); viewerEl.replaceChildren(); messageSnapshot = '';
+    setStatus('This inbox has expired. Click New address to create another.', true);
+    buttons();
+  };
+  async function request(path, options) {
+    const response = await AnvilAPI.fetch(path, options);
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      const retry = Number(response.headers.get('Retry-After'));
+      const suffix = retry > 0 ? ` Try again in ${retry} seconds.` : '';
+      throw Object.assign(new Error((data.error || 'Unable to reach the inbox. Please try again.') + suffix), { status: response.status });
     }
-
-    messages.forEach((msg) => {
-      const li = document.createElement('li');
-      li.textContent = msg.from || 'Unknown sender';
-      li.addEventListener('click', async () => {
-        if (!capability) return setStatus('Missing inbox capability', true);
-        try {
-          setStatus('Loading message…');
-          const detailRes = await AnvilAPI.fetch(`/api/temp-mail/messages/${encodeURIComponent(msg.id)}?cap=${encodeURIComponent(capability)}`);
-          if (!detailRes.ok) throw new Error('Could not load message');
-          const detail = await detailRes.json();
-          viewerEl.innerHTML = '';
-          const h = document.createElement('h3');
-          h.textContent = detail.subject || 'Message';
-          const p = document.createElement('p');
-          p.innerHTML = `<strong>From:</strong> ${escapeHtml((detail.from && detail.from.address) ? detail.from.address : (detail.from || 'Unknown'))}`;
-          const content = document.createElement('div');
-          const pre = document.createElement('pre');
-          pre.textContent = detail.text || 'No content';
-          content.appendChild(pre);
-          viewerEl.appendChild(h);
-          viewerEl.appendChild(p);
-          viewerEl.appendChild(content);
-          setStatus('Message loaded.');
-        } catch (e) {
-          setStatus(e.message || 'Failed to load message', true);
-        }
-      });
-      messagesEl.appendChild(li);
-    });
-  };
-
-  async function fetchInbox() {
+    return data;
+  }
+  async function openMessage(message) {
+    if (!capability || creating) return;
+    const current = generation, selected = ++selection, cap = capability;
+    setStatus('Loading message…');
     try {
-      setStatus('Requesting inbox from server…');
-      const createRes = await AnvilAPI.fetch('/api/temp-mail/create', { method: 'POST', headers: { 'Content-Type': 'application/json' } });
-      if (!createRes.ok) {
-        const body = await createRes.json().catch(() => ({}));
-        throw new Error(body.message || 'Could not create inbox');
-      }
-      const createData = await createRes.json();
-      capability = createData.capability;
-      sessionStorage.setItem('tm_cap', capability);
-      addressEl.textContent = createData.address || 'noreply';
-      setStatus('Inbox created. Waiting for messages…');
-      await pollInbox();
-    } catch (err) {
-      setStatus(err.message || 'Inbox unavailable right now.', true);
+      const detail = await request(`/api/temp-mail/messages/${encodeURIComponent(message.id)}?cap=${encodeURIComponent(cap)}`);
+      if (current !== generation || selected !== selection) return;
+      const title = document.createElement('h3'); title.textContent = decode(detail.subject) || 'Message';
+      const sender = document.createElement('p'); sender.textContent = `From: ${decode(detail.from?.address || detail.from || 'Unknown')}`;
+      const body = document.createElement('pre'); body.textContent = (detail.textEncoded ? decode(detail.text) : detail.text) || 'No content';
+      viewerEl.replaceChildren(title, sender, body);
+      setStatus('Message loaded. Inbox checks continue automatically.');
+    } catch (error) {
+      if (current !== generation || selected !== selection) return;
+      if (error.status === 410) return expire();
+      setStatus(error.message, true);
     }
   }
-
+  function renderMessages(messages) {
+    const snapshot = JSON.stringify(messages);
+    if (snapshot === messageSnapshot) return;
+    messageSnapshot = snapshot;
+    messagesEl.replaceChildren();
+    if (!messages.length) {
+      const li = document.createElement('li'); li.textContent = 'No messages yet. New messages appear automatically.'; messagesEl.append(li);
+    }
+    for (const message of messages) {
+      const li = document.createElement('li');
+      const button = document.createElement('button'); button.type = 'button'; button.className = 'tm-message';
+      button.textContent = `${decode(message.subject) || 'No subject'} — ${decode(message.from) || 'Unknown sender'}`;
+      button.addEventListener('click', () => openMessage(message));
+      li.append(button); messagesEl.append(li);
+    }
+  }
   async function pollInbox() {
-    if (!capability) return;
+    if (!capability || creating || polling) return;
+    const current = generation, cap = capability;
+    polling = true; clearTimeout(pollTimer); buttons();
     try {
-      const mailRes = await AnvilAPI.fetch(`/api/temp-mail/messages?cap=${encodeURIComponent(capability)}`);
-      if (!mailRes.ok) throw new Error('Could not fetch messages');
-      const data = await mailRes.json();
-      renderMessages((data.messages || []).slice(0, 10));
-      setStatus('Inbox active. Waiting for new mail…');
-    } catch (err) {
-      setStatus(err.message || 'Inbox check failed.', true);
+      const data = await request(`/api/temp-mail/messages?cap=${encodeURIComponent(cap)}`);
+      if (current !== generation) return;
+      if (data.address) addressEl.textContent = data.address;
+      renderMessages(data.messages || []);
+      setStatus(`${data.messages?.length || 0} messages. Checking for new mail every 15 seconds.`);
+    } catch (error) {
+      if (current !== generation) return;
+      if (error.status === 404 || error.status === 410) return expire();
+      setStatus(error.message, true);
+    } finally {
+      polling = false; buttons();
+      if (capability && !creating) { clearTimeout(pollTimer); pollTimer = setTimeout(pollInbox, current === generation ? 15000 : 0); }
     }
-
-    clearTimeout(pollTimer);
-    pollTimer = setTimeout(pollInbox, 8000);
   }
-
+  async function createInbox() {
+    if (creating) return;
+    creating = true; generation++; selection++; clearTimeout(pollTimer); buttons();
+    const previous = capability;
+    try {
+      setStatus('Creating your inbox…');
+      const data = await request('/api/temp-mail/create', { method: 'POST' });
+      if (!data.capability || !data.address) throw new Error('The server did not return an inbox. Please try again.');
+      capability = data.capability; storage('setItem', capability);
+      addressEl.textContent = data.address;
+      viewerEl.replaceChildren(); messagesEl.replaceChildren(); messageSnapshot = '';
+      if (previous && previous !== capability) AnvilAPI.fetch('/api/temp-mail/delete', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ cap: previous })
+      }).catch(() => {});
+      setStatus('Inbox ready. Checking for messages…');
+    } catch (error) {
+      if (!capability) addressEl.textContent = 'No active inbox';
+      setStatus(error.message, true);
+    } finally {
+      creating = false; buttons();
+      if (capability) { clearTimeout(pollTimer); pollTimer = setTimeout(pollInbox, capability === previous ? 15000 : 0); }
+    }
+  }
   copyBtn.addEventListener('click', async () => {
-    try {
-      await navigator.clipboard.writeText(addressEl.textContent);
-      setStatus('Address copied to clipboard.');
-    } catch (err) {
-      setStatus('Copy failed in this browser.', true);
-    }
+    if (copyBtn.disabled) return;
+    try { await navigator.clipboard.writeText(addressEl.textContent); setStatus('Address copied to clipboard.'); }
+    catch (_) { setStatus('Copy failed. Select and copy the address above.', true); }
   });
-
-  newBtn.addEventListener('click', () => {
-    clearTimeout(pollTimer);
-    // Delete existing inbox if present, then create a new one
-    (async () => {
-      try {
-        const oldCap = sessionStorage.getItem('tm_cap');
-        if (oldCap) {
-          await AnvilAPI.fetch('/api/temp-mail/delete', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ cap: oldCap }) });
-          sessionStorage.removeItem('tm_cap');
-        }
-      } catch (e) {
-        // ignore
-      }
-      capability = null;
-      addressEl.textContent = '';
-      viewerEl.innerHTML = '';
-      messagesEl.innerHTML = '';
-      fetchInbox();
-    })();
-  });
-
-  // If we have a capability already, try to resume polling
-  if (capability) {
-    setStatus('Resuming inbox…');
-    pollInbox();
-  } else {
-    fetchInbox();
-  }
+  newBtn.addEventListener('click', createInbox);
+  if (refreshBtn) refreshBtn.addEventListener('click', pollInbox);
+  buttons();
+  if (capability) { setStatus('Restoring your inbox…'); pollInbox(); }
+  else createInbox();
 });

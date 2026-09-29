@@ -11,21 +11,23 @@
 <body class="admin-dashboard"><a class="skip-link" href="#main-content">Skip to dashboard</a>
   <header class="topbar">
     <a class="brand" href="../index.html"><img src="../assets/images/anvil-mark.svg" width="34" height="34" alt=""> Anvil Tools <span class="workspace-label">WORKSPACE</span></a>
-    <div class="actions">
-      <a class="site-link" href="../index.html">View website &#8599;</a><span id="currentRole" class="role-badge">Workspace</span><span id="userEmail" class="muted">Admin</span>
-      <button class="btn secondary" id="logoutBtn">Logout</button>
-    </div>
+    <a class="site-link" href="../index.html">View website ?</a>
   </header>
 
   <div class="layout">
     <aside class="sidebar" aria-label="Dashboard navigation">
-      <p class="sidebar-label">MANAGE YOUR SITE</p><a class="nav-item active" href="#overview"><span aria-hidden="true">&#9638;</span> Overview</a>
+          <div class="sidebar-profile">
+      <span id="currentRole" class="role-badge">Workspace</span><span id="userEmail" class="muted">Admin</span>
+      <span id="sessionTimer" class="session-timer" title="Time until your verified sign-in expires">Session —</span>
+      <button class="btn secondary" id="logoutBtn">Logout</button>
+    </div><p class="sidebar-label">MANAGE YOUR SITE</p><a class="nav-item active" href="#overview"><span aria-hidden="true">&#9638;</span> Overview</a>
       <a class="nav-item" href="#tools"><span aria-hidden="true">&#9881;</span> Tool library</a>
       <a class="nav-item" href="#posts"><span aria-hidden="true">&#9998;</span> Content</a>
       <a class="nav-item" href="#analytics"><span aria-hidden="true">&#9636;</span> Analytics</a>
     <a class="nav-item" href="#contacts"><span aria-hidden="true">&#9993;</span> Contact inbox</a><a class="nav-item" href="#users"><span aria-hidden="true">&#9786;</span> Team &amp; access</a><a class="nav-item" href="#categories"><span aria-hidden="true">&#9639;</span> Categories</a><a class="nav-item" href="#audit"><span aria-hidden="true">&#9776;</span> Audit log</a><a class="nav-item" href="#settings"><span aria-hidden="true">&#9881;</span> Settings</a><div class="sidebar-note"><span class="status-dot"></span> Anvil control center<p>Developed by VelloxTech</p></div></aside>
 
     <main class="content studio-workspace" id="main-content">
+      <div id="sessionWarning" class="session-warning" role="status" hidden></div>
       <div id="dashboardMessage" class="dashboard-message" role="status" hidden></div>
       <section id="overview">
         <div class="page-heading"><div><p class="eyebrow">YOUR WORKSPACE AT A GLANCE</p><h1>Make something<br><span>worth sharing.</span></h1><p class="muted">Your tools, stories, and conversations. A little more organized.</p></div><button class="btn primary" id="refreshBtn">&#8635; Refresh data</button></div>
@@ -73,6 +75,7 @@
 
   <script src="../assets/js/config.js"></script>
   <script src="../assets/js/api.js"></script>
+  <script src="../assets/js/admin-session.js"></script>
   <script src="../assets/js/admin.js"></script>
 <script src="../assets/js/admin-contacts.js"></script>
 <script src="../assets/js/admin-workspace.js"></script>

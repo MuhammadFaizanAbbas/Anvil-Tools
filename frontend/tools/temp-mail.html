@@ -13,6 +13,7 @@
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
 <link rel="stylesheet" href="../assets/css/design.css">
+<link rel="stylesheet" href="../assets/css/tool-ux.css">
 </head>
 <body class="public-site">
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -32,7 +33,7 @@
 <section class="hero" style="padding-bottom:8px;">
   <span class="eyebrow">Email tools</span>
   <h1>Temporary Email Generator</h1>
-  <p class="lede">Use this when a site demands an email address before you can even look around, or when you're testing a signup flow and don't want ten confirmation emails cluttering your real inbox. The address below is live: anything sent to it shows up here automatically, and it disappears once you close the tab or generate a new one.</p>
+  <p class="lede">Use this when a site demands an email address before you can even look around, or when you're testing a signup flow and don't want ten confirmation emails cluttering your real inbox. The address below is live: anything sent to it shows up here automatically, and your access expires after one hour. Temporary inboxes are not suitable for private information or account recovery.</p>
 </section>
 
 <div class="tool-app">
@@ -41,6 +42,7 @@
       <div class="inbox-box">
         <div class="inbox-address" id="tm-address">Creating inbox…</div>
         <button class="btn secondary" id="tm-copy">Copy address</button>
+        <button class="btn secondary" id="tm-refresh" disabled>Refresh inbox</button>
         <button class="btn amber" id="tm-new">New address</button>
       </div>
       <p class="status-msg" id="tm-status"></p>
@@ -53,8 +55,8 @@
 
 <section class="info-section">
   <h2>How it works</h2>
-  <ul><li>A random inbox address is created for you the moment the page loads, using the mail.tm public email service.</li>
-<li>The page checks for new mail every few seconds and lists messages as they arrive.</li>
+  <ul><li>A random inbox address is created for you the moment the page loads, using the Guerrilla Mail service, accessed through our backend.</li>
+<li>The page checks for new mail every 15 seconds and lists messages as they arrive.</li>
 <li>Click any message in the list to read its contents right here, with scripts and tracking elements stripped out for safety.</li>
 <li>Generating a new address abandons the old inbox permanently — there is no way to recover it later, so don't use this for anything you need long-term access to.</li></ul>
 
@@ -67,7 +69,7 @@
 
   <h2>Frequently asked questions</h2>
   <div class="faq-item"><h3>Is this address private?</h3><p>The address is random and not tied to your identity, but treat it as public: anyone who guesses or is given the address can read what lands in it. Never use it for anything sensitive like banking, medical, or account-recovery email.</p></div>
-<div class="faq-item"><h3>How long does the inbox last?</h3><p>The inbox stays active as long as this tab is open. Refreshing the page or clicking "New address" replaces it with a fresh one, and the old inbox and its messages become unreachable.</p></div>
+<div class="faq-item"><h3>How long does the inbox last?</h3><p>Your access lasts up to one hour. Reloading this tab restores the same inbox while it is active. Clicking "New address" switches to another inbox.</p></div>
 <div class="faq-item"><h3>Can I reply to emails from this address?</h3><p>This tool is built for receiving mail only, matching how most disposable-email use cases work: verifying a signup, not carrying on a conversation.</p></div>
 <div class="faq-item"><h3>Will this work for every website?</h3><p>Most sites accept it, but some services specifically block known disposable-email domains. If a form rejects the address, that site is one of them.</p></div>
 </section>
@@ -99,7 +101,7 @@
   </div>
 </section>
 
-</main>
+<section class="info-section"><h2>Use an inbox only for short-lived tasks</h2><p>Copy the address, wait for a message, and select it to read plain text. Create another inbox when needed, subject to the shared creation limit for your network. Temporary addresses should never be your recovery address for an important account.</p></section></main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -153,5 +155,6 @@
 <script src="../assets/js/config.js"></script>
 <script src="../assets/js/api.js"></script>
 <script src="../assets/js/tools/temp-mail.js"></script>
+<script src="../assets/js/tool-ux.js"></script>
 </body>
 </html>

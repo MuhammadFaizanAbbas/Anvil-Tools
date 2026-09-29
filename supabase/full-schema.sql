@@ -1,5 +1,15 @@
 -- Complete Anvil Tools schema. Fresh projects only; existing installations apply missing numbered migrations.
 begin;
+
+-- Stop before changing a production database with archived legacy objects.
+do $guard$
+begin
+ if to_regnamespace('legacy_archive') is not null then
+  raise exception 'This file is for fresh projects only. See docs/PRODUCTION_INTEGRATION.md; production uses a different migration history.';
+ end if;
+end
+$guard$;
+
 -- Migration: create temp_mail_sessions table
 -- Run this on the Supabase project to persist temporary mail capabilities
 
@@ -34,7 +44,7 @@ create table if not exists public.posts (
   status text not null default 'draft' check (status in ('draft', 'published')),
   updated_at timestamptz not null default now()
 );
-create table if not exists public.temp_mail_rate_limits (
+create table if not exists public.temp_mail_client_limits (
   client_hash text primary key,
   window_start timestamptz not null default now(),
   attempts integer not null default 1
@@ -42,9 +52,9 @@ create table if not exists public.temp_mail_rate_limits (
 alter table public.tools enable row level security;
 alter table public.posts enable row level security;
 alter table public.temp_mail_sessions enable row level security;
-alter table public.temp_mail_rate_limits enable row level security;
-revoke all on public.tools, public.posts, public.temp_mail_sessions, public.temp_mail_rate_limits from anon, authenticated;
-grant all on public.tools, public.posts, public.temp_mail_sessions, public.temp_mail_rate_limits to service_role;
+alter table public.temp_mail_client_limits enable row level security;
+revoke all on public.tools, public.posts, public.temp_mail_sessions, public.temp_mail_client_limits from anon, authenticated;
+grant all on public.tools, public.posts, public.temp_mail_sessions, public.temp_mail_client_limits to service_role;
 
 create or replace function public.record_tool_view(tool_identifier text)
 returns void language sql set search_path = public as $$
@@ -54,10 +64,10 @@ $$;
 -- Atomic upsert serializes concurrent requests for the same client.
 create or replace function public.consume_temp_mail_limit(client_key text)
 returns jsonb language plpgsql set search_path = public as $$
-declare current_limit public.temp_mail_rate_limits;
+declare current_limit public.temp_mail_client_limits;
 begin
-  delete from public.temp_mail_rate_limits where window_start < now() - interval '2 hours';
-  insert into public.temp_mail_rate_limits as limits (client_hash, window_start, attempts)
+  delete from public.temp_mail_client_limits where window_start < now() - interval '2 hours';
+  insert into public.temp_mail_client_limits as limits (client_hash, window_start, attempts)
   values (client_key, now(), 1)
   on conflict (client_hash) do update set
     window_start = case when limits.window_start <= now() - interval '1 hour' then now() else limits.window_start end,
@@ -220,7 +230,7 @@ create or replace function public.cleanup_expired_state() returns jsonb language
 declare sessions integer; limits integer;
 begin
  delete from public.temp_mail_sessions where expires_at<now(); get diagnostics sessions=row_count;
- delete from public.temp_mail_rate_limits where window_start<now()-interval '2 hours'; get diagnostics limits=row_count;
+ delete from public.temp_mail_client_limits where window_start<now()-interval '2 hours'; get diagnostics limits=row_count;
  return jsonb_build_object('expired_sessions',sessions,'expired_rate_limits',limits);
 end; $$;
 
@@ -282,7 +292,7 @@ insert into public.tools (id,slug,name,category,description,status) values ('bas
 insert into public.tools (id,slug,name,category,description,status) values ('user-agent-generator','user-agent-generator','User Agent Generator','Developer tools','Generate realistic user-agent strings for testing.','active') on conflict (id) do nothing;
 insert into public.tools (id,slug,name,category,description,status) values ('color-palette-generator','color-palette-generator','Color Palette Generator','Generators','Generate matching brand and UI color palettes.','active') on conflict (id) do nothing;
 insert into public.tools (id,slug,name,category,description,status) values ('unit-converter','unit-converter','Unit Converter','Generators','Convert across common measurement units instantly.','active') on conflict (id) do nothing;
-insert into public.posts (id,slug,title,excerpt,status,updated_at) values ('safe-temporary-email-signups','safe-temporary-email-signups','How to Use a Temporary Email Address Without Losing Messages You Actually Need','Disposable inboxes are useful for one-time signups, but they are not a replacement for real email addresses.','published','2026-09-27') on conflict (id) do nothing;
-insert into public.posts (id,slug,title,excerpt,status,updated_at) values ('removing-a-photo-background-guide','removing-a-photo-background-guide','Removing a Photo Background in Under a Minute','A quick guide to better background removal results using local browser tools.','published','2026-09-27') on conflict (id) do nothing;
+insert into public.posts (id,slug,title,excerpt,status,updated_at) values ('safe-temporary-email-signups','safe-temporary-email-signups','How to Use a Temporary Email Address Without Losing Messages You Actually Need','Disposable inboxes are useful for one-time signups, but they are not a replacement for real email addresses.','draft','2026-09-27') on conflict (id) do nothing;
+insert into public.posts (id,slug,title,excerpt,status,updated_at) values ('removing-a-photo-background-guide','removing-a-photo-background-guide','Removing a Photo Background in Under a Minute','A quick guide to better background removal results using local browser tools.','draft','2026-09-27') on conflict (id) do nothing;
 
 commit;
