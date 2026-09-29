@@ -31,4 +31,12 @@
   <url><loc>https://anviltools.vercel.app/blog/posts/removing-a-photo-background-guide.html</loc></url>
   <url><loc>https://anviltools.vercel.app/blog/posts/simple-pdf-workflow-without-software.html</loc></url>
   <url><loc>https://anviltools.vercel.app/blog/posts/small-tools-that-save-developers-time.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/url-encoder-decoder.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/jwt-decoder.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/unix-timestamp-converter.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/hash-generator.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/csv-to-json.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/text-case-converter.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/text-diff-checker.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/uuid-generator.html</loc></url>
 </urlset>

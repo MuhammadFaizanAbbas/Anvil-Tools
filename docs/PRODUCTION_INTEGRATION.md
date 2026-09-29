@@ -32,7 +32,7 @@ Multiple allowed domains share the same data and administrator access. This is n
 
 Run `npm test` locally. `node scripts/check-live-integration.js` performs read-only production checks and suppresses public key values. Tests use mocked services; they do not send mail or modify Supabase.
 
-Read-only checks before deployment found: health 200 with databaseConfigured=true; tools 200 with 12 records; unauthenticated admin/me 401; public posts 200 with two records; auth/config 200 with the expected website CORS header. Supabase Auth settings returned **external.google=false** and external.email=true, which matches the intended setup. Owner login, member rejection with a real session, SMTP, and media upload still need end-to-end verification.
+Read-only checks before the browser-tool expansion found: health 200 with databaseConfigured=true; tools 200 with 12 records; unauthenticated admin/me 401; public posts 200 with two records; auth/config 200 with the expected website CORS header. The eight new static tools do not need database access. After reviewing and running `supabase/production-updates/20260930_add_browser_tools.sql`, the admin catalog should contain 20 records. Supabase Auth settings returned **external.google=false** and external.email=true, which matches the intended setup. Owner login, member rejection with a real session, SMTP, and media upload still need end-to-end verification.
 
 The supplied rollback remains in Downloads and was not executed or added to the migration path. The stronger guard is not a reason to roll back this deployment.
 

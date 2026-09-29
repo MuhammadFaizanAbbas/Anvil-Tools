@@ -109,7 +109,7 @@ See [CONTACT_SETUP.md](CONTACT_SETUP.md) for migration 003, SMTP environment var
 
 ## Published articles and images
 
-Apply migration 005 after 004 (or use full-schema.sql only for a new project). The frontend Vercel configuration proxies `/journal/:slug`, `/journal-images/:id`, and `/journal-sitemap.xml` to the backend `/api/public/articles/:slug`, `/api/public/post-images/:id`, and `/api/public/sitemap.xml`. Set backend SITE_URL to the canonical frontend origin. If you change the backend domain, update both frontend Vercel configuration files.
+Apply migrations 005 and 006 after 004 for an existing development installation created from these scripts (or use full-schema.sql only for a new project). The frontend Vercel configuration proxies `/journal/:slug`, `/journal-images/:id`, and `/journal-sitemap.xml` to the backend `/api/public/articles/:slug`, `/api/public/post-images/:id`, and `/api/public/sitemap.xml`. Set backend SITE_URL to the canonical frontend origin. If you change the backend domain, update both frontend Vercel configuration files.
 
 For cPanel or another static host, configure equivalent reverse-proxy routes with your hosting provider; uploading static files alone cannot serve these dynamic journal URLs. Local static previews also require equivalent proxying to exercise published journal pages.
 

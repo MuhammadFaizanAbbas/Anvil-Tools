@@ -4,9 +4,11 @@
 
 ## 1. Database
 
-For a NEW Supabase project, run **supabase/full-schema.sql** once in the SQL Editor. It includes migrations 001–005 and the starter catalog in one transaction.
+For a NEW Supabase project, run **supabase/full-schema.sql** once in the SQL Editor. It includes migrations 001–006 and the starter catalog in one transaction.
 
 Only for an existing installation created from these same numbered scripts, run missing files in **supabase/migrations/** in numeric order; do not replace your existing database. Migration 004 backfills existing Auth users with member profiles and preserves existing posts/tools/contact records.
+
+The eight additional browser tools are static pages and work without Supabase. To list them in the admin catalog for the migrated production project, review and run only **supabase/production-updates/20260930_add_browser_tools.sql** in the SQL Editor. Do not run the bootstrap migrations against production.
 
 Tables cover tool catalog/counters; complete blog articles with SEO fields, categories and revisions; user profiles and roles; contact requests and SMTP job logs; audit events; daily aggregate analytics; site settings; page drafts; media metadata; temporary inbox capabilities; and shared rate limiting. The editor accepts JPEG/PNG/WebP uploads up to 3 MB and 24 megapixels. The server decodes images, removes metadata, and resizes them to at most 2000 pixels as WebP. Images are stored in the private editorial-media bucket; the media library uses temporary signed previews. Only covers attached to published posts are served publicly. Migration 005 adds cover references, alt text, tags, and image dimensions. A generic legal-page editor is not included.
 
