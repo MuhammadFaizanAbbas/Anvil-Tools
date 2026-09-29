@@ -29,5 +29,16 @@
       "source": "/journal-sitemap.xml",
       "destination": "https://anvil-tools-backend.vercel.app/api/public/sitemap.xml"
     }
+  ],
+  "headers": [
+    {
+      "source": "/assets/vendor/background-removal/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
   ]
 }

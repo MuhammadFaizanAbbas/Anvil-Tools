@@ -47,7 +47,7 @@ window.removeBackgroundLib = removeBackground;
         <span class="small-note">JPG, PNG, or WebP</span>
       </div>
       <input type="file" id="bg-file-input" accept="image/*" style="display:none;">
-      <p class="status-msg" id="bg-status"></p>
+      <p class="status-msg" id="bg-status" role="status" aria-live="polite">The first use downloads about 52 MB once, then your browser can reuse it.</p>
       <div class="preview-images" id="bg-preview"></div>
       <div class="btn-row">
         <button class="btn amber" id="bg-download" style="display:none;">Download PNG</button>
