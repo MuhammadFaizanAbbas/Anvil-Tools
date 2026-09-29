@@ -23,6 +23,9 @@
     const postsList = document.getElementById('postsList');
     const analyticsChart = document.getElementById('analyticsChart');
     const userEmail = document.getElementById('userEmail');
+    const postsPrev = document.getElementById('postsPrev');
+    const postsNext = document.getElementById('postsNext');
+    const postsPage = document.getElementById('postsPage');
 
     async function loadSession() {
       const res = await AnvilAPI.fetch('/api/admin/me');
@@ -48,14 +51,15 @@
       return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
     }
 
-    let catalog = [];
+    let catalog = [], postPage = 0;
+    const postPageSize = 30;
     const number = value => Math.max(0, Number(value) || 0);
-    function renderStats(data, tools, posts) {
+    function renderStats(data, tools) {
       const cards = [
         { label: 'Tracked tool views', value: number(data.totalVisitors).toLocaleString(), note: 'All-time recorded views', icon: '&#8599;' },
         { label: 'Active tools', value: tools.filter(t => t.status === 'active').length, note: `${tools.length} tools in your library`, icon: '&#9881;' },
-        { label: 'Published posts', value: posts.filter(p => p.status === 'published').length, note: 'Published catalog entries', icon: '&#9998;' },
-        { label: 'Draft posts', value: posts.filter(p => p.status === 'draft').length, note: 'Ready for your next edit', icon: '&#9633;' }
+        { label: 'Published posts', value: number(data.publishedPosts), note: 'Published catalog entries', icon: '&#9998;' },
+        { label: 'Draft posts', value: number(data.draftPosts), note: 'Ready for your next edit', icon: '&#9633;' }
       ];
       statsGrid.innerHTML = cards.map((card, index) => `<div class="stat-card stat-${index}"><div class="stat-top"><span class="stat-label">${card.label}</span><span class="stat-icon" aria-hidden="true">${card.icon}</span></div><div class="stat-value">${card.value}</div><span class="muted small">${card.note}</span></div>`).join('');
     }
@@ -109,9 +113,31 @@
       });
     }
 
-    function renderPosts(posts) {
+    function renderPosts(data) {
+      const posts = data.items;
       window.workspacePosts = posts;
       postsList.innerHTML = posts.length ? posts.map(post => `<button class="article-row" data-post="${escapeHtml(post.id)}"><span><strong>${escapeHtml(post.title)}</strong><small>${escapeHtml(post.slug)}</small></span><span class="pill ${post.status === 'draft' ? 'inactive' : ''}">${escapeHtml(post.status)}</span><span aria-hidden="true">&#8599;</span></button>`).join('') : '<p class="empty-state">Your next article starts here. Create a draft above.</p>';
+      const pages = Math.max(1, Math.ceil(data.total / data.limit));
+      postsPage.textContent = `Page ${postPage + 1} of ${pages} · ${data.total} article${data.total === 1 ? '' : 's'}`;
+      postsPrev.disabled = postPage === 0;
+      postsNext.disabled = data.offset + posts.length >= data.total;
+    }
+
+    async function loadPosts() {
+      postsList.setAttribute('aria-busy', 'true');
+      postsList.innerHTML = '<div class="panel-loading"><span></span><p>Loading articles…</p></div>';
+      postsPrev.disabled = true; postsNext.disabled = true;
+      try {
+        const data = await fetchJson(`/api/posts?limit=${postPageSize}&offset=${postPage * postPageSize}`);
+        if (!data.items.length && postPage > 0 && data.total > 0) {
+          postPage = Math.max(0, Math.ceil(data.total / postPageSize) - 1);
+          return await loadPosts();
+        }
+        renderPosts(data);
+        return data;
+      } finally {
+        postsList.removeAttribute('aria-busy');
+      }
     }
 
     function renderAnalytics(tools) {
@@ -131,16 +157,15 @@
     }
 
     async function loadDashboard() {
-      const [overview, tools, posts] = await Promise.all([
+      const [overview, tools] = await Promise.all([
         fetchJson('/api/site/overview'),
         fetchJson('/api/tools'),
-        fetchJson('/api/posts')
       ]);
+      await loadPosts();
 
       catalog = tools;
-      renderStats(overview, tools, posts);
+      renderStats(overview, tools);
       renderTools(tools.filter(tool => `${tool.name} ${tool.category}`.toLowerCase().includes(document.getElementById('toolSearch').value.toLowerCase())));
-      renderPosts(posts);
       renderAnalytics(tools);
       document.getElementById('connectionStatus').textContent = 'Connected to your workspace';
       document.getElementById('lastUpdated').textContent = `Updated ${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
@@ -169,4 +194,12 @@
       } finally { button.disabled = false; }
     }
     document.getElementById('refreshBtn').addEventListener('click', refresh);
+    async function movePostPage(change) {
+      const previous = postPage;
+      postPage = Math.max(0, postPage + change);
+      try { await loadPosts(); }
+      catch (error) { postPage = previous; showNotice(error.message || 'Unable to load articles.', true); }
+    }
+    postsPrev.addEventListener('click', () => { if (!postsPrev.disabled) movePostPage(-1); });
+    postsNext.addEventListener('click', () => { if (!postsNext.disabled) movePostPage(1); });
     refresh();

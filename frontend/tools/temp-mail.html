@@ -24,7 +24,7 @@
       Anvil Tools
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span aria-hidden="true">&#9776;</span></button>
-    <nav class="main-nav"><a href="../">Home</a><a href="../tools/index.html" aria-current="page">All tools</a><a href="../blog/index.html">Guides</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav>
+    <nav class="main-nav"><a href="../">Home</a><a href="../tools/index.html" aria-current="page">All tools</a><a href="../blog/index.html">Blogs</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav>
   </div>
 </header>
 <main class="wrap" id="main-content">
@@ -36,19 +36,32 @@
   <p class="lede">Use this when a site demands an email address before you can even look around, or when you're testing a signup flow and don't want ten confirmation emails cluttering your real inbox. The address below is live: anything sent to it shows up here automatically, and your access expires after one hour. Temporary inboxes are not suitable for private information or account recovery.</p>
 </section>
 
-<div class="tool-app">
-  
-      <h2>Your temporary inbox</h2>
-      <div class="inbox-box">
-        <div class="inbox-address" id="tm-address">Creating inbox…</div>
-        <button class="btn secondary" id="tm-copy">Copy address</button>
-        <button class="btn secondary" id="tm-refresh" disabled>Refresh inbox</button>
-        <button class="btn amber" id="tm-new">New address</button>
+<div class="tool-app temp-mail-console">
+  <section class="temp-mail-controls" aria-labelledby="temp-mail-title">
+    <div class="temp-mail-heading">
+      <div><span class="eyebrow">Disposable inbox</span><h2 id="temp-mail-title">Your temporary inbox</h2></div>
+      <span class="temp-mail-live"><span aria-hidden="true"></span>Checks every 15 seconds</span>
+    </div>
+    <div class="inbox-box">
+      <div class="inbox-address-wrap"><span>Your address</span><div class="inbox-address" id="tm-address">Creating inbox&hellip;</div></div>
+      <div class="temp-mail-actions">
+        <button class="btn secondary" id="tm-copy" data-busy-text="Copying&hellip;">Copy address</button>
+        <button class="btn secondary" id="tm-refresh" data-busy-text="Refreshing&hellip;" disabled>Refresh inbox</button>
+        <button class="btn amber" id="tm-new" data-busy-text="Creating&hellip;">New address</button>
       </div>
-      <p class="status-msg" id="tm-status"></p>
+    </div>
+    <p class="status-msg" id="tm-status"></p>
+  </section>
+  <div class="temp-mail-workspace">
+    <section class="temp-mail-panel temp-mail-inbox" aria-labelledby="temp-mail-inbox-title">
+      <div class="temp-mail-panel-head"><h3 id="temp-mail-inbox-title">Inbox</h3><span class="temp-mail-count" id="tm-count">0 messages</span></div>
       <ul class="message-list" id="tm-messages"></ul>
-      <div id="tm-viewer"></div>
-    
+    </section>
+    <section class="temp-mail-panel temp-mail-reader" aria-labelledby="temp-mail-reader-title">
+      <div class="temp-mail-panel-head"><h3 id="temp-mail-reader-title">Message</h3></div>
+      <div id="tm-viewer"><div class="temp-mail-empty"><strong>Select a message</strong><span>New mail will appear in the inbox automatically.</span></div></div>
+    </section>
+  </div>
 </div>
 
 <div class="ad-slot"><span class="ad-label">Advertisement</span>Ad space — activate after AdSense approval</div>
@@ -122,7 +135,7 @@
         <h4>Company</h4>
         <ul>
           <li><a href="../about.html">About</a></li>
-          <li><a href="../blog/index.html">Guides</a></li>
+          <li><a href="../blog/index.html">Blogs</a></li>
           <li><a href="../contact.html">Contact</a></li>
         </ul>
       </div>

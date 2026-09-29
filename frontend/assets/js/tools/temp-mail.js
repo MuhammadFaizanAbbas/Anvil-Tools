@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const statusEl = document.getElementById('tm-status');
   const messagesEl = document.getElementById('tm-messages');
   const viewerEl = document.getElementById('tm-viewer');
+  const countEl = document.getElementById('tm-count');
   const copyBtn = document.getElementById('tm-copy');
   const newBtn = document.getElementById('tm-new');
   const refreshBtn = document.getElementById('tm-refresh');
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const storage = (operation, value) => { try { return sessionStorage[operation]('tm_cap', value); } catch (_) { return null; } };
   let capability = storage('getItem');
-  let generation = 0, selection = 0, pollTimer, creating = false, polling = false;
+  let generation = 0, selection = 0, pollTimer, creating = false, polling = false, copying = false;
   let messageSnapshot = '';
   const setStatus = (text, error = false) => {
     statusEl.textContent = text;
@@ -23,14 +24,21 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   const buttons = () => {
     newBtn.disabled = creating;
-    copyBtn.disabled = creating || !capability || !addressEl.textContent.includes('@');
+    copyBtn.disabled = creating || copying || !capability || !addressEl.textContent.includes('@');
     if (refreshBtn) refreshBtn.disabled = creating || polling || !capability;
+  };
+  const showReaderEmpty = () => {
+    const empty = document.createElement('div'); empty.className = 'temp-mail-empty';
+    const title = document.createElement('strong'); title.textContent = 'Select a message';
+    const note = document.createElement('span'); note.textContent = 'New mail will appear in the inbox automatically.';
+    empty.append(title, note); viewerEl.replaceChildren(empty);
   };
   const expire = () => {
     generation++; selection++; capability = null;
     storage('removeItem'); clearTimeout(pollTimer);
     addressEl.textContent = 'No active inbox';
-    messagesEl.replaceChildren(); viewerEl.replaceChildren(); messageSnapshot = '';
+    messagesEl.replaceChildren(); showReaderEmpty(); messageSnapshot = '';
+    if (countEl) countEl.textContent = '0 messages';
     setStatus('This inbox has expired. Click New address to create another.', true);
     buttons();
   };
@@ -40,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!response.ok) {
       const retry = Number(response.headers.get('Retry-After'));
       const suffix = retry > 0 ? ` Try again in ${retry} seconds.` : '';
-      throw Object.assign(new Error((data.error || 'Unable to reach the inbox. Please try again.') + suffix), { status: response.status });
+      throw Object.assign(new Error((data.error || 'Unable to reach the inbox. Please try again.') + suffix), { status: response.status, code: data.code, retry });
     }
     return data;
   }
@@ -55,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const sender = document.createElement('p'); sender.textContent = `From: ${decode(detail.from?.address || detail.from || 'Unknown')}`;
       const body = document.createElement('pre'); body.textContent = (detail.textEncoded ? decode(detail.text) : detail.text) || 'No content';
       viewerEl.replaceChildren(title, sender, body);
+      messagesEl.querySelectorAll('.tm-message').forEach(button => button.classList.toggle('is-active', button.dataset.messageId === String(message.id)));
       setStatus('Message loaded. Inbox checks continue automatically.');
     } catch (error) {
       if (current !== generation || selected !== selection) return;
@@ -67,12 +76,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (snapshot === messageSnapshot) return;
     messageSnapshot = snapshot;
     messagesEl.replaceChildren();
+    if (countEl) countEl.textContent = `${messages.length} ${messages.length === 1 ? 'message' : 'messages'}`;
     if (!messages.length) {
       const li = document.createElement('li'); li.textContent = 'No messages yet. New messages appear automatically.'; messagesEl.append(li);
     }
     for (const message of messages) {
       const li = document.createElement('li');
       const button = document.createElement('button'); button.type = 'button'; button.className = 'tm-message';
+      button.dataset.messageId = String(message.id);
       button.textContent = `${decode(message.subject) || 'No subject'} — ${decode(message.from) || 'Unknown sender'}`;
       button.addEventListener('click', () => openMessage(message));
       li.append(button); messagesEl.append(li);
@@ -107,7 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!data.capability || !data.address) throw new Error('The server did not return an inbox. Please try again.');
       capability = data.capability; storage('setItem', capability);
       addressEl.textContent = data.address;
-      viewerEl.replaceChildren(); messagesEl.replaceChildren(); messageSnapshot = '';
+      showReaderEmpty(); messagesEl.replaceChildren(); messageSnapshot = '';
+      if (countEl) countEl.textContent = '0 messages';
       if (previous && previous !== capability) AnvilAPI.fetch('/api/temp-mail/delete', {
         method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ cap: previous })
       }).catch(() => {});
@@ -122,8 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   copyBtn.addEventListener('click', async () => {
     if (copyBtn.disabled) return;
+    copying = true; buttons();
     try { await navigator.clipboard.writeText(addressEl.textContent); setStatus('Address copied to clipboard.'); }
     catch (_) { setStatus('Copy failed. Select and copy the address above.', true); }
+    finally { copying = false; buttons(); }
   });
   newBtn.addEventListener('click', createInbox);
   if (refreshBtn) refreshBtn.addEventListener('click', pollInbox);

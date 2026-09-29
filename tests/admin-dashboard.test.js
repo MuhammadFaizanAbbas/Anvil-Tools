@@ -26,9 +26,19 @@ test('dashboard has honest empty charts and KPI counts', () => {
   app.run('renderAnalytics([])');
   assert.match(app.node('analyticsChart').innerHTML, /No recorded views yet/);
   assert.match(app.node('categoryChart').innerHTML, /Add tools/);
-  app.run(`renderStats({totalVisitors:120}, [{status:'active'},{status:'inactive'}], [{status:'draft'},{status:'published'}])`);
+  app.run(`renderStats({totalVisitors:120,publishedPosts:1,draftPosts:1}, [{status:'active'},{status:'inactive'}])`);
   const html = app.node('statsGrid').innerHTML;
   assert.match(html, /120/);
   assert.match(html, /2 tools in your library/);
   assert.equal((html.match(/class="stat-value">1</g) || []).length, 3);
+});
+test('post pagination reports totals and enables only valid directions', () => {
+  const app = setup();
+  app.run(`postPage=1;renderPosts({items:[{id:'post-31',title:'Article 31',slug:'article-31',status:'draft'}],total:61,limit:30,offset:30})`);
+  assert.match(app.node('postsList').innerHTML, /Article 31/);
+  assert.equal(app.node('postsPage').textContent, 'Page 2 of 3 · 61 articles');
+  assert.equal(app.node('postsPrev').disabled, false);
+  assert.equal(app.node('postsNext').disabled, false);
+  app.run(`postPage=2;renderPosts({items:[{id:'post-61',title:'Last',slug:'last',status:'published'}],total:61,limit:30,offset:60})`);
+  assert.equal(app.node('postsNext').disabled, true);
 });
