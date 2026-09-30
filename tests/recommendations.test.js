@@ -16,11 +16,12 @@ async function render({posts=[],fail=false}={}) {
   return section;
 }
 test('recommendations preserve backend order and safely render metadata',async()=>{
-  const section=await render({posts:[{slug:'related',title:'JSON guide'},{slug:'<bad>',title:'<script>unsafe</script>'}]});
+  const section=await render({posts:[{slug:'related',title:'JSON guide',cover_image_id:'cover'},{slug:'<bad>',title:'<script>unsafe</script>'}]});
   const cards=section.children[1].children;
   assert.equal(section.hidden,false);
   assert.equal(cards.length,2);
-  assert.equal(cards[0].children[0].textContent,'JSON guide');
+  assert.equal(cards[0].children[0].src,'https://api.example/api/public/post-images/cover');
+  assert.equal(cards[0].children[1].textContent,'JSON guide');
   assert.ok(!cards.some(card=>card.children[2].href==='/journal/current'));
   assert.ok(cards.some(card=>card.children[2].href==='/journal/%3Cbad%3E'));
   assert.ok(cards.some(card=>card.children[0].textContent==='<script>unsafe</script>'));

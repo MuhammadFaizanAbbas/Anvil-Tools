@@ -20,7 +20,7 @@
       const excerpt = document.createElement('p'); excerpt.textContent = post.excerpt || '';
       const link = document.createElement('a'); link.className = 'tool-link'; link.textContent = 'Read article ?'; link.href = `/journal/${encodeURIComponent(post.slug)}`;
       if (post.cover_image_id) {
-        const image = document.createElement('img'); image.src = `/journal-images/${encodeURIComponent(post.cover_image_id)}`;
+        const image = document.createElement('img'); image.src = `${base}/api/public/post-images/${encodeURIComponent(post.cover_image_id)}`;
         image.alt = post.cover_alt || ''; image.className = 'guide-cover'; image.loading = 'lazy'; card.append(image);
       }
       card.append(title,excerpt,link); grid.append(card);

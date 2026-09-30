@@ -25,6 +25,7 @@ async function setup(responses, article = false) {
   const document = { getElementById: id => ids[id], createElement: tag => new Element(tag), createDocumentFragment: () => new Element('fragment') };
   await vm.runInNewContext(fs.readFileSync('frontend/assets/js/published-posts.js', 'utf8'), {
     document, location: { search: '?slug=image-blog', hostname: 'example.test' }, URLSearchParams,
+    window: { ANVIL_CONFIG: { API_BASE_URL: 'https://api.example' } },
     AnvilAPI: { fetch: async path => {
       calls.push(path); const response = responses.shift(); if (response instanceof Error) throw response;
       return { ok: true, headers: { get: name => name === 'X-Total-Count' ? String(response.total ?? response.data.length) : null }, json: async () => response.data };
@@ -37,7 +38,7 @@ test('blogs show 30 database posts and use numbered pagination without hardcoded
   const first = Array.from({ length: 30 }, (_, i) => ({ slug: `blog-${i}`, title: `Blog ${i}`, cover_image_id: `image-${i}`, cover_alt: `Cover ${i}` }));
   const { ids, calls } = await setup([{ data: first, total: 31 }, { data: [{ slug: 'last-blog', title: 'Last blog' }], total: 31 }]);
   assert.equal(ids.publishedGuideCards.children.length, 30);
-  assert.equal(ids.publishedGuideCards.children[0].children[0].src, '/journal-images/image-0');
+  assert.equal(ids.publishedGuideCards.children[0].children[0].src, 'https://api.example/api/public/post-images/image-0');
   assert.equal(ids.blogsPage.textContent, 'Page 1 of 2 · 31 blogs');
   assert.equal(ids.blogsPrev.disabled, true); assert.equal(ids.blogsNext.disabled, false);
   await ids.blogsNext.listeners.click();
@@ -55,6 +56,6 @@ test('failed blog requests show an error and retry the same page', async () => {
 test('legacy article page displays its cover and renders content as text', async () => {
   const post = { title: 'Image blog', body: '<script>unsafe()</script>', cover_image_id: 'cover', cover_alt: 'Example image' };
   const { ids, calls } = await setup([{ data: post }], true);
-  assert.equal(calls[0], '/api/public/posts/image-blog'); assert.equal(ids.publishedArticle.children[2].src, '/journal-images/cover');
+  assert.equal(calls[0], '/api/public/posts/image-blog'); assert.equal(ids.publishedArticle.children[2].src, 'https://api.example/api/public/post-images/cover');
   assert.equal(ids.publishedArticle.children[3].textContent, '<script>unsafe()</script>');
 });

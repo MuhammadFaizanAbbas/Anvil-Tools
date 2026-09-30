@@ -8,10 +8,11 @@
   const pageLabel = document.getElementById('blogsPage');
   const retry = document.getElementById('blogsRetry');
   if (!article && !cards) return;
+  const apiBase = (window.ANVIL_CONFIG?.API_BASE_URL || '').replace(/\/$/, '');
 
   const cover = (post, className) => {
     const image = document.createElement('img');
-    image.src = `/journal-images/${encodeURIComponent(post.cover_image_id)}`;
+    image.src = `${apiBase}/api/public/post-images/${encodeURIComponent(post.cover_image_id)}`;
     image.alt = post.cover_alt || '';
     image.className = className;
     image.loading = className === 'guide-cover' ? 'lazy' : 'eager';
