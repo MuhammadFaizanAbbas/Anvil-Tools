@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://anviltools.vercel.app/</loc></url>
   <url><loc>https://anviltools.vercel.app/about.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/contact.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/privacy-policy.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/terms-of-service.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/cookie-policy.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/disclaimer.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/index.html</loc></url>
   <url><loc>https://anviltools.vercel.app/blog/index.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/temp-mail.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/background-remover.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/pdf-merge.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/image-to-pdf.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/qr-code-generator.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/password-generator.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/word-counter.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/json-formatter.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/base64-tool.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/user-agent-generator.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/color-palette-generator.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/unit-converter.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/categories/developer-tools.html</loc></url>
   <url><loc>https://anviltools.vercel.app/categories/email-tools.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/categories/generators.html</loc></url>
   <url><loc>https://anviltools.vercel.app/categories/image-tools.html</loc></url>
   <url><loc>https://anviltools.vercel.app/categories/pdf-tools.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/categories/developer-tools.html</loc></url>
   <url><loc>https://anviltools.vercel.app/categories/text-tools.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/categories/generators.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/url-encoder-decoder.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/jwt-decoder.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/unix-timestamp-converter.html</loc></url>
-  <url><loc>https://anviltools.vercel.app/tools/hash-generator.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/contact.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/cookie-policy.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/disclaimer.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/privacy-policy.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/terms-of-service.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/background-remover.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/base64-tool.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/color-palette-generator.html</loc></url>
   <url><loc>https://anviltools.vercel.app/tools/csv-to-json.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/hash-generator.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/image-to-pdf.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/index.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/json-formatter.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/jwt-decoder.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/password-generator.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/pdf-merge.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/qr-code-generator.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/temp-mail.html</loc></url>
   <url><loc>https://anviltools.vercel.app/tools/text-case-converter.html</loc></url>
   <url><loc>https://anviltools.vercel.app/tools/text-diff-checker.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/unit-converter.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/unix-timestamp-converter.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/url-encoder-decoder.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/user-agent-generator.html</loc></url>
   <url><loc>https://anviltools.vercel.app/tools/uuid-generator.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/tools/word-counter.html</loc></url>
 </urlset>

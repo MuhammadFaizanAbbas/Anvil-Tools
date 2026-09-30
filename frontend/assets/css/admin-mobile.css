@@ -39,3 +39,7 @@
   .admin-dashboard .team-pager > span { flex:1 1 100%; order:-1; text-align:center; }
   .admin-dashboard .contact-message { padding:14px; }
 }
+
+.editorial-help { margin:20px 0; padding:18px; border:1px solid #dfe5ef; border-radius:12px; background:#fff; line-height:1.8; }
+.editorial-help summary { cursor:pointer; min-height:44px; font-weight:600; }
+.editorial-help li { margin:8px 0; }

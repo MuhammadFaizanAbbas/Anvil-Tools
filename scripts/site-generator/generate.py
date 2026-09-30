@@ -188,14 +188,14 @@ def build_static_pages():
 
     privacy_body = f'''
 {breadcrumbs(depth, [("Home","index.html"), ("Privacy policy", None)])}
-<section class="hero"><h1>Privacy policy</h1><p class="lede">Last updated: replace this date when you publish the site.</p></section>
+<section class="hero"><h1>Privacy policy</h1><p class="lede">Last updated: September 30, 2026.</p></section>
 <section class="legal-content">
 <h2>What this site is</h2>
 <p>{SITE_NAME} ("we", "us") provides free browser-based tools at {SITE_URL}. This policy explains what information is collected when you use the site and the tools on it.</p>
 
 <h2>Information processed by the tools themselves</h2>
 <p>Most tools on this site (background remover, PDF merge, image to PDF, QR code generator, password generator, word counter, JSON formatter, Base64 tool, user agent generator, color palette generator, and unit converter) run entirely in your browser. Files and text you enter into these tools are processed on your own device and are not uploaded to our servers.</p>
-<p>The temporary email tool works differently: it creates a real, active email inbox using a third-party email service (mail.tm) so that it can actually receive mail. Messages sent to that inbox pass through that service's infrastructure. Do not send anything sensitive to a temporary inbox, and review that provider's own terms if you want details of how they handle message data.</p>
+<p>The temporary email tool works differently: it creates a real, active email inbox using a third-party email service (Guerrilla Mail) so that it can actually receive mail. Messages sent to that inbox pass through that service's infrastructure. Do not send anything sensitive to a temporary inbox, and review that provider's own terms if you want details of how they handle message data.</p>
 
 <h2>Information collected automatically</h2>
 <p>Like most websites, our server and any analytics or advertising scripts we use may automatically log standard technical information such as your IP address, browser type, device type, referring page, and timestamps, for security, abuse prevention, and understanding how the site is used in aggregate.</p>
@@ -221,7 +221,7 @@ def build_static_pages():
 
     terms_body = f'''
 {breadcrumbs(depth, [("Home","index.html"), ("Terms of service", None)])}
-<section class="hero"><h1>Terms of service</h1><p class="lede">Last updated: replace this date when you publish the site.</p></section>
+<section class="hero"><h1>Terms of service</h1><p class="lede">Last updated: September 30, 2026.</p></section>
 <section class="legal-content">
 <h2>Using this site</h2>
 <p>By using {SITE_NAME}, you agree to these terms. If you don't agree, please don't use the site.</p>
@@ -252,7 +252,7 @@ def build_static_pages():
 
     cookie_body = f'''
 {breadcrumbs(depth, [("Home","index.html"), ("Cookie policy", None)])}
-<section class="hero"><h1>Cookie policy</h1><p class="lede">Last updated: replace this date when you publish the site.</p></section>
+<section class="hero"><h1>Cookie policy</h1><p class="lede">Last updated: September 30, 2026.</p></section>
 <section class="legal-content">
 <h2>What cookies we use</h2>
 <p>We use a small number of cookies and browser storage entries for essential site functionality, such as remembering that you've dismissed the cookie notice. Once advertising is enabled, Google AdSense and its partners may also set cookies or use device identifiers to serve and measure ads, including personalized ads based on your visits to this and other sites, unless you opt out where required.</p>
@@ -302,16 +302,22 @@ def build_seo_files():
 </urlset>
 '''
     write("sitemap.xml", sitemap)
+    write("sitemap-index.xml", f'''<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap><loc>{SITE_URL}/sitemap.xml</loc></sitemap>
+  <sitemap><loc>{SITE_URL}/journal-sitemap.xml</loc></sitemap>
+</sitemapindex>
+''')
 
     robots = f'''User-agent: *
 Allow: /
+Disallow: /admin-panel/
 
-Sitemap: {SITE_URL}/sitemap.xml
+Sitemap: {SITE_URL}/sitemap-index.xml
 '''
     write("robots.txt", robots)
 
-    ads_txt = "google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0\n"
-    write("ads.txt", "# Replace pub-0000000000000000 with your real AdSense publisher ID after approval.\n" + ads_txt)
+    write("ads.txt", "# Advertising is disabled. Add only your verified seller line before serving ads.\n")
 
 if __name__ == "__main__":
     build_home()

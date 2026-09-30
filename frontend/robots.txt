@@ -2,6 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin-panel/
 
-Sitemap: https://anviltools.vercel.app/sitemap.xml
-
-Sitemap: https://anviltools.vercel.app/journal-sitemap.xml
+Sitemap: https://anviltools.vercel.app/sitemap-index.xml

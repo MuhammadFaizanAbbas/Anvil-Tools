@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   dropzone.addEventListener('click', () => input.click());
+  dropzone.addEventListener('keydown', event => {
+    if (event.target === dropzone && ['Enter',' '].includes(event.key)) { event.preventDefault(); input.click(); }
+  });
   ['dragenter', 'dragover'].forEach((eventName) => {
     dropzone.addEventListener(eventName, (event) => {
       event.preventDefault();

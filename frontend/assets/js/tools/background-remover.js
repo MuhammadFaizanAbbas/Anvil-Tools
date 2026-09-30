@@ -109,6 +109,11 @@ document.addEventListener('DOMContentLoaded', () => {
   input.addEventListener('click', () => { input.value = ''; });
   input.addEventListener('change', event => handleFile(event.target.files[0]));
   dropzone.addEventListener('click', () => { if (!processing) input.click(); });
+  dropzone.addEventListener('keydown', event => {
+    if (event.target === dropzone && (event.key === 'Enter' || event.key === ' ')) {
+      event.preventDefault(); if (!processing) input.click();
+    }
+  });
   ['dragenter', 'dragover'].forEach(eventName => {
     dropzone.addEventListener(eventName, event => {
       event.preventDefault();

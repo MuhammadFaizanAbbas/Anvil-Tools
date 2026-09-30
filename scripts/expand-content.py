@@ -43,6 +43,7 @@ def p(value):
 
 def update(path, content):
  html = path.read_text(encoding='utf-8')
+ html = html.replace('<!-- reading-surface --><div class="content-guide">','').replace('</div><!-- /reading-surface -->','')
  html = re.sub(r'<!-- expanded-content -->.*?<!-- /expanded-content -->', '', html, flags=re.S)
  html = html.replace('</main>', '<!-- expanded-content -->'+content+'<!-- /expanded-content --></main>')
  path.write_text(html, encoding='utf-8')
@@ -114,3 +115,5 @@ for t in catalog:
 (ROOT/'supabase/migrations/007_complete_tool_catalog.sql').write_text(sql,encoding='utf-8')
 (ROOT/'supabase/production-updates/20260930_complete_tool_catalog.sql').write_text(sql,encoding='utf-8')
 print('Expanded',len(catalog),'tools and public content; regenerated catalog and safe seed SQL.')
+import runpy
+runpy.run_path(str(ROOT/'scripts/refine-public-content.py'))

@@ -14,6 +14,8 @@
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
 <link rel="stylesheet" href="../assets/css/design.css">
 <link rel="stylesheet" href="../assets/css/tool-ux.css">
+<link rel="stylesheet" href="../assets/css/content.css">
+<meta property="og:type" content="website"><meta property="og:title" content="PDF Merge | Anvil Tools"><meta property="og:description" content="Combine multiple PDF files into a single document in the order you choose."><meta property="og:url" content="https://anviltools.vercel.app/tools/pdf-merge.html"><meta name="twitter:card" content="summary">
 </head>
 <body class="public-site">
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -39,22 +41,22 @@
 <div class="tool-app">
   
       <h2>Combine PDF files</h2>
-      <div class="dropzone" id="pm-dropzone">
+      <div class="dropzone" id="pm-dropzone" role="button" tabindex="0" aria-label="Choose PDF files to merge">
         <strong>Click to choose PDF files</strong> or drag and drop them here<br>
         <span class="small-note">Add two or more files, in any order</span>
       </div>
-      <input type="file" id="pm-file-input" accept="application/pdf" multiple style="display:none;">
+      <label class="field-label" for="pm-file-input">Choose PDF files</label><input type="file" id="pm-file-input" accept="application/pdf" multiple style="display:none;">
       <ul class="file-list" id="pm-file-list"></ul>
       <div class="btn-row">
         <button class="btn amber" id="pm-merge" disabled>Merge and download</button>
       </div>
-      <p class="status-msg" id="pm-status"></p>
+      <p class="status-msg" id="pm-status" role="status" aria-live="polite" aria-atomic="true"></p>
     
 </div>
 
-<div class="ad-slot"><span class="ad-label">Advertisement</span>Ad space — activate after AdSense approval</div>
 
-<section class="info-section">
+
+<!-- reading-surface --><div class="content-guide"><section class="info-section">
   <h2>How it works</h2>
   <ul><li>Choose or drag in the PDF files you want to combine.</li>
 <li>Reorder or remove files from the list before merging, if needed.</li>
@@ -68,14 +70,14 @@
   <div class="callout">Your privacy matters here: check the FAQ below for exactly what happens to anything you enter into this tool.</div>
 
   <h2>Frequently asked questions</h2>
-  <div class="faq-item"><h3>Is there a limit to how many files I can merge?</h3><p>There's no fixed limit, but very large combined files take longer to process since everything happens on your own device.</p></div>
-<div class="faq-item"><h3>Can I merge password-protected PDFs?</h3><p>No. Remove the password from a PDF first using your PDF reader, then merge it here.</p></div>
-<div class="faq-item"><h3>Does merging reduce file quality?</h3><p>No. Pages are copied as-is, so the content and quality of each original file is preserved.</p></div>
+  <details class="faq-item"><summary>Is there a limit to how many files I can merge?</summary><p>There's no fixed limit, but very large combined files take longer to process since everything happens on your own device.</p></details>
+<details class="faq-item"><summary>Can I merge password-protected PDFs?</summary><p>No. Remove the password from a PDF first using your PDF reader, then merge it here.</p></details>
+<details class="faq-item"><summary>Does merging reduce file quality?</summary><p>No. Pages are copied as-is, so the content and quality of each original file is preserved.</p></details>
 </section>
 
 
 
-<section class="info-section"><h2>Check page order</h2><p>Add two unencrypted PDF documents, inspect their order in the list, and remove any unwanted file before merging. Open the downloaded PDF to confirm every page is present. Corrupt or password-protected PDFs may not be supported.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Combine a cover letter and supporting documents into one PDF. Arrange the files in the order the recipient should read them.</li><li>Open the downloaded document and check the page order, rotation, and total page count.</li><li>Copy or download the result using the controls above. Keep your original input until you have checked the output in its destination.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>Encrypted, damaged, or unusually large files may fail. Try a smaller batch and retain the original documents.</p><p>Start with a small example to confirm the settings, then repeat with your full input. If you change an option, run the tool again and review the new output before replacing an earlier result.</p></section><section class="info-section"><h2>More questions about PDF Merge</h2><details class="faq-item"><summary>What should I check before using the result?</summary><p>Open the downloaded document and check the page order, rotation, and total page count.</p></details><details class="faq-item"><summary>What are the main limitations?</summary><p>Encrypted, damaged, or unusually large files may fail. Try a smaller batch and retain the original documents.</p></details><details class="faq-item"><summary>What if the tool does not respond?</summary><p>Read the status message near the controls. Check your input and try a smaller example. If you need to reload, save your source first because unsaved inputs may be lost. Contact us with the tool name, browser, and steps to reproduce the issue; use sample data instead of private content.</p></details></section><section class="info-section"><h2>What to use next</h2><p>Continue your task with these suggested tools. Suggestions follow the workflow and tool category; your input is not transferred between tools.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">PDF tools</span><h3>Image to PDF Converter</h3><p>Turn one or more JPG or PNG images into a single downloadable PDF.</p><a class="tool-link" href="../tools/image-to-pdf.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>QR Code Generator</h3><p>Turn any link or short message into a scannable QR code you can download as an image.</p><a class="tool-link" href="../tools/qr-code-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Text tools</span><h3>Word &amp; Character Counter</h3><p>Count words, characters, sentences, and estimated reading time as you type.</p><a class="tool-link" href="../tools/word-counter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Image tools</span><h3>Background Remover</h3><p>Remove the background from a photo automatically, processed locally in your browser.</p><a class="tool-link" href="../tools/background-remover.html">Open tool &#8594;</a></article></div></section><!-- /expanded-content --></main>
+<section class="info-section"><h2>Check page order</h2><p>Add two unencrypted PDF documents, inspect their order in the list, and remove any unwanted file before merging. Open the downloaded PDF to confirm every page is present. Corrupt or password-protected PDFs may not be supported.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Combine a cover letter and supporting documents into one PDF. Arrange the files in the order the recipient should read them.</li><li>Open the downloaded document and check the page order, rotation, and total page count.</li><li>Copy or download the result using the controls above. Keep your original input until you have checked the output in its destination.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>Encrypted, damaged, or unusually large files may fail. Try a smaller batch and retain the original documents.</p><p>Start with a small example to confirm the settings, then repeat with your full input. If you change an option, run the tool again and review the new output before replacing an earlier result.</p></section><section class="info-section"><h2>More questions about PDF Merge</h2><details class="faq-item"><summary>What should I check before using the result?</summary><p>Open the downloaded document and check the page order, rotation, and total page count.</p></details><details class="faq-item"><summary>What are the main limitations?</summary><p>Encrypted, damaged, or unusually large files may fail. Try a smaller batch and retain the original documents.</p></details><details class="faq-item"><summary>What if the tool does not respond?</summary><p>Read the status message near the controls. Check your input and try a smaller example. If you need to reload, save your source first because unsaved inputs may be lost. Contact us with the tool name, browser, and steps to reproduce the issue; use sample data instead of private content.</p></details></section><section class="info-section"><h2>What to use next</h2><p>Continue your task with these suggested tools. Suggestions follow the workflow and tool category; your input is not transferred between tools.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">PDF tools</span><h3>Image to PDF Converter</h3><p>Turn one or more JPG or PNG images into a single downloadable PDF.</p><a class="tool-link" href="../tools/image-to-pdf.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>QR Code Generator</h3><p>Turn any link or short message into a scannable QR code you can download as an image.</p><a class="tool-link" href="../tools/qr-code-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Text tools</span><h3>Word &amp; Character Counter</h3><p>Count words, characters, sentences, and estimated reading time as you type.</p><a class="tool-link" href="../tools/word-counter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Image tools</span><h3>Background Remover</h3><p>Remove the background from a photo automatically, processed locally in your browser.</p><a class="tool-link" href="../tools/background-remover.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Working with your results</h2><details class="faq-item"><summary>Will merging make scanned pages searchable?</summary><p>No. Merging copies pages into a combined document; it does not run optical character recognition. An image-only scan remains image-only.</p></details><details class="faq-item"><summary>How do I check the final document?</summary><p>Open the downloaded PDF, check its page count and order, and inspect important pages. Forms, signatures, bookmarks, and other document features may not survive a merge as you expect.</p></details></section></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">

@@ -37,7 +37,7 @@ add_tool(
     tool_js="temp-mail.js",
     intro="Use this when a site demands an email address before you can even look around, or when you're testing a signup flow and don't want ten confirmation emails cluttering your real inbox. The address below is live: anything sent to it shows up here automatically, and it disappears once you close the tab or generate a new one.",
     how_it_works=[
-        "A random inbox address is created for you the moment the page loads, using the mail.tm public email service.",
+        "A random inbox address is created for you the moment the page loads, using the Guerrilla Mail service through our backend.",
         "The page checks for new mail every few seconds and lists messages as they arrive.",
         "Click any message in the list to read its contents right here, with scripts and tracking elements stripped out for safety.",
         "Generating a new address abandons the old inbox permanently — there is no way to recover it later, so don't use this for anything you need long-term access to."
