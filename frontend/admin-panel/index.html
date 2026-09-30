@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anvil Tools Admin</title>
   <link rel="stylesheet" href="../assets/css/admin.css">
+  <link rel="stylesheet" href="../assets/css/admin-mobile.css">
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="admin-dashboard"><a class="skip-link" href="#main-content">Skip to dashboard</a>
   <header class="topbar">
     <a class="brand" href="../index.html"><img src="../assets/images/anvil-mark.svg" width="34" height="34" alt=""> Anvil Tools <span class="workspace-label">WORKSPACE</span></a>
-    <a class="site-link" href="../index.html">View website ?</a>
+    <a class="site-link" href="../index.html">View website &#8599;</a>
+    <button class="admin-menu-toggle" id="adminMenuToggle" type="button" aria-expanded="false" aria-controls="adminSidebar" hidden><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>Menu</span></button>
   </header>
 
   <div class="layout">
-    <aside class="sidebar" aria-label="Dashboard navigation">
+    <aside class="sidebar" id="adminSidebar" aria-label="Dashboard navigation">
           <div class="sidebar-profile">
       <span id="currentRole" class="role-badge">Workspace</span><span id="userEmail" class="muted">Admin</span>
       <span id="sessionTimer" class="session-timer" title="Time until your verified sign-in expires">Session —</span>
@@ -26,7 +28,7 @@
       <a class="nav-item" href="#analytics"><span aria-hidden="true">&#9636;</span> Analytics</a>
     <a class="nav-item" href="#contacts"><span aria-hidden="true">&#9993;</span> Contact inbox</a><a class="nav-item" href="#users"><span aria-hidden="true">&#9786;</span> Team &amp; access</a><a class="nav-item" href="#categories"><span aria-hidden="true">&#9639;</span> Categories</a><a class="nav-item" href="#audit"><span aria-hidden="true">&#9776;</span> Audit log</a><a class="nav-item" href="#settings"><span aria-hidden="true">&#9881;</span> Settings</a><div class="sidebar-note"><span class="status-dot"></span> Anvil control center<p>Developed by VelloxTech</p></div></aside>
 
-    <main class="content studio-workspace" id="main-content">
+    <main class="content studio-workspace" id="main-content" tabindex="-1">
       <div id="sessionWarning" class="session-warning" role="status" hidden></div>
       <div id="dashboardMessage" class="dashboard-message" role="status" hidden></div>
       <section id="overview">
@@ -41,6 +43,8 @@
       </section>
       <section id="tools" hidden class="panel" style="margin-top: 20px;">
         <div class="panel-heading"><div><p class="eyebrow">TOOL LIBRARY</p><h2>Manage your tools</h2></div><label class="search-label">Search tools<input id="toolSearch" type="search" placeholder="Name or category"></label></div>
+        <p id="toolCatalogStatus" class="muted small" role="status"></p>
+        <p class="muted small">Tools on the public site are listed alongside their database registration. Editing a catalog name updates the database; public page copy is maintained in the site files.</p>
         <div id="toolsTable"><p class="empty-state">Your tool catalog will appear here.</p></div>
       </section>
 
@@ -74,9 +78,11 @@
     </main>
   </div>
 
+  <script src="../assets/js/admin-navigation.js"></script>
   <script src="../assets/js/config.js"></script>
   <script src="../assets/js/api.js"></script>
   <script src="../assets/js/admin-session.js"></script>
+  <script src="../assets/js/site-catalog.js"></script>
   <script src="../assets/js/admin.js"></script>
 <script src="../assets/js/admin-contacts.js"></script>
 <script src="../assets/js/admin-workspace.js"></script>

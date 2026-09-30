@@ -21,6 +21,19 @@ test('dashboard charts show real totals and escape tool/category names', () => {
   assert.match(app.node('categoryChart').innerHTML, /2 tools across 2 categories/);
   assert.ok(!app.node('analyticsChart').innerHTML.includes('NaN'));
 });
+
+test('site tools are visible without inventing saved status and database edits win', () => {
+  const app = setup();
+  app.run(`window.AnvilToolCatalog=[{slug:'one',name:'Site name'},{slug:'two',name:'Second'}]`);
+  const items = app.run(`mergeToolCatalog([{slug:'one',name:'Edited name',status:'inactive',views:42}])`);
+  assert.equal(items.length, 2);
+  assert.equal(items[0].name, 'Edited name');
+  assert.equal(items[0].status, 'inactive');
+  assert.equal(items[0].views, 42);
+  assert.equal(items[1].status, 'not registered');
+  assert.equal(items[1].views, undefined);
+  assert.equal(app.run('mergeToolCatalog([],false)[0].status'), 'connection unavailable');
+});
 test('dashboard has honest empty charts and KPI counts', () => {
   const app = setup();
   app.run('renderAnalytics([])');

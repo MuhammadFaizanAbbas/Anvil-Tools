@@ -1,0 +1,132 @@
+"""Maintain expanded copy and static recommendations without replacing page widgets.
+Run after any legacy site generation: py -3.9 scripts/expand-content.py.
+"""
+from pathlib import Path
+import re
+import json
+from html import escape, unescape
+
+ROOT = Path(__file__).resolve().parents[1]
+SITE = ROOT / 'frontend'
+# Example, result check, troubleshooting, next useful tools.
+GUIDES = {
+ 'temp-mail': ('Test a newsletter signup using a disposable address, then return to this tab to read the confirmation.', 'Confirm the address was copied completely and wait for delivery before requesting another message.', 'Some senders block disposable domains. Use a permanent address for accounts you need to recover later; a temporary inbox is not a private archive.', ['password-generator','qr-code-generator','word-counter']),
+ 'background-remover': ('Choose a product photograph with a clear subject, remove its background, then download the transparent result.', 'Inspect fine edges, hair, and transparent objects against both light and dark backgrounds before publishing.', 'The first run downloads model assets and can take longer. A smaller source image can help on devices with limited memory.', ['image-to-pdf','color-palette-generator','qr-code-generator']),
+ 'pdf-merge': ('Combine a cover letter and supporting documents into one PDF. Arrange the files in the order the recipient should read them.', 'Open the downloaded document and check the page order, rotation, and total page count.', 'Encrypted, damaged, or unusually large files may fail. Try a smaller batch and retain the original documents.', ['image-to-pdf','qr-code-generator','word-counter']),
+ 'image-to-pdf': ('Select photographs of a multi-page document in reading order and convert them into a single PDF.', 'Check that every page is upright and that small text remains readable at normal zoom.', 'This creates image-based pages, not searchable OCR text. Crop and rotate your source images first for a cleaner document.', ['pdf-merge','background-remover','qr-code-generator']),
+ 'qr-code-generator': ('Enter a complete website address, generate a code, and download it for a flyer or document.', 'Scan the downloaded code with a phone before printing. Confirm it opens the exact destination you intended.', 'Keep a clear margin and strong contrast around the code. Long input makes a denser code that may need a larger printed size.', ['url-encoder-decoder','color-palette-generator','image-to-pdf']),
+ 'password-generator': ('Choose a length and character types that meet the destination website requirements, then generate a fresh password.', 'Check the website accepts the selected symbols and save the password in your password manager before leaving.', 'Generate a different password for each account. Random output is not a substitute for multi-factor authentication or secure storage.', ['uuid-generator','temp-mail','hash-generator']),
+ 'word-counter': ('Paste a draft of an article or essay, then watch its word and character totals as you shorten the text.', 'Compare the final count with the submission platform, especially when punctuation or languages without spaces are involved.', 'Reading time is an estimate. A technical article usually takes longer to understand than a simple passage of the same length.', ['text-case-converter','text-diff-checker','csv-to-json']),
+ 'json-formatter': ('Paste {"name":"Anvil","active":true}, then format it to make its structure easier to inspect.', 'Check nesting, property names, and data types before copying the result into a configuration file.', 'JSON requires quoted property names and does not allow trailing commas or comments. Formatting cannot determine whether values are correct for your application.', ['csv-to-json','jwt-decoder','text-diff-checker']),
+ 'base64-tool': ('Encode a short test string such as Hello, then decode the output to check that it returns the original text.', 'Preserve padding and character case when copying encoded data between systems.', 'Base64 is an encoding, not encryption. Anyone who receives the encoded value can decode it; do not use it to hide credentials.', ['url-encoder-decoder','jwt-decoder','hash-generator']),
+ 'user-agent-generator': ('Choose a browser sample and copy its user-agent string into a test fixture for your application.', 'Test both recognized and unexpected strings so your application has a useful fallback.', 'These are sample strings, not a live browser-version directory. Changing a string does not reproduce a browser engine or device.', ['json-formatter','uuid-generator','url-encoder-decoder']),
+ 'color-palette-generator': ('Generate a palette for a presentation, keep colors you like, and explore alternatives for the remaining swatches.', 'Try the colors on actual headings, backgrounds, and buttons before committing to the palette.', 'A visually pleasing palette does not guarantee readable contrast. Check your chosen foreground and background pairs separately.', ['background-remover','qr-code-generator','image-to-pdf']),
+ 'unit-converter': ('Choose length and convert 1 kilometer to meters; the expected result is 1000 meters.', 'Check the conversion category and both unit labels before using the number in another document.', 'Temperature uses an offset as well as a scale. Display rounding can make a round-trip conversion differ slightly from the original value.', ['unix-timestamp-converter','word-counter','json-formatter']),
+ 'url-encoder-decoder': ('Encode a query value such as red shoes before placing it inside a URL parameter.', 'Choose component mode for a single value and full-URL mode when separators such as slashes must be preserved.', 'Encoding an already encoded value can turn a percent sign into %25. Decode once, inspect the result, and avoid repeatedly applying transformations.', ['qr-code-generator','base64-tool','json-formatter']),
+ 'jwt-decoder': ('Paste a test JWT to inspect its header and payload, then compare the claims with the values your application expects.', 'Read issuer, audience, and expiry together. A readable payload alone does not prove that the token is authentic.', 'The tool does not verify signatures. Use your authentication library on the server to verify a token before trusting its claims.', ['unix-timestamp-converter','json-formatter','base64-tool']),
+ 'unix-timestamp-converter': ('Convert Unix timestamp 0 to inspect the epoch, then compare a current timestamp in seconds and milliseconds.', 'Look at the UTC result as well as your local time; they represent the same instant with different timezone displays.', 'A seconds-versus-milliseconds mismatch produces a very different date. Check the unit used by the source API before converting.', ['jwt-decoder','json-formatter','unit-converter']),
+ 'hash-generator': ('Enter a short text sample, choose SHA-256, and generate its digest. Change one character and compare the new result.', 'Use the same algorithm and exact input bytes when comparing two digests. Spaces and line endings are part of the input.', 'This hashes UTF-8 text. It is not a password-storage system, and a digest cannot be decoded back into its original text.', ['text-diff-checker','base64-tool','uuid-generator']),
+ 'csv-to-json': ('Paste name,city followed by a new line containing Anvil,Lahore. Enable the header option to use the first row as property names.', 'Inspect the generated objects and make sure every row has the same number of columns before using the JSON.', 'Quote fields containing commas and double any quote inside a quoted field. Fix inconsistent rows in the source instead of silently discarding data.', ['json-formatter','text-diff-checker','text-case-converter']),
+ 'text-case-converter': ('Paste a heading or identifier, select a case style, and inspect the converted result before copying it.', 'Check brand names, acronyms, and words with special capitalization manually after conversion.', 'Automatic case conversion does not understand every editorial convention. Keep a copy of the original when changing a large passage.', ['word-counter','text-diff-checker','csv-to-json']),
+ 'text-diff-checker': ('Place the original text on the left and an edited version on the right, then compare the two versions.', 'Read added and removed lines together. Moving a line may appear as a removal and addition rather than a separate move.', 'The comparison works line by line. Very large inputs can exceed the comparison limit; compare smaller sections when that happens.', ['word-counter','text-case-converter','json-formatter']),
+ 'uuid-generator': ('Generate a batch of UUIDs for test records, then copy the values into your development dataset.', 'Preserve the full identifier, including all hexadecimal groups, when moving it between systems.', 'Random UUIDs have an extremely low collision probability, but a database should still enforce uniqueness. Identifiers are not passwords or access controls.', ['json-formatter','csv-to-json','password-generator']),
+}
+
+def text(html):
+ return unescape(re.sub('<[^>]+>', '', html)).strip()
+
+def section(title, body):
+ return '<section class="info-section"><h2>'+escape(title)+'</h2>'+body+'</section>'
+
+def p(value):
+ return '<p>'+escape(value)+'</p>'
+
+def update(path, content):
+ html = path.read_text(encoding='utf-8')
+ html = re.sub(r'<!-- expanded-content -->.*?<!-- /expanded-content -->', '', html, flags=re.S)
+ html = html.replace('</main>', '<!-- expanded-content -->'+content+'<!-- /expanded-content --></main>')
+ path.write_text(html, encoding='utf-8')
+
+catalog = []
+for path in sorted((SITE/'tools').glob('*.html')):
+ if path.stem == 'index': continue
+ html = path.read_text(encoding='utf-8')
+ name = text(re.search(r'<h1[^>]*>(.*?)</h1>', html, re.S)[1])
+ category = text(re.search(r'<span class="eyebrow">(.*?)</span>', html, re.S)[1])
+ desc = unescape(re.search(r'<meta name="description" content="([^"]*)"', html)[1])
+ catalog.append(dict(slug=path.stem, name=name, category=category, description=desc))
+by_slug = {item['slug']: item for item in catalog}
+
+def cards(items, prefix='../'):
+ return '<div class="tool-grid">'+''.join('<article class="tool-card"><span class="category-tag">'+escape(t['category'])+'</span><h3>'+escape(t['name'])+'</h3>'+p(t['description'])+'<a class="tool-link" href="'+prefix+'tools/'+t['slug']+'.html">Open tool &#8594;</a></article>' for t in items)+'</div>'
+
+for t in catalog:
+ path = SITE/'tools'/ (t['slug']+'.html')
+ example, check, trouble, preferred = GUIDES[t['slug']]
+ ranked = list(dict.fromkeys(preferred + [x['slug'] for x in catalog if x['category']==t['category']] + list(by_slug)))
+ related = [by_slug[s] for s in ranked if s != t['slug']][:4]
+ html = path.read_text(encoding='utf-8')
+ html = re.sub(r'<section>\s*<h2>Related tools</h2>.*?</section>', '', html, flags=re.S)
+ path.write_text(html, encoding='utf-8')
+ body = section('A practical walkthrough', '<ol><li>'+escape(example)+'</li><li>'+escape(check)+'</li><li>Copy or download the result using the controls above. Keep your original input until you have checked the output in its destination.</li></ol>')
+ body += section('Tips for a reliable result', p(trouble)+p('Start with a small example to confirm the settings, then repeat with your full input. If you change an option, run the tool again and review the new output before replacing an earlier result.'))
+ questions = [('What should I check before using the result?',check),('What are the main limitations?',trouble),('What if the tool does not respond?','Read the status message near the controls. Check your input and try a smaller example. If you need to reload, save your source first because unsaved inputs may be lost. Contact us with the tool name, browser, and steps to reproduce the issue; use sample data instead of private content.')]
+ body += section('More questions about '+t['name'], ''.join('<details class="faq-item"><summary>'+escape(q)+'</summary>'+p(a)+'</details>' for q,a in questions))
+ body += section('What to use next', p('Continue your task with these suggested tools. Suggestions follow the workflow and tool category; your input is not transferred between tools.')+cards(related))
+ update(path, body)
+
+home = section('Build a workflow in a few minutes', '<div class="tool-grid"><article class="tool-card"><h3>Prepare documents</h3><p>Turn scans into a PDF, combine it with other documents, and check the final page order before sharing.</p><a href="tools/image-to-pdf.html">Start with Image to PDF</a></article><article class="tool-card"><h3>Clean up data</h3><p>Convert spreadsheet exports to JSON, format the result, and compare revisions before adding them to your project.</p><a href="tools/csv-to-json.html">Start with CSV to JSON</a></article><article class="tool-card"><h3>Polish your writing</h3><p>Check the length of a draft, adjust its capitalization, and compare the final version with your original.</p><a href="tools/word-counter.html">Start with Word Counter</a></article></div>')
+home += section('Choose the right starting point', p('Students can organize assignment documents and check essay length. Writers can compare drafts and prepare headings. Developers can inspect data formats and generate test identifiers. Small teams can prepare product images, choose colors, and create QR codes for printed material.')+p('Each tool includes instructions, practical examples, limitations, and suggestions for the next step. Keep a copy of your source, try a short example first, and check downloaded files before sending them to someone else.'))
+home += section('Questions before you begin', '<details class="faq-item"><summary>Do I need an account or an installation?</summary><p>The public tools open in your browser without a public user account. The separate admin workspace is for managing site content.</p></details><details class="faq-item"><summary>Does everything work offline?</summary><p>No. Pages and supporting libraries need to load first, and temporary email needs an external service. The background remover also downloads model assets. Local processing does not mean every tool is available offline.</p></details><details class="faq-item"><summary>Where do my files go?</summary><p>Browser tools process their inputs on your device. Temporary email and support messages use external services. Read the tool explanation and privacy policy for those differences.</p></details>')
+update(SITE/'index.html', home)
+update(SITE/'tools/index.html', home.replace('href="tools/', 'href="../tools/'))
+
+update(SITE/'about.html', section('Why Anvil Tools exists', p('Anvil Tools brings recurring small tasks into one place: checking text, converting data, preparing documents, and creating useful outputs. A task that only takes a few minutes should be easy to start, with clear controls and enough guidance to understand the result.')+p('The site is developed by VelloxTech. Our focus is on practical browser utilities with visible inputs and outputs, so you can inspect what happened and decide whether the result fits your work.'))+section('Made for everyday work', p('Use the text tools while writing and editing, the PDF tools while preparing a submission, and the developer tools while debugging sample data. Image and generator tools help with quick visual tasks, test identifiers, and shareable links.')+p('The tools are useful building blocks. They do not replace a full document editor, professional photo retouching, or application-level validation. The guidance on each page explains where the tool helps and where you should review the result yourself.'))+section('How we explain our tools', p('Tool pages include a walkthrough, common use cases, questions, and relevant next steps. We describe local processing separately from services that require a network request, and call out distinctions such as encoding versus encryption and decoding versus signature verification.'))+section('Help us improve the toolkit', '<p>Use the <a href="contact.html">contact form</a> to report a problem or suggest a tool. Include the page, expected result, browser, and a small non-sensitive example. Clear reproduction steps help us understand the issue without asking for your private documents.</p>'))
+
+privacy = SITE/'privacy-policy.html'
+html = privacy.read_text(encoding='utf-8').replace('Last updated: replace this date when you publish the site.', 'Last updated: September 30, 2026.')
+privacy.write_text(html, encoding='utf-8')
+update(privacy, section('Local processing and network requests', p('Processing input locally means the tool operates on the text or file in your browser. The browser still requests page assets, fonts, libraries, and, for background removal, model files. Those requests expose ordinary connection information to the servers delivering them. Local processing should not be interpreted as a promise that visiting a page makes no network requests.'))+section('Optional usage measurement', p('Automatic browser analytics and advertising are currently disabled. The backend supports tool-view events that identify a tool without including its input text or files. Saving an analytics preference does not itself enable tracking in this version. The API uses a hashed client-address identifier to limit repeated requests. Preference storage lets the site remember your choice on subsequent visits.'))+section('Managing browser data', p('Use Privacy settings in the footer to review optional preferences. Clearing site data removes locally saved preferences and may end access to a workspace session. Closing a page or clearing browser data does not delete messages held by an email provider, support records in the database, or copies already delivered to a mailbox.'))+section('Support records and deletion requests', p('Support conversations can include the information you submit, administrator replies, delivery status, and operational records. Avoid attaching passwords, live access tokens, or private documents to a support request. If a small example is needed, replace personal information with sample values.')+p('Contact info@velloxtech.com to ask about your support records or request deletion. Include enough information to locate the conversation. Verification may be needed before sharing or removing records. Provider-held messages and mailbox copies are separate from the site database; this policy does not promise a fixed deletion schedule for every service.'))+section('Questions about this policy', '<details class="faq-item"><summary>Does rejecting optional analytics disable the tools?</summary><p>Optional analytics preferences are separate from the tool functions and necessary workspace sessions.</p></details><details class="faq-item"><summary>Does the site keep a history of my converted files?</summary><p>The browser tools do not provide a server-side file history. Save outputs you need before closing the page. Temporary email and support conversations follow the separate processing described above.</p></details>'))
+
+for path in (SITE/'categories').glob('*.html'):
+ html = path.read_text(encoding='utf-8')
+ title = text(re.search(r'<h1[^>]*>(.*?)</h1>', html,re.S)[1])
+ tools = [t for t in catalog if t['category'].lower()==title.lower()]
+ update(path, section('Choosing between '+title.lower(), ''.join('<h3>'+escape(t['name'])+'</h3>'+p(t['description']+' '+GUIDES[t['slug']][1]) for t in tools))+section('Before you start', p('Open a tool to find its instructions, example workflow, and FAQs. Test a small input first, check the result, and follow the suggested next tools when your task needs another step. Save any output you need before closing the tab.')))
+
+extra_pages = {
+ 'contact.html': [('Reporting a tool problem', 'Include the tool name, what you entered, what you expected, and what happened. Tell us your browser and whether the problem occurs with a small example. Replace personal information with sample text; do not send passwords or live access tokens.'), ('Suggesting a new tool', 'Describe the task you are trying to complete and the input and output formats you need. Explain how often you do it and which part is difficult today. A concrete example helps us understand the request.'), ('Following up', 'Use the same email address and subject when following up on a conversation. Check the form status after submitting, and avoid repeated submissions while a request is processing. See the privacy policy for how support messages are handled.')],
+ 'cookie-policy.html': [('Browser storage in practice', 'The site saves privacy choices in local browser storage. The admin workspace uses tab session storage for its access token. These serve different purposes: clearing preferences makes the consent controls appear again, while clearing session storage may require signing in again.'), ('Current advertising and analytics state', 'Advertising and automatic browser analytics are disabled in this version. Saving an optional preference does not load advertising by itself. Necessary functions, such as workspace authentication, are separate from optional choices.'), ('Changing your choices', 'Open Privacy settings in the footer to review the available preferences. You can also remove site data through your browser settings. Settings apply to that browser profile; another device or browser may have different saved choices.')],
+ 'terms-of-service.html': [('Using outputs responsibly', 'Check converted files, generated codes, and formatted data before relying on them in your work. Keep source files until you have verified the output. You are responsible for deciding whether a result meets the requirements of the application or recipient receiving it.'), ('Services with different behavior', 'Temporary email depends on an external provider and is unsuitable for accounts that require lasting recovery access. Browser tools depend on device resources and supported browser features. A page loading successfully does not guarantee that every input size or format can be processed.'), ('Getting help', 'If a tool fails, report the page and steps to reproduce the problem through the contact page. Do not include private documents or credentials. Suggestions and reports help identify problems but do not establish a guaranteed response time or release date.')],
+ 'disclaimer.html': [('Understanding generated results', 'A formatted JSON document may still contain incorrect application values. A decoded JWT has not had its signature verified. A generated color palette may still need a contrast check. Read the limitations beside each tool and validate outputs in the context where you will use them.'), ('Preserve your source material', 'Keep original documents and text before conversion. Image-based PDFs do not automatically become searchable text, and background removal may need manual review around fine edges. Inspect downloaded files before replacing an earlier version.'), ('Report an inaccurate explanation', 'Contact us with the page and the statement that needs correction. Include a reproducible example when possible, using non-sensitive data. Tool instructions describe the implementation available on this site and may not match similarly named services elsewhere.')]
+}
+for filename, sections in extra_pages.items():
+ update(SITE/filename, ''.join(section(title,p(copy)) for title,copy in sections))
+
+blogs = []
+for path in sorted((SITE/'blog/posts').glob('*.html')):
+ html = path.read_text(encoding='utf-8')
+ blogs.append(dict(slug=path.stem,title=text(re.search(r'<h1[^>]*>(.*?)</h1>',html,re.S)[1]),url='/blog/posts/'+path.name))
+for path in (SITE/'blog').rglob('*.html'):
+ candidates = [b for b in blogs if b['slug']!=path.stem]
+ links = '<div class="tool-grid">'+''.join('<article class="tool-card"><h3>'+escape(b['title'])+'</h3><p>Explore the practical steps, common pitfalls, and tools for this workflow.</p><a class="tool-link" href="'+b['url']+'">Read the guide &#8594;</a></article>' for b in candidates)+'</div>'
+ workflows = {
+  'small-tools-that-save-developers-time': ['csv-to-json','json-formatter','text-diff-checker'],
+  'simple-pdf-workflow-without-software': ['image-to-pdf','pdf-merge'],
+  'safe-temporary-email-signups': ['temp-mail','password-generator'],
+  'removing-a-photo-background-guide': ['background-remover','color-palette-generator']
+ }
+ guide = ''
+ for slug in workflows.get(path.stem, []):
+  example, check, trouble, _ = GUIDES[slug]
+  guide += section('Practice with '+by_slug[slug]['name'], p(example)+p(check)+p(trouble)+'<p><a href="/tools/'+slug+'.html">Open '+escape(by_slug[slug]['name'])+' and follow the walkthrough</a>.</p>')
+ update(path, guide+section('More guides to explore', links).replace('<section ', '<section id="suggested-guides" ',1)+section('Put the guide into practice', '<p>Start with a small example, follow the steps, and check the result before using your own full input. Each <a href="/tools/index.html">tool page</a> includes usage guidance, FAQs, and suggested next tools to help you continue.</p>'))
+
+(SITE/'assets/js/site-catalog.js').write_text('window.AnvilToolCatalog = '+json.dumps(catalog,ensure_ascii=False)+';\nwindow.AnvilGuideCatalog = '+json.dumps(blogs,ensure_ascii=False)+';\n',encoding='utf-8')
+sql = '-- Restore missing site tools without overwriting existing edits, status, or views.\n'
+quote = lambda value: "'"+value.replace("'","''")+"'"
+for t in catalog:
+ sql += 'insert into public.tools (id,slug,name,category,description,status) values ('+','.join(quote(v) for v in [t['slug'],t['slug'],t['name'],t['category'],t['description'],'active'])+') on conflict do nothing;\n'
+(ROOT/'supabase/migrations/007_complete_tool_catalog.sql').write_text(sql,encoding='utf-8')
+(ROOT/'supabase/production-updates/20260930_complete_tool_catalog.sql').write_text(sql,encoding='utf-8')
+print('Expanded',len(catalog),'tools and public content; regenerated catalog and safe seed SQL.')

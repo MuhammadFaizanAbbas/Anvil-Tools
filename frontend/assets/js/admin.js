@@ -52,6 +52,13 @@
     }
 
     let catalog = [], postPage = 0;
+    function mergeToolCatalog(tools, available = true) {
+      const saved = new Map(tools.map(tool => [tool.slug, tool]));
+      const items = (window.AnvilToolCatalog || []).map(tool => saved.get(tool.slug) || {
+        ...tool, status: available ? 'not registered' : 'connection unavailable', unregistered: true
+      });
+      return [...items, ...tools.filter(tool => !items.some(item => item.slug === tool.slug))];
+    }
     const postPageSize = 30;
     const number = value => Math.max(0, Number(value) || 0);
     function renderStats(data, tools) {
@@ -82,9 +89,9 @@
               <tr>
                 <td>${escapeHtml(tool.name)}</td>
                 <td>${escapeHtml(tool.category)}</td>
-                <td>${number(tool.views).toLocaleString()}</td>
+                <td>${tool.unregistered ? '&mdash;' : number(tool.views).toLocaleString()}</td>
                 <td><span class="pill ${tool.status === 'inactive' ? 'inactive' : ''}">${escapeHtml(tool.status || 'active')}</span></td>
-                <td><button class="btn secondary small" data-tool="${escapeHtml(tool.slug)}">Edit</button></td>
+                <td><a class="btn secondary small" href="../tools/${encodeURIComponent(tool.slug)}.html" target="_blank" rel="noopener">Open</a> ${tool.unregistered ? '<span class="muted small">Database registration required</span>' : `<button class="btn secondary small" data-tool="${escapeHtml(tool.slug)}">Edit</button>`}</td>
               </tr>
             `).join('')}
           </tbody>
@@ -157,17 +164,30 @@
     }
 
     async function loadDashboard() {
-      const [overview, tools] = await Promise.all([
+      const [overviewResult, toolsResult, postsResult] = await Promise.allSettled([
         fetchJson('/api/site/overview'),
         fetchJson('/api/tools'),
+        loadPosts(),
       ]);
-      await loadPosts();
-
-      catalog = tools;
-      renderStats(overview, tools);
-      renderTools(tools.filter(tool => `${tool.name} ${tool.category}`.toLowerCase().includes(document.getElementById('toolSearch').value.toLowerCase())));
-      renderAnalytics(tools);
-      document.getElementById('connectionStatus').textContent = 'Connected to your workspace';
+      const tools = toolsResult.status === 'fulfilled' ? toolsResult.value : [];
+      catalog = mergeToolCatalog(tools, toolsResult.status === 'fulfilled');
+      if (overviewResult.status === 'fulfilled') renderStats(overviewResult.value, tools);
+      else statsGrid.innerHTML = '<p class="empty-state">Overview unavailable. Refresh to retry.</p>';
+      renderTools(catalog.filter(tool => `${tool.name} ${tool.category}`.toLowerCase().includes(document.getElementById('toolSearch').value.toLowerCase())));
+      if (toolsResult.status === 'fulfilled') renderAnalytics(tools);
+      else {
+        analyticsChart.innerHTML = '<p class="empty-state">Tool analytics unavailable. Refresh to retry.</p>';
+        document.getElementById('categoryChart').innerHTML = '<p class="empty-state">Database catalog unavailable.</p>';
+      }
+      const missing = catalog.filter(tool => tool.unregistered).length;
+      document.getElementById('toolCatalogStatus').textContent = toolsResult.status !== 'fulfilled'
+        ? 'Showing site tools. The database could not be reached; saved status and editing are unavailable. Refresh to retry.'
+        : missing ? `${missing} site tools are missing from the database. Apply supabase/production-updates/20260930_complete_tool_catalog.sql in Supabase, then refresh. Existing edits and view counts are preserved.`
+        : `${catalog.length} tools registered in your workspace.`;
+      const failures = [overviewResult, toolsResult, postsResult].filter(result => result.status === 'rejected');
+      if (postsResult.status === 'rejected') postsList.innerHTML = '<p class="empty-state">Articles could not be loaded. Refresh to retry.</p>';
+      if (failures.length) showNotice('Some workspace data could not be loaded. ' + failures.map(result => result.reason.message).join(' '), true);
+      document.getElementById('connectionStatus').textContent = failures.length ? 'Some workspace data unavailable' : 'Connected to your workspace';
       document.getElementById('lastUpdated').textContent = `Updated ${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
     }
 

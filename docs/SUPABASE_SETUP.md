@@ -76,6 +76,10 @@ Only if browsers call the optional Edge Functions directly, configure their CORS
 
 ## 5. Publishing and panels
 
+If tools are missing from the admin library, run `supabase/production-updates/20260930_complete_tool_catalog.sql` in the SQL editor and refresh the dashboard. For migration-based setup, the same repair is `007_complete_tool_catalog.sql`. It inserts missing entries for all 20 public tools without changing existing names, statuses, or view counts. The dashboard labels missing registrations and unavailable connections separately, and article-loading failures no longer prevent the tool library from rendering.
+
+Expanded public copy and workflow recommendations are maintained with `py -3.9 scripts/expand-content.py`. Run it after legacy site generation; it preserves page widgets and replaces only its marked content sections. It also rebuilds `frontend/assets/js/site-catalog.js` and the catalog repair SQL. Blog recommendations add published articles automatically, exclude the current article, and retain static guides if the API is unavailable.
+
 Overview, Tool library, Content, Analytics, Contact inbox, Team & access, Categories, Audit log, and Settings each have their own panel. Content supports full plain-text articles, cover uploads and a reusable media library, required cover alt text for publishing, up to 12 tags, category selection, excerpt, SEO fields with a live search preview, draft/published state, revision history, and loading an earlier revision into the editor for an explicit save. Use blank lines for paragraphs. HTML is rendered as text.
 
 New published articles appear on the Blogs page and open at `/journal/slug`. Vercel rewrites serve complete HTML from the API, including SEO title/description, canonical URL, Open Graph cover, Twitter card, and BlogPosting structured data. The dynamic `/journal-sitemap.xml` is listed in robots.txt. Existing static guides remain intact. Search indexing is controlled by search engines. For another frontend host, configure equivalent reverse-proxy routes as described in DEPLOYMENT.md. Tool catalog edits remain database edits and do not rewrite the static public tool pages.
