@@ -3,6 +3,10 @@ DirectoryIndex index.html
 ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  RewriteRule ^sitemap\.xml$ site-metadata.php?document=sitemap [L,QSA]
+  RewriteRule ^sitemap-index\.xml$ site-metadata.php?document=index [L,QSA]
+  RewriteRule ^robots\.txt$ site-metadata.php?document=robots [L,QSA]
+  RewriteRule ^journal-sitemap\.xml$ journal-sitemap.php [L,QSA]
   RewriteRule ^admin/login/?$ /admin-panel/login.html [R=302,L]
   RewriteRule ^admin/?$ /admin-panel/index.html [R=302,L]
 </IfModule>
