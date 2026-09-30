@@ -17,6 +17,7 @@
     async fetch(path, options = {}) {
       if (!path.startsWith('/api/')) throw new Error('Invalid API path');
       const headers = new Headers(options.headers);
+      headers.set('X-Frontend-Origin', window.location.origin);
       const session = getSession();
       if (session && !headers.has('Authorization')) headers.set('Authorization', `Bearer ${session.accessToken}`);
       const response = await fetch(`${base}${path}`, { ...options, headers, credentials: 'omit' });

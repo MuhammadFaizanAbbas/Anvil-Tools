@@ -5,7 +5,7 @@ const fs = require('node:fs');
 function setup() {
   const storage = new Map();
   const calls = [];
-  const context = { window: { ANVIL_CONFIG: { API_BASE_URL: 'https://backend.vercel.app/' } }, Headers,
+  const context = { window: { ANVIL_CONFIG: { API_BASE_URL: 'https://backend.vercel.app/' }, location: { origin: 'https://site-one.example' } }, Headers,
     sessionStorage: { getItem: key => storage.get(key), setItem: (key, value) => storage.set(key, value), removeItem: key => storage.delete(key) },
     fetch: async (url, options) => { calls.push({ url, options }); return { status: 200 }; },
   };
@@ -18,6 +18,7 @@ test('frontend targets configured API and sends token without cross-site cookies
   await api.fetch('/api/admin/me');
   assert.equal(calls[0].url, 'https://backend.vercel.app/api/admin/me');
   assert.equal(calls[0].options.headers.get('Authorization'), 'Bearer test-token');
+  assert.equal(calls[0].options.headers.get('X-Frontend-Origin'), 'https://site-one.example');
   assert.equal(calls[0].options.credentials, 'omit');
 });
 test('expired and cleared sessions do not send authorization', async () => {

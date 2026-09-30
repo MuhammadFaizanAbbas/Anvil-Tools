@@ -33,7 +33,7 @@
         window.location.href = '/admin-panel/login.html';
         return;
       }
-      if (!res.ok) throw new Error('Backend unavailable. Check Supabase environment variables and FRONTEND_ORIGINS in Vercel.');
+      if (!res.ok) throw new Error('Backend unavailable. Check the Supabase environment variables in Vercel.');
       const data = await res.json();
       userEmail.textContent = data.user?.email || 'Admin';
       document.getElementById('currentRole').textContent = data.user?.role || 'admin';

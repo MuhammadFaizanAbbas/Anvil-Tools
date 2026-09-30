@@ -14,8 +14,8 @@ Fresh seeds create empty articles as drafts. The two existing production seeded 
 
 ## Domains and email login
 
-- Vercel backend `FRONTEND_ORIGINS` accepts comma-separated exact origins, for example `https://anviltools.vercel.app,https://newsite.com`. Redeploy after updating it.
-- Keep `SITE_URL` as the primary canonical website.
+- The backend returns wildcard CORS for browser requests, so new frontend domains do not require a backend environment change. The API does not allow credentialed browser cookies; admin authentication uses an explicit bearer token.
+- The frontend API client sends `X-Frontend-Origin`, and proxied journal requests use their forwarded host, so generated article links and the journal sitemap follow the calling frontend. `SITE_URL` is optional and is used only as a fallback when neither signal is present.
 - Team accounts are created directly with email and password. No invitation or password-setup redirect URL is required.
 - Keep Google disabled. No Google Cloud OAuth client or Google redirect URI is needed.
 - Set the actual confirmed owner email in Vercel `ADMIN_EMAILS`. Owner recovery access is intentionally derived from this environment variable; it is not automatically persisted as a database owner role. New users default to member.
