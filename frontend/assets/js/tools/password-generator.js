@@ -42,18 +42,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const generatePassword = () => {
     const charset = getCharset();
     if (!charset) {
-      output.textContent = 'Select at least one character type.';
-      strength.textContent = '';
+      output.textContent = '';
+      strength.textContent = 'Select at least one character type.';
+      copyBtn.disabled = true;
       return;
     }
 
-    const size = Math.max(1, Number(lengthInput.value) || 16);
+    const size = Number(lengthInput.value);
+    if (!Number.isInteger(size) || size < 6 || size > 48) {
+      output.textContent = '';
+      strength.textContent = 'Choose a whole-number length from 6 to 48.';
+      copyBtn.disabled = true;
+      return;
+    }
 
     // Helper: crypto-backed random integer in [0, max)
     const randomInt = (max) => {
       const arr = new Uint32Array(1);
-      window.crypto.getRandomValues(arr);
-      return Math.floor((arr[0] / 0xffffffff) * max);
+      const limit = Math.floor(0x100000000 / max) * max;
+      do { window.crypto.getRandomValues(arr); } while (arr[0] >= limit);
+      return arr[0] % max;
     };
 
     // Ensure at least one of each selected character class is present
@@ -77,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const finalValue = resultChars.slice(0, size).join('');
     output.textContent = finalValue;
+    copyBtn.disabled = false;
     strength.textContent = `Strength: ${getStrength(finalValue)}`;
   };
 
@@ -86,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   generateBtn.addEventListener('click', generatePassword);
   copyBtn.addEventListener('click', async () => {
+    if (copyBtn.disabled || !output.textContent) return;
     try {
       await navigator.clipboard.writeText(output.textContent);
       strength.textContent = 'Copied to clipboard.';

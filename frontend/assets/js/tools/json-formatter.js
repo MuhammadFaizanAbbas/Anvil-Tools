@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   minifyBtn.addEventListener('click', () => formatJSON(input.value, false));
   copyBtn.addEventListener('click', async () => {
     if (!output.textContent) return;
-    await navigator.clipboard.writeText(output.textContent);
+    try { await navigator.clipboard.writeText(output.textContent); } catch (_) { status.textContent = 'Copy failed. Select and copy the result manually.'; return; }
     setStatus('Copied to clipboard.');
   });
 });

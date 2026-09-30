@@ -61,7 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const updateResult = () => {
-    const numeric = Number(value.value) || 0;
+    const numeric = Number(value.value);
+    if (String(value.value).trim() === '' || !Number.isFinite(numeric)) {
+      result.textContent = 'Enter a finite number to convert.';
+      return;
+    }
     if (group.value === 'temperature') {
       const converted = fromBase(to.value, toBase(from.value, numeric));
       result.textContent = `${numeric} ${from.value} = ${converted.toFixed(3)} ${to.value}`;

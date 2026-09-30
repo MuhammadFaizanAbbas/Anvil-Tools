@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     update();
   });
   copyBtn.addEventListener('click', async () => {
-    await navigator.clipboard.writeText(output.textContent);
+    try { await navigator.clipboard.writeText(output.textContent); } catch (_) { status.textContent = 'Copy failed. Select and copy the result manually.'; return; }
     status.textContent = 'Copied to clipboard.';
   });
 

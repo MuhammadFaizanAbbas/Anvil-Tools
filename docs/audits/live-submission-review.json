@@ -1,0 +1,418 @@
+{
+  "checkedAt": "2026-09-30T17:41:11.990Z",
+  "scope": "Static pages excluding blog/posts; no submissions or tool mutations",
+  "pages": [
+    {
+      "route": "/404.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/about.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/categories/email-tools.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/categories/generators.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/categories/image-tools.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/categories/pdf-tools.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/contact.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/cookie-policy.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/disclaimer.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/index.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/privacy-policy.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/terms-of-service.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/base64-tool.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/color-palette-generator.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/index.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/jwt-decoder.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/password-generator.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/text-diff-checker.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/unit-converter.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/unix-timestamp-converter.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/url-encoder-decoder.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/user-agent-generator.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "status": 200,
+      "h1": 1,
+      "hasPolicy": true,
+      "hasAdLoader": false,
+      "inactiveChoices": true
+    }
+  ],
+  "missingLocalLinks": [],
+  "assets": [
+    {
+      "route": "/assets/css/content.css",
+      "status": 200
+    },
+    {
+      "route": "/assets/css/design.css",
+      "status": 200
+    },
+    {
+      "route": "/assets/css/style.css",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/cmp.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/ads.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/main.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/config.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/api.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/contact.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/css/tool-ux.css",
+      "status": 200
+    },
+    {
+      "route": "/assets/css/refinements.css",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tool-ux.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/background-remover.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/base64-tool.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/color-palette-generator.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/csv-to-json.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/image-to-pdf.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/hash-generator.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/jwt-decoder.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/json-formatter.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/pdf-merge.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/password-generator.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/qr-code-generator.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/temp-mail.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/text-case-converter.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/text-diff-checker.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/unit-converter.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/unix-timestamp-converter.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/url-encoder-decoder.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/user-agent-generator.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/word-counter.js",
+      "status": 200
+    },
+    {
+      "route": "/assets/js/tools/uuid-generator.js",
+      "status": 200
+    }
+  ],
+  "unknownUrlStatus": 404
+}

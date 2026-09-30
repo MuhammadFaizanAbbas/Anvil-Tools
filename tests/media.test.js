@@ -1,4 +1,4 @@
-﻿const {test,before,after}=require('node:test');const assert=require('node:assert/strict');const sharp=require('sharp');
+const {test,before,after}=require('node:test');const assert=require('node:assert/strict');const sharp=require('sharp');
 const {prepareImage}=require('../backend/src/lib/images');const {renderArticle}=require('../backend/src/lib/articles');
 process.env.ADMIN_EMAILS='owner@example.com';
 const assets=[],posts=[],objects=new Map();let failInsert=false;
@@ -34,7 +34,7 @@ test('article SEO, body, alt text, tags and JSON-LD are escaped',()=>{
 });
 test('article renderer creates a complete guide layout with safe headings and lists',()=>{
  const html=renderArticle({slug:'formatted-guide',title:'A useful guide',excerpt:'A short introduction.',body:'Keep filenames useful\n\nA descriptive filename helps the team.\n\n## Final checks\n\n- Keep the source\n- Export a copy',tags:['workflow'],published_at:'2026-09-29T00:00:00Z'});
- assert.match(html,/class="main-nav"/);assert.match(html,/<h2>Keep filenames useful<\/h2>/);assert.match(html,/<h3>Final checks<\/h3>/);assert.match(html,/<ul><li>Keep the source<\/li><li>Export a copy<\/li><\/ul>/);assert.match(html,/Back to all blogs/);assert.match(html,/class="footer-grid"/);assert.match(html,/id="privacy-settings"/);assert.match(html,/id="consent-banner"/);
+ assert.match(html,/class="main-nav"/);assert.match(html,/<h2>Keep filenames useful<\/h2>/);assert.match(html,/<h3>Final checks<\/h3>/);assert.match(html,/<ul><li>Keep the source<\/li><li>Export a copy<\/li><\/ul>/);assert.match(html,/Back to all blogs/);assert.match(html,/class="footer-grid"/);assert.match(html,/privacy-policy\.html/);assert.doesNotMatch(html,/id="privacy-settings"/);assert.doesNotMatch(html,/id="consent-banner"/);
 });
 test('published covers preserve SVG, PNG, JPEG and WebP bytes and MIME types',async()=>{
  const samples=[

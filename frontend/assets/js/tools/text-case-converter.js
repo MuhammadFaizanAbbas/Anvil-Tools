@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }));
   document.getElementById('case-copy').addEventListener('click', async () => {
     if (!output.value) return;
-    await navigator.clipboard.writeText(output.value);
+    try { await navigator.clipboard.writeText(output.value); } catch (_) { status.textContent = 'Copy failed. Select and copy the result manually.'; return; }
     status.textContent = 'Converted text copied.';
   });
 });

@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     status.textContent = `Generated ${total} UUID${total === 1 ? '' : 's'}.`;
   };
   document.getElementById('uuid-generate').addEventListener('click', generate);
-  document.getElementById('uuid-copy').addEventListener('click', async () => { if (!output.textContent) return; await navigator.clipboard.writeText(output.textContent); status.textContent = 'UUIDs copied.'; });
+  document.getElementById('uuid-copy').addEventListener('click', async () => { if (!output.textContent) return; try { await navigator.clipboard.writeText(output.textContent); } catch (_) { status.textContent = 'Copy failed. Select and copy the result manually.'; return; } status.textContent = 'UUIDs copied.'; });
   document.getElementById('uuid-download').addEventListener('click', () => {
     if (!output.textContent) return;
     const url = URL.createObjectURL(new Blob([`${output.textContent}\n`], { type: 'text/plain;charset=utf-8' }));

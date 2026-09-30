@@ -25,7 +25,7 @@ test('eight new browser tools have complete pages, scripts, catalog entries and 
     const script = fs.readFileSync(`frontend/assets/js/tools/${slug}.js`, 'utf8');
     assert.match(page, new RegExp(`<h1>${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}<\\/h1>`));
     assert.match(page, new RegExp(`assets/js/tools/${slug}\\.js`));
-    assert.match(page, /id="consent-banner" hidden aria-hidden="true"/);
+    assert.doesNotMatch(page, /id="consent-banner"/);
     assert.match(page, /Nothing entered into this tool is sent/);
     assert.ok(script.length > 400, `${slug} script is unexpectedly small`);
     assert.match(home, new RegExp(`tools/${slug}\\.html`));

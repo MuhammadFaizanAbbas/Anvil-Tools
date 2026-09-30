@@ -58,18 +58,13 @@ function renderFooter() {
         <li><a href="${base}/terms-of-service.html">Terms of service</a></li>
         <li><a href="${base}/cookie-policy.html">Cookie policy</a></li>
         <li><a href="${base}/disclaimer.html">Disclaimer</a></li>
-        <li><button type="button" class="privacy-settings" id="privacy-settings" aria-controls="consent-banner" aria-expanded="false">Privacy settings</button></li>
+
       </ul></div>
     </div>
     <div class="footer-bottom"><span>&copy; <span class="current-year"></span> Anvil Tools. All rights reserved.</span><span>Developed by VelloxTech</span></div>
   </div>
 </footer>
-<div id="consent-banner" hidden aria-hidden="true" role="region" aria-label="Privacy preferences">
-  <div class="consent-heading"><strong>Your privacy, your choice</strong><button type="button" id="consent-close" aria-label="Close privacy preferences">&#215;</button></div>
-  <p>Choose your preferences for optional analytics and personalized advertising. Advertising is currently disabled. Read our <a href="${base}/cookie-policy.html">cookie policy</a> and <a href="${base}/privacy-policy.html">privacy policy</a>. You can change your choices from the footer anytime.</p>
-  <div class="btn-row"><button type="button" class="btn" id="consent-reject">Reject optional</button><button type="button" class="btn" id="consent-customize" aria-expanded="false" aria-controls="consent-custom-panel">Customize</button><button type="button" class="btn primary" id="consent-accept">Accept optional</button></div>
-  <div id="consent-custom-panel" hidden><label><input type="checkbox" id="consent-analytics"> Allow analytics</label><label><input type="checkbox" id="consent-personalized"> Allow personalized advertising</label><button type="button" class="btn" id="consent-save">Save preferences</button></div>
-</div>`;
+`;
 }
 
 function renderArticle(post) {
@@ -95,7 +90,7 @@ ${image ? `<meta property="og:image" content="${escape(image)}"><meta property="
 <article class="published-article"><header class="article-header"><span class="eyebrow">${escape(post.category_slug || 'Blog')}</span><h1>${escape(post.title)}</h1><p class="lede">${escape(post.excerpt || '')}</p>${post.published_at ? `<p class="article-meta">Published <time datetime="${escape(post.published_at)}">${escape(post.published_at.slice(0, 10))}</time></p>` : ''}</header>
 ${image ? `<img class="article-cover" src="${escape(image)}" alt="${escape(post.cover_alt || '')}">` : ''}<div class="article-content">${renderBody(post.body)}</div>
 ${tags.length ? `<div class="article-tags" aria-label="Topics">${tags.map(tag => `<span class="chip">${escape(tag)}</span>`).join('')}</div>` : ''}<a class="article-return" href="${site()}/blog/index.html">&#8592; Back to all blogs</a></article></main>
-${renderFooter()}<script src="${site()}/assets/js/cmp.js" defer></script><script src="${site()}/assets/js/ads.js" defer></script><script src="${site()}/assets/js/main.js" defer></script></body></html>`;
+${renderFooter()}<script src="${site()}/assets/js/main.js" defer></script></body></html>`;
 }
 
 module.exports = { renderArticle, renderBody, renderFooter, imageUrl, escape, site };

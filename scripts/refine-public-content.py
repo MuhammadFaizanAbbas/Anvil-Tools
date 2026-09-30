@@ -72,3 +72,5 @@ for path in SITE.rglob('*.html'):
   html=html.replace('<a href="../about.html" aria-current="page">','<a href="../about.html">').replace('<a href="../blog/index.html">Blogs</a>','<a href="../blog/index.html" aria-current="page">Blogs</a>',1)
  path.write_text(html,encoding='utf-8')
 print('Applied shared content surfaces, About design, 40 specific FAQs, labels, metadata, and ad-free defaults.')
+import runpy
+runpy.run_path(str(ROOT/'scripts/correct-review-findings.py'))

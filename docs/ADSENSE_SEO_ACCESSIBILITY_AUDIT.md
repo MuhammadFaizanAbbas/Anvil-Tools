@@ -1,5 +1,9 @@
 # Anvil Tools: AdSense, SEO, accessibility, and operational audit
 
+Current correction status: the focused review's concrete code and wording findings have been fixed locally; 70 regression tests and 111 responsive layout cases passed. Inactive consent choices and their script includes were removed while ads/Analytics remain disabled. Older descriptions of the banner below are historical. Post content/covers are owner-managed and excluded from this fix list. "Ownership verification" refers only to proving control of the website domain to AdSense; it does not require a post-editor field. No post records or domain verification tags were modified.
+
+Latest focused review: [AdSense submission review](ADSENSE_SUBMISSION_REVIEW.md), excluding posts and ownership verification at the owner's request. It supersedes any implication below that CMP installation is required before requesting review: it is not. The checklist below combines application preparation with later ad activation and must not be read as a list of approval prerequisites. The focused review records outstanding tool defects and wording issues; the site is not certified violation-free.
+
 Reviewed September 30, 2026. Scope: 37 static public pages, 20 tool implementations and their instructions, database-backed article delivery/recommendations, 511 publicly published article records, all nine admin panels, authentication screens, and deployment configuration. “ATS friendly” was clarified by the owner to mean search-engine friendly and accessible.
 
 **Status: readiness improvements implemented; not an approval or compliance certification.** Google decides site/account eligibility. This audit does not establish legal compliance in every jurisdiction or WCAG conformance. Ads remain disabled. No publisher ID, Google account eligibility, consent platform configuration, content/image ownership, or Search Console access was supplied or verified.

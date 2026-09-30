@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('url-decode').addEventListener('click', () => transform('decode'));
   document.getElementById('url-copy').addEventListener('click', async () => {
     if (!output.textContent) return;
-    await navigator.clipboard.writeText(output.textContent);
+    try { await navigator.clipboard.writeText(output.textContent); } catch (_) { status.textContent = 'Copy failed. Select and copy the result manually.'; return; }
     status.textContent = 'Copied to clipboard.';
   });
 });

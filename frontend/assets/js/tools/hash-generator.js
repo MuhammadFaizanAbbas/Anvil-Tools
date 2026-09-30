@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.getElementById('hash-copy').addEventListener('click', async () => {
     if (!hexOutput.textContent) return;
-    await navigator.clipboard.writeText(hexOutput.textContent);
+    try { await navigator.clipboard.writeText(hexOutput.textContent); } catch (_) { status.textContent = 'Copy failed. Select and copy the result manually.'; return; }
     status.textContent = 'Hexadecimal hash copied.';
   });
 });

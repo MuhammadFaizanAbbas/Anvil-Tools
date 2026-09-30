@@ -91,7 +91,7 @@ def footer_html(depth_prefix):
           <li><a href="{p}terms-of-service.html">Terms of service</a></li>
           <li><a href="{p}cookie-policy.html">Cookie policy</a></li>
           <li><a href="{p}disclaimer.html">Disclaimer</a></li>
-          <li><button type="button" class="privacy-settings" id="privacy-settings" aria-controls="consent-banner" aria-expanded="false">Privacy settings</button></li>
+
         </ul>
       </div>
     </div>
@@ -101,22 +101,7 @@ def footer_html(depth_prefix):
     </div>
   </div>
 </footer>
-<div id="consent-banner" hidden aria-hidden="true" role="region" aria-label="Privacy preferences">
-  <div class="consent-inner">
-    <p>This site uses cookies and, when ads are enabled, may show personalized ads. See our <a href="{p}cookie-policy.html">cookie policy</a> and <a href="{p}privacy-policy.html">privacy policy</a> for details.</p>
-    <div class="btn-row">
-      <button class="btn primary" id="consent-accept">Accept</button>
-      <button class="btn" id="consent-reject">Reject</button>
-      <button class="btn secondary" id="consent-customize">Customize</button>
-    </div>
-  </div>
-  <div id="consent-custom-panel" hidden>
-    <p>Choose what you allow:</p>
-    <label><input type="checkbox" id="consent-analytics"> Allow analytics</label>
-    <label><input type="checkbox" id="consent-personalized"> Allow personalized ads</label>
-    <div class="btn-row"><button class="btn" id="consent-save">Save choices</button></div>
-  </div>
-</div>'''
+'''
 
 def page(title, description, active_path, depth_prefix, body_html, extra_head="", extra_scripts="", canonical_path=""):
     return f'''<!DOCTYPE html>
@@ -144,9 +129,9 @@ def page(title, description, active_path, depth_prefix, body_html, extra_head=""
 {footer_html(depth_prefix)}
 <script src="{depth_prefix}assets/js/config.js"></script>
 <script src="{depth_prefix}assets/js/api.js"></script>
-<script src="{depth_prefix}assets/js/cmp.js"></script>
+
 <script src="{depth_prefix}assets/js/main.js"></script>
-<script src="{depth_prefix}assets/js/ads.js"></script>
+
 {extra_scripts}
 </body>
 </html>'''

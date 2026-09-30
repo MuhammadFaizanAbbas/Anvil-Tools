@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return json;
   };
   document.getElementById('csv-convert').addEventListener('click', () => { try { convert(); } catch (error) { output.textContent = ''; status.textContent = error.message; } });
-  document.getElementById('csv-copy').addEventListener('click', async () => { if (!output.textContent) return; await navigator.clipboard.writeText(output.textContent); status.textContent = 'JSON copied.'; });
+  document.getElementById('csv-copy').addEventListener('click', async () => { if (!output.textContent) return; try { await navigator.clipboard.writeText(output.textContent); } catch (_) { status.textContent = 'Copy failed. Select and copy the result manually.'; return; } status.textContent = 'JSON copied.'; });
   document.getElementById('csv-download').addEventListener('click', () => {
     if (!output.textContent) return;
     const url = URL.createObjectURL(new Blob([output.textContent], { type: 'application/json;charset=utf-8' }));
