@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-  if (/\/(?:blog|journal)\//.test(location.pathname)) {
+  if (document.getElementById('suggested-guides') || /\/journal\//.test(location.pathname) || /\/blog\/article\.html$/.test(location.pathname)) {
     const loadScript = src => new Promise((resolve, reject) => {
       const script = document.createElement('script'); script.src = src;
       script.onload = resolve; script.onerror = reject; document.head.append(script);
     });
     Promise.all([
-      window.AnvilGuideCatalog ? Promise.resolve() : loadScript('/assets/js/site-catalog.js'),
       window.ANVIL_CONFIG ? Promise.resolve() : loadScript('/assets/js/config.js')
     ]).then(() => loadScript('/assets/js/recommendations.js')).catch(() => {});
   }

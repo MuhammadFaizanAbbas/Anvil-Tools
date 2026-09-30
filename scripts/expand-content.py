@@ -103,26 +103,10 @@ extra_pages = {
 for filename, sections in extra_pages.items():
  update(SITE/filename, ''.join(section(title,p(copy)) for title,copy in sections))
 
-blogs = []
-for path in sorted((SITE/'blog/posts').glob('*.html')):
- html = path.read_text(encoding='utf-8')
- blogs.append(dict(slug=path.stem,title=text(re.search(r'<h1[^>]*>(.*?)</h1>',html,re.S)[1]),url='/blog/posts/'+path.name))
-for path in (SITE/'blog').rglob('*.html'):
- candidates = [b for b in blogs if b['slug']!=path.stem]
- links = '<div class="tool-grid">'+''.join('<article class="tool-card"><h3>'+escape(b['title'])+'</h3><p>Explore the practical steps, common pitfalls, and tools for this workflow.</p><a class="tool-link" href="'+b['url']+'">Read the guide &#8594;</a></article>' for b in candidates)+'</div>'
- workflows = {
-  'small-tools-that-save-developers-time': ['csv-to-json','json-formatter','text-diff-checker'],
-  'simple-pdf-workflow-without-software': ['image-to-pdf','pdf-merge'],
-  'safe-temporary-email-signups': ['temp-mail','password-generator'],
-  'removing-a-photo-background-guide': ['background-remover','color-palette-generator']
- }
- guide = ''
- for slug in workflows.get(path.stem, []):
-  example, check, trouble, _ = GUIDES[slug]
-  guide += section('Practice with '+by_slug[slug]['name'], p(example)+p(check)+p(trouble)+'<p><a href="/tools/'+slug+'.html">Open '+escape(by_slug[slug]['name'])+' and follow the walkthrough</a>.</p>')
- update(path, guide+section('More guides to explore', links).replace('<section ', '<section id="suggested-guides" ',1)+section('Put the guide into practice', '<p>Start with a small example, follow the steps, and check the result before using your own full input. Each <a href="/tools/index.html">tool page</a> includes usage guidance, FAQs, and suggested next tools to help you continue.</p>'))
-
-(SITE/'assets/js/site-catalog.js').write_text('window.AnvilToolCatalog = '+json.dumps(catalog,ensure_ascii=False)+';\nwindow.AnvilGuideCatalog = '+json.dumps(blogs,ensure_ascii=False)+';\n',encoding='utf-8')
+# Blogs and their recommendations are loaded from the backend, never generated here.
+for path in (SITE/'blog').glob('*.html'):
+ update(path, '')
+(SITE/'assets/js/site-catalog.js').write_text('window.AnvilToolCatalog = '+json.dumps(catalog,ensure_ascii=False)+';\n',encoding='utf-8')
 sql = '-- Restore missing site tools without overwriting existing edits, status, or views.\n'
 quote = lambda value: "'"+value.replace("'","''")+"'"
 for t in catalog:

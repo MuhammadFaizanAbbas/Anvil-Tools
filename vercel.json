@@ -14,6 +14,11 @@
       "source": "/admin/login",
       "destination": "/admin-panel/login.html",
       "permanent": false
+    },
+    {
+      "source": "/blog/posts/:slug",
+      "destination": "/blog/index.html",
+      "permanent": true
     }
   ],
   "rewrites": [

@@ -161,120 +161,9 @@ def build_category_pages():
         ))
 
 # ---------------------------------------------------------------- blog
-BLOG_POSTS = [
-    {
-        "slug": "safe-temporary-email-signups",
-        "title": "How to Use a Temporary Email Address Without Losing Messages You Actually Need",
-        "date": "2026-08-12",
-        "excerpt": "Disposable inboxes are great for one-time signups, but they're the wrong tool for anything you need to find again later. Here's how to tell the difference.",
-        "body": '''
-<p>A temporary email address solves one specific problem well: a site or form is demanding an email before it will let you do anything, and you have no intention of hearing from that sender again. Newsletter gates on a free download, "create an account to continue" walls on a tool you'll use once, or a forum you're joining purely to ask one question, are all good matches for a disposable inbox.</p>
-<p>The trade-off is permanence. A temporary inbox is meant to be thrown away, which means anything sent to it later is unreachable once you close the tab or generate a new address. That makes it a poor fit for anything you might need to refer back to: an order confirmation, a password reset for an account you plan to keep, or any kind of financial or medical correspondence. If there's any chance you'll need the email again in a week, use your real address, or a dedicated secondary address you actually control, instead.</p>
-<h2>A simple rule of thumb</h2>
-<p>Before generating a disposable address, ask whether you'd care if the email vanished five minutes from now. If the answer is no, a temporary inbox is the right tool. If the answer is yes, even a little, it isn't.</p>
-<h2>What a temporary inbox does and doesn't protect you from</h2>
-<p>It keeps promotional mail and newsletters out of your main inbox, and it limits how much a site can learn about you by tying activity to an address you'll abandon. It does not make you anonymous on its own: your browser, IP address, and any other information you provide are still visible to whoever you're signing up with. Treat it as a spam filter, not a privacy shield.</p>
-''',
-    },
-    {
-        "slug": "removing-a-photo-background-guide",
-        "title": "Removing a Photo Background in Under a Minute: A Practical Guide",
-        "date": "2026-08-20",
-        "excerpt": "Automatic background removal has gotten good enough for everyday use. Here's what makes a photo easy or hard to process cleanly.",
-        "body": '''
-<p>Automatic background removal works by identifying which pixels belong to the main subject of a photo and which belong to everything behind it. Modern tools do this with a small machine learning model trained on a huge number of labeled photos, which means the result depends heavily on how clearly the subject stands out in the original image.</p>
-<h2>What makes a photo easy to process</h2>
-<p>A subject with a clear outline against a background of a different color or brightness gives the model the clearest signal to work with. A person standing a few feet in front of a plain wall, or a product photographed on a solid background, both tend to come out clean.</p>
-<h2>What makes it harder</h2>
-<p>Fine detail like loose hair strands, fur, or lace is genuinely difficult for any automatic tool, because the edge between subject and background isn't a single clean line. Busy or textured backgrounds, and photos where the subject's color closely matches the background, also produce rougher results. None of this means the tool has failed; it's a real limitation of automatic segmentation, and manual touch-up in an image editor is sometimes still the better choice for demanding work.</p>
-<h2>A quick workflow</h2>
-<p>Start with the highest-resolution version of the photo you have, since more detail gives the model more to work with. Process it, check the edges around fine detail like hair or fingers, and if a section looks rough, a few minutes of manual cleanup in any image editor that supports layers will usually finish the job.</p>
-''',
-    },
-    {
-        "slug": "simple-pdf-workflow-without-software",
-        "title": "Building a Simple PDF Workflow Without Installing Any Software",
-        "date": "2026-09-02",
-        "excerpt": "You don't need a PDF suite installed to handle the four or five things most people actually do with PDFs. Here's a lightweight approach.",
-        "body": '''
-<p>Most people's PDF needs come down to a handful of repeated tasks: combining a few files into one, turning scanned photos into a proper document, and occasionally reading or annotating something. None of that requires installing a full PDF editing suite, and browser-based tools that run locally can cover most of it without you giving up a file to a random server.</p>
-<h2>Combining documents</h2>
-<p>If you've ever needed to send a scanned form along with a cover letter, or combine several separately-scanned pages into a single document, a merge tool that runs in the browser handles it in seconds without needing a PDF editor installed.</p>
-<h2>Turning photos into a document</h2>
-<p>Phone cameras produce individual image files, not documents. When you need something that reads as a proper file rather than three loose photos, converting those images into a single PDF, one photo per page, is the cleanest way to package them for email or printing.</p>
-<h2>Keeping originals safe</h2>
-<p>Whichever tools you use, keep the original files until you've confirmed the merged or converted version looks right. Browser-based tools that process everything locally won't have a copy to recover from if something goes wrong on your end, since nothing was ever uploaded in the first place.</p>
-''',
-    },
-    {
-        "slug": "small-tools-that-save-developers-time",
-        "title": "Small Tools That Save Developers Real Time During Testing",
-        "date": "2026-09-15",
-        "excerpt": "A handful of tiny utilities show up again and again in day-to-day development work. Here's why they earn a permanent bookmark.",
-        "body": '''
-<p>A lot of development time goes to small, repetitive checks that don't deserve a full application of their own: is this JSON valid, what does this Base64 string actually say, how does the site behave for a mobile user agent versus a desktop one. Keeping a few lightweight utilities within reach for exactly these moments adds up to real time saved over a week of work.</p>
-<h2>Validating data shapes quickly</h2>
-<p>A malformed API response or a hand-edited config file is often broken by one missing comma or bracket. A formatter that also validates saves the back-and-forth of manually scanning a wall of minified text for the mistake.</p>
-<h2>Testing across browsers without owning every device</h2>
-<p>Reproducing a bug that "only happens on iPhone Safari" doesn't require an iPhone if you can override your browser's reported identity for testing and combine that with your browser's built-in device emulation. A quick reference of accurate user-agent strings makes this much less fiddly than trying to remember or search for one each time.</p>
-<h2>Encoding and decoding without writing a script</h2>
-<p>Base64 shows up constantly in tokens, config values, and API payloads. Being able to decode a suspicious-looking string in a few seconds, without opening an editor and writing a one-line script, keeps small debugging tasks small.</p>
-''',
-    },
-]
-
 def build_blog():
-    depth = "../"
-    cards = ""
-    for p in BLOG_POSTS:
-        cards += f'''<div class="post-card">
-  <span class="post-date">{p["date"]}</span>
-  <h3><a href="posts/{p["slug"]}.html">{p["title"]}</a></h3>
-  <p>{p["excerpt"]}</p>
-  <a class="tool-link" href="posts/{p["slug"]}.html">Read more →</a>
-</div>'''
-    body = f'''
-{breadcrumbs(depth, [("Home","index.html"), ("Blog", None)])}
-<section class="hero">
-  <h1>Blog</h1>
-  <p class="lede">Practical guides on getting more out of the tools on {SITE_NAME}.</p>
-</section>
-<section>
-  <div class="post-grid">{cards}</div>
-</section>
-{ad_slot()}
-'''
-    write("blog/index.html", page(
-        title="Blog", description=f"Guides and practical tips from {SITE_NAME}.",
-        active_path="/blog/", depth_prefix=depth, body_html=body, canonical_path="blog/index.html"
-    ))
-
-    depth2 = "../../"
-    for i, p in enumerate(BLOG_POSTS):
-        others = [o for o in BLOG_POSTS if o["slug"] != p["slug"]][:3]
-        other_html = "\n".join(
-            f'<div class="post-card"><span class="post-date">{o["date"]}</span><h3><a href="{o["slug"]}.html">{o["title"]}</a></h3><p>{o["excerpt"]}</p></div>'
-            for o in others
-        )
-        body = f'''
-{breadcrumbs(depth2, [("Home","index.html"), ("Blog","blog/index.html"), (p["title"], None)])}
-<article class="hero" style="padding-bottom:0;">
-  <span class="eyebrow">{p["date"]}</span>
-  <h1>{p["title"]}</h1>
-</article>
-<article class="info-section">
-{p["body"]}
-</article>
-{ad_slot()}
-<section>
-  <h2>More from the blog</h2>
-  <div class="post-grid">{other_html}</div>
-</section>
-'''
-        write(f"blog/posts/{p['slug']}.html", page(
-            title=p["title"], description=p["excerpt"],
-            active_path="/blog/", depth_prefix=depth2, body_html=body, canonical_path=f"blog/posts/{p['slug']}.html"
-        ))
+    # Preserve the database-driven listing and article shell maintained in frontend/blog.
+    pass
 
 # ---------------------------------------------------------------- static/legal pages
 def build_static_pages():
@@ -405,7 +294,6 @@ def build_seo_files():
             "cookie-policy.html", "disclaimer.html", "tools/index.html", "blog/index.html"]
     urls += [f"tools/{t['slug']}.html" for t in TOOLS]
     urls += [f"categories/{c['slug']}.html" for c in CATEGORIES.values()]
-    urls += [f"blog/posts/{p['slug']}.html" for p in BLOG_POSTS]
 
     entries = "\n".join(f"  <url><loc>{SITE_URL}/{u}</loc></url>" for u in urls)
     sitemap = f'''<?xml version="1.0" encoding="UTF-8"?>

@@ -8,23 +8,27 @@ async function render({posts=[],fail=false}={}) {
   const section = element();
   const context = {
     URLSearchParams, location:{pathname:'/journal/current',search:''},
-    window:{AnvilGuideCatalog:[{slug:'fallback',title:'A static guide'}],ANVIL_CONFIG:{API_BASE_URL:'https://api.example'}},
+    window:{ANVIL_CONFIG:{API_BASE_URL:'https://api.example'}},
     document:{getElementById:()=>section,querySelector:selector=>selector==='h1'?{textContent:'JSON developer guide'}:element(),createElement:element},
     fetch:async()=>{if(fail)throw Error('offline');return {ok:true,json:async()=>posts};}
   };
   await vm.runInNewContext(fs.readFileSync('frontend/assets/js/recommendations.js','utf8'),context);
-  return section.children[1].children;
+  return section;
 }
-test('recommendations exclude current post, deduplicate, rank by topic, and use safe link slugs',async()=>{
-  const cards=await render({posts:[{slug:'current',title:'Current'},{slug:'unrelated',title:'Other subject'},{slug:'related',title:'JSON guide'},{slug:'related',title:'Duplicate'},{slug:'<bad>',title:'<script>unsafe</script>'}]});
-  assert.equal(cards.length,4);
+test('recommendations preserve backend order and safely render metadata',async()=>{
+  const section=await render({posts:[{slug:'related',title:'JSON guide'},{slug:'<bad>',title:'<script>unsafe</script>'}]});
+  const cards=section.children[1].children;
+  assert.equal(section.hidden,false);
+  assert.equal(cards.length,2);
   assert.equal(cards[0].children[0].textContent,'JSON guide');
   assert.ok(!cards.some(card=>card.children[2].href==='/journal/current'));
   assert.ok(cards.some(card=>card.children[2].href==='/journal/%3Cbad%3E'));
   assert.ok(cards.some(card=>card.children[0].textContent==='<script>unsafe</script>'));
 });
-test('recommendations preserve useful static guides when the API fails',async()=>{
-  const cards=await render({fail:true});
-  assert.equal(cards.length,1);
-  assert.equal(cards[0].children[2].href,'/blog/posts/fallback.html');
+test('failed or empty recommendations hide the section without static fallbacks',async()=>{
+  for (const options of [{fail:true},{posts:[]}]) {
+    const section=await render(options);
+    assert.equal(section.hidden,true);
+    assert.equal(section.children.length,0);
+  }
 });
