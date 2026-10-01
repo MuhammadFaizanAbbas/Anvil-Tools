@@ -14,4 +14,9 @@ ErrorDocument 404 /404.html
   RewriteRule ^journal-sitemap\.xml$ journal-sitemap.php [L,QSA]
   RewriteRule ^admin/login/?$ /admin-panel/login.html [R=302,L]
   RewriteRule ^admin/?$ /admin-panel/index.html [R=302,L]
+  # Render static pages with this request's origin in canonical and Open Graph
+  # URLs. The stored Vercel URLs remain valid when the same files run on Vercel.
+  RewriteRule ^$ static-page.php?path=index.html [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^(.+\.html)$ static-page.php?path=$1 [L,QSA,NC]
 </IfModule>

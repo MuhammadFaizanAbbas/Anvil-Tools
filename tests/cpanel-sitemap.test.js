@@ -11,6 +11,14 @@ test('cPanel routes public metadata through domain-aware handlers', () => {
   assert.match(htaccess, /journal\.php\?slug=\$1/);
   assert.match(htaccess, /RewriteRule \^journal-images\/\(/);
   assert.match(htaccess, /journal-image\.php\?id=\$1/);
+  assert.match(htaccess, /RewriteRule \^\$ static-page\.php\?path=index\.html/);
+  assert.match(htaccess, /RewriteRule \^\(\.\+\\\.html\)\$ static-page\.php\?path=\$1/);
+
+  const staticPage = fs.readFileSync('frontend/static-page.php', 'utf8');
+  assert.match(staticPage, /public_site_origin\(\)/);
+  assert.match(staticPage, /str_replace\('https:\/\/anviltools\.vercel\.app', public_site_origin\(\), \$template\)/);
+  assert.match(staticPage, /realpath\(__DIR__/);
+  assert.match(staticPage, /Vary: Host/);
 
   const metadata = fs.readFileSync('frontend/site-metadata.php', 'utf8');
   assert.match(metadata, /str_replace\('https:\/\/anviltools\.vercel\.app', \$origin/);
