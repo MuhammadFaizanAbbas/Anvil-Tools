@@ -3,6 +3,16 @@ declare(strict_types=1);
 
 require __DIR__ . '/site-origin.php';
 
+$requestMethod = strtoupper((string) ($_SERVER['REQUEST_METHOD'] ?? 'GET'));
+if (!in_array($requestMethod, ['GET', 'HEAD'], true)) {
+    header('Allow: GET, HEAD');
+    header('Cache-Control: no-store');
+    header('Content-Type: text/plain; charset=UTF-8');
+    header('X-Content-Type-Options: nosniff');
+    http_response_code(405);
+    exit('This page requires JavaScript to submit forms.');
+}
+
 $requestedPath = $_GET['path'] ?? '';
 if (!is_string($requestedPath) || !preg_match('#^(?:[a-z0-9-]+/)*[a-z0-9-]+\.html$#i', $requestedPath)) {
     http_response_code(404);

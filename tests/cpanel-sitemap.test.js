@@ -19,6 +19,14 @@ test('cPanel routes public metadata through domain-aware handlers', () => {
   assert.match(staticPage, /str_replace\('https:\/\/anviltools\.vercel\.app', public_site_origin\(\), \$template\)/);
   assert.match(staticPage, /realpath\(__DIR__/);
   assert.match(staticPage, /Vary: Host/);
+  assert.match(staticPage, /\['GET', 'HEAD'\]/);
+  assert.match(staticPage, /http_response_code\(405\)/);
+
+  const contact = fs.readFileSync('frontend/contact.html', 'utf8');
+  assert.match(contact, /<form id="contactForm" method="post" action="\/contact\.html">/);
+
+  const login = fs.readFileSync('frontend/admin-panel/login.html', 'utf8');
+  assert.match(login, /<form id="loginForm" method="post" action="\/admin-panel\/login\.html">/);
 
   const metadata = fs.readFileSync('frontend/site-metadata.php', 'utf8');
   assert.match(metadata, /str_replace\('https:\/\/anviltools\.vercel\.app', \$origin/);
