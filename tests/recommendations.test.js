@@ -7,8 +7,8 @@ async function render({posts=[],fail=false}={}) {
   const element = () => ({children:[], append(...items){this.children.push(...items);},replaceChildren(...items){this.children=items;}});
   const section = element();
   const context = {
-    URLSearchParams, location:{pathname:'/journal/current',search:''},
-    window:{ANVIL_CONFIG:{API_BASE_URL:'https://api.example'}},
+    URLSearchParams, location:{pathname:'/journal/current',search:'',origin:'https://site.example'},
+    window:{ANVIL_CONFIG:{API_BASE_URL:'https://api.example',SITE_URL:'https://site.example'}},
     document:{getElementById:()=>section,querySelector:selector=>selector==='h1'?{textContent:'JSON developer guide'}:element(),createElement:element},
     fetch:async()=>{if(fail)throw Error('offline');return {ok:true,json:async()=>posts};}
   };
@@ -20,7 +20,7 @@ test('recommendations preserve backend order and safely render metadata',async()
   const cards=section.children[1].children;
   assert.equal(section.hidden,false);
   assert.equal(cards.length,2);
-  assert.equal(cards[0].children[0].src,'https://api.example/api/public/post-images/cover');
+  assert.equal(cards[0].children[0].src,'https://site.example/journal-images/cover');
   assert.equal(cards[0].children[1].textContent,'JSON guide');
   assert.ok(!cards.some(card=>card.children[2].href==='/journal/current'));
   assert.ok(cards.some(card=>card.children[2].href==='/journal/%3Cbad%3E'));

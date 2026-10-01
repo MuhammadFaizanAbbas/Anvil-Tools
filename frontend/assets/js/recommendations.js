@@ -8,6 +8,7 @@
   section.hidden = true;
   try {
     const base = (window.ANVIL_CONFIG?.API_BASE_URL || '').replace(/\/$/, '');
+    const siteBase = (window.ANVIL_CONFIG?.SITE_URL || location.origin || '').replace(/\/$/, '');
     const response = await fetch(`${base}/api/public/recommendations?limit=6${slug ? '&slug=' + encodeURIComponent(slug) : ''}`, { credentials:'omit' });
     if (!response.ok) return;
     const posts = await response.json();
@@ -20,7 +21,7 @@
       const excerpt = document.createElement('p'); excerpt.textContent = post.excerpt || '';
       const link = document.createElement('a'); link.className = 'tool-link'; link.textContent = 'Read article ?'; link.href = `/journal/${encodeURIComponent(post.slug)}`;
       if (post.cover_image_id) {
-        const image = document.createElement('img'); image.src = `${base}/api/public/post-images/${encodeURIComponent(post.cover_image_id)}`;
+        const image = document.createElement('img'); image.src = `${siteBase}/journal-images/${encodeURIComponent(post.cover_image_id)}`;
         image.alt = post.cover_alt || ''; image.className = 'guide-cover'; image.loading = 'lazy'; card.append(image);
       }
       card.append(title,excerpt,link); grid.append(card);

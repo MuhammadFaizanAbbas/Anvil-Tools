@@ -18,6 +18,7 @@ test('frontend targets configured API and sends token without cross-site cookies
   await api.fetch('/api/admin/me');
   assert.equal(calls[0].url, 'https://backend.vercel.app/api/admin/me');
   assert.equal(calls[0].options.headers.get('Authorization'), 'Bearer test-token');
+  assert.equal(calls[0].options.headers.get('X-Frontend-Origin'), 'https://site-one.example');
   assert.equal(calls[0].options.credentials, 'omit');
 });
 test('expired and cleared sessions do not send authorization', async () => {

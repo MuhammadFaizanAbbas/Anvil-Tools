@@ -24,7 +24,8 @@
   const title=$('postSeoTitle').value||$('postTitle').value||'Your article title';
   $('searchTitle').textContent=title;
   $('searchDescription').textContent=$('postSeoDescription').value||$('postExcerpt').value||'Add a short description to help readers understand your article.';
-  $('searchUrl').textContent=`anviltools.vercel.app/journal/${$('postSlug').value||'your-article'}`;
+  const siteHost=(window.ANVIL_CONFIG?.SITE_URL||window.location.origin||'').replace(/^https?:\/\//,'').replace(/\/$/,'');
+  $('searchUrl').textContent=`${siteHost}/journal/${$('postSlug').value||'your-article'}`;
   $('seoTitleCount').textContent=`${$('postSeoTitle').value.length} / 160`;
   $('seoDescriptionCount').textContent=`${$('postSeoDescription').value.length} / 320`;
   const words=$('postBody').value.trim().split(/\s+/).filter(Boolean).length;

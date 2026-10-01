@@ -3,6 +3,11 @@ DirectoryIndex index.html
 ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # Keep published articles and their private-storage covers on this frontend's
+  # domain. The PHP handlers forward the detected domain to the API so generated
+  # canonical URLs, assets and navigation never point at another frontend.
+  RewriteRule ^journal/([a-z0-9]+(?:-[a-z0-9]+)*)/?$ journal.php?slug=$1 [L,QSA,NC]
+  RewriteRule ^journal-images/([a-f0-9-]{36})/?$ journal-image.php?id=$1 [L,QSA,NC]
   RewriteRule ^sitemap\.xml$ site-metadata.php?document=sitemap [L,QSA]
   RewriteRule ^sitemap-index\.xml$ site-metadata.php?document=index [L,QSA]
   RewriteRule ^robots\.txt$ site-metadata.php?document=robots [L,QSA]

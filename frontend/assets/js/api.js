@@ -1,6 +1,7 @@
 (() => {
   const key = 'anvil_admin_session';
   const base = (window.ANVIL_CONFIG?.API_BASE_URL || '').replace(/\/$/, '');
+  const siteOrigin = (window.ANVIL_CONFIG?.SITE_URL || window.location.origin || '').replace(/\/$/, '');
   function clearSession() { sessionStorage.removeItem(key); }
   function getSession() {
     try {
@@ -19,6 +20,9 @@
       const headers = new Headers(options.headers);
       const session = getSession();
       if (session && !headers.has('Authorization')) headers.set('Authorization', `Bearer ${session.accessToken}`);
+      if (/^https?:\/\/[^/]+$/i.test(siteOrigin) && !headers.has('X-Frontend-Origin')) {
+        headers.set('X-Frontend-Origin', siteOrigin);
+      }
       const response = await fetch(`${base}${path}`, { ...options, headers, credentials: 'omit' });
       if (response.status === 401) clearSession();
       return response;

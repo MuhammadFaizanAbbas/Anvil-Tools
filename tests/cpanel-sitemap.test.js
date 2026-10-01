@@ -7,6 +7,10 @@ test('cPanel routes public metadata through domain-aware handlers', () => {
   for (const [route, extension] of [['sitemap', 'xml'], ['sitemap-index', 'xml'], ['robots', 'txt'], ['journal-sitemap', 'xml']]) {
     assert.ok(htaccess.includes(`RewriteRule ^${route}\\.${extension}$`), route);
   }
+  assert.match(htaccess, /RewriteRule \^journal\/\(/);
+  assert.match(htaccess, /journal\.php\?slug=\$1/);
+  assert.match(htaccess, /RewriteRule \^journal-images\/\(/);
+  assert.match(htaccess, /journal-image\.php\?id=\$1/);
 
   const metadata = fs.readFileSync('frontend/site-metadata.php', 'utf8');
   assert.match(metadata, /str_replace\('https:\/\/anviltools\.vercel\.app', \$origin/);
@@ -19,4 +23,10 @@ test('cPanel routes public metadata through domain-aware handlers', () => {
   assert.match(journal, /'X-Frontend-Origin: ' \. \$origin/);
   assert.match(journal, /CURLOPT_CONNECTTIMEOUT/);
   assert.match(journal, /http_response_code\(502\)/);
+
+  for (const handler of ['journal.php', 'journal-image.php']) {
+    const source = fs.readFileSync(`frontend/${handler}`, 'utf8');
+    assert.match(source, /public_site_origin\(\)/);
+    assert.match(source, /fetch_public_backend/);
+  }
 });
