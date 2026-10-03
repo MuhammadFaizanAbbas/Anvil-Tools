@@ -4,58 +4,70 @@
   "buildCommand": "",
   "installCommand": "",
   "outputDirectory": "frontend",
-  "redirects": [
+  "routes": [
     {
-      "source": "/admin",
-      "destination": "/admin-panel/index.html",
-      "permanent": false
+      "src": "^/admin/?$",
+      "status": 307,
+      "headers": {
+        "Location": "/admin-panel/index.html"
+      }
     },
     {
-      "source": "/admin/login",
-      "destination": "/admin-panel/login.html",
-      "permanent": false
+      "src": "^/admin/login/?$",
+      "status": 307,
+      "headers": {
+        "Location": "/admin-panel/login.html"
+      }
     },
     {
-      "source": "/blog/posts/:slug",
-      "destination": "/blog/index.html",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/blog",
-      "destination": "https://anvil-tools-backend.vercel.app/api/public/blog"
+      "src": "^/blog/posts/[^/]+/?$",
+      "status": 308,
+      "headers": {
+        "Location": "/blog/index.html"
+      }
     },
     {
-      "source": "/blog/",
-      "destination": "https://anvil-tools-backend.vercel.app/api/public/blog"
+      "src": "^/admin-panel/(.*)$",
+      "headers": {
+        "Cache-Control": "no-store",
+        "Referrer-Policy": "no-referrer",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY"
+      },
+      "continue": true
     },
     {
-      "source": "/blog/index.html",
-      "destination": "https://anvil-tools-backend.vercel.app/api/public/blog"
+      "src": "^/assets/js/(.*)$",
+      "headers": {
+        "Cache-Control": "public, max-age=0, must-revalidate"
+      },
+      "continue": true
     },
     {
-      "source": "/journal/:slug",
-      "destination": "https://anvil-tools-backend.vercel.app/api/public/articles/:slug"
+      "src": "^/assets/vendor/background-removal/(.*)$",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "continue": true
     },
     {
-      "source": "/journal-images/:id",
-      "destination": "https://anvil-tools-backend.vercel.app/api/public/post-images/:id"
+      "src": "^/blog(?:/index\\.html|/?)$",
+      "dest": "https://anvil-tools-backend.vercel.app/api/public/blog"
     },
     {
-      "source": "/journal-sitemap.xml",
-      "destination": "https://anvil-tools-backend.vercel.app/api/public/sitemap.xml"
-    }
-  ],
-  "headers": [
+      "src": "^/journal/([^/]+)/?$",
+      "dest": "https://anvil-tools-backend.vercel.app/api/public/articles/$1"
+    },
     {
-      "source": "/assets/vendor/background-removal/:path*",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
+      "src": "^/journal-images/([^/]+)/?$",
+      "dest": "https://anvil-tools-backend.vercel.app/api/public/post-images/$1"
+    },
+    {
+      "src": "^/journal-sitemap\\.xml$",
+      "dest": "https://anvil-tools-backend.vercel.app/api/public/sitemap.xml"
+    },
+    {
+      "handle": "filesystem"
     }
   ]
 }

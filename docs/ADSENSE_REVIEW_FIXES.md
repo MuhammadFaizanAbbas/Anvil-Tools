@@ -23,6 +23,8 @@ For the **Vercel backend**, deploy `deployment/adsense-fixes-backend.zip` to the
 
 For a **Vercel frontend**, deploy the updated `frontend/` with `frontend/vercel.json`, or the full frontend repository with its root `vercel.json`. Deploy the updated backend first because the new blog rewrites target `/api/public/blog`. Do not put the frontend Vercel configuration into the Express backend repository.
 
+The Vercel configuration uses ordered routes to proxy all three blog-index URLs before filesystem handling. A normal rewrite loses to the existing `blog/index.html` file, which is deliberately retained for cPanel's template and local previews. Live verification must check actual article cards in the response and the page-two canonical; a successful deployment status alone does not test routing.
+
 After deployment, run:
 
 ```sh
