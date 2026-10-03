@@ -4,6 +4,8 @@ The technical review fixes are implemented and tested. The expanded editorial li
 
 Backend commit `e729148` has deployed successfully. Database publication is awaiting access to the Anvil Tools Supabase project: the currently connected account exposes another project and rejects this project's queries. Do not interpret a successful code deployment as confirmation that the two revised article bodies have been published. See `docs/audits/editorial-release.json` for the checked local content and `content/editorial/release-2026-10-04.json` for the exact release scope.
 
+Frontend commits `38f74f8` and `2949c37` have deployed successfully to https://anviltools.vercel.app. The second corrects Vercel's filesystem precedence. Live checks confirm 49 public HTML pages respond successfully, both existing article covers load as 1672 × 941 WebP images, and the three blog index routes return server-rendered article links. `docs/audits/live-release.json` distinguishes code checks from the still-pending revised database bodies. The existing live bodies and their original URLs remain available.
+
 The review's suggestion that there are only one or two blog posts is out of date: the current live journal sitemap lists 490 article URLs. The main technical gap is exposing those articles in the initial blog HTML. A large count does not establish content quality; review the existing library for repetition, accuracy, and usefulness rather than treating another arbitrary post count as an approval target. The 12 added guides provide detailed, tool-specific workflows and examples.
 
 ## Changes

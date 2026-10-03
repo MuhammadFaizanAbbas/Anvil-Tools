@@ -1,0 +1,402 @@
+{
+  "checkedAt": "2026-10-03T21:22:00.384Z",
+  "origin": "https://anviltools.vercel.app",
+  "pages": [
+    {
+      "path": "/404.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/",
+      "noindex": false
+    },
+    {
+      "path": "/about.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/about.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/article.html",
+      "status": 200,
+      "h1": 1,
+      "noindex": false
+    },
+    {
+      "path": "/blog/background-removal-and-transparency.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/background-removal-and-transparency.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/base64-text-encoding.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/base64-text-encoding.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/format-and-check-json.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/format-and-check-json.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/images-to-clear-pdfs.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/images-to-clear-pdfs.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/index.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/index.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/jwt-decoding.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/jwt-decoding.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/merge-pdfs-locally.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/merge-pdfs-locally.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/qr-codes-for-print.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/qr-codes-for-print.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/sha256-text-checks.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/sha256-text-checks.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/strong-passwords.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/strong-passwords.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/temporary-email-vs-aliases.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/temporary-email-vs-aliases.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/url-encoding-components.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/url-encoding-components.html",
+      "noindex": false
+    },
+    {
+      "path": "/blog/word-and-character-counts.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/word-and-character-counts.html",
+      "noindex": false
+    },
+    {
+      "path": "/categories/developer-tools.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/categories/developer-tools.html",
+      "noindex": false
+    },
+    {
+      "path": "/categories/email-tools.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/categories/email-tools.html",
+      "noindex": false
+    },
+    {
+      "path": "/categories/generators.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/categories/generators.html",
+      "noindex": false
+    },
+    {
+      "path": "/categories/image-tools.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/categories/image-tools.html",
+      "noindex": false
+    },
+    {
+      "path": "/categories/pdf-tools.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/categories/pdf-tools.html",
+      "noindex": false
+    },
+    {
+      "path": "/categories/text-tools.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/categories/text-tools.html",
+      "noindex": false
+    },
+    {
+      "path": "/contact.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/contact.html",
+      "noindex": false
+    },
+    {
+      "path": "/cookie-policy.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/cookie-policy.html",
+      "noindex": false
+    },
+    {
+      "path": "/disclaimer.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/disclaimer.html",
+      "noindex": false
+    },
+    {
+      "path": "/index.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/",
+      "noindex": false
+    },
+    {
+      "path": "/privacy-policy.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/privacy-policy.html",
+      "noindex": false
+    },
+    {
+      "path": "/terms-of-service.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/terms-of-service.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/background-remover.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/background-remover.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/base64-tool.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/base64-tool.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/color-palette-generator.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/color-palette-generator.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/csv-to-json.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/hash-generator.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/image-to-pdf.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/index.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/index.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/json-formatter.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/jwt-decoder.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/jwt-decoder.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/password-generator.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/password-generator.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/pdf-merge.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/qr-code-generator.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/temp-mail.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/text-case-converter.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/text-diff-checker.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/text-diff-checker.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/unit-converter.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/unit-converter.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/unix-timestamp-converter.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/unix-timestamp-converter.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/url-encoder-decoder.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/url-encoder-decoder.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/user-agent-generator.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/user-agent-generator.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/uuid-generator.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "noindex": false
+    },
+    {
+      "path": "/tools/word-counter.html",
+      "status": 200,
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/word-counter.html",
+      "noindex": false
+    }
+  ],
+  "articles": [
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "status": 200,
+      "revisedBodyPublished": false,
+      "bodyMd5": "1f961ce42a62c31271740171a71289c1",
+      "htmlOutline": true,
+      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "coverMatches": true,
+      "coverStatus": 200,
+      "coverMime": "image/webp",
+      "coverWidth": 1672,
+      "coverHeight": 941
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "status": 200,
+      "revisedBodyPublished": false,
+      "bodyMd5": "92220b3affda174dccc58cb58c38d5c6",
+      "htmlOutline": true,
+      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
+      "coverMatches": true,
+      "coverStatus": 200,
+      "coverMime": "image/webp",
+      "coverWidth": 1672,
+      "coverHeight": 941
+    }
+  ],
+  "listings": [
+    {
+      "path": "/blog",
+      "status": 200,
+      "serverRendered": true,
+      "canonical": "https://anviltools.vercel.app/blog/index.html",
+      "articleLinks": 60
+    },
+    {
+      "path": "/blog/",
+      "status": 200,
+      "serverRendered": true,
+      "canonical": "https://anviltools.vercel.app/blog/index.html",
+      "articleLinks": 60
+    },
+    {
+      "path": "/blog/index.html?page=2",
+      "status": 200,
+      "serverRendered": true,
+      "canonical": "https://anviltools.vercel.app/blog/index.html?page=2",
+      "articleLinks": 60
+    }
+  ],
+  "missingPageStatus": 404,
+  "codePassed": true,
+  "contentPublished": false
+}
