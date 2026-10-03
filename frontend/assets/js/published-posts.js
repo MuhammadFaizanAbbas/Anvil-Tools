@@ -20,7 +20,10 @@
   };
 
   const limit = 30;
-  let page = 0;
+  const initialPage = Number(new URLSearchParams(location.search).get('page') || 1);
+  let page = Number.isInteger(initialPage) && initialPage > 0 && initialPage < 100000 ? initialPage - 1 : 0;
+  const serverRendered = cards?.getAttribute?.('data-server-rendered') === 'true';
+  let loading = false;
 
   function renderBlogPage(posts, total) {
     const fragment = document.createDocumentFragment();
@@ -37,17 +40,17 @@
     const pages = Math.max(1, Math.ceil(total / limit));
     if (pagination) pagination.hidden = total <= limit;
     if (pageLabel) pageLabel.textContent = `Page ${page + 1} of ${pages} · ${total} blog${total === 1 ? '' : 's'}`;
-    if (previous) previous.disabled = page === 0;
-    if (next) next.disabled = page + 1 >= pages;
+    if (previous) { previous.disabled = page === 0; previous.hidden = page === 0; previous.href = `/blog/index.html?page=${page}`; }
+    if (next) { next.disabled = page + 1 >= pages; next.hidden = page + 1 >= pages; next.href = `/blog/index.html?page=${page + 2}`; }
     if (status) status.textContent = posts.length ? '' : 'No blogs published yet.';
   }
 
   async function load() {
+    loading = true;
     if (retry) { retry.hidden = true; retry.disabled = true; }
-    if (status) status.textContent = article ? 'Loading article…' : 'Loading blogs…';
+    if (status) status.textContent = article ? 'Loading article…' : 'Updating articles…';
     if (cards) {
       cards.setAttribute('aria-busy', 'true');
-      cards.innerHTML = '<div class="blog-loading"><span></span><p>Loading blogs…</p></div>';
     }
     if (previous) previous.disabled = true;
     if (next) next.disabled = true;
@@ -68,24 +71,28 @@
           const text = document.createElement('p'); text.style.whiteSpace = 'pre-wrap'; text.textContent = paragraph; article.append(text);
         }
       } else {
-        const totalHeader = Number(response.headers?.get('X-Total-Count'));
-        const total = Number.isFinite(totalHeader) ? totalHeader : page * limit + data.length;
+        const totalValue = response.headers?.get('X-Total-Count');
+        const totalHeader = Number(totalValue);
+        const total = totalValue != null && Number.isFinite(totalHeader) ? totalHeader : page * limit + data.length;
         if (!data.length && page > 0) { page--; return load(); }
         renderBlogPage(data, total);
+        window.history?.replaceState(null, '', `/blog/index.html${page ? `?page=${page + 1}` : ''}`);
       }
     } catch (error) {
-      if (cards) { cards.replaceChildren(); cards.removeAttribute('aria-busy'); }
+      if (cards) cards.removeAttribute('aria-busy');
       if (status) status.textContent = ['localhost', '127.0.0.1'].includes(location.hostname)
         ? 'Local API unavailable. Start npm run dev:api and npm run dev:frontend, then try again.'
         : error.message;
       if (article) article.querySelector('h1').textContent = 'Article unavailable';
       if (pagination) pagination.hidden = false;
       if (retry) { retry.hidden = false; retry.disabled = false; }
+    } finally {
+      loading = false;
     }
   }
 
-  if (previous) previous.addEventListener('click', () => { if (page > 0) { page--; return load(); } });
-  if (next) next.addEventListener('click', () => { page++; return load(); });
+  if (previous) previous.addEventListener('click', event => { event?.preventDefault(); if (!loading && page > 0) { page--; return load(); } });
+  if (next) next.addEventListener('click', event => { event?.preventDefault(); if (!loading && !next.disabled) { page++; return load(); } });
   if (retry) retry.addEventListener('click', load);
-  await load();
+  if (!serverRendered || article) await load();
 })();

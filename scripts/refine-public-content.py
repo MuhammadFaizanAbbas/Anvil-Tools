@@ -74,3 +74,6 @@ for path in SITE.rglob('*.html'):
 print('Applied shared content surfaces, About design, 40 specific FAQs, labels, metadata, and ad-free defaults.')
 import runpy
 runpy.run_path(str(ROOT/'scripts/correct-review-findings.py'))
+import subprocess
+subprocess.run(['node', str(ROOT/'scripts/build-editorial.js')], check=True, cwd=ROOT)
+subprocess.run(['node', str(ROOT/'scripts/build-sitemap.js')], check=True, cwd=ROOT)

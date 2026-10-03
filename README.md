@@ -56,6 +56,8 @@ The API stores catalog changes in Supabase. Published articles appear under Blog
 
 The optional generator now writes to `frontend/`. It overwrites generated pages, so update its templates before regenerating manually edited pages. Existing domain, contact email and ad publisher placeholders still need your real values before launch.
 
+The blog index now renders published article cards on the server on cPanel and Vercel. Twelve static practical guides remain readable without the database or JavaScript. Edit their sources in `scripts/site-generator/editorial/` and run `npm run build:editorial` to update pages, links, the backend template, and sitemaps. See [the October review fixes and release instructions](docs/ADSENSE_REVIEW_FIXES.md) for hosting, Search Console, and future advertising setup.
+
 The admin workspace includes KPI cards, tool-view ranking, a category donut chart, catalog search, content management, and retryable connection errors. Charts use real stored counts. No daily history, unique-visitor metrics, or traffic-source estimates are fabricated. Public pages currently do not automatically send tool-view events; the usage chart stays empty until `/api/analytics/event` receives events.
 
 Contact submissions, email receipts/alerts, and admin replies use the private support inbox and SMTP. Follow [docs/CONTACT_SETUP.md](docs/CONTACT_SETUP.md) before enabling production delivery.

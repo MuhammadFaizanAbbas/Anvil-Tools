@@ -1,0 +1,23 @@
+{
+  "release": "2026-10-04-first-two-guides",
+  "articles": [
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "words": 11015,
+      "characters": 75633,
+      "chapters": 11,
+      "cover": "f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+      "bodyMd5": "a46bcdc7f71853c337a26dee7bd10533"
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "words": 10576,
+      "characters": 72877,
+      "chapters": 15,
+      "cover": "d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+      "bodyMd5": "fe99d914b91460b14dfba18393561f70"
+    }
+  ],
+  "redirects": 0,
+  "archived": 0
+}

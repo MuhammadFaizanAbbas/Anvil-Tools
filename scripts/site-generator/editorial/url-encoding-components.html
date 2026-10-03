@@ -1,0 +1,18 @@
+<h2>Keep a URL's structure separate from its values</h2>
+<p>A URL can contain separators that have a specific meaning. A query value containing an ampersand should not accidentally become two query parameters. Encoding is useful because it represents characters within the component where they belong. Before choosing an action, decide whether your input is a complete URL or one value that will be inserted into it.</p>
+<p>Anvil Tools offers a component mode and a full-URL mode. The component mode uses encodeURIComponent and decodeURIComponent. The full-URL mode uses encodeURI and decodeURI, which preserve more structural characters. These are different operations; choosing the wrong mode can leave a separator active or encode separators you meant to keep.</p>
+<h2>Work through one query example</h2>
+<p>Suppose a search page expects the value <code>tea &amp; coffee</code>. Encode that value in component mode. The result is:</p>
+<pre><code>tea%20%26%20coffee</code></pre>
+<p>You can place that representation after a query key in an illustrative URL:</p>
+<pre><code>https://example.com/search?q=tea%20%26%20coffee</code></pre>
+<p>The encoded ampersand belongs to the q value. An unencoded ampersand in a query commonly separates parameters. In application code, prefer a URL builder and its query-parameter API so components are handled in the intended context. The manual tool is useful for inspecting a small value or understanding a received URL.</p>
+<h2>Spaces and plus signs need context</h2>
+<p>A literal plus sign is not always interchangeable with a space. Form-style query parsing often represents spaces with plus signs, while decodeURIComponent itself does not convert every plus sign into a space. For a value such as <code>C++</code>, component encoding produces <code>C%2B%2B</code>. Preserve that distinction when inspecting a link from another application.</p>
+<p>Check the producing and receiving system's conventions rather than repeatedly replacing characters. A form submission, a URL path, and a query parameter can have different requirements. This tool does not automatically infer which protocol created the input.</p>
+<h2>Avoid encoding a value twice</h2>
+<p>If you encode <code>%20</code> again as a component, its percent sign becomes encoded and you get <code>%2520</code>. That may be correct when the literal text %20 is the intended value, but it is a mistake if you meant a space and accidentally ran the same workflow twice.</p>
+<p>Keep the original, note each transformation, and compare a decode back to the expected text. Do not keep decoding a URL until it looks familiar: nested encoding can be intentional, and changing it can alter the destination. Malformed percent sequences or invalid UTF-8 can trigger the tool's error feedback.</p>
+<h2>Decoded does not mean safe</h2>
+<p>Encoding changes representation. It does not encrypt a credential, authenticate a destination, or make a link trustworthy. Inspect the hostname and purpose before opening a decoded URL. Avoid putting tokens, passwords, or private details into examples, particularly when the final URL could be stored in browser history or shared.</p>
+<p>For a QR code or public link, open the final destination in the intended browser and verify the complete task. A successful encoding message only confirms that the transformation ran. The <a href="https://tc39.es/ecma262/multipage/global-object.html#sec-uri-handling-functions">ECMAScript URI handling specification</a> describes the underlying functions used by this tool.</p>

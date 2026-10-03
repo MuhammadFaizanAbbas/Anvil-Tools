@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>URL Encoding: Keep Query Values Separate from URL Structure | Anvil Tools</title><meta name="description" content="Learn when to encode a component, why ampersands and plus signs matter, and how to avoid accidental double encoding."><link rel="canonical" href="https://anviltools.vercel.app/blog/url-encoding-components.html">
+<meta property="og:type" content="article"><meta property="og:title" content="URL Encoding: Keep Query Values Separate from URL Structure"><meta property="og:description" content="Learn when to encode a component, why ampersands and plus signs matter, and how to avoid accidental double encoding."><meta property="og:url" content="https://anviltools.vercel.app/blog/url-encoding-components.html">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="URL Encoding: Keep Query Values Separate from URL Structure"><meta name="twitter:description" content="Learn when to encode a component, why ampersands and plus signs matter, and how to avoid accidental double encoding.">
+<link rel="icon" href="/assets/images/anvil-mark.svg"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="/assets/css/refinements.css"><link rel="stylesheet" href="/assets/css/design.css"><link rel="stylesheet" href="/assets/css/content.css"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"URL Encoding: Keep Query Values Separate from URL Structure","description":"Learn when to encode a component, why ampersands and plus signs matter, and how to avoid accidental double encoding.","mainEntityOfPage":"https://anviltools.vercel.app/blog/url-encoding-components.html","keywords":"","author":{"@type":"Organization","name":"Anvil Tools","url":"https://anviltools.vercel.app/about.html"},"publisher":{"@type":"Organization","name":"Anvil Tools","url":"https://anviltools.vercel.app/about.html"},"inLanguage":"en","wordCount":501,"url":"https://anviltools.vercel.app/blog/url-encoding-components.html"}</script></head>
+<body class="public-site article-page"><noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript><a class="skip-link" href="#main-content">Skip to article</a>
+<header class="site-header"><div class="header-row"><a class="logo" href="/"><img src="/assets/images/anvil-mark.svg" width="36" height="36" alt="">Anvil Tools</a><button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span aria-hidden="true">&#9776;</span></button><nav class="main-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/tools/index.html">All tools</a><a aria-current="page" href="/blog/index.html">Blogs</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav></div></header>
+<main class="wrap" id="main-content"><p class="breadcrumbs"><a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/blog/index.html">Blogs</a></p>
+<article class="published-article"><header class="article-header"><span class="eyebrow">Developer tools</span><h1>URL Encoding: Keep Query Values Separate from URL Structure</h1><p class="lede">Learn when to encode a component, why ampersands and plus signs matter, and how to avoid accidental double encoding.</p><p class="article-meta">By <a href="/about.html" rel="author">Anvil Tools</a> · 3 minute read</p></header>
+<div class="article-content"><p class="article-meta">A practical guide from Anvil Tools, a VelloxTech project.</p><h2>Keep a URL's structure separate from its values</h2>
+<p>A URL can contain separators that have a specific meaning. A query value containing an ampersand should not accidentally become two query parameters. Encoding is useful because it represents characters within the component where they belong. Before choosing an action, decide whether your input is a complete URL or one value that will be inserted into it.</p>
+<p>Anvil Tools offers a component mode and a full-URL mode. The component mode uses encodeURIComponent and decodeURIComponent. The full-URL mode uses encodeURI and decodeURI, which preserve more structural characters. These are different operations; choosing the wrong mode can leave a separator active or encode separators you meant to keep.</p>
+<h2>Work through one query example</h2>
+<p>Suppose a search page expects the value <code>tea &amp; coffee</code>. Encode that value in component mode. The result is:</p>
+<pre><code>tea%20%26%20coffee</code></pre>
+<p>You can place that representation after a query key in an illustrative URL:</p>
+<pre><code>https://example.com/search?q=tea%20%26%20coffee</code></pre>
+<p>The encoded ampersand belongs to the q value. An unencoded ampersand in a query commonly separates parameters. In application code, prefer a URL builder and its query-parameter API so components are handled in the intended context. The manual tool is useful for inspecting a small value or understanding a received URL.</p>
+<h2>Spaces and plus signs need context</h2>
+<p>A literal plus sign is not always interchangeable with a space. Form-style query parsing often represents spaces with plus signs, while decodeURIComponent itself does not convert every plus sign into a space. For a value such as <code>C++</code>, component encoding produces <code>C%2B%2B</code>. Preserve that distinction when inspecting a link from another application.</p>
+<p>Check the producing and receiving system's conventions rather than repeatedly replacing characters. A form submission, a URL path, and a query parameter can have different requirements. This tool does not automatically infer which protocol created the input.</p>
+<h2>Avoid encoding a value twice</h2>
+<p>If you encode <code>%20</code> again as a component, its percent sign becomes encoded and you get <code>%2520</code>. That may be correct when the literal text %20 is the intended value, but it is a mistake if you meant a space and accidentally ran the same workflow twice.</p>
+<p>Keep the original, note each transformation, and compare a decode back to the expected text. Do not keep decoding a URL until it looks familiar: nested encoding can be intentional, and changing it can alter the destination. Malformed percent sequences or invalid UTF-8 can trigger the tool's error feedback.</p>
+<h2>Decoded does not mean safe</h2>
+<p>Encoding changes representation. It does not encrypt a credential, authenticate a destination, or make a link trustworthy. Inspect the hostname and purpose before opening a decoded URL. Avoid putting tokens, passwords, or private details into examples, particularly when the final URL could be stored in browser history or shared.</p>
+<p>For a QR code or public link, open the final destination in the intended browser and verify the complete task. A successful encoding message only confirms that the transformation ran. The <a href="https://tc39.es/ecma262/multipage/global-object.html#sec-uri-handling-functions">ECMAScript URI handling specification</a> describes the underlying functions used by this tool.</p>
+<section class="article-resources"><h2>Try the tool</h2><p><a class="btn" href="/tools/url-encoder-decoder.html">Open url encoder decoder</a></p><h2>Related guides</h2><ul><li><a href="/blog/base64-text-encoding.html">Base64 for Text: Encoding, Unicode, and Safe Round Trips</a></li><li><a href="/blog/qr-codes-for-print.html">Check a QR Code Before You Print or Share It</a></li></ul></section></div>
+<a class="article-return" href="/blog/index.html">&#8592; Back to all blogs</a></article></main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:10px;"><img class="brand-mark" src="/assets/images/anvil-mark.svg" width="36" height="36" alt="">Anvil Tools</div>
+        <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
+      </div>
+      <div><h4>Tools</h4><ul>
+        <li><a href="/tools/temp-mail.html">Temp mail</a></li>
+        <li><a href="/tools/background-remover.html">Background remover</a></li>
+        <li><a href="/tools/pdf-merge.html">PDF merge</a></li>
+        <li><a href="/tools/index.html">View all tools</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/blog/index.html">Blogs</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul></div>
+      <div><h4>Legal</h4><ul>
+        <li><a href="/privacy-policy.html">Privacy policy</a></li>
+        <li><a href="/terms-of-service.html">Terms of service</a></li>
+        <li><a href="/cookie-policy.html">Cookie policy</a></li>
+        <li><a href="/disclaimer.html">Disclaimer</a></li>
+
+      </ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; <span class="current-year">2026</span> Anvil Tools. All rights reserved.</span><span>Anvil Tools is a VelloxTech project.</span></div>
+  </div>
+</footer>
+<script src="/assets/js/main.js" defer></script></body></html>

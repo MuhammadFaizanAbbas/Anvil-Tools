@@ -17,6 +17,19 @@ $origin = public_site_origin();
 $url = 'https://anvil-tools-backend.vercel.app/api/public/articles/' . rawurlencode($slug);
 $response = fetch_public_backend($url, 'text/html', $origin);
 
+// Consolidated guides keep old incoming links through a same-site redirect.
+// Only an article path is accepted; never forward an arbitrary upstream URL.
+if (in_array($response['status'], [301, 308], true)) {
+    $location = (string) ($response['location'] ?? '');
+    $relative = str_starts_with($location, $origin . '/') ? substr($location, strlen($origin)) : $location;
+    if (preg_match('~^/journal/[a-z0-9]+(?:-[a-z0-9]+)*(?:#[a-z0-9-]+)?$~D', $relative)) {
+        http_response_code(301);
+        header('Location: ' . $origin . $relative);
+        header('Cache-Control: public, max-age=300');
+        exit;
+    }
+}
+
 if ($response['body'] === false || !in_array($response['status'], [200, 404], true)) {
     http_response_code(502);
     header('Content-Type: text/html; charset=UTF-8');

@@ -18,6 +18,18 @@
   ],
   "rewrites": [
     {
+      "source": "/blog",
+      "destination": "https://anvil-tools-backend.vercel.app/api/public/blog"
+    },
+    {
+      "source": "/blog/",
+      "destination": "https://anvil-tools-backend.vercel.app/api/public/blog"
+    },
+    {
+      "source": "/blog/index.html",
+      "destination": "https://anvil-tools-backend.vercel.app/api/public/blog"
+    },
+    {
       "source": "/journal/:slug",
       "destination": "https://anvil-tools-backend.vercel.app/api/public/articles/:slug"
     },

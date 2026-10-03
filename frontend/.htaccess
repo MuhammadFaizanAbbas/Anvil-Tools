@@ -3,6 +3,8 @@ DirectoryIndex index.html
 ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # Published article listings are visible to readers and crawlers without JS.
+  RewriteRule ^blog(?:/index\.html|/?)$ blog-index.php [L,QSA,NC]
   # Keep published articles and their private-storage covers on this frontend's
   # domain. The PHP handlers forward the detected domain to the API so generated
   # canonical URLs, assets and navigation never point at another frontend.

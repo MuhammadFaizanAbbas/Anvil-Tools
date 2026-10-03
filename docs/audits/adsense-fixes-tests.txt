@@ -1,0 +1,530 @@
+
+> anvil-tools-admin@1.0.0 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: dashboard charts show real totals and escape tool/category names
+ok 1 - dashboard charts show real totals and escape tool/category names
+  ---
+  duration_ms: 183.9907
+  type: 'test'
+  ...
+# Subtest: site tools are visible without inventing saved status and database edits win
+ok 2 - site tools are visible without inventing saved status and database edits win
+  ---
+  duration_ms: 17.578
+  type: 'test'
+  ...
+# Subtest: dashboard has honest empty charts and KPI counts
+ok 3 - dashboard has honest empty charts and KPI counts
+  ---
+  duration_ms: 11.4132
+  type: 'test'
+  ...
+# Subtest: post pagination reports totals and enables only valid directions
+ok 4 - post pagination reports totals and enables only valid directions
+  ---
+  duration_ms: 10.2377
+  type: 'test'
+  ...
+# Subtest: health works without secrets and reports database configuration
+ok 5 - health works without secrets and reports database configuration
+  ---
+  duration_ms: 158.6047
+  type: 'test'
+  ...
+# Subtest: allows cPanel preflight including bearer authorization
+ok 6 - allows cPanel preflight including bearer authorization
+  ---
+  duration_ms: 17.6915
+  type: 'test'
+  ...
+# Subtest: allows a new frontend origin without backend configuration
+ok 7 - allows a new frontend origin without backend configuration
+  ---
+  duration_ms: 9.5077
+  type: 'test'
+  ...
+# Subtest: missing database fails closed instead of accepting a demo cookie
+ok 8 - missing database fails closed instead of accepting a demo cookie
+  ---
+  duration_ms: 14.4881
+  type: 'test'
+  ...
+# Subtest: API never exposes repository or frontend files
+ok 9 - API never exposes repository or frontend files
+  ---
+  duration_ms: 34.1104
+  type: 'test'
+  ...
+# Subtest: background remover ships its small model and CPU runtimes on the site
+ok 10 - background remover ships its small model and CPU runtimes on the site
+  ---
+  duration_ms: 25.5174
+  type: 'test'
+  ...
+# Subtest: blog response includes escaped published cards, guides, and crawlable pagination without JavaScript
+ok 11 - blog response includes escaped published cards, guides, and crawlable pagination without JavaScript
+  ---
+  duration_ms: 171.1276
+  type: 'test'
+  ...
+# Subtest: second blog page has its own canonical and links back; invalid and missing pages are rejected
+ok 12 - second blog page has its own canonical and links back; invalid and missing pages are rejected
+  ---
+  duration_ms: 136.592
+  type: 'test'
+  ...
+# Published blog listing unavailable: UNAVAILABLE
+# Subtest: a database outage leaves the authored guides readable and allows a browser retry
+ok 13 - a database outage leaves the authored guides readable and allows a browser retry
+  ---
+  duration_ms: 12.0324
+  type: 'test'
+  ...
+# Subtest: cPanel renderer escapes database content and preserves no-JS guide links and pagination
+ok 14 - cPanel renderer escapes database content and preserves no-JS guide links and pagination
+  ---
+  duration_ms: 286.9024
+  type: 'test'
+  ...
+# Subtest: authored articles have real local destinations, tool links, metadata, and sitemap entries
+ok 15 - authored articles have real local destinations, tool links, metadata, and sitemap entries
+  ---
+  duration_ms: 100.7369
+  type: 'test'
+  ...
+# Subtest: Got it dismisses the simple banner and persists acknowledgement across pages
+ok 16 - Got it dismisses the simple banner and persists acknowledgement across pages
+  ---
+  duration_ms: 11.2123
+  type: 'test'
+  ...
+# Subtest: Got it works when browser storage is unavailable or malformed
+ok 17 - Got it works when browser storage is unavailable or malformed
+  ---
+  duration_ms: 4.4034
+  type: 'test'
+  ...
+# Subtest: full consent controls preserve accept, reject, and custom choices
+ok 18 - full consent controls preserve accept, reject, and custom choices
+  ---
+  duration_ms: 4.58
+  type: 'test'
+  ...
+# Subtest: public pages do not offer inactive consent choices or load dormant ad scripts
+ok 19 - public pages do not offer inactive consent choices or load dormant ad scripts
+  ---
+  duration_ms: 154.3526
+  type: 'test'
+  ...
+# Subtest: contact validates input and rate limits before storage or SMTP
+ok 20 - contact validates input and rate limits before storage or SMTP
+  ---
+  duration_ms: 281.2938
+  type: 'test'
+  ...
+# Subtest: contact logs both emails and duplicate request IDs do not resend
+ok 21 - contact logs both emails and duplicate request IDs do not resend
+  ---
+  duration_ms: 56.0277
+  type: 'test'
+  ...
+# Subtest: failed SMTP preserves contact and supports authenticated retry only
+ok 22 - failed SMTP preserves contact and supports authenticated retry only
+  ---
+  duration_ms: 127.5703
+  type: 'test'
+  ...
+# Subtest: unknown delivery is logged and cannot be retried blindly
+ok 23 - unknown delivery is logged and cannot be retried blindly
+  ---
+  duration_ms: 72.9694
+  type: 'test'
+  ...
+# Subtest: admin replies only to stored client, records author and deduplicates concurrent requests
+ok 24 - admin replies only to stored client, records author and deduplicates concurrent requests
+  ---
+  duration_ms: 25.8823
+  type: 'test'
+  ...
+# Database write unavailable
+# Subtest: contact data stays private and database failure never sends mail
+ok 25 - contact data stays private and database failure never sends mail
+  ---
+  duration_ms: 24.0863
+  type: 'test'
+  ...
+# Subtest: cPanel routes public metadata through domain-aware handlers
+ok 26 - cPanel routes public metadata through domain-aware handlers
+  ---
+  duration_ms: 9.9847
+  type: 'test'
+  ...
+# Subtest: long guides have one title, unique anchors, and a working HTML outline
+ok 27 - long guides have one title, unique anchors, and a working HTML outline
+  ---
+  duration_ms: 9.7285
+  type: 'test'
+  ...
+# Subtest: markup preserves code and supports accessible tables without JavaScript
+ok 28 - markup preserves code and supports accessible tables without JavaScript
+  ---
+  duration_ms: 2.3401
+  type: 'test'
+  ...
+# Subtest: raw HTML and unsafe link destinations cannot execute
+ok 29 - raw HTML and unsafe link destinations cannot execute
+  ---
+  duration_ms: 3.4457
+  type: 'test'
+  ...
+# Subtest: legacy plain headings remain readable and incomplete fences stay escaped
+ok 30 - legacy plain headings remain readable and incomplete fences stay escaped
+  ---
+  duration_ms: 0.985
+  type: 'test'
+  ...
+# Subtest: frontend targets configured API and sends token without cross-site cookies
+ok 31 - frontend targets configured API and sends token without cross-site cookies
+  ---
+  duration_ms: 115.2081
+  type: 'test'
+  ...
+# Subtest: expired and cleared sessions do not send authorization
+ok 32 - expired and cleared sessions do not send authorization
+  ---
+  duration_ms: 14.9972
+  type: 'test'
+  ...
+# Subtest: quick creation cannot publish an empty article and still creates drafts
+ok 33 - quick creation cannot publish an empty article and still creates drafts
+  ---
+  duration_ms: 210.2094
+  type: 'test'
+  ...
+# Subtest: analytics throttles before writes, isolates its quota, and rejects unknown tools
+ok 34 - analytics throttles before writes, isolates its quota, and rejects unknown tools
+  ---
+  duration_ms: 77.8708
+  type: 'test'
+  ...
+# Subtest: analytics ignores spoofed forwarded-for and fails closed without the Vercel address
+ok 35 - analytics ignores spoofed forwarded-for and fails closed without the Vercel address
+  ---
+  duration_ms: 28.4863
+  type: 'test'
+  ...
+# Subtest: admins create confirmed password accounts without invitation links
+ok 36 - admins create confirmed password accounts without invitation links
+  ---
+  duration_ms: 58.0976
+  type: 'test'
+  ...
+# Subtest: article saves return useful validation errors for missing references
+ok 37 - article saves return useful validation errors for missing references
+  ---
+  duration_ms: 114.7079
+  type: 'test'
+  ...
+# Subtest: image processing rejects fake raster files and oversized payloads
+ok 38 - image processing rejects fake raster files and oversized payloads
+  ---
+  duration_ms: 81.14
+  type: 'test'
+  ...
+# This image cannot be processed. Use a non-animated JPEG, PNG, or WebP up to 24 megapixels.
+# Subtest: upload requires admin, validates bytes, and stores optimized image metadata
+ok 39 - upload requires admin, validates bytes, and stores optimized image metadata
+  ---
+  duration_ms: 350.8638
+  type: 'test'
+  ...
+# Insert failed
+# Subtest: failed metadata writes remove the uploaded object
+ok 40 - failed metadata writes remove the uploaded object
+  ---
+  duration_ms: 22.4621
+  type: 'test'
+  ...
+# Subtest: draft cover bytes and draft articles stay private
+ok 41 - draft cover bytes and draft articles stay private
+  ---
+  duration_ms: 54.2963
+  type: 'test'
+  ...
+# Subtest: article SEO, body, alt text, tags and JSON-LD are escaped
+ok 42 - article SEO, body, alt text, tags and JSON-LD are escaped
+  ---
+  duration_ms: 2.1274
+  type: 'test'
+  ...
+# Subtest: article renderer creates a complete guide layout with safe headings and lists
+ok 43 - article renderer creates a complete guide layout with safe headings and lists
+  ---
+  duration_ms: 4.123
+  type: 'test'
+  ...
+# Subtest: published covers preserve SVG, PNG, JPEG and WebP bytes and MIME types
+ok 44 - published covers preserve SVG, PNG, JPEG and WebP bytes and MIME types
+  ---
+  duration_ms: 64.2203
+  type: 'test'
+  ...
+# Subtest: legacy image metadata falls back to the stored file extension
+ok 45 - legacy image metadata falls back to the stored file extension
+  ---
+  duration_ms: 96.4967
+  type: 'test'
+  ...
+# Subtest: published guide pagination includes undated posts and never exposes drafts
+ok 46 - published guide pagination includes undated posts and never exposes drafts
+  ---
+  duration_ms: 97.8118
+  type: 'test'
+  ...
+# Subtest: admin post pagination returns a page, total count and rejects invalid ranges
+ok 47 - admin post pagination returns a page, total count and rejects invalid ranges
+  ---
+  duration_ms: 103.8734
+  type: 'test'
+  ...
+# Subtest: site origin follows each frontend without SITE_URL
+ok 48 - site origin follows each frontend without SITE_URL
+  ---
+  duration_ms: 7.4438
+  type: 'test'
+  ...
+# Subtest: site origins only accept HTTP and HTTPS URLs
+ok 49 - site origins only accept HTTP and HTTPS URLs
+  ---
+  duration_ms: 0.8364
+  type: 'test'
+  ...
+# Subtest: wildcard CORS permits any frontend without cookies
+ok 50 - wildcard CORS permits any frontend without cookies
+  ---
+  duration_ms: 1.1888
+  type: 'test'
+  ...
+# Subtest: eight new browser tools have complete pages, scripts, catalog entries and sitemap URLs
+ok 51 - eight new browser tools have complete pages, scripts, catalog entries and sitemap URLs
+  ---
+  duration_ms: 35.0587
+  type: 'test'
+  ...
+# Subtest: public pages have readable metadata and no dormant ad boxes or placeholder policies
+ok 52 - public pages have readable metadata and no dormant ad boxes or placeholder policies
+  ---
+  duration_ms: 87.3792
+  type: 'test'
+  ...
+# Subtest: all tool pages contain specific accessible FAQ answers and functional destinations
+ok 53 - all tool pages contain specific accessible FAQ answers and functional destinations
+  ---
+  duration_ms: 30.1435
+  type: 'test'
+  ...
+# Subtest: upload zones expose keyboard focus and About matches the Contact layout
+ok 54 - upload zones expose keyboard focus and About matches the Contact layout
+  ---
+  duration_ms: 10.989
+  type: 'test'
+  ...
+# Subtest: blogs show 30 database posts and use numbered pagination without hardcoded cards
+ok 55 - blogs show 30 database posts and use numbered pagination without hardcoded cards
+  ---
+  duration_ms: 17.8961
+  type: 'test'
+  ...
+# Subtest: failed blog requests show an error and retry the same page
+ok 56 - failed blog requests show an error and retry the same page
+  ---
+  duration_ms: 3.6975
+  type: 'test'
+  ...
+# Subtest: legacy article page displays its cover and renders content as text
+ok 57 - legacy article page displays its cover and renders content as text
+  ---
+  duration_ms: 3.7743
+  type: 'test'
+  ...
+# Subtest: server-rendered cards stay visible without an initial browser request
+ok 58 - server-rendered cards stay visible without an initial browser request
+  ---
+  duration_ms: 2.9443
+  type: 'test'
+  ...
+# Subtest: a failed enhancement request preserves existing article cards
+ok 59 - a failed enhancement request preserves existing article cards
+  ---
+  duration_ms: 2.81
+  type: 'test'
+  ...
+# Subtest: backend recommends published related articles and excludes current and drafts
+ok 60 - backend recommends published related articles and excludes current and drafts
+  ---
+  duration_ms: 390.7717
+  type: 'test'
+  ...
+# Subtest: invalid parameters are rejected and database failures do not fabricate results
+ok 61 - invalid parameters are rejected and database failures do not fabricate results
+  ---
+  duration_ms: 35.058
+  type: 'test'
+  ...
+# Subtest: recommendations preserve backend order and safely render metadata
+ok 62 - recommendations preserve backend order and safely render metadata
+  ---
+  duration_ms: 7.4079
+  type: 'test'
+  ...
+# Subtest: failed or empty recommendations hide the section without static fallbacks
+ok 63 - failed or empty recommendations hide the section without static fallbacks
+  ---
+  duration_ms: 6.0717
+  type: 'test'
+  ...
+# Subtest: admin authorization rejects cookie spoofing, invalid tokens and ordinary users
+ok 64 - admin authorization rejects cookie spoofing, invalid tokens and ordinary users
+  ---
+  duration_ms: 153.4273
+  type: 'test'
+  ...
+# Subtest: tool edits write to the database and cannot overwrite counters or identity
+ok 65 - tool edits write to the database and cannot overwrite counters or identity
+  ---
+  duration_ms: 133.7956
+  type: 'test'
+  ...
+# Subtest: database rate limit stops inbox creation before contacting mail provider
+ok 66 - database rate limit stops inbox creation before contacting mail provider
+  ---
+  duration_ms: 11.1848
+  type: 'test'
+  ...
+# Subtest: invalid mail capabilities return 404 without database lookup
+ok 67 - invalid mail capabilities return 404 without database lookup
+  ---
+  duration_ms: 14.9187
+  type: 'test'
+  ...
+# Subtest: creation fails closed when limiter schema is missing
+ok 68 - creation fails closed when limiter schema is missing
+  ---
+  duration_ms: 248.6024
+  type: 'test'
+  ...
+# Subtest: provider failure never exposes credentials or internal errors
+ok 69 - provider failure never exposes credentials or internal errors
+  ---
+  duration_ms: 33.5986
+  type: 'test'
+  ...
+# Subtest: Guerrilla Mail session is stored server-side and never returned
+ok 70 - Guerrilla Mail session is stored server-side and never returned
+  ---
+  duration_ms: 15.7571
+  type: 'test'
+  ...
+# Subtest: resuming inbox restores address, and forgetting invalidates the local capability
+ok 71 - resuming inbox restores address, and forgetting invalidates the local capability
+  ---
+  duration_ms: 67.209
+  type: 'test'
+  ...
+# Subtest: missing new limiter uses the production limiter while database failures stay closed
+ok 72 - missing new limiter uses the production limiter while database failures stay closed
+  ---
+  duration_ms: 15.5794
+  type: 'test'
+  ...
+# Subtest: messages use the original provider session and tolerate missing timestamps
+ok 73 - messages use the original provider session and tolerate missing timestamps
+  ---
+  duration_ms: 9.653
+  type: 'test'
+  ...
+# Subtest: message details retain plain text and remove HTML without losing line breaks
+ok 74 - message details retain plain text and remove HTML without losing line breaks
+  ---
+  duration_ms: 28.9999
+  type: 'test'
+  ...
+# Subtest: provider welcome message cannot be opened directly
+ok 75 - provider welcome message cannot be opened directly
+  ---
+  duration_ms: 8.1596
+  type: 'test'
+  ...
+# Inbox expired. Create a new inbox.
+# Subtest: invalid provider data is an error and changed inbox identities expire
+ok 76 - invalid provider data is an error and changed inbox identities expire
+  ---
+  duration_ms: 14.5985
+  type: 'test'
+  ...
+# undefined
+# Subtest: failed storage cleans up only the newly created provider inbox
+ok 77 - failed storage cleans up only the newly created provider inbox
+  ---
+  duration_ms: 7.7774
+  type: 'test'
+  ...
+# Subtest: password boundary preserves requested length and every selected class
+ok 78 - password boundary preserves requested length and every selected class
+  ---
+  duration_ms: 202.0717
+  type: 'test'
+  ...
+# Subtest: invalid password options clear old output and disable copying
+ok 79 - invalid password options clear old output and disable copying
+  ---
+  duration_ms: 3.3667
+  type: 'test'
+  ...
+# Subtest: QR missing library and oversized input give feedback and hide stale downloads
+ok 80 - QR missing library and oversized input give feedback and hide stale downloads
+  ---
+  duration_ms: 5.4174
+  type: 'test'
+  ...
+# Subtest: unit conversion rejects blank and non-finite input but accepts zero and offsets
+ok 81 - unit conversion rejects blank and non-finite input but accepts zero and offsets
+  ---
+  duration_ms: 5.388
+  type: 'test'
+  ...
+# Subtest: clipboard rejection leaves tool results intact and shows recovery instructions
+ok 82 - clipboard rejection leaves tool results intact and shows recovery instructions
+  ---
+  duration_ms: 30.9588
+  type: 'test'
+  ...
+# Subtest: verified identity metadata cannot self-grant admin; database roles grant access
+ok 83 - verified identity metadata cannot self-grant admin; database roles grant access
+  ---
+  duration_ms: 102.3425
+  type: 'test'
+  ...
+# Subtest: admins can grant access but cannot edit owner or their own permissions
+ok 84 - admins can grant access but cannot edit owner or their own permissions
+  ---
+  duration_ms: 66.5907
+  type: 'test'
+  ...
+# Subtest: revocation takes effect on the next request even with an existing token
+ok 85 - revocation takes effect on the next request even with an existing token
+  ---
+  duration_ms: 15.3461
+  type: 'test'
+  ...
+1..85
+# tests 85
+# suites 0
+# pass 85
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8966.1749

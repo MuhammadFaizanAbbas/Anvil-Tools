@@ -81,6 +81,114 @@
     "overflow": []
   },
   {
+    "url": "/blog/background-removal-and-transparency.html",
+    "width": 320,
+    "scroll": 305,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/background-removal-and-transparency.html",
+    "width": 768,
+    "scroll": 753,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/background-removal-and-transparency.html",
+    "width": 1440,
+    "scroll": 1425,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/base64-text-encoding.html",
+    "width": 320,
+    "scroll": 305,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/base64-text-encoding.html",
+    "width": 768,
+    "scroll": 753,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/base64-text-encoding.html",
+    "width": 1440,
+    "scroll": 1425,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/format-and-check-json.html",
+    "width": 320,
+    "scroll": 305,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/format-and-check-json.html",
+    "width": 768,
+    "scroll": 753,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/format-and-check-json.html",
+    "width": 1440,
+    "scroll": 1425,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/images-to-clear-pdfs.html",
+    "width": 320,
+    "scroll": 305,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/images-to-clear-pdfs.html",
+    "width": 768,
+    "scroll": 753,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/images-to-clear-pdfs.html",
+    "width": 1440,
+    "scroll": 1425,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
     "url": "/blog/index.html",
     "width": 320,
     "scroll": 305,
@@ -92,7 +200,7 @@
   {
     "url": "/blog/index.html",
     "width": 768,
-    "scroll": 768,
+    "scroll": 753,
     "h1": 1,
     "missingLabels": [],
     "missingAlt": 0,
@@ -101,7 +209,229 @@
   {
     "url": "/blog/index.html",
     "width": 1440,
-    "scroll": 1440,
+    "scroll": 1425,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/jwt-decoding.html",
+    "width": 320,
+    "scroll": 305,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/jwt-decoding.html",
+    "width": 768,
+    "scroll": 753,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/jwt-decoding.html",
+    "width": 1440,
+    "scroll": 1425,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/merge-pdfs-locally.html",
+    "width": 320,
+    "scroll": 305,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/merge-pdfs-locally.html",
+    "width": 768,
+    "scroll": 753,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/merge-pdfs-locally.html",
+    "width": 1440,
+    "scroll": 1425,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/qr-codes-for-print.html",
+    "width": 320,
+    "scroll": 305,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/qr-codes-for-print.html",
+    "width": 768,
+    "scroll": 753,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/qr-codes-for-print.html",
+    "width": 1440,
+    "scroll": 1425,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/sha256-text-checks.html",
+    "width": 320,
+    "scroll": 305,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/sha256-text-checks.html",
+    "width": 768,
+    "scroll": 753,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/sha256-text-checks.html",
+    "width": 1440,
+    "scroll": 1425,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/strong-passwords.html",
+    "width": 320,
+    "scroll": 305,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/strong-passwords.html",
+    "width": 768,
+    "scroll": 753,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/strong-passwords.html",
+    "width": 1440,
+    "scroll": 1425,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/temporary-email-vs-aliases.html",
+    "width": 320,
+    "scroll": 305,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": [
+      "TABLE",
+      "THEAD",
+      "TR",
+      "TH",
+      "TBODY"
+    ]
+  },
+  {
+    "url": "/blog/temporary-email-vs-aliases.html",
+    "width": 768,
+    "scroll": 753,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/temporary-email-vs-aliases.html",
+    "width": 1440,
+    "scroll": 1425,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/url-encoding-components.html",
+    "width": 320,
+    "scroll": 305,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/url-encoding-components.html",
+    "width": 768,
+    "scroll": 753,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/url-encoding-components.html",
+    "width": 1440,
+    "scroll": 1425,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/word-and-character-counts.html",
+    "width": 320,
+    "scroll": 305,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/word-and-character-counts.html",
+    "width": 768,
+    "scroll": 753,
+    "h1": 1,
+    "missingLabels": [],
+    "missingAlt": 0,
+    "overflow": []
+  },
+  {
+    "url": "/blog/word-and-character-counts.html",
+    "width": 1440,
+    "scroll": 1425,
     "h1": 1,
     "missingLabels": [],
     "missingAlt": 0,

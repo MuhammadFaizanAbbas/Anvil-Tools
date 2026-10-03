@@ -4,21 +4,28 @@ declare(strict_types=1);
 /**
  * Fetch a public backend resource without forwarding browser cookies or secrets.
  *
- * @return array{body:string|false,status:int,contentType:string}
+ * @return array{body:string|false,status:int,contentType:string,location:string}
  */
-function fetch_public_backend(string $url, string $accept, string $origin): array
+function fetch_public_backend(string $url, string $accept, string $origin, int $timeoutSeconds = 20): array
 {
     $body = false;
     $status = 502;
     $contentType = '';
+    $location = '';
 
     if (function_exists('curl_init')) {
         $request = curl_init($url);
         curl_setopt_array($request, [
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_FOLLOWLOCATION => false,
-            CURLOPT_CONNECTTIMEOUT => 5,
-            CURLOPT_TIMEOUT => 20,
+            CURLOPT_CONNECTTIMEOUT => min(5, $timeoutSeconds),
+            CURLOPT_TIMEOUT => $timeoutSeconds,
+            CURLOPT_HEADERFUNCTION => static function ($request, string $header) use (&$location): int {
+                if (stripos($header, 'Location:') === 0) {
+                    $location = trim(substr($header, 9));
+                }
+                return strlen($header);
+            },
             CURLOPT_HTTPHEADER => [
                 'Accept: ' . $accept,
                 'X-Frontend-Origin: ' . $origin,
@@ -31,7 +38,7 @@ function fetch_public_backend(string $url, string $accept, string $origin): arra
     } elseif (filter_var(ini_get('allow_url_fopen'), FILTER_VALIDATE_BOOLEAN)) {
         $context = stream_context_create(['http' => [
             'method' => 'GET',
-            'timeout' => 20,
+            'timeout' => $timeoutSeconds,
             'ignore_errors' => true,
             'follow_location' => 0,
             'header' => "Accept: {$accept}\r\nX-Frontend-Origin: {$origin}\r\n",
@@ -42,9 +49,11 @@ function fetch_public_backend(string $url, string $accept, string $origin): arra
                 $status = (int) $match[1];
             } elseif (stripos($header, 'Content-Type:') === 0) {
                 $contentType = trim(substr($header, 13));
+            } elseif (stripos($header, 'Location:') === 0) {
+                $location = trim(substr($header, 9));
             }
         }
     }
 
-    return ['body' => $body, 'status' => $status, 'contentType' => $contentType];
+    return ['body' => $body, 'status' => $status, 'contentType' => $contentType, 'location' => $location];
 }

@@ -1,0 +1,21 @@
+<h2>Use a sample before a real token</h2>
+<p>A JSON Web Token may contain information that is readable without a password. Some tokens also grant access when presented to a service. Start an investigation with a fabricated development token or a redacted fixture you are allowed to inspect. Do not paste a working token into a shared chat, screenshot, issue report, or public example.</p>
+<p>The Anvil Tools decoder processes the token in the browser and displays the header and payload. Its explicit signature warning matters: the tool is an inspection aid. A readable payload does not establish who created the token or whether an application should accept it.</p>
+<h2>Understand the three-part format</h2>
+<p>A common signed JWT has three dot-separated parts: an encoded header, encoded claims, and signature material. The <a href="https://www.rfc-editor.org/rfc/rfc7519">JWT specification</a> describes claims and validation context. Encrypted JWTs use a different structure; this decoder is not a JWE decryption tool.</p>
+<p>The header often includes an algorithm identifier and a token type. Reading an algorithm name does not prove the receiving application used that algorithm correctly. The payload contains claims. Here is an illustrative payload made entirely from sample values:</p>
+<pre><code>{
+  "sub": "sample-user",
+  "iss": "https://issuer.example",
+  "aud": "sample-app",
+  "exp": 1893456000
+}</code></pre>
+<p>This says what the token claims about a subject, issuer, audience, and expiration. It is not evidence that any of those claims are true. For an authorized development test, compare the fields with the application's documented token contract and note discrepancies without changing the original token.</p>
+<h2>Read timestamps in the right units</h2>
+<p>Common time claims include expiration, issued-at time, and not-before time. JWT NumericDate values use seconds relative to the Unix epoch. Many browser date APIs use milliseconds. Confusing the two can produce an absurd date or lead you to think a token is expired when your conversion is wrong.</p>
+<p>Use the Unix Timestamp Converter in seconds mode to inspect a sample time, then compare UTC output with the application's logs. Record which timezone a log uses. Do not decide validity solely from your laptop's clock: the receiving service's time, permitted clock tolerance, and claim requirements belong to its validation logic.</p>
+<h2>What verification still has to do</h2>
+<p>The receiving application must verify signature material with the appropriate trusted key and enforce its required issuer, audience, time, and other checks. Its algorithm policy must come from trusted configuration. A local decoding result cannot confirm those server-side checks, token revocation, or the permissions granted to an account.</p>
+<p>Editing a payload and re-encoding it changes the represented claims but does not create a valid signed token. If you need a different development token, use the authorized issuer or a documented test fixture workflow. Never use decoded claims as proof of identity in a support or administrative decision.</p>
+<h2>When decoding fails</h2>
+<p>Check for missing sections, copied whitespace, or an incomplete token. A token copied with the word Bearer before it may need that HTTP header prefix removed for inspection. If the structure is an encrypted token, use an appropriate authorized tool. Share the error and a harmless reproduction rather than sending a live credential to someone else.</p>

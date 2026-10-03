@@ -1,0 +1,71 @@
+{
+  "javaScriptEnabled": false,
+  "cases": [
+    {
+      "article": "temporary-email",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": 1,
+      "coverLoaded": true,
+      "textLength": 72738,
+      "visibleNav": true,
+      "missingAnchors": [],
+      "tables": 0
+    },
+    {
+      "article": "temporary-email",
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": 1,
+      "coverLoaded": true,
+      "textLength": 72738,
+      "visibleNav": true,
+      "missingAnchors": [],
+      "tables": 0
+    },
+    {
+      "article": "temporary-email",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "coverLoaded": true,
+      "textLength": 72738,
+      "visibleNav": true,
+      "missingAnchors": [],
+      "tables": 0
+    },
+    {
+      "article": "background-removal",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": 1,
+      "coverLoaded": true,
+      "textLength": 68311,
+      "visibleNav": true,
+      "missingAnchors": [],
+      "tables": 0
+    },
+    {
+      "article": "background-removal",
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": 1,
+      "coverLoaded": true,
+      "textLength": 68311,
+      "visibleNav": true,
+      "missingAnchors": [],
+      "tables": 0
+    },
+    {
+      "article": "background-removal",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "coverLoaded": true,
+      "textLength": 68311,
+      "visibleNav": true,
+      "missingAnchors": [],
+      "tables": 0
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<h2>Separate syntax from the data's meaning</h2>
+<p>A JSON formatter can tell you whether input can be parsed and make its structure easier to read. It cannot tell you whether a customer's identifier is correct, a price is appropriate, or a required field is present. In Anvil Tools, Format and Minify parse the input and serialize the resulting value. Treat the success message as a syntax check within that implementation.</p>
+<p>Keep the original text before making changes. If you are investigating an API response, use a small redacted example first. Remove access tokens, passwords, and personal details before putting examples into a support ticket. Local processing does not make copying a secret into a screenshot or shared document safe.</p>
+<h2>Fix one syntax problem at a time</h2>
+<p>JSON uses double quotes for object keys and string values. Comments and trailing commas are not part of ordinary JSON. The <a href="https://www.rfc-editor.org/rfc/rfc8259">JSON specification</a> defines its supported values and syntax. Consider this intentionally invalid example:</p>
+<pre><code>{'name': 'Sample', "active": True,}</code></pre>
+<p>Replace the single quotes, use the lowercase boolean, and remove the trailing comma:</p>
+<pre><code>{"name": "Sample", "active": true}</code></pre>
+<p>Paste that corrected value into the formatter. Then try a nested example with an array:</p>
+<pre><code>{"order":{"items":[{"sku":"A1","quantity":2}],"note":null}}</code></pre>
+<p>Indented output makes the item boundary and nesting visible. Check that the receiving application expects an object at the top level, an array for items, a number for quantity, and a null value for the note. Valid JSON also allows a top-level primitive; your application may have narrower requirements.</p>
+<h2>Watch duplicate keys and large integers</h2>
+<p>The tool uses the browser's JSON parser. In this workflow, repeated object keys can collapse to the last value when the parsed object is serialized. Formatting is therefore not a reliable way to preserve or detect every duplicate key in the source. Resolve duplicate fields upstream and compare against the original response when that possibility matters.</p>
+<p>Large integer identifiers deserve similar care. JavaScript numbers cannot represent every integer exactly beyond the safe integer range. For example, parsing and serializing 9007199254740993 can change its digits. If an API represents an identifier as a string, preserve that string type. Use a parser designed to preserve large numbers when numeric precision is part of the contract.</p>
+<h2>JSON, JSON5, and JSONC</h2>
+<p>A configuration file with comments may be intended for JSONC or another extended format. JSON5 permits additional syntax that ordinary JSON rejects. The Anvil Tools formatter accepts standard JSON through JSON.parse; it does not convert these formats or preserve comments. Consult the application that consumes the configuration before removing anything. A comment may be important documentation even though it is not data.</p>
+<h2>Use minification only after inspection</h2>
+<p>Minification removes presentation whitespace from the serialized result. It does not validate a schema, protect secrets, or prove that two documents mean the same thing. Format first, inspect the required fields and types, and only then minify if your destination needs compact text. Test the resulting data in the intended application with a harmless sample.</p>

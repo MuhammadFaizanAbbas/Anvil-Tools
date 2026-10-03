@@ -11,16 +11,19 @@ class Element {
   addEventListener(event, handler) { this.listeners[event] = handler; }
   setAttribute(name, value) { this.attributes[name] = value; }
   removeAttribute(name) { delete this.attributes[name]; }
+  getAttribute(name) { return this.attributes[name] ?? null; }
   set innerHTML(value) { this._innerHTML = value; this.children = value ? [new Element('loading')] : []; }
   get innerHTML() { return this._innerHTML || ''; }
 }
 
-async function setup(responses, article = false) {
+async function setup(responses, article = false, { serverRendered = false, existingCard = null } = {}) {
   const ids = article ? { publishedArticle: new Element('article'), articleStatus: new Element('p') } : {
     publishedGuideCards: new Element('div'), blogsStatus: new Element('p'), blogPagination: new Element('nav'),
     blogsPrev: new Element('button'), blogsNext: new Element('button'), blogsPage: new Element('span'), blogsRetry: new Element('button')
   };
   if (article) ids.publishedArticle.append(new Element('h1'), ids.articleStatus);
+  if (!article && serverRendered) ids.publishedGuideCards.setAttribute('data-server-rendered', 'true');
+  if (!article && existingCard) ids.publishedGuideCards.append(existingCard);
   const calls = [];
   const document = { getElementById: id => ids[id], createElement: tag => new Element(tag), createDocumentFragment: () => new Element('fragment') };
   await vm.runInNewContext(fs.readFileSync('frontend/assets/js/published-posts.js', 'utf8'), {
@@ -58,4 +61,18 @@ test('legacy article page displays its cover and renders content as text', async
   const { ids, calls } = await setup([{ data: post }], true);
   assert.equal(calls[0], '/api/public/posts/image-blog'); assert.equal(ids.publishedArticle.children[2].src, 'https://site.example/journal-images/cover');
   assert.equal(ids.publishedArticle.children[3].textContent, '<script>unsafe()</script>');
+});
+
+test('server-rendered cards stay visible without an initial browser request', async () => {
+  const existingCard = new Element('article');
+  const { ids, calls } = await setup([], false, { serverRendered: true, existingCard });
+  assert.equal(calls.length, 0);
+  assert.equal(ids.publishedGuideCards.children[0], existingCard);
+});
+
+test('a failed enhancement request preserves existing article cards', async () => {
+  const existingCard = new Element('article');
+  const { ids } = await setup([new Error('Connection failed')], false, { existingCard });
+  assert.equal(ids.publishedGuideCards.children[0], existingCard);
+  assert.equal(ids.blogsRetry.hidden, false);
 });

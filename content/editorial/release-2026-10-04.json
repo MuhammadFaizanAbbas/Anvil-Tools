@@ -1,0 +1,35 @@
+{
+  "release": "2026-10-04-first-two-guides",
+  "minimumWords": 10001,
+  "archiveOverlappingPosts": false,
+  "posts": [
+    {
+      "key": "temporary-email",
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "title": "Temporary Email Best Practices for Signups",
+      "excerpt": "Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.",
+      "seo_title": "Temporary Email Best Practices for Signups",
+      "seo_description": "Choose temporary email, aliases, or a permanent inbox. Learn signup safeguards, account recovery limits, delivery checks, and practical inbox workflows.",
+      "cover_image_id": "f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+      "cover_alt": "Laptop showing a signup form beside an email inbox, with an envelope and account-protection illustration",
+      "category_slug": "email-tools",
+      "tags": ["temporary email", "email aliases", "account recovery", "inbox organization"],
+      "expectedUpdatedAt": "2026-10-01T10:08:18.661926+00:00",
+      "expectedBodyMd5": "1f961ce42a62c31271740171a71289c1"
+    },
+    {
+      "key": "background-removal",
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "title": "Background Removal for Design and Product Photography",
+      "excerpt": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
+      "seo_title": "Background Removal for Design and Product Photos",
+      "seo_description": "Improve background removal with practical edge checks, masking, shadows, transparent exports, product-photo workflows, and marketplace image requirements.",
+      "cover_image_id": "d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+      "cover_alt": "Design workspace comparing a sneaker photograph with a transparent cutout, alongside layer and edge-quality controls",
+      "category_slug": "image-tools",
+      "tags": ["background removal", "product photography", "transparent images", "graphic design"],
+      "expectedUpdatedAt": "2026-10-02T16:46:13.823577+00:00",
+      "expectedBodyMd5": "92220b3affda174dccc58cb58c38d5c6"
+    }
+  ]
+}

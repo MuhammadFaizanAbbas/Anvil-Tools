@@ -1,0 +1,2574 @@
+{
+  "version": 1,
+  "sourceExportedAt": "2026-10-03T20:37:19.137Z",
+  "sourceCount": 490,
+  "minimumWords": 10001,
+  "guides": [
+    {
+      "key": "temporary-email",
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "title": "Temporary Email Best Practices for Signups",
+      "category": "email-tools",
+      "tools": [
+        "temp-mail"
+      ],
+      "bodyFile": "temporary-email.md",
+      "minimumWords": 10001,
+      "sources": [
+        {
+          "slug": "a-practical-guide-to-temporary-email-for-accounts",
+          "id": "a-practical-guide-to-temporary-email-for-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-temporary-email-for-inbox",
+          "id": "a-practical-guide-to-temporary-email-for-inbox",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-temporary-email-for-privacy",
+          "id": "a-practical-guide-to-temporary-email-for-privacy",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-temporary-email-for-security",
+          "id": "a-practical-guide-to-temporary-email-for-security",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-temporary-email-for-signups",
+          "id": "a-practical-guide-to-temporary-email-for-signups",
+          "expectedUpdatedAt": "2026-09-30T12:03:20.576766+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-temporary-email-for-spam",
+          "id": "a-practical-guide-to-temporary-email-for-spam",
+          "expectedUpdatedAt": "2026-10-02T19:16:29.7574+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-temporary-email-for-testing",
+          "id": "a-practical-guide-to-temporary-email-for-testing",
+          "expectedUpdatedAt": "2026-09-30T10:22:20.791+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-temporary-email-for-verification",
+          "id": "a-practical-guide-to-temporary-email-for-verification",
+          "expectedUpdatedAt": "2026-09-29T20:21:29.183+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-temporary-email-for-accounts",
+          "id": "a-safer-way-to-handle-temporary-email-for-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-temporary-email-for-inbox",
+          "id": "a-safer-way-to-handle-temporary-email-for-inbox",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-temporary-email-for-privacy",
+          "id": "a-safer-way-to-handle-temporary-email-for-privacy",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-temporary-email-for-security",
+          "id": "a-safer-way-to-handle-temporary-email-for-security",
+          "expectedUpdatedAt": "2026-09-30T11:54:35.801659+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-temporary-email-for-signups",
+          "id": "a-safer-way-to-handle-temporary-email-for-signups",
+          "expectedUpdatedAt": "2026-10-02T16:28:43.870221+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-temporary-email-for-spam",
+          "id": "a-safer-way-to-handle-temporary-email-for-spam",
+          "expectedUpdatedAt": "2026-09-30T10:22:22.339+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-temporary-email-for-testing",
+          "id": "a-safer-way-to-handle-temporary-email-for-testing",
+          "expectedUpdatedAt": "2026-09-29T20:21:29.773+00:00"
+        },
+        {
+          "slug": "best-practices-for-temporary-email-when-working-with-accounts",
+          "id": "best-practices-for-temporary-email-when-working-with-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-temporary-email-when-working-with-inbox",
+          "id": "best-practices-for-temporary-email-when-working-with-inbox",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-temporary-email-when-working-with-privacy",
+          "id": "best-practices-for-temporary-email-when-working-with-privacy",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-temporary-email-when-working-with-security",
+          "id": "best-practices-for-temporary-email-when-working-with-security",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-temporary-email-when-working-with-signups",
+          "id": "best-practices-for-temporary-email-when-working-with-signups",
+          "expectedUpdatedAt": "2026-10-01T10:08:18.661926+00:00"
+        },
+        {
+          "slug": "best-practices-for-temporary-email-when-working-with-spam",
+          "id": "best-practices-for-temporary-email-when-working-with-spam",
+          "expectedUpdatedAt": "2026-09-30T10:22:23.437+00:00"
+        },
+        {
+          "slug": "best-practices-for-temporary-email-when-working-with-testing",
+          "id": "best-practices-for-temporary-email-when-working-with-testing",
+          "expectedUpdatedAt": "2026-09-30T10:22:19.635+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-temporary-email-in-accounts",
+          "id": "common-mistakes-with-temporary-email-in-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-temporary-email-in-inbox",
+          "id": "common-mistakes-with-temporary-email-in-inbox",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-temporary-email-in-privacy",
+          "id": "common-mistakes-with-temporary-email-in-privacy",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-temporary-email-in-security",
+          "id": "common-mistakes-with-temporary-email-in-security",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-temporary-email-in-signups",
+          "id": "common-mistakes-with-temporary-email-in-signups",
+          "expectedUpdatedAt": "2026-09-30T18:58:24.839502+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-temporary-email-in-spam",
+          "id": "common-mistakes-with-temporary-email-in-spam",
+          "expectedUpdatedAt": "2026-09-30T10:22:23.822+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-temporary-email-in-testing",
+          "id": "common-mistakes-with-temporary-email-in-testing",
+          "expectedUpdatedAt": "2026-09-30T10:22:20.151+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-temporary-email-in-verification",
+          "id": "common-mistakes-with-temporary-email-in-verification",
+          "expectedUpdatedAt": "2026-09-29T20:21:28.755+00:00"
+        },
+        {
+          "slug": "how-temporary-email-helps-with-accounts",
+          "id": "how-temporary-email-helps-with-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-temporary-email-helps-with-inbox",
+          "id": "how-temporary-email-helps-with-inbox",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-temporary-email-helps-with-privacy",
+          "id": "how-temporary-email-helps-with-privacy",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-temporary-email-helps-with-security",
+          "id": "how-temporary-email-helps-with-security",
+          "expectedUpdatedAt": "2026-09-30T11:49:22.5924+00:00"
+        },
+        {
+          "slug": "how-temporary-email-helps-with-signups",
+          "id": "how-temporary-email-helps-with-signups",
+          "expectedUpdatedAt": "2026-10-01T11:13:49.737782+00:00"
+        },
+        {
+          "slug": "how-temporary-email-helps-with-spam",
+          "id": "how-temporary-email-helps-with-spam",
+          "expectedUpdatedAt": "2026-09-30T10:22:22.729+00:00"
+        },
+        {
+          "slug": "how-temporary-email-helps-with-testing",
+          "id": "how-temporary-email-helps-with-testing",
+          "expectedUpdatedAt": "2026-09-29T20:21:30.14+00:00"
+        },
+        {
+          "slug": "how-to-use-temporary-email-for-verification",
+          "id": "how-to-use-temporary-email-for-verification",
+          "expectedUpdatedAt": "2026-09-29T20:21:29.47+00:00"
+        },
+        {
+          "slug": "keep-main-inbox-clean-online-trials",
+          "id": "keep-main-inbox-clean-online-trials",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "safe-temporary-email-signups",
+          "id": "safe-temporary-email-signups",
+          "expectedUpdatedAt": "2026-09-29T20:21:28.447+00:00"
+        },
+        {
+          "slug": "what-to-know-about-temporary-email-for-accounts",
+          "id": "what-to-know-about-temporary-email-for-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-temporary-email-for-inbox",
+          "id": "what-to-know-about-temporary-email-for-inbox",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-temporary-email-for-privacy",
+          "id": "what-to-know-about-temporary-email-for-privacy",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-temporary-email-for-security",
+          "id": "what-to-know-about-temporary-email-for-security",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-temporary-email-for-signups",
+          "id": "what-to-know-about-temporary-email-for-signups",
+          "expectedUpdatedAt": "2026-10-01T11:07:54.870061+00:00"
+        },
+        {
+          "slug": "what-to-know-about-temporary-email-for-spam",
+          "id": "what-to-know-about-temporary-email-for-spam",
+          "expectedUpdatedAt": "2026-09-30T10:22:23.08+00:00"
+        },
+        {
+          "slug": "what-to-know-about-temporary-email-for-testing",
+          "id": "what-to-know-about-temporary-email-for-testing",
+          "expectedUpdatedAt": "2026-09-29T20:21:30.413+00:00"
+        }
+      ]
+    },
+    {
+      "key": "background-removal",
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "title": "Background Removal for Design and Product Photography",
+      "category": "image-tools",
+      "tools": [
+        "background-remover"
+      ],
+      "bodyFile": "background-removal.md",
+      "minimumWords": 10001,
+      "sources": [
+        {
+          "slug": "a-practical-guide-to-background-removal-for-design",
+          "id": "a-practical-guide-to-background-removal-for-design",
+          "expectedUpdatedAt": "2026-09-29T19:17:36.564+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-background-removal-for-ecommerce",
+          "id": "a-practical-guide-to-background-removal-for-ecommerce",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-background-removal-for-marketplaces",
+          "id": "a-practical-guide-to-background-removal-for-marketplaces",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-background-removal-for-photos",
+          "id": "a-practical-guide-to-background-removal-for-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-background-removal-for-portraits",
+          "id": "a-practical-guide-to-background-removal-for-portraits",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-background-removal-for-product-photos",
+          "id": "a-practical-guide-to-background-removal-for-product-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-background-removal-for-social-media",
+          "id": "a-practical-guide-to-background-removal-for-social-media",
+          "expectedUpdatedAt": "2026-10-03T20:19:42.702+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-background-removal-for-transparent-images",
+          "id": "a-practical-guide-to-background-removal-for-transparent-images",
+          "expectedUpdatedAt": "2026-10-03T20:19:52.921+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-background-removal-for-design",
+          "id": "a-safer-way-to-handle-background-removal-for-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-background-removal-for-ecommerce",
+          "id": "a-safer-way-to-handle-background-removal-for-ecommerce",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-background-removal-for-marketplaces",
+          "id": "a-safer-way-to-handle-background-removal-for-marketplaces",
+          "expectedUpdatedAt": "2026-09-29T17:24:00.585248+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-background-removal-for-photos",
+          "id": "a-safer-way-to-handle-background-removal-for-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-background-removal-for-portraits",
+          "id": "a-safer-way-to-handle-background-removal-for-portraits",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-background-removal-for-social-media",
+          "id": "a-safer-way-to-handle-background-removal-for-social-media",
+          "expectedUpdatedAt": "2026-10-03T20:19:50.156+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-background-removal-for-transparent-images",
+          "id": "a-safer-way-to-handle-background-removal-for-transparent-images",
+          "expectedUpdatedAt": "2026-10-03T20:19:58.749+00:00"
+        },
+        {
+          "slug": "best-practices-for-background-removal-when-working-with-design",
+          "id": "best-practices-for-background-removal-when-working-with-design",
+          "expectedUpdatedAt": "2026-10-02T16:46:13.823577+00:00"
+        },
+        {
+          "slug": "best-practices-for-background-removal-when-working-with-ecommerce",
+          "id": "best-practices-for-background-removal-when-working-with-ecommerce",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-background-removal-when-working-with-marketplaces",
+          "id": "best-practices-for-background-removal-when-working-with-marketplaces",
+          "expectedUpdatedAt": "2026-09-29T20:11:03.324+00:00"
+        },
+        {
+          "slug": "best-practices-for-background-removal-when-working-with-photos",
+          "id": "best-practices-for-background-removal-when-working-with-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-background-removal-when-working-with-portraits",
+          "id": "best-practices-for-background-removal-when-working-with-portraits",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-background-removal-when-working-with-product-photos",
+          "id": "best-practices-for-background-removal-when-working-with-product-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-background-removal-when-working-with-social-media",
+          "id": "best-practices-for-background-removal-when-working-with-social-media",
+          "expectedUpdatedAt": "2026-10-03T20:19:46.182+00:00"
+        },
+        {
+          "slug": "best-practices-for-background-removal-when-working-with-transparent-images",
+          "id": "best-practices-for-background-removal-when-working-with-transparent-images",
+          "expectedUpdatedAt": "2026-10-03T20:19:55.253+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-background-removal-in-design",
+          "id": "common-mistakes-with-background-removal-in-design",
+          "expectedUpdatedAt": "2026-10-02T16:53:53.884655+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-background-removal-in-ecommerce",
+          "id": "common-mistakes-with-background-removal-in-ecommerce",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-background-removal-in-marketplaces",
+          "id": "common-mistakes-with-background-removal-in-marketplaces",
+          "expectedUpdatedAt": "2026-09-29T17:26:42.460333+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-background-removal-in-photos",
+          "id": "common-mistakes-with-background-removal-in-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-background-removal-in-portraits",
+          "id": "common-mistakes-with-background-removal-in-portraits",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-background-removal-in-product-photos",
+          "id": "common-mistakes-with-background-removal-in-product-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-background-removal-in-social-media",
+          "id": "common-mistakes-with-background-removal-in-social-media",
+          "expectedUpdatedAt": "2026-10-03T20:19:43.912+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-background-removal-in-transparent-images",
+          "id": "common-mistakes-with-background-removal-in-transparent-images",
+          "expectedUpdatedAt": "2026-10-03T20:19:54.067+00:00"
+        },
+        {
+          "slug": "how-background-removal-helps-with-design",
+          "id": "how-background-removal-helps-with-design",
+          "expectedUpdatedAt": "2026-09-29T20:00:58.664+00:00"
+        },
+        {
+          "slug": "how-background-removal-helps-with-ecommerce",
+          "id": "how-background-removal-helps-with-ecommerce",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-background-removal-helps-with-marketplaces",
+          "id": "how-background-removal-helps-with-marketplaces",
+          "expectedUpdatedAt": "2026-09-29T20:09:27.083+00:00"
+        },
+        {
+          "slug": "how-background-removal-helps-with-photos",
+          "id": "how-background-removal-helps-with-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-background-removal-helps-with-portraits",
+          "id": "how-background-removal-helps-with-portraits",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-background-removal-helps-with-product-photos",
+          "id": "how-background-removal-helps-with-product-photos",
+          "expectedUpdatedAt": "2026-10-03T20:19:38.535+00:00"
+        },
+        {
+          "slug": "how-background-removal-helps-with-social-media",
+          "id": "how-background-removal-helps-with-social-media",
+          "expectedUpdatedAt": "2026-10-03T20:19:48.571+00:00"
+        },
+        {
+          "slug": "how-background-removal-helps-with-transparent-images",
+          "id": "how-background-removal-helps-with-transparent-images",
+          "expectedUpdatedAt": "2026-10-03T20:19:57.605+00:00"
+        },
+        {
+          "slug": "how-to-use-background-removal-for-design",
+          "id": "how-to-use-background-removal-for-design",
+          "expectedUpdatedAt": "2026-09-29T19:06:16.395+00:00"
+        },
+        {
+          "slug": "how-to-use-background-removal-for-ecommerce",
+          "id": "how-to-use-background-removal-for-ecommerce",
+          "expectedUpdatedAt": "2026-09-29T19:20:52.186+00:00"
+        },
+        {
+          "slug": "how-to-use-background-removal-for-marketplaces",
+          "id": "how-to-use-background-removal-for-marketplaces",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-background-removal-for-photos",
+          "id": "how-to-use-background-removal-for-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-background-removal-for-portraits",
+          "id": "how-to-use-background-removal-for-portraits",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-background-removal-for-product-photos",
+          "id": "how-to-use-background-removal-for-product-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-background-removal-for-social-media",
+          "id": "how-to-use-background-removal-for-social-media",
+          "expectedUpdatedAt": "2026-10-03T20:19:41.517+00:00"
+        },
+        {
+          "slug": "how-to-use-background-removal-for-transparent-images",
+          "id": "how-to-use-background-removal-for-transparent-images",
+          "expectedUpdatedAt": "2026-10-03T20:19:51.755+00:00"
+        },
+        {
+          "slug": "prepare-product-photos-for-online-store",
+          "id": "prepare-product-photos-for-online-store",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "removing-a-photo-background-guide",
+          "id": "removing-a-photo-background-guide",
+          "expectedUpdatedAt": "2026-09-29T20:20:57.793+00:00"
+        },
+        {
+          "slug": "what-to-know-about-background-removal-for-design",
+          "id": "what-to-know-about-background-removal-for-design",
+          "expectedUpdatedAt": "2026-09-29T19:19:11.296+00:00"
+        },
+        {
+          "slug": "what-to-know-about-background-removal-for-ecommerce",
+          "id": "what-to-know-about-background-removal-for-ecommerce",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-background-removal-for-marketplaces",
+          "id": "what-to-know-about-background-removal-for-marketplaces",
+          "expectedUpdatedAt": "2026-09-30T11:39:48.545461+00:00"
+        },
+        {
+          "slug": "what-to-know-about-background-removal-for-photos",
+          "id": "what-to-know-about-background-removal-for-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-background-removal-for-portraits",
+          "id": "what-to-know-about-background-removal-for-portraits",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-background-removal-for-product-photos",
+          "id": "what-to-know-about-background-removal-for-product-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-background-removal-for-social-media",
+          "id": "what-to-know-about-background-removal-for-social-media",
+          "expectedUpdatedAt": "2026-10-03T20:19:47.372+00:00"
+        },
+        {
+          "slug": "what-to-know-about-background-removal-for-transparent-images",
+          "id": "what-to-know-about-background-removal-for-transparent-images",
+          "expectedUpdatedAt": "2026-10-03T20:19:56.42+00:00"
+        }
+      ]
+    },
+    {
+      "key": "pdf-workflows",
+      "slug": "simple-pdf-workflow-without-software",
+      "title": "Better PDFs: From Images to Finished Documents",
+      "category": "pdf-tools",
+      "tools": [
+        "image-to-pdf",
+        "pdf-merge"
+      ],
+      "bodyFile": "pdf-workflows.md",
+      "minimumWords": 10001,
+      "sources": [
+        {
+          "slug": "a-practical-guide-to-image-to-pdf-for-applications",
+          "id": "a-practical-guide-to-image-to-pdf-for-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-image-to-pdf-for-archives",
+          "id": "a-practical-guide-to-image-to-pdf-for-archives",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-image-to-pdf-for-documents",
+          "id": "a-practical-guide-to-image-to-pdf-for-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-image-to-pdf-for-forms",
+          "id": "a-practical-guide-to-image-to-pdf-for-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-image-to-pdf-for-photos",
+          "id": "a-practical-guide-to-image-to-pdf-for-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-image-to-pdf-for-receipts",
+          "id": "a-practical-guide-to-image-to-pdf-for-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-image-to-pdf-for-scans",
+          "id": "a-practical-guide-to-image-to-pdf-for-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-image-to-pdf-for-sharing",
+          "id": "a-practical-guide-to-image-to-pdf-for-sharing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-merge-pdf-for-applications",
+          "id": "a-practical-guide-to-merge-pdf-for-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-merge-pdf-for-contracts",
+          "id": "a-practical-guide-to-merge-pdf-for-contracts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-merge-pdf-for-documents",
+          "id": "a-practical-guide-to-merge-pdf-for-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-merge-pdf-for-forms",
+          "id": "a-practical-guide-to-merge-pdf-for-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-merge-pdf-for-office",
+          "id": "a-practical-guide-to-merge-pdf-for-office",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-merge-pdf-for-receipts",
+          "id": "a-practical-guide-to-merge-pdf-for-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-merge-pdf-for-reports",
+          "id": "a-practical-guide-to-merge-pdf-for-reports",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-merge-pdf-for-scans",
+          "id": "a-practical-guide-to-merge-pdf-for-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-image-to-pdf-for-applications",
+          "id": "a-safer-way-to-handle-image-to-pdf-for-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-image-to-pdf-for-archives",
+          "id": "a-safer-way-to-handle-image-to-pdf-for-archives",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-image-to-pdf-for-documents",
+          "id": "a-safer-way-to-handle-image-to-pdf-for-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-image-to-pdf-for-forms",
+          "id": "a-safer-way-to-handle-image-to-pdf-for-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-image-to-pdf-for-photos",
+          "id": "a-safer-way-to-handle-image-to-pdf-for-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-image-to-pdf-for-receipts",
+          "id": "a-safer-way-to-handle-image-to-pdf-for-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-image-to-pdf-for-scans",
+          "id": "a-safer-way-to-handle-image-to-pdf-for-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-image-to-pdf-for-sharing",
+          "id": "a-safer-way-to-handle-image-to-pdf-for-sharing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-merge-pdf-for-applications",
+          "id": "a-safer-way-to-handle-merge-pdf-for-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-merge-pdf-for-contracts",
+          "id": "a-safer-way-to-handle-merge-pdf-for-contracts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-merge-pdf-for-documents",
+          "id": "a-safer-way-to-handle-merge-pdf-for-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-merge-pdf-for-forms",
+          "id": "a-safer-way-to-handle-merge-pdf-for-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-merge-pdf-for-office",
+          "id": "a-safer-way-to-handle-merge-pdf-for-office",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-merge-pdf-for-receipts",
+          "id": "a-safer-way-to-handle-merge-pdf-for-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-merge-pdf-for-reports",
+          "id": "a-safer-way-to-handle-merge-pdf-for-reports",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-merge-pdf-for-scans",
+          "id": "a-safer-way-to-handle-merge-pdf-for-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-image-to-pdf-when-working-with-applications",
+          "id": "best-practices-for-image-to-pdf-when-working-with-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-image-to-pdf-when-working-with-archives",
+          "id": "best-practices-for-image-to-pdf-when-working-with-archives",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-image-to-pdf-when-working-with-documents",
+          "id": "best-practices-for-image-to-pdf-when-working-with-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-image-to-pdf-when-working-with-forms",
+          "id": "best-practices-for-image-to-pdf-when-working-with-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-image-to-pdf-when-working-with-photos",
+          "id": "best-practices-for-image-to-pdf-when-working-with-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-image-to-pdf-when-working-with-receipts",
+          "id": "best-practices-for-image-to-pdf-when-working-with-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-image-to-pdf-when-working-with-scans",
+          "id": "best-practices-for-image-to-pdf-when-working-with-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-image-to-pdf-when-working-with-sharing",
+          "id": "best-practices-for-image-to-pdf-when-working-with-sharing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-merge-pdf-when-working-with-applications",
+          "id": "best-practices-for-merge-pdf-when-working-with-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-merge-pdf-when-working-with-contracts",
+          "id": "best-practices-for-merge-pdf-when-working-with-contracts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-merge-pdf-when-working-with-documents",
+          "id": "best-practices-for-merge-pdf-when-working-with-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-merge-pdf-when-working-with-forms",
+          "id": "best-practices-for-merge-pdf-when-working-with-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-merge-pdf-when-working-with-office",
+          "id": "best-practices-for-merge-pdf-when-working-with-office",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-merge-pdf-when-working-with-receipts",
+          "id": "best-practices-for-merge-pdf-when-working-with-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-merge-pdf-when-working-with-reports",
+          "id": "best-practices-for-merge-pdf-when-working-with-reports",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-merge-pdf-when-working-with-scans",
+          "id": "best-practices-for-merge-pdf-when-working-with-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-image-to-pdf-in-applications",
+          "id": "common-mistakes-with-image-to-pdf-in-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-image-to-pdf-in-archives",
+          "id": "common-mistakes-with-image-to-pdf-in-archives",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-image-to-pdf-in-documents",
+          "id": "common-mistakes-with-image-to-pdf-in-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-image-to-pdf-in-forms",
+          "id": "common-mistakes-with-image-to-pdf-in-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-image-to-pdf-in-photos",
+          "id": "common-mistakes-with-image-to-pdf-in-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-image-to-pdf-in-receipts",
+          "id": "common-mistakes-with-image-to-pdf-in-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-image-to-pdf-in-scans",
+          "id": "common-mistakes-with-image-to-pdf-in-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-image-to-pdf-in-sharing",
+          "id": "common-mistakes-with-image-to-pdf-in-sharing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-merge-pdf-in-applications",
+          "id": "common-mistakes-with-merge-pdf-in-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-merge-pdf-in-contracts",
+          "id": "common-mistakes-with-merge-pdf-in-contracts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-merge-pdf-in-documents",
+          "id": "common-mistakes-with-merge-pdf-in-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-merge-pdf-in-forms",
+          "id": "common-mistakes-with-merge-pdf-in-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-merge-pdf-in-office",
+          "id": "common-mistakes-with-merge-pdf-in-office",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-merge-pdf-in-receipts",
+          "id": "common-mistakes-with-merge-pdf-in-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-merge-pdf-in-reports",
+          "id": "common-mistakes-with-merge-pdf-in-reports",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-merge-pdf-in-scans",
+          "id": "common-mistakes-with-merge-pdf-in-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-image-to-pdf-helps-with-applications",
+          "id": "how-image-to-pdf-helps-with-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-image-to-pdf-helps-with-archives",
+          "id": "how-image-to-pdf-helps-with-archives",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-image-to-pdf-helps-with-documents",
+          "id": "how-image-to-pdf-helps-with-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-image-to-pdf-helps-with-forms",
+          "id": "how-image-to-pdf-helps-with-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-image-to-pdf-helps-with-photos",
+          "id": "how-image-to-pdf-helps-with-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-image-to-pdf-helps-with-receipts",
+          "id": "how-image-to-pdf-helps-with-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-image-to-pdf-helps-with-scans",
+          "id": "how-image-to-pdf-helps-with-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-image-to-pdf-helps-with-sharing",
+          "id": "how-image-to-pdf-helps-with-sharing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-merge-pdf-helps-with-applications",
+          "id": "how-merge-pdf-helps-with-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-merge-pdf-helps-with-contracts",
+          "id": "how-merge-pdf-helps-with-contracts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-merge-pdf-helps-with-documents",
+          "id": "how-merge-pdf-helps-with-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-merge-pdf-helps-with-forms",
+          "id": "how-merge-pdf-helps-with-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-merge-pdf-helps-with-office",
+          "id": "how-merge-pdf-helps-with-office",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-merge-pdf-helps-with-receipts",
+          "id": "how-merge-pdf-helps-with-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-merge-pdf-helps-with-reports",
+          "id": "how-merge-pdf-helps-with-reports",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-merge-pdf-helps-with-scans",
+          "id": "how-merge-pdf-helps-with-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-image-to-pdf-for-applications",
+          "id": "how-to-use-image-to-pdf-for-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-image-to-pdf-for-archives",
+          "id": "how-to-use-image-to-pdf-for-archives",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-image-to-pdf-for-documents",
+          "id": "how-to-use-image-to-pdf-for-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-image-to-pdf-for-forms",
+          "id": "how-to-use-image-to-pdf-for-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-image-to-pdf-for-photos",
+          "id": "how-to-use-image-to-pdf-for-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-image-to-pdf-for-receipts",
+          "id": "how-to-use-image-to-pdf-for-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-image-to-pdf-for-scans",
+          "id": "how-to-use-image-to-pdf-for-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-image-to-pdf-for-sharing",
+          "id": "how-to-use-image-to-pdf-for-sharing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-merge-pdf-for-applications",
+          "id": "how-to-use-merge-pdf-for-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-merge-pdf-for-contracts",
+          "id": "how-to-use-merge-pdf-for-contracts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-merge-pdf-for-documents",
+          "id": "how-to-use-merge-pdf-for-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-merge-pdf-for-forms",
+          "id": "how-to-use-merge-pdf-for-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-merge-pdf-for-office",
+          "id": "how-to-use-merge-pdf-for-office",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-merge-pdf-for-receipts",
+          "id": "how-to-use-merge-pdf-for-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-merge-pdf-for-reports",
+          "id": "how-to-use-merge-pdf-for-reports",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-merge-pdf-for-scans",
+          "id": "how-to-use-merge-pdf-for-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "merge-pdf-files-without-uploading",
+          "id": "merge-pdf-files-without-uploading",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "simple-pdf-workflow-without-software",
+          "id": "simple-pdf-workflow-without-software",
+          "expectedUpdatedAt": "2026-09-29T20:20:54.481+00:00"
+        },
+        {
+          "slug": "what-to-know-about-image-to-pdf-for-applications",
+          "id": "what-to-know-about-image-to-pdf-for-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-image-to-pdf-for-archives",
+          "id": "what-to-know-about-image-to-pdf-for-archives",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-image-to-pdf-for-documents",
+          "id": "what-to-know-about-image-to-pdf-for-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-image-to-pdf-for-forms",
+          "id": "what-to-know-about-image-to-pdf-for-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-image-to-pdf-for-photos",
+          "id": "what-to-know-about-image-to-pdf-for-photos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-image-to-pdf-for-receipts",
+          "id": "what-to-know-about-image-to-pdf-for-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-image-to-pdf-for-scans",
+          "id": "what-to-know-about-image-to-pdf-for-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-image-to-pdf-for-sharing",
+          "id": "what-to-know-about-image-to-pdf-for-sharing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-merge-pdf-for-applications",
+          "id": "what-to-know-about-merge-pdf-for-applications",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-merge-pdf-for-contracts",
+          "id": "what-to-know-about-merge-pdf-for-contracts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-merge-pdf-for-documents",
+          "id": "what-to-know-about-merge-pdf-for-documents",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-merge-pdf-for-forms",
+          "id": "what-to-know-about-merge-pdf-for-forms",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-merge-pdf-for-office",
+          "id": "what-to-know-about-merge-pdf-for-office",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-merge-pdf-for-receipts",
+          "id": "what-to-know-about-merge-pdf-for-receipts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-merge-pdf-for-reports",
+          "id": "what-to-know-about-merge-pdf-for-reports",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-merge-pdf-for-scans",
+          "id": "what-to-know-about-merge-pdf-for-scans",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        }
+      ]
+    },
+    {
+      "key": "developer-data",
+      "slug": "small-tools-that-save-developers-time",
+      "title": "Make Sense of Your Data: JSON, Base64, and Developer Tools",
+      "category": "dev-tools",
+      "tools": [
+        "json-formatter",
+        "base64-tool",
+        "csv-to-json",
+        "jwt-decoder",
+        "url-encoder-decoder",
+        "hash-generator",
+        "unix-timestamp-converter",
+        "uuid-generator",
+        "user-agent-generator",
+        "unit-converter"
+      ],
+      "bodyFile": "developer-data.md",
+      "minimumWords": 10001,
+      "sources": [
+        {
+          "slug": "a-practical-guide-to-base64-for-apis",
+          "id": "a-practical-guide-to-base64-for-apis",
+          "expectedUpdatedAt": "2026-10-03T20:20:01.145+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-base64-for-data-urls",
+          "id": "a-practical-guide-to-base64-for-data-urls",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-base64-for-decoding",
+          "id": "a-practical-guide-to-base64-for-decoding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-base64-for-development",
+          "id": "a-practical-guide-to-base64-for-development",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-base64-for-encoding",
+          "id": "a-practical-guide-to-base64-for-encoding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-base64-for-images",
+          "id": "a-practical-guide-to-base64-for-images",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-base64-for-testing",
+          "id": "a-practical-guide-to-base64-for-testing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-base64-for-tokens",
+          "id": "a-practical-guide-to-base64-for-tokens",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-json-formatter-for-apis",
+          "id": "a-practical-guide-to-json-formatter-for-apis",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-json-formatter-for-configuration",
+          "id": "a-practical-guide-to-json-formatter-for-configuration",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-json-formatter-for-data",
+          "id": "a-practical-guide-to-json-formatter-for-data",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-json-formatter-for-debugging",
+          "id": "a-practical-guide-to-json-formatter-for-debugging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-json-formatter-for-development",
+          "id": "a-practical-guide-to-json-formatter-for-development",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-json-formatter-for-logs",
+          "id": "a-practical-guide-to-json-formatter-for-logs",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-json-formatter-for-testing",
+          "id": "a-practical-guide-to-json-formatter-for-testing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-json-formatter-for-webhooks",
+          "id": "a-practical-guide-to-json-formatter-for-webhooks",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-base64-for-apis",
+          "id": "a-safer-way-to-handle-base64-for-apis",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-base64-for-data-urls",
+          "id": "a-safer-way-to-handle-base64-for-data-urls",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-base64-for-decoding",
+          "id": "a-safer-way-to-handle-base64-for-decoding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-base64-for-development",
+          "id": "a-safer-way-to-handle-base64-for-development",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-base64-for-encoding",
+          "id": "a-safer-way-to-handle-base64-for-encoding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-base64-for-images",
+          "id": "a-safer-way-to-handle-base64-for-images",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-base64-for-testing",
+          "id": "a-safer-way-to-handle-base64-for-testing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-base64-for-tokens",
+          "id": "a-safer-way-to-handle-base64-for-tokens",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-json-formatter-for-apis",
+          "id": "a-safer-way-to-handle-json-formatter-for-apis",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-json-formatter-for-configuration",
+          "id": "a-safer-way-to-handle-json-formatter-for-configuration",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-json-formatter-for-data",
+          "id": "a-safer-way-to-handle-json-formatter-for-data",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-json-formatter-for-debugging",
+          "id": "a-safer-way-to-handle-json-formatter-for-debugging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-json-formatter-for-development",
+          "id": "a-safer-way-to-handle-json-formatter-for-development",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-json-formatter-for-logs",
+          "id": "a-safer-way-to-handle-json-formatter-for-logs",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-json-formatter-for-testing",
+          "id": "a-safer-way-to-handle-json-formatter-for-testing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-json-formatter-for-webhooks",
+          "id": "a-safer-way-to-handle-json-formatter-for-webhooks",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-base64-when-working-with-apis",
+          "id": "best-practices-for-base64-when-working-with-apis",
+          "expectedUpdatedAt": "2026-10-03T20:20:03.588+00:00"
+        },
+        {
+          "slug": "best-practices-for-base64-when-working-with-data-urls",
+          "id": "best-practices-for-base64-when-working-with-data-urls",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-base64-when-working-with-decoding",
+          "id": "best-practices-for-base64-when-working-with-decoding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-base64-when-working-with-development",
+          "id": "best-practices-for-base64-when-working-with-development",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-base64-when-working-with-encoding",
+          "id": "best-practices-for-base64-when-working-with-encoding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-base64-when-working-with-images",
+          "id": "best-practices-for-base64-when-working-with-images",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-base64-when-working-with-testing",
+          "id": "best-practices-for-base64-when-working-with-testing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-base64-when-working-with-tokens",
+          "id": "best-practices-for-base64-when-working-with-tokens",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-json-formatter-when-working-with-apis",
+          "id": "best-practices-for-json-formatter-when-working-with-apis",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-json-formatter-when-working-with-configuration",
+          "id": "best-practices-for-json-formatter-when-working-with-configuration",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-json-formatter-when-working-with-data",
+          "id": "best-practices-for-json-formatter-when-working-with-data",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-json-formatter-when-working-with-debugging",
+          "id": "best-practices-for-json-formatter-when-working-with-debugging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-json-formatter-when-working-with-development",
+          "id": "best-practices-for-json-formatter-when-working-with-development",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-json-formatter-when-working-with-logs",
+          "id": "best-practices-for-json-formatter-when-working-with-logs",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-json-formatter-when-working-with-testing",
+          "id": "best-practices-for-json-formatter-when-working-with-testing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-json-formatter-when-working-with-webhooks",
+          "id": "best-practices-for-json-formatter-when-working-with-webhooks",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-base64-in-apis",
+          "id": "common-mistakes-with-base64-in-apis",
+          "expectedUpdatedAt": "2026-10-03T20:20:02.32+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-base64-in-data-urls",
+          "id": "common-mistakes-with-base64-in-data-urls",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-base64-in-decoding",
+          "id": "common-mistakes-with-base64-in-decoding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-base64-in-development",
+          "id": "common-mistakes-with-base64-in-development",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-base64-in-encoding",
+          "id": "common-mistakes-with-base64-in-encoding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-base64-in-images",
+          "id": "common-mistakes-with-base64-in-images",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-base64-in-testing",
+          "id": "common-mistakes-with-base64-in-testing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-base64-in-tokens",
+          "id": "common-mistakes-with-base64-in-tokens",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-json-formatter-in-apis",
+          "id": "common-mistakes-with-json-formatter-in-apis",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-json-formatter-in-configuration",
+          "id": "common-mistakes-with-json-formatter-in-configuration",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-json-formatter-in-data",
+          "id": "common-mistakes-with-json-formatter-in-data",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-json-formatter-in-debugging",
+          "id": "common-mistakes-with-json-formatter-in-debugging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-json-formatter-in-development",
+          "id": "common-mistakes-with-json-formatter-in-development",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-json-formatter-in-logs",
+          "id": "common-mistakes-with-json-formatter-in-logs",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-json-formatter-in-testing",
+          "id": "common-mistakes-with-json-formatter-in-testing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-json-formatter-in-webhooks",
+          "id": "common-mistakes-with-json-formatter-in-webhooks",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-base64-helps-with-apis",
+          "id": "how-base64-helps-with-apis",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-base64-helps-with-data-urls",
+          "id": "how-base64-helps-with-data-urls",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-base64-helps-with-decoding",
+          "id": "how-base64-helps-with-decoding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-base64-helps-with-development",
+          "id": "how-base64-helps-with-development",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-base64-helps-with-encoding",
+          "id": "how-base64-helps-with-encoding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-base64-helps-with-images",
+          "id": "how-base64-helps-with-images",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-base64-helps-with-testing",
+          "id": "how-base64-helps-with-testing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-base64-helps-with-tokens",
+          "id": "how-base64-helps-with-tokens",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-json-formatter-helps-with-apis",
+          "id": "how-json-formatter-helps-with-apis",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-json-formatter-helps-with-configuration",
+          "id": "how-json-formatter-helps-with-configuration",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-json-formatter-helps-with-data",
+          "id": "how-json-formatter-helps-with-data",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-json-formatter-helps-with-debugging",
+          "id": "how-json-formatter-helps-with-debugging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-json-formatter-helps-with-development",
+          "id": "how-json-formatter-helps-with-development",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-json-formatter-helps-with-logs",
+          "id": "how-json-formatter-helps-with-logs",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-json-formatter-helps-with-testing",
+          "id": "how-json-formatter-helps-with-testing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-json-formatter-helps-with-webhooks",
+          "id": "how-json-formatter-helps-with-webhooks",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-base64-for-apis",
+          "id": "how-to-use-base64-for-apis",
+          "expectedUpdatedAt": "2026-10-03T20:19:59.928+00:00"
+        },
+        {
+          "slug": "how-to-use-base64-for-tokens",
+          "id": "how-to-use-base64-for-tokens",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-json-formatter-for-configuration",
+          "id": "how-to-use-json-formatter-for-configuration",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "small-tools-that-save-developers-time",
+          "id": "small-tools-that-save-developers-time",
+          "expectedUpdatedAt": "2026-09-29T20:20:53.887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-base64-for-apis",
+          "id": "what-to-know-about-base64-for-apis",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-base64-for-data-urls",
+          "id": "what-to-know-about-base64-for-data-urls",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-base64-for-decoding",
+          "id": "what-to-know-about-base64-for-decoding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-base64-for-development",
+          "id": "what-to-know-about-base64-for-development",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-base64-for-encoding",
+          "id": "what-to-know-about-base64-for-encoding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-base64-for-images",
+          "id": "what-to-know-about-base64-for-images",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-base64-for-testing",
+          "id": "what-to-know-about-base64-for-testing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-base64-for-tokens",
+          "id": "what-to-know-about-base64-for-tokens",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-json-formatter-for-apis",
+          "id": "what-to-know-about-json-formatter-for-apis",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-json-formatter-for-configuration",
+          "id": "what-to-know-about-json-formatter-for-configuration",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-json-formatter-for-data",
+          "id": "what-to-know-about-json-formatter-for-data",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-json-formatter-for-debugging",
+          "id": "what-to-know-about-json-formatter-for-debugging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-json-formatter-for-development",
+          "id": "what-to-know-about-json-formatter-for-development",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-json-formatter-for-logs",
+          "id": "what-to-know-about-json-formatter-for-logs",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-json-formatter-for-testing",
+          "id": "what-to-know-about-json-formatter-for-testing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-json-formatter-for-webhooks",
+          "id": "what-to-know-about-json-formatter-for-webhooks",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "why-json-fails-and-how-to-find-the-error",
+          "id": "why-json-fails-and-how-to-find-the-error",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        }
+      ]
+    },
+    {
+      "key": "passwords",
+      "slug": "build-a-password-you-can-trust",
+      "title": "Passwords, Passkeys, and Account Recovery: A Practical Guide",
+      "category": "generators",
+      "tools": [
+        "password-generator"
+      ],
+      "bodyFile": "passwords.md",
+      "minimumWords": 10001,
+      "sources": [
+        {
+          "slug": "a-practical-guide-to-password-generator-for-accounts",
+          "id": "a-practical-guide-to-password-generator-for-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-password-generator-for-logins",
+          "id": "a-practical-guide-to-password-generator-for-logins",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-password-generator-for-online-safety",
+          "id": "a-practical-guide-to-password-generator-for-online-safety",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-password-generator-for-passphrases",
+          "id": "a-practical-guide-to-password-generator-for-passphrases",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-password-generator-for-password-managers",
+          "id": "a-practical-guide-to-password-generator-for-password-managers",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-password-generator-for-security",
+          "id": "a-practical-guide-to-password-generator-for-security",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-password-generator-for-teams",
+          "id": "a-practical-guide-to-password-generator-for-teams",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-password-generator-for-wifi",
+          "id": "a-practical-guide-to-password-generator-for-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-password-generator-for-accounts",
+          "id": "a-safer-way-to-handle-password-generator-for-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-password-generator-for-logins",
+          "id": "a-safer-way-to-handle-password-generator-for-logins",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-password-generator-for-online-safety",
+          "id": "a-safer-way-to-handle-password-generator-for-online-safety",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-password-generator-for-passphrases",
+          "id": "a-safer-way-to-handle-password-generator-for-passphrases",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-password-generator-for-password-managers",
+          "id": "a-safer-way-to-handle-password-generator-for-password-managers",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-password-generator-for-security",
+          "id": "a-safer-way-to-handle-password-generator-for-security",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-password-generator-for-teams",
+          "id": "a-safer-way-to-handle-password-generator-for-teams",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-password-generator-for-wifi",
+          "id": "a-safer-way-to-handle-password-generator-for-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-password-generator-when-working-with-accounts",
+          "id": "best-practices-for-password-generator-when-working-with-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-password-generator-when-working-with-logins",
+          "id": "best-practices-for-password-generator-when-working-with-logins",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-password-generator-when-working-with-online-safety",
+          "id": "best-practices-for-password-generator-when-working-with-online-safety",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-password-generator-when-working-with-passphrases",
+          "id": "best-practices-for-password-generator-when-working-with-passphrases",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-password-generator-when-working-with-password-managers",
+          "id": "best-practices-for-password-generator-when-working-with-password-managers",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-password-generator-when-working-with-security",
+          "id": "best-practices-for-password-generator-when-working-with-security",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-password-generator-when-working-with-teams",
+          "id": "best-practices-for-password-generator-when-working-with-teams",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-password-generator-when-working-with-wifi",
+          "id": "best-practices-for-password-generator-when-working-with-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "build-a-password-you-can-trust",
+          "id": "build-a-password-you-can-trust",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-password-generator-in-accounts",
+          "id": "common-mistakes-with-password-generator-in-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-password-generator-in-logins",
+          "id": "common-mistakes-with-password-generator-in-logins",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-password-generator-in-online-safety",
+          "id": "common-mistakes-with-password-generator-in-online-safety",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-password-generator-in-passphrases",
+          "id": "common-mistakes-with-password-generator-in-passphrases",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-password-generator-in-password-managers",
+          "id": "common-mistakes-with-password-generator-in-password-managers",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-password-generator-in-security",
+          "id": "common-mistakes-with-password-generator-in-security",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-password-generator-in-teams",
+          "id": "common-mistakes-with-password-generator-in-teams",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-password-generator-in-wifi",
+          "id": "common-mistakes-with-password-generator-in-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-password-generator-helps-with-accounts",
+          "id": "how-password-generator-helps-with-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-password-generator-helps-with-logins",
+          "id": "how-password-generator-helps-with-logins",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-password-generator-helps-with-online-safety",
+          "id": "how-password-generator-helps-with-online-safety",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-password-generator-helps-with-passphrases",
+          "id": "how-password-generator-helps-with-passphrases",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-password-generator-helps-with-password-managers",
+          "id": "how-password-generator-helps-with-password-managers",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-password-generator-helps-with-security",
+          "id": "how-password-generator-helps-with-security",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-password-generator-helps-with-teams",
+          "id": "how-password-generator-helps-with-teams",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-password-generator-helps-with-wifi",
+          "id": "how-password-generator-helps-with-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-password-generator-for-accounts",
+          "id": "how-to-use-password-generator-for-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-password-generator-for-logins",
+          "id": "how-to-use-password-generator-for-logins",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-password-generator-for-online-safety",
+          "id": "how-to-use-password-generator-for-online-safety",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-password-generator-for-passphrases",
+          "id": "how-to-use-password-generator-for-passphrases",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-password-generator-for-password-managers",
+          "id": "how-to-use-password-generator-for-password-managers",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-password-generator-for-security",
+          "id": "how-to-use-password-generator-for-security",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-password-generator-for-teams",
+          "id": "how-to-use-password-generator-for-teams",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-password-generator-for-wifi",
+          "id": "how-to-use-password-generator-for-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-password-generator-for-accounts",
+          "id": "what-to-know-about-password-generator-for-accounts",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-password-generator-for-logins",
+          "id": "what-to-know-about-password-generator-for-logins",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-password-generator-for-online-safety",
+          "id": "what-to-know-about-password-generator-for-online-safety",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-password-generator-for-passphrases",
+          "id": "what-to-know-about-password-generator-for-passphrases",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-password-generator-for-password-managers",
+          "id": "what-to-know-about-password-generator-for-password-managers",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-password-generator-for-security",
+          "id": "what-to-know-about-password-generator-for-security",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-password-generator-for-teams",
+          "id": "what-to-know-about-password-generator-for-teams",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-password-generator-for-wifi",
+          "id": "what-to-know-about-password-generator-for-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        }
+      ]
+    },
+    {
+      "key": "qr-codes",
+      "slug": "make-a-qr-code-that-scans-every-time",
+      "title": "QR Codes That Work: Design, Printing, and Destination Checks",
+      "category": "generators",
+      "tools": [
+        "qr-code-generator"
+      ],
+      "bodyFile": "qr-codes.md",
+      "minimumWords": 10001,
+      "sources": [
+        {
+          "slug": "a-practical-guide-to-qr-code-for-business-cards",
+          "id": "a-practical-guide-to-qr-code-for-business-cards",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-qr-code-for-events",
+          "id": "a-practical-guide-to-qr-code-for-events",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-qr-code-for-marketing",
+          "id": "a-practical-guide-to-qr-code-for-marketing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-qr-code-for-menus",
+          "id": "a-practical-guide-to-qr-code-for-menus",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-qr-code-for-packaging",
+          "id": "a-practical-guide-to-qr-code-for-packaging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-qr-code-for-payments",
+          "id": "a-practical-guide-to-qr-code-for-payments",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-qr-code-for-posters",
+          "id": "a-practical-guide-to-qr-code-for-posters",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-qr-code-for-wifi",
+          "id": "a-practical-guide-to-qr-code-for-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-qr-code-for-business-cards",
+          "id": "a-safer-way-to-handle-qr-code-for-business-cards",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-qr-code-for-events",
+          "id": "a-safer-way-to-handle-qr-code-for-events",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-qr-code-for-marketing",
+          "id": "a-safer-way-to-handle-qr-code-for-marketing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-qr-code-for-menus",
+          "id": "a-safer-way-to-handle-qr-code-for-menus",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-qr-code-for-packaging",
+          "id": "a-safer-way-to-handle-qr-code-for-packaging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-qr-code-for-payments",
+          "id": "a-safer-way-to-handle-qr-code-for-payments",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-qr-code-for-posters",
+          "id": "a-safer-way-to-handle-qr-code-for-posters",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-qr-code-for-wifi",
+          "id": "a-safer-way-to-handle-qr-code-for-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-qr-code-when-working-with-business-cards",
+          "id": "best-practices-for-qr-code-when-working-with-business-cards",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-qr-code-when-working-with-events",
+          "id": "best-practices-for-qr-code-when-working-with-events",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-qr-code-when-working-with-marketing",
+          "id": "best-practices-for-qr-code-when-working-with-marketing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-qr-code-when-working-with-menus",
+          "id": "best-practices-for-qr-code-when-working-with-menus",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-qr-code-when-working-with-packaging",
+          "id": "best-practices-for-qr-code-when-working-with-packaging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-qr-code-when-working-with-payments",
+          "id": "best-practices-for-qr-code-when-working-with-payments",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-qr-code-when-working-with-posters",
+          "id": "best-practices-for-qr-code-when-working-with-posters",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-qr-code-when-working-with-wifi",
+          "id": "best-practices-for-qr-code-when-working-with-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-qr-code-in-business-cards",
+          "id": "common-mistakes-with-qr-code-in-business-cards",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-qr-code-in-events",
+          "id": "common-mistakes-with-qr-code-in-events",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-qr-code-in-marketing",
+          "id": "common-mistakes-with-qr-code-in-marketing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-qr-code-in-menus",
+          "id": "common-mistakes-with-qr-code-in-menus",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-qr-code-in-packaging",
+          "id": "common-mistakes-with-qr-code-in-packaging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-qr-code-in-payments",
+          "id": "common-mistakes-with-qr-code-in-payments",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-qr-code-in-posters",
+          "id": "common-mistakes-with-qr-code-in-posters",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-qr-code-in-wifi",
+          "id": "common-mistakes-with-qr-code-in-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-qr-code-helps-with-business-cards",
+          "id": "how-qr-code-helps-with-business-cards",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-qr-code-helps-with-events",
+          "id": "how-qr-code-helps-with-events",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-qr-code-helps-with-marketing",
+          "id": "how-qr-code-helps-with-marketing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-qr-code-helps-with-menus",
+          "id": "how-qr-code-helps-with-menus",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-qr-code-helps-with-packaging",
+          "id": "how-qr-code-helps-with-packaging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-qr-code-helps-with-payments",
+          "id": "how-qr-code-helps-with-payments",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-qr-code-helps-with-posters",
+          "id": "how-qr-code-helps-with-posters",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-qr-code-helps-with-wifi",
+          "id": "how-qr-code-helps-with-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-qr-code-for-business-cards",
+          "id": "how-to-use-qr-code-for-business-cards",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-qr-code-for-events",
+          "id": "how-to-use-qr-code-for-events",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-qr-code-for-marketing",
+          "id": "how-to-use-qr-code-for-marketing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-qr-code-for-menus",
+          "id": "how-to-use-qr-code-for-menus",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-qr-code-for-packaging",
+          "id": "how-to-use-qr-code-for-packaging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-qr-code-for-payments",
+          "id": "how-to-use-qr-code-for-payments",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-qr-code-for-posters",
+          "id": "how-to-use-qr-code-for-posters",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-qr-code-for-wifi",
+          "id": "how-to-use-qr-code-for-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "make-a-qr-code-that-scans-every-time",
+          "id": "make-a-qr-code-that-scans-every-time",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-qr-code-for-business-cards",
+          "id": "what-to-know-about-qr-code-for-business-cards",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-qr-code-for-events",
+          "id": "what-to-know-about-qr-code-for-events",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-qr-code-for-marketing",
+          "id": "what-to-know-about-qr-code-for-marketing",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-qr-code-for-menus",
+          "id": "what-to-know-about-qr-code-for-menus",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-qr-code-for-packaging",
+          "id": "what-to-know-about-qr-code-for-packaging",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-qr-code-for-payments",
+          "id": "what-to-know-about-qr-code-for-payments",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-qr-code-for-posters",
+          "id": "what-to-know-about-qr-code-for-posters",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-qr-code-for-wifi",
+          "id": "what-to-know-about-qr-code-for-wifi",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        }
+      ]
+    },
+    {
+      "key": "color-palettes",
+      "slug": "how-to-use-color-palette-for-web-design",
+      "title": "Color Palettes for Accessible Websites and Consistent Design",
+      "category": "generators",
+      "tools": [
+        "color-palette-generator"
+      ],
+      "bodyFile": "color-palettes.md",
+      "minimumWords": 10001,
+      "sources": [
+        {
+          "slug": "a-practical-guide-to-color-palette-for-accessibility",
+          "id": "a-practical-guide-to-color-palette-for-accessibility",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-color-palette-for-branding",
+          "id": "a-practical-guide-to-color-palette-for-branding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-color-palette-for-logos",
+          "id": "a-practical-guide-to-color-palette-for-logos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-color-palette-for-presentations",
+          "id": "a-practical-guide-to-color-palette-for-presentations",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-color-palette-for-social-media",
+          "id": "a-practical-guide-to-color-palette-for-social-media",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-color-palette-for-themes",
+          "id": "a-practical-guide-to-color-palette-for-themes",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-color-palette-for-ui-design",
+          "id": "a-practical-guide-to-color-palette-for-ui-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-practical-guide-to-color-palette-for-web-design",
+          "id": "a-practical-guide-to-color-palette-for-web-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-color-palette-for-accessibility",
+          "id": "a-safer-way-to-handle-color-palette-for-accessibility",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-color-palette-for-branding",
+          "id": "a-safer-way-to-handle-color-palette-for-branding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-color-palette-for-logos",
+          "id": "a-safer-way-to-handle-color-palette-for-logos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-color-palette-for-presentations",
+          "id": "a-safer-way-to-handle-color-palette-for-presentations",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-color-palette-for-social-media",
+          "id": "a-safer-way-to-handle-color-palette-for-social-media",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-color-palette-for-themes",
+          "id": "a-safer-way-to-handle-color-palette-for-themes",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-color-palette-for-ui-design",
+          "id": "a-safer-way-to-handle-color-palette-for-ui-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "a-safer-way-to-handle-color-palette-for-web-design",
+          "id": "a-safer-way-to-handle-color-palette-for-web-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-color-palette-when-working-with-accessibility",
+          "id": "best-practices-for-color-palette-when-working-with-accessibility",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-color-palette-when-working-with-branding",
+          "id": "best-practices-for-color-palette-when-working-with-branding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-color-palette-when-working-with-logos",
+          "id": "best-practices-for-color-palette-when-working-with-logos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-color-palette-when-working-with-presentations",
+          "id": "best-practices-for-color-palette-when-working-with-presentations",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-color-palette-when-working-with-social-media",
+          "id": "best-practices-for-color-palette-when-working-with-social-media",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-color-palette-when-working-with-themes",
+          "id": "best-practices-for-color-palette-when-working-with-themes",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-color-palette-when-working-with-ui-design",
+          "id": "best-practices-for-color-palette-when-working-with-ui-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "best-practices-for-color-palette-when-working-with-web-design",
+          "id": "best-practices-for-color-palette-when-working-with-web-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-color-palette-in-accessibility",
+          "id": "common-mistakes-with-color-palette-in-accessibility",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-color-palette-in-branding",
+          "id": "common-mistakes-with-color-palette-in-branding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-color-palette-in-logos",
+          "id": "common-mistakes-with-color-palette-in-logos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-color-palette-in-presentations",
+          "id": "common-mistakes-with-color-palette-in-presentations",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-color-palette-in-social-media",
+          "id": "common-mistakes-with-color-palette-in-social-media",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-color-palette-in-themes",
+          "id": "common-mistakes-with-color-palette-in-themes",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-color-palette-in-ui-design",
+          "id": "common-mistakes-with-color-palette-in-ui-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "common-mistakes-with-color-palette-in-web-design",
+          "id": "common-mistakes-with-color-palette-in-web-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-color-palette-helps-with-accessibility",
+          "id": "how-color-palette-helps-with-accessibility",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-color-palette-helps-with-branding",
+          "id": "how-color-palette-helps-with-branding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-color-palette-helps-with-logos",
+          "id": "how-color-palette-helps-with-logos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-color-palette-helps-with-presentations",
+          "id": "how-color-palette-helps-with-presentations",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-color-palette-helps-with-social-media",
+          "id": "how-color-palette-helps-with-social-media",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-color-palette-helps-with-themes",
+          "id": "how-color-palette-helps-with-themes",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-color-palette-helps-with-ui-design",
+          "id": "how-color-palette-helps-with-ui-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-color-palette-helps-with-web-design",
+          "id": "how-color-palette-helps-with-web-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-color-palette-for-accessibility",
+          "id": "how-to-use-color-palette-for-accessibility",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-color-palette-for-branding",
+          "id": "how-to-use-color-palette-for-branding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-color-palette-for-logos",
+          "id": "how-to-use-color-palette-for-logos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-color-palette-for-presentations",
+          "id": "how-to-use-color-palette-for-presentations",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-color-palette-for-social-media",
+          "id": "how-to-use-color-palette-for-social-media",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-color-palette-for-themes",
+          "id": "how-to-use-color-palette-for-themes",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-color-palette-for-ui-design",
+          "id": "how-to-use-color-palette-for-ui-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "how-to-use-color-palette-for-web-design",
+          "id": "how-to-use-color-palette-for-web-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-color-palette-for-accessibility",
+          "id": "what-to-know-about-color-palette-for-accessibility",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-color-palette-for-branding",
+          "id": "what-to-know-about-color-palette-for-branding",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-color-palette-for-logos",
+          "id": "what-to-know-about-color-palette-for-logos",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-color-palette-for-presentations",
+          "id": "what-to-know-about-color-palette-for-presentations",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-color-palette-for-social-media",
+          "id": "what-to-know-about-color-palette-for-social-media",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-color-palette-for-themes",
+          "id": "what-to-know-about-color-palette-for-themes",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-color-palette-for-ui-design",
+          "id": "what-to-know-about-color-palette-for-ui-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        },
+        {
+          "slug": "what-to-know-about-color-palette-for-web-design",
+          "id": "what-to-know-about-color-palette-for-web-design",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        }
+      ]
+    },
+    {
+      "key": "writing-and-text",
+      "slug": "word-count-targets-for-blog-posts-emails-captions",
+      "title": "Practical Writing and Text Editing for the Web",
+      "category": "text-tools",
+      "tools": [
+        "word-counter",
+        "text-case-converter",
+        "text-diff-checker"
+      ],
+      "bodyFile": "writing-and-text.md",
+      "minimumWords": 10001,
+      "sources": [
+        {
+          "slug": "word-count-targets-for-blog-posts-emails-captions",
+          "id": "word-count-targets-for-blog-posts-emails-captions",
+          "expectedUpdatedAt": "2026-09-29T17:27:32.439887+00:00"
+        }
+      ]
+    }
+  ]
+}

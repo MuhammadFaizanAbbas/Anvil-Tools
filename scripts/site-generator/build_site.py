@@ -97,7 +97,7 @@ def footer_html(depth_prefix):
     </div>
     <div class="footer-bottom">
       <span>© <span class="current-year"></span> {SITE_NAME}. All rights reserved.</span>
-      <span>Developed by VelloxTech</span>
+      <span>Anvil Tools is a VelloxTech project.</span>
     </div>
   </div>
 </footer>
