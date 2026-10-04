@@ -105,10 +105,10 @@ add_tool(
       <h2>Combine PDF files</h2>
       <div class="dropzone" id="pm-dropzone">
         <strong>Click to choose PDF files</strong> or drag and drop them here<br>
-        <span class="small-note">Add two or more files, in any order</span>
+        <span class="small-note">Add two or more PDFs, then use Move up or Move down to arrange them</span>
       </div>
       <input type="file" id="pm-file-input" accept="application/pdf" multiple style="display:none;">
-      <ul class="file-list" id="pm-file-list"></ul>
+      <ul class="file-list" id="pm-file-list" aria-label="PDF files in merge order"></ul>
       <div class="btn-row">
         <button class="btn amber" id="pm-merge" disabled>Merge and download</button>
       </div>
@@ -119,7 +119,7 @@ add_tool(
     intro="Add two or more PDF files and they'll be stitched together into one document, in the order shown in the list. Everything happens in your browser, so your files are never uploaded to a server.",
     how_it_works=[
         "Choose or drag in the PDF files you want to combine.",
-        "Reorder or remove files from the list before merging, if needed.",
+        "Use Move up, Move down, or Remove to arrange the file list. All pages within each PDF keep their original order.",
         "Click merge, and the combined file downloads straight to your device.",
     ],
     use_cases=[
@@ -142,10 +142,10 @@ add_tool(
       <h2>Convert images to a PDF</h2>
       <div class="dropzone" id="ip-dropzone">
         <strong>Click to choose images</strong> or drag and drop them here<br>
-        <span class="small-note">JPG or PNG, one page per image</span>
+        <span class="small-note">JPG, PNG, or WebP; arrange the list to set the page order</span>
       </div>
-      <input type="file" id="ip-file-input" accept="image/jpeg,image/png" multiple style="display:none;">
-      <div class="preview-images" id="ip-preview"></div>
+      <input type="file" id="ip-file-input" accept="image/jpeg,image/png,image/webp" multiple style="display:none;">
+      <ul class="file-list image-file-list" id="ip-preview" aria-label="Images in PDF page order"></ul>
       <div class="btn-row">
         <button class="btn amber" id="ip-convert" disabled>Convert to PDF</button>
       </div>
@@ -155,7 +155,7 @@ add_tool(
     tool_js="image-to-pdf.js",
     intro="Select one or more photos or scans and this tool lays each one out on its own page of a new PDF, in the order you add them. Nothing is uploaded; the conversion happens on your device.",
     how_it_works=[
-        "Choose or drag in your JPG or PNG images.",
+        "Choose or drag in your JPG, PNG, or WebP images. Use Move up, Move down, or Remove to set the page order.",
         "Each image becomes one page in the resulting PDF, sized to match the image.",
         "Click convert to build and download the finished PDF.",
     ],

@@ -58,6 +58,8 @@ The optional generator now writes to `frontend/`. It overwrites generated pages,
 
 The blog index renders published article cards on the server on cPanel and Vercel. The current library has four distinct guides with covers; the twelve earlier static guides have been retired. A four-guide fallback catalog remains readable when the database is unavailable. Edit the current bodies in `content/editorial/`; `npm run build:editorial` rebuilds the catalog, tool links, backend template, and sitemaps without republishing the retired pages. See [the editorial cleanup and release instructions](docs/EDITORIAL_CLEANUP.md) for the current library, backups, deployment, and verification.
 
+The [October 5 AdSense follow-up](docs/ADSENSE_AUDIT_FOLLOWUP.md) adds accessible file ordering to both PDF tools and prepares shorter, illustrated guide bodies. Local source changes do not update published database articles; the follow-up includes a guarded content transaction and separate deployment packages.
+
 The admin workspace includes KPI cards, tool-view ranking, a category donut chart, catalog search, content management, and retryable connection errors. Charts use real stored counts. No daily history, unique-visitor metrics, or traffic-source estimates are fabricated. Public pages currently do not automatically send tool-view events; the usage chart stays empty until `/api/analytics/event` receives events.
 
 Contact submissions, email receipts/alerts, and admin replies use the private support inbox and SMTP. Follow [docs/CONTACT_SETUP.md](docs/CONTACT_SETUP.md) before enabling production delivery.

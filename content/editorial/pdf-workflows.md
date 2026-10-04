@@ -22,7 +22,7 @@ Review private information before conversion. A PDF merger is not a redaction to
 
 ## Convert the images into pages
 
-Open [Image to PDF](/tools/image-to-pdf.html) and select the prepared images. The current tool creates one page per image, in selection order. Check the preview thumbnails before downloading. If the sequence is wrong, select the files again in the intended order; the current interface does not provide a drag-to-reorder page editor.
+Open [Image to PDF](/tools/image-to-pdf.html) and select the prepared images. The tool creates one page per image, in the displayed list order. Use Move up and Move down beside each thumbnail to arrange the pages, or Remove to discard an unwanted image. These controls work with a keyboard as well as a pointer. Crop and rotate the source images before adding them; those edits are not provided by this tool.
 
 PNG and JPEG images are embedded directly. Other supported browser image formats are decoded and converted to PNG before embedding. A filename extension alone does not establish that a browser can read the image. If one image fails, try opening it normally and exporting a supported copy, keeping the original available.
 
@@ -36,7 +36,11 @@ An image PDF remains an image document. This conversion does not perform optical
 
 Open [PDF Merge](/tools/pdf-merge.html). Select the cover sheet, application, and converted supporting document. The merger copies all pages from each selected PDF in file order. The current tool does not offer individual page ranges or a page-by-page reorder interface.
 
-Inspect the selected-file list. Our intended order is the one-page cover, the two-page application, and then the three-page supporting document. If it is incorrect, remove and re-add files or make a fresh selection. Do not rely on the order in which files happen to appear in your operating system's folder view.
+Inspect the numbered file list. Our intended order is the one-page cover, the two-page application, and then the three-page supporting document. Use Move up or Move down to change a file's position, and Remove to exclude a document. Moving a file moves its whole group of pages; it cannot rearrange pages inside that PDF. Do not rely on the order in which files happen to appear in your operating system's folder view.
+
+![Actual PDF Merge browser check: numbered cover, application, and support files with Move up, Move down, and Remove controls](/assets/images/editorial/pdf-ordering-example.png)
+
+The screenshot uses a separate four-page test fixture: one cover page, two application pages, and one support page. Its downloaded PDF was reopened with a PDF parser to verify the four-page count and the source groups' order. This tests the assembly behavior on simple sample files; the six-page application workflow in this guide still needs its own final review.
 
 Merge and download the output. The page-count check is simple: 1 + 2 + 3 = 6. The application must begin on page 2 and the supporting photographs on page 4. Open the page thumbnails in a reader to check those boundaries, then inspect the pages themselves. A successful download proves that a file was generated; it does not prove that the submission order is correct.
 

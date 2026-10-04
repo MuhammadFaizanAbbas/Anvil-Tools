@@ -55,6 +55,10 @@ for (const file of walk(frontend)) {
   html = html.replace(/<span class="current-year"><\/span>/g, `<span class="current-year">${new Date().getUTCFullYear()}</span>`);
   if (file === path.join(frontend, 'blog', 'index.html')) html = html.replace(/<!-- editorial-library -->[\s\S]*?<!-- \/editorial-library -->/, library);
   const tool = path.basename(file, '.html');
+  if (['pdf-merge', 'image-to-pdf'].includes(tool)) {
+    html = html.replace(/(assets\/css\/tool-ux\.css)(?:\?[^" ]*)?"/g, '$1?v=20261005-pdf"')
+      .replace(/(assets\/js\/tools\/(?:pdf-merge|image-to-pdf)\.js)(?:\?[^" ]*)?"/g, '$1?v=20261005-pdf"');
+  }
   if (path.dirname(file) === path.join(frontend, 'tools') && troubleshooting[tool]) {
     const [heading, text] = troubleshooting[tool];
     html = html.replace(/<summary>What if the tool does not respond\?<\/summary><p>[^<]*<\/p>/, `<summary>${escape(heading)}</summary><p>${escape(text)}</p>`);

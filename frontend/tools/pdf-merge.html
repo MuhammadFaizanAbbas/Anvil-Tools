@@ -13,7 +13,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
 <link rel="stylesheet" href="../assets/css/design.css?v=20261004-css">
-<link rel="stylesheet" href="../assets/css/tool-ux.css">
+<link rel="stylesheet" href="../assets/css/tool-ux.css?v=20261005-pdf">
 <link rel="stylesheet" href="../assets/css/content.css?v=20261004-css">
 <meta property="og:type" content="website"><meta property="og:title" content="PDF Merge | Anvil Tools"><meta property="og:description" content="Combine multiple PDF files into a single document in the order you choose."><meta property="og:url" content="https://anviltools.vercel.app/tools/pdf-merge.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript></head>
@@ -43,10 +43,10 @@
       <h2>Combine PDF files</h2>
       <div class="dropzone" id="pm-dropzone" role="button" tabindex="0" aria-label="Choose PDF files to merge">
         <strong>Click to choose PDF files</strong> or drag and drop them here<br>
-        <span class="small-note">Add two or more files, in any order</span>
+        <span class="small-note">Add two or more PDFs, then use Move up or Move down to arrange them</span>
       </div>
       <label class="field-label" for="pm-file-input">Choose PDF files</label><input type="file" id="pm-file-input" accept="application/pdf" multiple style="display:none;">
-      <ul class="file-list" id="pm-file-list"></ul>
+      <ul class="file-list" id="pm-file-list" aria-label="PDF files in merge order"></ul>
       <div class="btn-row">
         <button class="btn amber" id="pm-merge" disabled>Merge and download</button>
       </div>
@@ -59,7 +59,7 @@
 <!-- reading-surface --><div class="content-guide"><section class="info-section">
   <h2>How it works</h2>
   <ul><li>Choose or drag in the PDF files you want to combine.</li>
-<li>Reorder or remove files from the list before merging, if needed.</li>
+<li>Use Move up, Move down, or Remove to arrange the file list. All pages within each PDF keep their original order.</li>
 <li>Click merge, and the combined file downloads straight to your device.</li></ul>
 
   <h2>Common uses</h2>
@@ -123,7 +123,7 @@
 
 
 <script src="../assets/js/main.js"></script>
-<script src="../assets/js/tools/pdf-merge.js"></script>
+<script src="../assets/js/tools/pdf-merge.js?v=20261005-pdf"></script>
 <script src="../assets/js/tool-ux.js"></script>
 </body>
 </html>

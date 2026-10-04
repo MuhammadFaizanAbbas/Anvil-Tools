@@ -20,7 +20,8 @@ for (const file of ['server.js', ...files('backend'), ...files('frontend'), 'scr
     for (const match of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)) {
       const source = match[1].match(/src="([^"]+)"/);
       if (source && !/^https?:/.test(source[1])) {
-        const target = source[1].startsWith('/') ? path.join('frontend', source[1]) : path.resolve(path.dirname(file), source[1]);
+        const sourcePath = source[1].split(/[?#]/, 1)[0];
+        const target = sourcePath.startsWith('/') ? path.join('frontend', sourcePath) : path.resolve(path.dirname(file), sourcePath);
         if (!fs.existsSync(target)) throw new Error(`Missing script ${source[1]} in ${file}`);
       } else if (!source && !/type="(?:application\/ld\+json|module)"/.test(match[1])) {
         new vm.Script(match[2], { filename: file });

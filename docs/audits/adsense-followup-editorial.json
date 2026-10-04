@@ -1,0 +1,66 @@
+{
+  "preparedAt": "2026-10-04T19:20:14.257Z",
+  "projectId": "epxzxcqsonxscyvbopqt",
+  "status": "prepared-not-published",
+  "articles": [
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "before": {
+        "words": 11019,
+        "headings": 159,
+        "paragraphs": 672,
+        "tables": 0,
+        "screenshots": 0
+      },
+      "after": {
+        "words": 1726,
+        "headings": 8,
+        "paragraphs": 26,
+        "tables": 2,
+        "screenshots": 1
+      },
+      "bodyMd5": "f542083184b6026754508eee49bedeb4",
+      "originalPublicationDate": "2026-09-29T06:00:31.666188+00:00"
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "before": {
+        "words": 10575,
+        "headings": 237,
+        "paragraphs": 625,
+        "tables": 0,
+        "screenshots": 0
+      },
+      "after": {
+        "words": 1713,
+        "headings": 7,
+        "paragraphs": 24,
+        "tables": 2,
+        "screenshots": 1
+      },
+      "bodyMd5": "21b0ecca0300ead9826cab5c145debaf",
+      "originalPublicationDate": "2026-09-29T13:56:31.666188+00:00"
+    },
+    {
+      "slug": "simple-pdf-workflow-without-software",
+      "before": {
+        "words": 1575,
+        "headings": 9,
+        "paragraphs": 29,
+        "tables": 0,
+        "screenshots": 0
+      },
+      "after": {
+        "words": 1695,
+        "headings": 9,
+        "paragraphs": 30,
+        "tables": 0,
+        "screenshots": 1
+      },
+      "bodyMd5": "4c7d93990386cc959ab3394b6ed8f8dc",
+      "originalPublicationDate": "2026-09-29T12:13:39.490357+00:00"
+    }
+  ],
+  "exactInternalDuplicateParagraphs": [],
+  "duplicationCheckScope": "Normalized body paragraphs of at least 12 words, within and across the four local guides; not an internet originality check."
+}

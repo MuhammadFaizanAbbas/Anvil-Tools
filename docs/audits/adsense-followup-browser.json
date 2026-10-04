@@ -1,0 +1,207 @@
+{
+  "checkedAt": "2026-10-04T19:18:07.583Z",
+  "localOnly": true,
+  "cases": [
+    {
+      "tool": "pdf-merge",
+      "download": true,
+      "pageCount": 4,
+      "orderVerifiedByPageDimensions": true,
+      "keyboardReorder": true
+    },
+    {
+      "tool": "pdf-merge",
+      "corruptInputRejected": true,
+      "queueRestored": true
+    },
+    {
+      "tool": "image-to-pdf",
+      "download": true,
+      "formats": [
+        "PNG preview",
+        "JPEG embedding",
+        "WebP conversion"
+      ],
+      "remove": true,
+      "orderVerifiedByPageDimensions": true
+    },
+    {
+      "tool": "background-remover",
+      "actualModel": true,
+      "dimensions": [
+        480,
+        360
+      ],
+      "transparentPixels": 87446,
+      "opaquePixels": 30
+    },
+    {
+      "tool": "temp-mail",
+      "liveAddressCreated": true,
+      "inboxRefresh": true,
+      "externalDeliveryTested": false
+    },
+    {
+      "tool": "pdf-merge",
+      "width": 320,
+      "noHorizontalOverflow": true
+    },
+    {
+      "tool": "image-to-pdf",
+      "width": 320,
+      "noHorizontalOverflow": true
+    },
+    {
+      "tool": "temp-mail",
+      "width": 320,
+      "noHorizontalOverflow": true
+    },
+    {
+      "tool": "pdf-merge",
+      "width": 390,
+      "noHorizontalOverflow": true
+    },
+    {
+      "tool": "image-to-pdf",
+      "width": 390,
+      "noHorizontalOverflow": true
+    },
+    {
+      "tool": "temp-mail",
+      "width": 390,
+      "noHorizontalOverflow": true
+    },
+    {
+      "tool": "pdf-merge",
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "tool": "image-to-pdf",
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "tool": "temp-mail",
+      "width": 768,
+      "noHorizontalOverflow": true
+    },
+    {
+      "tool": "pdf-merge",
+      "width": 1440,
+      "noHorizontalOverflow": true
+    },
+    {
+      "tool": "image-to-pdf",
+      "width": 1440,
+      "noHorizontalOverflow": true
+    },
+    {
+      "tool": "temp-mail",
+      "width": 1440,
+      "noHorizontalOverflow": true
+    },
+    {
+      "guide": "temporary-email",
+      "width": 320,
+      "javaScriptEnabled": false,
+      "imagesLoaded": true,
+      "anchorsValid": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "guide": "background-removal",
+      "width": 320,
+      "javaScriptEnabled": false,
+      "imagesLoaded": true,
+      "anchorsValid": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "guide": "pdf-workflows",
+      "width": 320,
+      "javaScriptEnabled": false,
+      "imagesLoaded": true,
+      "anchorsValid": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "guide": "developer-data",
+      "width": 320,
+      "javaScriptEnabled": false,
+      "imagesLoaded": true,
+      "anchorsValid": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "guide": "temporary-email",
+      "width": 768,
+      "javaScriptEnabled": false,
+      "imagesLoaded": true,
+      "anchorsValid": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "guide": "background-removal",
+      "width": 768,
+      "javaScriptEnabled": false,
+      "imagesLoaded": true,
+      "anchorsValid": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "guide": "pdf-workflows",
+      "width": 768,
+      "javaScriptEnabled": false,
+      "imagesLoaded": true,
+      "anchorsValid": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "guide": "developer-data",
+      "width": 768,
+      "javaScriptEnabled": false,
+      "imagesLoaded": true,
+      "anchorsValid": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "guide": "temporary-email",
+      "width": 1440,
+      "javaScriptEnabled": false,
+      "imagesLoaded": true,
+      "anchorsValid": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "guide": "background-removal",
+      "width": 1440,
+      "javaScriptEnabled": false,
+      "imagesLoaded": true,
+      "anchorsValid": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "guide": "pdf-workflows",
+      "width": 1440,
+      "javaScriptEnabled": false,
+      "imagesLoaded": true,
+      "anchorsValid": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "guide": "developer-data",
+      "width": 1440,
+      "javaScriptEnabled": false,
+      "imagesLoaded": true,
+      "anchorsValid": true,
+      "noHorizontalOverflow": true
+    }
+  ],
+  "limits": [
+    "Emulated phone viewports, not a physical phone.",
+    "Inbox creation and retrieval only; no external email or contact submission sent.",
+    "Synthetic background-removal sample, not a difficult photograph."
+  ],
+  "status": "passed"
+}

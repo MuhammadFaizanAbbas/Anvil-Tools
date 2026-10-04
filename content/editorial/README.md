@@ -2,6 +2,10 @@
 
 The current public library is defined in `published-library.json`: four distinct covered guides. `developer-data.md` and `pdf-workflows.md` contain the expanded replacements for those topics. The older eight-guide consolidation plan is historical planning input; its six unfinished destinations are not the publication target for this cleanup. See [the cleanup record](../../docs/EDITORIAL_CLEANUP.md) for the verified database changes, backups, and deployment instructions.
 
+## October 5 audit follow-up, prepared locally
+
+The local `background-removal.md` and `temporary-email.md` sources now contain focused workflows, decision tables, and actual tool screenshots. `pdf-workflows.md` describes the new accessible file-order controls and a verified sample download. The original covers and four journal URLs are preserved. These source edits require a separate database publication; running `build:editorial` only rebuilds frontend links and templates. Use `node scripts/prepare-adsense-followup.js` to fetch public baselines and create a guarded, body-only transaction that saves previous records as revisions. It does not execute SQL. See [the follow-up record](../../docs/ADSENSE_AUDIT_FOLLOWUP.md) for release files, checks, and remaining account steps. Earlier minimum-word targets and completed release scripts below are historical, not requirements for these new sources.
+
 ## Earlier release history (superseded)
 
 The first release is published in the Anvil Tools Supabase project (`epxzxcqsonxscyvbopqt`). It contains the revised `temporary-email.md` and `background-removal.md` articles. These preserve and edit the owner's existing content and add practical sections. They are AI-assisted edits, not a claim of human authorship or independently certified originality. Readable body counts are 11,015 and 10,576 words respectively.
