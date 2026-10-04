@@ -1,0 +1,238 @@
+{
+  "scope": "Local preview; cPanel upload still required",
+  "passed": true,
+  "cases": [
+    {
+      "width": 320,
+      "route": "/snowy-peaks-solitaire/",
+      "status": 200,
+      "path": "/",
+      "query": "",
+      "scrollWidth": 320,
+      "font": "Inter, system-ui, sans-serif",
+      "styles": [
+        "http://127.0.0.1:18167/assets/css/style.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/refinements.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/design.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/content.css?v=20261004-css"
+      ],
+      "links": [
+        "/index.html",
+        "/tools/index.html",
+        "/blog/index.html",
+        "/about.html",
+        "/contact.html"
+      ],
+      "navigationPassed": true
+    },
+    {
+      "width": 320,
+      "route": "/snowy-peaks-solitaire/index.html",
+      "status": 200,
+      "path": "/",
+      "query": "",
+      "scrollWidth": 320,
+      "font": "Inter, system-ui, sans-serif",
+      "styles": [
+        "http://127.0.0.1:18167/assets/css/style.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/refinements.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/design.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/content.css?v=20261004-css"
+      ],
+      "links": [
+        "/index.html",
+        "/tools/index.html",
+        "/blog/index.html",
+        "/about.html",
+        "/contact.html"
+      ],
+      "navigationPassed": true
+    },
+    {
+      "width": 320,
+      "route": "/index.html/?from=old",
+      "status": 200,
+      "path": "/index.html",
+      "query": "?from=old",
+      "scrollWidth": 320,
+      "font": "Inter, system-ui, sans-serif",
+      "styles": [
+        "http://127.0.0.1:18167/assets/css/style.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/refinements.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/design.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/content.css?v=20261004-css"
+      ],
+      "links": [
+        "/index.html",
+        "/tools/index.html",
+        "/blog/index.html",
+        "/about.html",
+        "/contact.html"
+      ],
+      "navigationPassed": true
+    },
+    {
+      "width": 320,
+      "route": "/tools/index.html/",
+      "status": 200,
+      "path": "/tools/index.html",
+      "query": "",
+      "scrollWidth": 320,
+      "font": "Inter, system-ui, sans-serif",
+      "styles": [
+        "http://127.0.0.1:18167/assets/css/style.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/refinements.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/design.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/tool-ux.css",
+        "http://127.0.0.1:18167/assets/css/content.css?v=20261004-css"
+      ],
+      "links": [
+        "/",
+        "/tools/index.html",
+        "/blog/index.html",
+        "/about.html",
+        "/contact.html"
+      ],
+      "navigationPassed": true
+    },
+    {
+      "width": 320,
+      "route": "/missing/deep/page/",
+      "status": 404,
+      "path": "/missing/deep/page/",
+      "query": "",
+      "scrollWidth": 320,
+      "font": "Inter, system-ui, sans-serif",
+      "styles": [
+        "http://127.0.0.1:18167/assets/css/style.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/refinements.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/design.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/content.css?v=20261004-css"
+      ],
+      "links": [
+        "/index.html",
+        "/tools/index.html",
+        "/blog/index.html",
+        "/about.html",
+        "/contact.html"
+      ],
+      "navigationPassed": true
+    },
+    {
+      "width": 1440,
+      "route": "/snowy-peaks-solitaire/",
+      "status": 200,
+      "path": "/",
+      "query": "",
+      "scrollWidth": 1440,
+      "font": "Inter, system-ui, sans-serif",
+      "styles": [
+        "http://127.0.0.1:18167/assets/css/style.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/refinements.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/design.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/content.css?v=20261004-css"
+      ],
+      "links": [
+        "/index.html",
+        "/tools/index.html",
+        "/blog/index.html",
+        "/about.html",
+        "/contact.html"
+      ],
+      "navigationPassed": true
+    },
+    {
+      "width": 1440,
+      "route": "/snowy-peaks-solitaire/index.html",
+      "status": 200,
+      "path": "/",
+      "query": "",
+      "scrollWidth": 1440,
+      "font": "Inter, system-ui, sans-serif",
+      "styles": [
+        "http://127.0.0.1:18167/assets/css/style.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/refinements.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/design.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/content.css?v=20261004-css"
+      ],
+      "links": [
+        "/index.html",
+        "/tools/index.html",
+        "/blog/index.html",
+        "/about.html",
+        "/contact.html"
+      ],
+      "navigationPassed": true
+    },
+    {
+      "width": 1440,
+      "route": "/index.html/?from=old",
+      "status": 200,
+      "path": "/index.html",
+      "query": "?from=old",
+      "scrollWidth": 1440,
+      "font": "Inter, system-ui, sans-serif",
+      "styles": [
+        "http://127.0.0.1:18167/assets/css/style.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/refinements.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/design.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/content.css?v=20261004-css"
+      ],
+      "links": [
+        "/index.html",
+        "/tools/index.html",
+        "/blog/index.html",
+        "/about.html",
+        "/contact.html"
+      ],
+      "navigationPassed": true
+    },
+    {
+      "width": 1440,
+      "route": "/tools/index.html/",
+      "status": 200,
+      "path": "/tools/index.html",
+      "query": "",
+      "scrollWidth": 1440,
+      "font": "Inter, system-ui, sans-serif",
+      "styles": [
+        "http://127.0.0.1:18167/assets/css/style.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/refinements.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/design.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/tool-ux.css",
+        "http://127.0.0.1:18167/assets/css/content.css?v=20261004-css"
+      ],
+      "links": [
+        "/",
+        "/tools/index.html",
+        "/blog/index.html",
+        "/about.html",
+        "/contact.html"
+      ],
+      "navigationPassed": true
+    },
+    {
+      "width": 1440,
+      "route": "/missing/deep/page/",
+      "status": 404,
+      "path": "/missing/deep/page/",
+      "query": "",
+      "scrollWidth": 1440,
+      "font": "Inter, system-ui, sans-serif",
+      "styles": [
+        "http://127.0.0.1:18167/assets/css/style.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/refinements.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/design.css?v=20261004-css",
+        "http://127.0.0.1:18167/assets/css/content.css?v=20261004-css"
+      ],
+      "links": [
+        "/index.html",
+        "/tools/index.html",
+        "/blog/index.html",
+        "/about.html",
+        "/contact.html"
+      ],
+      "navigationPassed": true
+    }
+  ]
+}

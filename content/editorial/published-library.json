@@ -1,0 +1,65 @@
+[
+  {
+    "key": "temporary-email",
+    "slug": "best-practices-for-temporary-email-when-working-with-signups",
+    "bodyFile": "temporary-email.md",
+    "tools": [
+      "temp-mail"
+    ],
+    "title": "Temporary Email Best Practices for Signups",
+    "excerpt": "Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.",
+    "cover_image_id": "f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+    "cover_alt": "Laptop showing a signup form beside an email inbox, with an envelope and account-protection illustration",
+    "category_slug": "email-tools"
+  },
+  {
+    "key": "background-removal",
+    "slug": "best-practices-for-background-removal-when-working-with-design",
+    "bodyFile": "background-removal.md",
+    "tools": [
+      "background-remover"
+    ],
+    "title": "Background Removal for Design and Product Photography",
+    "excerpt": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
+    "cover_image_id": "d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+    "cover_alt": "Design workspace comparing a sneaker photograph with a transparent cutout, alongside layer and edge-quality controls",
+    "category_slug": "image-tools"
+  },
+  {
+    "key": "pdf-workflows",
+    "slug": "simple-pdf-workflow-without-software",
+    "bodyFile": "pdf-workflows.md",
+    "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result",
+    "excerpt": "Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.",
+    "tools": [
+      "pdf-merge",
+      "image-to-pdf"
+    ],
+    "cover_image_id": "c4244f15-2995-4aaf-b544-b37a356716db",
+    "cover_alt": "Several document files combined in a browser based PDF workflow",
+    "category_slug": "pdf-tools"
+  },
+  {
+    "key": "developer-data",
+    "slug": "small-tools-that-save-developers-time",
+    "bodyFile": "developer-data.md",
+    "title": "Debug API Data with JSON, Base64, and Browser Tools",
+    "excerpt": "Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.",
+    "tools": [
+      "json-formatter",
+      "base64-tool",
+      "jwt-decoder",
+      "hash-generator",
+      "csv-to-json",
+      "url-encoder-decoder",
+      "text-diff-checker",
+      "unix-timestamp-converter",
+      "unit-converter",
+      "uuid-generator",
+      "user-agent-generator"
+    ],
+    "cover_image_id": "925334fc-7e67-49b0-96fd-6d4b1c2ddc67",
+    "cover_alt": "Small developer utilities used during browser testing",
+    "category_slug": "developer-tools"
+  }
+]

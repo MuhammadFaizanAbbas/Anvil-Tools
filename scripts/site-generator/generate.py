@@ -283,10 +283,10 @@ def build_static_pages():
     notfound_body = f'''
 <section class="hero text-center"><h1>Page not found</h1>
 <p class="lede">The page you're looking for doesn't exist or may have moved. Try one of the links below.</p>
-<div class="btn-row" style="justify-content:center;"><a class="btn amber" href="index.html">Go home</a><a class="btn secondary" href="tools/index.html">Browse all tools</a></div>
+<div class="btn-row" style="justify-content:center;"><a class="btn amber" href="/">Go home</a><a class="btn secondary" href="/tools/index.html">Browse all tools</a></div>
 </section>
 '''
-    write("404.html", page("Page not found", "This page could not be found.", "", depth, notfound_body))
+    write("404.html", page("Page not found", "This page could not be found.", "", "/", notfound_body))
 
 # ---------------------------------------------------------------- sitemap / robots / ads.txt
 def build_seo_files():

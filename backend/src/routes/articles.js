@@ -5,6 +5,7 @@ const {renderArticle,escape}=require('../lib/articles');
 const {requestSiteOrigin}=require('../lib/site-origin');
 const {PAGE_SIZE,blogPage,renderBlog}=require('../lib/blog');
 const redirects=require('../lib/article-redirects.json');
+const {renderUnavailable}=require('../lib/retired-article');
 const unwrap=result=>{if(result.error)throw result.error;return result.data;};
 router.get('/blog',run(async(req,res)=>{
  const page=blogPage(req.query.page);
@@ -24,9 +25,10 @@ router.get('/blog',run(async(req,res)=>{
 router.get('/articles/:slug',run(async(req,res)=>{
  const siteOrigin=requestSiteOrigin(req);
  const target=Object.hasOwn(redirects,req.params.slug)?redirects[req.params.slug]:null;
+ if(Object.hasOwn(redirects,req.params.slug)&&target===null)return res.set('X-Robots-Tag','noindex, follow').set('Cache-Control','no-store').status(410).type('html').send(renderUnavailable(siteOrigin,true));
  if(target){res.removeHeader('X-Robots-Tag');return res.set('Cache-Control','public, max-age=300').redirect(301,`${siteOrigin}/journal/${target}`);}
  const post=unwrap(await db.from('posts').select('*').eq('slug',req.params.slug).eq('status','published').maybeSingle());
- if(!post)return res.status(404).type('html').send(`<!doctype html><title>Article unavailable</title><h1>Article unavailable</h1><a href="${escape(siteOrigin)}/blog/index.html">Return to guides</a>`);
+ if(!post)return res.set('X-Robots-Tag','noindex, follow').status(404).type('html').send(renderUnavailable(siteOrigin));
  res.removeHeader('X-Robots-Tag');res.set('Cache-Control','no-store').type('html').send(renderArticle(post,siteOrigin));
 }));
 router.get('/post-images/:id',run(async(req,res)=>{

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-03T21:22:00.384Z",
+  "checkedAt": "2026-10-04T12:14:19.974Z",
   "origin": "https://anviltools.vercel.app",
   "pages": [
     {
@@ -349,8 +349,8 @@
     {
       "slug": "best-practices-for-temporary-email-when-working-with-signups",
       "status": 200,
-      "revisedBodyPublished": false,
-      "bodyMd5": "1f961ce42a62c31271740171a71289c1",
+      "revisedBodyPublished": true,
+      "bodyMd5": "a46bcdc7f71853c337a26dee7bd10533",
       "htmlOutline": true,
       "canonical": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups",
       "coverMatches": true,
@@ -362,8 +362,8 @@
     {
       "slug": "best-practices-for-background-removal-when-working-with-design",
       "status": 200,
-      "revisedBodyPublished": false,
-      "bodyMd5": "92220b3affda174dccc58cb58c38d5c6",
+      "revisedBodyPublished": true,
+      "bodyMd5": "fe99d914b91460b14dfba18393561f70",
       "htmlOutline": true,
       "canonical": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
       "coverMatches": true,
@@ -398,5 +398,5 @@
   ],
   "missingPageStatus": 404,
   "codePassed": true,
-  "contentPublished": false
+  "contentPublished": true
 }

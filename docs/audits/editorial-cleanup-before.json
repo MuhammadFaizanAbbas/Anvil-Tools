@@ -1,0 +1,2191 @@
+{
+  "checkedAt": "2026-10-04T12:42:17.420Z",
+  "posts": 490,
+  "withoutCovers": 424,
+  "covers": [
+    {
+      "slug": "a-practical-guide-to-background-removal-for-design",
+      "cover_image_id": "dfac23a1-ae03-45e4-a46a-a10865b74fae",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 320,
+      "height": 180,
+      "valid": true
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-ecommerce",
+      "cover_image_id": "ac8b1156-7df1-4022-af38-cbdef15577e3",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 1366,
+      "height": 768,
+      "valid": true
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-marketplaces",
+      "cover_image_id": "881f9c37-a7b3-4d62-87d7-55b933cc394a",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-social-media",
+      "cover_image_id": "7d88ee59-d6b0-410b-8443-e3b70c06c0ea",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-transparent-images",
+      "cover_image_id": "8b6fd0c5-4f3f-4169-9a0c-e0c983697c43",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-apis",
+      "cover_image_id": "5b0cc99b-a281-43a4-9d54-6202820626c4",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-signups",
+      "cover_image_id": "0d2fe99a-c439-4194-bb6a-f1dc6d49bcd7",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 1672,
+      "height": 941,
+      "valid": true
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-spam",
+      "cover_image_id": "53c5a77b-ae38-41ec-bf7b-174c3edf5f5d",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 1672,
+      "height": 941,
+      "valid": true
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-testing",
+      "cover_image_id": "48a53e00-204a-4a26-8603-62389773c479",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-verification",
+      "cover_image_id": "8893c948-1043-4706-b4e5-6cf14d6190fb",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "a-safer-way-to-handle-background-removal-for-design",
+      "cover_image_id": "acc2bf37-147a-4305-9f92-eb45417dfb53",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "a-safer-way-to-handle-background-removal-for-ecommerce",
+      "cover_image_id": "52919a7a-db13-46bd-970a-99ad3c8c8fd1",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "a-safer-way-to-handle-background-removal-for-social-media",
+      "cover_image_id": "6d245d7a-7d76-485f-83de-5feae6cafd9e",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "a-safer-way-to-handle-background-removal-for-transparent-images",
+      "cover_image_id": "39d0060a-5ef8-4649-8f30-aa908651d950",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "a-safer-way-to-handle-temporary-email-for-security",
+      "cover_image_id": "c7608dc1-5a14-46a1-a24d-76a182ee5251",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 1672,
+      "height": 941,
+      "valid": true
+    },
+    {
+      "slug": "a-safer-way-to-handle-temporary-email-for-signups",
+      "cover_image_id": "35f37077-ff92-4bde-9105-8c075f98379b",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 1672,
+      "height": 941,
+      "valid": true
+    },
+    {
+      "slug": "a-safer-way-to-handle-temporary-email-for-spam",
+      "cover_image_id": "02c915da-7c86-44cc-8bfe-4e919f468e97",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "a-safer-way-to-handle-temporary-email-for-testing",
+      "cover_image_id": "6b7cce69-ff26-4b01-a4ae-61f57c09aafb",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "cover_image_id": "d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 1672,
+      "height": 941,
+      "valid": true
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-ecommerce",
+      "cover_image_id": "a98ec5b5-edd8-43b7-9d1e-01a17da93ba0",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-marketplaces",
+      "cover_image_id": "0223c2f5-d1be-4332-bd0a-fdb217f33582",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 384,
+      "height": 216,
+      "valid": true
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-social-media",
+      "cover_image_id": "7fb2a1e3-c44c-4854-b8da-423d6be9fbd5",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-transparent-images",
+      "cover_image_id": "334f7b0e-083c-4ba1-a9fc-9b619da951c4",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-apis",
+      "cover_image_id": "28e4405f-49ac-497c-94f9-42c36d770956",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "cover_image_id": "f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 1672,
+      "height": 941,
+      "valid": true
+    },
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-spam",
+      "cover_image_id": "5f8dd4f0-4446-4e9a-9973-8f22f875d732",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-testing",
+      "cover_image_id": "07618ab1-13d5-4d62-a980-a872633b436d",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "common-mistakes-with-background-removal-in-design",
+      "cover_image_id": "9c08a53e-317b-4a33-98c4-1e612a1165b9",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 1672,
+      "height": 941,
+      "valid": true
+    },
+    {
+      "slug": "common-mistakes-with-background-removal-in-ecommerce",
+      "cover_image_id": "c012c445-a6dc-4eb3-a9e1-27e8735b4571",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "common-mistakes-with-background-removal-in-marketplaces",
+      "cover_image_id": "f4e94b80-42ab-43d5-a9ec-30e8c85c4502",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "common-mistakes-with-background-removal-in-social-media",
+      "cover_image_id": "7ba56c53-9707-45c5-9ced-beb99e70c9a2",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "common-mistakes-with-background-removal-in-transparent-images",
+      "cover_image_id": "87fdbc9a-7949-4083-b725-a7cd93905111",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "common-mistakes-with-base64-in-apis",
+      "cover_image_id": "b652fe6a-73f1-4fe8-9903-17154a37bbba",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "common-mistakes-with-temporary-email-in-signups",
+      "cover_image_id": "f1f7a7b5-2125-4381-8dbc-5c4bed47ffac",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 1672,
+      "height": 941,
+      "valid": true
+    },
+    {
+      "slug": "common-mistakes-with-temporary-email-in-spam",
+      "cover_image_id": "8f5418cf-b90a-4237-b894-a8b2caa7eea9",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "common-mistakes-with-temporary-email-in-testing",
+      "cover_image_id": "8db8994b-6af3-4fab-a689-0e9d3d11e0c3",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "common-mistakes-with-temporary-email-in-verification",
+      "cover_image_id": "abc8de98-32ea-4965-bf86-13be36438c7f",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "how-background-removal-helps-with-design",
+      "cover_image_id": "56057a02-ea75-4550-ba0f-f7fd974ff7cb",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 448,
+      "height": 252,
+      "valid": true
+    },
+    {
+      "slug": "how-background-removal-helps-with-ecommerce",
+      "cover_image_id": "73751198-44a4-4316-a2d6-945c61e98e83",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "how-background-removal-helps-with-marketplaces",
+      "cover_image_id": "3da85a11-6403-40ec-aba5-51d159a1701e",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 448,
+      "height": 252,
+      "valid": true
+    },
+    {
+      "slug": "how-background-removal-helps-with-product-photos",
+      "cover_image_id": "2cbe0637-462c-4f0d-ae77-f08433f27cff",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "how-background-removal-helps-with-social-media",
+      "cover_image_id": "1e2bf121-ac70-4412-9360-6433ee1c9f7b",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "how-background-removal-helps-with-transparent-images",
+      "cover_image_id": "c00ffe9c-057a-48d4-b1d2-e33e97661c85",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "how-temporary-email-helps-with-security",
+      "cover_image_id": "f8d8f85f-74a4-456e-94d6-890bf7103d5e",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 1672,
+      "height": 941,
+      "valid": true
+    },
+    {
+      "slug": "how-temporary-email-helps-with-signups",
+      "cover_image_id": "fdc3491e-688a-452b-b940-d66c487ab2e3",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "how-temporary-email-helps-with-spam",
+      "cover_image_id": "8dff1538-006f-41e8-b082-dd63e1c9d4d7",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "how-temporary-email-helps-with-testing",
+      "cover_image_id": "812cb459-fea8-4b50-bbc2-ec10378785d9",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "how-to-use-background-removal-for-design",
+      "cover_image_id": "711916b8-623c-45b5-a3e4-dc7f186dd861",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 640,
+      "height": 360,
+      "valid": true
+    },
+    {
+      "slug": "how-to-use-background-removal-for-ecommerce",
+      "cover_image_id": "26366c3a-b61c-4317-b2db-56ad454df189",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 320,
+      "height": 180,
+      "valid": true
+    },
+    {
+      "slug": "how-to-use-background-removal-for-marketplaces",
+      "cover_image_id": "b78670db-831f-434e-828f-daf77c687d17",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "how-to-use-background-removal-for-social-media",
+      "cover_image_id": "dacac050-7983-4fc0-a972-874043e6fa4c",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "how-to-use-background-removal-for-transparent-images",
+      "cover_image_id": "704adc35-2e16-4465-923a-7d2fef310c84",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "how-to-use-base64-for-apis",
+      "cover_image_id": "69ec3c25-b774-4406-b8a5-cfc458da4ec9",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "how-to-use-temporary-email-for-verification",
+      "cover_image_id": "2ec13476-b7f7-45f9-9ed5-28cf6334b5c2",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "removing-a-photo-background-guide",
+      "cover_image_id": "6f808dc1-9fe1-4cd8-ac3c-568250027746",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "safe-temporary-email-signups",
+      "cover_image_id": "d73741cd-d6e1-4ffa-8407-84eaea8e7ed6",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "simple-pdf-workflow-without-software",
+      "cover_image_id": "c4244f15-2995-4aaf-b544-b37a356716db",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "small-tools-that-save-developers-time",
+      "cover_image_id": "925334fc-7e67-49b0-96fd-6d4b1c2ddc67",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "what-to-know-about-background-removal-for-design",
+      "cover_image_id": "fb59ab95-1b56-443d-8e96-0bc720341db0",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 320,
+      "height": 180,
+      "valid": true
+    },
+    {
+      "slug": "what-to-know-about-background-removal-for-ecommerce",
+      "cover_image_id": "4fab971f-8c6a-4bd7-9aec-8d72e9fd0056",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "what-to-know-about-background-removal-for-marketplaces",
+      "cover_image_id": "6a5c8ea8-3c93-4710-bab1-7765c4f3b333",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 1672,
+      "height": 941,
+      "valid": true
+    },
+    {
+      "slug": "what-to-know-about-background-removal-for-social-media",
+      "cover_image_id": "8c564cb4-8a76-40ae-a662-6a4a15cbef75",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "what-to-know-about-background-removal-for-transparent-images",
+      "cover_image_id": "516c9b4e-b01f-4c86-b0e6-2198609eacc4",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "slug": "what-to-know-about-temporary-email-for-signups",
+      "cover_image_id": "12f88fb1-238d-468b-8542-4beb0ca957b0",
+      "status": 200,
+      "mime": "image/webp",
+      "width": 1672,
+      "height": 941,
+      "valid": true
+    },
+    {
+      "slug": "what-to-know-about-temporary-email-for-spam",
+      "cover_image_id": "cc9935e1-41f4-45ca-9b1e-465132d23380",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    },
+    {
+      "slug": "what-to-know-about-temporary-email-for-testing",
+      "cover_image_id": "083142ad-2c00-48e1-89e8-c8483329537f",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "width": 1280,
+      "height": 720,
+      "valid": true
+    }
+  ],
+  "repeatedParagraphs": [
+    {
+      "words": 36,
+      "slugs": [
+        "a-practical-guide-to-image-to-pdf-for-applications",
+        "a-practical-guide-to-image-to-pdf-for-archives",
+        "a-practical-guide-to-image-to-pdf-for-documents",
+        "a-practical-guide-to-image-to-pdf-for-forms",
+        "a-practical-guide-to-image-to-pdf-for-photos",
+        "a-practical-guide-to-image-to-pdf-for-receipts",
+        "a-practical-guide-to-image-to-pdf-for-scans",
+        "a-practical-guide-to-image-to-pdf-for-sharing"
+      ],
+      "sample": "phone cameras create large images downscaling can make a pdf much smaller but inspect fine print before deciding how far to reduce it the right size is the smallest file that keeps the content comfort"
+    },
+    {
+      "words": 38,
+      "slugs": [
+        "a-practical-guide-to-password-generator-for-accounts",
+        "a-practical-guide-to-password-generator-for-logins",
+        "a-practical-guide-to-password-generator-for-online-safety",
+        "a-practical-guide-to-password-generator-for-passphrases",
+        "a-practical-guide-to-password-generator-for-password-managers",
+        "a-practical-guide-to-password-generator-for-security",
+        "a-practical-guide-to-password-generator-for-teams",
+        "a-practical-guide-to-password-generator-for-wifi"
+      ],
+      "sample": "use the longest password the service accepts comfortably within reason long random credentials provide a large search space without relying on predictable human tricks a password manager makes long va"
+    },
+    {
+      "words": 36,
+      "slugs": [
+        "a-practical-guide-to-password-generator-for-accounts",
+        "a-practical-guide-to-password-generator-for-logins",
+        "a-practical-guide-to-password-generator-for-online-safety",
+        "a-practical-guide-to-password-generator-for-passphrases",
+        "a-practical-guide-to-password-generator-for-password-managers",
+        "a-practical-guide-to-password-generator-for-security",
+        "a-practical-guide-to-password-generator-for-teams",
+        "a-practical-guide-to-password-generator-for-wifi"
+      ],
+      "sample": "change a password when you suspect compromise receive a credible breach notice discover reuse or need to revoke someone else access constant scheduled changes can encourage weaker patterns if people a"
+    },
+    {
+      "words": 45,
+      "slugs": [
+        "a-practical-guide-to-temporary-email-for-accounts",
+        "a-practical-guide-to-temporary-email-for-inbox",
+        "a-practical-guide-to-temporary-email-for-privacy",
+        "a-practical-guide-to-temporary-email-for-security",
+        "a-practical-guide-to-temporary-email-for-testing",
+        "a-practical-guide-to-temporary-email-for-verification"
+      ],
+      "sample": "put the service into one of two groups in the first group are low stakes interactions you will probably never need again in the second are accounts purchases or services that may need recovery months "
+    },
+    {
+      "words": 40,
+      "slugs": [
+        "a-practical-guide-to-temporary-email-for-accounts",
+        "a-practical-guide-to-temporary-email-for-inbox",
+        "a-practical-guide-to-temporary-email-for-privacy",
+        "a-practical-guide-to-temporary-email-for-security",
+        "a-practical-guide-to-temporary-email-for-testing",
+        "a-practical-guide-to-temporary-email-for-verification"
+      ],
+      "sample": "a narrow purpose makes it easier to understand what should arrive and when the inbox can be abandoned if several unrelated registrations share the same disposable address it becomes harder to spot une"
+    },
+    {
+      "words": 60,
+      "slugs": [
+        "a-safer-way-to-handle-background-removal-for-design",
+        "a-safer-way-to-handle-background-removal-for-ecommerce"
+      ],
+      "sample": "when background removal runs in the browser on your own device the source image does not need to travel to a remote processing server that can be useful for confidential client work and unpublished co"
+    },
+    {
+      "words": 47,
+      "slugs": [
+        "a-safer-way-to-handle-background-removal-for-marketplaces",
+        "a-safer-way-to-handle-background-removal-for-photos",
+        "a-safer-way-to-handle-background-removal-for-portraits"
+      ],
+      "sample": "a local browser workflow can keep the source image on your own device instead of sending it to a remote processing server that is useful when the photograph contains confidential or unpublished materi"
+    },
+    {
+      "words": 35,
+      "slugs": [
+        "a-safer-way-to-handle-background-removal-for-marketplaces",
+        "a-safer-way-to-handle-background-removal-for-photos",
+        "a-safer-way-to-handle-background-removal-for-portraits"
+      ],
+      "sample": "save the untouched original separately from the transparent master and final delivery clear filenames reduce the chance that the wrong version is published or shared delete temporary copies when they "
+    },
+    {
+      "words": 47,
+      "slugs": [
+        "a-safer-way-to-handle-background-removal-for-marketplaces",
+        "a-safer-way-to-handle-background-removal-for-photos",
+        "a-safer-way-to-handle-background-removal-for-portraits"
+      ],
+      "sample": "good privacy does not require accepting poor quality zoom in around fine edges test the cutout against contrasting backgrounds and confirm that no important part of the subject has disappeared these c"
+    },
+    {
+      "words": 39,
+      "slugs": [
+        "a-safer-way-to-handle-qr-code-for-business-cards",
+        "a-safer-way-to-handle-qr-code-for-events",
+        "a-safer-way-to-handle-qr-code-for-marketing",
+        "a-safer-way-to-handle-qr-code-for-menus",
+        "a-safer-way-to-handle-qr-code-for-packaging",
+        "a-safer-way-to-handle-qr-code-for-payments",
+        "a-safer-way-to-handle-qr-code-for-posters",
+        "a-safer-way-to-handle-qr-code-for-wifi"
+      ],
+      "sample": "a qr code is readable by anyone who can scan or photograph it avoid placing private tokens or credentials in a public code for wifi display the code only to people who are meant to receive the network"
+    },
+    {
+      "words": 37,
+      "slugs": [
+        "a-safer-way-to-handle-temporary-email-for-accounts",
+        "a-safer-way-to-handle-temporary-email-for-inbox",
+        "a-safer-way-to-handle-temporary-email-for-privacy",
+        "a-safer-way-to-handle-temporary-email-for-spam",
+        "a-safer-way-to-handle-temporary-email-for-testing"
+      ],
+      "sample": "a narrowly scoped inbox is easier to monitor if a message appears that has nothing to do with the action you just performed treat it as unexpected rather than assuming every message in the mailbox is "
+    },
+    {
+      "words": 67,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "marketplace product images have a simple job they need to show the item clearly follow the rules of the selling channel and give a shopper enough confidence to keep reading background removal can help"
+    },
+    {
+      "words": 74,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "that matters because background removal is often treated as a final cosmetic step in practice it sits in the middle of a larger image workflow the quality of the original photograph the accuracy of th"
+    },
+    {
+      "words": 49,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "a busy background competes with the product on a brand website that may be intentional because a styled scene can communicate mood or lifestyle in a marketplace search grid shoppers are usually compar"
+    },
+    {
+      "words": 58,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "removing the original background can make the shape colour texture and important features easier to see it also gives you control over the final canvas the same clean cutout can be placed on white for"
+    },
+    {
+      "words": 57,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "amazon currently requires its main product image to show the product on a pure white background its guidance also says the product should fill most of the frame remain fully visible and avoid added te"
+    },
+    {
+      "words": 41,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "ebay has different requirements its picture policy requires listing photos to meet a minimum image size and does not allow added borders marketing text artwork or watermarks ebay also recommends unclu"
+    },
+    {
+      "words": 42,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "etsy follows another approach it recommends large listing images and explains that transparent areas in png files are not supported as a normal transparent listing background etsy also places strong e"
+    },
+    {
+      "words": 47,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "for a marketplace that expects a white primary image place the cutout on a true white canvas and export it in an accepted file format for a platform that does not handle transparency in the way you ex"
+    },
+    {
+      "words": 52,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "hair fur fabric fibres chains glass polished metal transparent plastic and reflective surfaces are difficult because the boundary between the product and the original scene is not always obvious autom"
+    },
+    {
+      "words": 53,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "a common mistake is to simplify the image too much a white cable can disappear on a white canvas fine threads can be removed because they resemble background noise a transparent bottle can lose its re"
+    },
+    {
+      "words": 38,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "keep details that help the buyer understand the item even when they make the cutout harder compare the edited result with the original photograph and make sure the shape colour surface labels texture "
+    },
+    {
+      "words": 43,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "a product that is too small creates wasted space and looks weak in search results a product that is too large may be cropped or feel cramped some marketplaces also give specific guidance about how muc"
+    },
+    {
+      "words": 41,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "after placing the cutout on the final canvas preview the image at thumbnail size do not judge only while looking at a large version on a desktop monitor many shoppers first see a listing as a small im"
+    },
+    {
+      "words": 41,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "do not use editing to hide scratches remove wear change colour reshape an edge erase a defect or add an accessory that is not included marketplace images form part of the buyer s expectation so accura"
+    },
+    {
+      "words": 51,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "this also applies to reflections and shadows you can clean distractions but do not edit the surface until a matte item looks glossy or a textured surface looks perfectly smooth if a small natural shad"
+    },
+    {
+      "words": 65,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "a product photo can accidentally suggest that extra items are included a watch next to a gift box a kitchen tool surrounded by ingredients or a stand shown with a laptop can make the listing more attr"
+    },
+    {
+      "words": 36,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "even where text is allowed in additional images it should have a purpose a measurement guide or a simple feature explanation can help a crowded image full of claims usually makes the product harder to"
+    },
+    {
+      "words": 47,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "do not assume every marketplace handles transparent areas the same way etsy for example explains that transparency in png listing images is not supported in the usual way this is a good reason to trea"
+    },
+    {
+      "words": 43,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "use the best source file you have and avoid repeated compression if a jpeg is saved again and again small artefacts can build around labels and fine edges perform the cutout once keep a strong master "
+    },
+    {
+      "words": 44,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "marketplace guidance also includes image size requirements or recommendations ebay currently requires at least 500 pixels on the longest side and recommends larger images etsy recommends large listing"
+    },
+    {
+      "words": 37,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "the background around a product affects how we perceive its colour a blue object photographed in warm light may look different when placed on pure white a reflective surface may also contain colour fr"
+    },
+    {
+      "words": 38,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "avoid pushing saturation or contrast only to make the image stand out in a search grid a dramatic image may attract a click but a buyer who receives a noticeably different colour is more likely to be "
+    },
+    {
+      "words": 40,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "the right solution depends on the product and the marketplace a subtle contact shadow can help the viewer understand shape and position while a strong artificial shadow can make the image look like an"
+    },
+    {
+      "words": 37,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "a sensible batch workflow lets simple images move quickly and flags difficult ones for review do not approve a batch only because every file was generated successfully technical success does not mean "
+    },
+    {
+      "words": 70,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "start with the best original photograph available confirm that it shows the correct product and included accessories check the current marketplace rules remove the background without damaging fine det"
+    },
+    {
+      "words": 68,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "the most common problems are simple part of the product gets removed a coloured fringe remains around the edge a light product loses contrast on white the item becomes too small in the frame props sug"
+    },
+    {
+      "words": 43,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "for handmade goods art furniture fashion antiques and lifestyle products the surrounding environment can provide useful scale and context secondary images are often more persuasive when they show how "
+    },
+    {
+      "words": 41,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "the decision should be based on the purpose of the image if the primary marketplace photo requires a clean or white background removal may be necessary if the image is meant to show context the origin"
+    },
+    {
+      "words": 61,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "before uploading compare the finished image with the original item confirm that no important detail has disappeared check the edge the final background the crop the orientation the sharpness and the f"
+    },
+    {
+      "words": 42,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "what-to-know-about-background-removal-for-marketplaces"
+      ],
+      "sample": "start with marketplace policy preserve accurate edges colour texture scale and included items and keep a high quality master create separate final exports when different channels have different requir"
+    },
+    {
+      "words": 54,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "background removal is easy to describe and surprisingly easy to get wrong the obvious goal is to remove whatever sits behind the subject the real design goal is different you want to create an asset t"
+    },
+    {
+      "words": 60,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "that distinction matters a technically clean cutout can still feel awkward if the lighting clashes with the new background the subject has no visual weight the edges are too hard or the original crop "
+    },
+    {
+      "words": 72,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "that sounds simple but the environment affects the subject in ways that remain after the background is gone light can bounce onto skin fabric glass metal and hair a red wall can leave a faint red frin"
+    },
+    {
+      "words": 55,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "a hero banner needs different spacing from a square social graphic a product comparison card needs a more controlled scale than a poster a portrait that will sit partly behind text may need extra room"
+    },
+    {
+      "words": 36,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "before touching the image decide what kind of composition you are building you do not need the entire design finished you only need enough direction to know the final background tone rough size crop a"
+    },
+    {
+      "words": 58,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "use the original photo whenever you can screenshots and heavily compressed copies often lose the exact edge detail you need most hair becomes blocky fine fabric merges into the background soft shadows"
+    },
+    {
+      "words": 36,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "look for a source with sharp focus visible edges and enough space around the subject if the original crop cuts tightly into hair hands or clothing no background remover can restore pixels that were ne"
+    },
+    {
+      "words": 38,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "also check the lighting a subject photographed under warm indoor light can feel strange on a cool blue design that does not mean you cannot use it but you should know you may need colour correction af"
+    },
+    {
+      "words": 38,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "zoom in but do not stay zoomed in forever a cutout that looks imperfect at extreme magnification can look completely natural at normal display size the final judgement should happen at the size the au"
+    },
+    {
+      "words": 35,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "real photographs are full of soft transitions hair is not a solid helmet fabric fibres do not end in a geometric line motion blur creates gradual edges glass and reflective materials can be partly tra"
+    },
+    {
+      "words": 38,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "the opposite mistake is leaving too much of the old background around the edge that creates a halo the goal is not maximum sharpness the goal is an edge that matches the visual character of the origin"
+    },
+    {
+      "words": 39,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "the empty area around the cutout is now part of the design you can create room for a headline place the subject off centre for movement crop part of the body for scale or overlap the subject with typo"
+    },
+    {
+      "words": 39,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "try a few placements before deciding move the subject higher or lower test a larger crop flip the composition only if the subject orientation still feels natural check whether the visual weight balanc"
+    },
+    {
+      "words": 41,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "if the subject was originally photographed sitting on a surface pay attention to where that contact point now appears a product that used to rest on a table may look strange when it suddenly floats in"
+    },
+    {
+      "words": 59,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "that does not mean adding a dramatic artificial shadow to everything sometimes a very soft contact shadow beneath a product is enough a portrait might need no added shadow at all if the new background"
+    },
+    {
+      "words": 43,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "sometimes the fix is small a slight reduction in saturation around an edge can remove colour spill a gentle temperature adjustment can help a portrait fit a warmer composition a subtle contrast change"
+    },
+    {
+      "words": 39,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "for the final published graphic export according to the destination a web banner with a fixed background does not necessarily need transparency a reusable product cutout probably does a logo style gra"
+    },
+    {
+      "words": 40,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "if the final graphic shows a designer working beside a laptop describe that useful visual information do not fill the alt text with a list of seo phrases do not describe parts of the original backgrou"
+    },
+    {
+      "words": 54,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design",
+        "how-to-use-background-removal-for-design"
+      ],
+      "sample": "does the subject feel naturally placed or obviously pasted in are any edges glowing is there colour from the old background still visible does the subject have the right visual weight is the crop inte"
+    },
+    {
+      "words": 35,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-photos",
+        "best-practices-for-background-removal-when-working-with-portraits",
+        "best-practices-for-background-removal-when-working-with-product-photos"
+      ],
+      "sample": "start with a sharp source image that has clear subject separation soft focus motion blur and heavy compression make fine detail harder to preserve keep the untouched original so you can restart withou"
+    },
+    {
+      "words": 35,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-photos",
+        "best-practices-for-background-removal-when-working-with-portraits",
+        "best-practices-for-background-removal-when-working-with-product-photos"
+      ],
+      "sample": "correct major exposure problems and crop only obvious empty space leave enough room around the subject for the final composition a tight crop can become unusable once the image is placed inside a diff"
+    },
+    {
+      "words": 37,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-photos",
+        "best-practices-for-background-removal-when-working-with-portraits",
+        "best-practices-for-background-removal-when-working-with-product-photos"
+      ],
+      "sample": "move around the full outline instead of checking only the most obvious area pay extra attention to hair fabric transparent objects shiny surfaces and narrow openings use a contrasting temporary backgr"
+    },
+    {
+      "words": 40,
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-photos",
+        "best-practices-for-background-removal-when-working-with-portraits",
+        "best-practices-for-background-removal-when-working-with-product-photos"
+      ],
+      "sample": "not every edge should look perfectly geometric hair and soft fabric need some variation a product may need a light contact shadow to remain grounded the goal is a believable result that survives norma"
+    },
+    {
+      "words": 38,
+      "slugs": [
+        "best-practices-for-password-generator-when-working-with-accounts",
+        "best-practices-for-password-generator-when-working-with-logins",
+        "best-practices-for-password-generator-when-working-with-online-safety",
+        "best-practices-for-password-generator-when-working-with-passphrases",
+        "best-practices-for-password-generator-when-working-with-password-managers",
+        "best-practices-for-password-generator-when-working-with-security",
+        "best-practices-for-password-generator-when-working-with-teams",
+        "best-practices-for-password-generator-when-working-with-wifi"
+      ],
+      "sample": "when a service supports it choose a length that gives plenty of margin above the minimum random words can work for a passphrase when selected independently random characters are convenient when a pass"
+    },
+    {
+      "words": 37,
+      "slugs": [
+        "best-practices-for-temporary-email-when-working-with-accounts",
+        "best-practices-for-temporary-email-when-working-with-inbox",
+        "best-practices-for-temporary-email-when-working-with-privacy",
+        "best-practices-for-temporary-email-when-working-with-security",
+        "best-practices-for-temporary-email-when-working-with-spam",
+        "best-practices-for-temporary-email-when-working-with-testing"
+      ],
+      "sample": "using a fresh address for a distinct low stakes task makes incoming mail easier to understand and limits how many services know the same address it also makes it obvious when the inbox has finished it"
+    },
+    {
+      "words": 41,
+      "slugs": [
+        "common-mistakes-with-background-removal-in-ecommerce",
+        "common-mistakes-with-background-removal-in-marketplaces"
+      ],
+      "sample": "a removal tool can only work with the pixels it receives use the sharpest original available good separation between the subject and its surroundings makes difficult edges easier to preserve avoid scr"
+    },
+    {
+      "words": 43,
+      "slugs": [
+        "common-mistakes-with-background-removal-in-ecommerce",
+        "common-mistakes-with-background-removal-in-marketplaces"
+      ],
+      "sample": "after removal zoom in around hair fabric handles transparent objects and narrow gaps these are the places where halos and missing pixels usually appear view the cutout on both a light and dark tempora"
+    },
+    {
+      "words": 37,
+      "slugs": [
+        "common-mistakes-with-background-removal-in-ecommerce",
+        "common-mistakes-with-background-removal-in-marketplaces"
+      ],
+      "sample": "a small shadow beneath a product helps the object feel grounded removing every shadow can make an item appear to float keep a believable shadow when the destination allows it or recreate a subtle one "
+    },
+    {
+      "words": 42,
+      "slugs": [
+        "common-mistakes-with-background-removal-in-ecommerce",
+        "common-mistakes-with-background-removal-in-marketplaces"
+      ],
+      "sample": "a transparent png is useful when the image will sit on different backgrounds a white background may be better for a catalogue or marketplace that requires a consistent presentation decide on the desti"
+    },
+    {
+      "words": 37,
+      "slugs": [
+        "common-mistakes-with-background-removal-in-ecommerce",
+        "common-mistakes-with-background-removal-in-marketplaces"
+      ],
+      "sample": "removing a background changes the visual balance leave enough space around the subject and keep similar products at a consistent scale a catalogue feels more professional when objects line up naturall"
+    },
+    {
+      "words": 40,
+      "slugs": [
+        "common-mistakes-with-background-removal-in-ecommerce",
+        "common-mistakes-with-background-removal-in-marketplaces"
+      ],
+      "sample": "open the exported file at full size and at the size visitors will actually see look for rough edges lost details accidental transparency and excessive empty space a careful final check takes less time"
+    },
+    {
+      "words": 43,
+      "slugs": [
+        "common-mistakes-with-background-removal-in-photos",
+        "common-mistakes-with-background-removal-in-portraits",
+        "common-mistakes-with-background-removal-in-product-photos"
+      ],
+      "sample": "use the highest quality source you have a screenshot or a copy downloaded from a messaging app often contains compression damage that makes edges harder to separate sharp focus and visible contrast be"
+    },
+    {
+      "words": 36,
+      "slugs": [
+        "common-mistakes-with-background-removal-in-photos",
+        "common-mistakes-with-background-removal-in-portraits",
+        "common-mistakes-with-background-removal-in-product-photos"
+      ],
+      "sample": "zoom in around the full outline look closely at hair fur fabric transparent material reflective surfaces handles and narrow gaps these areas are where automatic tools most often remove too much or lea"
+    },
+    {
+      "words": 43,
+      "slugs": [
+        "common-mistakes-with-background-removal-in-photos",
+        "common-mistakes-with-background-removal-in-portraits",
+        "common-mistakes-with-background-removal-in-product-photos"
+      ],
+      "sample": "a white halo can disappear on a white canvas and become obvious on a dark page place the result temporarily on both a light and a dark background this simple check exposes edge contamination before th"
+    },
+    {
+      "words": 40,
+      "slugs": [
+        "common-mistakes-with-background-removal-in-photos",
+        "common-mistakes-with-background-removal-in-portraits",
+        "common-mistakes-with-background-removal-in-product-photos"
+      ],
+      "sample": "use transparency when the image needs to work on different backgrounds use a solid background when a platform or design system expects one avoid repeatedly converting the same image because every extr"
+    },
+    {
+      "words": 38,
+      "slugs": [
+        "common-mistakes-with-background-removal-in-photos",
+        "common-mistakes-with-background-removal-in-portraits",
+        "common-mistakes-with-background-removal-in-product-photos"
+      ],
+      "sample": "open the exported file at its real display size confirm that edges are clean important detail is present spacing looks intentional and the file format matches the destination a careful final review pr"
+    },
+    {
+      "words": 36,
+      "slugs": [
+        "common-mistakes-with-password-generator-in-accounts",
+        "common-mistakes-with-password-generator-in-logins",
+        "common-mistakes-with-password-generator-in-online-safety",
+        "common-mistakes-with-password-generator-in-passphrases",
+        "common-mistakes-with-password-generator-in-password-managers",
+        "common-mistakes-with-password-generator-in-security",
+        "common-mistakes-with-password-generator-in-teams",
+        "common-mistakes-with-password-generator-in-wifi"
+      ],
+      "sample": "before you sign out confirm that the password is safely stored and that legitimate recovery methods work a secure account should be difficult for an attacker to enter without becoming impossible for i"
+    },
+    {
+      "words": 36,
+      "slugs": [
+        "common-mistakes-with-temporary-email-in-accounts",
+        "common-mistakes-with-temporary-email-in-inbox",
+        "common-mistakes-with-temporary-email-in-privacy",
+        "common-mistakes-with-temporary-email-in-security",
+        "common-mistakes-with-temporary-email-in-spam",
+        "common-mistakes-with-temporary-email-in-testing",
+        "common-mistakes-with-temporary-email-in-verification"
+      ],
+      "sample": "if an inbox address is exposed or reused unexpected messages can appear verify the sender and purpose before opening links the fact that a message reached the right temporary inbox does not prove it i"
+    },
+    {
+      "words": 38,
+      "slugs": [
+        "how-temporary-email-helps-with-accounts",
+        "how-temporary-email-helps-with-inbox",
+        "how-temporary-email-helps-with-privacy",
+        "how-temporary-email-helps-with-spam",
+        "how-temporary-email-helps-with-testing"
+      ],
+      "sample": "if you need future access account recovery or long term records the same disposability becomes a disadvantage a temporary inbox is useful because it can be abandoned and that is exactly why it should "
+    },
+    {
+      "words": 36,
+      "slugs": [
+        "how-to-use-color-palette-for-accessibility",
+        "how-to-use-color-palette-for-branding",
+        "how-to-use-color-palette-for-logos",
+        "how-to-use-color-palette-for-presentations",
+        "how-to-use-color-palette-for-social-media",
+        "how-to-use-color-palette-for-themes",
+        "how-to-use-color-palette-for-ui-design",
+        "how-to-use-color-palette-for-web-design"
+      ],
+      "sample": "start from a colour that already belongs to the project such as a brand blue or a warm neutral let the generator suggest neighbours and contrasts then keep only combinations that support the hierarchy"
+    },
+    {
+      "words": 37,
+      "slugs": [
+        "how-to-use-color-palette-for-accessibility",
+        "how-to-use-color-palette-for-branding",
+        "how-to-use-color-palette-for-logos",
+        "how-to-use-color-palette-for-presentations",
+        "how-to-use-color-palette-for-social-media",
+        "how-to-use-color-palette-for-themes",
+        "how-to-use-color-palette-for-ui-design",
+        "how-to-use-color-palette-for-web-design"
+      ],
+      "sample": "do not judge contrast from swatches sitting side by side put real body text button labels and links on the surfaces where they will appear measure contrast for important text combinations and check fo"
+    },
+    {
+      "words": 35,
+      "slugs": [
+        "how-to-use-image-to-pdf-for-applications",
+        "how-to-use-image-to-pdf-for-archives",
+        "how-to-use-image-to-pdf-for-documents",
+        "how-to-use-image-to-pdf-for-forms",
+        "how-to-use-image-to-pdf-for-photos",
+        "how-to-use-image-to-pdf-for-receipts",
+        "how-to-use-image-to-pdf-for-scans",
+        "how-to-use-image-to-pdf-for-sharing"
+      ],
+      "sample": "text needs to stay sharp when the reader zooms in at the same time extremely large phone photos can make a simple document unnecessarily heavy resize only after confirming the smallest important text "
+    },
+    {
+      "words": 42,
+      "slugs": [
+        "how-to-use-password-generator-for-accounts",
+        "how-to-use-password-generator-for-logins",
+        "how-to-use-password-generator-for-online-safety",
+        "how-to-use-password-generator-for-passphrases",
+        "how-to-use-password-generator-for-password-managers",
+        "how-to-use-password-generator-for-security",
+        "how-to-use-password-generator-for-teams",
+        "how-to-use-password-generator-for-wifi"
+      ],
+      "sample": "for most modern services a long random password is preferable to a short password packed with substitutions if the website accepts a long credential let the generator create one that is comfortably be"
+    },
+    {
+      "words": 43,
+      "slugs": [
+        "how-to-use-password-generator-for-accounts",
+        "how-to-use-password-generator-for-logins",
+        "how-to-use-password-generator-for-online-safety",
+        "how-to-use-password-generator-for-passphrases",
+        "how-to-use-password-generator-for-password-managers",
+        "how-to-use-password-generator-for-security",
+        "how-to-use-password-generator-for-teams",
+        "how-to-use-password-generator-for-wifi"
+      ],
+      "sample": "a password generator should not send the finished password to an analytics endpoint or store it in a public log browser based generators that create values locally can be convenient because the passwo"
+    },
+    {
+      "words": 35,
+      "slugs": [
+        "how-to-use-password-generator-for-accounts",
+        "how-to-use-password-generator-for-logins",
+        "how-to-use-password-generator-for-online-safety",
+        "how-to-use-password-generator-for-passphrases",
+        "how-to-use-password-generator-for-password-managers",
+        "how-to-use-password-generator-for-security",
+        "how-to-use-password-generator-for-teams",
+        "how-to-use-password-generator-for-wifi"
+      ],
+      "sample": "the safest generated password is useless if you immediately lose it put it into your password manager or the approved credential store before changing the account confirm that autofill or retrieval wo"
+    },
+    {
+      "words": 36,
+      "slugs": [
+        "how-to-use-password-generator-for-accounts",
+        "how-to-use-password-generator-for-logins",
+        "how-to-use-password-generator-for-online-safety",
+        "how-to-use-password-generator-for-passphrases",
+        "how-to-use-password-generator-for-password-managers",
+        "how-to-use-password-generator-for-security",
+        "how-to-use-password-generator-for-teams",
+        "how-to-use-password-generator-for-wifi"
+      ],
+      "sample": "changing the end to your birth year or replacing random characters with a favourite word makes the result easier to remember but also reintroduces predictable structure if the generated value is incon"
+    },
+    {
+      "words": 38,
+      "slugs": [
+        "what-to-know-about-background-removal-for-photos",
+        "what-to-know-about-background-removal-for-portraits",
+        "what-to-know-about-background-removal-for-product-photos"
+      ],
+      "sample": "a transparent background is useful only when the next design needs flexibility if the final destination always uses white exporting a solid background may produce a simpler and smaller file choose bas"
+    },
+    {
+      "words": 35,
+      "slugs": [
+        "what-to-know-about-password-generator-for-accounts",
+        "what-to-know-about-password-generator-for-logins",
+        "what-to-know-about-password-generator-for-online-safety",
+        "what-to-know-about-password-generator-for-passphrases",
+        "what-to-know-about-password-generator-for-password-managers",
+        "what-to-know-about-password-generator-for-security",
+        "what-to-know-about-password-generator-for-teams",
+        "what-to-know-about-password-generator-for-wifi"
+      ],
+      "sample": "some sites restrict length or allowed symbols meet the service rules without assuming those rules define ideal security if a site rejects a character generate a compatible value rather than repeatedly"
+    },
+    {
+      "words": 40,
+      "slugs": [
+        "what-to-know-about-temporary-email-for-accounts",
+        "what-to-know-about-temporary-email-for-inbox",
+        "what-to-know-about-temporary-email-for-privacy",
+        "what-to-know-about-temporary-email-for-security",
+        "what-to-know-about-temporary-email-for-spam",
+        "what-to-know-about-temporary-email-for-testing"
+      ],
+      "sample": "a service may block temporary addresses because it needs a stable contact method or because disposable domains are frequently abused if the site requires a durable address for legitimate reasons use o"
+    }
+  ],
+  "headings": [
+    {
+      "slug": "a-practical-guide-to-background-removal-for-photos",
+      "heading": "Choose the original for Background Removal General Photos Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-photos",
+      "heading": "Prepare the image for Background Removal General Photos Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-photos",
+      "heading": "Run the background removal for Background Removal General Photos Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-photos",
+      "heading": "Refine fine detail for Background Removal General Photos Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-photos",
+      "heading": "Choose the final format for Background Removal General Photos Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-photos",
+      "heading": "Final review for Background Removal General Photos Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-portraits",
+      "heading": "Choose the original for Background Removal Portrait Photos Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-portraits",
+      "heading": "Prepare the image for Background Removal Portrait Photos Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-portraits",
+      "heading": "Run the background removal for Background Removal Portrait Photos Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-portraits",
+      "heading": "Refine fine detail for Background Removal Portrait Photos Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-portraits",
+      "heading": "Choose the final format for Background Removal Portrait Photos Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-portraits",
+      "heading": "Final review for Background Removal Portrait Photos Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-product-photos",
+      "heading": "Choose the original for Background Removal Product Photography Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-product-photos",
+      "heading": "Prepare the image for Background Removal Product Photography Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-product-photos",
+      "heading": "Run the background removal for Background Removal Product Photography Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-product-photos",
+      "heading": "Refine fine detail for Background Removal Product Photography Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-product-photos",
+      "heading": "Choose the final format for Background Removal Product Photography Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-product-photos",
+      "heading": "Final review for Background Removal Product Photography Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-background-removal-for-social-media",
+      "heading": "Remove the background for Background Removal Social Media Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-apis",
+      "heading": "Final thoughts for Base64 Api Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-data-urls",
+      "heading": "Perform one controlled encoding step for Base64 Data Urls Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-data-urls",
+      "heading": "Document the Base64 boundary for Base64 Data Urls Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-decoding",
+      "heading": "Perform one controlled encoding step for Base64 Decoding Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-decoding",
+      "heading": "Build the payload around size limits for Base64 Decoding Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-decoding",
+      "heading": "Handle errors at the right layer for Base64 Decoding Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-decoding",
+      "heading": "Document the Base64 boundary for Base64 Decoding Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-development",
+      "heading": "Perform one controlled encoding step for Base64 Development Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-development",
+      "heading": "Build the payload around size limits for Base64 Development Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-development",
+      "heading": "Handle errors at the right layer for Base64 Development Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-development",
+      "heading": "Document the Base64 boundary for Base64 Development Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-encoding",
+      "heading": "Perform one controlled encoding step for Base64 Encoding Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-encoding",
+      "heading": "Build the payload around size limits for Base64 Encoding Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-encoding",
+      "heading": "Handle errors at the right layer for Base64 Encoding Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-encoding",
+      "heading": "Document the Base64 boundary for Base64 Encoding Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-images",
+      "heading": "Perform one controlled encoding step for Base64 Images Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-images",
+      "heading": "Build the payload around size limits for Base64 Images Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-images",
+      "heading": "Handle errors at the right layer for Base64 Images Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-images",
+      "heading": "Document the Base64 boundary for Base64 Images Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-testing",
+      "heading": "Perform one controlled encoding step for Base64 Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-testing",
+      "heading": "Build the payload around size limits for Base64 Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-testing",
+      "heading": "Handle errors at the right layer for Base64 Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-testing",
+      "heading": "Document the Base64 boundary for Base64 Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-tokens",
+      "heading": "Perform one controlled encoding step for Base64 Tokens Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-tokens",
+      "heading": "Build the payload around size limits for Base64 Tokens Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-tokens",
+      "heading": "Handle errors at the right layer for Base64 Tokens Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-base64-for-tokens",
+      "heading": "Document the Base64 boundary for Base64 Tokens Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-apis",
+      "heading": "Preserve the source for Json Formatter Apis Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-apis",
+      "heading": "Run a syntax pass for Json Formatter Apis Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-apis",
+      "heading": "Format with consistent indentation for Json Formatter Apis Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-apis",
+      "heading": "Compare expected and actual types for Json Formatter Apis Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-apis",
+      "heading": "Check edge cases explicitly for Json Formatter Apis Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-configuration",
+      "heading": "Preserve the source for Json Formatter Configuration Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-configuration",
+      "heading": "Run a syntax pass for Json Formatter Configuration Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-configuration",
+      "heading": "Format with consistent indentation for Json Formatter Configuration Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-configuration",
+      "heading": "Compare expected and actual types for Json Formatter Configuration Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-configuration",
+      "heading": "Check edge cases explicitly for Json Formatter Configuration Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-data",
+      "heading": "Preserve the source for Json Formatter Data Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-data",
+      "heading": "Run a syntax pass for Json Formatter Data Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-data",
+      "heading": "Format with consistent indentation for Json Formatter Data Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-data",
+      "heading": "Compare expected and actual types for Json Formatter Data Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-data",
+      "heading": "Check edge cases explicitly for Json Formatter Data Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-debugging",
+      "heading": "Preserve the source for Json Formatter Debugging Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-debugging",
+      "heading": "Run a syntax pass for Json Formatter Debugging Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-debugging",
+      "heading": "Format with consistent indentation for Json Formatter Debugging Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-debugging",
+      "heading": "Compare expected and actual types for Json Formatter Debugging Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-debugging",
+      "heading": "Check edge cases explicitly for Json Formatter Debugging Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-development",
+      "heading": "Preserve the source for Json Formatter Development Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-development",
+      "heading": "Run a syntax pass for Json Formatter Development Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-development",
+      "heading": "Format with consistent indentation for Json Formatter Development Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-development",
+      "heading": "Compare expected and actual types for Json Formatter Development Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-development",
+      "heading": "Check edge cases explicitly for Json Formatter Development Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-logs",
+      "heading": "Preserve the source for Json Formatter Logs Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-logs",
+      "heading": "Run a syntax pass for Json Formatter Logs Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-logs",
+      "heading": "Format with consistent indentation for Json Formatter Logs Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-logs",
+      "heading": "Compare expected and actual types for Json Formatter Logs Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-logs",
+      "heading": "Check edge cases explicitly for Json Formatter Logs Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-testing",
+      "heading": "Preserve the source for Json Formatter Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-testing",
+      "heading": "Run a syntax pass for Json Formatter Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-testing",
+      "heading": "Format with consistent indentation for Json Formatter Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-testing",
+      "heading": "Compare expected and actual types for Json Formatter Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-testing",
+      "heading": "Check edge cases explicitly for Json Formatter Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-webhooks",
+      "heading": "Preserve the source for Json Formatter Webhooks Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-webhooks",
+      "heading": "Run a syntax pass for Json Formatter Webhooks Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-webhooks",
+      "heading": "Format with consistent indentation for Json Formatter Webhooks Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-webhooks",
+      "heading": "Compare expected and actual types for Json Formatter Webhooks Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-json-formatter-for-webhooks",
+      "heading": "Check edge cases explicitly for Json Formatter Webhooks Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-accounts",
+      "heading": "First classify the signup for Temporary Email Accounts Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-accounts",
+      "heading": "Handle confirmation messages deliberately for Temporary Email Accounts Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-accounts",
+      "heading": "Exit cleanly for Temporary Email Accounts Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-accounts",
+      "heading": "A sensible boundary for Temporary Email Accounts Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-inbox",
+      "heading": "First classify the signup for Temporary Email Inbox Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-inbox",
+      "heading": "Handle confirmation messages deliberately for Temporary Email Inbox Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-inbox",
+      "heading": "Exit cleanly for Temporary Email Inbox Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-inbox",
+      "heading": "A sensible boundary for Temporary Email Inbox Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-privacy",
+      "heading": "First classify the signup for Temporary Email Privacy Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-privacy",
+      "heading": "Handle confirmation messages deliberately for Temporary Email Privacy Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-privacy",
+      "heading": "Exit cleanly for Temporary Email Privacy Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-privacy",
+      "heading": "A sensible boundary for Temporary Email Privacy Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-security",
+      "heading": "First classify the signup for Temporary Email Security Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-security",
+      "heading": "Handle confirmation messages deliberately for Temporary Email Security Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-security",
+      "heading": "Exit cleanly for Temporary Email Security Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-security",
+      "heading": "A sensible boundary for Temporary Email Security Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-testing",
+      "heading": "First classify the signup for Temporary Email Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-testing",
+      "heading": "Handle confirmation messages deliberately for Temporary Email Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-testing",
+      "heading": "Exit cleanly for Temporary Email Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-testing",
+      "heading": "A sensible boundary for Temporary Email Testing Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-verification",
+      "heading": "First classify the signup for Temporary Email Verification Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-verification",
+      "heading": "Handle confirmation messages deliberately for Temporary Email Verification Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-verification",
+      "heading": "Exit cleanly for Temporary Email Verification Guide"
+    },
+    {
+      "slug": "a-practical-guide-to-temporary-email-for-verification",
+      "heading": "A sensible boundary for Temporary Email Verification Guide"
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-photos",
+      "heading": "Preserve natural appearance for Background Removal General Photos Best Practices"
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-photos",
+      "heading": "Standardise the output for Background Removal General Photos Best Practices"
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-photos",
+      "heading": "Final check for Background Removal General Photos Best Practices"
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-portraits",
+      "heading": "Standardise the output for Background Removal Portrait Photos Best Practices"
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-portraits",
+      "heading": "Final check for Background Removal Portrait Photos Best Practices"
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-product-photos",
+      "heading": "Standardise the output for Background Removal Product Photography Best Practices"
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-product-photos",
+      "heading": "Final check for Background Removal Product Photography Best Practices"
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-social-media",
+      "heading": "Final thoughts for Background Removal Social Media Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-apis",
+      "heading": "Final thoughts for Base64 Api Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-data-urls",
+      "heading": "Follow one documented variant for Base64 Data Urls Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-data-urls",
+      "heading": "Keep MIME information explicit for Base64 Data Urls Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-data-urls",
+      "heading": "Protect sensitive values independently for Base64 Data Urls Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-decoding",
+      "heading": "Follow one documented variant for Base64 Decoding Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-decoding",
+      "heading": "Validate before decoding untrusted input for Base64 Decoding Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-decoding",
+      "heading": "Keep MIME information explicit for Base64 Decoding Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-decoding",
+      "heading": "Protect sensitive values independently for Base64 Decoding Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-development",
+      "heading": "Follow one documented variant for Base64 Development Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-development",
+      "heading": "Validate before decoding untrusted input for Base64 Development Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-development",
+      "heading": "Keep MIME information explicit for Base64 Development Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-development",
+      "heading": "Protect sensitive values independently for Base64 Development Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-encoding",
+      "heading": "Follow one documented variant for Base64 Encoding Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-encoding",
+      "heading": "Validate before decoding untrusted input for Base64 Encoding Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-encoding",
+      "heading": "Keep MIME information explicit for Base64 Encoding Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-encoding",
+      "heading": "Protect sensitive values independently for Base64 Encoding Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-images",
+      "heading": "Follow one documented variant for Base64 Images Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-images",
+      "heading": "Validate before decoding untrusted input for Base64 Images Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-images",
+      "heading": "Keep MIME information explicit for Base64 Images Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-images",
+      "heading": "Protect sensitive values independently for Base64 Images Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-testing",
+      "heading": "Follow one documented variant for Base64 Testing Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-testing",
+      "heading": "Validate before decoding untrusted input for Base64 Testing Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-testing",
+      "heading": "Keep MIME information explicit for Base64 Testing Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-testing",
+      "heading": "Protect sensitive values independently for Base64 Testing Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-tokens",
+      "heading": "Follow one documented variant for Base64 Tokens Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-tokens",
+      "heading": "Validate before decoding untrusted input for Base64 Tokens Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-tokens",
+      "heading": "Keep MIME information explicit for Base64 Tokens Best Practices"
+    },
+    {
+      "slug": "best-practices-for-base64-when-working-with-tokens",
+      "heading": "Protect sensitive values independently for Base64 Tokens Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-apis",
+      "heading": "Validate against a contract for Json Formatter Apis Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-apis",
+      "heading": "Redact before sharing for Json Formatter Apis Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-configuration",
+      "heading": "Validate against a contract for Json Formatter Configuration Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-configuration",
+      "heading": "Redact before sharing for Json Formatter Configuration Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-data",
+      "heading": "Validate against a contract for Json Formatter Data Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-data",
+      "heading": "Redact before sharing for Json Formatter Data Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-debugging",
+      "heading": "Validate against a contract for Json Formatter Debugging Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-debugging",
+      "heading": "Redact before sharing for Json Formatter Debugging Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-development",
+      "heading": "Validate against a contract for Json Formatter Development Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-development",
+      "heading": "Redact before sharing for Json Formatter Development Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-logs",
+      "heading": "Validate against a contract for Json Formatter Logs Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-logs",
+      "heading": "Redact before sharing for Json Formatter Logs Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-testing",
+      "heading": "Validate against a contract for Json Formatter Testing Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-testing",
+      "heading": "Redact before sharing for Json Formatter Testing Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-webhooks",
+      "heading": "Validate against a contract for Json Formatter Webhooks Best Practices"
+    },
+    {
+      "slug": "best-practices-for-json-formatter-when-working-with-webhooks",
+      "heading": "Redact before sharing for Json Formatter Webhooks Best Practices"
+    },
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-accounts",
+      "heading": "Verify messages before acting for Temporary Email Accounts Best Practices"
+    },
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-inbox",
+      "heading": "Verify messages before acting for Temporary Email Inbox Best Practices"
+    },
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-privacy",
+      "heading": "Verify messages before acting for Temporary Email Privacy Best Practices"
+    },
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-security",
+      "heading": "Verify messages before acting for Temporary Email Security Best Practices"
+    },
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-spam",
+      "heading": "Verify messages before acting for Temporary Email Spam Best Practices"
+    },
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-testing",
+      "heading": "Verify messages before acting for Temporary Email Testing Best Practices"
+    },
+    {
+      "slug": "common-mistakes-with-background-removal-in-ecommerce",
+      "heading": "Final check for Background Removal Online Store Product Photography Mistakes"
+    },
+    {
+      "slug": "common-mistakes-with-background-removal-in-marketplaces",
+      "heading": "Final check for Background Removal Marketplace Product Listings Mistakes"
+    },
+    {
+      "slug": "common-mistakes-with-background-removal-in-photos",
+      "heading": "Final check for Background Removal General Photos Mistakes"
+    },
+    {
+      "slug": "common-mistakes-with-background-removal-in-portraits",
+      "heading": "Final check for Background Removal Portrait Photos Mistakes"
+    },
+    {
+      "slug": "common-mistakes-with-background-removal-in-product-photos",
+      "heading": "Final check for Background Removal Product Photography Mistakes"
+    },
+    {
+      "slug": "common-mistakes-with-background-removal-in-social-media",
+      "heading": "Final check for Background Removal Social Media Mistakes"
+    },
+    {
+      "slug": "common-mistakes-with-base64-in-apis",
+      "heading": "Final thoughts for Base64 Api Mistakes"
+    },
+    {
+      "slug": "common-mistakes-with-base64-in-decoding",
+      "heading": "Mistake seven is logging encoded secrets for Base64 Decoding Mistakes"
+    },
+    {
+      "slug": "common-mistakes-with-base64-in-development",
+      "heading": "Mistake seven is logging encoded secrets for Base64 Development Mistakes"
+    },
+    {
+      "slug": "common-mistakes-with-base64-in-encoding",
+      "heading": "Mistake seven is logging encoded secrets for Base64 Encoding Mistakes"
+    },
+    {
+      "slug": "common-mistakes-with-base64-in-images",
+      "heading": "Mistake seven is logging encoded secrets for Base64 Images Mistakes"
+    },
+    {
+      "slug": "common-mistakes-with-base64-in-testing",
+      "heading": "Mistake seven is logging encoded secrets for Base64 Testing Mistakes"
+    },
+    {
+      "slug": "common-mistakes-with-base64-in-tokens",
+      "heading": "Mistake seven is logging encoded secrets for Base64 Tokens Mistakes"
+    }
+  ],
+  "privacy": [
+    {
+      "slug": "a-safer-way-to-handle-temporary-email-for-signups",
+      "text": "In this context, it does not mean that a temporary email address guarantees privacy, anonymity, or security."
+    },
+    {
+      "slug": "a-safer-way-to-handle-temporary-email-for-signups",
+      "text": "- a guarantee of anonymity;"
+    },
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "text": "- You understand that temporary email does not guarantee anonymity."
+    },
+    {
+      "slug": "keep-main-inbox-clean-online-trials",
+      "text": "Email is a tool for talking to people and organisations you trust. Treat your main address as something valuable, and hand it out only when the relationship deserves it. For everything else, a temporary address gives you what you came for and leaves nothing behind. Used with a little judgement, it protects your inbox, your time and your attention."
+    }
+  ]
+}

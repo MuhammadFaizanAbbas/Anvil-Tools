@@ -36,6 +36,8 @@
       card.append(title, excerpt, link); fragment.append(card);
     }
     cards.replaceChildren(fragment);
+    const fallback = document.querySelector?.('.editorial-library');
+    if (fallback) fallback.hidden = posts.length > 0;
     cards.removeAttribute('aria-busy');
     const pages = Math.max(1, Math.ceil(total / limit));
     if (pagination) pagination.hidden = total <= limit;

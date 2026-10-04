@@ -51,7 +51,7 @@ test('blog response includes escaped published cards, guides, and crawlable pagi
   assert.match(html, /&lt;script&gt;alert\(1\)&lt;\/script&gt;/);
   assert.doesNotMatch(html, /<script>alert|private-draft/);
   assert.match(html, /href="\/blog\/index.html\?page=2" rel="next"/);
-  assert.match(html, /href="\/blog\/merge-pdfs-locally.html"/);
+  assert.doesNotMatch(html, /editorial-library|href="\/blog\/merge-pdfs-locally.html"/);
   assert.deepEqual(queries.at(-1).filters, [['status', 'published']]);
   assert.deepEqual(queries.at(-1).bounds, [0, 30]);
   assert.deepEqual(queries.at(-1).orders, ['published_at', 'slug']);
@@ -79,7 +79,8 @@ test('a database outage leaves the authored guides readable and allows a browser
     assert.equal(response.status, 200);
     assert.match(html, /Latest articles are temporarily unavailable/);
     assert.match(html, /data-server-rendered="false"/);
-    assert.match(html, /href="\/blog\/format-and-check-json.html"/);
+    assert.match(html, /href="\/journal\/small-tools-that-save-developers-time"/);
+    assert.match(html, /class="guide-cover"/);
     assert.equal(response.headers.get('cache-control'), 'no-store');
   } finally { fail = false; }
 });
@@ -98,26 +99,49 @@ test('cPanel renderer escapes database content and preserves no-JS guide links a
   assert.match(html, /href="\/journal\/article-0"/);
   assert.match(html, /rel="canonical" href="https:\/\/nevco.online\/blog\/index.html\?page=2"/);
   assert.match(html, /href="\/blog\/index.html\?page=3" rel="next"/);
-  assert.match(html, /href="\/blog\/merge-pdfs-locally.html"/);
+  assert.doesNotMatch(html, /editorial-library|href="\/blog\/merge-pdfs-locally.html"/);
 });
 
-test('authored articles have real local destinations, tool links, metadata, and sitemap entries', () => {
+test('retired static articles leave the catalog and sitemap; covered guides provide tool links', () => {
   const guides = JSON.parse(fs.readFileSync('scripts/site-generator/editorial-guides.json', 'utf8'));
   const index = fs.readFileSync('frontend/blog/index.html', 'utf8');
   const sitemap = fs.readFileSync('frontend/sitemap.xml', 'utf8');
+  const apache = fs.readFileSync('frontend/.htaccess', 'utf8');
+  const vercel = JSON.parse(fs.readFileSync('vercel.json', 'utf8'));
+  assert.equal(guides.length, 12);
   for (const guide of guides) {
-    const file = `frontend/blog/${guide.slug}.html`;
-    const html = fs.readFileSync(file, 'utf8');
-    assert.match(index, new RegExp(`href="/blog/${guide.slug}\\.html"`));
-    assert.match(html, /<div class="article-content"><p class="article-meta">/);
-    assert.match(html, /<h2>/);
-    assert.match(html, new RegExp(`href="/tools/${guide.tool}\\.html"`));
-    assert.ok(sitemap.includes(`https://anviltools.vercel.app/blog/${guide.slug}.html`));
-    for (const match of html.matchAll(/(?:href|src)="(\/[^"?#]*)/g)) {
-      if (match[1] === '/') continue;
-      assert.ok(fs.existsSync(path.join('frontend', match[1])), `${file}: ${match[1]}`);
-    }
-    const tool = fs.readFileSync(`frontend/tools/${guide.tool}.html`, 'utf8');
-    assert.ok(tool.includes(`/blog/${guide.slug}.html`), guide.tool);
+    assert.ok(Object.hasOwn(guide, 'retiredTo'));
+    assert.ok(!fs.existsSync(`frontend/blog/${guide.slug}.html`));
+    assert.ok(!index.includes(`/blog/${guide.slug}.html`));
+    assert.ok(!sitemap.includes(`/blog/${guide.slug}.html`));
+    assert.ok(fs.existsSync(`scripts/site-generator/editorial/${guide.slug}.html`));
+    assert.ok(apache.includes(`RewriteRule ^blog/${guide.slug}\\.html`));
+    const route = vercel.routes.find(route => route.src === `^/blog/${guide.slug}\\.html/?$`);
+    assert.equal(route.status, guide.retiredTo ? 308 : 410);
   }
+  const library = JSON.parse(fs.readFileSync('content/editorial/published-library.json', 'utf8'));
+  assert.equal(library.length, 4);
+  for (const guide of library) {
+    assert.ok(index.includes(`/journal/${guide.slug}`));
+    assert.ok(index.includes(`/journal-images/${guide.cover_image_id}`));
+    assert.ok(guide.cover_alt.trim());
+    for (const tool of guide.tools) assert.ok(fs.readFileSync(`frontend/tools/${tool}.html`, 'utf8').includes(`/journal/${guide.slug}`), tool);
+  }
+});
+test('overlapping article URLs redirect directly and removed topics return a styled Gone page', async () => {
+  const redirects = require('../backend/src/lib/article-redirects.json');
+  const retained = new Set(require('../content/editorial/published-library.json').map(row => row.slug));
+  assert.equal(Object.keys(redirects).length, 486);
+  for (const target of Object.values(redirects).filter(Boolean)) assert.ok(retained.has(target));
+  const beforeCount = queries.length;
+  const old = '/api/public/articles/common-mistakes-with-background-removal-in-ecommerce';
+  const response = await fetch(base + old, { redirect: 'manual', headers: { 'X-Frontend-Origin': 'https://nevco.online' } });
+  assert.equal(response.status, 301);
+  assert.equal(response.headers.get('location'), 'https://nevco.online/journal/best-practices-for-background-removal-when-working-with-design');
+  const slug = Object.keys(redirects).find(key => redirects[key] === null);
+  const gone = await fetch(base + '/api/public/articles/' + slug, { headers: { 'X-Frontend-Origin': 'https://nevco.online' } });
+  assert.equal(gone.status, 410);
+  assert.equal(gone.headers.get('x-robots-tag'), 'noindex, follow');
+  assert.match(await gone.text(), /href="https:\/\/nevco.online\/assets\/css\/style.css\?v=/);
+  assert.equal(queries.length, beforeCount);
 });

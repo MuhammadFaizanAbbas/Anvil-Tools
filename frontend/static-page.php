@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require __DIR__ . '/site-origin.php';
+require __DIR__ . '/public-assets.php';
 
 $requestMethod = strtoupper((string) ($_SERVER['REQUEST_METHOD'] ?? 'GET'));
 if (!in_array($requestMethod, ['GET', 'HEAD'], true)) {
@@ -32,7 +33,7 @@ if ($template === false) {
     exit('Page temporarily unavailable.');
 }
 
-$html = str_replace('https://anviltools.vercel.app', public_site_origin(), $template);
+$html = version_public_styles(str_replace('https://anviltools.vercel.app', public_site_origin(), $template));
 header('Content-Type: text/html; charset=UTF-8');
 header('Cache-Control: public, max-age=300');
 header('Vary: Host');

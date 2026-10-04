@@ -1,8 +1,27 @@
 Options -Indexes
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
+ErrorDocument 410 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # Retired unillustrated guides
+  RewriteRule ^blog/temporary-email-vs-aliases\.html/?$ /journal/best-practices-for-temporary-email-when-working-with-signups [R=301,L,NC]
+  RewriteRule ^blog/merge-pdfs-locally\.html/?$ /journal/simple-pdf-workflow-without-software [R=301,L,NC]
+  RewriteRule ^blog/images-to-clear-pdfs\.html/?$ /journal/simple-pdf-workflow-without-software [R=301,L,NC]
+  RewriteRule ^blog/background-removal-and-transparency\.html/?$ /journal/best-practices-for-background-removal-when-working-with-design [R=301,L,NC]
+  RewriteRule ^blog/format-and-check-json\.html/?$ /journal/small-tools-that-save-developers-time [R=301,L,NC]
+  RewriteRule ^blog/jwt-decoding\.html/?$ /journal/small-tools-that-save-developers-time [R=301,L,NC]
+  RewriteRule ^blog/base64-text-encoding\.html/?$ /journal/small-tools-that-save-developers-time [R=301,L,NC]
+  RewriteRule ^blog/sha256-text-checks\.html/?$ /journal/small-tools-that-save-developers-time [R=301,L,NC]
+  RewriteRule ^blog/qr-codes-for-print\.html/?$ - [G,L,NC]
+  RewriteRule ^blog/strong-passwords\.html/?$ - [G,L,NC]
+  RewriteRule ^blog/word-and-character-counts\.html/?$ - [G,L,NC]
+  RewriteRule ^blog/url-encoding-components\.html/?$ /journal/small-tools-that-save-developers-time [R=301,L,NC]
+  # End Retired unillustrated guides
+  # Retired game entry points now lead to the current homepage.
+  RewriteRule ^snowy-peaks-solitaire(?:/(?:index\.(?:html?|php))?)?/?$ / [R=301,L,NC]
+  # An HTML file is not a directory; normalize old trailing-slash links.
+  RewriteRule ^([a-z0-9/-]+\.html)/+$ /$1 [R=301,L,NC]
   # Published article listings are visible to readers and crawlers without JS.
   RewriteRule ^blog(?:/index\.html|/?)$ blog-index.php [L,QSA,NC]
   # Keep published articles and their private-storage covers on this frontend's
@@ -21,4 +40,9 @@ ErrorDocument 404 /404.html
   RewriteRule ^$ static-page.php?path=index.html [L,QSA]
   RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^(.+\.html)$ static-page.php?path=$1 [L,QSA,NC]
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.css$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
 </IfModule>

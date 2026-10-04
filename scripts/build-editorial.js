@@ -2,10 +2,18 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { renderArticle, escape } = require('../backend/src/lib/articles');
+const { versionPublicStyles } = require('../backend/src/lib/public-assets');
 const root = path.resolve(__dirname, '..');
 const frontend = path.join(root, 'frontend');
 const source = path.join(__dirname, 'site-generator');
-const guides = JSON.parse(fs.readFileSync(path.join(source, 'editorial-guides.json'), 'utf8'));
+const allGuides = JSON.parse(fs.readFileSync(path.join(source, 'editorial-guides.json'), 'utf8'));
+const guides = allGuides.filter(guide => !Object.hasOwn(guide, 'retiredTo'));
+const publishedLibrary = JSON.parse(fs.readFileSync(path.join(root, 'content/editorial/published-library.json'), 'utf8'));
+for (const guide of allGuides.filter(guide => Object.hasOwn(guide, 'retiredTo'))) {
+  const file = path.join(frontend, 'blog', `${guide.slug}.html`);
+  // Authored sources remain in site-generator/editorial; retired pages are not public.
+  if (fs.existsSync(file)) fs.unlinkSync(file);
+}
 const troubleshooting = JSON.parse(fs.readFileSync(path.join(source, 'tool-troubleshooting.json'), 'utf8'));
 const origin = 'https://anviltools.vercel.app';
 const guideLink = guide => `/blog/${guide.slug}.html`;
@@ -33,7 +41,7 @@ for (const guide of guides) {
   html = html.replace(`rel="canonical" href="${guideLink(guide)}"`, `rel="canonical" href="${origin}${guideLink(guide)}"`);
   writeChanged(path.join(frontend, 'blog', `${guide.slug}.html`), html);
 }
-const cards = guides.map(guide => `<article class="tool-card"><span class="category-tag">${escape(guide.category)}</span><h3><a href="${guideLink(guide)}">${escape(guide.title)}</a></h3><p>${escape(guide.excerpt)}</p><a class="tool-link" href="${guideLink(guide)}">Read guide &#8594;</a></article>`).join('\n');
+const cards = publishedLibrary.map(guide => `<article class="tool-card"><img class="guide-cover" src="/journal-images/${escape(guide.cover_image_id)}" alt="${escape(guide.cover_alt)}" loading="lazy"><h3><a href="/journal/${guide.slug}">${escape(guide.title)}</a></h3><p>${escape(guide.excerpt)}</p><a class="tool-link" href="/journal/${guide.slug}">Read guide &#8594;</a></article>`).join('\n');
 const library = `<!-- editorial-library --><section class="editorial-library" aria-labelledby="editorial-title"><h2 id="editorial-title">Practical guides</h2><p>Step-by-step workflows, examples, and checks for the tools. Read any guide directly, then open its tool when you are ready.</p><div class="tool-grid" id="editorialGuideCards">${cards}</div></section><!-- /editorial-library -->`;
 const walk = directory => fs.readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
   if (['assets', 'admin-panel'].includes(entry.name)) return [];
@@ -50,9 +58,12 @@ for (const file of walk(frontend)) {
   if (path.dirname(file) === path.join(frontend, 'tools') && troubleshooting[tool]) {
     const [heading, text] = troubleshooting[tool];
     html = html.replace(/<summary>What if the tool does not respond\?<\/summary><p>[^<]*<\/p>/, `<summary>${escape(heading)}</summary><p>${escape(text)}</p>`);
-    const guide = guides.find(item => item.tool === tool);
+    html = html.replace(/<div class="content-guide"><!-- editorial-tool-link -->[\s\S]*?<!-- \/editorial-tool-link --><\/div>/, '')
+      .replace(/<!-- editorial-tool-link -->[\s\S]*?<!-- \/editorial-tool-link -->/, '')
+      .replaceAll('<div class="content-guide"></div>', '');
+    const guide = publishedLibrary.find(item => item.tools.includes(tool));
     if (guide) {
-      const section = `<!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="${guideLink(guide)}">${escape(guide.title)}</a></p><p>${escape(guide.excerpt)}</p></section><!-- /editorial-tool-link -->`;
+      const section = `<!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/${guide.slug}">${escape(guide.title)}</a></p><p>${escape(guide.excerpt)}</p></section><!-- /editorial-tool-link -->`;
       html = html.replace(/<div class="content-guide"><!-- editorial-tool-link -->[\s\S]*?<!-- \/editorial-tool-link --><\/div>/, '')
         .replace(/<!-- editorial-tool-link -->[\s\S]*?<!-- \/editorial-tool-link -->/, '')
         .replaceAll('<div class="content-guide"></div>', '');
@@ -61,7 +72,11 @@ for (const file of walk(frontend)) {
         : html.replace('</main>', `<div class="content-guide">${section}</div></main>`);
     }
   }
-  writeChanged(file, html);
+  if (file === path.join(frontend, '404.html')) {
+    // ErrorDocument keeps the missing URL in the browser, at any path depth.
+    html = html.replace(/(href|src)="(?![a-z]+:|\/|#)([^"]+)"/gi, '$1="/$2"');
+  }
+  writeChanged(file, versionPublicStyles(html));
 }
 const templateDirectory = path.join(root, 'backend', 'src', 'templates');
 fs.mkdirSync(templateDirectory, { recursive: true });

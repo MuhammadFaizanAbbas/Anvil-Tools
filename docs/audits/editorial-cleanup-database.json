@@ -1,0 +1,64 @@
+{
+  "statuses": [
+    {
+      "count": 486,
+      "status": "draft"
+    },
+    {
+      "count": 4,
+      "status": "published"
+    }
+  ],
+  "cleanupAt": "2026-10-04T13:00:51.606309+00:00",
+  "published": [
+    {
+      "id": "best-practices-for-background-removal-when-working-with-design",
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "title": "Background Removal for Design and Product Photography",
+      "body_md5": "db7e9e841e44ca8cd740032fb71463bd",
+      "cover_alt": "Design workspace comparing a sneaker photograph with a transparent cutout, alongside layer and edge-quality controls",
+      "characters": 72804,
+      "updated_at": "2026-10-04T13:00:51.606309+00:00",
+      "published_at": "2026-09-29T13:56:31.666188+00:00",
+      "category_slug": "image-tools",
+      "cover_image_id": "d276a16e-5ceb-4aea-90a1-94c70c6785d2"
+    },
+    {
+      "id": "best-practices-for-temporary-email-when-working-with-signups",
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "title": "Temporary Email Best Practices for Signups",
+      "body_md5": "f6d746873668b8a7f49a549344706d00",
+      "cover_alt": "Laptop showing a signup form beside an email inbox, with an envelope and account-protection illustration",
+      "characters": 75609,
+      "updated_at": "2026-10-04T13:00:51.606309+00:00",
+      "published_at": "2026-09-29T06:00:31.666188+00:00",
+      "category_slug": "email-tools",
+      "cover_image_id": "f804a811-ae6e-47e0-a4bb-40a28b251ebb"
+    },
+    {
+      "id": "simple-pdf-workflow-without-software",
+      "slug": "simple-pdf-workflow-without-software",
+      "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result",
+      "body_md5": "725f804648c0297b4259bd91e9eb6598",
+      "cover_alt": "Several document files combined in a browser based PDF workflow",
+      "characters": 10241,
+      "updated_at": "2026-10-04T13:00:51.606309+00:00",
+      "published_at": "2026-09-29T12:13:39.490357+00:00",
+      "category_slug": "pdf-tools",
+      "cover_image_id": "c4244f15-2995-4aaf-b544-b37a356716db"
+    },
+    {
+      "id": "small-tools-that-save-developers-time",
+      "slug": "small-tools-that-save-developers-time",
+      "title": "Debug API Data with JSON, Base64, and Browser Tools",
+      "body_md5": "1a828a7a0c5a24a87c7e7a139d9cdbd0",
+      "cover_alt": "Small developer utilities used during browser testing",
+      "characters": 12902,
+      "updated_at": "2026-10-04T13:00:51.606309+00:00",
+      "published_at": "2026-09-15T00:00:00+00:00",
+      "category_slug": "developer-tools",
+      "cover_image_id": "925334fc-7e67-49b0-96fd-6d4b1c2ddc67"
+    }
+  ],
+  "savedRevisions": 490
+}

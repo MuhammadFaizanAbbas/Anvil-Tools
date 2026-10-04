@@ -1,0 +1,7 @@
+const { escape } = require('./editorial-markdown');
+const { versionPublicStyles } = require('./public-assets');
+function renderUnavailable(siteOrigin, retired = false) {
+  const title = retired ? 'Article retired' : 'Article unavailable';
+  return versionPublicStyles(`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, follow"><title>${title} | Anvil Tools</title><link rel="stylesheet" href="${escape(siteOrigin)}/assets/css/style.css"><link rel="stylesheet" href="${escape(siteOrigin)}/assets/css/content.css"></head><body class="public-site"><main class="wrap"><h1>${title}</h1><p>${retired ? 'This article has been removed from the public library.' : 'This article is not available.'}</p><p><a href="${escape(siteOrigin)}/blog/index.html">Browse the current guides</a></p><p><a href="${escape(siteOrigin)}/tools/index.html">Browse all tools</a></p><p><a href="${escape(siteOrigin)}/">Anvil Tools home</a></p></main></body></html>`);
+}
+module.exports = { renderUnavailable };

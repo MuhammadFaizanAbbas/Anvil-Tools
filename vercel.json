@@ -6,6 +6,114 @@
   "outputDirectory": "frontend",
   "routes": [
     {
+      "src": "^/blog/temporary-email-vs-aliases\\.html/?$",
+      "status": 308,
+      "headers": {
+        "Location": "/journal/best-practices-for-temporary-email-when-working-with-signups"
+      }
+    },
+    {
+      "src": "^/blog/merge-pdfs-locally\\.html/?$",
+      "status": 308,
+      "headers": {
+        "Location": "/journal/simple-pdf-workflow-without-software"
+      }
+    },
+    {
+      "src": "^/blog/images-to-clear-pdfs\\.html/?$",
+      "status": 308,
+      "headers": {
+        "Location": "/journal/simple-pdf-workflow-without-software"
+      }
+    },
+    {
+      "src": "^/blog/background-removal-and-transparency\\.html/?$",
+      "status": 308,
+      "headers": {
+        "Location": "/journal/best-practices-for-background-removal-when-working-with-design"
+      }
+    },
+    {
+      "src": "^/blog/format-and-check-json\\.html/?$",
+      "status": 308,
+      "headers": {
+        "Location": "/journal/small-tools-that-save-developers-time"
+      }
+    },
+    {
+      "src": "^/blog/jwt-decoding\\.html/?$",
+      "status": 308,
+      "headers": {
+        "Location": "/journal/small-tools-that-save-developers-time"
+      }
+    },
+    {
+      "src": "^/blog/base64-text-encoding\\.html/?$",
+      "status": 308,
+      "headers": {
+        "Location": "/journal/small-tools-that-save-developers-time"
+      }
+    },
+    {
+      "src": "^/blog/sha256-text-checks\\.html/?$",
+      "status": 308,
+      "headers": {
+        "Location": "/journal/small-tools-that-save-developers-time"
+      }
+    },
+    {
+      "src": "^/blog/qr-codes-for-print\\.html/?$",
+      "dest": "/404.html",
+      "status": 410,
+      "headers": {
+        "X-Robots-Tag": "noindex, follow"
+      }
+    },
+    {
+      "src": "^/blog/strong-passwords\\.html/?$",
+      "dest": "/404.html",
+      "status": 410,
+      "headers": {
+        "X-Robots-Tag": "noindex, follow"
+      }
+    },
+    {
+      "src": "^/blog/word-and-character-counts\\.html/?$",
+      "dest": "/404.html",
+      "status": 410,
+      "headers": {
+        "X-Robots-Tag": "noindex, follow"
+      }
+    },
+    {
+      "src": "^/blog/url-encoding-components\\.html/?$",
+      "status": 308,
+      "headers": {
+        "Location": "/journal/small-tools-that-save-developers-time"
+      }
+    },
+    {
+      "src": "^/snowy-peaks-solitaire(?:/(?:index\\.(?:html?|php))?)?/?$",
+      "status": 308,
+      "headers": {
+        "Location": "/"
+      }
+    },
+    {
+      "src": "^/([a-zA-Z0-9/-]+\\.html)/+$",
+      "status": 308,
+      "headers": {
+        "Location": "/$1"
+      }
+    },
+    {
+      "src": "^/assets/css/(.*)$",
+      "headers": {
+        "Cache-Control": "public, max-age=0, must-revalidate"
+      },
+      "continue": true
+    },
+    {
       "src": "^/admin/?$",
       "status": 307,
       "headers": {

@@ -1,0 +1,83 @@
+{
+  "release": "2026-10-04-first-two-guides",
+  "projectId": "epxzxcqsonxscyvbopqt",
+  "projectName": "anvil-tools",
+  "publishedAt": "2026-10-04T12:08:53.916527+00:00",
+  "verified": true,
+  "articles": [
+    {
+      "id": "best-practices-for-background-removal-when-working-with-design",
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "tags": [
+        "background removal",
+        "product photography",
+        "transparent images",
+        "graphic design"
+      ],
+      "title": "Background Removal for Design and Product Photography",
+      "status": "published",
+      "excerpt": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
+      "body_md5": "fe99d914b91460b14dfba18393561f70",
+      "cover_alt": "Design workspace comparing a sneaker photograph with a transparent cutout, alongside layer and edge-quality controls",
+      "seo_title": "Background Removal for Design and Product Photos",
+      "updated_at": "2026-10-04T12:08:53.916527+00:00",
+      "published_at": "2026-09-29T13:56:31.666188+00:00",
+      "category_slug": "image-tools",
+      "cover_image_id": "d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+      "revision_count": 2,
+      "body_characters": 72877,
+      "saved_revisions": [
+        {
+          "created_at": "2026-10-04T12:08:53.916527+00:00",
+          "revision_id": "d53354e0-a96f-469f-b974-9202add9ec4f",
+          "previous_status": "published",
+          "previous_body_md5": "92220b3affda174dccc58cb58c38d5c6",
+          "previous_updated_at": "2026-10-02T16:46:13.823577+00:00"
+        }
+      ],
+      "seo_description": "Improve background removal with practical edge checks, masking, shadows, transparent exports, product-photo workflows, and marketplace image requirements.",
+      "readableWords": 10576
+    },
+    {
+      "id": "best-practices-for-temporary-email-when-working-with-signups",
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "tags": [
+        "temporary email",
+        "email aliases",
+        "account recovery",
+        "inbox organization"
+      ],
+      "title": "Temporary Email Best Practices for Signups",
+      "status": "published",
+      "excerpt": "Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.",
+      "body_md5": "a46bcdc7f71853c337a26dee7bd10533",
+      "cover_alt": "Laptop showing a signup form beside an email inbox, with an envelope and account-protection illustration",
+      "seo_title": "Temporary Email Best Practices for Signups",
+      "updated_at": "2026-10-04T12:08:53.916527+00:00",
+      "published_at": "2026-09-29T06:00:31.666188+00:00",
+      "category_slug": "email-tools",
+      "cover_image_id": "f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+      "revision_count": 2,
+      "body_characters": 75633,
+      "saved_revisions": [
+        {
+          "created_at": "2026-10-04T12:08:53.916527+00:00",
+          "revision_id": "9267712d-fc99-4d28-9f91-61d5f14e1e39",
+          "previous_status": "published",
+          "previous_body_md5": "1f961ce42a62c31271740171a71289c1",
+          "previous_updated_at": "2026-10-01T10:08:18.661926+00:00"
+        }
+      ],
+      "seo_description": "Choose temporary email, aliases, or a permanent inbox. Learn signup safeguards, account recovery limits, delivery checks, and practical inbox workflows.",
+      "readableWords": 11015
+    }
+  ],
+  "statusCounts": [
+    {
+      "count": 490,
+      "status": "published"
+    }
+  ],
+  "archived": 0,
+  "redirects": 0
+}
