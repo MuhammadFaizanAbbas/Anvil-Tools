@@ -151,7 +151,12 @@ test('overlapping article URLs redirect directly and removed topics return a sty
   const old = '/api/public/articles/common-mistakes-with-background-removal-in-ecommerce';
   const response = await fetch(base + old, { redirect: 'manual', headers: { 'X-Frontend-Origin': 'https://nevco.online' } });
   assert.equal(response.status, 301);
+  assert.equal(response.headers.get('cache-control'), 'no-store');
   assert.equal(response.headers.get('location'), 'https://nevco.online/journal/best-practices-for-background-removal-when-working-with-design');
+  const otherSite = await fetch(base + old, { redirect: 'manual', headers: { 'X-Frontend-Origin': 'https://anviltools.vercel.app' } });
+  assert.equal(otherSite.status, 301);
+  assert.equal(otherSite.headers.get('cache-control'), 'no-store');
+  assert.equal(otherSite.headers.get('location'), 'https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design');
   const slug = Object.keys(redirects).find(key => redirects[key] === null);
   const gone = await fetch(base + '/api/public/articles/' + slug, { headers: { 'X-Frontend-Origin': 'https://nevco.online' } });
   assert.equal(gone.status, 410);
