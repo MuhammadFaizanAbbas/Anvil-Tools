@@ -134,6 +134,11 @@ test('retired static articles leave the catalog and sitemap; covered guides prov
     assert.equal(route.status, guide.retiredTo ? 308 : 410);
   }
   const library = JSON.parse(fs.readFileSync('content/editorial/published-library.json', 'utf8'));
+  for (const file of ['vercel.json', 'frontend/vercel.json']) {
+    const config = JSON.parse(fs.readFileSync(file, 'utf8'));
+    const journal = config.routes.find(route => route.dest?.endsWith('/api/public/articles/$1'));
+    assert.equal(journal.headers['Cache-Control'], 'no-store');
+  }
   assert.equal(library.length, 4);
   for (const guide of library) {
     assert.ok(index.includes(`/journal/${guide.slug}`));

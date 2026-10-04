@@ -164,6 +164,9 @@
     },
     {
       "src": "^/journal/([^/]+)/?$",
+      "headers": {
+        "Cache-Control": "no-store"
+      },
       "dest": "https://anvil-tools-backend.vercel.app/api/public/articles/$1"
     },
     {
