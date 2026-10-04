@@ -21,9 +21,10 @@ function render_blog_index(string $template, array $posts, string $origin, int $
     }
     $html = str_replace('id="publishedGuideCards"', 'id="publishedGuideCards" data-server-rendered="' . ($unavailable ? 'false' : 'true') . '" data-page="' . $page . '" data-has-next="' . ($hasNext ? 'true' : 'false') . '"', $html);
     $html = str_replace('<!-- published-status -->', $unavailable ? 'Latest articles are temporarily unavailable. The practical guides below are still available.' : ($cards ? '' : 'No additional articles published yet. Explore the practical guides below.'), $html);
-    $nav = '<a class="btn" id="blogsPrev" href="/blog/index.html?page=' . max(1, $page - 1) . '" rel="prev"' . ($page === 1 ? ' hidden' : '') . '>Previous</a>';
+    $previous = $page === 2 ? '/blog/index.html' : '/blog/index.html?page=' . ($page - 1);
+    $nav = '<a class="btn" id="blogsPrev"' . ($page > 1 ? ' href="' . $previous . '" rel="prev"' : ' hidden') . '>Previous</a>';
     $nav .= '<span id="blogsPage" aria-live="polite">Page ' . $page . '</span>';
-    $nav .= '<a class="btn" id="blogsNext" href="/blog/index.html?page=' . ($page + 1) . '" rel="next"' . ($hasNext ? '' : ' hidden') . '>Next</a>';
+    $nav .= '<a class="btn" id="blogsNext"' . ($hasNext ? ' href="/blog/index.html?page=' . ($page + 1) . '" rel="next"' : ' hidden') . '>Next</a>';
     $html = preg_replace('#<!-- blog-pagination -->.*?<!-- /blog-pagination -->#s', '<nav class="blog-pagination" id="blogPagination" aria-label="Article pages"' . ($page === 1 && !$hasNext ? ' hidden' : '') . '>' . $nav . '</nav>', $html);
     if ($page > 1) {
         $canonical = $origin . '/blog/index.html';

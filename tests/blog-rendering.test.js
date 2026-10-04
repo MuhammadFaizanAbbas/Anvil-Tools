@@ -65,10 +65,14 @@ test('second blog page has its own canonical and links back; invalid and missing
   assert.match(html, /rel="canonical" href="https:\/\/nevco.online\/blog\/index.html\?page=2"/);
   assert.match(html, /href="\/journal\/article-30"/);
   assert.doesNotMatch(html, /href="\/journal\/article-0"/);
-  assert.match(html, /href="\/blog\/index.html\?page=1" rel="prev"/);
-  assert.match(html, /rel="next" hidden/);
+  assert.match(html, /href="\/blog\/index.html" rel="prev"/);
+  assert.match(html, /id="blogsNext" hidden/);
+  assert.doesNotMatch(html, /href="\/blog\/index.html\?page=3"/);
   for (const page of ['0', '-1', '1.5', 'abc', '33335', '1&page=2']) assert.equal((await get(`?page=${page}`)).status, 400);
-  assert.equal((await get('?page=3')).status, 404);
+  const missing = await get('?page=3');
+  assert.equal(missing.status, 404);
+  assert.equal(missing.headers.get('x-robots-tag'), 'noindex, follow');
+  assert.match(await missing.text(), /Browse the current guides/);
 });
 
 test('a database outage leaves the authored guides readable and allows a browser retry', async () => {
@@ -90,16 +94,26 @@ test('cPanel renderer escapes database content and preserves no-JS guide links a
   const data = Buffer.from(JSON.stringify(posts.slice(0, 2))).toString('base64');
   const renderer = path.resolve('frontend/blog-render.php').replaceAll('\\', '/');
   const template = path.resolve('frontend/blog/index.html').replaceAll('\\', '/');
-  const code = `require '${renderer}'; echo render_blog_index(file_get_contents('${template}'), json_decode(base64_decode('${data}'), true), 'https://nevco.online', 2, true);`;
+  const code = (page, hasNext) => `require '${renderer}'; echo render_blog_index(file_get_contents('${template}'), json_decode(base64_decode('${data}'), true), 'https://nevco.online', ${page}, ${hasNext});`;
   let html;
-  try { html = execFileSync(php, ['-r', code], { encoding: 'utf8' }); }
+  try { html = execFileSync(php, ['-r', code(2, true)], { encoding: 'utf8' }); }
   catch (error) { if (error.code === 'ENOENT') return t.skip('Install PHP or set PHP_PATH to test the cPanel renderer.'); throw error; }
   assert.match(html, /&lt;script&gt;alert\(1\)&lt;\/script&gt;/);
   assert.doesNotMatch(html, /<script>alert/);
   assert.match(html, /href="\/journal\/article-0"/);
   assert.match(html, /rel="canonical" href="https:\/\/nevco.online\/blog\/index.html\?page=2"/);
   assert.match(html, /href="\/blog\/index.html\?page=3" rel="next"/);
+  assert.match(html, /href="\/blog\/index.html" rel="prev"/);
   assert.doesNotMatch(html, /editorial-library|href="\/blog\/merge-pdfs-locally.html"/);
+  for (const page of [1, 2]) {
+    const lastPage = execFileSync(php, ['-r', code(page, false)], { encoding: 'utf8' });
+    assert.match(lastPage, /id="blogsNext" hidden/);
+    assert.doesNotMatch(lastPage, /rel="next"|href="\/blog\/index.html\?page=3"/);
+    if (page === 1) {
+      assert.match(lastPage, /id="blogsPrev" hidden/);
+      assert.doesNotMatch(lastPage, /rel="prev"|href="\/blog\/index.html\?page=1"/);
+    }
+  }
 });
 
 test('retired static articles leave the catalog and sitemap; covered guides provide tool links', () => {

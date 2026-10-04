@@ -18,7 +18,7 @@ router.get('/blog',run(async(req,res)=>{
   res.removeHeader('X-Robots-Tag');
   return res.set('Cache-Control','no-store').type('html').send(renderBlog([],requestSiteOrigin(req),{page,unavailable:true}));
  }
- if(page>1&&!posts.length)return res.status(404).type('html').send('<!doctype html><title>Page not found</title><h1>Page not found</h1><a href="/blog/index.html">Return to blogs</a>');
+ if(page>1&&!posts.length)return res.set('X-Robots-Tag','noindex, follow').set('Cache-Control','no-store').status(404).type('html').send(renderUnavailable(requestSiteOrigin(req),false,{title:'Page not found',message:'There are no articles on this page. Browse the current guides instead.'}));
  res.removeHeader('X-Robots-Tag');
  res.set('Cache-Control','no-store').type('html').send(renderBlog(posts.slice(0,PAGE_SIZE),requestSiteOrigin(req),{page,hasNext:posts.length>PAGE_SIZE}));
 }));

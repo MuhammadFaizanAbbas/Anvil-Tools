@@ -21,7 +21,7 @@
 
   const limit = 30;
   const initialPage = Number(new URLSearchParams(location.search).get('page') || 1);
-  let page = Number.isInteger(initialPage) && initialPage > 0 && initialPage < 100000 ? initialPage - 1 : 0;
+  let page = Number.isInteger(initialPage) && initialPage > 0 && initialPage <= 33334 ? initialPage - 1 : 0;
   const serverRendered = cards?.getAttribute?.('data-server-rendered') === 'true';
   let loading = false;
 
@@ -42,12 +42,12 @@
     const pages = Math.max(1, Math.ceil(total / limit));
     if (pagination) pagination.hidden = total <= limit;
     if (pageLabel) pageLabel.textContent = `Page ${page + 1} of ${pages} · ${total} blog${total === 1 ? '' : 's'}`;
-    if (previous) { previous.disabled = page === 0; previous.hidden = page === 0; previous.href = `/blog/index.html?page=${page}`; }
-    if (next) { next.disabled = page + 1 >= pages; next.hidden = page + 1 >= pages; next.href = `/blog/index.html?page=${page + 2}`; }
+    if (previous) { previous.disabled = page === 0; previous.hidden = page === 0; if (page > 0) previous.href = `/blog/index.html${page > 1 ? `?page=${page}` : ''}`; else previous.removeAttribute('href'); }
+    if (next) { next.disabled = page + 1 >= pages; next.hidden = page + 1 >= pages; if (page + 1 < pages) next.href = `/blog/index.html?page=${page + 2}`; else next.removeAttribute('href'); }
     if (status) status.textContent = posts.length ? '' : 'No blogs published yet.';
   }
 
-  async function load() {
+  async function load(allowPageRecovery = true) {
     loading = true;
     if (retry) { retry.hidden = true; retry.disabled = true; }
     if (status) status.textContent = article ? 'Loading article…' : 'Updating articles…';
@@ -75,8 +75,12 @@
       } else {
         const totalValue = response.headers?.get('X-Total-Count');
         const totalHeader = Number(totalValue);
-        const total = totalValue != null && Number.isFinite(totalHeader) ? totalHeader : page * limit + data.length;
-        if (!data.length && page > 0) { page--; return load(); }
+        const hasTotal = totalValue != null && /^\d+$/.test(totalValue) && Number.isSafeInteger(totalHeader);
+        const total = hasTotal ? totalHeader : page * limit + data.length;
+        if (!data.length && page > 0 && allowPageRecovery) {
+          page = hasTotal ? Math.max(0, Math.min(page - 1, Math.ceil(total / limit) - 1)) : 0;
+          return await load(false);
+        }
         renderBlogPage(data, total);
         window.history?.replaceState(null, '', `/blog/index.html${page ? `?page=${page + 1}` : ''}`);
       }
@@ -95,6 +99,6 @@
 
   if (previous) previous.addEventListener('click', event => { event?.preventDefault(); if (!loading && page > 0) { page--; return load(); } });
   if (next) next.addEventListener('click', event => { event?.preventDefault(); if (!loading && !next.disabled) { page++; return load(); } });
-  if (retry) retry.addEventListener('click', load);
+  if (retry) retry.addEventListener('click', () => load());
   if (!serverRendered || article) await load();
 })();
