@@ -9,7 +9,9 @@ const folder = 'frontend/assets/fonts';
   const response = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36' }, signal: AbortSignal.timeout(30000) });
   assert.equal(response.status, 200);
   const css = await response.text(), sources = [];
-  let localCss = css;
+  // Avoid a late font swap and a second layout on slow first visits. Preloaded
+  // fonts are used when ready; otherwise the existing system fallback stays put.
+  let localCss = css.replace(/font-display:\s*swap;/g, 'font-display: optional;');
   for (const match of css.matchAll(/\/\* ([^*]+) \*\/\s*(@font-face\s*\{[^}]+\})/g)) {
     const family = match[2].match(/font-family: '([^']+)'/)[1];
     const source = match[2].match(/url\((https:\/\/fonts\.gstatic\.com\/[^)]+)\)/)[1];

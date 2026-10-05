@@ -36,6 +36,8 @@ def write(path, html):
     html = html.replace('Grab realistic browser and bot user-agent strings for testing how your site responds.', 'Choose fixed browser and bot user-agent strings for parser and request-header tests.')
     html = re.sub(r'(<div class="tool-grid") aria-labelledby="(?:category|directory)-tools-title"', r'\1', html)
     if path.suffix == '.html' and 'public-site' in html:
+        html = html.replace('<nav class="main-nav">', '<nav class="main-nav" id="main-navigation">')
+        html = html.replace('class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">', 'class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-navigation">')
         html = re.sub(r'<link\b[^>]*(?:fonts\.googleapis\.com|fonts\.gstatic\.com)[^>]*>\s*', '', html)
         if '<!-- local-font-preload -->' not in html:
             fonts = '<!-- local-font-preload --><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin><!-- /local-font-preload -->'

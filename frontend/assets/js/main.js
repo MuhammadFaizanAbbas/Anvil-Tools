@@ -9,15 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
     ]).then(() => loadScript('/assets/js/recommendations.js?v=20261005-review')).catch(() => {});
   }
   const yearEls = document.querySelectorAll('.current-year');
+  const currentYear = String(new Date().getFullYear());
   yearEls.forEach((el) => {
-    el.textContent = new Date().getFullYear();
+    if (el.textContent !== currentYear) el.textContent = currentYear;
   });
 
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.main-nav');
   if (toggle && nav) {
-    nav.id = 'main-navigation';
-    toggle.setAttribute('aria-controls', nav.id);
+    if (nav.id !== 'main-navigation') nav.id = 'main-navigation';
+    if (toggle.getAttribute('aria-controls') !== nav.id) toggle.setAttribute('aria-controls', nav.id);
     const closeMenu = () => {
       toggle.setAttribute('aria-expanded', 'false');
       nav.classList.remove('open');
