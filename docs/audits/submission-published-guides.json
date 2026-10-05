@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-05T12:23:30.341Z",
+  "guides": [
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "bodyMatches": true,
+      "md5": "f542083184b6026754508eee49bedeb4"
+    },
+    {
+      "slug": "simple-pdf-workflow-without-software",
+      "bodyMatches": true,
+      "md5": "4c7d93990386cc959ab3394b6ed8f8dc"
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "bodyMatches": true,
+      "md5": "21b0ecca0300ead9826cab5c145debaf"
+    },
+    {
+      "slug": "small-tools-that-save-developers-time",
+      "bodyMatches": true,
+      "md5": "1a828a7a0c5a24a87c7e7a139d9cdbd0"
+    }
+  ],
+  "sellerFileUntouched": true,
+  "adsTxt": [
+    {
+      "origin": "https://nevco.online",
+      "status": 200,
+      "sha256": "005e774214410091a356e270d2a86b112ccdedfc544c7b3ab9a69fec82204089"
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "status": 200,
+      "sha256": "f899074e0f954948a813bc8003962a4653eb935bea905fde8dd1c264174c83e9"
+    }
+  ],
+  "localAdsTxtSha256": "005e774214410091a356e270d2a86b112ccdedfc544c7b3ab9a69fec82204089"
+}

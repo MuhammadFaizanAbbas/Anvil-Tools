@@ -19,6 +19,8 @@ files.extend(SITE / name for name in ['.htaccess', 'robots.txt', 'sitemap.xml', 
 files.extend(SITE / ('assets/css/' + name) for name in ['style.css', 'refinements.css', 'design.css', 'content.css', 'tool-ux.css'])
 files.extend(SITE / ('assets/js/' + name) for name in ['main.js', 'recommendations.js', 'site-catalog.js', 'tool-directory.js', 'tool-examples.js', 'tools/word-counter.js', 'tools/temp-mail.js', 'tools/qr-code-generator.js', 'tools/pdf-merge.js', 'tools/image-to-pdf.js'])
 files.extend((SITE / 'assets/images/editorial').glob('*.png'))
+files.extend((SITE / 'assets/images/editorial').glob('*.webp'))
+files.extend((SITE / 'assets/fonts').glob('*'))
 files.extend((SITE / 'assets/examples/pdf').glob('*.pdf'))
 files = sorted(set(files))
 

@@ -1,5 +1,7 @@
 # AdSense audit follow-up — October 5, 2026
 
+Publication update: the three prepared article bodies were published and verified in project `epxzxcqsonxscyvbopqt` on October 5 at 12:21 UTC. Do not rerun `publish.sql`; it rejects repeat publication. The later page-by-page release also passed live Vercel checks and is pushed to both repositories. The user will upload the current `frontend` contents to cPanel while skipping `ads.txt`. See [the current release report](PAGE_BY_PAGE_REVIEW_2026-10-05.md) for the latest state; the earlier access and publication observations below record the preparation history.
+
 This implements the actionable findings from `Nevco_AdSense_Audit_2026-10-04.html`. Its recommendations were treated as review evidence. The audit's subjective score and approval estimate are not release criteria or a promise of approval.
 
 The first fixes were pushed to `main` in `MuhammadFaizanAbbas/Anvil-Tools` (`bac4313`) and `MuhammadFaizanAbbas/Anvil-Tools-Backend` (`b4223f7`); both Vercel deployments succeeded. Vercel deploys those repositories separately. Pushing the code does not publish the database article bodies or upload files to the separate `nevco.online` cPanel host. Database publication, AdSense account changes, contact submission, and external email delivery remain separate steps.

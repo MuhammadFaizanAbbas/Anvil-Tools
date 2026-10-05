@@ -73,8 +73,9 @@ add_tool(
       </div>
     ''',
     extra_head='<script type="module">\n'
-               'import { removeBackground } from "https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.5.5/dist/browser.mjs";\n'
-               'window.removeBackgroundLib = removeBackground;\n'
+               'window.removeBackgroundLib = async (...args) => {\n'
+               'const { removeBackground } = await import("https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.5.5/+esm");\n'
+               'return removeBackground(...args);\n};\n'
                '</script>',
     tool_js="background-remover.js",
     intro="Drop in a photo and this tool cuts the subject out from its background automatically, using a small machine-learning model that runs entirely on your device. The image is never uploaded anywhere, which makes this suitable for photos you'd rather not send to a third-party server.",

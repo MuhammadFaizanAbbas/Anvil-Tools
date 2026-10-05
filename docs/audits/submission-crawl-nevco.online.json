@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-05T11:58:47.014Z",
+  "checkedAt": "2026-10-05T12:27:19.603Z",
   "origin": "https://nevco.online",
   "pages": [
     {
@@ -181,7 +181,7 @@
       "canonicalMatches": true,
       "noindex": false,
       "advertisingScript": false,
-      "sharedLoaderVersioned": false,
+      "sharedLoaderVersioned": true,
       "workedExample": false
     },
     {
@@ -195,7 +195,7 @@
       "canonicalMatches": true,
       "noindex": false,
       "advertisingScript": false,
-      "sharedLoaderVersioned": false,
+      "sharedLoaderVersioned": true,
       "workedExample": false
     },
     {
@@ -209,7 +209,7 @@
       "canonicalMatches": true,
       "noindex": false,
       "advertisingScript": false,
-      "sharedLoaderVersioned": false,
+      "sharedLoaderVersioned": true,
       "workedExample": false
     },
     {
@@ -223,7 +223,7 @@
       "canonicalMatches": true,
       "noindex": false,
       "advertisingScript": false,
-      "sharedLoaderVersioned": false,
+      "sharedLoaderVersioned": true,
       "workedExample": false
     },
     {
@@ -561,11 +561,6 @@
       "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
     },
     {
-      "url": "https://help.etsy.com/hc/en-us/articles/115015663347-Requirements-and-Best-Practices-for-Images-in-Your-Etsy-Shop",
-      "status": 403,
-      "finalUrl": "https://help.etsy.com/hc/en-us/articles/115015663347-Requirements-and-Best-Practices-for-Images-in-Your-Etsy-Shop"
-    },
-    {
       "url": "https://nevco.online/",
       "status": 200,
       "finalUrl": "https://nevco.online/"
@@ -574,6 +569,16 @@
       "url": "https://nevco.online/about.html",
       "status": 200,
       "finalUrl": "https://nevco.online/about.html"
+    },
+    {
+      "url": "https://nevco.online/assets/images/editorial/background-removal-input.png",
+      "status": 200,
+      "finalUrl": "https://nevco.online/assets/images/editorial/background-removal-input.png"
+    },
+    {
+      "url": "https://nevco.online/assets/images/editorial/background-removal-output.png",
+      "status": 200,
+      "finalUrl": "https://nevco.online/assets/images/editorial/background-removal-output.png"
     },
     {
       "url": "https://nevco.online/blog/index.html",
@@ -771,15 +776,6 @@
       "finalUrl": "https://pdf-lib.js.org/"
     },
     {
-      "url": "https://sell.amazon.com/blog/product-photos",
-      "status": 200,
-      "finalUrl": "https://sell.amazon.com/blog/product-photos"
-    },
-    {
-      "url": "https://www.ebay.com/help/policies/selling-policies/listing-policy?id=4370",
-      "error": "fetch failed"
-    },
-    {
       "url": "https://www.google.com/policies/privacy/partners/",
       "status": 200,
       "finalUrl": "https://www.google.com/policies/privacy/partners/"
@@ -788,11 +784,6 @@
       "url": "https://www.rfc-editor.org/rfc/rfc7519",
       "status": 200,
       "finalUrl": "https://www.rfc-editor.org/info/rfc7519/"
-    },
-    {
-      "url": "https://www.w3.org/WAI/tutorials/images/decision-tree/",
-      "status": 200,
-      "finalUrl": "https://www.w3.org/WAI/tutorials/images/decision-tree/"
     }
   ],
   "assets": [
@@ -839,22 +830,40 @@
       "cache": "public, max-age=604800"
     },
     {
+      "url": "https://nevco.online/assets/images/editorial/background-removal-example.png",
+      "status": 200,
+      "type": "image/png",
+      "cache": "public, max-age=604800"
+    },
+    {
+      "url": "https://nevco.online/assets/images/editorial/pdf-ordering-example.png",
+      "status": 200,
+      "type": "image/png",
+      "cache": "public, max-age=604800"
+    },
+    {
+      "url": "https://nevco.online/assets/images/editorial/temporary-email-example.png",
+      "status": 200,
+      "type": "image/png",
+      "cache": "public, max-age=604800"
+    },
+    {
       "url": "https://nevco.online/assets/js/api.js",
       "status": 200,
       "type": "text/javascript",
-      "cache": null
+      "cache": "public, max-age=0, must-revalidate"
     },
     {
       "url": "https://nevco.online/assets/js/config.js",
       "status": 200,
       "type": "text/javascript",
-      "cache": null
+      "cache": "public, max-age=0, must-revalidate"
     },
     {
       "url": "https://nevco.online/assets/js/contact.js",
       "status": 200,
       "type": "text/javascript",
-      "cache": null
+      "cache": "public, max-age=0, must-revalidate"
     },
     {
       "url": "https://nevco.online/assets/js/main.js",
@@ -863,10 +872,16 @@
       "cache": null
     },
     {
+      "url": "https://nevco.online/assets/js/main.js?v=20261005-review",
+      "status": 200,
+      "type": "text/javascript",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
       "url": "https://nevco.online/assets/js/published-posts.js",
       "status": 200,
       "type": "text/javascript",
-      "cache": null
+      "cache": "public, max-age=0, must-revalidate"
     },
     {
       "url": "https://nevco.online/assets/js/tool-ux.js",
@@ -1104,32 +1119,25 @@
   "articles": [
     {
       "slug": "best-practices-for-background-removal-when-working-with-design",
-      "matchesPreparedBody": false
+      "matchesPreparedBody": true
     },
     {
       "slug": "best-practices-for-temporary-email-when-working-with-signups",
-      "matchesPreparedBody": false
+      "matchesPreparedBody": true
     },
     {
       "slug": "simple-pdf-workflow-without-software",
-      "matchesPreparedBody": false
+      "matchesPreparedBody": true
     },
     {
       "slug": "small-tools-that-save-developers-time",
       "matchesPreparedBody": true
     }
   ],
-  "failedHttp": [
-    {
-      "url": "https://help.etsy.com/hc/en-us/articles/115015663347-Requirements-and-Best-Practices-for-Images-in-Your-Etsy-Shop",
-      "status": 403,
-      "finalUrl": "https://help.etsy.com/hc/en-us/articles/115015663347-Requirements-and-Best-Practices-for-Images-in-Your-Etsy-Shop"
-    },
-    {
-      "url": "https://www.ebay.com/help/policies/selling-policies/listing-policy?id=4370",
-      "error": "fetch failed"
-    }
-  ],
+  "failedHttp": [],
+  "metadataFailures": [],
+  "duplicateMetadata": [],
+  "directiveFailures": [],
   "releasePending": [
     "/",
     "/about.html",
@@ -1143,10 +1151,6 @@
     "/contact.html",
     "/cookie-policy.html",
     "/disclaimer.html",
-    "/journal/best-practices-for-background-removal-when-working-with-design",
-    "/journal/best-practices-for-temporary-email-when-working-with-signups",
-    "/journal/simple-pdf-workflow-without-software",
-    "/journal/small-tools-that-save-developers-time",
     "/privacy-policy.html",
     "/terms-of-service.html",
     "/tools/background-remover.html",
@@ -1171,9 +1175,5 @@
     "/tools/uuid-generator.html",
     "/tools/word-counter.html"
   ],
-  "unpublishedGuides": [
-    "best-practices-for-background-removal-when-working-with-design",
-    "best-practices-for-temporary-email-when-working-with-signups",
-    "simple-pdf-workflow-without-software"
-  ]
+  "unpublishedGuides": []
 }

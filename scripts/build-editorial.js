@@ -85,5 +85,8 @@ for (const file of walk(frontend)) {
 const templateDirectory = path.join(root, 'backend', 'src', 'templates');
 fs.mkdirSync(templateDirectory, { recursive: true });
 writeChanged(path.join(templateDirectory, 'blog.html'), fs.readFileSync(path.join(frontend, 'blog', 'index.html'), 'utf8')
-  .replace(/(href|src)="\.\.\/(assets\/[^" ]+)"/g, '$1="/$2"'));
+  .replace(/(href|src)="\.\.\/(assets\/[^" ]+)"/g, '$1="/$2"')
+  // The API also renders for cPanel hosts that upload assets separately. CSS
+  // discovers fonts when available; avoid preloading files before that upload.
+  .replace(/<!-- local-font-preload -->[\s\S]*?<!-- \/local-font-preload -->/, ''));
 console.log(`Built ${guides.length} static guides, tool links, and the server-rendered blog template.`);

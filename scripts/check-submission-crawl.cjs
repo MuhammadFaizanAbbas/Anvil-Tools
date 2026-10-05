@@ -4,6 +4,7 @@ const assert = require('node:assert/strict');
 const { createHash } = require('node:crypto');
 const library = require('../content/editorial/published-library.json');
 const examples = require('./site-generator/tool-examples.json');
+const { PUBLIC_STYLE_VERSION } = require('../backend/src/lib/public-assets');
 const origin = new URL(process.argv[2] || 'https://nevco.online').origin;
 assert.match(origin, /^https?:\/\//);
 const report = { checkedAt: new Date().toISOString(), origin, pages: [], links: [], assets: [], directives: [],
@@ -42,7 +43,7 @@ async function concurrent(values, action) {
         canonical, expectedCanonical: origin + route, canonicalMatches: canonical === origin + route,
         noindex: /noindex/i.test(result.robots || '') || /<meta\b[^>]*name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html),
         advertisingScript: /<script\b[^>]*src=["'][^"']*(?:adsbygoogle|fundingchoices|\/ads\.js|\/cmp\.js)/i.test(html),
-        sharedLoaderVersioned: /assets\/js\/main\.js\?v=20261005-review/.test(html), workedExample: html.includes('<!-- checked-example -->') });
+        sharedLoaderVersioned: html.includes('assets/js/main.js?v=' + PUBLIC_STYLE_VERSION), workedExample: html.includes('<!-- checked-example -->') });
     } catch (error) { report.pages.push({ route, error: error.message }); }
   });
   report.fragmentFailures = [];
@@ -91,11 +92,23 @@ async function concurrent(values, action) {
   });
   for (const key of ['pages', 'links', 'assets', 'directives', 'articles']) report[key].sort((a, b) => (a.route || a.url || a.slug).localeCompare(b.route || b.url || b.slug));
   report.failedHttp = [...report.pages, ...report.links, ...report.assets, ...report.directives].filter(check => check.error || check.status < 200 || check.status >= 400);
+  report.metadataFailures = report.pages.filter(page => !page.title || !page.description || page.h1 !== 1 || !page.canonicalMatches || page.noindex || page.advertisingScript);
+  report.duplicateMetadata = [];
+  for (const field of ['title', 'description']) {
+    const seen = new Map();
+    for (const page of report.pages) {
+      if (!page[field]) continue;
+      if (seen.has(page[field])) report.duplicateMetadata.push({ field, first: seen.get(page[field]), repeated: page.route });
+      else seen.set(page[field], page.route);
+    }
+  }
+  report.directiveFailures = report.directives.filter(check => check.wrongOrigin?.length || (check.urls && !check.urls.length) || check.blocksPublicPages || (check.route === '/robots.txt' && !check.sitemap));
   report.releasePending = report.pages.filter(page => !page.sharedLoaderVersioned || (page.route.startsWith('/tools/') && page.route !== '/tools/index.html' && !page.workedExample)).map(page => page.route);
   report.unpublishedGuides = report.articles.filter(guide => !guide.matchesPreparedBody).map(guide => guide.slug);
   fs.writeFileSync('docs/audits/submission-crawl-' + new URL(origin).hostname + '.json', JSON.stringify(report, null, 2) + '\n');
   console.log(JSON.stringify({ origin, pages: report.pages.length, links: report.links.length, assets: report.assets.length, failedHttp: report.failedHttp.length,
-    fragmentFailures: report.fragmentFailures.length, wrongCanonicals: report.pages.filter(page => !page.canonicalMatches).length,
+    fragmentFailures: report.fragmentFailures.length, wrongCanonicals: report.pages.filter(page => !page.canonicalMatches).length, metadataFailures: report.metadataFailures.length,
+    duplicateMetadata: report.duplicateMetadata.length, directiveFailures: report.directiveFailures.length,
     releasePending: report.releasePending.length, unpublishedGuides: report.unpublishedGuides.length, badRequests: report.failedHttp.map(check => ({ url: check.url || check.route, status: check.status, error: check.error })) }, null, 2));
-  if (report.failedHttp.length || report.fragmentFailures.length || report.releasePending.length || report.unpublishedGuides.length) process.exitCode = 1;
+  if (report.failedHttp.length || report.fragmentFailures.length || report.metadataFailures.length || report.duplicateMetadata.length || report.directiveFailures.length || report.releasePending.length || report.unpublishedGuides.length) process.exitCode = 1;
 })().catch(error => { console.error(error.message); process.exitCode = 1; });

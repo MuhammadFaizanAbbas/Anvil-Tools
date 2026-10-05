@@ -6,17 +6,15 @@
 <title>PDF Merge | Anvil Tools</title>
 <meta name="description" content="Combine multiple PDF files into a single document in the order you choose.">
 <link rel="canonical" href="https://anviltools.vercel.app/tools/pdf-merge.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review2">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review2">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review2">
 <link rel="stylesheet" href="../assets/css/tool-ux.css?v=20261005-pdf">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review2">
 <meta property="og:type" content="website"><meta property="og:title" content="PDF Merge | Anvil Tools"><meta property="og:description" content="Combine multiple PDF files into a single document in the order you choose."><meta property="og:url" content="https://anviltools.vercel.app/tools/pdf-merge.html"><meta name="twitter:card" content="summary">
-<noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript></head>
+<noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript><!-- local-font-preload --><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin><!-- /local-font-preload --></head>
 <body class="public-site">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
@@ -41,7 +39,7 @@
 <div class="tool-app"><!-- action-note --><p class="small-note" id="tool-action-note">Use readable, unencrypted PDFs. Check forms, signatures, and bookmarks in the output; their interactive behavior is not guaranteed.</p><!-- /action-note -->
 
       <h2>Combine PDF files</h2>
-      <div class="dropzone" id="pm-dropzone" role="button" tabindex="0" aria-label="Choose PDF files to merge">
+      <div class="dropzone" id="pm-dropzone" role="button" tabindex="0">
         <strong>Click to choose PDF files</strong> or drag and drop them here<br>
         <span class="small-note">Add two or more PDFs, then use Move up or Move down to arrange them</span>
       </div>
@@ -56,7 +54,7 @@
 
 
 
-<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Check the four-page assembly example</h2><p>The worked fixture combines a one-page cover, a two-page application, and one supporting page. Move whole files into that order, merge, then inspect all four pages. Moving a file does not rearrange pages within it.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>cover.pdf</td><td>Page 1: 420 × 594 PDF points.</td></tr><tr><td>application.pdf</td><td>Pages 2–3: 400 × 600 and 401 × 601 points.</td></tr><tr><td>support.pdf</td><td>Page 4: 360 × 480 points.</td></tr></tbody></table></div><figure><img src="/assets/images/editorial/pdf-ordering-example.png" loading="lazy" alt="PDF queue with cover, application, and support files arranged using Move up and Move down controls." width="976" height="623"><figcaption>The file list defines whole-file order before merging.</figcaption></figure><p><a href="/assets/examples/pdf/cover.pdf" download>Cover PDF</a> · <a href="/assets/examples/pdf/application.pdf" download>Application PDF</a> · <a href="/assets/examples/pdf/support.pdf" download>Support PDF</a> · <a href="/assets/examples/pdf/merged-example.pdf" download>Inspect the four-page result</a></p></section><!-- /checked-example --><section class="info-section">
+<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Check the four-page assembly example</h2><p>The worked fixture combines a one-page cover, a two-page application, and one supporting page. Move whole files into that order, merge, then inspect all four pages. Moving a file does not rearrange pages within it.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>cover.pdf</td><td>Page 1: 420 × 594 PDF points.</td></tr><tr><td>application.pdf</td><td>Pages 2–3: 400 × 600 and 401 × 601 points.</td></tr><tr><td>support.pdf</td><td>Page 4: 360 × 480 points.</td></tr></tbody></table></div><figure><picture><source type="image/webp" srcset="/assets/images/editorial/pdf-ordering-example-480.webp 480w, /assets/images/editorial/pdf-ordering-example-960.webp 960w, /assets/images/editorial/pdf-ordering-example-976.webp 976w" sizes="(max-width: 800px) calc(100vw - 72px), 1000px"><img src="/assets/images/editorial/pdf-ordering-example.png" loading="lazy" alt="PDF queue with cover, application, and support files arranged using Move up and Move down controls." width="976" height="623"></picture><figcaption>The file list defines whole-file order before merging.</figcaption></figure><p><a href="/assets/examples/pdf/cover.pdf" download>Cover PDF</a> · <a href="/assets/examples/pdf/application.pdf" download>Application PDF</a> · <a href="/assets/examples/pdf/support.pdf" download>Support PDF</a> · <a href="/assets/examples/pdf/merged-example.pdf" download>Inspect the four-page result</a></p></section><!-- /checked-example --><section class="info-section">
   <h2>How it works</h2>
   <ul><li>Choose or drag in the PDF files you want to combine.</li>
 <li>Use Move up, Move down, or Remove to arrange the file list. All pages within each PDF keep their original order.</li>
@@ -122,7 +120,7 @@
 
 
 
-<script src="../assets/js/main.js?v=20261005-review"></script>
+<script src="../assets/js/main.js?v=20261005-review2"></script>
 <script src="../assets/js/tools/pdf-merge.js?v=20261005-pdf"></script>
 <script src="../assets/js/tool-ux.js"></script>
 </body>

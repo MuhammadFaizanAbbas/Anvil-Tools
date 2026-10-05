@@ -1,0 +1,78 @@
+{
+  "projectId": "epxzxcqsonxscyvbopqt",
+  "status": "published-and-verified",
+  "articles": [
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "beforeMd5": "db7e9e841e44ca8cd740032fb71463bd",
+      "afterMd5": "21b0ecca0300ead9826cab5c145debaf",
+      "bodyChanged": true,
+      "metadataPreserved": true,
+      "revisionPreserved": true,
+      "updatedAt": "2026-10-05 12:21:15.072438+00"
+    },
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "beforeMd5": "f6d746873668b8a7f49a549344706d00",
+      "afterMd5": "f542083184b6026754508eee49bedeb4",
+      "bodyChanged": true,
+      "metadataPreserved": true,
+      "revisionPreserved": true,
+      "updatedAt": "2026-10-05 12:21:15.072438+00"
+    },
+    {
+      "slug": "simple-pdf-workflow-without-software",
+      "beforeMd5": "725f804648c0297b4259bd91e9eb6598",
+      "afterMd5": "4c7d93990386cc959ab3394b6ed8f8dc",
+      "bodyChanged": true,
+      "metadataPreserved": true,
+      "revisionPreserved": true,
+      "updatedAt": "2026-10-05 12:21:15.072438+00"
+    },
+    {
+      "slug": "small-tools-that-save-developers-time",
+      "beforeMd5": "1a828a7a0c5a24a87c7e7a139d9cdbd0",
+      "afterMd5": "1a828a7a0c5a24a87c7e7a139d9cdbd0",
+      "bodyChanged": false,
+      "metadataPreserved": true,
+      "revisionPreserved": true,
+      "updatedAt": "2026-10-04 13:00:51.606309+00"
+    }
+  ],
+  "publishedBodies": 3,
+  "functionHardening": {
+    "version": "20261005122250",
+    "name": "harden_legacy_timestamp_function_search_path",
+    "statements": [
+      "ALTER FUNCTION legacy_archive.set_updated_at() SET search_path = pg_catalog;"
+    ],
+    "verified": [
+      {
+        "schema_name": "legacy_archive",
+        "proname": "set_updated_at",
+        "proconfig": [
+          "search_path=pg_catalog"
+        ],
+        "security_definer": false
+      }
+    ]
+  },
+  "security": {
+    "lints": [
+      {
+        "name": "rls_enabled_no_policy",
+        "level": "INFO",
+        "count": 13,
+        "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy"
+      },
+      {
+        "name": "auth_leaked_password_protection",
+        "level": "WARN",
+        "count": 1,
+        "remediation": "https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection"
+      }
+    ],
+    "privateTablesRemainRestricted": true,
+    "leakedPasswordProtection": "Disabled; free plan. Owner setting/plan dependency."
+  }
+}

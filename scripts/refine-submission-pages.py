@@ -13,6 +13,7 @@ SITE = ROOT / 'frontend'
 SOURCE = ROOT / 'scripts/site-generator'
 EXAMPLES = json.loads((SOURCE / 'tool-examples.json').read_text(encoding='utf-8'))
 TROUBLE = json.loads((SOURCE / 'tool-troubleshooting.json').read_text(encoding='utf-8'))
+IMAGE_SIZES = json.loads((ROOT / 'backend/src/lib/editorial-images.json').read_text(encoding='utf-8')) if (ROOT / 'backend/src/lib/editorial-images.json').exists() else {}
 
 def plain(value):
     return ' '.join(unescape(re.sub(r'<[^>]+>', ' ', value)).split())
@@ -34,6 +35,12 @@ def write(path, html):
     html = html.replace('Turn one or more JPG or PNG images into a single downloadable PDF.', 'Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.')
     html = html.replace('Grab realistic browser and bot user-agent strings for testing how your site responds.', 'Choose fixed browser and bot user-agent strings for parser and request-header tests.')
     html = re.sub(r'(<div class="tool-grid") aria-labelledby="(?:category|directory)-tools-title"', r'\1', html)
+    if path.suffix == '.html' and 'public-site' in html:
+        html = re.sub(r'<link\b[^>]*(?:fonts\.googleapis\.com|fonts\.gstatic\.com)[^>]*>\s*', '', html)
+        if '<!-- local-font-preload -->' not in html:
+            fonts = '<!-- local-font-preload --><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin><!-- /local-font-preload -->'
+            html = html.replace('</head>', fonts + '</head>', 1)
+        html = re.sub(r'(<div\b[^>]*class="dropzone"[^>]*)(>)', lambda m: re.sub(r' aria-label="[^"]*"', '', m[1]) + m[2], html)
     html = re.sub(r'(<footer\b.*?</footer>)', lambda m: m[0].replace('<h4>', '<h3>').replace('</h4>', '</h3>'), html, flags=re.S)
     def image_dimensions(match):
         tag = match[0]
@@ -46,7 +53,16 @@ def write(path, html):
         width, height = struct.unpack('>II', data[16:24])
         if 'width=' not in tag: tag = tag[:-1] + f' width="{width}" height="{height}">'
         return tag
-    html = re.sub(r'<img\b[^>]*>', image_dimensions, html)
+    html = re.sub(r'<picture><source type="image/webp"[^>]*>(<img\b[^>]*>)</picture>', r'\1', html)
+    def responsive_image(match):
+        tag = image_dimensions(match)
+        source = re.search(r'src="([^"]+)"', tag)
+        metadata = IMAGE_SIZES.get(source[1]) if source else None
+        if not metadata: return tag
+        srcset = ', '.join(item['src'] + ' ' + str(item['width']) + 'w' for item in metadata['candidates'])
+        sizes = '(max-width: 800px) calc(100vw - 72px), 1000px'
+        return '<picture><source type="image/webp" srcset="' + srcset + '" sizes="' + sizes + '">' + tag + '</picture>'
+    html = re.sub(r'<img\b[^>]*>', responsive_image, html)
     previous = path.read_text(encoding='utf-8')
     if previous != html:
         path.write_text(html, encoding='utf-8')
@@ -65,6 +81,8 @@ for slug, example in EXAMPLES.items():
     if slug == 'base64-tool':
         intro = 'Encode UTF-8 text as standard Base64, or decode a standard Base64 value back to text. This tool does not accept binary files. URL-safe Base64 uses a different alphabet; use the JWT Decoder for JWT header and payload sections.'
         html = re.sub(r'(<p class="lede">).*?(</p>)', lambda m: m[1] + intro + m[2], html, count=1, flags=re.S)
+    if slug == 'background-remover':
+        html = re.sub(r'<script type="module">.*?window\.removeBackgroundLib.*?</script>', '<script type="module">\nwindow.removeBackgroundLib = async (...args) => {\n  const { removeBackground } = await import("https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.5.5/+esm");\n  return removeBackground(...args);\n};\n</script>', html, count=1, flags=re.S)
     if slug == 'temp-mail' and 'id="tm-expiry"' not in html:
         html = re.sub(r'(<p\b[^>]*id="tm-status"[^>]*>.*?</p>)', lambda m: m[1] + '<p id="tm-expiry" class="small-note">Website inbox access time will appear when the address is ready.</p>', html, count=1, flags=re.S)
     if slug == 'text-diff-checker':

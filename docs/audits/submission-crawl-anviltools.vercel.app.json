@@ -1,0 +1,1174 @@
+{
+  "checkedAt": "2026-10-05T12:27:19.627Z",
+  "origin": "https://anviltools.vercel.app",
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/",
+      "expectedCanonical": "https://anviltools.vercel.app/",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/about.html",
+      "status": 200,
+      "title": "About | Anvil Tools",
+      "description": "About Anvil Tools and how our tools work.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/about.html",
+      "expectedCanonical": "https://anviltools.vercel.app/about.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/blog/index.html",
+      "status": 200,
+      "title": "Blog | Anvil Tools",
+      "description": "Blogs and practical tips from Anvil Tools.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/blog/index.html",
+      "expectedCanonical": "https://anviltools.vercel.app/blog/index.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "status": 200,
+      "title": "Developer tools | Anvil Tools",
+      "description": "Small utilities that save time during coding and testing.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/categories/developer-tools.html",
+      "expectedCanonical": "https://anviltools.vercel.app/categories/developer-tools.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/categories/email-tools.html",
+      "status": 200,
+      "title": "Email tools | Anvil Tools",
+      "description": "Tools for handling email addresses without exposing your real inbox.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/categories/email-tools.html",
+      "expectedCanonical": "https://anviltools.vercel.app/categories/email-tools.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/categories/generators.html",
+      "status": 200,
+      "title": "Generators | Anvil Tools",
+      "description": "Create passwords, QR codes, palettes, and other quick outputs.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/categories/generators.html",
+      "expectedCanonical": "https://anviltools.vercel.app/categories/generators.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/categories/image-tools.html",
+      "status": 200,
+      "title": "Image tools | Anvil Tools",
+      "description": "Edit and convert images directly in your browser.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/categories/image-tools.html",
+      "expectedCanonical": "https://anviltools.vercel.app/categories/image-tools.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/categories/pdf-tools.html",
+      "status": 200,
+      "title": "PDF tools | Anvil Tools",
+      "description": "Combine, build, and convert PDF files without installing software.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/categories/pdf-tools.html",
+      "expectedCanonical": "https://anviltools.vercel.app/categories/pdf-tools.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "status": 200,
+      "title": "Text tools | Anvil Tools",
+      "description": "Analyze and clean up written text.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/categories/text-tools.html",
+      "expectedCanonical": "https://anviltools.vercel.app/categories/text-tools.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/contact.html",
+      "status": 200,
+      "title": "Contact | Anvil Tools",
+      "description": "Get in touch with Anvil Tools.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/contact.html",
+      "expectedCanonical": "https://anviltools.vercel.app/contact.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/cookie-policy.html",
+      "status": 200,
+      "title": "Cookie policy | Anvil Tools",
+      "description": "How Anvil Tools uses cookies.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/cookie-policy.html",
+      "expectedCanonical": "https://anviltools.vercel.app/cookie-policy.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/disclaimer.html",
+      "status": 200,
+      "title": "Disclaimer | Anvil Tools",
+      "description": "Usage disclaimer for Anvil Tools.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/disclaimer.html",
+      "expectedCanonical": "https://anviltools.vercel.app/disclaimer.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "status": 200,
+      "title": "Background Removal for Design and Product Photography | Anvil Tools",
+      "description": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
+      "expectedCanonical": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "status": 200,
+      "title": "Temporary Email Best Practices for Signups | Anvil Tools",
+      "description": "Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "expectedCanonical": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/journal/simple-pdf-workflow-without-software",
+      "status": 200,
+      "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result | Anvil Tools",
+      "description": "Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software",
+      "expectedCanonical": "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/journal/small-tools-that-save-developers-time",
+      "status": 200,
+      "title": "Debug API Data with JSON, Base64, and Browser Tools | Anvil Tools",
+      "description": "Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time",
+      "expectedCanonical": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/privacy-policy.html",
+      "status": 200,
+      "title": "Privacy policy | Anvil Tools",
+      "description": "How Anvil Tools handles your data.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/privacy-policy.html",
+      "expectedCanonical": "https://anviltools.vercel.app/privacy-policy.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/terms-of-service.html",
+      "status": 200,
+      "title": "Terms of service | Anvil Tools",
+      "description": "Terms for using Anvil Tools.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/terms-of-service.html",
+      "expectedCanonical": "https://anviltools.vercel.app/terms-of-service.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "status": 200,
+      "title": "Background Remover | Anvil Tools",
+      "description": "Remove the background from a photo automatically, processed locally in your browser.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/background-remover.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/background-remover.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/base64-tool.html",
+      "status": 200,
+      "title": "Base64 Encoder & Decoder | Anvil Tools",
+      "description": "Convert text to Base64 and back, entirely in your browser.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/base64-tool.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/base64-tool.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/color-palette-generator.html",
+      "status": 200,
+      "title": "Color Palette Generator | Anvil Tools",
+      "description": "Generate a five-color palette for design work, with the option to lock colors you like.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/color-palette-generator.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/color-palette-generator.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "status": 200,
+      "title": "CSV to JSON Converter | Anvil Tools",
+      "description": "Convert quoted CSV data into JSON arrays or objects locally.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "status": 200,
+      "title": "Hash Generator | Anvil Tools",
+      "description": "Generate SHA-256, SHA-384, or SHA-512 hashes from UTF-8 text.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "status": 200,
+      "title": "Image to PDF Converter | Anvil Tools",
+      "description": "Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/index.html",
+      "status": 200,
+      "title": "All tools | Anvil Tools",
+      "description": "Browse every free tool available on Anvil Tools.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/index.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/index.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": false
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "status": 200,
+      "title": "JSON Formatter & Validator | Anvil Tools",
+      "description": "Pretty-print, minify, and validate JSON directly in your browser.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/jwt-decoder.html",
+      "status": 200,
+      "title": "JWT Decoder | Anvil Tools",
+      "description": "Inspect a JWT header and payload without uploading the token.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/jwt-decoder.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/jwt-decoder.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/password-generator.html",
+      "status": 200,
+      "title": "Password Generator | Anvil Tools",
+      "description": "Create a strong, random password with adjustable length and character types.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/password-generator.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/password-generator.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "status": 200,
+      "title": "PDF Merge | Anvil Tools",
+      "description": "Combine multiple PDF files into a single document in the order you choose.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "status": 200,
+      "title": "QR Code Generator | Anvil Tools",
+      "description": "Turn any link or short message into a scannable QR code you can download as an image.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "status": 200,
+      "title": "Temporary Email Generator | Anvil Tools",
+      "description": "Get a disposable inbox in one click for signups you don",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "status": 200,
+      "title": "Text Case Converter | Anvil Tools",
+      "description": "Convert text to upper, lower, title, sentence, camel, snake, and kebab case.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/text-diff-checker.html",
+      "status": 200,
+      "title": "Text Difference Checker | Anvil Tools",
+      "description": "Compare two texts line by line and highlight additions and removals.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/text-diff-checker.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/text-diff-checker.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/unit-converter.html",
+      "status": 200,
+      "title": "Unit Converter | Anvil Tools",
+      "description": "Convert between common length, weight, and temperature units instantly.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/unit-converter.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/unit-converter.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/unix-timestamp-converter.html",
+      "status": 200,
+      "title": "Unix Timestamp Converter | Anvil Tools",
+      "description": "Convert Unix seconds or milliseconds to readable local and UTC dates.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/unix-timestamp-converter.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/unix-timestamp-converter.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/url-encoder-decoder.html",
+      "status": 200,
+      "title": "URL Encoder & Decoder | Anvil Tools",
+      "description": "Encode text for a URL or decode percent-encoded values safely.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/url-encoder-decoder.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/url-encoder-decoder.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/user-agent-generator.html",
+      "status": 200,
+      "title": "User Agent Generator | Anvil Tools",
+      "description": "Choose fixed browser and bot user-agent strings for parser and request-header tests.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/user-agent-generator.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/user-agent-generator.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "status": 200,
+      "title": "UUID Generator | Anvil Tools",
+      "description": "Generate cryptographically random RFC 4122 version 4 UUIDs.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "status": 200,
+      "title": "Word & Character Counter | Anvil Tools",
+      "description": "Count words, characters, sentences, and estimated reading time as you type.",
+      "h1": 1,
+      "canonical": "https://anviltools.vercel.app/tools/word-counter.html",
+      "expectedCanonical": "https://anviltools.vercel.app/tools/word-counter.html",
+      "canonicalMatches": true,
+      "noindex": false,
+      "advertisingScript": false,
+      "sharedLoaderVersioned": true,
+      "workedExample": true
+    }
+  ],
+  "links": [
+    {
+      "url": "https://anviltools.vercel.app/",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/"
+    },
+    {
+      "url": "https://anviltools.vercel.app/about.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/about.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/examples/pdf/application.pdf",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/assets/examples/pdf/application.pdf"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/examples/pdf/cover.pdf",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/assets/examples/pdf/cover.pdf"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/examples/pdf/merged-example.pdf",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/assets/examples/pdf/merged-example.pdf"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/examples/pdf/support.pdf",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/assets/examples/pdf/support.pdf"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/images/editorial/background-removal-input.png",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/assets/images/editorial/background-removal-input.png"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/images/editorial/background-removal-output.png",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/assets/images/editorial/background-removal-output.png"
+    },
+    {
+      "url": "https://anviltools.vercel.app/blog/index.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/blog/index.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/categories/developer-tools.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/categories/developer-tools.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/categories/email-tools.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/categories/email-tools.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/categories/generators.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/categories/generators.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/categories/image-tools.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/categories/image-tools.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/categories/pdf-tools.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/categories/pdf-tools.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/categories/text-tools.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/categories/text-tools.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/contact.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/contact.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/cookie-policy.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/cookie-policy.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/disclaimer.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/disclaimer.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/index.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/index.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design"
+    },
+    {
+      "url": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups"
+    },
+    {
+      "url": "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software"
+    },
+    {
+      "url": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time"
+    },
+    {
+      "url": "https://anviltools.vercel.app/privacy-policy.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/privacy-policy.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/terms-of-service.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/terms-of-service.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/background-remover.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/background-remover.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/base64-tool.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/base64-tool.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/color-palette-generator.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/color-palette-generator.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/csv-to-json.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/hash-generator.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/image-to-pdf.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/index.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/index.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/json-formatter.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/jwt-decoder.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/jwt-decoder.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/password-generator.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/password-generator.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/pdf-merge.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/qr-code-generator.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/temp-mail.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/text-case-converter.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/text-diff-checker.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/text-diff-checker.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/unit-converter.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/unit-converter.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/unix-timestamp-converter.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/unix-timestamp-converter.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/url-encoder-decoder.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/url-encoder-decoder.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/user-agent-generator.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/user-agent-generator.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/uuid-generator.html"
+    },
+    {
+      "url": "https://anviltools.vercel.app/tools/word-counter.html",
+      "status": 200,
+      "finalUrl": "https://anviltools.vercel.app/tools/word-counter.html"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/atob",
+      "status": 200,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/atob"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+      "status": 200,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+    },
+    {
+      "url": "https://pdf-lib.js.org/",
+      "status": 200,
+      "finalUrl": "https://pdf-lib.js.org/"
+    },
+    {
+      "url": "https://www.google.com/policies/privacy/partners/",
+      "status": 200,
+      "finalUrl": "https://www.google.com/policies/privacy/partners/"
+    },
+    {
+      "url": "https://www.guerrillamail.com/",
+      "status": 200,
+      "finalUrl": "https://www.guerrillamail.com/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc7519",
+      "status": 200,
+      "finalUrl": "https://www.rfc-editor.org/info/rfc7519/"
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review",
+      "status": 200,
+      "type": "text/css; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review",
+      "status": 200,
+      "type": "text/css; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review",
+      "status": 200,
+      "type": "text/css; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review",
+      "status": 200,
+      "type": "text/css; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/css/tool-ux.css",
+      "status": 200,
+      "type": "text/css; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261005-pdf",
+      "status": 200,
+      "type": "text/css; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/images/anvil-mark.svg",
+      "status": 200,
+      "type": "image/svg+xml",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/images/editorial/background-removal-example.png",
+      "status": 200,
+      "type": "image/png",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/images/editorial/pdf-ordering-example.png",
+      "status": 200,
+      "type": "image/png",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/images/editorial/temporary-email-example.png",
+      "status": 200,
+      "type": "image/png",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/api.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/config.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/contact.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/main.js?v=20261005-review",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/published-posts.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tool-directory.js?v=20261005-review",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tool-examples.js?v=20261005-review",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tool-ux.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/background-remover.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/base64-tool.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/color-palette-generator.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/csv-to-json.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/hash-generator.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/image-to-pdf.js?v=20261005-pdf",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/json-formatter.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/jwt-decoder.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/password-generator.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/pdf-merge.js?v=20261005-pdf",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/qr-code-generator.js?v=20261005-review",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/temp-mail.js?v=20261005-review",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/text-case-converter.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/text-diff-checker.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/unit-converter.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/unix-timestamp-converter.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/url-encoder-decoder.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/user-agent-generator.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/uuid-generator.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/js/tools/word-counter.js?v=20261005-review",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/journal-images/925334fc-7e67-49b0-96fd-6d4b1c2ddc67",
+      "status": 200,
+      "type": "image/svg+xml",
+      "cache": "no-store"
+    },
+    {
+      "url": "https://anviltools.vercel.app/journal-images/c4244f15-2995-4aaf-b544-b37a356716db",
+      "status": 200,
+      "type": "image/svg+xml",
+      "cache": "no-store"
+    },
+    {
+      "url": "https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+      "status": 200,
+      "type": "image/webp",
+      "cache": "no-store"
+    },
+    {
+      "url": "https://anviltools.vercel.app/journal-images/f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+      "status": 200,
+      "type": "image/webp",
+      "cache": "no-store"
+    }
+  ],
+  "directives": [
+    {
+      "route": "/ads.txt",
+      "status": 200,
+      "sha256": "f899074e0f954948a813bc8003962a4653eb935bea905fde8dd1c264174c83e9",
+      "modified": false
+    },
+    {
+      "route": "/journal-sitemap.xml",
+      "status": 200,
+      "urls": [
+        "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
+        "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups",
+        "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software",
+        "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time"
+      ],
+      "wrongOrigin": []
+    },
+    {
+      "route": "/robots.txt",
+      "status": 200,
+      "sitemap": "https://anviltools.vercel.app/sitemap-index.xml",
+      "blocksPublicPages": false
+    },
+    {
+      "route": "/sitemap-index.xml",
+      "status": 200,
+      "urls": [
+        "https://anviltools.vercel.app/sitemap.xml",
+        "https://anviltools.vercel.app/journal-sitemap.xml"
+      ],
+      "wrongOrigin": []
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "urls": [
+        "https://anviltools.vercel.app/",
+        "https://anviltools.vercel.app/about.html",
+        "https://anviltools.vercel.app/blog/index.html",
+        "https://anviltools.vercel.app/categories/developer-tools.html",
+        "https://anviltools.vercel.app/categories/email-tools.html",
+        "https://anviltools.vercel.app/categories/generators.html",
+        "https://anviltools.vercel.app/categories/image-tools.html",
+        "https://anviltools.vercel.app/categories/pdf-tools.html",
+        "https://anviltools.vercel.app/categories/text-tools.html",
+        "https://anviltools.vercel.app/contact.html",
+        "https://anviltools.vercel.app/cookie-policy.html",
+        "https://anviltools.vercel.app/disclaimer.html",
+        "https://anviltools.vercel.app/privacy-policy.html",
+        "https://anviltools.vercel.app/terms-of-service.html",
+        "https://anviltools.vercel.app/tools/background-remover.html",
+        "https://anviltools.vercel.app/tools/base64-tool.html",
+        "https://anviltools.vercel.app/tools/color-palette-generator.html",
+        "https://anviltools.vercel.app/tools/csv-to-json.html",
+        "https://anviltools.vercel.app/tools/hash-generator.html",
+        "https://anviltools.vercel.app/tools/image-to-pdf.html",
+        "https://anviltools.vercel.app/tools/index.html",
+        "https://anviltools.vercel.app/tools/json-formatter.html",
+        "https://anviltools.vercel.app/tools/jwt-decoder.html",
+        "https://anviltools.vercel.app/tools/password-generator.html",
+        "https://anviltools.vercel.app/tools/pdf-merge.html",
+        "https://anviltools.vercel.app/tools/qr-code-generator.html",
+        "https://anviltools.vercel.app/tools/temp-mail.html",
+        "https://anviltools.vercel.app/tools/text-case-converter.html",
+        "https://anviltools.vercel.app/tools/text-diff-checker.html",
+        "https://anviltools.vercel.app/tools/unit-converter.html",
+        "https://anviltools.vercel.app/tools/unix-timestamp-converter.html",
+        "https://anviltools.vercel.app/tools/url-encoder-decoder.html",
+        "https://anviltools.vercel.app/tools/user-agent-generator.html",
+        "https://anviltools.vercel.app/tools/uuid-generator.html",
+        "https://anviltools.vercel.app/tools/word-counter.html"
+      ],
+      "wrongOrigin": []
+    }
+  ],
+  "limits": [
+    "HTTP checks cannot establish AdSense ownership or review status.",
+    "Email/contact delivery and future advertising are not tested.",
+    "An HTTP 200 alone does not prove editorial quality."
+  ],
+  "fragmentFailures": [],
+  "articles": [
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "matchesPreparedBody": true
+    },
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "matchesPreparedBody": true
+    },
+    {
+      "slug": "simple-pdf-workflow-without-software",
+      "matchesPreparedBody": true
+    },
+    {
+      "slug": "small-tools-that-save-developers-time",
+      "matchesPreparedBody": true
+    }
+  ],
+  "failedHttp": [],
+  "metadataFailures": [],
+  "duplicateMetadata": [],
+  "directiveFailures": [],
+  "releasePending": [],
+  "unpublishedGuides": []
+}

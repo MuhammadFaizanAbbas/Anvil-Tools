@@ -3,12 +3,14 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 from datetime import datetime, timezone
 from html import unescape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EXAMPLES = json.loads((ROOT / 'scripts/site-generator/tool-examples.json').read_text(encoding='utf-8'))
+BASE = next((arg.split('=', 1)[1] for arg in sys.argv[1:] if arg.startswith('--base=')), 'da0f9ad3cd140bba5840469eeaf807de0a43bbe3')
 
 def text(value):
     return ' '.join(unescape(re.sub(r'<[^>]+>', ' ', value)).split())
@@ -24,11 +26,11 @@ def stats(html):
     return {'readableMainWords': len(text(main).split()), 'mainHeadings': len(re.findall(r'<h[1-6]\b', main)),
             'faqQuestions': len(re.findall(r'<summary\b', main)), 'repeatedMainParagraphs': duplicates}
 
-report = {'checkedAt': datetime.now(timezone.utc).isoformat(), 'comparison': 'HEAD before this page-by-page release',
+report = {'checkedAt': datetime.now(timezone.utc).isoformat(), 'comparison': BASE,
           'scope': 'Exact normalized paragraphs of at least 12 words within each tool main element; not an internet originality check.', 'tools': []}
 for slug in EXAMPLES:
     relative = 'frontend/tools/' + slug + '.html'
-    previous = subprocess.check_output(['git', '-c', 'safe.directory=' + ROOT.as_posix(), 'show', 'HEAD:' + relative], cwd=ROOT).decode('utf-8')
+    previous = subprocess.check_output(['git', '-c', 'safe.directory=' + ROOT.as_posix(), 'show', BASE + ':' + relative], cwd=ROOT).decode('utf-8')
     current = (ROOT / relative).read_text(encoding='utf-8')
     report['tools'].append({'slug': slug, 'before': stats(previous), 'after': stats(current),
                             'checkedExample': '<!-- checked-example -->' in current})

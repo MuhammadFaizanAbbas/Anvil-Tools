@@ -112,8 +112,8 @@ def page(title, description, active_path, depth_prefix, body_html, extra_head=""
 <title>{title} | {SITE_NAME}</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{SITE_URL}/{canonical_path}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{depth_prefix}assets/css/style.css">
 <link rel="stylesheet" href="{depth_prefix}assets/css/refinements.css">
 <link rel="icon" type="image/svg+xml" href="{depth_prefix}assets/images/anvil-mark.svg">

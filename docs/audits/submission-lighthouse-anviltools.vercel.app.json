@@ -1,0 +1,715 @@
+{
+  "checkedAt": "2026-10-05T12:26:49.542Z",
+  "origin": "https://anviltools.vercel.app",
+  "environment": "Lighthouse 12.8.2, Edge headless, default mobile simulation",
+  "limits": [
+    "Lab scores vary with network, machine load, and tool versions.",
+    "Representative pages only; not an all-page performance or field Core Web Vitals result.",
+    "Tool processing after user input, screen readers, and future ad layouts are outside this navigation measurement.",
+    "No score is an AdSense approval score."
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/",
+      "warnings": [],
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1918.2489999999998,
+          "display": "1.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1918.2489999999998,
+          "display": "1.9 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.015710521005448633,
+          "display": "0.016"
+        },
+        "speed-index": {
+          "value": 2161.460885945773,
+          "display": "2.2 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.86,
+          "display": "1.9 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.98,
+          "display": "1.9 s"
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.99,
+          "display": "2.2 s"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0,
+          "display": "Est savings of 560 ms",
+          "savingsMs": 563,
+          "items": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+              "wastedMs": 1083,
+              "totalBytes": 1317
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review",
+              "wastedMs": 163,
+              "totalBytes": 4470
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 730 ms",
+          "items": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+              "wastedMs": 1083,
+              "totalBytes": 1317
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review",
+              "totalBytes": 2471
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review",
+              "totalBytes": 2673
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review",
+              "wastedMs": 163,
+              "totalBytes": 4470
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review",
+              "totalBytes": 1848
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/word-counter.html",
+      "warnings": [],
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1869.481,
+          "display": "1.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1869.481,
+          "display": "1.9 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0005312172654991901,
+          "display": "0.001"
+        },
+        "speed-index": {
+          "value": 1949.7139740426778,
+          "display": "1.9 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.88,
+          "display": "1.9 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.98,
+          "display": "1.9 s"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0,
+          "display": "Est savings of 600 ms",
+          "savingsMs": 597,
+          "items": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+              "wastedMs": 1053,
+              "totalBytes": 1317
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css",
+              "wastedMs": 150,
+              "totalBytes": 2517
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 750 ms",
+          "items": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+              "wastedMs": 1053,
+              "totalBytes": 1317
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review",
+              "totalBytes": 2471
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review",
+              "totalBytes": 1803
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css",
+              "wastedMs": 150,
+              "totalBytes": 2517
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review",
+              "totalBytes": 4470
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/background-remover.html",
+      "warnings": [],
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 2156.4065,
+          "display": "2.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2235.3044999999997,
+          "display": "2.2 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.0006345884597720341,
+          "display": "0.001"
+        },
+        "speed-index": {
+          "value": 2198.0095039586304,
+          "display": "2.2 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.79,
+          "display": "2.2 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.94,
+          "display": "2.2 s"
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.99,
+          "display": "2.2 s"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99,
+          "display": "2.2 s"
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "items": [
+            {
+              "node": "<div class=\"dropzone\" id=\"bg-dropzone\" role=\"button\" tabindex=\"0\" aria-label=\"Choose an image to remove its background\">"
+            }
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0,
+          "display": "Est savings of 680 ms",
+          "savingsMs": 675,
+          "items": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+              "wastedMs": 1177,
+              "totalBytes": 1317
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review",
+              "wastedMs": 184,
+              "totalBytes": 4515
+            }
+          ]
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0.5,
+          "display": "Est savings of 283 KiB",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/webgpu/+esm",
+              "wastedBytes": 175503,
+              "totalBytes": 177635,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "source": "/npm/onnxruntime-web@1.18.0/dist/esm/proxy-worker:./proxy-worker/main",
+                    "sourceBytes": 83702,
+                    "sourceWastedBytes": 83700
+                  },
+                  {
+                    "source": "/npm/onnxruntime-web@1.18.0/lib/wasm/binding/ort-wasm-simd-threaded.jsep.js",
+                    "sourceBytes": 10305,
+                    "sourceWastedBytes": 10255
+                  },
+                  {
+                    "source": "/npm/onnxruntime-web@1.18.0/lib/wasm/binding/ort-wasm-simd.jsep.js",
+                    "sourceBytes": 8584,
+                    "sourceWastedBytes": 8534
+                  },
+                  {
+                    "source": "jsdelivr-header.js",
+                    "sourceBytes": 5849,
+                    "sourceWastedBytes": 5116
+                  },
+                  {
+                    "source": "/npm/onnxruntime-web@1.18.0/lib/wasm/jsep/backend-webgpu.ts",
+                    "sourceBytes": 3124,
+                    "sourceWastedBytes": 3119
+                  }
+                ]
+              }
+            },
+            {
+              "url": "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/+esm",
+              "wastedBytes": 114608,
+              "totalBytes": 124375,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "source": "/npm/onnxruntime-web@1.18.0/lib/onnxjs/ort-schema/protobuf/onnx.js",
+                    "sourceBytes": 23124,
+                    "sourceWastedBytes": 21177
+                  },
+                  {
+                    "source": "/npm/onnxruntime-web@1.18.0/dist/esm/proxy-worker:./proxy-worker/main",
+                    "sourceBytes": 12806,
+                    "sourceWastedBytes": 12804
+                  },
+                  {
+                    "source": "/npm/onnxruntime-web@1.18.0/lib/onnxjs/ort-schema/flatbuffers/ort-generated.ts",
+                    "sourceBytes": 8597,
+                    "sourceWastedBytes": 7474
+                  },
+                  {
+                    "source": "jsdelivr-header.js",
+                    "sourceBytes": 6314,
+                    "sourceWastedBytes": 5328
+                  },
+                  {
+                    "source": "/npm/onnxruntime-web@1.18.0/lib/wasm/binding/ort-wasm-threaded.js",
+                    "sourceBytes": 4895,
+                    "sourceWastedBytes": 4846
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "modern-image-formats",
+          "title": "Serve images in next-gen formats",
+          "score": 0.5,
+          "display": "Est savings of 37 KiB",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/background-removal-example.png",
+              "wastedBytes": 37747.15,
+              "totalBytes": 59456,
+              "node": "<img src=\"/assets/images/editorial/background-removal-example.png\" loading=\"lazy\" alt=\"Actual synthetic mug before and after automatic background removal; unwant…\" width=\"976\" height=\"566\">"
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0.5,
+          "display": "Est savings of 37 KiB",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/background-removal-example.png",
+              "wastedBytes": 37378,
+              "totalBytes": 59456,
+              "node": "<img src=\"/assets/images/editorial/background-removal-example.png\" loading=\"lazy\" alt=\"Actual synthetic mug before and after automatic background removal; unwant…\" width=\"976\" height=\"566\">"
+            }
+          ]
+        },
+        {
+          "id": "duplicated-javascript",
+          "title": "Remove duplicate modules in JavaScript bundles",
+          "score": 0.5,
+          "display": "Est savings of 28 KiB",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "",
+              "wastedBytes": 16291,
+              "totalBytes": 0,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "url": "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/+esm"
+                  },
+                  {
+                    "url": "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/webgpu/+esm"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "",
+              "wastedBytes": 12806,
+              "totalBytes": 0,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "url": "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/webgpu/+esm",
+                    "sourceTransferBytes": 83702
+                  },
+                  {
+                    "url": "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/+esm",
+                    "sourceTransferBytes": 12806
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "items": [
+            {}
+          ]
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 51 KiB",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/background-removal-example.png",
+              "wastedBytes": 52241,
+              "totalBytes": 59456,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (976x566) for its displayed dimensions (340x197). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 52241
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 860 ms",
+          "items": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+              "wastedMs": 1177,
+              "totalBytes": 1317
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review",
+              "totalBytes": 2673
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review",
+              "totalBytes": 1803
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css",
+              "totalBytes": 2494
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review",
+              "totalBytes": 2471
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1048.8600000000001,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1836.8600000000001,
+          "display": "1.8 s"
+        },
+        "total-blocking-time": {
+          "value": 16,
+          "display": "20 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.02928705560721398,
+          "display": "0.029"
+        },
+        "speed-index": {
+          "value": 1693.1110775089303,
+          "display": "1.7 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.98,
+          "display": "1.8 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.52,
+          "display": "240 ms"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "node": "<img class=\"article-cover\" src=\"https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70…\" alt=\"Design workspace comparing a sneaker photograph with a transparent cutout,…\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review",
+              "wastedMs": 150,
+              "totalBytes": 4469
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0,
+          "display": "Est savings of 128 KiB",
+          "savingsMs": 720,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "wastedBytes": 130816,
+              "totalBytes": 150166,
+              "node": "<img class=\"article-cover\" src=\"https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70…\" alt=\"Design workspace comparing a sneaker photograph with a transparent cutout,…\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "display": "2 failure reasons",
+          "items": [
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "frameUrl": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design"
+                  }
+                ]
+              }
+            },
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "frameUrl": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "display": "Est savings of 140 KiB",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "wastedBytes": 143846,
+              "totalBytes": 150166,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1672x941) for its displayed dimensions (343x193). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 143846
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review",
+              "totalBytes": 2674
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review",
+              "totalBytes": 1802
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review",
+              "wastedMs": 150,
+              "totalBytes": 4469
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review",
+              "totalBytes": 2549
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

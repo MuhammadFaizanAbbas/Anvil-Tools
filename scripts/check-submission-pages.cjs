@@ -47,13 +47,6 @@ async function fixtures() {
     documents[name] = await PDFDocument.load(fs.readFileSync(file));
     assert.deepEqual(documents[name].getPages().map(page => [page.getWidth(), page.getHeight()]), sizes);
   }
-  if (!fs.existsSync(`${folder}/merged-example.pdf`)) {
-    const doc = await PDFDocument.create();
-    doc.setCreationDate(new Date('2026-10-05T00:00:00Z'));
-    doc.setModificationDate(new Date('2026-10-05T00:00:00Z'));
-    for (const source of Object.values(documents)) (await doc.copyPages(source, source.getPageIndices())).forEach(page => doc.addPage(page));
-    fs.writeFileSync(`${folder}/merged-example.pdf`, await doc.save());
-  }
 }
 
 (async () => {
@@ -88,6 +81,8 @@ async function fixtures() {
     }
     browser = await chromium.launch({ executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', headless: true });
     const context = await browser.newContext({ acceptDownloads: true, viewport: { width: 390, height: 900 } });
+    const externalFontRequests = [];
+    context.on('request', request => { if (/fonts\.(?:googleapis|gstatic)\.com/.test(request.url())) externalFontRequests.push(request.url()); });
     if (!live) await context.route('**/api/public/recommendations*', route => route.fulfill({ contentType: 'application/json', body: JSON.stringify(posts) }));
     await context.route('**/api/temp-mail/**', route => {
       const create = route.request().url().includes('/create');
@@ -125,6 +120,8 @@ async function fixtures() {
             await page.evaluate(() => document.querySelectorAll('details.faq-item').forEach(node => { node.open = true; }));
             await page.addScriptTag({ content: axe.source });
             const result = await page.evaluate(() => axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa', 'best-practice'] } }));
+            const labels = await page.evaluate(() => axe.run(document, { runOnly: { type: 'rule', values: ['label-content-name-mismatch'] } }));
+            result.violations.push(...labels.violations);
             const data = await page.evaluate(() => ({ h1: document.querySelectorAll('h1').length,
               title: document.title, description: document.querySelector('meta[name=description]')?.content,
               canonical: document.querySelector('link[rel=canonical]')?.href,
@@ -243,7 +240,7 @@ async function fixtures() {
     const pdf = await pdfDownload; await pdf.saveAs(`${directory}/merged-example.pdf`);
     const result = await PDFDocument.load(fs.readFileSync(`${directory}/merged-example.pdf`));
     assert.deepEqual(result.getPages().map(page => [page.getWidth(), page.getHeight()]), [[420, 594], [400, 600], [401, 601], [360, 480]]);
-    if (!live) fs.copyFileSync(`${directory}/merged-example.pdf`, 'frontend/assets/examples/pdf/merged-example.pdf');
+    if (!live && !fs.existsSync('frontend/assets/examples/pdf/merged-example.pdf')) fs.copyFileSync(`${directory}/merged-example.pdf`, 'frontend/assets/examples/pdf/merged-example.pdf');
     await record({ tool: 'pdf-merge', actualDownloadedFourPageOrder: true });
     await visit('image-to-pdf');
     await page.locator('#ip-file-input').setInputFiles(path.resolve('frontend/assets/images/editorial/background-removal-input.png'));
@@ -254,6 +251,8 @@ async function fixtures() {
     assert.deepEqual([convertedDoc.getPage(0).getWidth(), convertedDoc.getPage(0).getHeight()], [480, 360]);
     await record({ tool: 'image-to-pdf', actualPngPageDimensions: true });
     await visit('background-remover');
+    const beforeInputModules = await page.evaluate(() => performance.getEntriesByType('resource').filter(item => /cdn\.jsdelivr\.net.*(?:imgly|onnxruntime)/.test(item.name)).length);
+    assert.equal(beforeInputModules, 0, 'Background libraries must wait for image selection');
     await page.locator('#bg-file-input').setInputFiles(path.resolve('frontend/assets/images/editorial/background-removal-input.png'));
     await page.locator('#bg-download').waitFor({ state: 'visible', timeout: 180000 });
     const backgroundDownload = page.waitForEvent('download'); await page.locator('#bg-download').click();
@@ -263,13 +262,14 @@ async function fixtures() {
     let clear = 0, opaque = 0;
     for (let i = 3; i < removal.data.length; i += 4) { if (removal.data[i] === 0) clear++; if (removal.data[i] === 255) opaque++; }
     assert.ok(clear > 0 && opaque > 0);
-    await record({ tool: 'background-remover', realModelAndDownloadedAlphaChannel: true, clearPixels: clear, opaquePixels: opaque });
+    await record({ tool: 'background-remover', librariesDeferredUntilInput: true, realModelAndDownloadedAlphaChannel: true, clearPixels: clear, opaquePixels: opaque });
     await visit('temp-mail');
     await page.waitForFunction(() => document.getElementById('tm-expiry').textContent.includes('remaining'));
     await record({ tool: 'temp-mail', syntheticServerExpiryDisplayed: true, realDeliveryTested: false });
     await page.close();
     }
     report.pages.sort((a, b) => a.route.localeCompare(b.route) || a.width - b.width);
+    report.externalFontRequests = [...new Set(externalFontRequests)];
     report.failures = [...report.pages.filter(page => page.status !== 200 || page.h1 !== 1 || page.overflow || page.errors.length || page.brokenImages.length || page.violations.length), ...report.interactiveStates.filter(state => state.errors.length || state.violations.length)];
     const file = onlyRoutes ? `submission-targeted-pages-${live ? 'live' : 'local'}.json` : toolsOnly ? `submission-tool-states-${live ? 'live' : 'local'}.json` : live ? 'submission-pages-live.json' : 'submission-pages-local.json';
     fs.writeFileSync(`docs/audits/${file}`, JSON.stringify(report, null, 2) + '\n');

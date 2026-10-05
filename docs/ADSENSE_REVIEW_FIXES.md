@@ -1,6 +1,6 @@
 # October 4, 2026 review corrections
 
-**Current state:** the later [editorial cleanup](EDITORIAL_CLEANUP.md) supersedes the publication counts and static-guide catalog described below. The correct Supabase project now has four published, covered guides and 486 archived drafts, with all 490 previous records saved as revisions. Twelve unillustrated static pages have been retired. `ads.txt` remains untouched. Use the current cleanup package and checklist for deployment and your next audit.
+**Current state:** the [October 5 page-by-page release](PAGE_BY_PAGE_REVIEW_2026-10-05.md) is the current deployment and review report. The correct Supabase project has four published, covered guides; the shortened background-removal and temporary-email bodies and revised PDF workflow are now published and verified. The public-page fixes are pushed to both repositories, and the user will upload the finished `frontend` contents to cPanel while skipping `ads.txt`. The older counts and release instructions below are historical.
 
 ## Earlier release record (superseded by the cleanup)
 
