@@ -25,7 +25,7 @@ for (let index = 0; index < routes.length; index++) {
       scores: Object.fromEntries(Object.entries(lhr.categories).map(([key, category]) => [key, Math.round(category.score * 100)])),
       metrics: Object.fromEntries(['first-contentful-paint', 'largest-contentful-paint', 'total-blocking-time', 'cumulative-layout-shift', 'speed-index'].map(key => [key, { value: lhr.audits[key]?.numericValue, display: lhr.audits[key]?.displayValue }])),
       findings: failed.map(audit => ({ id: audit.id, title: audit.title, score: audit.score, display: audit.displayValue, savingsMs: audit.details?.overallSavingsMs,
-        items: audit.details?.items?.slice(0, 5).map(item => ({ url: item.url, wastedMs: item.wastedMs, wastedBytes: item.wastedBytes, totalBytes: item.totalBytes, node: item.node?.snippet, subItems: item.subItems })) })) };
+        items: Array.isArray(audit.details?.items) ? audit.details.items.slice(0, 5).map(item => ({ url: item.url, wastedMs: item.wastedMs, wastedBytes: item.wastedBytes, totalBytes: item.totalBytes, node: item.node?.snippet, subItems: item.subItems })) : undefined })) };
     summary.pages.push(page);
     console.log(JSON.stringify({ route, scores: page.scores, findings: page.findings.map(finding => finding.id), warnings: page.warnings, runtimeError: page.runtimeError }));
   } catch (error) {

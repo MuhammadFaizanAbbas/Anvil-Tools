@@ -42,22 +42,35 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.tool-grid').forEach((grid, index) => {
     const cards = [...grid.children].filter(card => card.querySelector('.tool-link'));
     if (cards.length < 6) return;
-    const search = document.createElement('div');
-    search.className = 'catalog-search';
-    search.innerHTML = `<label for="tool-search-${index}">Find a tool</label><input id="tool-search-${index}" type="search" placeholder="Search by name or category…"><span class="catalog-count" role="status"></span>`;
-    grid.before(search);
-    const empty = document.createElement('p');
-    empty.className = 'catalog-empty';
-    empty.textContent = 'No matching tools. Try a different name or category.';
-    empty.hidden = true;
-    grid.after(empty);
+    let search = document.querySelector(`[data-catalog-search="${index}"]`);
+    if (!search) {
+      search = document.createElement('div');
+      search.className = 'catalog-search';
+      search.dataset.catalogSearch = String(index);
+      search.innerHTML = `<label for="tool-search-${index}">Find a tool</label><input id="tool-search-${index}" type="search" placeholder="Search by name or category…"><span class="catalog-count" role="status"></span>`;
+      grid.before(search);
+    }
+    let empty = document.getElementById(`tool-search-empty-${index}`);
+    if (!empty) {
+      empty = document.createElement('p');
+      empty.id = `tool-search-empty-${index}`;
+      empty.className = 'catalog-empty';
+      empty.textContent = 'No matching tools. Try a different name or category.';
+      empty.hidden = true;
+      grid.after(empty);
+    }
     const input = search.querySelector('input');
     const update = () => {
       const query = input.value.trim().toLowerCase();
-      cards.forEach(card => { card.hidden = !card.textContent.toLowerCase().includes(query); });
+      cards.forEach(card => {
+        const hidden = !card.textContent.toLowerCase().includes(query);
+        if (card.hidden !== hidden) card.hidden = hidden;
+      });
       const count = cards.filter(card => !card.hidden).length;
-      search.querySelector('.catalog-count').textContent = `${count} of ${cards.length} tools`;
-      empty.hidden = count > 0;
+      const counter = search.querySelector('.catalog-count');
+      const text = `${count} of ${cards.length} tools`;
+      if (counter.textContent !== text) counter.textContent = text;
+      if (empty.hidden !== (count > 0)) empty.hidden = count > 0;
     };
     input.addEventListener('input', update);
     update();

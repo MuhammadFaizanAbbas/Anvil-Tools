@@ -32,6 +32,14 @@ def replace_surface(html, body):
 
 def write(path, html):
     html = re.sub(r'^[ \t]+$', '', html, flags=re.M)
+    if path == SITE / 'index.html':
+        html = re.sub(r'<!-- homepage-search -->.*?<!-- /homepage-search -->\s*', '', html, flags=re.S)
+        grid = re.search(r'<div class="tool-grid">(.*?)</section>', html, re.S)
+        assert grid, 'Expected homepage catalog'
+        count = len(re.findall(r'class="tool-link"', grid[1]))
+        assert count >= 6
+        search = '<!-- homepage-search --><noscript><style>[data-catalog-search]{display:none}</style></noscript><div class="catalog-search" data-catalog-search="0"><label for="tool-search-0">Find a tool</label><input id="tool-search-0" type="search" placeholder="Search by name or category…"><span class="catalog-count" role="status">' + str(count) + ' of ' + str(count) + ' tools</span></div><p class="catalog-empty" id="tool-search-empty-0" hidden>No matching tools. Try a different name or category.</p><!-- /homepage-search -->\n'
+        html = html.replace('<div class="tool-grid">', search + '<div class="tool-grid">', 1)
     html = html.replace('Turn one or more JPG or PNG images into a single downloadable PDF.', 'Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.')
     html = html.replace('Grab realistic browser and bot user-agent strings for testing how your site responds.', 'Choose fixed browser and bot user-agent strings for parser and request-header tests.')
     html = re.sub(r'(<div class="tool-grid") aria-labelledby="(?:category|directory)-tools-title"', r'\1', html)
