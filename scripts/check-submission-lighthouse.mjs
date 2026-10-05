@@ -6,16 +6,18 @@ import { launch } from '../deployment/lighthouse-review/node_modules/chrome-laun
 const origin = new URL(process.argv[2] || 'https://anviltools.vercel.app').origin;
 const routeArgument = process.argv.find(argument => argument.startsWith('--routes='));
 const routes = routeArgument ? routeArgument.slice('--routes='.length).split(',') : ['/', '/tools/word-counter.html', '/tools/background-remover.html', '/journal/best-practices-for-background-removal-when-working-with-design'];
-const folder = 'deployment/page-review-2026-10-05/lighthouse';
+const folder = process.argv.find(argument => argument.startsWith('--folder='))?.slice('--folder='.length) || 'deployment/page-review-2026-10-05/lighthouse';
+const reportPath = process.argv.find(argument => argument.startsWith('--report='))?.slice('--report='.length) || `docs/audits/submission-lighthouse-${new URL(origin).hostname}.json`;
+const browserPath = process.argv.includes('--chrome') ? 'C:/Program Files/Google/Chrome/Application/chrome.exe' : 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
 fs.mkdirSync(folder, { recursive: true });
-const summary = { checkedAt: new Date().toISOString(), origin, environment: 'Lighthouse 12.8.2, Edge headless, default mobile simulation',
+const summary = { checkedAt: new Date().toISOString(), origin, environment: `Lighthouse 12.8.2, ${process.argv.includes('--chrome') ? 'Chrome' : 'Edge'} headless, default mobile simulation`,
   limits: ['Lab scores vary with network, machine load, and tool versions.', 'Representative pages only; not an all-page performance or field Core Web Vitals result.', 'Tool processing after user input, screen readers, and future ad layouts are outside this navigation measurement.', 'No score is an AdSense approval score.'], pages: [] };
 
 for (let index = 0; index < routes.length; index++) {
   const route = routes[index];
   let chrome;
   try {
-    chrome = await launch({ chromePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', chromeFlags: ['--headless', '--disable-gpu'] });
+    chrome = await launch({ chromePath: browserPath, chromeFlags: ['--headless', '--disable-gpu'] });
     const result = await lighthouse(origin + route, { port: chrome.port, logLevel: 'error', output: ['html', 'json'], onlyCategories: ['performance', 'accessibility', 'best-practices', 'seo'] });
     const lhr = result.lhr;
     fs.writeFileSync(`${folder}/${new URL(origin).hostname}-${index}.html`, result.report[0]);
@@ -34,6 +36,6 @@ for (let index = 0; index < routes.length; index++) {
     process.exitCode = 1;
   } finally {
     if (chrome) await chrome.kill();
-    fs.writeFileSync(`docs/audits/submission-lighthouse-${new URL(origin).hostname}.json`, JSON.stringify(summary, null, 2) + '\n');
+    fs.writeFileSync(reportPath, JSON.stringify(summary, null, 2) + '\n');
   }
 }

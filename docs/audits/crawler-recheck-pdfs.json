@@ -1,0 +1,117 @@
+{
+  "engine": "pypdf",
+  "scope": "fresh interactive browser downloads",
+  "outputs": [
+    {
+      "file": "merge-chrome.pdf",
+      "sha256": "18f8a33595338b0aefd19eab44ce5e3a258f72565a375128a4510d9236d0cefc",
+      "pages": 4,
+      "dimensions": [
+        [
+          420.0,
+          594.0
+        ],
+        [
+          400.0,
+          600.0
+        ],
+        [
+          401.0,
+          601.0
+        ],
+        [
+          360.0,
+          480.0
+        ]
+      ],
+      "pageText": [
+        "Synthetic cover / 1",
+        "Synthetic application / 1",
+        "Synthetic application / 2",
+        "Synthetic support / 1"
+      ],
+      "passed": true
+    },
+    {
+      "file": "mixed-images-chrome.pdf",
+      "sha256": "ecded44e186230d22da2848dc028a58a6bb865481c4fc37c062bf8e8c614c2c6",
+      "pages": 2,
+      "dimensions": [
+        [
+          480.0,
+          360.0
+        ],
+        [
+          480.0,
+          640.0
+        ]
+      ],
+      "pageText": [
+        "",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "file": "merge-edge.pdf",
+      "sha256": "15c9da9c32dd4a605e0948990920ca7916db89d4a492aab6ac0af0f8dbb475e3",
+      "pages": 4,
+      "dimensions": [
+        [
+          420.0,
+          594.0
+        ],
+        [
+          400.0,
+          600.0
+        ],
+        [
+          401.0,
+          601.0
+        ],
+        [
+          360.0,
+          480.0
+        ]
+      ],
+      "pageText": [
+        "Synthetic cover / 1",
+        "Synthetic application / 1",
+        "Synthetic application / 2",
+        "Synthetic support / 1"
+      ],
+      "passed": true
+    },
+    {
+      "file": "mixed-images-edge.pdf",
+      "sha256": "a7921326616454fd5d17127d27b26238ff11a643db0c100da3fa30375924b09b",
+      "pages": 2,
+      "dimensions": [
+        [
+          480.0,
+          360.0
+        ],
+        [
+          480.0,
+          640.0
+        ]
+      ],
+      "pageText": [
+        "",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "file": "photo-cutout.pdf",
+      "pages": 1,
+      "dimensions": [
+        [
+          960,
+          1280
+        ]
+      ],
+      "passed": true
+    }
+  ]
+}

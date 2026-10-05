@@ -6,12 +6,12 @@
 <title>Generators | Anvil Tools</title>
 <meta name="description" content="Create passwords, QR codes, palettes, and other quick outputs.">
 <link rel="canonical" href="https://anviltools.vercel.app/categories/generators.html">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review4">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-recheck1">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-recheck1">
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review4">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-recheck1">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-recheck1">
 <meta property="og:type" content="website"><meta property="og:title" content="Generators | Anvil Tools"><meta property="og:description" content="Create passwords, QR codes, palettes, and other quick outputs."><meta property="og:url" content="https://anviltools.vercel.app/categories/generators.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript><!-- local-font-preload --><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin><!-- /local-font-preload --></head>
 <body class="public-site">
@@ -73,6 +73,7 @@
 
 <!-- expanded-content --><!-- reading-surface --><div class="content-guide"><section class="info-section"><h2>Choose the kind of output you need</h2><div class="table-scroll" role="region" aria-label="Generator choices" tabindex="0"><table><thead><tr><th scope="col">Task</th><th scope="col">Tool</th><th scope="col">What to verify</th></tr></thead><tbody><tr><td>Share a fixed URL on a flyer</td><td><a href="../tools/qr-code-generator.html">QR Code Generator</a></td><td>Decode the downloaded image and test the final print size with a phone.</td></tr><tr><td>Create a private credential</td><td><a href="../tools/password-generator.html">Password Generator</a></td><td>Use the receiving service's rules, then save a unique value privately.</td></tr><tr><td>Name a record or test object</td><td><a href="../tools/uuid-generator.html">UUID Generator</a></td><td>Retain the full identifier and enforce uniqueness in storage; it is not an access permission.</td></tr><tr><td>Explore a presentation's colors</td><td><a href="../tools/color-palette-generator.html">Color Palette Generator</a></td><td>Lock useful colors, export CSS, and check the actual text/background pairs.</td></tr><tr><td>Build client-parser fixtures</td><td><a href="../tools/user-agent-generator.html">User Agent Generator</a></td><td>Use samples as test strings. They do not emulate a real browser or verify crawler identity.</td></tr></tbody></table></div></section>
 <section class="info-section"><h2>Keep public examples separate from private values</h2><p>A QR destination and a palette can be shared openly when their contents are intended to be public. A generated password must stay private. A UUID can identify a record, but the application must still decide who may access it. User-agent strings can be forged and should not establish identity. Generated output is a starting point for the task, not evidence that these surrounding checks have passed.</p><p>For a page or document, prepare the destination first, generate a QR code for its final URL, and check the code on the actual design. For test data, use invented records and inspect their JSON types in the <a href="/journal/small-tools-that-save-developers-time">developer workflow</a>.</p></section>
+<!-- qr-check-evidence --><section class="info-section"><h2>Check the downloaded code before printing</h2><p>The <a href="/assets/examples/qr-check.png">recorded QR PNG</a> was independently decoded to exactly <code>https://nevco.online/</code>. Use the <a href="/assets/examples/qr-print-check.pdf">print check sheet</a> with its clear surrounding margin, then scan the printed copy with your phone and compare that exact destination. Computer decoding does not replace checking the final printed size, contrast, and camera result.</p></section>
 </div><!-- /reading-surface --><!-- /expanded-content --></main>
 <footer class="site-footer">
   <div class="wrap">
@@ -118,7 +119,7 @@
 
 
 
-<script src="../assets/js/main.js?v=20261005-review4"></script>
+<script src="../assets/js/main.js?v=20261005-recheck1"></script>
 
 </body>
 </html>

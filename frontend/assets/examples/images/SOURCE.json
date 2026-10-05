@@ -1,0 +1,18 @@
+{
+  "title": "Mug image.jpg",
+  "author": "Mohanraj55",
+  "license": "CC0 1.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Mug_image.jpg",
+  "original": "https://upload.wikimedia.org/wikipedia/commons/0/00/Mug_image.jpg",
+  "originalSha1": "f6059ba70211d748ae1a658e26bd414721e9bdae",
+  "originalDimensions": [
+    960,
+    1280
+  ],
+  "derivedWebpDimensions": [
+    480,
+    640
+  ],
+  "transformation": "Resized and encoded as WebP; no retouch or manual cutout",
+  "checkedAt": "2026-10-05"
+}

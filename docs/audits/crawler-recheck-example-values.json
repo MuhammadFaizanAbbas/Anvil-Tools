@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-05T19:13:50.590Z",
+  "checks": [
+    {
+      "name": "UTF-8 accent/emoji round trip",
+      "passed": true
+    },
+    {
+      "name": "Connected workflow expected UTF-8 Base64",
+      "passed": true
+    },
+    {
+      "name": "Trailing LF changes SHA-256; browser textarea normalizes CRLF to LF",
+      "passed": true
+    },
+    {
+      "name": "Connected workflow exact-byte SHA-256",
+      "passed": true
+    },
+    {
+      "name": "Moved line appears as addition/removal",
+      "passed": true
+    },
+    {
+      "name": "Negative-temperature conversion and inverse",
+      "passed": true
+    },
+    {
+      "name": "Two explicit instants for New York DST overlap",
+      "passed": true
+    },
+    {
+      "name": "Fresh UUID version/variant/format and distinct batch",
+      "passed": true
+    },
+    {
+      "name": "Contact persistence wording and failure recovery with synthetic responses",
+      "passed": true
+    },
+    {
+      "name": "Actual photograph cutout converted to PDF at a 390px phone viewport",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Contact responses are mocked; no submission, receipt, or support reply sent."
+  ]
+}

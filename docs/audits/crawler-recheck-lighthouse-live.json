@@ -1,0 +1,655 @@
+{
+  "checkedAt": "2026-10-05T19:08:14.378Z",
+  "origin": "https://nevco.online",
+  "environment": "Lighthouse 12.8.2, Chrome headless, default mobile simulation",
+  "limits": [
+    "Lab scores vary with network, machine load, and tool versions.",
+    "Representative pages only; not an all-page performance or field Core Web Vitals result.",
+    "Tool processing after user input, screen readers, and future ad layouts are outside this navigation measurement.",
+    "No score is an AdSense approval score."
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://nevco.online/",
+      "warnings": [],
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1347.2615,
+          "display": "1.3 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1413.2615,
+          "display": "1.4 s"
+        },
+        "total-blocking-time": {
+          "value": 16,
+          "display": "20 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 3491.331871999724,
+          "display": "3.5 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.98,
+          "display": "1.3 s"
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.88,
+          "display": "3.5 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.33,
+          "display": "310 ms"
+        },
+        {
+          "id": "server-response-time",
+          "title": "Reduce initial server response time",
+          "score": 0,
+          "display": "Root document took 750 ms",
+          "savingsMs": 651.1680000000001,
+          "items": [
+            {
+              "url": "https://nevco.online/"
+            }
+          ]
+        },
+        {
+          "id": "uses-long-cache-ttl",
+          "title": "Serve static assets with an efficient cache policy",
+          "score": 0.5,
+          "display": "3 resources found",
+          "items": [
+            {
+              "url": "https://nevco.online/assets/fonts/inter-latin.woff2",
+              "wastedBytes": 4839.199999999999,
+              "totalBytes": 48392
+            },
+            {
+              "url": "https://nevco.online/assets/fonts/space-grotesk-latin.woff2",
+              "wastedBytes": 2241.1999999999994,
+              "totalBytes": 22412
+            },
+            {
+              "url": "https://nevco.online/assets/images/anvil-mark.svg",
+              "wastedBytes": 34.699999999999996,
+              "totalBytes": 347
+            }
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://nevco.online/assets/css/content.css?v=20261005-review4",
+              "wastedMs": 150,
+              "totalBytes": 1504
+            }
+          ]
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "display": "Est savings of 7 KiB",
+          "items": [
+            {
+              "url": "https://nevco.online/assets/fonts/inter-latin.woff2",
+              "wastedBytes": 4839.199999999999,
+              "totalBytes": 48392
+            },
+            {
+              "url": "https://nevco.online/assets/fonts/space-grotesk-latin.woff2",
+              "wastedBytes": 2241.1999999999994,
+              "totalBytes": 22412
+            },
+            {
+              "url": "https://nevco.online/assets/images/anvil-mark.svg",
+              "wastedBytes": 34.699999999999996,
+              "totalBytes": 347
+            }
+          ]
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "display": "Est savings of 650 ms"
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://nevco.online/assets/css/content.css?v=20261005-review4",
+              "wastedMs": 150,
+              "totalBytes": 1504
+            },
+            {
+              "url": "https://nevco.online/assets/css/design.css?v=20261005-review4",
+              "totalBytes": 3919
+            },
+            {
+              "url": "https://nevco.online/assets/css/refinements.css?v=20261005-review4",
+              "totalBytes": 2039
+            },
+            {
+              "url": "https://nevco.online/assets/css/style.css?v=20261005-review4",
+              "totalBytes": 2972
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://nevco.online/tools/background-remover.html",
+      "warnings": [],
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1283.9195,
+          "display": "1.3 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1328.9195,
+          "display": "1.3 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 2809.015436650352,
+          "display": "2.8 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.98,
+          "display": "1.3 s"
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.96,
+          "display": "2.8 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.2,
+          "display": "380 ms"
+        },
+        {
+          "id": "server-response-time",
+          "title": "Reduce initial server response time",
+          "score": 0,
+          "display": "Root document took 700 ms",
+          "savingsMs": 599.372,
+          "items": [
+            {
+              "url": "https://nevco.online/tools/background-remover.html"
+            }
+          ]
+        },
+        {
+          "id": "uses-long-cache-ttl",
+          "title": "Serve static assets with an efficient cache policy",
+          "score": 0.5,
+          "display": "4 resources found",
+          "items": [
+            {
+              "url": "https://nevco.online/assets/fonts/inter-latin.woff2",
+              "wastedBytes": 4839.199999999999,
+              "totalBytes": 48392
+            },
+            {
+              "url": "https://nevco.online/assets/images/editorial/background-removal-example-960.webp",
+              "wastedBytes": 2560.2999999999993,
+              "totalBytes": 25603
+            },
+            {
+              "url": "https://nevco.online/assets/fonts/space-grotesk-latin.woff2",
+              "wastedBytes": 2241.1999999999994,
+              "totalBytes": 22412
+            },
+            {
+              "url": "https://nevco.online/assets/images/anvil-mark.svg",
+              "wastedBytes": 34.699999999999996,
+              "totalBytes": 347
+            }
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://nevco.online/assets/css/tool-ux.css",
+              "wastedMs": 150,
+              "totalBytes": 2160
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0.5,
+          "display": "Est savings of 15 KiB",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://nevco.online/assets/images/editorial/background-removal-example-960.webp",
+              "wastedBytes": 15699,
+              "totalBytes": 25470,
+              "node": "<img src=\"https://nevco.online/assets/images/editorial/background-removal-example-96…\" loading=\"lazy\" alt=\"Actual synthetic mug before and after automatic background removal; unwant…\" width=\"976\" height=\"566\">"
+            }
+          ]
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "display": "Est savings of 9 KiB",
+          "items": [
+            {
+              "url": "https://nevco.online/assets/fonts/inter-latin.woff2",
+              "wastedBytes": 4839.199999999999,
+              "totalBytes": 48392
+            },
+            {
+              "url": "https://nevco.online/assets/images/editorial/background-removal-example-960.webp",
+              "wastedBytes": 2560.2999999999993,
+              "totalBytes": 25603
+            },
+            {
+              "url": "https://nevco.online/assets/fonts/space-grotesk-latin.woff2",
+              "wastedBytes": 2241.1999999999994,
+              "totalBytes": 22412
+            },
+            {
+              "url": "https://nevco.online/assets/images/anvil-mark.svg",
+              "wastedBytes": 34.699999999999996,
+              "totalBytes": 347
+            }
+          ]
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "display": "Est savings of 600 ms"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 22 KiB",
+          "items": [
+            {
+              "url": "https://nevco.online/assets/images/editorial/background-removal-example-960.webp",
+              "wastedBytes": 22275,
+              "totalBytes": 25470,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (960x557) for its displayed dimensions (340x197). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 22275
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://nevco.online/assets/css/tool-ux.css",
+              "wastedMs": 150,
+              "totalBytes": 2160
+            },
+            {
+              "url": "https://nevco.online/assets/css/content.css?v=20261005-review4",
+              "totalBytes": 1504
+            },
+            {
+              "url": "https://nevco.online/assets/css/design.css?v=20261005-review4",
+              "totalBytes": 3919
+            },
+            {
+              "url": "https://nevco.online/assets/css/refinements.css?v=20261005-review4",
+              "totalBytes": 2039
+            },
+            {
+              "url": "https://nevco.online/assets/css/style.css?v=20261005-review4",
+              "totalBytes": 2972
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://nevco.online/journal/best-practices-for-background-removal-when-working-with-design",
+      "warnings": [],
+      "scores": {
+        "performance": 90,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1296.246,
+          "display": "1.3 s"
+        },
+        "largest-contentful-paint": {
+          "value": 3500.182,
+          "display": "3.5 s"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.02928705560721398,
+          "display": "0.029"
+        },
+        "speed-index": {
+          "value": 3186.9672133287613,
+          "display": "3.2 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.98,
+          "display": "1.3 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.64,
+          "display": "3.5 s"
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.92,
+          "display": "3.2 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.15,
+          "display": "420 ms"
+        },
+        {
+          "id": "server-response-time",
+          "title": "Reduce initial server response time",
+          "score": 0,
+          "display": "Root document took 1,040 ms",
+          "savingsMs": 938.0830000000001,
+          "items": [
+            {
+              "url": "https://nevco.online/journal/best-practices-for-background-removal-when-working-with-design"
+            }
+          ]
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.92,
+          "display": "3.5 s"
+        },
+        {
+          "id": "uses-rel-preconnect",
+          "title": "Preconnect to required origins",
+          "score": 0,
+          "display": "Est savings of 380 ms",
+          "savingsMs": 376.576,
+          "items": [
+            {
+              "url": "https://anvil-tools-backend.vercel.app",
+              "wastedMs": 376.576
+            }
+          ]
+        },
+        {
+          "id": "largest-contentful-paint-element",
+          "title": "Largest Contentful Paint element",
+          "score": 0,
+          "display": "3,500 ms",
+          "items": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://nevco.online/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "node": "<img class=\"article-cover\" src=\"https://nevco.online/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2\" alt=\"Design workspace comparing a sneaker photograph with a transparent cutout,…\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "uses-long-cache-ttl",
+          "title": "Serve static assets with an efficient cache policy",
+          "score": 0.5,
+          "display": "4 resources found",
+          "items": [
+            {
+              "url": "https://nevco.online/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "wastedBytes": 120375.20000000001,
+              "totalBytes": 150469
+            },
+            {
+              "url": "https://nevco.online/assets/fonts/inter-latin.woff2",
+              "wastedBytes": 4849.399999999999,
+              "totalBytes": 48494
+            },
+            {
+              "url": "https://nevco.online/assets/fonts/space-grotesk-latin.woff2",
+              "wastedBytes": 2234.6999999999994,
+              "totalBytes": 22347
+            },
+            {
+              "url": "https://nevco.online/assets/images/anvil-mark.svg",
+              "wastedBytes": 36.49999999999999,
+              "totalBytes": 365
+            }
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://nevco.online/assets/css/design.css?v=20261005-review4",
+              "wastedMs": 150,
+              "totalBytes": 3918
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0,
+          "display": "Est savings of 128 KiB",
+          "savingsMs": 620,
+          "items": [
+            {
+              "url": "https://nevco.online/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "wastedBytes": 130816,
+              "totalBytes": 150166,
+              "node": "<img class=\"article-cover\" src=\"https://nevco.online/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2\" alt=\"Design workspace comparing a sneaker photograph with a transparent cutout,…\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "display": "Est savings of 125 KiB",
+          "items": [
+            {
+              "url": "https://nevco.online/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "wastedBytes": 120375.20000000001,
+              "totalBytes": 150469
+            },
+            {
+              "url": "https://nevco.online/assets/fonts/inter-latin.woff2",
+              "wastedBytes": 4849.399999999999,
+              "totalBytes": 48494
+            },
+            {
+              "url": "https://nevco.online/assets/fonts/space-grotesk-latin.woff2",
+              "wastedBytes": 2234.6999999999994,
+              "totalBytes": 22347
+            },
+            {
+              "url": "https://nevco.online/assets/images/anvil-mark.svg",
+              "wastedBytes": 36.49999999999999,
+              "totalBytes": 365
+            }
+          ]
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "display": "Est savings of 950 ms"
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "display": "Est savings of 140 KiB",
+          "items": [
+            {
+              "url": "https://nevco.online/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "wastedBytes": 143846,
+              "totalBytes": 150166,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1672x941) for its displayed dimensions (343x193). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 143846
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://nevco.online/assets/css/content.css?v=20261005-review4",
+              "totalBytes": 1481
+            },
+            {
+              "url": "https://nevco.online/assets/css/design.css?v=20261005-review4",
+              "wastedMs": 150,
+              "totalBytes": 3918
+            },
+            {
+              "url": "https://nevco.online/assets/css/style.css?v=20261005-review4",
+              "totalBytes": 2960
+            },
+            {
+              "url": "https://nevco.online/assets/css/refinements.css?v=20261005-review4",
+              "totalBytes": 2039
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "input": "quoted-newline.csv",
+  "headers": true,
+  "expectedJson": "expected.json",
+  "minifiedJson": "expected.min.json",
+  "utf8Base64": "expected.base64.txt",
+  "sha256OfMinifiedJson": "116cfe62138e4a0a755d1abbb8e8b9e8d7719c48fd813bc568ed2cf3baf69c45",
+  "lineEndings": "LF; minified JSON and Base64 have no trailing newline",
+  "syntheticData": true
+}

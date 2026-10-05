@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
       objectUrls.push(resultUrl);
       showImage(resultUrl, 'Result');
       downloadBtn.style.display = 'inline-block';
-      setStatus('Background removed successfully.');
+      setStatus('PNG ready. Inspect retained background, missing details, and edges before using the result.');
     } catch (error) {
       console.error('Background removal failed:', error);
       if (controller.signal.aborted) {

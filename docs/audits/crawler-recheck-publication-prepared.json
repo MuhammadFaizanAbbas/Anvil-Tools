@@ -1,0 +1,35 @@
+{
+  "preparedAt": "2026-10-05T19:10:35.009Z",
+  "projectId": "epxzxcqsonxscyvbopqt",
+  "state": "prepared-not-published",
+  "articles": [
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "expectedBodyMd5": "f542083184b6026754508eee49bedeb4",
+      "bodyMd5": "f8c9282d84d5e39d9b58c5a74abc41ad",
+      "bytes": 12100,
+      "h2Sections": 1
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "expectedBodyMd5": "21b0ecca0300ead9826cab5c145debaf",
+      "bodyMd5": "2aefea27586a982c827dd249aa7ab3b7",
+      "bytes": 13071,
+      "h2Sections": 1
+    },
+    {
+      "slug": "simple-pdf-workflow-without-software",
+      "expectedBodyMd5": "4c7d93990386cc959ab3394b6ed8f8dc",
+      "bodyMd5": "6eed47aa5bb1a569efe8d59075312c97",
+      "bytes": 11695,
+      "h2Sections": 1
+    },
+    {
+      "slug": "small-tools-that-save-developers-time",
+      "expectedBodyMd5": "1a828a7a0c5a24a87c7e7a139d9cdbd0",
+      "bodyMd5": "fffae3a824314a2e5ffdcff4cfd4fcd1",
+      "bytes": 14029,
+      "h2Sections": 1
+    }
+  ]
+}

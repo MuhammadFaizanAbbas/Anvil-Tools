@@ -6,8 +6,8 @@
 <title>Background Remover | Anvil Tools</title>
 <meta name="description" content="Remove the background from a photo automatically, processed locally in your browser.">
 <link rel="canonical" href="https://anviltools.vercel.app/tools/background-remover.html">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review4">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-recheck1">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-recheck1">
 <script type="module">
 window.removeBackgroundLib = async (...args) => {
   const { removeBackground } = await import("https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.5.5/+esm");
@@ -15,9 +15,9 @@ window.removeBackgroundLib = async (...args) => {
 };
 </script>
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-recheck1">
 <link rel="stylesheet" href="../assets/css/tool-ux.css">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-recheck1">
 <meta property="og:type" content="website"><meta property="og:title" content="Background Remover | Anvil Tools"><meta property="og:description" content="Remove the background from a photo automatically, processed locally in your browser."><meta property="og:url" content="https://anviltools.vercel.app/tools/background-remover.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript><!-- local-font-preload --><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin><!-- /local-font-preload --></head>
 <body class="public-site">
@@ -59,7 +59,7 @@ window.removeBackgroundLib = async (...args) => {
 
 
 
-<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Inspect an actual removal result</h2><p>Our synthetic mug example is 480 × 360 pixels. The tool produced a transparent PNG at the same dimensions, but beige speckles remained near the handle. This simple illustration does not establish quality on hair, glass, or difficult photographs.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>Source</td><td>A solid mug against a pale illustrated background.</td></tr><tr><td>Result</td><td>Transparent surroundings with some unwanted pixels still present.</td></tr><tr><td>Decision</td><td>Check on light and dark backgrounds; use a manual editor if the retained pixels matter.</td></tr></tbody></table></div><figure><picture><source type="image/webp" srcset="/assets/images/editorial/background-removal-example-480.webp 480w, /assets/images/editorial/background-removal-example-960.webp 960w, /assets/images/editorial/background-removal-example-976.webp 976w" sizes="(max-width: 800px) calc(100vw - 72px), 1000px"><img src="/assets/images/editorial/background-removal-example.png" loading="lazy" alt="Actual synthetic mug before and after automatic background removal; unwanted pale pixels remain near the handle." width="976" height="566"></picture><figcaption>Actual tool output on a synthetic illustration, with imperfections retained.</figcaption></figure><p><a href="/assets/images/editorial/background-removal-input.png" download>Download the test input</a> · <a href="/assets/images/editorial/background-removal-output.png" download>Inspect the transparent PNG result</a></p></section><!-- /checked-example --><section class="info-section">
+<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Inspect an actual removal result</h2><p>The recorded 480 × 360 synthetic mug output retains large beige areas above the rim and around the handle, together with smaller edge remnants. Transparent pixels do not make it a clean cutout. Inspect the complete result; use a manual editor or another source if fragments remain.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>Source</td><td>A solid mug against a pale illustrated background.</td></tr><tr><td>Result</td><td>Some pixels become transparent, but substantial background areas remain. The recorded result needs manual cleanup.</td></tr><tr><td>Decision</td><td>Check on light and dark backgrounds; use a manual editor if the retained pixels matter.</td></tr></tbody></table></div><p><a href="/assets/examples/images/mug-photo.jpg">Download the licensed photograph</a> · <a href="/assets/examples/images/mug-photo-output.png">Inspect its actual model output</a> · <a href="/assets/examples/images/SOURCE.json">Photograph source and CC0 license</a></p><figure><picture><source type="image/webp" srcset="/assets/images/editorial/background-removal-example-480.webp 480w, /assets/images/editorial/background-removal-example-960.webp 960w, /assets/images/editorial/background-removal-example-976.webp 976w" sizes="(max-width: 800px) calc(100vw - 72px), 1000px"><img src="/assets/images/editorial/background-removal-example.png" loading="lazy" alt="Actual synthetic mug before and after automatic background removal; large beige background areas remain above the rim and around the handle." width="976" height="566"></picture><figcaption>Actual synthetic result: large background fragments remain; manual cleanup is needed.</figcaption></figure><p><a href="/assets/images/editorial/background-removal-input.png" download>Download the test input</a> · <a href="/assets/images/editorial/background-removal-output.png" download>Inspect the transparent PNG result</a></p></section><!-- /checked-example --><section class="info-section">
   <h2>How it works</h2>
   <ul><li>When you choose a file, a compact background-segmentation model loads in your browser (only once per visit).</li>
 <li>The model identifies the main subject and produces a version of the image with a transparent background.</li>
@@ -127,8 +127,8 @@ window.removeBackgroundLib = async (...args) => {
 
 
 
-<script src="../assets/js/main.js?v=20261005-review4"></script>
-<script src="../assets/js/tools/background-remover.js"></script>
+<script src="../assets/js/main.js?v=20261005-recheck1"></script>
+<script src="../assets/js/tools/background-remover.js?v=20261005-recheck1"></script>
 <script src="../assets/js/tool-ux.js"></script>
 </body>
 </html>

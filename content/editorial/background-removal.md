@@ -42,7 +42,7 @@ The example below uses a synthetic product illustration as a repeatable browser 
 
 To repeat the check, [download the synthetic mug input](/assets/images/editorial/background-removal-input.png), run it through the tool, and inspect the handle opening and outer rim. Compare your downloaded output with the original. Results can differ across tool versions and devices; the screenshot is evidence for this sample only.
 
-In this run, the mug's main outline survived, but beige background speckles remained around the upper edge and handle. The exported PNG had both transparent and opaque pixels, yet the cutout still needed cleanup. That is a concrete reason to inspect the image after a successful processing message. [Download the recorded output](/assets/images/editorial/background-removal-output.png) to compare the remaining background with the source in your own editor.
+In this run, the mug's main outline survived, but large beige background areas remained above the rim and around the handle, together with smaller edge remnants. The exported PNG had both transparent and opaque pixels, but it was not a clean cutout and needed substantial manual cleanup. That is a concrete reason to inspect the image after a successful processing message. [Download the recorded output](/assets/images/editorial/background-removal-output.png) to compare the remaining background with the source in your own editor.
 
 For your own photograph, record three observations: whether the subject's shape survived, whether background fragments remain, and whether any needed shadow disappeared. That short record makes it easier to decide whether to accept the output, refine it elsewhere, or choose another source. Repeating the same automatic operation on an unchanged source is not a substitute for identifying the defect.
 
@@ -85,3 +85,15 @@ A simple handoff can contain `source/`, `cutouts/`, and `exports/` folders. Incl
 Open the export independently of the tool preview. Check that it has the expected dimensions, the complete subject is present, and transparency survives in an application that supports it. Place it in the final website, slide, or design and inspect that placement at its actual size. A good standalone cutout can still look wrong after cropping, scaling, or changing the background.
 
 Accept the result when it preserves the subject and works in its destination. Use a layer editor when the defects are localized and recoverable. Choose another source when the outline is ambiguous, the image is blurred, or transparent material requires extensive reconstruction. These decisions save time and produce a more dependable asset than treating every automatic output as finished.
+
+## Check a licensed product photograph
+
+The second check uses a product photograph of a cup on patterned fabric, with its handle against the surrounding cloth. [Mug image.jpg by Mohanraj55](https://commons.wikimedia.org/wiki/File:Mug_image.jpg) is released under CC0 1.0. The following previews are resized for this page; the downloadable source and model result retain the full 960 × 1280 dimensions. No manual cutout or retouch was used.
+
+![Licensed cup photograph before automatic removal; patterned fabric crosses behind the handle](/assets/images/editorial/mug-photo-input.webp)
+
+![Actual model output: cup retained, with unwanted fabric extending from the handle toward the right edge](/assets/images/editorial/mug-photo-output.webp)
+
+In the recorded Chrome desktop run at an emulated 390-pixel touch viewport, first processing took 34.4 seconds; measured first-party model/runtime resource bodies totaled 52.4 MiB. This is one desktop lab run, not a phone CPU or general speed guarantee. The cup outline and green handle remain. Most wall and cloth pixels become transparent, but a large fabric fragment extends from the handle to the right edge; small background remnants remain below the handle and along the cup edge. This output needs manual cleanup.
+
+[Download the original photograph](/assets/examples/images/mug-photo.jpg), [inspect the actual transparent PNG](/assets/examples/images/mug-photo-output.png), and [read the source and license record](/assets/examples/images/SOURCE.json). Check the handle opening, right edge, and any background fragments on both light and dark surfaces before using the result. A successful export confirms processing; it does not establish a finished product cutout.

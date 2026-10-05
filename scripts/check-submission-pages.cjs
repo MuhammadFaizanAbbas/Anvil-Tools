@@ -79,7 +79,9 @@ async function fixtures() {
       await new Promise(resolve => server.once('listening', resolve));
       origin = `http://127.0.0.1:${server.address().port}`;
     }
-    browser = await chromium.launch({ executablePath: 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', headless: true });
+    console.log('Launching public-page browser audit.');
+    browser = await chromium.launch({ executablePath: process.argv.includes('--chrome') ? 'C:/Program Files/Google/Chrome/Application/chrome.exe' : 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', headless: true, timeout: 45000 });
+    console.log('Browser connected.');
     const context = await browser.newContext({ acceptDownloads: true, viewport: { width: 390, height: 900 } });
     const externalFontRequests = [];
     context.on('request', request => { if (/fonts\.(?:googleapis|gstatic)\.com/.test(request.url())) externalFontRequests.push(request.url()); });
@@ -105,11 +107,12 @@ async function fixtures() {
       paths = paths.filter(route => onlyRoutes.includes(route));
     }
     let cursor = 0;
-    if (!toolsOnly) await Promise.all(Array.from({ length: 3 }, async () => {
+    if (!toolsOnly) await Promise.all(Array.from({ length: process.argv.includes('--serial') ? 1 : 3 }, async () => {
       const page = await context.newPage();
       try {
         while (cursor < paths.length) {
           const route = paths[cursor++];
+          console.log(`Checking ${route}`);
           const errors = [];
           const onError = error => errors.push(error.message);
           page.on('pageerror', onError);
@@ -151,6 +154,20 @@ async function fixtures() {
     };
     const sample = () => page.getByRole('button', { name: 'Try this sample', exact: true }).click();
     await page.goto(`${origin}/tools/index.html`, { waitUntil: 'domcontentloaded' });
+    assert.equal(await page.locator('input[type="search"]').count(), 1);
+    assert.equal(await page.locator('[data-catalog-search]').count(), 0);
+    await page.locator('#tool-category').selectOption('Generators');
+    assert.equal(await page.locator('[data-directory-tool]:visible').count(), 5);
+    assert.equal(await page.locator('#tool-results').innerText(), '5 of 20 tools shown.');
+    await page.locator('#tool-search').fill('JSON');
+    assert.equal(await page.locator('[data-directory-tool]:visible').count(), 0);
+    assert.match(await page.locator('#tool-results').innerText(), /No matching tools/);
+    await page.locator('#tool-search').fill('');
+    assert.equal(await page.locator('[data-directory-tool]:visible').count(), 5);
+    assert.equal(await page.locator('#tool-results').innerText(), '5 of 20 tools shown.');
+    await page.locator('#tool-category').selectOption('');
+    assert.equal(await page.locator('[data-directory-tool]:visible').count(), 20);
+    assert.equal(await page.locator('#tool-results').innerText(), '20 of 20 tools shown.');
     await page.locator('#tool-search').fill('JSON');
     assert.equal(await page.locator('[data-directory-tool]:visible').count(), 2);
     await page.locator('#tool-search').fill('');
@@ -272,7 +289,8 @@ async function fixtures() {
     report.externalFontRequests = [...new Set(externalFontRequests)];
     report.failures = [...report.pages.filter(page => page.status !== 200 || page.h1 !== 1 || page.overflow || page.errors.length || page.brokenImages.length || page.violations.length), ...report.interactiveStates.filter(state => state.errors.length || state.violations.length)];
     const file = onlyRoutes ? `submission-targeted-pages-${live ? 'live' : 'local'}.json` : toolsOnly ? `submission-tool-states-${live ? 'live' : 'local'}.json` : live ? 'submission-pages-live.json' : 'submission-pages-local.json';
-    fs.writeFileSync(`docs/audits/${file}`, JSON.stringify(report, null, 2) + '\n');
+    const reportPath = process.argv.find(arg => arg.startsWith('--report='))?.slice('--report='.length) || `docs/audits/${file}`;
+    fs.writeFileSync(reportPath, JSON.stringify(report, null, 2) + '\n');
     const rules = {};
     report.failures.forEach(page => page.violations.forEach(item => { rules[item.id] = (rules[item.id] || 0) + 1; }));
     console.log(JSON.stringify({ scope: report.scope, pages: report.pages.length, functionalityCases: report.functionality.length, failedCases: report.failures.length, failedRules: rules }, null, 2));

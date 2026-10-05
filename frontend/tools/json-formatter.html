@@ -6,13 +6,13 @@
 <title>JSON Formatter & Validator | Anvil Tools</title>
 <meta name="description" content="Pretty-print, minify, and validate JSON directly in your browser.">
 <link rel="canonical" href="https://anviltools.vercel.app/tools/json-formatter.html">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review4">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-recheck1">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-recheck1">
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-recheck1">
 <link rel="stylesheet" href="../assets/css/tool-ux.css">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-recheck1">
 <meta property="og:type" content="website"><meta property="og:title" content="JSON Formatter &amp; Validator | Anvil Tools"><meta property="og:description" content="Pretty-print, minify, and validate JSON directly in your browser."><meta property="og:url" content="https://anviltools.vercel.app/tools/json-formatter.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript><!-- local-font-preload --><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin><!-- /local-font-preload --></head>
 <body class="public-site">
@@ -55,7 +55,7 @@
 
 
 
-<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Compare valid syntax and intended data</h2><p>Use the sample, then choose Format or Minify. Keep a source copy: parsing can discard duplicate property names and alter integers beyond JavaScript&#x27;s safe range. A quoted identifier preserves its leading zeros.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>{&quot;id&quot;:&quot;001&quot;,&quot;active&quot;:true,&quot;items&quot;:[1,null]}</td><td>The string 001, boolean true, array, and null keep their types.</td></tr><tr><td>{&quot;active&quot;:true,}</td><td>Rejected: the final comma is not valid JSON.</td></tr><tr><td>{&quot;id&quot;:1,&quot;id&quot;:2}</td><td>Parsing keeps the later property; formatting is not a duplicate-key audit.</td></tr></tbody></table></div><button class="btn secondary" type="button" data-example-fields="{&quot;jf-input&quot;: &quot;{\&quot;id\&quot;:\&quot;001\&quot;,\&quot;active\&quot;:true,\&quot;items\&quot;:[1,null]}&quot;}">Try this sample</button><p class="status-msg" id="example-status" role="status" aria-live="polite"></p></section><!-- /checked-example --><section class="info-section">
+<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Compare valid syntax and intended data</h2><p>Use the sample, then choose Format or Minify. Keep a source copy: parsing can discard duplicate property names and alter integers beyond JavaScript&#x27;s safe range. A quoted identifier preserves its leading zeros.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>{&quot;id&quot;:&quot;001&quot;,&quot;active&quot;:true,&quot;items&quot;:[1,null]}</td><td>The string 001, boolean true, array, and null keep their types.</td></tr><tr><td>{&quot;active&quot;:true,}</td><td>Rejected: the final comma is not valid JSON.</td></tr><tr><td>{&quot;id&quot;:1,&quot;id&quot;:2}</td><td>Parsing keeps the later property; formatting is not a duplicate-key audit.</td></tr><tr><td>Minify {&quot;id&quot;:1,&quot;id&quot;:2}</td><td>{&quot;id&quot;:2}; the earlier duplicate value is discarded.</td></tr><tr><td>Minify {&quot;id&quot;:9007199254740993}</td><td>{&quot;id&quot;:9007199254740992}; quote the identifier in the source to preserve its digits.</td></tr></tbody></table></div><button class="btn secondary" type="button" data-example-fields="{&quot;jf-input&quot;: &quot;{\&quot;id\&quot;:\&quot;001\&quot;,\&quot;active\&quot;:true,\&quot;items\&quot;:[1,null]}&quot;}">Try this sample</button><p class="status-msg" id="example-status" role="status" aria-live="polite"></p></section><!-- /checked-example --><section class="info-section">
   <h2>How it works</h2>
   <ul><li>Paste your JSON into the input box.</li>
 <li>Click format for readable, indented output, or minify for a compact single-line version.</li>
@@ -121,8 +121,8 @@
 
 
 
-<script src="../assets/js/main.js?v=20261005-review4"></script>
+<script src="../assets/js/main.js?v=20261005-recheck1"></script>
 <script src="../assets/js/tools/json-formatter.js"></script>
 <script src="../assets/js/tool-ux.js"></script>
-<script src="../assets/js/tool-examples.js?v=20261005-review4"></script></body>
+<script src="../assets/js/tool-examples.js?v=20261005-recheck1"></script></body>
 </html>

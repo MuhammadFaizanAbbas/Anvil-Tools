@@ -15,11 +15,21 @@
         "Access expires",
         "Create another address. Website access expiry does not establish deletion at the provider."
       ]
+    ],
+    "links": [
+      {
+        "href": "https://www.guerrillamail.com/about",
+        "label": "Provider FAQ, retention, and privacy"
+      },
+      {
+        "href": "https://www.guerrillamail.com/tos",
+        "label": "Provider terms"
+      }
     ]
   },
   "background-remover": {
     "heading": "Inspect an actual removal result",
-    "note": "Our synthetic mug example is 480 × 360 pixels. The tool produced a transparent PNG at the same dimensions, but beige speckles remained near the handle. This simple illustration does not establish quality on hair, glass, or difficult photographs.",
+    "note": "The recorded 480 × 360 synthetic mug output retains large beige areas above the rim and around the handle, together with smaller edge remnants. Transparent pixels do not make it a clean cutout. Inspect the complete result; use a manual editor or another source if fragments remain.",
     "rows": [
       [
         "Source",
@@ -27,12 +37,26 @@
       ],
       [
         "Result",
-        "Transparent surroundings with some unwanted pixels still present."
+        "Some pixels become transparent, but substantial background areas remain. The recorded result needs manual cleanup."
       ],
       [
         "Decision",
         "Check on light and dark backgrounds; use a manual editor if the retained pixels matter."
       ]
+    ],
+    "links": [
+      {
+        "href": "/assets/examples/images/mug-photo.jpg",
+        "label": "Download the licensed photograph"
+      },
+      {
+        "href": "/assets/examples/images/mug-photo-output.png",
+        "label": "Inspect its actual model output"
+      },
+      {
+        "href": "/assets/examples/images/SOURCE.json",
+        "label": "Photograph source and CC0 license"
+      }
     ]
   },
   "pdf-merge": {
@@ -86,7 +110,17 @@
     ],
     "sample": {
       "qr-input": "https://nevco.online/"
-    }
+    },
+    "links": [
+      {
+        "href": "/assets/examples/qr-check.png",
+        "label": "Inspect the recorded QR PNG"
+      },
+      {
+        "href": "/assets/examples/qr-print-check.pdf",
+        "label": "Print the QR check sheet"
+      }
+    ]
   },
   "password-generator": {
     "heading": "Check a generated password without sharing it",
@@ -121,6 +155,10 @@
       [
         "One 🙂",
         "1 whitespace-delimited token and 2 UTF-16 character units."
+      ],
+      [
+        "你好世界 (no spaces)",
+        "1 whitespace-delimited token, 4 UTF-16 units, 1 estimated minute. This does not count linguistic words in Chinese."
       ]
     ],
     "sample": {
@@ -142,6 +180,14 @@
       [
         "{\"id\":1,\"id\":2}",
         "Parsing keeps the later property; formatting is not a duplicate-key audit."
+      ],
+      [
+        "Minify {\"id\":1,\"id\":2}",
+        "{\"id\":2}; the earlier duplicate value is discarded."
+      ],
+      [
+        "Minify {\"id\":9007199254740993}",
+        "{\"id\":9007199254740992}; quote the identifier in the source to preserve its digits."
       ]
     ],
     "sample": {
@@ -163,6 +209,10 @@
       [
         "Decode either output",
         "The original text returns; arbitrary binary files are outside this text-only tool."
+      ],
+      [
+        "UTF-8 text: café 🙂",
+        "Y2Fmw6kg8J+Zgg== → decoding returns café 🙂 exactly, including one space."
       ]
     ],
     "sample": {
@@ -185,6 +235,12 @@
         "Googlebot sample",
         "Useful parser input; verify a real crawler separately before granting any special access."
       ]
+    ],
+    "links": [
+      {
+        "href": "https://developers.google.com/crawling/docs/crawlers-fetchers/verify-google-requests",
+        "label": "Verify actual Google crawler requests"
+      }
     ]
   },
   "color-palette-generator": {
@@ -202,6 +258,10 @@
       [
         "An accent on a button",
         "Also inspect focus, hover, disabled text, and button boundaries."
+      ],
+      [
+        "Preview text against the first swatch",
+        "The displayed ratio compares the first swatch with its displayed #000000 or #FFFFFF text color, not the other swatches."
       ]
     ]
   },
@@ -220,6 +280,10 @@
       [
         "32 Fahrenheit to Celsius",
         "0.000 Celsius; C = (F − 32) × 5/9."
+      ],
+      [
+        "-40 Celsius to Fahrenheit, then back",
+        "-40.000 Fahrenheit → -40.000 Celsius."
       ]
     ],
     "sample": {
@@ -244,6 +308,14 @@
       [
         "Encode %20 again",
         "%2520; repeated encoding changes the meaning."
+      ],
+      [
+        "Decode component: a+b%20c",
+        "a+b c; the literal + stays +, while %20 becomes a space."
+      ],
+      [
+        "Decode malformed component: %ZZ",
+        "Error: This value contains malformed percent encoding or invalid UTF-8. Earlier output is cleared."
       ]
     ],
     "sample": {
@@ -266,6 +338,10 @@
       [
         "A readable header and payload",
         "No signature, issuer, audience, or authorization validation has been established."
+      ],
+      [
+        "Malformed synthetic token: abc.def",
+        "Error: A compact JWT must contain a header, payload, and signature section. Earlier output is cleared."
       ]
     ],
     "sample": {
@@ -287,6 +363,10 @@
       [
         "2026-10-05T12:00 interpreted as UTC",
         "The intended instant is 2026-10-05T12:00:00.000Z; local interpretation may differ."
+      ],
+      [
+        "New York DST overlap: 2026-11-01 01:30",
+        "1793511000 seconds (2026-11-01T05:30:00.000Z, UTC−04:00) or 1793514600 seconds (2026-11-01T06:30:00.000Z, UTC−05:00). The wall-clock time occurs twice. Enter explicit seconds; local displays depend on the device timezone."
       ]
     ],
     "sample": {
@@ -309,6 +389,14 @@
       [
         "Password storage",
         "Use an appropriate password hashing scheme in an application; this text-digest tool is not one."
+      ],
+      [
+        "abc followed by LF (U+000A)",
+        "edeaaff3f1774ad2888673770c6d64097e391bc362d7d6fb34982ddf0efd18cb; the final newline is part of the UTF-8 input."
+      ],
+      [
+        "abc followed by CRLF (U+000D U+000A)",
+        "Browser textareas normalize CRLF to LF, so this tool hashes abc followed by LF. Hash the original file bytes in a file-checksum workflow if you need to preserve CRLF."
       ]
     ],
     "sample": {
@@ -331,12 +419,30 @@
       [
         "Tab- or semicolon-separated source",
         "Export comma-separated CSV first; there is no delimiter selector."
+      ],
+      [
+        "Quoted newline inside \"First line\\nSecond line\"",
+        "The newline remains inside one field; it does not start another row. See the downloadable input and expected JSON."
+      ],
+      [
+        "id,id followed by 001,002",
+        "Rejected: Header names must be unique."
       ]
     ],
     "sample": {
       "csv-input": "id,name,note\n001,\"Amina, Ali\",\n002,Omar,\"He said \"\"hi\"\"\"",
       "csv-headers": true
-    }
+    },
+    "links": [
+      {
+        "href": "/assets/examples/developer/quoted-newline.csv",
+        "label": "Download the quoted-newline CSV"
+      },
+      {
+        "href": "/assets/examples/developer/expected.json",
+        "label": "Compare the expected JSON"
+      }
+    ]
   },
   "text-case-converter": {
     "heading": "Compare case styles on one phrase",
@@ -353,6 +459,10 @@
       [
         "Title Case",
         "Nasa Report: Café; the acronym is not preserved automatically."
+      ],
+      [
+        "Sentence case: NASA report: café",
+        "Nasa report: café; review the changed acronym."
       ]
     ],
     "sample": {
@@ -374,6 +484,10 @@
       [
         "An extra space on a line",
         "A text change; formatting and document layout are not compared."
+      ],
+      [
+        "Before: alpha / beta / gamma; after: gamma / alpha / beta",
+        "gamma appears removed and added; alpha and beta remain unchanged. This comparison does not label a move."
       ]
     ],
     "sample": {
@@ -396,6 +510,10 @@
       [
         "Five hexadecimal groups: 8-4-4-4-12",
         "36 characters including hyphens; an identifier does not grant access."
+      ],
+      [
+        "Case-insensitive format/version/variant check",
+        "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$; this does not authenticate the identifier."
       ]
     ]
   }

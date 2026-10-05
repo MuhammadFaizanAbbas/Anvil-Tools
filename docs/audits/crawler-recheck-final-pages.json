@@ -1,0 +1,227 @@
+{
+  "checkedAt": "2026-10-05T19:11:47.588Z",
+  "scope": "local prepared release",
+  "axeVersion": "4.13.0",
+  "pages": [
+    {
+      "route": "/categories/generators.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Generators | Anvil Tools",
+      "description": "Create passwords, QR codes, palettes, and other quick outputs.",
+      "canonical": "https://anviltools.vercel.app/categories/generators.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/generators.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Generators | Anvil Tools",
+      "description": "Create passwords, QR codes, palettes, and other quick outputs.",
+      "canonical": "https://anviltools.vercel.app/categories/generators.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/categories/image-tools.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Image tools | Anvil Tools",
+      "description": "Edit and convert images directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/categories/image-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/image-tools.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Image tools | Anvil Tools",
+      "description": "Edit and convert images directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/categories/image-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Background Removal for Design and Product Photography | Anvil Tools",
+      "description": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
+      "canonical": "http://127.0.0.1:54647/journal/best-practices-for-background-removal-when-working-with-design",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Background Removal for Design and Product Photography | Anvil Tools",
+      "description": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
+      "canonical": "http://127.0.0.1:54647/journal/best-practices-for-background-removal-when-working-with-design",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Background Remover | Anvil Tools",
+      "description": "Remove the background from a photo automatically, processed locally in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/background-remover.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Background Remover | Anvil Tools",
+      "description": "Remove the background from a photo automatically, processed locally in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/background-remover.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Hash Generator | Anvil Tools",
+      "description": "Generate SHA-256, SHA-384, or SHA-512 hashes from UTF-8 text.",
+      "canonical": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Hash Generator | Anvil Tools",
+      "description": "Generate SHA-256, SHA-384, or SHA-512 hashes from UTF-8 text.",
+      "canonical": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "QR Code Generator | Anvil Tools",
+      "description": "Turn any link or short message into a scannable QR code you can download as an image.",
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "QR Code Generator | Anvil Tools",
+      "description": "Turn any link or short message into a scannable QR code you can download as an image.",
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "functionality": [],
+  "interactiveStates": [],
+  "limits": [
+    "Automated axe checks and emulated widths do not establish complete accessibility.",
+    "Inbox layout and expiry checks use synthetic responses; no email or contact message is sent.",
+    "Physical-device, screen-reader, and future advertising checks remain separate."
+  ],
+  "externalFontRequests": [],
+  "failures": []
+}

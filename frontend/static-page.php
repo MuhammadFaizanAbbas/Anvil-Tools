@@ -34,8 +34,13 @@ if ($template === false) {
 }
 
 $html = version_public_styles(str_replace('https://anviltools.vercel.app', public_site_origin(), $template));
+$errorStatus = (int) ($_SERVER['REDIRECT_STATUS'] ?? 0);
+if (in_array($errorStatus, [404, 410], true)) {
+    http_response_code($errorStatus);
+    header('X-Robots-Tag: noindex, follow');
+}
 header('Content-Type: text/html; charset=UTF-8');
-header('Cache-Control: public, max-age=300');
+header(in_array($errorStatus, [404, 410], true) ? 'Cache-Control: no-store' : 'Cache-Control: public, max-age=300');
 header('Vary: Host');
 header('X-Content-Type-Options: nosniff');
 echo $html;

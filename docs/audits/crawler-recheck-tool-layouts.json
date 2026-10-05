@@ -1,0 +1,681 @@
+{
+  "checkedAt": "2026-10-05T19:06:07.297Z",
+  "scope": "local prepared release",
+  "axeVersion": "4.13.0",
+  "pages": [
+    {
+      "route": "/tools/background-remover.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Background Remover | Anvil Tools",
+      "description": "Remove the background from a photo automatically, processed locally in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/background-remover.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Background Remover | Anvil Tools",
+      "description": "Remove the background from a photo automatically, processed locally in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/background-remover.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/base64-tool.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Base64 Encoder & Decoder | Anvil Tools",
+      "description": "Convert text to Base64 and back, entirely in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/base64-tool.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/base64-tool.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Base64 Encoder & Decoder | Anvil Tools",
+      "description": "Convert text to Base64 and back, entirely in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/base64-tool.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/color-palette-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Color Palette Generator | Anvil Tools",
+      "description": "Generate a five-color palette for design work, with the option to lock colors you like.",
+      "canonical": "https://anviltools.vercel.app/tools/color-palette-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/color-palette-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Color Palette Generator | Anvil Tools",
+      "description": "Generate a five-color palette for design work, with the option to lock colors you like.",
+      "canonical": "https://anviltools.vercel.app/tools/color-palette-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "CSV to JSON Converter | Anvil Tools",
+      "description": "Convert quoted CSV data into JSON arrays or objects locally.",
+      "canonical": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "CSV to JSON Converter | Anvil Tools",
+      "description": "Convert quoted CSV data into JSON arrays or objects locally.",
+      "canonical": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Hash Generator | Anvil Tools",
+      "description": "Generate SHA-256, SHA-384, or SHA-512 hashes from UTF-8 text.",
+      "canonical": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Hash Generator | Anvil Tools",
+      "description": "Generate SHA-256, SHA-384, or SHA-512 hashes from UTF-8 text.",
+      "canonical": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Image to PDF Converter | Anvil Tools",
+      "description": "Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.",
+      "canonical": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Image to PDF Converter | Anvil Tools",
+      "description": "Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.",
+      "canonical": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "JSON Formatter & Validator | Anvil Tools",
+      "description": "Pretty-print, minify, and validate JSON directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "JSON Formatter & Validator | Anvil Tools",
+      "description": "Pretty-print, minify, and validate JSON directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/jwt-decoder.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "JWT Decoder | Anvil Tools",
+      "description": "Inspect a JWT header and payload without uploading the token.",
+      "canonical": "https://anviltools.vercel.app/tools/jwt-decoder.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/jwt-decoder.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "JWT Decoder | Anvil Tools",
+      "description": "Inspect a JWT header and payload without uploading the token.",
+      "canonical": "https://anviltools.vercel.app/tools/jwt-decoder.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/password-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Password Generator | Anvil Tools",
+      "description": "Create a strong, random password with adjustable length and character types.",
+      "canonical": "https://anviltools.vercel.app/tools/password-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/password-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Password Generator | Anvil Tools",
+      "description": "Create a strong, random password with adjustable length and character types.",
+      "canonical": "https://anviltools.vercel.app/tools/password-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF Merge | Anvil Tools",
+      "description": "Combine multiple PDF files into a single document in the order you choose.",
+      "canonical": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF Merge | Anvil Tools",
+      "description": "Combine multiple PDF files into a single document in the order you choose.",
+      "canonical": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "QR Code Generator | Anvil Tools",
+      "description": "Turn any link or short message into a scannable QR code you can download as an image.",
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "QR Code Generator | Anvil Tools",
+      "description": "Turn any link or short message into a scannable QR code you can download as an image.",
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Temporary Email Generator | Anvil Tools",
+      "description": "Get a disposable inbox in one click for signups you don't want landing in your real email.",
+      "canonical": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ]
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Temporary Email Generator | Anvil Tools",
+      "description": "Get a disposable inbox in one click for signups you don't want landing in your real email.",
+      "canonical": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ]
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Case Converter | Anvil Tools",
+      "description": "Convert text to upper, lower, title, sentence, camel, snake, and kebab case.",
+      "canonical": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Case Converter | Anvil Tools",
+      "description": "Convert text to upper, lower, title, sentence, camel, snake, and kebab case.",
+      "canonical": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/text-diff-checker.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Difference Checker | Anvil Tools",
+      "description": "Compare two texts line by line and highlight additions and removals.",
+      "canonical": "https://anviltools.vercel.app/tools/text-diff-checker.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/text-diff-checker.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Difference Checker | Anvil Tools",
+      "description": "Compare two texts line by line and highlight additions and removals.",
+      "canonical": "https://anviltools.vercel.app/tools/text-diff-checker.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/unit-converter.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Unit Converter | Anvil Tools",
+      "description": "Convert between common length, weight, and temperature units instantly.",
+      "canonical": "https://anviltools.vercel.app/tools/unit-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/unit-converter.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Unit Converter | Anvil Tools",
+      "description": "Convert between common length, weight, and temperature units instantly.",
+      "canonical": "https://anviltools.vercel.app/tools/unit-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/unix-timestamp-converter.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Unix Timestamp Converter | Anvil Tools",
+      "description": "Convert Unix seconds or milliseconds to readable local and UTC dates.",
+      "canonical": "https://anviltools.vercel.app/tools/unix-timestamp-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/unix-timestamp-converter.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Unix Timestamp Converter | Anvil Tools",
+      "description": "Convert Unix seconds or milliseconds to readable local and UTC dates.",
+      "canonical": "https://anviltools.vercel.app/tools/unix-timestamp-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/url-encoder-decoder.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "URL Encoder & Decoder | Anvil Tools",
+      "description": "Encode text for a URL or decode percent-encoded values safely.",
+      "canonical": "https://anviltools.vercel.app/tools/url-encoder-decoder.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/url-encoder-decoder.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "URL Encoder & Decoder | Anvil Tools",
+      "description": "Encode text for a URL or decode percent-encoded values safely.",
+      "canonical": "https://anviltools.vercel.app/tools/url-encoder-decoder.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/user-agent-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "User Agent Generator | Anvil Tools",
+      "description": "Choose fixed browser and bot user-agent strings for parser and request-header tests.",
+      "canonical": "https://anviltools.vercel.app/tools/user-agent-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/user-agent-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "User Agent Generator | Anvil Tools",
+      "description": "Choose fixed browser and bot user-agent strings for parser and request-header tests.",
+      "canonical": "https://anviltools.vercel.app/tools/user-agent-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "UUID Generator | Anvil Tools",
+      "description": "Generate cryptographically random RFC 4122 version 4 UUIDs.",
+      "canonical": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "UUID Generator | Anvil Tools",
+      "description": "Generate cryptographically random RFC 4122 version 4 UUIDs.",
+      "canonical": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Word & Character Counter | Anvil Tools",
+      "description": "Count words, characters, sentences, and estimated reading time as you type.",
+      "canonical": "https://anviltools.vercel.app/tools/word-counter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Word & Character Counter | Anvil Tools",
+      "description": "Count words, characters, sentences, and estimated reading time as you type.",
+      "canonical": "https://anviltools.vercel.app/tools/word-counter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "functionality": [],
+  "interactiveStates": [],
+  "limits": [
+    "Automated axe checks and emulated widths do not establish complete accessibility.",
+    "Inbox layout and expiry checks use synthetic responses; no email or contact message is sent.",
+    "Physical-device, screen-reader, and future advertising checks remain separate."
+  ],
+  "externalFontRequests": [],
+  "failures": []
+}

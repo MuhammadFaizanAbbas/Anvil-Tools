@@ -6,13 +6,13 @@
 <title>User Agent Generator | Anvil Tools</title>
 <meta name="description" content="Choose fixed browser and bot user-agent strings for parser and request-header tests.">
 <link rel="canonical" href="https://anviltools.vercel.app/tools/user-agent-generator.html">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review4">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-recheck1">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-recheck1">
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-recheck1">
 <link rel="stylesheet" href="../assets/css/tool-ux.css">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-recheck1">
 <meta property="og:type" content="website"><meta property="og:title" content="User Agent Generator | Anvil Tools"><meta property="og:description" content="Choose fixed browser and bot user-agent strings for parser and request-header tests."><meta property="og:url" content="https://anviltools.vercel.app/tools/user-agent-generator.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript><!-- local-font-preload --><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin><!-- /local-font-preload --></head>
 <body class="public-site">
@@ -54,7 +54,7 @@
 
 
 
-<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Use fixed samples in a parser test</h2><p>The fixture library was reviewed on October 5, 2026. Its Chrome 126, Firefox 127, and Safari 17.5 samples are intentionally fixed older examples, not claims about current versions. A selected string does not change your browser or authenticate a crawler.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>iPhone Safari</td><td>Look for the iPhone, Version/17.5, Mobile, and Safari markers.</td></tr><tr><td>An unfamiliar user-agent string</td><td>Your application should retain a safe fallback instead of assuming a recognized browser.</td></tr><tr><td>Googlebot sample</td><td>Useful parser input; verify a real crawler separately before granting any special access.</td></tr></tbody></table></div></section><!-- /checked-example --><section class="info-section">
+<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Use fixed samples in a parser test</h2><p>The fixture library was reviewed on October 5, 2026. Its Chrome 126, Firefox 127, and Safari 17.5 samples are intentionally fixed older examples, not claims about current versions. A selected string does not change your browser or authenticate a crawler.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>iPhone Safari</td><td>Look for the iPhone, Version/17.5, Mobile, and Safari markers.</td></tr><tr><td>An unfamiliar user-agent string</td><td>Your application should retain a safe fallback instead of assuming a recognized browser.</td></tr><tr><td>Googlebot sample</td><td>Useful parser input; verify a real crawler separately before granting any special access.</td></tr></tbody></table></div><p><a href="https://developers.google.com/crawling/docs/crawlers-fetchers/verify-google-requests">Verify actual Google crawler requests</a></p></section><!-- /checked-example --><section class="info-section">
   <h2>How it works</h2>
   <ul><li>Pick a browser or device from the list, or click random pick.</li>
 <li>The matching user-agent string appears in the box below.</li>
@@ -120,7 +120,7 @@
 
 
 
-<script src="../assets/js/main.js?v=20261005-review4"></script>
+<script src="../assets/js/main.js?v=20261005-recheck1"></script>
 <script src="../assets/js/tools/user-agent-generator.js"></script>
 <script src="../assets/js/tool-ux.js"></script>
 </body>

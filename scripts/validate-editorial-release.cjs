@@ -4,9 +4,11 @@ const assert = require('node:assert/strict');
 const { createHash } = require('node:crypto');
 const { PGlite } = require('../deployment/browser-check/node_modules/@electric-sql/pglite');
 const library = require('../content/editorial/published-library.json');
-const directory = 'deployment/adsense-followup-2026-10-05';
+const directory = process.argv.find(arg => arg.startsWith('--directory='))?.slice('--directory='.length) || 'deployment/adsense-followup-2026-10-05';
 const baseline = JSON.parse(fs.readFileSync(`${directory}/database-before.json`, 'utf8'));
 const sql = fs.readFileSync(`${directory}/publish.sql`, 'utf8');
+const payload = JSON.parse(sql.match(/\$audit_payload\$([\s\S]*?)\$audit_payload\$/)[1]);
+const changedSlugs = new Set(payload.map(item => item.slug));
 const md5 = text => createHash('md5').update(text).digest('hex');
 const report = { checkedAt: new Date().toISOString(), offlineOnly: true, cases: [] };
 
@@ -69,9 +71,9 @@ async function rejectRelease(name, change, expectedError) {
     const after = await snapshot(db);
     for (const post of after) {
       const previous = before.find(row => row.id === post.id);
-      if (post.id === 'developer-data') assert.deepEqual(post, previous);
+      if (!changedSlugs.has(post.slug)) assert.deepEqual(post, previous);
       else {
-        const guide = library.find(row => row.key === post.id);
+        const guide = library.find(row => row.slug === post.slug);
         const body = fs.readFileSync(`content/editorial/${guide.bodyFile}`, 'utf8').replace(/\r\n?/g, '\n').trim();
         assert.equal(md5(post.body), md5(body));
         const { body: ignoredBody, updated_at: ignoredDate, ...metadata } = post;
@@ -80,23 +82,24 @@ async function rejectRelease(name, change, expectedError) {
       }
     }
     const { rows: revisions } = await db.query('SELECT snapshot FROM public.post_revisions');
-    assert.equal(revisions.length, 3);
+    assert.equal(revisions.length, payload.length);
     for (const { snapshot: revision } of revisions) assert.deepEqual(revision, before.find(row => row.id === revision.id));
-    report.cases.push({ name: 'Exactly three bodies updated; full previous records saved; all other metadata and the fourth guide preserved', passed: true });
+    report.cases.push({ name: `Exactly ${payload.length} bodies updated; full previous records saved; all other metadata and unchanged guides preserved`, passed: true });
     report.cases.push({ name: 'UTC metadata guards work when the connection starts in a different time zone', passed: true });
     await assert.rejects(db.exec(sql), /Concurrent article edit detected/);
     await db.exec('ROLLBACK');
     assert.deepEqual(await snapshot(db), after);
-    assert.equal((await db.query('SELECT count(*)::integer AS n FROM public.post_revisions')).rows[0].n, 3);
+    assert.equal((await db.query('SELECT count(*)::integer AS n FROM public.post_revisions')).rows[0].n, payload.length);
     report.cases.push({ name: 'Repeated publication rejected without new revisions or changes', passed: true });
   } finally { await db.close(); }
   // PDF is sorted last: rejection here proves preceding changes roll back too.
   await rejectRelease('A concurrent body edit rolls back the whole transaction',
-    "UPDATE public.posts SET body = body || E'\\nConcurrent edit' WHERE id = 'pdf-workflows'", /Concurrent article edit detected/);
+    "UPDATE public.posts SET body = body || E'\\nConcurrent edit' WHERE slug = 'simple-pdf-workflow-without-software'", /Concurrent article edit detected/);
   await rejectRelease('A concurrent metadata edit rolls back the whole transaction',
-    "UPDATE public.posts SET title = 'An independently changed title' WHERE id = 'pdf-workflows'", /Concurrent article edit detected/);
+    "UPDATE public.posts SET title = 'An independently changed title' WHERE slug = 'simple-pdf-workflow-without-software'", /Concurrent article edit detected/);
   await rejectRelease('A changed published catalog prevents publication',
-    "UPDATE public.posts SET status = 'draft' WHERE id = 'developer-data'", /Published catalog changed/);
-  fs.writeFileSync('docs/audits/adsense-publication-validation.json', JSON.stringify(report, null, 2) + '\n');
+    "UPDATE public.posts SET status = 'draft' WHERE slug = 'small-tools-that-save-developers-time'", /Published catalog changed/);
+  const reportFile = process.argv.find(arg => arg.startsWith('--report='))?.slice('--report='.length) || 'docs/audits/adsense-publication-validation.json';
+  fs.writeFileSync(reportFile, JSON.stringify(report, null, 2) + '\n');
   console.log(JSON.stringify(report, null, 2));
 })().catch(error => { console.error(error.message); process.exitCode = 1; });

@@ -52,5 +52,15 @@
         "width": 976
       }
     ]
+  },
+  "/assets/images/editorial/mug-photo-input.webp": {
+    "width": 480,
+    "height": 640,
+    "candidates": []
+  },
+  "/assets/images/editorial/mug-photo-output.webp": {
+    "width": 480,
+    "height": 640,
+    "candidates": []
   }
 }

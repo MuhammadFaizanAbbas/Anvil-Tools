@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Catalog search progressively enhances full tool lists, not related-tool cards.
   document.querySelectorAll('.tool-grid').forEach((grid, index) => {
+    // The directory owns category/search intersection and its result counter.
+    if (grid.querySelector('[data-directory-tool]')) return;
     const cards = [...grid.children].filter(card => card.querySelector('.tool-link'));
     if (cards.length < 6) return;
     let search = document.querySelector(`[data-catalog-search="${index}"]`);

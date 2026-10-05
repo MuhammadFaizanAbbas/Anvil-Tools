@@ -93,3 +93,9 @@ For an ongoing newsletter, consider a managed alias that you can disable later w
 Before ending the session, confirm that the one-time task is complete and no important recovery route depends on the address. Save any permitted download and remove disposable addresses from accounts that have become important. Treat New address as a change of access, not as a universal deletion or cancellation control.
 
 A useful temporary-mail workflow has a narrow purpose, a known lifetime, and a tolerable consequence if access ends. When those conditions no longer apply, a durable mailbox or maintained alias is the practical choice. That keeps the convenience of disposable mail from turning into a future recovery problem.
+
+## Check the provider practices directly
+
+Guerrilla Mail’s [About page and FAQ](https://www.guerrillamail.com/about) describe retention, inbox-identifier access, and privacy practices. Read its [terms](https://www.guerrillamail.com/tos). The provider describes one-hour message retention; this website’s countdown measures expiry of its own inbox-access capability. One timer does not certify deletion by the other service.
+
+Record delivery in three stages: the sending application’s acceptance, arrival in the temporary inbox, and reading the expected sender, subject, and text. An address or provider welcome message does not prove external delivery. Send only an authorized, non-sensitive test from a mailbox or application you control.

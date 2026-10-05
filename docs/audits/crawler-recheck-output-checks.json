@@ -1,0 +1,123 @@
+{
+  "checkedAt": "2026-10-05T17:45:37.332Z",
+  "scope": "local prepared release",
+  "cases": [
+    {
+      "name": "Fresh downloads, password boundaries/copy, and exported CSS in chrome",
+      "passed": true,
+      "pdfPages": 4,
+      "mixedImagePages": 2,
+      "mixedDimensions": [
+        [
+          480,
+          360
+        ],
+        [
+          480,
+          640
+        ]
+      ],
+      "contrastPair": {
+        "bg": "rgb(66, 99, 235)",
+        "preview": "rgb(66, 99, 235)",
+        "text": "rgb(255, 255, 255)",
+        "label": "Preview: readable text on your primary color. Contrast 4.98:1 with #FFFFFF. Test other color pairs before using them for text."
+      }
+    },
+    {
+      "name": "Fresh downloads, password boundaries/copy, and exported CSS in edge",
+      "passed": true,
+      "pdfPages": 4,
+      "mixedImagePages": 2,
+      "mixedDimensions": [
+        [
+          480,
+          360
+        ],
+        [
+          480,
+          640
+        ]
+      ],
+      "contrastPair": {
+        "bg": "rgb(66, 99, 235)",
+        "preview": "rgb(66, 99, 235)",
+        "text": "rgb(255, 255, 255)",
+        "label": "Preview: readable text on your primary color. Contrast 4.98:1 with #FFFFFF. Test other color pairs before using them for text."
+      }
+    },
+    {
+      "name": "One directory controller and accurate intersection/count at 320px",
+      "passed": true
+    },
+    {
+      "name": "One directory controller and accurate intersection/count at 390px",
+      "passed": true
+    },
+    {
+      "name": "One directory controller and accurate intersection/count at 768px",
+      "passed": true
+    },
+    {
+      "name": "One directory controller and accurate intersection/count at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Quoted newline, comma, escaped quotes, and duplicate-header rejection",
+      "passed": true
+    },
+    {
+      "name": "Visible duplicate-key and unsafe-integer before/after outputs",
+      "passed": true
+    },
+    {
+      "name": "Malformed synthetic JWT clears earlier output",
+      "passed": true
+    },
+    {
+      "name": "Plus stays plus; malformed percent input rejects and clears output",
+      "passed": true
+    },
+    {
+      "name": "Unicode/acronym outputs in three case modes",
+      "passed": true
+    },
+    {
+      "name": "Non-space-delimited language demonstrates whitespace-count limitation",
+      "passed": true
+    },
+    {
+      "name": "Fresh downloaded QR independently decoded; physical print fixture prepared",
+      "passed": true
+    }
+  ],
+  "outputs": [
+    {
+      "file": "merge-chrome.pdf",
+      "sha256": "18f8a33595338b0aefd19eab44ce5e3a258f72565a375128a4510d9236d0cefc"
+    },
+    {
+      "file": "mixed-images-chrome.pdf",
+      "sha256": "ecded44e186230d22da2848dc028a58a6bb865481c4fc37c062bf8e8c614c2c6"
+    },
+    {
+      "file": "merge-edge.pdf",
+      "sha256": "15c9da9c32dd4a605e0948990920ca7916db89d4a492aab6ac0af0f8dbb475e3"
+    },
+    {
+      "file": "mixed-images-edge.pdf",
+      "sha256": "a7921326616454fd5d17127d27b26238ff11a643db0c100da3fa30375924b09b"
+    },
+    {
+      "file": "qr-code.png",
+      "sha256": "381760fd2649661a0a0d2870867118ef53182cb8001620b5ff9cd3b856ee728b"
+    }
+  ],
+  "limits": [
+    "Phone viewports/touch are emulated; no physical phone or print scan.",
+    "QR decoded with jsQR; physical scanning remains separate.",
+    "Mail and contact are synthetic UI checks; no external message, SMTP acceptance, receipt, or reply tested.",
+    "One licensed photograph does not establish general model quality."
+  ],
+  "error": "locator.waitFor: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> C:/Program Files/Google/Chrome/Application/chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\\Users\\abbas\\AppData\\Local\\Temp\\playwright_chromiumdev_profile-pgLofu --remote-debugging-pipe --no-startup-window\n<launched> pid=16620\nCall log:\n\u001b[2m  - waiting for locator('#bg-download') to be visible\u001b[22m\n\u001b[2m    8 × locator resolved to hidden <button id=\"bg-download\" class=\"btn amber\" data-busy-label=\"Download PNG\">Download PNG</button>\u001b[22m\n"
+}

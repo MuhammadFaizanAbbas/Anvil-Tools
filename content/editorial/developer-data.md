@@ -105,3 +105,11 @@ A useful debugging note contains the smallest failing sample, the expected resul
 The text utilities described here perform their transformations in the browser. Loading the page and its supporting assets still involves network requests. Browser processing does not promise anonymity or erase copies from the clipboard, downloaded files, screenshots, or your device. The [Privacy Policy](/privacy-policy.html) describes the site's data practices.
 
 Repeat the corrected sample in the real integration's test environment. A local utility can clarify a value, but only the receiving system can establish that the complete request satisfies its protocol, schema, and authorization requirements.
+
+## Download and reproduce one connected workflow
+
+Use the fictional records in [this CSV input](/assets/examples/developer/quoted-newline.csv). Enable headers in [CSV to JSON](/tools/csv-to-json.html) and compare [the expected JSON](/assets/examples/developer/expected.json). The quoted comma remains in the name, the quoted newline remains inside note, and 001 remains a string. A repeated header such as id,id is rejected.
+
+Minify with [JSON Formatter](/tools/json-formatter.html) and compare [the exact minified text](/assets/examples/developer/expected.min.json). Encode that text with [Base64](/tools/base64-tool.html), compare [the expected Base64](/assets/examples/developer/expected.base64.txt), then decode it back. Compare the escaped newline and all other characters.
+
+The [workflow manifest](/assets/examples/developer/workflow.json) records SHA-256 of the minified UTF-8 text. The fixtures use LF, and the minified and Base64 files have no trailing newline. Pretty-printing or adding a newline changes the digest even when parsed values remain equivalent. These samples contain no live user data or usable token.

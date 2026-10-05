@@ -1,0 +1,318 @@
+{
+  "checkedAt": "2026-10-05T19:02:17.480Z",
+  "scope": "local prepared release",
+  "axeVersion": "4.13.0",
+  "pages": [
+    {
+      "route": "/",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "canonical": "https://anviltools.vercel.app/",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "canonical": "https://anviltools.vercel.app/",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "route": "/about.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "About | Anvil Tools",
+      "description": "About Anvil Tools and how our tools work.",
+      "canonical": "https://anviltools.vercel.app/about.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/about.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "About | Anvil Tools",
+      "description": "About Anvil Tools and how our tools work.",
+      "canonical": "https://anviltools.vercel.app/about.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/blog/index.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Blog | Anvil Tools",
+      "description": "Blogs and practical tips from Anvil Tools.",
+      "canonical": "http://127.0.0.1:54310/blog/index.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/index.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Blog | Anvil Tools",
+      "description": "Blogs and practical tips from Anvil Tools.",
+      "canonical": "http://127.0.0.1:54310/blog/index.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/contact.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Contact | Anvil Tools",
+      "description": "Get in touch with Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/contact.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/contact.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Contact | Anvil Tools",
+      "description": "Get in touch with Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/contact.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/cookie-policy.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Cookie policy | Anvil Tools",
+      "description": "How Anvil Tools uses cookies.",
+      "canonical": "https://anviltools.vercel.app/cookie-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/cookie-policy.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Cookie policy | Anvil Tools",
+      "description": "How Anvil Tools uses cookies.",
+      "canonical": "https://anviltools.vercel.app/cookie-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/disclaimer.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Disclaimer | Anvil Tools",
+      "description": "Usage disclaimer for Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/disclaimer.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/disclaimer.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Disclaimer | Anvil Tools",
+      "description": "Usage disclaimer for Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/disclaimer.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/privacy-policy.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Privacy policy | Anvil Tools",
+      "description": "How Anvil Tools handles your data.",
+      "canonical": "https://anviltools.vercel.app/privacy-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/privacy-policy.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Privacy policy | Anvil Tools",
+      "description": "How Anvil Tools handles your data.",
+      "canonical": "https://anviltools.vercel.app/privacy-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/terms-of-service.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Terms of service | Anvil Tools",
+      "description": "Terms for using Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/terms-of-service.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/terms-of-service.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Terms of service | Anvil Tools",
+      "description": "Terms for using Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/terms-of-service.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/index.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "All tools | Anvil Tools",
+      "description": "Browse every free tool available on Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/tools/index.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/index.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "All tools | Anvil Tools",
+      "description": "Browse every free tool available on Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/tools/index.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "functionality": [],
+  "interactiveStates": [],
+  "limits": [
+    "Automated axe checks and emulated widths do not establish complete accessibility.",
+    "Inbox layout and expiry checks use synthetic responses; no email or contact message is sent.",
+    "Physical-device, screen-reader, and future advertising checks remain separate."
+  ],
+  "externalFontRequests": [],
+  "failures": []
+}

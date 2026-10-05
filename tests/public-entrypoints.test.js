@@ -9,6 +9,8 @@ const { versionPublicStyles } = require('../backend/src/lib/public-assets');
 
 test('missing pages resolve assets and recovery links from nested incoming URLs', () => {
   const html = fs.readFileSync('frontend/404.html', 'utf8');
+  assert.doesNotMatch(html, /rel="canonical"|property="og:url"/);
+  assert.match(html, /name="robots" content="noindex, follow"/);
   for (const incoming of ['/snowy-peaks-solitaire/', '/snowy-peaks-solitaire/tools/index.html', '/old/deep/link/', '/index.html/']) {
     for (const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)) {
       const url = new URL(match[1], `https://nevco.online${incoming}`);

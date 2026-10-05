@@ -8,7 +8,7 @@ test('public pages have readable metadata and no dormant ad boxes or placeholder
  for(const file of pages){
   const html=fs.readFileSync(file,'utf8');
   assert.equal((html.match(/<h1\b/g)||[]).length,1,file);
-  if (file.endsWith('article.html')) assert.match(html,/<meta name="robots" content="noindex, follow">/,file);
+  if (file.endsWith('article.html') || file.endsWith('404.html')) assert.match(html,/<meta name="robots" content="noindex, follow">/,file);
   else assert.match(html,/<link rel="canonical" href="https:\/\/anviltools\.vercel\.app\//,file);
   assert.match(html,/assets\/css\/content\.css/,file);
   assert.ok(!html.includes('class="ad-slot"'),file);

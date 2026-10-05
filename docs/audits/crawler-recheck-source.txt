@@ -1,0 +1,611 @@
+Nevco crawler and AdSense recheck — 5 October 2026
+
+Fresh public-site audit · 5 October 2026
+Nevco: crawler access is strong.Approval routing remains private.
+Anvil Tools has materially improved since the earlier 84/100 audit. The public crawl passes, and the old guide-length, repetition, documentation, and arrow issues have been corrected. One new directory-filter conflict remains.Crawl evidenceChangesNext actionsEvery public pageGoogle and RedditLimits
+Pre-submission readiness93/100Revised from 90/100: corrected scoring scope and the owner’s ads.txt assumption.Simulated verification-bot access39/39HTTP 200; identical HTML to ordinary requests.Approval probabilityUnknownNo calibrated percentage or guaranteed faster-review estimate.
+
+This does not mean “Google’s bot approved the site.” The tests use crawler user-agent headers from the audit environment. Only Google’s own review status can establish approval. Google documents crawlers, including a site-verification crawler, but does not document the claimed rule that all bot-passed sites are automatically approved and only flagged sites receive manual review.
+
+Revised score: ads.txt assumed complete; consent excluded from this pre-approval grade
+
+Scoring revision, 5 October 2026: the owner will add the correct ads.txt entry before submitting for review. It is treated as completed for this assessment; deployment has not been verified. Google describes ads.txt as recommended rather than mandatory. No points are deducted for it. [G9]
+
+The audited site has advertising disabled. No deduction is assigned for the absence of an advertising consent platform in this pre-submission grade. Consent is not universally optional after approval: Google requires a certified TCF-integrated CMP for personalized ads served to users in the EEA, UK and Switzerland, and its EU user consent policy also covers cookies or other local storage where legally required. These are separate ad-serving obligations. [G8] [G11]
+
+The change from 90 to 93 is a scoring correction, not evidence of new website fixes. The crawl and functional evidence below retain their original timestamps. Individual page scores remain unchanged because these assumptions do not change their content or behavior.
+
+Checklist areaScoreRemaining pointsWhat closes the gap
+
+Content28/302Describe the extent of background retained in the published mug example accurately, with representative tested input/output evidence. Improve the guides’ principal section hierarchy from H3 to H2. These are editorial and accessibility improvements, not stand-alone AdSense rejection rules.
+
+Tool accuracy and output evidence24/251Improve or precisely bound the background-removal result. Complete and document fresh PDF-download/open, QR-download/scan and temporary-email delivery/read tests. Untested outcomes are verification gaps, not confirmed broken tools.
+
+Access and navigation18/202Fix the confirmed duplicate directory-filter controllers and inconsistent counters. Validate navigation, touch controls, loading and file handling on a phone; no mobile performance failure was established.
+
+Public publisher and privacy information15/150No current deduction under the audited ads-disabled configuration. Keep the policies accurate when services change.
+
+Submission and ownership verification8/102Confirm that AdSense recognizes the site connection and requested account setup tasks are complete. Check the real Google fetch path using Search Console’s live inspection and verified crawler requests where available. Private account state and actual Google-origin access remain unverified; a failure was not demonstrated.
+
+Total93/1007Resolve the observed issues and close the relevant verification gaps, then reassess.
+
+These are our subjective audit points, not Google’s scoring system. A verified 100/100 on this checklist would not guarantee approval, a particular review route, or a shorter review time. Neither 93/100 nor 100/100 is an approval-probability estimate.
+
+Fresh crawl evidence
+The raw crawl finished at 2026-10-05T16:31:55Z; browser and follow-up checks continued afterwards. Requests used no-cache headers and an audit query parameter, plus a fresh browser session and a hard refresh. Discovery followed the sitemaps and public navigation recursively.
+AspectResultEvidence
+Public availabilityPassed39/39 canonical pages plus the homepage alias returned HTTP 200. HTTPS certificate validation succeeded; HTTP redirects to HTTPS.
+robots.txtPassedPublic paths are allowed. The only global disallow is /admin-panel/. No public page or first-party asset path is blocked by the current public-path rules.
+AdSense verification UAPassed simulation39/39 canonical pages returned 200 with Google-Display-Ads-Bot. Their HTML hashes match the ordinary requests.
+AdSense ads crawler UAPassed simulation13 representative pages returned 200 with Mediapartners-Google and identical HTML.
+Search crawler UAsPassed simulation13 representative pages each returned 200 with desktop and mobile-format Googlebot user agents and identical HTML. This is not a mobile viewport test.
+Raw HTML / no renderingPassedAll 39 pages include meaningful main content without running JavaScript. All four full articles and the directory links are present in HTML. Interactive tools require JavaScript as expected.
+Rendered page inventoryPassed desktop sampleAll 39 canonical pages opened with one H1 and main content at a 1348 CSS-pixel viewport. No horizontal page overflow appeared in these default views.
+Titles and canonical URLsPassed39 unique titles, 39 unique descriptions, one H1 on each canonical page, and 39 self-canonical URLs. No meta/header noindex was observed. Viewport metadata is present.
+Sitemaps and linksPassed39 URLs across two URL sitemaps match the public canonical inventory. The sitemap index and robots sitemap declaration resolve. No linked public-page failure or missing internal fragment was found.
+ResourcesPassed HTTP checks54 discovered static asset endpoints, eight dynamic dependency endpoints, six public linked sample files, and the versioned recommendation script resolved. Asset checks used GET for code/CSS/SVG and HEAD for ordinary images/fonts; sample downloads used GET.
+External referencesMixed transport evidenceFour of six external references resolved in the HTTP crawl. Google’s partner-privacy link and Guerrilla Mail timed out there, but both were reachable through independent web retrieval. These are not confirmed broken links.
+Old URLs and missing pagesPassed status handlingEight historical content URLs redirect to relevant current guides. One retired, unlinked article returns 410. An intentional unknown URL returns 404. The 404 still uses homepage content/canonical: useful cleanup, not a 200 soft-404.
+Ownership / AdSense accountNot externally verifiableAt the crawl timestamp, no visible AdSense loader, publisher account meta tag, or seller record was found. ads.txt is now treated as completed for scoring under the owner’s pre-submission commitment. Search Console can provide another ownership path; its status and the AdSense setup tasks remain private. No ownership failure is established.
+Real Google crawler accessNot verifiedRequests here originate from the audit environment. Changing a user-agent header does not provide a verified Google IP or access to Google’s approval decision.
+Mobile speed / Core Web VitalsNot measuredThe mobile PageSpeed API returned a testing-service quota error, not a nevco.online error. No Lighthouse score, field Core Web Vitals, or phone-viewport result is claimed.
+Ads and consent behaviorInactive; excluded from pre-approval gradeAt the crawl timestamp, public pages had no active Google ad runtime. Missing ad-serving consent controls are not deducted in this assessment. Applicable consent obligations must be met when ads are served; active regional behavior was not tested.
+Google identifies Google-Display-Ads-Bot as a site-verification crawler and Mediapartners-Google as the ad-context crawler. Search Googlebot and Search Console checks are separate and do not establish an AdSense approval decision. [G2] [G3] [G4] [G5]
+What changed since the earlier audit
+ItemEarlier snapshotCurrent snapshotAssessment
+Background-removal guide10,575 article-body words1,711 article-body wordsSubstantial trim, a worked example, recorded input/output files, and more specific limits.
+Temporary-email guide11,004 article-body words1,711 article-body wordsClearer recovery decisions, receiving workflow, delivery-test distinctions, and provider limitations.
+Repeated tool-page paragraphsExact repeated main paragraphs detected on all 20 tool pagesNone detected by the same 12+-word exact-paragraph checkThe old repetition deduction is removed. Shared navigation and brief reusable UI notes are normal.
+Password rangeFAQ said 8–64; control/code used 6–48Documentation and control now say 6–48Corrected.
+Image-to-PDF formatsFAQ omitted WebPFAQ/control include JPG, PNG, WebPCorrected.
+CSV troubleshootingReferenced a separator selector that did not existExplicitly says comma-only, no selectorCorrected.
+Empty reading timeOne minute after JavaScript ranZero minutes; sample shows 4 words, 24 characters, 2 sentences and 2 paragraphsCorrected and freshly checked in the browser.
+Article link arrowCached browser text showed a question markRead article →; versioned script resolves and contains the arrow escapeCorrected delivery observed in the fresh browser.
+CategoriesLimited extra guidance in small categoriesSpecific tables, decisions, examples, and workflow linksImproved; a category with one tool is not automatically a violation.
+Background model loadingModule imported on page loadModule import deferred until removal is requestedUseful load-path improvement; first-use model speed has not been benchmarked.
+Directory searchEarlier single generic searchNew dedicated search plus a second generic searchNew conflict reproduced; fix before applying.
+Actions that can improve readiness
+1. Fix the conflicting directory filters
+On All tools, choose Generators, then type JSON in the second “Find a tool” box. Developer tools appear while Generators stays selected. The two counters read “5 of 20 tools shown” and “2 of 20 tools.” The primary search controller correctly intersects search and category; the injected second controller overrides visibility and leaves stale counts.
+
+Observed stateVisible cardsCounters
+Generators selectedFive generator tools5 of 20 / 20 of 20
+JSON in second searchJSON Formatter and CSV to JSON5 of 20 / 2 of 20
+JSON also entered in primary searchNo matching toolsNo matching tools / 2 of 20
+
+Suggested code change: in assets/js/main.js, skip the generic catalog-search enhancement when the grid contains the dedicated directory cards. Keep assets/js/tool-directory.js as the single controller for this page. This is a proposal; no production code was changed.
+document.querySelectorAll('.tool-grid').forEach((grid, index) => {
+  if (grid.querySelector('[data-directory-tool]')) return;
+  // Existing generic search enhancement for other grids.
+});
+Verify: one search box; Generators plus JSON gives no results; clearing the search restores five cards; All categories restores 20; the result count always matches the visible cards. Publish with a new asset version.
+
+A screenshot accompanies this report: open the directory-filter evidence. Keep both downloaded files in the same folder for that relative link.
+
+2. Confirm actual Google access and account readiness
+Use Search Console’s live URL Inspection for the homepage, a tool, and a guide; inspect the tested HTML/screenshot. This verifies the Search fetch path. Separately inspect hosting/CDN logs for successful AdSense crawler requests and verify the originating IPs using Google’s published method. Search indexing and AdSense approval are different checks.
+Confirm that the AdSense dashboard recognizes the site connection and that all requested setup tasks are complete. Public inspection found no visible AdSense account tag at the crawl timestamp. ads.txt is treated as completed under the owner’s stated pre-submission plan, and Search Console ownership may already provide the alternative connection path. Confirm the selected method in the account; this is an unknown, not a confirmed ownership failure.
+
+[G1] [G3] [G7] [G10]
+
+3. Complete the practical output checks
+The recorded mug result still retains large background fragments. Test a representative permitted photograph and improve the result or explain its limitations precisely. Physically scan a downloaded QR code. Repeat a fresh interactive PDF download and open that output independently on another browser. Send a non-sensitive email from a mailbox or application you control to verify arrival and reading, if you authorize that test.
+
+4. Measure mobile behavior
+Run mobile PageSpeed and a real phone check for the homepage, a guide, and the background tool. Test navigation, touch controls, loading, and file handling. The model import is now deferred, which is a useful implementation change; this audit does not assign a measured speed grade.
+
+5. Maintain edited, useful content
+Keep examples original, reproducible, and genuinely reviewed. Principal article sections currently use H3 under the guide’s H1/TOC; changing those sections to H2 would make the hierarchy clearer. Add further workflows when they provide a distinct useful task, with actual input/output evidence. No fixed word count or post total in the cited readiness guidance guarantees approval.
+
+Separate ad-serving obligations: excluded from this score
+ads.txt is treated as completed for scoring because the owner will add the actual publisher account entry before submitting. The last crawl observed a comment-only file; this update does not claim a deployed seller entry. Google recommends ads.txt but does not make its use mandatory. When personalized ads are served in the EEA, UK and Switzerland, a certified CMP supporting TCF is required. Meet the applicable EU user consent obligations for local storage and personal data; approval does not waive those obligations.
+
+[G1] [G6] [G8] [G9]
+Public sample files and changed controls
+Linked sampleHTTPIndependent inspection
+/assets/examples/pdf/application.pdf2002 pages; Synthetic application / 1 → Synthetic application / 2
+/assets/examples/pdf/cover.pdf2001 pages; Synthetic cover / 1
+/assets/examples/pdf/merged-example.pdf2004 pages; Synthetic cover / 1 → Synthetic application / 1 → Synthetic application / 2 → Synthetic support / 1
+/assets/examples/pdf/support.pdf2001 pages; Synthetic support / 1
+/assets/images/editorial/background-removal-input.png200{'size': [480, 360], 'mode': 'RGBA', 'alpha_range': [255, 255]}
+/assets/images/editorial/background-removal-output.png200{'size': [480, 360], 'mode': 'RGBA', 'alpha_range': [0, 255]}
+
+The recorded merged PDF opens and contains the cover, both application pages, and the support page in that order; all four pages were rendered for inspection. The recorded background output is a 480 × 360 RGBA image with transparent and opaque pixels, but substantial beige background remains. These are checks of the published files, not proof that the current live tool will produce the same result for every input.
+
+Fresh browser checks confirmed the word-counter sample and zero-minute empty state, successful 180 × 180 QR generation with an accessible output label, and temporary-inbox allocation plus polling and a roughly one-hour website-access countdown. No external email was sent, QR image physically scanned, or fresh interactive PDF output reopened in this turn.
+Every discovered public page, scored
+39 canonical pages plus the homepage alias. Page grades use access 25, usefulness 35, accuracy 20, and usability 20. Targets are illustrative editorial goals; applying a suggestion does not cause Google to award those points. No confirmed prohibited-content violation was observed in the audited public pages.
+
+The revised overall 93/100 is a separate weighted site assessment: content 28/30, tool accuracy and output evidence 24/25, access/navigation 18/20, public publisher/privacy information 15/15, and submission/ownership verification 8/10. The former 90/100 grade mixed future launch concerns into pre-submission readiness. Planned ads.txt and inactive advertising consent controls now receive no deduction. Remaining verification gaps reduce confidence; they are not all defects. The overall grade is not the arithmetic average below.
+Find a pagePage typeAll pagesCore and legalCategoriesToolsGuidesAliasExpand all details40 pages
+
+PageTypeEarlierCurrent /100ChangeTargetSimulated verification UA
+
+/Core and legal8792+596200 / identical HTML
+/about.htmlCore and legal9093+396200 / identical HTML
+/blog/index.htmlCore and legal8491+795200 / identical HTML
+/categories/developer-tools.htmlCategories8893+597200 / identical HTML
+/categories/email-tools.htmlCategories7991+1295200 / identical HTML
+/categories/generators.htmlCategories8692+696200 / identical HTML
+/categories/image-tools.htmlCategories7890+1296200 / identical HTML
+/categories/pdf-tools.htmlCategories8293+1197200 / identical HTML
+/categories/text-tools.htmlCategories8492+896200 / identical HTML
+/contact.htmlCore and legal8989+095200 / identical HTML
+/cookie-policy.htmlCore and legal9292+096200 / identical HTML
+/disclaimer.htmlCore and legal8992+395200 / identical HTML
+/journal/best-practices-for-background-removal-when-working-with-designGuides7492+1896200 / identical HTML
+/journal/best-practices-for-temporary-email-when-working-with-signupsGuides7291+1996200 / identical HTML
+/journal/simple-pdf-workflow-without-softwareGuides8893+597200 / identical HTML
+/journal/small-tools-that-save-developers-timeGuides9193+297200 / identical HTML
+/privacy-policy.htmlCore and legal9393+096200 / identical HTML
+/terms-of-service.htmlCore and legal9090+094200 / identical HTML
+/tools/background-remover.htmlTools8890+296200 / identical HTML
+/tools/base64-tool.htmlTools8792+596200 / identical HTML
+/tools/color-palette-generator.htmlTools9293+196200 / identical HTML
+/tools/csv-to-json.htmlTools8994+597200 / identical HTML
+/tools/hash-generator.htmlTools9294+297200 / identical HTML
+/tools/image-to-pdf.htmlTools8692+697200 / identical HTML
+/tools/index.htmlCore and legal8687+195200 / identical HTML
+/tools/json-formatter.htmlTools9194+397200 / identical HTML
+/tools/jwt-decoder.htmlTools9294+297200 / identical HTML
+/tools/password-generator.htmlTools8594+997200 / identical HTML
+/tools/pdf-merge.htmlTools8994+597200 / identical HTML
+/tools/qr-code-generator.htmlTools9093+397200 / identical HTML
+/tools/temp-mail.htmlTools8691+596200 / identical HTML
+/tools/text-case-converter.htmlTools9092+296200 / identical HTML
+/tools/text-diff-checker.htmlTools9193+297200 / identical HTML
+/tools/unit-converter.htmlTools9194+397200 / identical HTML
+/tools/unix-timestamp-converter.htmlTools9294+297200 / identical HTML
+/tools/url-encoder-decoder.htmlTools9193+297200 / identical HTML
+/tools/user-agent-generator.htmlTools8592+796200 / identical HTML
+/tools/uuid-generator.htmlTools9294+297200 / identical HTML
+/tools/word-counter.htmlTools8694+897200 / identical HTML
+/index.htmlAlias8792+596Alias: ordinary HTTP 200
+
+Anvil Tools — Free browser tools that just work92/100
+
+https://nevco.online/
+
+Components: access 25/25 · usefulness 31/35 · accuracy 19/20 · usability 17/20. Earlier score 87; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 907. Canonical: https://nevco.online/. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Keep the original workflow example. Validate the full photograph-to-PDF sequence on a phone and keep the model download deferred until use.
+
+About93/100
+
+https://nevco.online/about.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 19/20 · usability 18/20. Earlier score 90; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 764. Canonical: https://nevco.online/about.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Keep the maintenance and correction process accurate. If a real reviewer performs editorial checks, identify that person or team and the checks they actually performed.
+
+Blog91/100
+
+https://nevco.online/blog/index.html
+
+Components: access 25/25 · usefulness 29/35 · accuracy 19/20 · usability 18/20. Earlier score 84; illustrative target 95.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 234. Canonical: https://nevco.online/blog/index.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Continue publishing distinct, tested workflows when there is a useful task to explain. Preserve the existing HTML article links and avoid padding the archive to a target post count.
+
+Developer tools93/100
+
+https://nevco.online/categories/developer-tools.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 19/20 · usability 18/20. Earlier score 88; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 427. Canonical: https://nevco.online/categories/developer-tools.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Retain the worked CSV-to-JSON example. Add another reproducible failure case only where it clarifies a real transformation boundary.
+
+Email tools91/100
+
+https://nevco.online/categories/email-tools.html
+
+Components: access 25/25 · usefulness 29/35 · accuracy 19/20 · usability 18/20. Earlier score 79; illustrative target 95.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 340. Canonical: https://nevco.online/categories/email-tools.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Add a documented, authorized non-sensitive delivery test with the acceptance, arrival, and reading stages kept separate.
+
+Generators92/100
+
+https://nevco.online/categories/generators.html
+
+Components: access 25/25 · usefulness 30/35 · accuracy 19/20 · usability 18/20. Earlier score 86; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 362. Canonical: https://nevco.online/categories/generators.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Add a photograph or recorded scan of a permitted printed QR example, with the decoded destination verified.
+
+Image tools90/100
+
+https://nevco.online/categories/image-tools.html
+
+Components: access 25/25 · usefulness 29/35 · accuracy 18/20 · usability 18/20. Earlier score 78; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 328. Canonical: https://nevco.online/categories/image-tools.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Test a representative product photograph. Report first-use cost and edge quality from that test; the synthetic mug result is not a clean cutout.
+
+PDF tools93/100
+
+https://nevco.online/categories/pdf-tools.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 19/20 · usability 18/20. Earlier score 82; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 311. Canonical: https://nevco.online/categories/pdf-tools.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Retain the concrete four-page assembly example. Add an output check for mixed page sizes and one realistic document feature that the tool can preserve.
+
+Text tools92/100
+
+https://nevco.online/categories/text-tools.html
+
+Components: access 25/25 · usefulness 30/35 · accuracy 19/20 · usability 18/20. Earlier score 84; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 281. Canonical: https://nevco.online/categories/text-tools.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Keep counting and capitalization rules explicit. Add a concrete Unicode or moved-line example where it helps users choose a tool.
+
+Contact89/100
+
+https://nevco.online/contact.html
+
+Components: access 25/25 · usefulness 28/35 · accuracy 18/20 · usability 18/20. Earlier score 89; illustrative target 95.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 279. Canonical: https://nevco.online/contact.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Verify receipt and support replies with a non-sensitive test you authorize. Make success, validation, and delivery-failure messages accurate.
+
+Cookie policy92/100
+
+https://nevco.online/cookie-policy.html
+
+Components: access 25/25 · usefulness 30/35 · accuracy 19/20 · usability 18/20. Earlier score 92; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 357. Canonical: https://nevco.online/cookie-policy.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Keep the policy synchronized with actual storage and advertising behavior. Verify consent withdrawal and regional behavior when ads are introduced.
+
+Disclaimer92/100
+
+https://nevco.online/disclaimer.html
+
+Components: access 25/25 · usefulness 30/35 · accuracy 19/20 · usability 18/20. Earlier score 89; illustrative target 95.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 265. Canonical: https://nevco.online/disclaimer.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Retain specific output limitations and correction links. Check that every statement continues to match the implemented tool.
+
+Background Removal for Design and Product Photography92/100
+
+https://nevco.online/journal/best-practices-for-background-removal-when-working-with-design
+
+Components: access 25/25 · usefulness 32/35 · accuracy 18/20 · usability 17/20. Earlier score 74; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 1819. Canonical: https://nevco.online/journal/best-practices-for-background-removal-when-working-with-design. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Use H2 for principal article sections. Add a representative photograph test and describe the large retained background areas in the mug result precisely.
+
+Temporary Email Best Practices for Signups91/100
+
+https://nevco.online/journal/best-practices-for-temporary-email-when-working-with-signups
+
+Components: access 25/25 · usefulness 31/35 · accuracy 18/20 · usability 17/20. Earlier score 72; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 1834. Canonical: https://nevco.online/journal/best-practices-for-temporary-email-when-working-with-signups. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Use H2 for principal sections. Link the provider’s relevant documented practices directly and add an authorized, non-sensitive delivery example if it is actually tested.
+
+PDF Workflows: Merge Files, Convert Images, and Check the Result93/100
+
+https://nevco.online/journal/simple-pdf-workflow-without-software
+
+Components: access 25/25 · usefulness 32/35 · accuracy 19/20 · usability 17/20. Earlier score 88; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 1802. Canonical: https://nevco.online/journal/simple-pdf-workflow-without-software. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Use H2 for principal sections and link the downloadable four-page fixture directly from the guide. Preserve the distinction between that test and the separate six-page scenario.
+
+Debug API Data with JSON, Base64, and Browser Tools93/100
+
+https://nevco.online/journal/small-tools-that-save-developers-time
+
+Components: access 25/25 · usefulness 32/35 · accuracy 19/20 · usability 17/20. Earlier score 91; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 1990. Canonical: https://nevco.online/journal/small-tools-that-save-developers-time. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Use H2 for principal sections. Add downloadable synthetic input and expected output fixtures for one connected debugging workflow.
+
+Privacy policy93/100
+
+https://nevco.online/privacy-policy.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 19/20 · usability 18/20. Earlier score 93; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 1171. Canonical: https://nevco.online/privacy-policy.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: When advertising is activated, update the actual providers and processing details and deploy the required consent controls. Prefer the current direct Google partner-privacy URL after verifying it.
+
+Terms of service90/100
+
+https://nevco.online/terms-of-service.html
+
+Components: access 25/25 · usefulness 28/35 · accuracy 19/20 · usability 18/20. Earlier score 90; illustrative target 94.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 442. Canonical: https://nevco.online/terms-of-service.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Keep service restrictions and contact information current. Explain any future usage fees or service limits before they are introduced.
+
+Background Remover90/100
+
+https://nevco.online/tools/background-remover.html
+
+Components: access 25/25 · usefulness 30/35 · accuracy 18/20 · usability 17/20. Earlier score 88; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 816. Canonical: https://nevco.online/tools/background-remover.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Improve or document quality on representative photographs. The recorded mug PNG retains substantial background fragments. Preserve the honest limitation and the lazy model import.
+
+Base64 Encoder & Decoder92/100
+
+https://nevco.online/tools/base64-tool.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 19/20 · usability 17/20. Earlier score 87; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 639. Canonical: https://nevco.online/tools/base64-tool.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Keep standard Base64 versus Base64url explicit. Add one complete UTF-8 round-trip example with expected output.
+
+Color Palette Generator93/100
+
+https://nevco.online/tools/color-palette-generator.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 19/20 · usability 18/20. Earlier score 92; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 671. Canonical: https://nevco.online/tools/color-palette-generator.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Verify the exported CSS in another browser and show how the displayed contrast check relates to the exact chosen pair.
+
+CSV to JSON Converter94/100
+
+https://nevco.online/tools/csv-to-json.html
+
+Components: access 25/25 · usefulness 32/35 · accuracy 19/20 · usability 18/20. Earlier score 89; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 591. Canonical: https://nevco.online/tools/csv-to-json.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Retain the corrected comma-only guidance. Add a reproducible quoted-newline example and a small expected output fixture.
+
+Hash Generator94/100
+
+https://nevco.online/tools/hash-generator.html
+
+Components: access 25/25 · usefulness 32/35 · accuracy 19/20 · usability 18/20. Earlier score 92; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 564. Canonical: https://nevco.online/tools/hash-generator.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Retain the SHA-256 known-answer check. Add a newline-versus-no-newline example explaining exactly why the digests differ.
+
+Image to PDF Converter92/100
+
+https://nevco.online/tools/image-to-pdf.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 18/20 · usability 18/20. Earlier score 86; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 739. Canonical: https://nevco.online/tools/image-to-pdf.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Verify a fresh interactive download in another browser and open it independently. Include a mixed PNG/WebP example with recorded page count and dimensions.
+
+All tools87/100
+
+https://nevco.online/tools/index.html
+
+Components: access 25/25 · usefulness 30/35 · accuracy 18/20 · usability 14/20. Earlier score 86; illustrative target 95.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 735. Canonical: https://nevco.online/tools/index.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Remove the second search controller. Use the dedicated search and category controller with one accurate result count.
+
+JSON Formatter & Validator94/100
+
+https://nevco.online/tools/json-formatter.html
+
+Components: access 25/25 · usefulness 32/35 · accuracy 19/20 · usability 18/20. Earlier score 91; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 677. Canonical: https://nevco.online/tools/json-formatter.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Retain the source-preservation advice. Add a visible duplicate-key or unsafe-integer before/after example instead of repeating general instructions.
+
+JWT Decoder94/100
+
+https://nevco.online/tools/jwt-decoder.html
+
+Components: access 25/25 · usefulness 32/35 · accuracy 19/20 · usability 18/20. Earlier score 92; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 571. Canonical: https://nevco.online/tools/jwt-decoder.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Keep the unverified-signature warning attached to the result. Add one malformed-token example and its expected error using synthetic data.
+
+Password Generator94/100
+
+https://nevco.online/tools/password-generator.html
+
+Components: access 25/25 · usefulness 32/35 · accuracy 19/20 · usability 18/20. Earlier score 85; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 653. Canonical: https://nevco.online/tools/password-generator.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Keep the corrected 6–48 range consistent with the controls. Verify boundary lengths and copying on another browser; retain the strength-label limitation.
+
+PDF Merge94/100
+
+https://nevco.online/tools/pdf-merge.html
+
+Components: access 25/25 · usefulness 32/35 · accuracy 19/20 · usability 18/20. Earlier score 89; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 728. Canonical: https://nevco.online/tools/pdf-merge.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Repeat an interactive merge/download in another browser and independently open that new file. The public recorded fixture already has the expected four pages in the correct order.
+
+QR Code Generator93/100
+
+https://nevco.online/tools/qr-code-generator.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 19/20 · usability 18/20. Earlier score 90; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 659. Canonical: https://nevco.online/tools/qr-code-generator.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Physically scan the downloaded QR PNG and a printed version. Confirm the exact decoded destination and retain the new accessible output description.
+
+Temporary Email Generator91/100
+
+https://nevco.online/tools/temp-mail.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 17/20 · usability 18/20. Earlier score 86; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 927. Canonical: https://nevco.online/tools/temp-mail.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Complete an authorized external delivery and reader test. Address creation, polling, and the website-access countdown worked here; delivery from a separate sender remains unverified.
+
+Text Case Converter92/100
+
+https://nevco.online/tools/text-case-converter.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 19/20 · usability 17/20. Earlier score 90; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 482. Canonical: https://nevco.online/tools/text-case-converter.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Add expected outputs for the existing acronym/Unicode example across two useful modes and explain where editorial review remains necessary.
+
+Text Difference Checker93/100
+
+https://nevco.online/tools/text-diff-checker.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 19/20 · usability 18/20. Earlier score 91; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 590. Canonical: https://nevco.online/tools/text-diff-checker.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Retain the disclosed workload limit. Add a moved-line example so users understand why one movement can appear as an addition and removal.
+
+Unit Converter94/100
+
+https://nevco.online/tools/unit-converter.html
+
+Components: access 25/25 · usefulness 32/35 · accuracy 19/20 · usability 18/20. Earlier score 91; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 639. Canonical: https://nevco.online/tools/unit-converter.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Keep rounding precision explicit. Add a negative-temperature example with the expected conversion and inverse check.
+
+Unix Timestamp Converter94/100
+
+https://nevco.online/tools/unix-timestamp-converter.html
+
+Components: access 25/25 · usefulness 32/35 · accuracy 19/20 · usability 18/20. Earlier score 92; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 554. Canonical: https://nevco.online/tools/unix-timestamp-converter.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Add an ambiguous daylight-saving example identifying timezone and input units. Preserve the explicit local-versus-UTC distinction.
+
+URL Encoder & Decoder93/100
+
+https://nevco.online/tools/url-encoder-decoder.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 19/20 · usability 18/20. Earlier score 91; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 582. Canonical: https://nevco.online/tools/url-encoder-decoder.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Add a plus-sign versus space example and a malformed-percent error example; keep component and whole-URL behavior separate.
+
+User Agent Generator92/100
+
+https://nevco.online/tools/user-agent-generator.html
+
+Components: access 25/25 · usefulness 30/35 · accuracy 19/20 · usability 18/20. Earlier score 85; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 733. Canonical: https://nevco.online/tools/user-agent-generator.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Retain the fixed-fixture date and older-version disclosure. Link Google’s crawler verification guidance when explaining that a string does not authenticate a bot.
+
+UUID Generator94/100
+
+https://nevco.online/tools/uuid-generator.html
+
+Components: access 25/25 · usefulness 32/35 · accuracy 19/20 · usability 18/20. Earlier score 92; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 555. Canonical: https://nevco.online/tools/uuid-generator.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Retain the version-4 and authorization distinctions. Add a short format/variant check for generated test identifiers.
+
+Word & Character Counter94/100
+
+https://nevco.online/tools/word-counter.html
+
+Components: access 25/25 · usefulness 32/35 · accuracy 19/20 · usability 18/20. Earlier score 86; illustrative target 97.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 680. Canonical: https://nevco.online/tools/word-counter.html. Fresh desktop-rendered main content and H1 observed. Simulated AdSense verification response: 200 / identical HTML.
+
+Next improvement: Retain the corrected zero-minute empty state. Add a non-space-delimited-language example demonstrating the disclosed counting limitation.
+
+Anvil Tools — Free browser tools that just work92/100
+
+https://nevco.online/index.html
+
+Components: access 25/25 · usefulness 31/35 · accuracy 19/20 · usability 17/20. Earlier score 87; illustrative target 96.
+
+Fresh ordinary HTTP: 200. Raw main-content words: 907. Canonical: https://nevco.online/. Homepage alias, not an additional independent content page. Simulated AdSense verification response: Alias: ordinary HTTP 200.
+
+Next improvement: Keep the original workflow example. Validate the full photograph-to-PDF sequence on a phone and keep the model download deferred until use.
+What Google confirms, and what Reddit does not prove
+
+Confirmed by Google: AdSense uses crawlers; a site-verification crawler exists. Readiness also involves unique useful content, user experience, site access, ownership, and policy checks. The documented review period is usually a few days, with some reviews taking 2–4 weeks. Google advises keeping a pending site submission in place because removing and resubmitting can delay it. [G1] [G2] [G7]
+
+Not established: the rule “bot pass = automatic approval; bot flag = manual review.” The documents reviewed do not publish that routing algorithm or a public bot-pass score. Clean access removes a technical obstacle; it does not establish a shorter queue or a favorable content decision.
+
+DiscussionWhat was actually reportedHow to use it
+R1: bot-flag checklist claimsA poster claims to know what the algorithm flags and proposes an audit tool; the thread does not provide verified internal review documentation.Ideas about navigation and useful pages can be checked against Google guidance. The claimed routing remains unverified.
+R2: long reviewA publisher reports repeated review waits exceeding five weeks.Anecdotal timeline; it does not reveal whether a bot or human handled the application.
+R3: approvalsThe original poster reports four attempts; another commenter reports May 1 submission and May 3 approval.Different reported timelines do not prove the cause or a two-day formula.
+
+Reddit accounts are unverified publisher experiences, not Google policy documentation. [R1] [R2] [R3]
+
+Approval percentage: the earlier rough percentage was a subjective opinion. There is no defensible calibrated probability for this domain from an external audit, and no access here to review history, private account status, actual Google fetches, or the decision model. The stronger readiness score is the useful measurable comparison; it should not be relabeled a 93% approval chance.
+
+Scope and limits
+
+Inventory came from current public sitemaps and recursive public links. Hidden, unlinked server files, private workspace pages, administrative APIs, traffic provenance, and the private AdSense Policy center were not inspected.
+
+78 crawler-header requests were diagnostics: 39 verification-bot plus 13 each for the ad crawler and two Search crawler formats. They were not verified Google-origin requests. Robots interpretation and HTTP header simulation are separate checks.
+
+All 39 canonical pages were viewed at the desktop viewport. A mobile-format HTTP user agent does not establish phone rendering, Core Web Vitals, or AdSense crawler rendering behavior.
+
+Ordinary image/font checks generally used HEAD; code, CSS, SVG and the six linked example files used GET. Background-model weight files and every possible runtime network request were not exhaustively downloaded.
+
+Meaningful tool tests from the earlier audit remain relevant where the implementation did not change. This recheck freshly tested the changed word counter, QR output description, inbox timer, sample-loading control, directory filters, and public example outputs. It did not repeat every prior test on every device.
+
+Published image provenance, all licensing rights, full plagiarism coverage, external mail delivery, production contact handling, and regional legal compliance cannot be certified by this public inspection.
+
+The absence of visible active ads means active ad placement, click behavior and deployed consent cannot be assessed. Future launch requirements remain separate from the current no-ads snapshot.
+
+Recommended decision: fix the directory conflict, confirm the actual Google/account checks, and complete the missing practical output and mobile tests. The current site has a strong public crawl foundation and substantially better editorial content.
+Sources checked
+G11 · Google: EU user consent policy (checked again for the scoring revision)
+G1 · Google: site readiness and ownership
+G2 · Google: AdSense crawlers
+G3 · Google: verify actual crawler requests
+G4 · Google: common crawler user agents
+G5 · Google: special crawler rules
+G6 · Google: ads on screens without publisher content
+G7 · Google: review status and timing
+G8 · Google: certified consent-platform requirements
+G9 · Google: ads.txt troubleshooting
+G10 · Google: account setup
+R1 · Reddit: claims of knowing bot flags
+R2 · Reddit: five-plus-week review report
+R3 · Reddit: approval experiences including a two-day claim
+Prepared for nevco.online · independent public-site audit · 5 October 2026. No production website changes, contact submissions, or external emails were performed.

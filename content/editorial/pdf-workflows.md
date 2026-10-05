@@ -85,3 +85,9 @@ If image conversion fails, test one image first. Check that it opens in the brow
 When the result opens but looks wrong, compare it with the original at the same scale. That separates a bad source photograph from an assembly problem. Preserve the sources and record the specific failing step before trying a different application.
 
 The tools use [pdf-lib](https://pdf-lib.js.org/) for PDF creation and page copying. The practical limits above describe the current Anvil Tools interface; they should not be read as a list of every feature available in that library or every PDF application.
+
+## Download the recorded four-page fixture
+
+The screenshot uses a separate four-page example, rather than the six-page application scenario. Download [the cover](/assets/examples/pdf/cover.pdf), [the two-page application](/assets/examples/pdf/application.pdf), and [the support page](/assets/examples/pdf/support.pdf). Arrange those files in that order and compare [the recorded four-page result](/assets/examples/pdf/merged-example.pdf).
+
+Its page sizes are 420 × 594, 400 × 600, 401 × 601, and 360 × 480 PDF points. Mixed dimensions are intentional: merging does not standardize page sizes. Check the retained page text and dimensions after downloading. Interactive forms, signatures, and bookmarks need separate checks.

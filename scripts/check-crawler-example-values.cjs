@@ -1,0 +1,36 @@
+// Check the added examples against actual browser tools, using fixed expected values.
+const fs = require('node:fs');
+const path = require('node:path');
+const assert = require('node:assert/strict');
+const express = require('express');
+const { chromium } = require('../deployment/browser-check/node_modules/playwright');
+const checks = [];
+let server, browser;
+(async () => {
+  const app = express(); app.use(express.static('frontend'));
+  server = app.listen(0, '127.0.0.1'); await new Promise(resolve => server.once('listening', resolve));
+  const origin = `http://127.0.0.1:${server.address().port}`;
+  browser = await chromium.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true });
+  const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
+  await context.route('**/pdf-lib.min.js',route=>route.fulfill({path:'deployment/adsense-followup-2026-10-05/pdf-lib.min.js',contentType:'text/javascript'}));
+  const page = await context.newPage();
+  const record = name => { checks.push({ name, passed: true }); console.log(name); };
+  const visit = slug => page.goto(`${origin}/tools/${slug}.html`);
+  await visit('base64-tool'); await page.locator('#b64-input').fill('café 🙂'); await page.locator('#b64-encode').click(); assert.equal(await page.locator('#b64-output').innerText(), 'Y2Fmw6kg8J+Zgg==');
+  await page.locator('#b64-input').fill('Y2Fmw6kg8J+Zgg=='); await page.locator('#b64-decode').click(); assert.equal(await page.locator('#b64-output').innerText(), 'café 🙂'); record('UTF-8 accent/emoji round trip');
+  const compact = fs.readFileSync('frontend/assets/examples/developer/expected.min.json', 'utf8');
+  await page.locator('#b64-input').fill(compact); await page.locator('#b64-encode').click(); assert.equal(await page.locator('#b64-output').innerText(), fs.readFileSync('frontend/assets/examples/developer/expected.base64.txt', 'utf8')); record('Connected workflow expected UTF-8 Base64');
+  await visit('hash-generator'); await page.locator('#hash-algorithm').selectOption('SHA-256');
+  for (const text of ['abc\n','abc\r\n']) { await page.locator('#hash-input').fill(text); assert.equal(await page.locator('#hash-input').inputValue(),'abc\n'); await page.locator('#hash-generate').click(); await page.waitForFunction(expected => document.getElementById('hash-hex').textContent === expected, 'edeaaff3f1774ad2888673770c6d64097e391bc362d7d6fb34982ddf0efd18cb'); } record('Trailing LF changes SHA-256; browser textarea normalizes CRLF to LF');
+  await page.locator('#hash-input').fill(compact); await page.locator('#hash-generate').click(); await page.waitForFunction(expected => document.getElementById('hash-hex').textContent === expected, JSON.parse(fs.readFileSync('frontend/assets/examples/developer/workflow.json', 'utf8')).sha256OfMinifiedJson); record('Connected workflow exact-byte SHA-256');
+  await visit('text-diff-checker'); await page.locator('#diff-before').fill('alpha\nbeta\ngamma'); await page.locator('#diff-after').fill('gamma\nalpha\nbeta'); await page.locator('#diff-compare').click(); assert.equal(await page.locator('#diff-status').innerText(),'1 added line, 1 removed line, 2 unchanged.'); assert.equal(await page.locator('.diff-added code').innerText(),'gamma'); assert.equal(await page.locator('.diff-removed code').innerText(),'gamma'); record('Moved line appears as addition/removal');
+  await visit('unit-converter'); await page.locator('#uc-group').selectOption('temperature'); await page.locator('#uc-value').fill('-40'); assert.match(await page.locator('#uc-result').innerText(),/-40\.000 fahrenheit/); await page.locator('#uc-from').selectOption('fahrenheit'); await page.locator('#uc-to').selectOption('celsius'); assert.match(await page.locator('#uc-result').innerText(),/-40\.000 celsius/); record('Negative-temperature conversion and inverse');
+  await visit('unix-timestamp-converter'); const expected = [['1793511000','2026-11-01T05:30:00.000Z'],['1793514600','2026-11-01T06:30:00.000Z']]; for (const [seconds,iso] of expected) { await page.locator('#ts-value').fill(seconds); await page.locator('#ts-unit').selectOption('seconds'); await page.locator('#ts-from').click(); assert.ok((await page.locator('#ts-output').innerText()).includes(iso)); } record('Two explicit instants for New York DST overlap');
+  await visit('uuid-generator'); await page.locator('#uuid-count').fill('5'); await page.locator('#uuid-generate').click(); const ids=(await page.locator('#uuid-output').innerText()).trim().split(/\s+/); assert.equal(new Set(ids).size,5); ids.forEach(id=>assert.match(id,/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i)); record('Fresh UUID version/variant/format and distinct batch');
+  await page.goto(origin + '/contact.html'); let failure = false;
+  await context.route('**/api/contact', route => route.fulfill({ status: failure ? 503 : 202, contentType: 'application/json', body: JSON.stringify(failure ? { error: 'Service unavailable' } : { ok: true, reference: 'synthetic-review-reference', message: 'Your message is saved. A receipt will be emailed when delivery is available.' }) }));
+  const fill = async () => {await page.locator('#contactName').fill('Synthetic review');await page.locator('#contactEmail').fill('review@example.test');await page.locator('#contactSubject').fill('Synthetic contact check');await page.locator('#contactMessage').fill('Synthetic UI check only; no external message is sent.');};
+  await fill(); await page.locator('button[type=submit]').click(); await page.locator('#contactStatus').filter({hasText:'synthetic-review-reference'}).waitFor(); assert.match(await page.locator('#contactStatus').innerText(),/receipt will be emailed when delivery is available/); failure=true; await fill(); await page.locator('button[type=submit]').click(); await page.locator('#contactStatus').filter({hasText:'temporarily unavailable'}).waitFor(); assert.equal(await page.locator('#contactMessage').inputValue(),'Synthetic UI check only; no external message is sent.'); record('Contact persistence wording and failure recovery with synthetic responses');
+  await visit('image-to-pdf'); await page.locator('#ip-file-input').setInputFiles(path.resolve('frontend/assets/examples/images/mug-photo-output.png'));const download=page.waitForEvent('download');await page.locator('#ip-convert').click();await (await download).saveAs('deployment/crawler-recheck-2026-10-05/photo-cutout.pdf');record('Actual photograph cutout converted to PDF at a 390px phone viewport');
+  fs.writeFileSync('docs/audits/crawler-recheck-example-values.json',JSON.stringify({checkedAt:new Date().toISOString(),checks,limits:['Contact responses are mocked; no submission, receipt, or support reply sent.']},null,2)+'\n');
+})().catch(error=>{console.error(error);process.exitCode=1;}).finally(async()=>{if(browser)await browser.close();if(server)await new Promise(resolve=>server.close(resolve));});

@@ -1,6 +1,8 @@
 # October 4, 2026 review corrections
 
-**Current state:** the [October 5 page-by-page release](PAGE_BY_PAGE_REVIEW_2026-10-05.md) is the current deployment and review report. The correct Supabase project has four published, covered guides; the shortened background-removal and temporary-email bodies and revised PDF workflow are now published and verified. The public-page fixes are pushed to both repositories, and the user will upload the finished `frontend` contents to cPanel while skipping `ads.txt`. The older counts and release instructions below are historical.
+**Current state:** the [October 6 crawler recheck release](CRAWLER_RECHECK_FIXES_2026-10-06.md) addresses all 40 entries in the supplied report. Repository fixes, browser checks, independently reopened downloads, and guarded publication tests are complete locally. New frontend/backend archives and four revised guide bodies are prepared; this release has not been deployed or published. Private account, external delivery, and physical-device checks remain explicitly listed in that report. The cPanel upload remains the owner's step, with `ads.txt` excluded.
+
+**Previous verified release:** the [October 5 page-by-page release](PAGE_BY_PAGE_REVIEW_2026-10-05.md) records the preceding deployment. The correct Supabase project has four published, covered guides; the shortened background-removal and temporary-email bodies and revised PDF workflow were published and verified. Those public-page fixes were pushed to both repositories. The older counts and release instructions below are historical.
 
 ## Earlier release record (superseded by the cleanup)
 

@@ -6,13 +6,13 @@
 <title>Base64 Encoder & Decoder | Anvil Tools</title>
 <meta name="description" content="Convert text to Base64 and back, entirely in your browser.">
 <link rel="canonical" href="https://anviltools.vercel.app/tools/base64-tool.html">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review4">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-recheck1">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-recheck1">
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-recheck1">
 <link rel="stylesheet" href="../assets/css/tool-ux.css">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-recheck1">
 <meta property="og:type" content="website"><meta property="og:title" content="Base64 Encoder &amp; Decoder | Anvil Tools"><meta property="og:description" content="Convert text to Base64 and back, entirely in your browser."><meta property="og:url" content="https://anviltools.vercel.app/tools/base64-tool.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript><!-- local-font-preload --><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin><!-- /local-font-preload --></head>
 <body class="public-site">
@@ -55,7 +55,7 @@
 
 
 
-<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Check a text round trip</h2><p>This tool encodes UTF-8 text using standard Base64. Standard Base64 can include +, /, and =; it is not automatically safe as an unescaped URL parameter. Base64url uses a different alphabet. Neither form encrypts its contents.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>Hello</td><td>SGVsbG8=</td></tr><tr><td>café</td><td>Y2Fmw6k=</td></tr><tr><td>Decode either output</td><td>The original text returns; arbitrary binary files are outside this text-only tool.</td></tr></tbody></table></div><button class="btn secondary" type="button" data-example-fields="{&quot;b64-input&quot;: &quot;Hello&quot;}">Try this sample</button><p class="status-msg" id="example-status" role="status" aria-live="polite"></p></section><!-- /checked-example --><section class="info-section">
+<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Check a text round trip</h2><p>This tool encodes UTF-8 text using standard Base64. Standard Base64 can include +, /, and =; it is not automatically safe as an unescaped URL parameter. Base64url uses a different alphabet. Neither form encrypts its contents.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>Hello</td><td>SGVsbG8=</td></tr><tr><td>café</td><td>Y2Fmw6k=</td></tr><tr><td>Decode either output</td><td>The original text returns; arbitrary binary files are outside this text-only tool.</td></tr><tr><td>UTF-8 text: café 🙂</td><td>Y2Fmw6kg8J+Zgg== → decoding returns café 🙂 exactly, including one space.</td></tr></tbody></table></div><button class="btn secondary" type="button" data-example-fields="{&quot;b64-input&quot;: &quot;Hello&quot;}">Try this sample</button><p class="status-msg" id="example-status" role="status" aria-live="polite"></p></section><!-- /checked-example --><section class="info-section">
   <h2>How it works</h2>
   <ul><li>Paste plain text and click encode to get its Base64 representation.</li>
 <li>Paste a Base64 string and click decode to recover the original text.</li>
@@ -121,8 +121,8 @@
 
 
 
-<script src="../assets/js/main.js?v=20261005-review4"></script>
+<script src="../assets/js/main.js?v=20261005-recheck1"></script>
 <script src="../assets/js/tools/base64-tool.js"></script>
 <script src="../assets/js/tool-ux.js"></script>
-<script src="../assets/js/tool-examples.js?v=20261005-review4"></script></body>
+<script src="../assets/js/tool-examples.js?v=20261005-recheck1"></script></body>
 </html>

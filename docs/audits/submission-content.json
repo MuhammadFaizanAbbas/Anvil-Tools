@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-05T12:43:00.128631+00:00",
+  "checkedAt": "2026-10-05T19:11:35.672283+00:00",
   "comparison": "da0f9ad3cd140bba5840469eeaf807de0a43bbe3",
   "scope": "Exact normalized paragraphs of at least 12 words within each tool main element; not an internet originality check.",
   "tools": [
@@ -14,7 +14,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 927,
+        "readableMainWords": 935,
         "mainHeadings": 17,
         "faqQuestions": 7,
         "repeatedMainParagraphs": []
@@ -32,7 +32,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 816,
+        "readableMainWords": 848,
         "mainHeadings": 15,
         "faqQuestions": 7,
         "repeatedMainParagraphs": []
@@ -86,7 +86,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 659,
+        "readableMainWords": 670,
         "mainHeadings": 14,
         "faqQuestions": 6,
         "repeatedMainParagraphs": []
@@ -122,7 +122,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 680,
+        "readableMainWords": 700,
         "mainHeadings": 20,
         "faqQuestions": 6,
         "repeatedMainParagraphs": []
@@ -140,7 +140,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 677,
+        "readableMainWords": 699,
         "mainHeadings": 15,
         "faqQuestions": 6,
         "repeatedMainParagraphs": []
@@ -158,7 +158,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 639,
+        "readableMainWords": 653,
         "mainHeadings": 15,
         "faqQuestions": 6,
         "repeatedMainParagraphs": []
@@ -176,7 +176,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 733,
+        "readableMainWords": 738,
         "mainHeadings": 15,
         "faqQuestions": 6,
         "repeatedMainParagraphs": []
@@ -194,7 +194,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 671,
+        "readableMainWords": 696,
         "mainHeadings": 14,
         "faqQuestions": 6,
         "repeatedMainParagraphs": []
@@ -212,7 +212,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 639,
+        "readableMainWords": 650,
         "mainHeadings": 15,
         "faqQuestions": 6,
         "repeatedMainParagraphs": []
@@ -230,7 +230,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 582,
+        "readableMainWords": 615,
         "mainHeadings": 14,
         "faqQuestions": 5,
         "repeatedMainParagraphs": []
@@ -248,7 +248,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 571,
+        "readableMainWords": 591,
         "mainHeadings": 16,
         "faqQuestions": 5,
         "repeatedMainParagraphs": []
@@ -266,7 +266,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 554,
+        "readableMainWords": 584,
         "mainHeadings": 14,
         "faqQuestions": 5,
         "repeatedMainParagraphs": []
@@ -284,7 +284,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 564,
+        "readableMainWords": 614,
         "mainHeadings": 14,
         "faqQuestions": 5,
         "repeatedMainParagraphs": []
@@ -302,7 +302,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 591,
+        "readableMainWords": 635,
         "mainHeadings": 14,
         "faqQuestions": 5,
         "repeatedMainParagraphs": []
@@ -320,7 +320,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 482,
+        "readableMainWords": 494,
         "mainHeadings": 13,
         "faqQuestions": 5,
         "repeatedMainParagraphs": []
@@ -338,7 +338,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 590,
+        "readableMainWords": 619,
         "mainHeadings": 14,
         "faqQuestions": 5,
         "repeatedMainParagraphs": []
@@ -356,7 +356,7 @@
         ]
       },
       "after": {
-        "readableMainWords": 555,
+        "readableMainWords": 565,
         "mainHeadings": 14,
         "faqQuestions": 5,
         "repeatedMainParagraphs": []

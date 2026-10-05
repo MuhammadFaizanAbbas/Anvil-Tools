@@ -6,13 +6,13 @@
 <title>Word & Character Counter | Anvil Tools</title>
 <meta name="description" content="Count words, characters, sentences, and estimated reading time as you type.">
 <link rel="canonical" href="https://anviltools.vercel.app/tools/word-counter.html">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review4">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-recheck1">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-recheck1">
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-recheck1">
 <link rel="stylesheet" href="../assets/css/tool-ux.css">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review4">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-recheck1">
 <meta property="og:type" content="website"><meta property="og:title" content="Word &amp; Character Counter | Anvil Tools"><meta property="og:description" content="Count words, characters, sentences, and estimated reading time as you type."><meta property="og:url" content="https://anviltools.vercel.app/tools/word-counter.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript><!-- local-font-preload --><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin><!-- /local-font-preload --></head>
 <body class="public-site">
@@ -53,7 +53,7 @@
 
 
 
-<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Try a small count you can check</h2><p>Words use whitespace boundaries. Character totals use JavaScript UTF-16 code units, so one emoji can count as two. Sentence totals split on periods, question marks, and exclamation marks; paragraph totals use blank lines. Reading time is a rough silent-reading estimate at 200 words per minute, rounded up.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>Hello world. followed by a blank line and Next line!</td><td>4 words, 24 characters, 2 sentences, 2 paragraphs, 1 minute.</td></tr><tr><td>An empty box or only whitespace</td><td>0 words and 0 reading minutes; entered whitespace still contributes to characters.</td></tr><tr><td>One 🙂</td><td>1 whitespace-delimited token and 2 UTF-16 character units.</td></tr></tbody></table></div><button class="btn secondary" type="button" data-example-fields="{&quot;wc-input&quot;: &quot;Hello world.\n\nNext line!&quot;}">Try this sample</button><p class="status-msg" id="example-status" role="status" aria-live="polite"></p></section><!-- /checked-example --><section class="info-section">
+<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Try a small count you can check</h2><p>Words use whitespace boundaries. Character totals use JavaScript UTF-16 code units, so one emoji can count as two. Sentence totals split on periods, question marks, and exclamation marks; paragraph totals use blank lines. Reading time is a rough silent-reading estimate at 200 words per minute, rounded up.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>Hello world. followed by a blank line and Next line!</td><td>4 words, 24 characters, 2 sentences, 2 paragraphs, 1 minute.</td></tr><tr><td>An empty box or only whitespace</td><td>0 words and 0 reading minutes; entered whitespace still contributes to characters.</td></tr><tr><td>One 🙂</td><td>1 whitespace-delimited token and 2 UTF-16 character units.</td></tr><tr><td>你好世界 (no spaces)</td><td>1 whitespace-delimited token, 4 UTF-16 units, 1 estimated minute. This does not count linguistic words in Chinese.</td></tr></tbody></table></div><button class="btn secondary" type="button" data-example-fields="{&quot;wc-input&quot;: &quot;Hello world.\n\nNext line!&quot;}">Try this sample</button><p class="status-msg" id="example-status" role="status" aria-live="polite"></p></section><!-- /checked-example --><section class="info-section">
   <h2>How it works</h2>
   <ul><li>Type or paste text into the box.</li>
 <li>Counts update instantly with every keystroke.</li>
@@ -119,8 +119,8 @@
 
 
 
-<script src="../assets/js/main.js?v=20261005-review4"></script>
-<script src="../assets/js/tools/word-counter.js?v=20261005-review4"></script>
+<script src="../assets/js/main.js?v=20261005-recheck1"></script>
+<script src="../assets/js/tools/word-counter.js?v=20261005-recheck1"></script>
 <script src="../assets/js/tool-ux.js"></script>
-<script src="../assets/js/tool-examples.js?v=20261005-review4"></script></body>
+<script src="../assets/js/tool-examples.js?v=20261005-recheck1"></script></body>
 </html>

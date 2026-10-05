@@ -68,7 +68,7 @@ def write(path, html):
         tag = image_dimensions(match)
         source = re.search(r'src="([^"]+)"', tag)
         metadata = IMAGE_SIZES.get(source[1]) if source else None
-        if not metadata: return tag
+        if not metadata or not metadata.get('candidates'): return tag
         srcset = ', '.join(item['src'] + ' ' + str(item['width']) + 'w' for item in metadata['candidates'])
         sizes = '(max-width: 800px) calc(100vw - 72px), 1000px'
         return '<picture><source type="image/webp" srcset="' + srcset + '" sizes="' + sizes + '">' + tag + '</picture>'
@@ -127,11 +127,13 @@ for slug, example in EXAMPLES.items():
     body = re.sub(r'<p>(.*?)</p>', unique_paragraph, body, flags=re.S)
     rows = [[escape(value) for value in row] for row in example['rows']]
     details = '<p>' + escape(example['note']) + '</p>' + table(['Input or check', 'Expected result or decision'], rows)
+    if example.get('links'):
+        details += '<p>' + ' · '.join('<a href="' + escape(link['href'], quote=True) + '">' + escape(link['label']) + '</a>' for link in example['links']) + '</p>'
     if 'sample' in example:
         details += '<button class="btn secondary" type="button" data-example-fields="' + escape(json.dumps(example['sample'], ensure_ascii=False), quote=True) + '">Try this sample</button><p class="status-msg" id="example-status" role="status" aria-live="polite"></p>'
         html = html.replace('</body>', '<script src="../assets/js/tool-examples.js"></script></body>')
     if slug == 'background-remover':
-        details += '<figure><img src="/assets/images/editorial/background-removal-example.png" loading="lazy" alt="Actual synthetic mug before and after automatic background removal; unwanted pale pixels remain near the handle."><figcaption>Actual tool output on a synthetic illustration, with imperfections retained.</figcaption></figure><p><a href="/assets/images/editorial/background-removal-input.png" download>Download the test input</a> · <a href="/assets/images/editorial/background-removal-output.png" download>Inspect the transparent PNG result</a></p>'
+        details += '<figure><img src="/assets/images/editorial/background-removal-example.png" loading="lazy" alt="Actual synthetic mug before and after automatic background removal; large beige background areas remain above the rim and around the handle."><figcaption>Actual synthetic result: large background fragments remain; manual cleanup is needed.</figcaption></figure><p><a href="/assets/images/editorial/background-removal-input.png" download>Download the test input</a> · <a href="/assets/images/editorial/background-removal-output.png" download>Inspect the transparent PNG result</a></p>'
     if slug == 'pdf-merge':
         details += '<figure><img src="/assets/images/editorial/pdf-ordering-example.png" loading="lazy" alt="PDF queue with cover, application, and support files arranged using Move up and Move down controls."><figcaption>The file list defines whole-file order before merging.</figcaption></figure><p><a href="/assets/examples/pdf/cover.pdf" download>Cover PDF</a> · <a href="/assets/examples/pdf/application.pdf" download>Application PDF</a> · <a href="/assets/examples/pdf/support.pdf" download>Support PDF</a> · <a href="/assets/examples/pdf/merged-example.pdf" download>Inspect the four-page result</a></p>'
     if slug == 'image-to-pdf':
