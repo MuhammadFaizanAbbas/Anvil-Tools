@@ -1,0 +1,200 @@
+{
+  "checkedAt": "2026-10-05T10:17:36.442Z",
+  "checks": [
+    {
+      "origin": "https://anviltools.vercel.app",
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "advertisingScriptPresent": false,
+      "publicVerificationTagPresent": false
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "path": "/ads.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "bodySha256": "f899074e0f954948a813bc8003962a4653eb935bea905fde8dd1c264174c83e9",
+      "modifiedByThisCheck": false
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "path": "/assets/images/editorial/background-removal-example.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "path": "/assets/images/editorial/background-removal-input.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "path": "/assets/images/editorial/background-removal-output.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "path": "/assets/images/editorial/pdf-ordering-example.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "path": "/assets/images/editorial/temporary-email-example.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "path": "/assets/js/recommendations.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "correctArticleArrow": false,
+      "literalQuestionMark": true
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "path": "/assets/js/tools/image-to-pdf.js?v=20261005-pdf",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "path": "/assets/js/tools/pdf-merge.js?v=20261005-pdf",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "path": "/cookie-policy.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hasFutureGoogleDisclosure": false,
+      "advertisingDisabled": true,
+      "certifiedConsentDisclosure": false
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "path": "/privacy-policy.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hasFutureGoogleDisclosure": false,
+      "advertisingDisabled": true,
+      "certifiedConsentDisclosure": false
+    },
+    {
+      "origin": "https://nevco.online",
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "advertisingScriptPresent": false,
+      "publicVerificationTagPresent": false
+    },
+    {
+      "origin": "https://nevco.online",
+      "path": "/ads.txt",
+      "status": 200,
+      "contentType": "text/plain",
+      "bodySha256": "005e774214410091a356e270d2a86b112ccdedfc544c7b3ab9a69fec82204089",
+      "modifiedByThisCheck": false
+    },
+    {
+      "origin": "https://nevco.online",
+      "path": "/assets/images/editorial/background-removal-example.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "origin": "https://nevco.online",
+      "path": "/assets/images/editorial/background-removal-input.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "origin": "https://nevco.online",
+      "path": "/assets/images/editorial/background-removal-output.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "origin": "https://nevco.online",
+      "path": "/assets/images/editorial/pdf-ordering-example.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "origin": "https://nevco.online",
+      "path": "/assets/images/editorial/temporary-email-example.png",
+      "status": 200,
+      "contentType": "image/png"
+    },
+    {
+      "origin": "https://nevco.online",
+      "path": "/assets/js/recommendations.js",
+      "status": 200,
+      "contentType": "text/javascript",
+      "correctArticleArrow": false,
+      "literalQuestionMark": true
+    },
+    {
+      "origin": "https://nevco.online",
+      "path": "/assets/js/tools/image-to-pdf.js?v=20261005-pdf",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "origin": "https://nevco.online",
+      "path": "/assets/js/tools/pdf-merge.js?v=20261005-pdf",
+      "status": 200,
+      "contentType": "text/javascript"
+    },
+    {
+      "origin": "https://nevco.online",
+      "path": "/cookie-policy.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hasFutureGoogleDisclosure": false,
+      "advertisingDisabled": true,
+      "certifiedConsentDisclosure": false
+    },
+    {
+      "origin": "https://nevco.online",
+      "path": "/privacy-policy.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hasFutureGoogleDisclosure": false,
+      "advertisingDisabled": true,
+      "certifiedConsentDisclosure": false
+    }
+  ],
+  "articles": [
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "liveWords": 11019,
+      "liveHeadings": 159,
+      "bodyMatchesPrepared": false
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "liveWords": 10575,
+      "liveHeadings": 237,
+      "bodyMatchesPrepared": false
+    },
+    {
+      "slug": "simple-pdf-workflow-without-software",
+      "liveWords": 1575,
+      "liveHeadings": 9,
+      "bodyMatchesPrepared": false
+    },
+    {
+      "slug": "small-tools-that-save-developers-time",
+      "liveWords": 1895,
+      "liveHeadings": 10,
+      "bodyMatchesPrepared": true
+    }
+  ],
+  "accountVerification": "Not observable from public HTTP responses; owner account access required."
+}

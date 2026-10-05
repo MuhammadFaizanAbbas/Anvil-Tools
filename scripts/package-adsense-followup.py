@@ -8,6 +8,8 @@ output = root / 'deployment/adsense-followup-2026-10-05'
 output.mkdir(parents=True, exist_ok=True)
 frontend = root / 'frontend'
 public_files = [
+    '.htaccess', 'privacy-policy.html', 'cookie-policy.html',
+    'assets/js/recommendations.js',
     'tools/pdf-merge.html', 'tools/image-to-pdf.html',
     'assets/js/tools/pdf-merge.js', 'assets/js/tools/image-to-pdf.js',
     'assets/css/tool-ux.css',

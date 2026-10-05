@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-05T10:19:01.989Z",
+  "offlineOnly": true,
+  "cases": [
+    {
+      "name": "Exactly three bodies updated; full previous records saved; all other metadata and the fourth guide preserved",
+      "passed": true
+    },
+    {
+      "name": "UTC metadata guards work when the connection starts in a different time zone",
+      "passed": true
+    },
+    {
+      "name": "Repeated publication rejected without new revisions or changes",
+      "passed": true
+    },
+    {
+      "name": "A concurrent body edit rolls back the whole transaction",
+      "passed": true
+    },
+    {
+      "name": "A concurrent metadata edit rolls back the whole transaction",
+      "passed": true
+    },
+    {
+      "name": "A changed published catalog prevents publication",
+      "passed": true
+    }
+  ]
+}

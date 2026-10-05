@@ -19,7 +19,7 @@
       const card = document.createElement('article'); card.className = 'tool-card';
       const title = document.createElement('h3'); title.textContent = post.title;
       const excerpt = document.createElement('p'); excerpt.textContent = post.excerpt || '';
-      const link = document.createElement('a'); link.className = 'tool-link'; link.textContent = 'Read article ?'; link.href = `/journal/${encodeURIComponent(post.slug)}`;
+      const link = document.createElement('a'); link.className = 'tool-link'; link.textContent = 'Read article \u2192'; link.href = `/journal/${encodeURIComponent(post.slug)}`;
       if (post.cover_image_id) {
         const image = document.createElement('img'); image.src = `${siteBase}/journal-images/${encodeURIComponent(post.cover_image_id)}`;
         image.alt = post.cover_alt || ''; image.className = 'guide-cover'; image.loading = 'lazy'; card.append(image);

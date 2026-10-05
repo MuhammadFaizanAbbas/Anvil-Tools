@@ -188,7 +188,7 @@ def build_static_pages():
 
     privacy_body = f'''
 {breadcrumbs(depth, [("Home","index.html"), ("Privacy policy", None)])}
-<section class="hero"><h1>Privacy policy</h1><p class="lede">Last updated: September 30, 2026.</p></section>
+<section class="hero"><h1>Privacy policy</h1><p class="lede">Last updated: October 5, 2026.</p></section>
 <section class="legal-content">
 <h2>What this site is</h2>
 <p>{SITE_NAME} ("we", "us") provides free browser-based tools at {SITE_URL}. This policy explains what information is collected when you use the site and the tools on it.</p>
@@ -198,11 +198,15 @@ def build_static_pages():
 <p>The temporary email tool works differently: it creates a real, active email inbox using a third-party email service (Guerrilla Mail) so that it can actually receive mail. Messages sent to that inbox pass through that service's infrastructure. Do not send anything sensitive to a temporary inbox, and review that provider's own terms if you want details of how they handle message data.</p>
 
 <h2>Information collected automatically</h2>
-<p>Like most websites, our server and any analytics or advertising scripts we use may automatically log standard technical information such as your IP address, browser type, device type, referring page, and timestamps, for security, abuse prevention, and understanding how the site is used in aggregate.</p>
+<p>Our hosting and API services receive ordinary connection information, including your IP address, browser user agent, requested URL, referring page when provided, and timestamps. Operational logs and rate limits help deliver the site, investigate failures, and prevent abuse. Automatic browser analytics and advertising are currently disabled.</p>
 
 <h2>Cookies and advertising</h2>
-<p>This site uses cookies for basic functionality and, once advertising is enabled, may use Google AdSense to display ads. Google and its advertising partners may use cookies and device identifiers to serve ads based on your visits to this and other sites. You can learn more about how Google uses this data, and your options, at <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener">Google's page on how data is used when you use partner sites and apps</a>.</p>
-<p>You can control cookies through your browser settings, and where required by law, we display a consent notice before non-essential cookies are set.</p>
+<p>Advertising and automatic browser analytics are currently disabled. We use browser session storage for temporary-inbox access and workspace sessions. Earlier versions may have left an anvil_consent_v1 preference in local storage; it does not enable tracking and can be removed by clearing site data. Our <a href="cookie-policy.html">cookie policy</a> describes these entries and their purposes.</p>
+<p>You can clear site data through your browser settings. Optional advertising and analytics are not enabled. If they are introduced, we will update this policy and implement the applicable consent controls before using them.</p>
+
+<h2>If Google advertising is introduced</h2>
+<p>Before enabling Google AdSense, we will identify the active advertising services and their purposes here. Ad serving may send Google and participating advertising providers your IP address, browser and device information, page or ad activity, and advertising identifiers. Those third parties may place or read cookies, use web beacons, and process this information to deliver, personalize where permitted, and measure ads, and to detect fraud. Personalized advertising may use activity on this and other sites. Read <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener">how Google uses information from partner sites and apps</a>, including the choices Google provides.</p>
+<p>For personalized advertising to visitors in the European Economic Area, United Kingdom, or Switzerland, we will use a Google-certified consent management platform that supports the IAB Transparency and Consent Framework. The applicable consent message will identify providers and purposes and explain how to manage or withdraw choices. Other regional requirements will be assessed before launch. There is currently no advertising consent message because advertising is disabled; continued browsing or an old stored preference does not grant future advertising consent.</p>
 
 <h2>Children's privacy</h2>
 <p>This site is not directed at children under 13, and we do not knowingly collect personal information from children under 13 or serve personalized ads based on activity by users known to be under that age.</p>
@@ -252,19 +256,22 @@ def build_static_pages():
 
     cookie_body = f'''
 {breadcrumbs(depth, [("Home","index.html"), ("Cookie policy", None)])}
-<section class="hero"><h1>Cookie policy</h1><p class="lede">Last updated: September 30, 2026.</p></section>
+<section class="hero"><h1>Cookie policy</h1><p class="lede">Last updated: October 5, 2026.</p></section>
 <section class="legal-content">
-<h2>What cookies we use</h2>
-<p>We use a small number of cookies and browser storage entries for essential site functionality, such as remembering that you've dismissed the cookie notice. Once advertising is enabled, Google AdSense and its partners may also set cookies or use device identifiers to serve and measure ads, including personalized ads based on your visits to this and other sites, unless you opt out where required.</p>
-
-<h2>Managing cookies</h2>
-<p>You can block or delete cookies through your browser's settings at any time. Doing so may affect some site functionality, such as the cookie notice reappearing on your next visit.</p>
-
-<h2>Third-party advertising cookies</h2>
-<p>For details on how Google uses data collected through advertising cookies, see <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener">Google's partner sites policy</a>. Where legally required (for example, for visitors in the EU/EEA and UK), we present a consent notice before setting non-essential cookies.</p>
-
-<h2>Contact</h2>
-<p>Questions about this policy can be sent to <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a>.</p>
+<h2>Current cookies and browser storage</h2>
+<p>Advertising and automatic browser analytics are disabled. The first-party application uses browser storage for the functions described below; it does not currently set optional advertising or analytics cookies.</p>
+<h2>Necessary session storage</h2>
+<p>The temporary inbox uses the tm_cap entry in session storage to restore access while the inbox remains active. The private workspace uses anvil_admin_session for its access token and expiry. These values support the service you request and are not advertising preferences.</p>
+<h2>Preferences from earlier versions</h2>
+<p>An earlier version stored optional preferences under anvil_consent_v1 in local storage. The current pages do not use that entry to load advertising or analytics. You can remove it by clearing site data.</p>
+<h2>Managing stored data</h2>
+<p>Your browser settings let you inspect and clear cookies and site storage. Clearing session storage can end inbox or workspace access. Clearing browser data does not delete provider-held messages, support records or hosting logs. Browser session-restore features may restore tab storage.</p>
+<h2>External services and future changes</h2>
+<p>Page assets, fonts and libraries can make requests to their hosting services. See our <a href="privacy-policy.html">privacy policy</a> for processing details. If advertising or analytics is introduced, we will describe the actual providers, storage and purposes and implement applicable consent controls before enabling those services.</p>
+<h2>If Google advertising is introduced</h2>
+<p>Google and participating advertising providers may place or read cookies and use web beacons, IP addresses, and device or advertising identifiers to deliver, personalize where permitted, measure, and protect advertising. We will publish the active configuration and available choices before launch. See <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener">how Google uses information from partner sites and apps</a>.</p>
+<p>Before serving personalized ads in the European Economic Area, United Kingdom, or Switzerland, we will use a Google-certified consent management platform supporting the IAB Transparency and Consent Framework. Its message will explain the applicable providers, purposes, and controls for managing or withdrawing consent. Other regional requirements will be assessed before launch. Non-personalized ads can still involve cookies or identifiers and do not remove applicable consent requirements. Old anvil_consent_v1 preferences and continued browsing do not authorize future advertising.</p>
+<h2>Contact</h2><p>Contact Velloxtech at <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a> with questions.</p>
 </section>
 '''
     write("cookie-policy.html", page("Cookie policy", f"How {SITE_NAME} uses cookies.", "/cookie-policy.html", depth, cookie_body, canonical_path="cookie-policy.html"))

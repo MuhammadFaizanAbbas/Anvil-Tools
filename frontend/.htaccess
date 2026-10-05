@@ -42,7 +42,7 @@ ErrorDocument 410 /404.html
   RewriteRule ^(.+\.html)$ static-page.php?path=$1 [L,QSA,NC]
 </IfModule>
 <IfModule mod_headers.c>
-  <FilesMatch "\.css$">
+  <FilesMatch "\.(?:css|js)$">
     Header set Cache-Control "public, max-age=0, must-revalidate"
   </FilesMatch>
 </IfModule>

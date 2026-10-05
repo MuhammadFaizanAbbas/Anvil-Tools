@@ -66,6 +66,7 @@ async function read(endpoint) {
   const payload = JSON.stringify(replacements);
   assert.ok(!payload.includes('$audit_payload$') && !payload.includes('$audit_release$'), 'SQL delimiter appears in the content');
   const sql = `BEGIN;
+SET LOCAL TIME ZONE 'UTC';
 SET LOCAL lock_timeout = '10s';
 SET LOCAL statement_timeout = '60s';
 DO $audit_release$
