@@ -1,0 +1,402 @@
+{
+  "temp-mail": {
+    "heading": "Try a permitted delivery check",
+    "note": "Create an address, then send a non-sensitive message from an application or mailbox you control. Address creation alone does not prove message delivery. This tool receives mail; it does not send replies.",
+    "rows": [
+      [
+        "Create an inbox",
+        "An address appears; inbox retrieval begins."
+      ],
+      [
+        "Send a test subject such as Delivery check 001",
+        "Use Refresh and check the sender, subject, and body when it arrives."
+      ],
+      [
+        "Access expires",
+        "Create another address. Website access expiry does not establish deletion at the provider."
+      ]
+    ]
+  },
+  "background-remover": {
+    "heading": "Inspect an actual removal result",
+    "note": "Our synthetic mug example is 480 × 360 pixels. The tool produced a transparent PNG at the same dimensions, but beige speckles remained near the handle. This simple illustration does not establish quality on hair, glass, or difficult photographs.",
+    "rows": [
+      [
+        "Source",
+        "A solid mug against a pale illustrated background."
+      ],
+      [
+        "Result",
+        "Transparent surroundings with some unwanted pixels still present."
+      ],
+      [
+        "Decision",
+        "Check on light and dark backgrounds; use a manual editor if the retained pixels matter."
+      ]
+    ]
+  },
+  "pdf-merge": {
+    "heading": "Check the four-page assembly example",
+    "note": "The worked fixture combines a one-page cover, a two-page application, and one supporting page. Move whole files into that order, merge, then inspect all four pages. Moving a file does not rearrange pages within it.",
+    "rows": [
+      [
+        "cover.pdf",
+        "Page 1: 420 × 594 PDF points."
+      ],
+      [
+        "application.pdf",
+        "Pages 2–3: 400 × 600 and 401 × 601 points."
+      ],
+      [
+        "support.pdf",
+        "Page 4: 360 × 480 points."
+      ]
+    ]
+  },
+  "image-to-pdf": {
+    "heading": "Understand image size and page size",
+    "note": "The converter uses image width and height as PDF page dimensions in points. It embeds each image as a page without OCR. A pixel count is not a promise of a particular print size or resolution.",
+    "rows": [
+      [
+        "A 480 × 360-pixel PNG",
+        "One landscape page measuring 480 × 360 PDF points."
+      ],
+      [
+        "A 180 × 220-pixel WebP",
+        "One portrait page measuring 180 × 220 PDF points after browser decoding."
+      ],
+      [
+        "Mixed image dimensions",
+        "Different page sizes; resize and rotate sources first when consistency matters."
+      ]
+    ]
+  },
+  "qr-code-generator": {
+    "heading": "Check a static website code",
+    "note": "Enter the complete URL below, generate, and download the PNG. Check the exact decoded address before using it in a print layout. The generated code is 180 × 180 pixels; preserve square proportions, add a clear light margin, and test the final print size.",
+    "rows": [
+      [
+        "https://nevco.online/",
+        "The decoded code should contain exactly https://nevco.online/."
+      ],
+      [
+        "Change the destination later",
+        "Generate a replacement code; this site provides no editable redirect service."
+      ]
+    ],
+    "sample": {
+      "qr-input": "https://nevco.online/"
+    }
+  },
+  "password-generator": {
+    "heading": "Check a generated password without sharing it",
+    "note": "The supported range is 6–48 characters. Generate a fresh value that meets the receiving service's rules, preferably with a longer length where supported. The strength label is a rough interface estimate, not a cracking-time calculation.",
+    "rows": [
+      [
+        "Length 16 with all four groups selected",
+        "Exactly 16 characters, with uppercase, lowercase, a number, and a symbol."
+      ],
+      [
+        "Length 48",
+        "Exactly 48 characters; the website receiving it may impose a different limit."
+      ],
+      [
+        "No character groups selected",
+        "An error and no usable output."
+      ]
+    ]
+  },
+  "word-counter": {
+    "heading": "Try a small count you can check",
+    "note": "Words use whitespace boundaries. Character totals use JavaScript UTF-16 code units, so one emoji can count as two. Sentence totals split on periods, question marks, and exclamation marks; paragraph totals use blank lines. Reading time is a rough silent-reading estimate at 200 words per minute, rounded up.",
+    "rows": [
+      [
+        "Hello world. followed by a blank line and Next line!",
+        "4 words, 24 characters, 2 sentences, 2 paragraphs, 1 minute."
+      ],
+      [
+        "An empty box or only whitespace",
+        "0 words and 0 reading minutes; entered whitespace still contributes to characters."
+      ],
+      [
+        "One 🙂",
+        "1 whitespace-delimited token and 2 UTF-16 character units."
+      ]
+    ],
+    "sample": {
+      "wc-input": "Hello world.\n\nNext line!"
+    }
+  },
+  "json-formatter": {
+    "heading": "Compare valid syntax and intended data",
+    "note": "Use the sample, then choose Format or Minify. Keep a source copy: parsing can discard duplicate property names and alter integers beyond JavaScript's safe range. A quoted identifier preserves its leading zeros.",
+    "rows": [
+      [
+        "{\"id\":\"001\",\"active\":true,\"items\":[1,null]}",
+        "The string 001, boolean true, array, and null keep their types."
+      ],
+      [
+        "{\"active\":true,}",
+        "Rejected: the final comma is not valid JSON."
+      ],
+      [
+        "{\"id\":1,\"id\":2}",
+        "Parsing keeps the later property; formatting is not a duplicate-key audit."
+      ]
+    ],
+    "sample": {
+      "jf-input": "{\"id\":\"001\",\"active\":true,\"items\":[1,null]}"
+    }
+  },
+  "base64-tool": {
+    "heading": "Check a text round trip",
+    "note": "This tool encodes UTF-8 text using standard Base64. Standard Base64 can include +, /, and =; it is not automatically safe as an unescaped URL parameter. Base64url uses a different alphabet. Neither form encrypts its contents.",
+    "rows": [
+      [
+        "Hello",
+        "SGVsbG8="
+      ],
+      [
+        "café",
+        "Y2Fmw6k="
+      ],
+      [
+        "Decode either output",
+        "The original text returns; arbitrary binary files are outside this text-only tool."
+      ]
+    ],
+    "sample": {
+      "b64-input": "Hello"
+    }
+  },
+  "user-agent-generator": {
+    "heading": "Use fixed samples in a parser test",
+    "note": "The fixture library was reviewed on October 5, 2026. Its Chrome 126, Firefox 127, and Safari 17.5 samples are intentionally fixed older examples, not claims about current versions. A selected string does not change your browser or authenticate a crawler.",
+    "rows": [
+      [
+        "iPhone Safari",
+        "Look for the iPhone, Version/17.5, Mobile, and Safari markers."
+      ],
+      [
+        "An unfamiliar user-agent string",
+        "Your application should retain a safe fallback instead of assuming a recognized browser."
+      ],
+      [
+        "Googlebot sample",
+        "Useful parser input; verify a real crawler separately before granting any special access."
+      ]
+    ]
+  },
+  "color-palette-generator": {
+    "heading": "Use a palette in a small design",
+    "note": "Choose an accent for a heading, lock that swatch, and generate alternatives for the remaining colors. Export CSS variables when the combination works in the actual design. The preview covers its displayed pair, not every swatch combination or interface state.",
+    "rows": [
+      [
+        "Lock one swatch, then generate",
+        "The locked value remains while unlocked swatches can change."
+      ],
+      [
+        "Dark text on a pale surface",
+        "Check that exact pair at the intended font size."
+      ],
+      [
+        "An accent on a button",
+        "Also inspect focus, hover, disabled text, and button boundaries."
+      ]
+    ]
+  },
+  "unit-converter": {
+    "heading": "Check the scale and the offset",
+    "note": "Length and mass conversions multiply by a ratio. Temperature also uses an offset. The displayed result rounds length and mass to six decimals and temperature to three; keep the original precision when performing further calculations.",
+    "rows": [
+      [
+        "1 kilometer to meters",
+        "1000.000000 meters; multiply by 1000."
+      ],
+      [
+        "100 Celsius to Fahrenheit",
+        "212.000 Fahrenheit; F = C × 9/5 + 32."
+      ],
+      [
+        "32 Fahrenheit to Celsius",
+        "0.000 Celsius; C = (F − 32) × 5/9."
+      ]
+    ],
+    "sample": {
+      "uc-group": "temperature",
+      "uc-from": "celsius",
+      "uc-to": "fahrenheit",
+      "uc-value": "100"
+    }
+  },
+  "url-encoder-decoder": {
+    "heading": "Choose the encoding boundary",
+    "note": "Use component mode for one query value and whole-URL mode when URL separators must remain intact. Decoding a plus sign does not turn it into a space here; form-encoded query parsing is a separate step.",
+    "rows": [
+      [
+        "Component: red shoes + café",
+        "red%20shoes%20%2B%20caf%C3%A9"
+      ],
+      [
+        "Whole URL: https://example.com/?q=red shoes",
+        "https://example.com/?q=red%20shoes"
+      ],
+      [
+        "Encode %20 again",
+        "%2520; repeated encoding changes the meaning."
+      ]
+    ],
+    "sample": {
+      "url-input": "red shoes + café",
+      "url-mode": "component"
+    }
+  },
+  "jwt-decoder": {
+    "heading": "Inspect harmless claims",
+    "note": "The sample contains alg=none, a fictional subject, and an expired timestamp. It is deliberately not a usable login token. Use Decode to inspect it, and keep the signature-not-verified warning beside the result.",
+    "rows": [
+      [
+        "sub: demo-user",
+        "A claim made by the sample, not proof of a user's identity."
+      ],
+      [
+        "exp: 0",
+        "An expired timestamp at the Unix epoch."
+      ],
+      [
+        "A readable header and payload",
+        "No signature, issuer, audience, or authorization validation has been established."
+      ]
+    ],
+    "sample": {
+      "jwt-input": "eyJhbGciOiJub25lIn0.eyJzdWIiOiJkZW1vLXVzZXIiLCJleHAiOjB9."
+    }
+  },
+  "unix-timestamp-converter": {
+    "heading": "Compare seconds and milliseconds",
+    "note": "Set the source unit before converting. UTC output describes an instant; a timezone-free date entry uses the selected local or UTC interpretation. Local displays depend on the device timezone.",
+    "rows": [
+      [
+        "0 seconds",
+        "1970-01-01T00:00:00.000Z"
+      ],
+      [
+        "1 second or 1000 milliseconds",
+        "1970-01-01T00:00:01.000Z"
+      ],
+      [
+        "2026-10-05T12:00 interpreted as UTC",
+        "The intended instant is 2026-10-05T12:00:00.000Z; local interpretation may differ."
+      ]
+    ],
+    "sample": {
+      "ts-value": "0",
+      "ts-unit": "seconds"
+    }
+  },
+  "hash-generator": {
+    "heading": "Check a known SHA-256 digest",
+    "note": "Choose SHA-256 and hash abc without a trailing newline. Compare the complete result below. Hexadecimal and Base64 are representations of the same digest bytes; they are not different hashing algorithms.",
+    "rows": [
+      [
+        "abc",
+        "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+      ],
+      [
+        "abc followed by a newline",
+        "A different digest: line endings are part of the UTF-8 input."
+      ],
+      [
+        "Password storage",
+        "Use an appropriate password hashing scheme in an application; this text-digest tool is not one."
+      ]
+    ],
+    "sample": {
+      "hash-input": "abc",
+      "hash-algorithm": "SHA-256"
+    }
+  },
+  "csv-to-json": {
+    "heading": "Keep identifiers and quoted fields intact",
+    "note": "Try the comma-separated sample with the header option enabled. The first identifier stays 001, the quoted comma belongs to the name, the blank note becomes an empty string, and the doubled quote becomes one quote in the second note.",
+    "rows": [
+      [
+        "001,\"Amina, Ali\",",
+        "{\"id\":\"001\",\"name\":\"Amina, Ali\",\"note\":\"\"}"
+      ],
+      [
+        "002,Omar,\"He said \"\"hi\"\"\"",
+        "{\"id\":\"002\",\"name\":\"Omar\",\"note\":\"He said \\\"hi\\\"\"}"
+      ],
+      [
+        "Tab- or semicolon-separated source",
+        "Export comma-separated CSV first; there is no delimiter selector."
+      ]
+    ],
+    "sample": {
+      "csv-input": "id,name,note\n001,\"Amina, Ali\",\n002,Omar,\"He said \"\"hi\"\"\"",
+      "csv-headers": true
+    }
+  },
+  "text-case-converter": {
+    "heading": "Compare case styles on one phrase",
+    "note": "Try NASA report: café and compare styles. Identifier modes extract letter and number groups and remove punctuation. Automatic title and sentence modes can change acronyms and brand names; review them before publishing.",
+    "rows": [
+      [
+        "camelCase",
+        "nasaReportCafé"
+      ],
+      [
+        "snake_case",
+        "nasa_report_café"
+      ],
+      [
+        "Title Case",
+        "Nasa Report: Café; the acronym is not preserved automatically."
+      ]
+    ],
+    "sample": {
+      "case-input": "NASA report: café"
+    }
+  },
+  "text-diff-checker": {
+    "heading": "Read a replacement as two changes",
+    "note": "Compare the sample texts to see one removed line, one added line, and two unchanged lines. A moved line can also appear as a removal and addition. The workload limit is the product of the two line counts: at most 2,000,000.",
+    "rows": [
+      [
+        "Before: alpha / beta / gamma",
+        "After: alpha / delta / gamma."
+      ],
+      [
+        "beta → delta",
+        "One removed line and one added line; this is not a character-level edit."
+      ],
+      [
+        "An extra space on a line",
+        "A text change; formatting and document layout are not compared."
+      ]
+    ],
+    "sample": {
+      "diff-before": "alpha\nbeta\ngamma",
+      "diff-after": "alpha\ndelta\ngamma"
+    }
+  },
+  "uuid-generator": {
+    "heading": "Recognize a version 4 identifier",
+    "note": "550e8400-e29b-41d4-a716-446655440000 is a public format example, not a newly generated secret. A fresh batch should contain different values in the same shape. An application still needs uniqueness and authorization checks.",
+    "rows": [
+      [
+        "The first character of the third group is 4",
+        "The version marker."
+      ],
+      [
+        "The first character of the fourth group is 8, 9, a, or b",
+        "The required variant bits in hexadecimal form."
+      ],
+      [
+        "Five hexadecimal groups: 8-4-4-4-12",
+        "36 characters including hyphens; an identifier does not grant access."
+      ]
+    ]
+  }
+}

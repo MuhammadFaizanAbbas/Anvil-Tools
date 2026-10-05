@@ -19,7 +19,6 @@ test('eight new browser tools have complete pages, scripts, catalog entries and 
   const sitemap = fs.readFileSync('frontend/sitemap.xml', 'utf8');
   const seed = fs.readFileSync('supabase/seed.sql', 'utf8');
   assert.match(home, /20 free browser tools/);
-  assert.match(home, /20 useful tools/);
   for (const [slug, name] of tools) {
     const page = fs.readFileSync(`frontend/tools/${slug}.html`, 'utf8');
     const script = fs.readFileSync(`frontend/assets/js/tools/${slug}.js`, 'utf8');

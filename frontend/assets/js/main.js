@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     Promise.all([
       window.ANVIL_CONFIG ? Promise.resolve() : loadScript('/assets/js/config.js')
-    ]).then(() => loadScript('/assets/js/recommendations.js')).catch(() => {});
+    ]).then(() => loadScript('/assets/js/recommendations.js?v=20261005-review')).catch(() => {});
   }
   const yearEls = document.querySelectorAll('.current-year');
   yearEls.forEach((el) => {

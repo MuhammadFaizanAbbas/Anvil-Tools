@@ -68,7 +68,7 @@ def footer_html(depth_prefix):
         <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
       </div>
       <div>
-        <h4>Tools</h4>
+        <h3>Tools</h3>
         <ul>
           <li><a href="{p}tools/temp-mail.html">Temp mail</a></li>
           <li><a href="{p}tools/background-remover.html">Background remover</a></li>
@@ -77,7 +77,7 @@ def footer_html(depth_prefix):
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul>
           <li><a href="{p}about.html">About</a></li>
           <li><a href="{p}blog/index.html">Blog</a></li>
@@ -85,7 +85,7 @@ def footer_html(depth_prefix):
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <ul>
           <li><a href="{p}privacy-policy.html">Privacy policy</a></li>
           <li><a href="{p}terms-of-service.html">Terms of service</a></li>

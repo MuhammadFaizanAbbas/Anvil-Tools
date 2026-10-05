@@ -71,7 +71,7 @@ for t in catalog:
  path.write_text(html, encoding='utf-8')
  body = section('A practical walkthrough', '<ol><li>'+escape(example)+'</li><li>'+escape(check)+'</li><li>Copy or download the result using the controls above. Keep your original input until you have checked the output in its destination.</li></ol>')
  body += section('Tips for a reliable result', p(trouble)+p('Start with a small example to confirm the settings, then repeat with your full input. If you change an option, run the tool again and review the new output before replacing an earlier result.'))
- questions = [('What should I check before using the result?',check),('What are the main limitations?',trouble),('What if the tool does not respond?','Read the status message near the controls. Check your input and try a smaller example. If you need to reload, save your source first because unsaved inputs may be lost. Contact us with the tool name, browser, and steps to reproduce the issue; use sample data instead of private content.')]
+ questions = [('What if the tool does not respond?','Read the status message near the controls. Check your input and try a smaller example. If you need to reload, save your source first because unsaved inputs may be lost. Contact us with the tool name, browser, and steps to reproduce the issue; use sample data instead of private content.')]
  body += section('More questions about '+t['name'], ''.join('<details class="faq-item"><summary>'+escape(q)+'</summary>'+p(a)+'</details>' for q,a in questions))
  body += section('What to use next', p('Continue your task with these suggested tools. Suggestions follow the workflow and tool category; your input is not transferred between tools.')+cards(related))
  update(path, body)

@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Image to PDF Converter | Anvil Tools</title>
-<meta name="description" content="Turn one or more JPG or PNG images into a single downloadable PDF.">
+<meta name="description" content="Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.">
 <link rel="canonical" href="https://anviltools.vercel.app/tools/image-to-pdf.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261004-css">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review">
 <link rel="stylesheet" href="../assets/css/tool-ux.css?v=20261005-pdf">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261004-css">
-<meta property="og:type" content="website"><meta property="og:title" content="Image to PDF Converter | Anvil Tools"><meta property="og:description" content="Turn one or more JPG or PNG images into a single downloadable PDF."><meta property="og:url" content="https://anviltools.vercel.app/tools/image-to-pdf.html"><meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review">
+<meta property="og:type" content="website"><meta property="og:title" content="Image to PDF Converter | Anvil Tools"><meta property="og:description" content="Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF."><meta property="og:url" content="https://anviltools.vercel.app/tools/image-to-pdf.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript></head>
 <body class="public-site">
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -56,7 +56,7 @@
 
 
 
-<!-- reading-surface --><div class="content-guide"><section class="info-section">
+<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Understand image size and page size</h2><p>The converter uses image width and height as PDF page dimensions in points. It embeds each image as a page without OCR. A pixel count is not a promise of a particular print size or resolution.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>A 480 × 360-pixel PNG</td><td>One landscape page measuring 480 × 360 PDF points.</td></tr><tr><td>A 180 × 220-pixel WebP</td><td>One portrait page measuring 180 × 220 PDF points after browser decoding.</td></tr><tr><td>Mixed image dimensions</td><td>Different page sizes; resize and rotate sources first when consistency matters.</td></tr></tbody></table></div><p><a href="/assets/images/editorial/background-removal-input.png" download>Try the 480 × 360-pixel test PNG</a>. Open the downloaded PDF and check its one landscape page.</p></section><!-- /checked-example --><section class="info-section">
   <h2>How it works</h2>
   <ul><li>Choose or drag in your JPG, PNG, or WebP images. Use Move up, Move down, or Remove to set the page order.</li>
 <li>Each image becomes one page in the resulting PDF, sized to match the image.</li>
@@ -69,15 +69,15 @@
 
   <div class="callout">Your privacy matters here: check the FAQ below for exactly what happens to anything you enter into this tool.</div>
 
-  <h2>Frequently asked questions</h2>
-  <details class="faq-item"><summary>What image formats are supported?</summary><p>JPG and PNG. Convert other formats to one of these first using your device's photo editor.</p></details>
-<details class="faq-item"><summary>Can I control the page order?</summary><p>Yes, pages are created in the order the images were added, so add them in the order you want them to appear.</p></details>
-<details class="faq-item"><summary>Will the images be resized?</summary><p>Each page is sized to match its image, so nothing is cropped or stretched.</p></details>
+
+
+
+
 </section>
 
 
 
-<section class="info-section"><h2>Prepare images for a document</h2><p>PNG, JPEG and WebP images can become separate PDF pages. Each page uses the image dimensions. For consistent page sizes, resize the source images first. Very large images can exceed your browser memory.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Select photographs of a multi-page document in reading order and convert them into a single PDF.</li><li>Check that every page is upright and that small text remains readable at normal zoom.</li><li>Use the conversion button to download the PDF, then open it and inspect every image page.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>This creates image-based pages, not searchable OCR text. Crop and rotate your source images first for a cleaner document.</p></section><section class="info-section"><h2>More questions about Image to PDF Converter</h2><details class="faq-item"><summary>What should I check before using the result?</summary><p>Check that every page is upright and that small text remains readable at normal zoom.</p></details><details class="faq-item"><summary>What are the main limitations?</summary><p>This creates image-based pages, not searchable OCR text. Crop and rotate your source images first for a cleaner document.</p></details><details class="faq-item"><summary>When an image cannot be converted</summary><p>Open the source in an image viewer, then export a working copy as PNG or JPEG if the browser cannot decode its format. Retry with smaller images if memory is limited. Use Move up and Move down to arrange the selected images before converting. Crop and rotate source images in an image editor first.</p></details></section><section class="info-section"><h2>What to use next</h2><p>Continue your task with these suggested tools. Suggestions follow the workflow and tool category; your input is not transferred between tools.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">PDF tools</span><h3>PDF Merge</h3><p>Combine multiple PDF files into a single document in the order you choose.</p><a class="tool-link" href="../tools/pdf-merge.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Image tools</span><h3>Background Remover</h3><p>Remove the background from a photo automatically, processed locally in your browser.</p><a class="tool-link" href="../tools/background-remover.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>QR Code Generator</h3><p>Turn any link or short message into a scannable QR code you can download as an image.</p><a class="tool-link" href="../tools/qr-code-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Developer tools</span><h3>Base64 Encoder &amp; Decoder</h3><p>Convert text to Base64 and back, entirely in your browser.</p><a class="tool-link" href="../tools/base64-tool.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Working with your results</h2><details class="faq-item"><summary>Why does the PDF contain large or differently sized pages?</summary><p>Pages follow the dimensions of the source images. Prepare consistently sized, upright images first if the final document needs a uniform appearance.</p></details><details class="faq-item"><summary>Does the converter recognize handwriting?</summary><p>No. It places images into PDF pages without recognizing text. Keep the images readable and use a separate OCR workflow if searchable text is required.</p></details></section><!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/simple-pdf-workflow-without-software">PDF Workflows: Merge Files, Convert Images, and Check the Result</a></p><p>Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.</p></section><!-- /editorial-tool-link --></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
+<section class="info-section"><h2>Prepare images for a document</h2><p>PNG, JPEG and WebP images can become separate PDF pages. Each page uses the image dimensions. For consistent page sizes, resize the source images first. Very large images can exceed your browser memory.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Select photographs of a multi-page document in reading order and convert them into a single PDF.</li><li>Check that every page is upright and that small text remains readable at normal zoom.</li><li>Use the conversion button to download the PDF, then open it and inspect every image page.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>This creates image-based pages, not searchable OCR text. Crop and rotate your source images first for a cleaner document.</p></section><section class="info-section"><h2>What to use next</h2><p>These tools open separately; inputs are not transferred.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">PDF tools</span><h3>PDF Merge</h3><p>Combine multiple PDF files into a single document in the order you choose.</p><a class="tool-link" href="../tools/pdf-merge.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Image tools</span><h3>Background Remover</h3><p>Remove the background from a photo automatically, processed locally in your browser.</p><a class="tool-link" href="../tools/background-remover.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>QR Code Generator</h3><p>Turn any link or short message into a scannable QR code you can download as an image.</p><a class="tool-link" href="../tools/qr-code-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Developer tools</span><h3>Base64 Encoder &amp; Decoder</h3><p>Convert text to Base64 and back, entirely in your browser.</p><a class="tool-link" href="../tools/base64-tool.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Questions and troubleshooting</h2><details class="faq-item"><summary>What image formats are supported?</summary><p>JPG, PNG, and WebP. If your browser cannot decode an image, export a working copy as PNG or JPEG and retry.</p></details><details class="faq-item"><summary>Can I control the page order?</summary><p>Yes. Use Move up, Move down, or Remove in the selected-image list before converting. Each remaining image becomes one PDF page in that order.</p></details><details class="faq-item"><summary>Will the images be resized?</summary><p>Each page is sized to match its image, so nothing is cropped or stretched.</p></details><details class="faq-item"><summary>When an image cannot be converted</summary><p>Open the source in an image viewer, then export a working copy as PNG or JPEG if the browser cannot decode its format. Retry with smaller images if memory is limited. Use Move up and Move down to arrange the selected images before converting. Crop and rotate source images in an image editor first.</p></details><details class="faq-item"><summary>Why does the PDF contain large or differently sized pages?</summary><p>Pages follow the dimensions of the source images. Prepare consistently sized, upright images first if the final document needs a uniform appearance.</p></details><details class="faq-item"><summary>Does the converter recognize handwriting?</summary><p>No. It places images into PDF pages without recognizing text. Keep the images readable and use a separate OCR workflow if searchable text is required.</p></details></section><!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/simple-pdf-workflow-without-software">PDF Workflows: Merge Files, Convert Images, and Check the Result</a></p><p>Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.</p></section><!-- /editorial-tool-link --></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -86,7 +86,7 @@
         <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
       </div>
       <div>
-        <h4>Tools</h4>
+        <h3>Tools</h3>
         <ul>
           <li><a href="../tools/temp-mail.html">Temp mail</a></li>
           <li><a href="../tools/background-remover.html">Background remover</a></li>
@@ -95,7 +95,7 @@
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul>
           <li><a href="../about.html">About</a></li>
           <li><a href="../blog/index.html">Blogs</a></li>
@@ -103,7 +103,7 @@
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <ul>
           <li><a href="../privacy-policy.html">Privacy policy</a></li>
           <li><a href="../terms-of-service.html">Terms of service</a></li>
@@ -122,7 +122,7 @@
 
 
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=20261005-review"></script>
 <script src="../assets/js/tools/image-to-pdf.js?v=20261005-pdf"></script>
 <script src="../assets/js/tool-ux.js"></script>
 </body>

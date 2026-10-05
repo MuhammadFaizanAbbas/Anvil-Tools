@@ -1,0 +1,368 @@
+{
+  "checkedAt": "2026-10-05T12:02:14.776112+00:00",
+  "comparison": "HEAD before this page-by-page release",
+  "scope": "Exact normalized paragraphs of at least 12 words within each tool main element; not an internet originality check.",
+  "tools": [
+    {
+      "slug": "temp-mail",
+      "before": {
+        "readableMainWords": 878,
+        "mainHeadings": 18,
+        "faqQuestions": 9,
+        "repeatedMainParagraphs": [
+          "some senders block disposable domains. use a permanent address for accounts you need to recover later; a temporary inbox is not a private archive."
+        ]
+      },
+      "after": {
+        "readableMainWords": 927,
+        "mainHeadings": 17,
+        "faqQuestions": 7,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "background-remover",
+      "before": {
+        "readableMainWords": 782,
+        "mainHeadings": 16,
+        "faqQuestions": 9,
+        "repeatedMainParagraphs": [
+          "the first run downloads model assets and can take longer. a smaller source image can help on devices with limited memory."
+        ]
+      },
+      "after": {
+        "readableMainWords": 816,
+        "mainHeadings": 15,
+        "faqQuestions": 7,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "pdf-merge",
+      "before": {
+        "readableMainWords": 682,
+        "mainHeadings": 16,
+        "faqQuestions": 8,
+        "repeatedMainParagraphs": [
+          "encrypted, damaged, or unusually large files may fail. try a smaller batch and retain the original documents."
+        ]
+      },
+      "after": {
+        "readableMainWords": 728,
+        "mainHeadings": 15,
+        "faqQuestions": 6,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "image-to-pdf",
+      "before": {
+        "readableMainWords": 691,
+        "mainHeadings": 16,
+        "faqQuestions": 8,
+        "repeatedMainParagraphs": [
+          "this creates image-based pages, not searchable ocr text. crop and rotate your source images first for a cleaner document."
+        ]
+      },
+      "after": {
+        "readableMainWords": 739,
+        "mainHeadings": 15,
+        "faqQuestions": 6,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "qr-code-generator",
+      "before": {
+        "readableMainWords": 653,
+        "mainHeadings": 15,
+        "faqQuestions": 8,
+        "repeatedMainParagraphs": [
+          "keep a clear margin and strong contrast around the code. long input makes a denser code that may need a larger printed size."
+        ]
+      },
+      "after": {
+        "readableMainWords": 659,
+        "mainHeadings": 14,
+        "faqQuestions": 6,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "password-generator",
+      "before": {
+        "readableMainWords": 633,
+        "mainHeadings": 15,
+        "faqQuestions": 8,
+        "repeatedMainParagraphs": [
+          "generate a different password for each account. random output is not a substitute for multi-factor authentication or secure storage."
+        ]
+      },
+      "after": {
+        "readableMainWords": 653,
+        "mainHeadings": 14,
+        "faqQuestions": 6,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "word-counter",
+      "before": {
+        "readableMainWords": 622,
+        "mainHeadings": 21,
+        "faqQuestions": 8,
+        "repeatedMainParagraphs": [
+          "reading time is an estimate. a technical article usually takes longer to understand than a simple passage of the same length."
+        ]
+      },
+      "after": {
+        "readableMainWords": 680,
+        "mainHeadings": 20,
+        "faqQuestions": 6,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "json-formatter",
+      "before": {
+        "readableMainWords": 648,
+        "mainHeadings": 16,
+        "faqQuestions": 8,
+        "repeatedMainParagraphs": [
+          "json requires quoted property names and does not allow trailing commas or comments. formatting cannot determine whether values are correct for your application."
+        ]
+      },
+      "after": {
+        "readableMainWords": 677,
+        "mainHeadings": 15,
+        "faqQuestions": 6,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "base64-tool",
+      "before": {
+        "readableMainWords": 632,
+        "mainHeadings": 16,
+        "faqQuestions": 8,
+        "repeatedMainParagraphs": [
+          "base64 is an encoding, not encryption. anyone who receives the encoded value can decode it; do not use it to hide credentials."
+        ]
+      },
+      "after": {
+        "readableMainWords": 639,
+        "mainHeadings": 15,
+        "faqQuestions": 6,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "user-agent-generator",
+      "before": {
+        "readableMainWords": 705,
+        "mainHeadings": 16,
+        "faqQuestions": 8,
+        "repeatedMainParagraphs": [
+          "these are sample strings, not a live browser-version directory. changing a string does not reproduce a browser engine or device."
+        ]
+      },
+      "after": {
+        "readableMainWords": 733,
+        "mainHeadings": 15,
+        "faqQuestions": 6,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "color-palette-generator",
+      "before": {
+        "readableMainWords": 641,
+        "mainHeadings": 15,
+        "faqQuestions": 8,
+        "repeatedMainParagraphs": [
+          "a visually pleasing palette does not guarantee readable contrast. check your chosen foreground and background pairs separately."
+        ]
+      },
+      "after": {
+        "readableMainWords": 671,
+        "mainHeadings": 14,
+        "faqQuestions": 6,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "unit-converter",
+      "before": {
+        "readableMainWords": 625,
+        "mainHeadings": 16,
+        "faqQuestions": 8,
+        "repeatedMainParagraphs": [
+          "temperature uses an offset as well as a scale. display rounding can make a round-trip conversion differ slightly from the original value."
+        ]
+      },
+      "after": {
+        "readableMainWords": 639,
+        "mainHeadings": 15,
+        "faqQuestions": 6,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "url-encoder-decoder",
+      "before": {
+        "readableMainWords": 590,
+        "mainHeadings": 15,
+        "faqQuestions": 7,
+        "repeatedMainParagraphs": [
+          "encoding an already encoded value can turn a percent sign into %25. decode once, inspect the result, and avoid repeatedly applying transformations."
+        ]
+      },
+      "after": {
+        "readableMainWords": 582,
+        "mainHeadings": 14,
+        "faqQuestions": 5,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "jwt-decoder",
+      "before": {
+        "readableMainWords": 562,
+        "mainHeadings": 17,
+        "faqQuestions": 7,
+        "repeatedMainParagraphs": [
+          "the tool does not verify signatures. use your authentication library on the server to verify a token before trusting its claims."
+        ]
+      },
+      "after": {
+        "readableMainWords": 571,
+        "mainHeadings": 16,
+        "faqQuestions": 5,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "unix-timestamp-converter",
+      "before": {
+        "readableMainWords": 563,
+        "mainHeadings": 15,
+        "faqQuestions": 7,
+        "repeatedMainParagraphs": [
+          "a seconds-versus-milliseconds mismatch produces a very different date. check the unit used by the source api before converting."
+        ]
+      },
+      "after": {
+        "readableMainWords": 554,
+        "mainHeadings": 14,
+        "faqQuestions": 5,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "hash-generator",
+      "before": {
+        "readableMainWords": 561,
+        "mainHeadings": 15,
+        "faqQuestions": 7,
+        "repeatedMainParagraphs": [
+          "this hashes utf-8 text. it is not a password-storage system, and a digest cannot be decoded back into its original text."
+        ]
+      },
+      "after": {
+        "readableMainWords": 564,
+        "mainHeadings": 14,
+        "faqQuestions": 5,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "csv-to-json",
+      "before": {
+        "readableMainWords": 585,
+        "mainHeadings": 15,
+        "faqQuestions": 7,
+        "repeatedMainParagraphs": [
+          "quote fields containing commas and double any quote inside a quoted field. fix inconsistent rows in the source instead of silently discarding data."
+        ]
+      },
+      "after": {
+        "readableMainWords": 591,
+        "mainHeadings": 14,
+        "faqQuestions": 5,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "text-case-converter",
+      "before": {
+        "readableMainWords": 487,
+        "mainHeadings": 14,
+        "faqQuestions": 7,
+        "repeatedMainParagraphs": [
+          "automatic case conversion does not understand every editorial convention. keep a copy of the original when changing a large passage."
+        ]
+      },
+      "after": {
+        "readableMainWords": 482,
+        "mainHeadings": 13,
+        "faqQuestions": 5,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "text-diff-checker",
+      "before": {
+        "readableMainWords": 554,
+        "mainHeadings": 15,
+        "faqQuestions": 7,
+        "repeatedMainParagraphs": [
+          "the comparison works line by line. very large inputs can exceed the comparison limit; compare smaller sections when that happens."
+        ]
+      },
+      "after": {
+        "readableMainWords": 590,
+        "mainHeadings": 14,
+        "faqQuestions": 5,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    },
+    {
+      "slug": "uuid-generator",
+      "before": {
+        "readableMainWords": 537,
+        "mainHeadings": 15,
+        "faqQuestions": 7,
+        "repeatedMainParagraphs": [
+          "random uuids have an extremely low collision probability, but a database should still enforce uniqueness. identifiers are not passwords or access controls."
+        ]
+      },
+      "after": {
+        "readableMainWords": 555,
+        "mainHeadings": 14,
+        "faqQuestions": 5,
+        "repeatedMainParagraphs": []
+      },
+      "checkedExample": true
+    }
+  ],
+  "adsTxtSha256": "005e774214410091a356e270d2a86b112ccdedfc544c7b3ab9a69fec82204089"
+}

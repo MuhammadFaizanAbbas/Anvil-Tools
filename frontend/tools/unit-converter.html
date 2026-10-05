@@ -8,13 +8,13 @@
 <link rel="canonical" href="https://anviltools.vercel.app/tools/unit-converter.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261004-css">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review">
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review">
 <link rel="stylesheet" href="../assets/css/tool-ux.css">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review">
 <meta property="og:type" content="website"><meta property="og:title" content="Unit Converter | Anvil Tools"><meta property="og:description" content="Convert between common length, weight, and temperature units instantly."><meta property="og:url" content="https://anviltools.vercel.app/tools/unit-converter.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript></head>
 <body class="public-site">
@@ -63,7 +63,7 @@
 
 
 
-<!-- reading-surface --><div class="content-guide"><section class="info-section">
+<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Check the scale and the offset</h2><p>Length and mass conversions multiply by a ratio. Temperature also uses an offset. The displayed result rounds length and mass to six decimals and temperature to three; keep the original precision when performing further calculations.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>1 kilometer to meters</td><td>1000.000000 meters; multiply by 1000.</td></tr><tr><td>100 Celsius to Fahrenheit</td><td>212.000 Fahrenheit; F = C × 9/5 + 32.</td></tr><tr><td>32 Fahrenheit to Celsius</td><td>0.000 Celsius; C = (F − 32) × 5/9.</td></tr></tbody></table></div><button class="btn secondary" type="button" data-example-fields="{&quot;uc-group&quot;: &quot;temperature&quot;, &quot;uc-from&quot;: &quot;celsius&quot;, &quot;uc-to&quot;: &quot;fahrenheit&quot;, &quot;uc-value&quot;: &quot;100&quot;}">Try this sample</button><p class="status-msg" id="example-status" role="status" aria-live="polite"></p></section><!-- /checked-example --><section class="info-section">
   <h2>How it works</h2>
   <ul><li>Choose a category: length, weight, or temperature.</li>
 <li>Enter a value and pick the units to convert from and to.</li>
@@ -76,15 +76,15 @@
 
   <div class="callout">Your privacy matters here: check the FAQ below for exactly what happens to anything you enter into this tool.</div>
 
-  <h2>Frequently asked questions</h2>
-  <details class="faq-item"><summary>Which units are supported?</summary><p>Length covers meters, kilometers, centimeters, millimeters, miles, yards, feet, and inches. Weight covers kilograms, grams, milligrams, pounds, ounces, and tonnes. Temperature covers Celsius, Fahrenheit, and Kelvin.</p></details>
-<details class="faq-item"><summary>How precise are the conversions?</summary><p>Results are rounded to a sensible number of decimal places for readability, using standard conversion factors.</p></details>
-<details class="faq-item"><summary>Can more unit categories be added?</summary><p>This tool covers the most commonly requested categories; additional ones like volume or area can be added over time.</p></details>
+
+
+
+
 </section>
 
 
 
-<section class="info-section"><h2>Check units and precision</h2><p>Convert 100 Celsius to Fahrenheit to get 212. Unit conversions use standard factors and rounded display values. This is not a currency converter or a substitute for precision engineering calculations.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Choose length and convert 1 kilometer to meters; the expected result is 1000 meters.</li><li>Check the conversion category and both unit labels before using the number in another document.</li><li>Read the converted value and its units above. Select and copy the result manually; this tool has no download button.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>Temperature uses an offset as well as a scale. Display rounding can make a round-trip conversion differ slightly from the original value.</p></section><section class="info-section"><h2>More questions about Unit Converter</h2><details class="faq-item"><summary>What should I check before using the result?</summary><p>Check the conversion category and both unit labels before using the number in another document.</p></details><details class="faq-item"><summary>What are the main limitations?</summary><p>Temperature uses an offset as well as a scale. Display rounding can make a round-trip conversion differ slightly from the original value.</p></details><details class="faq-item"><summary>When a conversion has the wrong scale</summary><p>Enter a finite numeric value and confirm both units and the measurement category. Zero is valid; a blank input is not. Temperature conversion includes an offset, unlike a simple length ratio. Check precision and rounding against the intended use.</p></details></section><section class="info-section"><h2>What to use next</h2><p>Continue your task with these suggested tools. Suggestions follow the workflow and tool category; your input is not transferred between tools.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">Developer tools</span><h3>Unix Timestamp Converter</h3><p>Convert Unix seconds or milliseconds to readable local and UTC dates.</p><a class="tool-link" href="../tools/unix-timestamp-converter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Text tools</span><h3>Word &amp; Character Counter</h3><p>Count words, characters, sentences, and estimated reading time as you type.</p><a class="tool-link" href="../tools/word-counter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Developer tools</span><h3>JSON Formatter &amp; Validator</h3><p>Pretty-print, minify, and validate JSON directly in your browser.</p><a class="tool-link" href="../tools/json-formatter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>Color Palette Generator</h3><p>Generate a five-color palette for design work, with the option to lock colors you like.</p><a class="tool-link" href="../tools/color-palette-generator.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Working with your results</h2><details class="faq-item"><summary>Should I round the input before converting?</summary><p>Keep the available input precision and round the final result for your use case. Repeated rounding can introduce avoidable differences.</p></details><details class="faq-item"><summary>Can I convert between unrelated measurement types?</summary><p>Choose units in the same supported category. Length, weight, and temperature measure different quantities and cannot be converted into each other by this tool.</p></details></section><!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/small-tools-that-save-developers-time">Debug API Data with JSON, Base64, and Browser Tools</a></p><p>Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.</p></section><!-- /editorial-tool-link --></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
+<section class="info-section"><h2>Check units and precision</h2><p>Convert 100 Celsius to Fahrenheit to get 212. Unit conversions use standard factors and rounded display values. This is not a currency converter or a substitute for precision engineering calculations.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Choose length and convert 1 kilometer to meters; the expected result is 1000 meters.</li><li>Check the conversion category and both unit labels before using the number in another document.</li><li>Read the converted value and its units above. Select and copy the result manually; this tool has no download button.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>Temperature uses an offset as well as a scale. Display rounding can make a round-trip conversion differ slightly from the original value.</p></section><section class="info-section"><h2>What to use next</h2><p>These tools open separately; inputs are not transferred.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">Developer tools</span><h3>Unix Timestamp Converter</h3><p>Convert Unix seconds or milliseconds to readable local and UTC dates.</p><a class="tool-link" href="../tools/unix-timestamp-converter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Text tools</span><h3>Word &amp; Character Counter</h3><p>Count words, characters, sentences, and estimated reading time as you type.</p><a class="tool-link" href="../tools/word-counter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Developer tools</span><h3>JSON Formatter &amp; Validator</h3><p>Pretty-print, minify, and validate JSON directly in your browser.</p><a class="tool-link" href="../tools/json-formatter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>Color Palette Generator</h3><p>Generate a five-color palette for design work, with the option to lock colors you like.</p><a class="tool-link" href="../tools/color-palette-generator.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Questions and troubleshooting</h2><details class="faq-item"><summary>Which units are supported?</summary><p>Length covers meters, kilometers, centimeters, millimeters, miles, yards, feet, and inches. Weight covers kilograms, grams, milligrams, pounds, ounces, and tonnes. Temperature covers Celsius, Fahrenheit, and Kelvin.</p></details><details class="faq-item"><summary>How precise are the conversions?</summary><p>Results are rounded to a sensible number of decimal places for readability, using standard conversion factors.</p></details><details class="faq-item"><summary>Can more unit categories be added?</summary><p>This tool covers the most commonly requested categories; additional ones like volume or area can be added over time.</p></details><details class="faq-item"><summary>When a conversion has the wrong scale</summary><p>Enter a finite numeric value and confirm both units and the measurement category. Zero is valid; a blank input is not. Temperature conversion includes an offset, unlike a simple length ratio. Check precision and rounding against the intended use.</p></details><details class="faq-item"><summary>Should I round the input before converting?</summary><p>Keep the available input precision and round the final result for your use case. Repeated rounding can introduce avoidable differences.</p></details><details class="faq-item"><summary>Can I convert between unrelated measurement types?</summary><p>Choose units in the same supported category. Length, weight, and temperature measure different quantities and cannot be converted into each other by this tool.</p></details></section><!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/small-tools-that-save-developers-time">Debug API Data with JSON, Base64, and Browser Tools</a></p><p>Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.</p></section><!-- /editorial-tool-link --></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -93,7 +93,7 @@
         <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
       </div>
       <div>
-        <h4>Tools</h4>
+        <h3>Tools</h3>
         <ul>
           <li><a href="../tools/temp-mail.html">Temp mail</a></li>
           <li><a href="../tools/background-remover.html">Background remover</a></li>
@@ -102,7 +102,7 @@
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul>
           <li><a href="../about.html">About</a></li>
           <li><a href="../blog/index.html">Blogs</a></li>
@@ -110,7 +110,7 @@
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <ul>
           <li><a href="../privacy-policy.html">Privacy policy</a></li>
           <li><a href="../terms-of-service.html">Terms of service</a></li>
@@ -129,8 +129,8 @@
 
 
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=20261005-review"></script>
 <script src="../assets/js/tools/unit-converter.js"></script>
 <script src="../assets/js/tool-ux.js"></script>
-</body>
+<script src="../assets/js/tool-examples.js?v=20261005-review"></script></body>
 </html>

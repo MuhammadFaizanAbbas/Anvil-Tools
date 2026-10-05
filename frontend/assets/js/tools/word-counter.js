@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const charsNoSpace = text.replace(/\s+/g, '').length;
     const sentences = text.split(/[.!?]+/).filter((part) => part.trim().length > 0).length;
     const paragraphs = text.split(/\n\s*\n/).filter((part) => part.trim().length > 0).length || 0;
-    const readTime = Math.max(1, Math.ceil(words / 200));
+    const readTime = Math.ceil(words / 200);
 
     wordsEl.textContent = String(words);
     charsEl.textContent = String(chars);

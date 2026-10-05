@@ -22,7 +22,9 @@ test('all tool pages contain specific accessible FAQ answers and functional dest
  assert.equal(Object.keys(faqs).length,20);
  for(const slug of Object.keys(faqs)){
   const html=fs.readFileSync(`frontend/tools/${slug}.html`,'utf8');
-  assert.ok((html.match(/<summary>/g)||[]).length>=6,slug);
+  const questions = [...html.matchAll(/<summary>(.*?)<\/summary>/g)].map(match => match[1]);
+  assert.equal(new Set(questions).size, questions.length, `${slug}: FAQ questions must be distinct`);
+  assert.match(html, /<!-- checked-example -->/, `${slug}: a specific worked example is required`);
   for(const [question] of faqs[slug])assert.ok(html.includes(question.replace(/&/g,'&amp;').replace(/'/g,'&#x27;')),slug);
   assert.match(html,/What to use next/,slug);
  }

@@ -8,16 +8,16 @@
 <link rel="canonical" href="https://anviltools.vercel.app/tools/background-remover.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261004-css">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review">
 <script type="module">
 import { removeBackground } from "https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.5.5/+esm";
 window.removeBackgroundLib = removeBackground;
 </script>
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review">
 <link rel="stylesheet" href="../assets/css/tool-ux.css">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review">
 <meta property="og:type" content="website"><meta property="og:title" content="Background Remover | Anvil Tools"><meta property="og:description" content="Remove the background from a photo automatically, processed locally in your browser."><meta property="og:url" content="https://anviltools.vercel.app/tools/background-remover.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript></head>
 <body class="public-site">
@@ -59,7 +59,7 @@ window.removeBackgroundLib = removeBackground;
 
 
 
-<!-- reading-surface --><div class="content-guide"><section class="info-section">
+<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Inspect an actual removal result</h2><p>Our synthetic mug example is 480 × 360 pixels. The tool produced a transparent PNG at the same dimensions, but beige speckles remained near the handle. This simple illustration does not establish quality on hair, glass, or difficult photographs.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>Source</td><td>A solid mug against a pale illustrated background.</td></tr><tr><td>Result</td><td>Transparent surroundings with some unwanted pixels still present.</td></tr><tr><td>Decision</td><td>Check on light and dark backgrounds; use a manual editor if the retained pixels matter.</td></tr></tbody></table></div><figure><img src="/assets/images/editorial/background-removal-example.png" loading="lazy" alt="Actual synthetic mug before and after automatic background removal; unwanted pale pixels remain near the handle." width="976" height="566"><figcaption>Actual tool output on a synthetic illustration, with imperfections retained.</figcaption></figure><p><a href="/assets/images/editorial/background-removal-input.png" download>Download the test input</a> · <a href="/assets/images/editorial/background-removal-output.png" download>Inspect the transparent PNG result</a></p></section><!-- /checked-example --><section class="info-section">
   <h2>How it works</h2>
   <ul><li>When you choose a file, a compact background-segmentation model loads in your browser (only once per visit).</li>
 <li>The model identifies the main subject and produces a version of the image with a transparent background.</li>
@@ -73,16 +73,16 @@ window.removeBackgroundLib = removeBackground;
 
   <div class="callout">Your privacy matters here: check the FAQ below for exactly what happens to anything you enter into this tool.</div>
 
-  <h2>Frequently asked questions</h2>
-  <details class="faq-item"><summary>Does my photo get uploaded anywhere?</summary><p>No. Processing happens locally using your device's own processing power, so the image never leaves your browser.</p></details>
-<details class="faq-item"><summary>Why does the first image take longer than the second?</summary><p>The first run downloads and initializes the small ML model used for segmentation. After that, it stays cached for the rest of your visit.</p></details>
-<details class="faq-item"><summary>What image formats are supported?</summary><p>JPG, PNG, and WebP work well. Very large images may take longer to process on slower devices.</p></details>
-<details class="faq-item"><summary>Why does the edge of my subject look slightly rough?</summary><p>Automatic segmentation works best with a clear subject and reasonable contrast against the background. Busy backgrounds or fine detail like loose hair can produce a less clean edge.</p></details>
+
+
+
+
+
 </section>
 
 
 
-<section class="info-section"><h2>Improve the edges</h2><p>Use a sharp photograph with a clearly separated subject. Fine hair, transparent objects and shadows can be difficult. The first run downloads a model; later runs can reuse browser-cached model files.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Choose a product photograph with a clear subject, remove its background, then download the transparent result.</li><li>Inspect fine edges, hair, and transparent objects against both light and dark backgrounds before publishing.</li><li>Compare the original and result previews, then download the transparent PNG. Keep your original image.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>The first run downloads model assets and can take longer. A smaller source image can help on devices with limited memory.</p></section><section class="info-section"><h2>More questions about Background Remover</h2><details class="faq-item"><summary>What should I check before using the result?</summary><p>Inspect fine edges, hair, and transparent objects against both light and dark backgrounds before publishing.</p></details><details class="faq-item"><summary>What are the main limitations?</summary><p>The first run downloads model assets and can take longer. A smaller source image can help on devices with limited memory.</p></details><details class="faq-item"><summary>When image processing stalls</summary><p>Allow the model resources to finish loading and keep the tab open during processing. If the browser runs out of memory, retry with a smaller supported image and fewer open tabs. For missed hair, glass, or thin edges, improve the source photo or use an editor with manual selection.</p></details></section><section class="info-section"><h2>What to use next</h2><p>Continue your task with these suggested tools. Suggestions follow the workflow and tool category; your input is not transferred between tools.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">PDF tools</span><h3>Image to PDF Converter</h3><p>Turn one or more JPG or PNG images into a single downloadable PDF.</p><a class="tool-link" href="../tools/image-to-pdf.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>Color Palette Generator</h3><p>Generate a five-color palette for design work, with the option to lock colors you like.</p><a class="tool-link" href="../tools/color-palette-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>QR Code Generator</h3><p>Turn any link or short message into a scannable QR code you can download as an image.</p><a class="tool-link" href="../tools/qr-code-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Developer tools</span><h3>Base64 Encoder &amp; Decoder</h3><p>Convert text to Base64 and back, entirely in your browser.</p><a class="tool-link" href="../tools/base64-tool.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Working with your results</h2><details class="faq-item"><summary>Why does the first image take longer?</summary><p>The browser loads the image-processing model and runtime before it can remove a background. Wait for the status message and keep the tab open. A smaller image can help a device with limited memory.</p></details><details class="faq-item"><summary>Will every edge be perfect?</summary><p>No. Hair, glass, shadows, and a subject that blends into the background can produce rough edges. Inspect the transparent output at full size and retain the original for manual corrections.</p></details></section><!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/best-practices-for-background-removal-when-working-with-design">Background Removal for Design and Product Photography</a></p><p>Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.</p></section><!-- /editorial-tool-link --></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
+<section class="info-section"><h2>Improve the edges</h2><p>Use a sharp photograph with a clearly separated subject. Fine hair, transparent objects and shadows can be difficult. The first run downloads a model; later runs can reuse browser-cached model files.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Choose a product photograph with a clear subject, remove its background, then download the transparent result.</li><li>Inspect fine edges, hair, and transparent objects against both light and dark backgrounds before publishing.</li><li>Compare the original and result previews, then download the transparent PNG. Keep your original image.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>The first run downloads model assets and can take longer. A smaller source image can help on devices with limited memory.</p></section><section class="info-section"><h2>What to use next</h2><p>These tools open separately; inputs are not transferred.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">PDF tools</span><h3>Image to PDF Converter</h3><p>Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.</p><a class="tool-link" href="../tools/image-to-pdf.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>Color Palette Generator</h3><p>Generate a five-color palette for design work, with the option to lock colors you like.</p><a class="tool-link" href="../tools/color-palette-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>QR Code Generator</h3><p>Turn any link or short message into a scannable QR code you can download as an image.</p><a class="tool-link" href="../tools/qr-code-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Developer tools</span><h3>Base64 Encoder &amp; Decoder</h3><p>Convert text to Base64 and back, entirely in your browser.</p><a class="tool-link" href="../tools/base64-tool.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Questions and troubleshooting</h2><details class="faq-item"><summary>Does my photo get uploaded anywhere?</summary><p>No. Processing happens locally using your device's own processing power, so the image never leaves your browser.</p></details><details class="faq-item"><summary>Why does the first image take longer than the second?</summary><p>The first run downloads and initializes the small ML model used for segmentation. After that, it stays cached for the rest of your visit.</p></details><details class="faq-item"><summary>What image formats are supported?</summary><p>JPG, PNG, and WebP work well. Very large images may take longer to process on slower devices.</p></details><details class="faq-item"><summary>Why does the edge of my subject look slightly rough?</summary><p>Automatic segmentation works best with a clear subject and reasonable contrast against the background. Busy backgrounds or fine detail like loose hair can produce a less clean edge.</p></details><details class="faq-item"><summary>When image processing stalls</summary><p>Allow the model resources to finish loading and keep the tab open during processing. If the browser runs out of memory, retry with a smaller supported image and fewer open tabs. For missed hair, glass, or thin edges, improve the source photo or use an editor with manual selection.</p></details><details class="faq-item"><summary>Why does the first image take longer?</summary><p>The browser loads the image-processing model and runtime before it can remove a background. Wait for the status message and keep the tab open. A smaller image can help a device with limited memory.</p></details><details class="faq-item"><summary>Will every edge be perfect?</summary><p>No. Hair, glass, shadows, and a subject that blends into the background can produce rough edges. Inspect the transparent output at full size and retain the original for manual corrections.</p></details></section><!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/best-practices-for-background-removal-when-working-with-design">Background Removal for Design and Product Photography</a></p><p>Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.</p></section><!-- /editorial-tool-link --></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -91,7 +91,7 @@ window.removeBackgroundLib = removeBackground;
         <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
       </div>
       <div>
-        <h4>Tools</h4>
+        <h3>Tools</h3>
         <ul>
           <li><a href="../tools/temp-mail.html">Temp mail</a></li>
           <li><a href="../tools/background-remover.html">Background remover</a></li>
@@ -100,7 +100,7 @@ window.removeBackgroundLib = removeBackground;
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul>
           <li><a href="../about.html">About</a></li>
           <li><a href="../blog/index.html">Blogs</a></li>
@@ -108,7 +108,7 @@ window.removeBackgroundLib = removeBackground;
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <ul>
           <li><a href="../privacy-policy.html">Privacy policy</a></li>
           <li><a href="../terms-of-service.html">Terms of service</a></li>
@@ -127,7 +127,7 @@ window.removeBackgroundLib = removeBackground;
 
 
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=20261005-review"></script>
 <script src="../assets/js/tools/background-remover.js"></script>
 <script src="../assets/js/tool-ux.js"></script>
 </body>

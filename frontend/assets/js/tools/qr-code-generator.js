@@ -31,6 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
       colorLight: '#ffffff',
       correctLevel: QRCode.CorrectLevel.H
     });
+    const image = wrapper.querySelector('img');
+    if (image) image.alt = `QR code for: ${text}`;
+    const canvas = wrapper.querySelector('canvas');
+    if (canvas) {
+      canvas.setAttribute('role', 'img');
+      canvas.setAttribute('aria-label', `QR code for: ${text}`);
+    }
     downloadBtn.style.display = 'inline-block';
     status.textContent = 'QR code generated.';
     } catch (_) {

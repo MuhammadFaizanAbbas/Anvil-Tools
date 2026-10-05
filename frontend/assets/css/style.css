@@ -397,7 +397,7 @@ input[type="range"] {
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 30px;
 }
-.site-footer h4 {
+.site-footer h3 {
   color: #fff;
   font-size: 1rem;
   margin-bottom: 14px;

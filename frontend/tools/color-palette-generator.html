@@ -8,13 +8,13 @@
 <link rel="canonical" href="https://anviltools.vercel.app/tools/color-palette-generator.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261004-css">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review">
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review">
 <link rel="stylesheet" href="../assets/css/tool-ux.css">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review">
 <meta property="og:type" content="website"><meta property="og:title" content="Color Palette Generator | Anvil Tools"><meta property="og:description" content="Generate a five-color palette for design work, with the option to lock colors you like."><meta property="og:url" content="https://anviltools.vercel.app/tools/color-palette-generator.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript></head>
 <body class="public-site">
@@ -51,7 +51,7 @@
 
 
 
-<!-- reading-surface --><div class="content-guide"><section class="info-section">
+<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Use a palette in a small design</h2><p>Choose an accent for a heading, lock that swatch, and generate alternatives for the remaining colors. Export CSS variables when the combination works in the actual design. The preview covers its displayed pair, not every swatch combination or interface state.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>Lock one swatch, then generate</td><td>The locked value remains while unlocked swatches can change.</td></tr><tr><td>Dark text on a pale surface</td><td>Check that exact pair at the intended font size.</td></tr><tr><td>An accent on a button</td><td>Also inspect focus, hover, disabled text, and button boundaries.</td></tr></tbody></table></div></section><!-- /checked-example --><section class="info-section">
   <h2>How it works</h2>
   <ul><li>A base hue is picked at random, then four related hues are generated around it at increasing lightness.</li>
 <li>Each swatch shows its hex code, ready to copy into a design tool or CSS file.</li>
@@ -64,15 +64,15 @@
 
   <div class="callout">Your privacy matters here: check the FAQ below for exactly what happens to anything you enter into this tool.</div>
 
-  <h2>Frequently asked questions</h2>
-  <details class="faq-item"><summary>Are these palettes accessible for text and backgrounds?</summary><p>Not automatically. Always check contrast between text and background colors separately using a contrast checker before finalizing a design.</p></details>
-<details class="faq-item"><summary>Can I export the palette?</summary><p>Each swatch shows its hex code, which you can copy directly into your design software or CSS.</p></details>
-<details class="faq-item"><summary>Why do locked colors stay the same?</summary><p>Locking a swatch excludes it from the next randomization, so you can build a palette around a color you've already decided on.</p></details>
+
+
+
+
 </section>
 
 
 
-<section class="info-section"><h2>Build a usable color system</h2><p>Start with a brand color, choose a harmony, and lock colors you want to keep. Copy CSS variables into your stylesheet. The preview checks black or white text against the first swatch; it does not certify every color pair in the palette.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Generate a palette for a presentation, keep colors you like, and explore alternatives for the remaining swatches.</li><li>Try the colors on actual headings, backgrounds, and buttons before committing to the palette.</li><li>Copy individual swatch values or use Copy CSS variables. Check contrast for the exact text and background pair you intend to use.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>A visually pleasing palette does not guarantee readable contrast. Check your chosen foreground and background pairs separately.</p></section><section class="info-section"><h2>More questions about Color Palette Generator</h2><details class="faq-item"><summary>What should I check before using the result?</summary><p>Try the colors on actual headings, backgrounds, and buttons before committing to the palette.</p></details><details class="faq-item"><summary>What are the main limitations?</summary><p>A visually pleasing palette does not guarantee readable contrast. Check your chosen foreground and background pairs separately.</p></details><details class="faq-item"><summary>When palette or contrast results look wrong</summary><p>Check which swatches are locked before generating another palette. Evaluate the exact foreground and background pair used in the design, including text size and hover states. A contrast preview for one pair does not validate every combination in the palette.</p></details></section><section class="info-section"><h2>What to use next</h2><p>Continue your task with these suggested tools. Suggestions follow the workflow and tool category; your input is not transferred between tools.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">Image tools</span><h3>Background Remover</h3><p>Remove the background from a photo automatically, processed locally in your browser.</p><a class="tool-link" href="../tools/background-remover.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>QR Code Generator</h3><p>Turn any link or short message into a scannable QR code you can download as an image.</p><a class="tool-link" href="../tools/qr-code-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">PDF tools</span><h3>Image to PDF Converter</h3><p>Turn one or more JPG or PNG images into a single downloadable PDF.</p><a class="tool-link" href="../tools/image-to-pdf.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>Password Generator</h3><p>Create a strong, random password with adjustable length and character types.</p><a class="tool-link" href="../tools/password-generator.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Working with your results</h2><details class="faq-item"><summary>Does a generated palette meet accessibility contrast requirements?</summary><p>A palette alone does not establish contrast. Check the exact text and background pair, font size, and control boundaries before using the colors in an interface.</p></details><details class="faq-item"><summary>How do I keep a color while exploring alternatives?</summary><p>Use the lock control for the swatch you want to retain, then generate again. Copy the color value or export CSS variables when you have a combination you want to keep.</p></details></section></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
+<section class="info-section"><h2>Build a usable color system</h2><p>Start with a brand color, choose a harmony, and lock colors you want to keep. Copy CSS variables into your stylesheet. The preview checks black or white text against the first swatch; it does not certify every color pair in the palette.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Generate a palette for a presentation, keep colors you like, and explore alternatives for the remaining swatches.</li><li>Try the colors on actual headings, backgrounds, and buttons before committing to the palette.</li><li>Copy individual swatch values or use Copy CSS variables. Check contrast for the exact text and background pair you intend to use.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>A visually pleasing palette does not guarantee readable contrast. Check your chosen foreground and background pairs separately.</p></section><section class="info-section"><h2>What to use next</h2><p>These tools open separately; inputs are not transferred.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">Image tools</span><h3>Background Remover</h3><p>Remove the background from a photo automatically, processed locally in your browser.</p><a class="tool-link" href="../tools/background-remover.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>QR Code Generator</h3><p>Turn any link or short message into a scannable QR code you can download as an image.</p><a class="tool-link" href="../tools/qr-code-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">PDF tools</span><h3>Image to PDF Converter</h3><p>Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.</p><a class="tool-link" href="../tools/image-to-pdf.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>Password Generator</h3><p>Create a strong, random password with adjustable length and character types.</p><a class="tool-link" href="../tools/password-generator.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Questions and troubleshooting</h2><details class="faq-item"><summary>Are these palettes accessible for text and backgrounds?</summary><p>Not automatically. Always check contrast between text and background colors separately using a contrast checker before finalizing a design.</p></details><details class="faq-item"><summary>Can I export the palette?</summary><p>Each swatch shows its hex code, which you can copy directly into your design software or CSS.</p></details><details class="faq-item"><summary>Why do locked colors stay the same?</summary><p>Locking a swatch excludes it from the next randomization, so you can build a palette around a color you've already decided on.</p></details><details class="faq-item"><summary>When palette or contrast results look wrong</summary><p>Check which swatches are locked before generating another palette. Evaluate the exact foreground and background pair used in the design, including text size and hover states. A contrast preview for one pair does not validate every combination in the palette.</p></details><details class="faq-item"><summary>Does a generated palette meet accessibility contrast requirements?</summary><p>A palette alone does not establish contrast. Check the exact text and background pair, font size, and control boundaries before using the colors in an interface.</p></details><details class="faq-item"><summary>How do I keep a color while exploring alternatives?</summary><p>Use the lock control for the swatch you want to retain, then generate again. Copy the color value or export CSS variables when you have a combination you want to keep.</p></details></section></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -81,7 +81,7 @@
         <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
       </div>
       <div>
-        <h4>Tools</h4>
+        <h3>Tools</h3>
         <ul>
           <li><a href="../tools/temp-mail.html">Temp mail</a></li>
           <li><a href="../tools/background-remover.html">Background remover</a></li>
@@ -90,7 +90,7 @@
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul>
           <li><a href="../about.html">About</a></li>
           <li><a href="../blog/index.html">Blogs</a></li>
@@ -98,7 +98,7 @@
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <ul>
           <li><a href="../privacy-policy.html">Privacy policy</a></li>
           <li><a href="../terms-of-service.html">Terms of service</a></li>
@@ -117,7 +117,7 @@
 
 
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=20261005-review"></script>
 <script src="../assets/js/tools/color-palette-generator.js"></script>
 <script src="../assets/js/tool-ux.js"></script>
 </body>

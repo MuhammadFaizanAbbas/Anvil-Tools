@@ -8,13 +8,13 @@
 <link rel="canonical" href="https://anviltools.vercel.app/tools/index.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261004-css">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review">
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review">
 <link rel="stylesheet" href="../assets/css/tool-ux.css">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review">
 <meta property="og:type" content="website"><meta property="og:title" content="All tools | Anvil Tools"><meta property="og:description" content="Browse every free tool available on Anvil Tools."><meta property="og:url" content="https://anviltools.vercel.app/tools/index.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript></head>
 <body class="public-site">
@@ -34,88 +34,88 @@
 <p class="breadcrumbs"><a href="../index.html">Home</a> / <span>All tools</span></p>
 <section class="hero">
   <h1>All tools</h1>
-  <p class="lede">Every tool on Anvil Tools, in one place. Browse by category on the home page, or scan the full list below.</p>
-</section>
+  <p class="lede">Find the tool that matches your input and desired result. Browse all 20 tools, filter by category, or search by task.</p>
+</section><!-- directory-controls --><div class="tool-directory-controls"><label>Search tools<input type="search" id="tool-search" placeholder="Try PDF, JSON, or text" autocomplete="off"></label><label>Category<select id="tool-category"><option value="">All categories</option><option value="Email tools">Email tools</option><option value="Image tools">Image tools</option><option value="PDF tools">PDF tools</option><option value="Generators">Generators</option><option value="Text tools">Text tools</option><option value="Developer tools">Developer tools</option></select></label></div><p id="tool-results" role="status" aria-live="polite">20 tools available.</p><!-- /directory-controls -->
 <section>
-  <div class="tool-grid">
-  <div class="tool-card">
+  <h2 id="directory-tools-title">Available tools</h2><div class="tool-grid">
+  <div class="tool-card" data-directory-tool data-category="Email tools">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
   <span class="category-tag">Email tools</span>
   <h3>Temporary Email Generator</h3>
   <p>Get a disposable inbox in one click for signups you don't want landing in your real email.</p>
   <span class="processing-label">External email service</span><a class="tool-link" href="../tools/temp-mail.html">Open tool →</a>
 </div>
-<div class="tool-card">
+<div class="tool-card" data-directory-tool data-category="Image tools">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg></div>
   <span class="category-tag">Image tools</span>
   <h3>Background Remover</h3>
   <p>Remove the background from a photo automatically, processed locally in your browser.</p>
   <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/background-remover.html">Open tool →</a>
 </div>
-<div class="tool-card">
+<div class="tool-card" data-directory-tool data-category="PDF tools">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 16h6"/></svg></div>
   <span class="category-tag">PDF tools</span>
   <h3>PDF Merge</h3>
   <p>Combine multiple PDF files into a single document in the order you choose.</p>
   <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/pdf-merge.html">Open tool →</a>
 </div>
-<div class="tool-card">
+<div class="tool-card" data-directory-tool data-category="PDF tools">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><circle cx="10" cy="12" r="1"/><path d="M9 17l2-2 2 2 3-3"/></svg></div>
   <span class="category-tag">PDF tools</span>
   <h3>Image to PDF Converter</h3>
-  <p>Turn one or more JPG or PNG images into a single downloadable PDF.</p>
+  <p>Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.</p>
   <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/image-to-pdf.html">Open tool →</a>
 </div>
-<div class="tool-card">
+<div class="tool-card" data-directory-tool data-category="Generators">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM19 14h2v2M14 19h2v2M19 19h2v2"/></svg></div>
   <span class="category-tag">Generators</span>
   <h3>QR Code Generator</h3>
   <p>Turn any link or short message into a scannable QR code you can download as an image.</p>
   <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/qr-code-generator.html">Open tool →</a>
 </div>
-<div class="tool-card">
+<div class="tool-card" data-directory-tool data-category="Generators">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M10.5 12.5 20 3M17 6l2 2M14 9l2 2"/></svg></div>
   <span class="category-tag">Generators</span>
   <h3>Password Generator</h3>
   <p>Create a strong, random password with adjustable length and character types.</p>
   <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/password-generator.html">Open tool →</a>
 </div>
-<div class="tool-card">
+<div class="tool-card" data-directory-tool data-category="Text tools">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h16"/></svg></div>
   <span class="category-tag">Text tools</span>
   <h3>Word & Character Counter</h3>
   <p>Count words, characters, sentences, and estimated reading time as you type.</p>
   <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/word-counter.html">Open tool →</a>
 </div>
-<div class="tool-card">
+<div class="tool-card" data-directory-tool data-category="Developer tools">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6-6 6-6M15 6l6 6-6 6"/></svg></div>
   <span class="category-tag">Developer tools</span>
   <h3>JSON Formatter & Validator</h3>
   <p>Pretty-print, minify, and validate JSON directly in your browser.</p>
   <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/json-formatter.html">Open tool →</a>
 </div>
-<div class="tool-card">
+<div class="tool-card" data-directory-tool data-category="Developer tools">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 11v2M11 10v4M15 10.5v3M19 11v2"/></svg></div>
   <span class="category-tag">Developer tools</span>
   <h3>Base64 Encoder & Decoder</h3>
   <p>Convert text to Base64 and back, entirely in your browser.</p>
   <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/base64-tool.html">Open tool →</a>
 </div>
-<div class="tool-card">
+<div class="tool-card" data-directory-tool data-category="Developer tools">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="12" rx="2"/><circle cx="9" cy="13" r="1.2"/><circle cx="15" cy="13" r="1.2"/><path d="M12 3v4M8 3h8"/></svg></div>
   <span class="category-tag">Developer tools</span>
   <h3>User Agent Generator</h3>
-  <p>Grab realistic browser and bot user-agent strings for testing how your site responds.</p>
+  <p>Choose fixed browser and bot user-agent strings for parser and request-header tests.</p>
   <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/user-agent-generator.html">Open tool →</a>
 </div>
-<div class="tool-card">
+<div class="tool-card" data-directory-tool data-category="Generators">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="8.5" cy="10.5" r="1.3"/><circle cx="12" cy="8" r="1.3"/><circle cx="15.5" cy="10.5" r="1.3"/><path d="M12 21a3 3 0 0 1 0-6h5a3 3 0 0 0 0-6"/></svg></div>
   <span class="category-tag">Generators</span>
   <h3>Color Palette Generator</h3>
   <p>Generate a five-color palette for design work, with the option to lock colors you like.</p>
   <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/color-palette-generator.html">Open tool →</a>
 </div>
-<div class="tool-card">
+<div class="tool-card" data-directory-tool data-category="Generators">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h11l-3-3M17 17H6l3 3"/></svg></div>
   <span class="category-tag">Generators</span>
   <h3>Unit Converter</h3>
@@ -124,20 +124,22 @@
 </div>
 
 <!-- EIGHT_NEW_TOOLS_START -->
-<div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Developer tools</span><h3>URL Encoder & Decoder</h3><p>Encode text for a URL or decode percent-encoded values safely.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/url-encoder-decoder.html">Open tool &#8594;</a></div>
-<div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Developer tools</span><h3>JWT Decoder</h3><p>Inspect a JWT header and payload without uploading the token.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/jwt-decoder.html">Open tool &#8594;</a></div>
-<div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Developer tools</span><h3>Unix Timestamp Converter</h3><p>Convert Unix seconds or milliseconds to readable local and UTC dates.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/unix-timestamp-converter.html">Open tool &#8594;</a></div>
-<div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Developer tools</span><h3>Hash Generator</h3><p>Generate SHA-256, SHA-384, or SHA-512 hashes from UTF-8 text.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/hash-generator.html">Open tool &#8594;</a></div>
-<div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Developer tools</span><h3>CSV to JSON Converter</h3><p>Convert quoted CSV data into JSON arrays or objects locally.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/csv-to-json.html">Open tool &#8594;</a></div>
-<div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Text tools</span><h3>Text Case Converter</h3><p>Convert text to upper, lower, title, sentence, camel, snake, and kebab case.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/text-case-converter.html">Open tool &#8594;</a></div>
-<div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Text tools</span><h3>Text Difference Checker</h3><p>Compare two texts line by line and highlight additions and removals.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/text-diff-checker.html">Open tool &#8594;</a></div>
-<div class="tool-card"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Generators</span><h3>UUID Generator</h3><p>Generate cryptographically random RFC 4122 version 4 UUIDs.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/uuid-generator.html">Open tool &#8594;</a></div>
+<div class="tool-card" data-directory-tool data-category="Developer tools"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Developer tools</span><h3>URL Encoder & Decoder</h3><p>Encode text for a URL or decode percent-encoded values safely.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/url-encoder-decoder.html">Open tool &#8594;</a></div>
+<div class="tool-card" data-directory-tool data-category="Developer tools"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Developer tools</span><h3>JWT Decoder</h3><p>Inspect a JWT header and payload without uploading the token.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/jwt-decoder.html">Open tool &#8594;</a></div>
+<div class="tool-card" data-directory-tool data-category="Developer tools"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Developer tools</span><h3>Unix Timestamp Converter</h3><p>Convert Unix seconds or milliseconds to readable local and UTC dates.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/unix-timestamp-converter.html">Open tool &#8594;</a></div>
+<div class="tool-card" data-directory-tool data-category="Developer tools"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Developer tools</span><h3>Hash Generator</h3><p>Generate SHA-256, SHA-384, or SHA-512 hashes from UTF-8 text.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/hash-generator.html">Open tool &#8594;</a></div>
+<div class="tool-card" data-directory-tool data-category="Developer tools"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Developer tools</span><h3>CSV to JSON Converter</h3><p>Convert quoted CSV data into JSON arrays or objects locally.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/csv-to-json.html">Open tool &#8594;</a></div>
+<div class="tool-card" data-directory-tool data-category="Text tools"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Text tools</span><h3>Text Case Converter</h3><p>Convert text to upper, lower, title, sentence, camel, snake, and kebab case.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/text-case-converter.html">Open tool &#8594;</a></div>
+<div class="tool-card" data-directory-tool data-category="Text tools"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Text tools</span><h3>Text Difference Checker</h3><p>Compare two texts line by line and highlight additions and removals.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/text-diff-checker.html">Open tool &#8594;</a></div>
+<div class="tool-card" data-directory-tool data-category="Generators"><div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 12h8M8 15h5"/></svg></div><span class="category-tag">Generators</span><h3>UUID Generator</h3><p>Generate cryptographically random RFC 4122 version 4 UUIDs.</p><span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/uuid-generator.html">Open tool &#8594;</a></div>
 <!-- EIGHT_NEW_TOOLS_END -->
 </div>
 </section>
 
 
-<!-- expanded-content --><!-- reading-surface --><div class="content-guide"><section class="info-section"><h2>Build a workflow in a few minutes</h2><div class="tool-grid"><article class="tool-card"><h3>Prepare documents</h3><p>Turn scans into a PDF, combine it with other documents, and check the final page order before sharing.</p><a href="../tools/image-to-pdf.html">Start with Image to PDF</a></article><article class="tool-card"><h3>Clean up data</h3><p>Convert spreadsheet exports to JSON, format the result, and compare revisions before adding them to your project.</p><a href="../tools/csv-to-json.html">Start with CSV to JSON</a></article><article class="tool-card"><h3>Polish your writing</h3><p>Check the length of a draft, adjust its capitalization, and compare the final version with your original.</p><a href="../tools/word-counter.html">Start with Word Counter</a></article></div></section><section class="info-section"><h2>Choose the right starting point</h2><p>Students can organize assignment documents and check essay length. Writers can compare drafts and prepare headings. Developers can inspect data formats and generate test identifiers. Small teams can prepare product images, choose colors, and create QR codes for printed material.</p><p>Each tool includes instructions, practical examples, limitations, and suggestions for the next step. Keep a copy of your source, try a short example first, and check downloaded files before sending them to someone else.</p></section><section class="info-section"><h2>Questions before you begin</h2><details class="faq-item"><summary>Do I need an account or an installation?</summary><p>The public tools open in your browser without a public user account. The separate admin workspace is for managing site content.</p></details><details class="faq-item"><summary>Does everything work offline?</summary><p>No. Pages and supporting libraries need to load first, and temporary email needs an external service. The background remover also downloads model assets. Local processing does not mean every tool is available offline.</p></details><details class="faq-item"><summary>Where do my files go?</summary><p>Browser tools process their inputs on your device. Temporary email and support messages use external services. Read the tool explanation and privacy policy for those differences.</p></details></section></div><!-- /reading-surface --><!-- /expanded-content --></main>
+<!-- expanded-content --><!-- reading-surface --><div class="content-guide"><section class="info-section"><h2>Choose by input and result</h2><div class="table-scroll" role="region" aria-label="Tool input and output choices" tabindex="0"><table><thead><tr><th scope="col">Your input</th><th scope="col">Desired result</th><th scope="col">Starting point</th><th scope="col">Processing</th></tr></thead><tbody><tr><td>Existing PDF files</td><td>One ordered PDF</td><td><a href="pdf-merge.html">PDF Merge</a></td><td>Your browser; page order follows whole-file order.</td></tr><tr><td>PNG, JPEG, or WebP images</td><td>A PDF or a transparent cutout</td><td><a href="image-to-pdf.html">Image to PDF</a> or <a href="background-remover.html">Background Remover</a></td><td>Your browser; background removal first downloads a model.</td></tr><tr><td>A draft or two text versions</td><td>Counts, capitalization, or a line comparison</td><td><a href="../categories/text-tools.html">Text tools</a></td><td>Your browser; compare final text with its destination rules.</td></tr><tr><td>CSV, JSON, encoded text, or a test token</td><td>Readable structured data</td><td><a href="../categories/developer-tools.html">Developer tools</a></td><td>Your browser; decoding does not establish authenticity.</td></tr><tr><td>A link or design task</td><td>A QR code, palette, credential, or identifier</td><td><a href="../categories/generators.html">Generators</a></td><td>Your browser; review the resulting destination or value.</td></tr><tr><td>A permitted short-term mail test</td><td>A receiving inbox</td><td><a href="temp-mail.html">Temporary Email</a></td><td>External provider through our backend; availability and access limits apply.</td></tr></tbody></table></div></section>
+<section class="info-section"><h2>Check the receiving format</h2><p>Before choosing a converter, decide what the recipient or application accepts. Image-based PDF pages do not become editable text. CSV values remain strings, even when they look numeric. Encoded values must use the variant expected by the receiving system. Each tool page includes a sample and explains the limits of its output.</p><p>The controls above narrow the list by category or task. With JavaScript disabled, all tool cards remain available. Public tools currently have no usage fee; temporary email has service and abuse-prevention limits.</p></section>
+</div><!-- /reading-surface --><!-- /expanded-content --></main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -146,7 +148,7 @@
         <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
       </div>
       <div>
-        <h4>Tools</h4>
+        <h3>Tools</h3>
         <ul>
           <li><a href="../tools/temp-mail.html">Temp mail</a></li>
           <li><a href="../tools/background-remover.html">Background remover</a></li>
@@ -155,7 +157,7 @@
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul>
           <li><a href="../about.html">About</a></li>
           <li><a href="../blog/index.html">Blogs</a></li>
@@ -163,7 +165,7 @@
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <ul>
           <li><a href="../privacy-policy.html">Privacy policy</a></li>
           <li><a href="../terms-of-service.html">Terms of service</a></li>
@@ -182,8 +184,8 @@
 
 
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=20261005-review"></script>
 
 <script src="../assets/js/tool-ux.js"></script>
-</body>
+<script src="../assets/js/tool-directory.js?v=20261005-review"></script></body>
 </html>

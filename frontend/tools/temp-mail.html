@@ -8,13 +8,13 @@
 <link rel="canonical" href="https://anviltools.vercel.app/tools/temp-mail.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261004-css">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review">
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review">
 <link rel="stylesheet" href="../assets/css/tool-ux.css">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review">
 <meta property="og:type" content="website"><meta property="og:title" content="Temporary Email Generator | Anvil Tools"><meta property="og:description" content="Get a disposable inbox in one click for signups you don't want landing in your real email."><meta property="og:url" content="https://anviltools.vercel.app/tools/temp-mail.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript></head>
 <body class="public-site">
@@ -52,7 +52,7 @@
         <button class="btn amber" id="tm-new" data-busy-text="Creating&hellip;">New address</button>
       </div>
     </div>
-    <p class="status-msg" id="tm-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    <p class="status-msg" id="tm-status" role="status" aria-live="polite" aria-atomic="true"></p><p id="tm-expiry" class="small-note">Website inbox access time will appear when the address is ready.</p>
   </section>
   <div class="temp-mail-workspace">
     <section class="temp-mail-panel temp-mail-inbox" aria-labelledby="temp-mail-inbox-title">
@@ -68,7 +68,7 @@
 
 
 
-<!-- reading-surface --><div class="content-guide"><section class="info-section">
+<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Try a permitted delivery check</h2><p>Create an address, then send a non-sensitive message from an application or mailbox you control. Address creation alone does not prove message delivery. This tool receives mail; it does not send replies.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>Create an inbox</td><td>An address appears; inbox retrieval begins.</td></tr><tr><td>Send a test subject such as Delivery check 001</td><td>Use Refresh and check the sender, subject, and body when it arrives.</td></tr><tr><td>Access expires</td><td>Create another address. Website access expiry does not establish deletion at the provider.</td></tr></tbody></table></div><p><a href="https://www.guerrillamail.com/" target="_blank" rel="noopener">Provider information from Guerrilla Mail</a>. The countdown estimates website access from the server expiry time; it does not measure provider message retention.</p></section><!-- /checked-example --><section class="info-section">
   <h2>How it works</h2>
   <ul><li>A random inbox address is created for you the moment the page loads, using the Guerrilla Mail service, accessed through our backend.</li>
 <li>The page checks for new mail every 15 seconds and lists messages as they arrive.</li>
@@ -82,16 +82,16 @@
 
   <div class="callout">Your privacy matters here: check the FAQ below for exactly what happens to anything you enter into this tool.</div>
 
-  <h2>Frequently asked questions</h2>
-  <details class="faq-item"><summary>Is this address private?</summary><p>No public account is required, but this is not an anonymous or private mailbox. The service processes connection information, and anyone with access to the inbox credentials may read its messages. Never use it for anything sensitive like banking, medical, or account-recovery email.</p></details>
-<details class="faq-item"><summary>How long does the inbox last?</summary><p>Your access lasts up to one hour. Reloading this tab restores the same inbox while it is active. Clicking "New address" switches to another inbox.</p></details>
-<details class="faq-item"><summary>Can I reply to emails from this address?</summary><p>This tool is built for receiving mail only, matching how most disposable-email use cases work: verifying a signup, not carrying on a conversation.</p></details>
-<details class="faq-item"><summary>Will this work for every website?</summary><p>Some services block disposable addresses or require a permanent email address. Acceptance and delivery are not guaranteed. Follow the receiving service's rules.</p></details>
+
+
+
+
+
 </section>
 
 
 
-<section class="info-section"><h2>Use an inbox only for short-lived tasks</h2><p>Copy the address, wait for a message, and select it to read plain text. Create another inbox when needed, subject to the shared creation limit for your network. Temporary addresses should never be your recovery address for an important account.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Test a newsletter signup using a disposable address, then return to this tab to read the confirmation.</li><li>Confirm the address was copied completely and wait for delivery before requesting another message.</li><li>Use Copy address to copy the inbox address. Select a received message to read it; this tool does not provide a message download or reply button.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>Some senders block disposable domains. Use a permanent address for accounts you need to recover later; a temporary inbox is not a private archive.</p></section><section class="info-section"><h2>More questions about Temporary Email Generator</h2><details class="faq-item"><summary>What should I check before using the result?</summary><p>Confirm the address was copied completely and wait for delivery before requesting another message.</p></details><details class="faq-item"><summary>What are the main limitations?</summary><p>Some senders block disposable domains. Use a permanent address for accounts you need to recover later; a temporary inbox is not a private archive.</p></details><details class="faq-item"><summary>When inbox delivery stops</summary><p>Use Refresh and read the status message. An expired inbox needs a new address; a blocked disposable domain needs an address accepted by the receiving service. Delivery depends on Guerrilla Mail and the sender. Do not include inbox credentials or private messages in a support report.</p></details></section><section class="info-section"><h2>What to use next</h2><p>Continue your task with these suggested tools. Suggestions follow the workflow and tool category; your input is not transferred between tools.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">Generators</span><h3>Password Generator</h3><p>Create a strong, random password with adjustable length and character types.</p><a class="tool-link" href="../tools/password-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>QR Code Generator</h3><p>Turn any link or short message into a scannable QR code you can download as an image.</p><a class="tool-link" href="../tools/qr-code-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Text tools</span><h3>Word &amp; Character Counter</h3><p>Count words, characters, sentences, and estimated reading time as you type.</p><a class="tool-link" href="../tools/word-counter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Image tools</span><h3>Background Remover</h3><p>Remove the background from a photo automatically, processed locally in your browser.</p><a class="tool-link" href="../tools/background-remover.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Working with your results</h2><details class="faq-item"><summary>Can I send email or recover a forgotten account?</summary><p>This tool receives messages; it is not a permanent mailbox or an account-recovery service. Use an address you control long term for purchases, subscriptions, and important accounts.</p></details><details class="faq-item"><summary>Does a new address erase messages at the provider?</summary><p>No. Changing the address ends access through this page but does not guarantee deletion from the email provider. Do not use temporary mail for sensitive correspondence or to bypass a service&#x27;s rules.</p></details></section><!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/best-practices-for-temporary-email-when-working-with-signups">Temporary Email Best Practices for Signups</a></p><p>Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.</p></section><!-- /editorial-tool-link --></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
+<section class="info-section"><h2>Use an inbox only for short-lived tasks</h2><p>Copy the address, wait for a message, and select it to read plain text. Create another inbox when needed, subject to the shared creation limit for your network. Temporary addresses should never be your recovery address for an important account.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Test a newsletter signup using a disposable address, then return to this tab to read the confirmation.</li><li>Confirm the address was copied completely and wait for delivery before requesting another message.</li><li>Use Copy address to copy the inbox address. Select a received message to read it; this tool does not provide a message download or reply button.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>Some senders block disposable domains. Use a permanent address for accounts you need to recover later; a temporary inbox is not a private archive.</p></section><section class="info-section"><h2>What to use next</h2><p>These tools open separately; inputs are not transferred.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">Generators</span><h3>Password Generator</h3><p>Create a strong, random password with adjustable length and character types.</p><a class="tool-link" href="../tools/password-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>QR Code Generator</h3><p>Turn any link or short message into a scannable QR code you can download as an image.</p><a class="tool-link" href="../tools/qr-code-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Text tools</span><h3>Word &amp; Character Counter</h3><p>Count words, characters, sentences, and estimated reading time as you type.</p><a class="tool-link" href="../tools/word-counter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Image tools</span><h3>Background Remover</h3><p>Remove the background from a photo automatically, processed locally in your browser.</p><a class="tool-link" href="../tools/background-remover.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Questions and troubleshooting</h2><details class="faq-item"><summary>Is this address private?</summary><p>No public account is required, but this is not an anonymous or private mailbox. The service processes connection information, and anyone with access to the inbox credentials may read its messages. Never use it for anything sensitive like banking, medical, or account-recovery email.</p></details><details class="faq-item"><summary>How long does the inbox last?</summary><p>Your access lasts up to one hour. Reloading this tab restores the same inbox while it is active. Clicking "New address" switches to another inbox.</p></details><details class="faq-item"><summary>Can I reply to emails from this address?</summary><p>This tool is built for receiving mail only, matching how most disposable-email use cases work: verifying a signup, not carrying on a conversation.</p></details><details class="faq-item"><summary>Will this work for every website?</summary><p>Some services block disposable addresses or require a permanent email address. Acceptance and delivery are not guaranteed. Follow the receiving service's rules.</p></details><details class="faq-item"><summary>When inbox delivery stops</summary><p>Use Refresh and read the status message. An expired inbox needs a new address; a blocked disposable domain needs an address accepted by the receiving service. Delivery depends on Guerrilla Mail and the sender. Do not include inbox credentials or private messages in a support report.</p></details><details class="faq-item"><summary>Can I send email or recover a forgotten account?</summary><p>This tool receives messages; it is not a permanent mailbox or an account-recovery service. Use an address you control long term for purchases, subscriptions, and important accounts.</p></details><details class="faq-item"><summary>Does a new address erase messages at the provider?</summary><p>No. Changing the address ends access through this page but does not guarantee deletion from the email provider. Do not use temporary mail for sensitive correspondence or to bypass a service&#x27;s rules.</p></details></section><!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/best-practices-for-temporary-email-when-working-with-signups">Temporary Email Best Practices for Signups</a></p><p>Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.</p></section><!-- /editorial-tool-link --></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -100,7 +100,7 @@
         <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
       </div>
       <div>
-        <h4>Tools</h4>
+        <h3>Tools</h3>
         <ul>
           <li><a href="../tools/temp-mail.html">Temp mail</a></li>
           <li><a href="../tools/background-remover.html">Background remover</a></li>
@@ -109,7 +109,7 @@
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul>
           <li><a href="../about.html">About</a></li>
           <li><a href="../blog/index.html">Blogs</a></li>
@@ -117,7 +117,7 @@
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <ul>
           <li><a href="../privacy-policy.html">Privacy policy</a></li>
           <li><a href="../terms-of-service.html">Terms of service</a></li>
@@ -136,10 +136,10 @@
 
 
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=20261005-review"></script>
 <script src="../assets/js/config.js"></script>
 <script src="../assets/js/api.js"></script>
-<script src="../assets/js/tools/temp-mail.js"></script>
+<script src="../assets/js/tools/temp-mail.js?v=20261005-review"></script>
 <script src="../assets/js/tool-ux.js"></script>
 </body>
 </html>

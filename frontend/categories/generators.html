@@ -8,12 +8,12 @@
 <link rel="canonical" href="https://anviltools.vercel.app/categories/generators.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261004-css">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review">
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261004-css">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review">
 <meta property="og:type" content="website"><meta property="og:title" content="Generators | Anvil Tools"><meta property="og:description" content="Create passwords, QR codes, palettes, and other quick outputs."><meta property="og:url" content="https://anviltools.vercel.app/categories/generators.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript></head>
 <body class="public-site">
@@ -36,7 +36,7 @@
   <p class="lede">Create passwords, QR codes, palettes, and other quick outputs.</p>
 </section>
 <section>
-  <div class="tool-grid">
+  <h2 id="category-tools-title">Tools in this category</h2><div class="tool-grid">
   <div class="tool-card">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM19 14h2v2M14 19h2v2M19 19h2v2"/></svg></div>
   <span class="category-tag">Generators</span>
@@ -73,7 +73,9 @@
 </section>
 
 
-<!-- expanded-content --><!-- reading-surface --><div class="content-guide"><section class="info-section"><h2>Choosing between generators</h2><h3>Color Palette Generator</h3><p>Generate a five-color palette for design work, with the option to lock colors you like. Try the colors on actual headings, backgrounds, and buttons before committing to the palette.</p><h3>Password Generator</h3><p>Create a strong, random password with adjustable length and character types. Check the website accepts the selected symbols and save the password in your password manager before leaving.</p><h3>QR Code Generator</h3><p>Turn any link or short message into a scannable QR code you can download as an image. Scan the downloaded code with a phone before printing. Confirm it opens the exact destination you intended.</p><h3>Unit Converter</h3><p>Convert between common length, weight, and temperature units instantly. Check the conversion category and both unit labels before using the number in another document.</p><h3>UUID Generator</h3><p>Generate cryptographically random RFC 4122 version 4 UUIDs. Preserve the full identifier, including all hexadecimal groups, when moving it between systems.</p></section><section class="info-section"><h2>Before you start</h2><p>Open a tool to find its instructions, example workflow, and FAQs. Test a small input first, check the result, and follow the suggested next tools when your task needs another step. Save any output you need before closing the tab.</p></section></div><!-- /reading-surface --><!-- /expanded-content --></main>
+<!-- expanded-content --><!-- reading-surface --><div class="content-guide"><section class="info-section"><h2>Choose the kind of output you need</h2><div class="table-scroll" role="region" aria-label="Generator choices" tabindex="0"><table><thead><tr><th scope="col">Task</th><th scope="col">Tool</th><th scope="col">What to verify</th></tr></thead><tbody><tr><td>Share a fixed URL on a flyer</td><td><a href="../tools/qr-code-generator.html">QR Code Generator</a></td><td>Decode the downloaded image and test the final print size with a phone.</td></tr><tr><td>Create a private credential</td><td><a href="../tools/password-generator.html">Password Generator</a></td><td>Use the receiving service's rules, then save a unique value privately.</td></tr><tr><td>Name a record or test object</td><td><a href="../tools/uuid-generator.html">UUID Generator</a></td><td>Retain the full identifier and enforce uniqueness in storage; it is not an access permission.</td></tr><tr><td>Explore a presentation's colors</td><td><a href="../tools/color-palette-generator.html">Color Palette Generator</a></td><td>Lock useful colors, export CSS, and check the actual text/background pairs.</td></tr><tr><td>Build client-parser fixtures</td><td><a href="../tools/user-agent-generator.html">User Agent Generator</a></td><td>Use samples as test strings. They do not emulate a real browser or verify crawler identity.</td></tr></tbody></table></div></section>
+<section class="info-section"><h2>Keep public examples separate from private values</h2><p>A QR destination and a palette can be shared openly when their contents are intended to be public. A generated password must stay private. A UUID can identify a record, but the application must still decide who may access it. User-agent strings can be forged and should not establish identity. Generated output is a starting point for the task, not evidence that these surrounding checks have passed.</p><p>For a page or document, prepare the destination first, generate a QR code for its final URL, and check the code on the actual design. For test data, use invented records and inspect their JSON types in the <a href="/journal/small-tools-that-save-developers-time">developer workflow</a>.</p></section>
+</div><!-- /reading-surface --><!-- /expanded-content --></main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -82,7 +84,7 @@
         <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
       </div>
       <div>
-        <h4>Tools</h4>
+        <h3>Tools</h3>
         <ul>
           <li><a href="../tools/temp-mail.html">Temp mail</a></li>
           <li><a href="../tools/background-remover.html">Background remover</a></li>
@@ -91,7 +93,7 @@
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul>
           <li><a href="../about.html">About</a></li>
           <li><a href="../blog/index.html">Blogs</a></li>
@@ -99,7 +101,7 @@
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <ul>
           <li><a href="../privacy-policy.html">Privacy policy</a></li>
           <li><a href="../terms-of-service.html">Terms of service</a></li>
@@ -118,7 +120,7 @@
 
 
 
-<script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js?v=20261005-review"></script>
 
 </body>
 </html>

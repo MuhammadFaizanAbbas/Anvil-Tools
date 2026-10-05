@@ -8,13 +8,13 @@
 <link rel="canonical" href="https://anviltools.vercel.app/tools/word-counter.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261004-css">
-<link rel="stylesheet" href="../assets/css/refinements.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261005-review">
+<link rel="stylesheet" href="../assets/css/refinements.css?v=20261005-review">
 
 <link rel="icon" type="image/svg+xml" href="../assets/images/anvil-mark.svg">
-<link rel="stylesheet" href="../assets/css/design.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/design.css?v=20261005-review">
 <link rel="stylesheet" href="../assets/css/tool-ux.css">
-<link rel="stylesheet" href="../assets/css/content.css?v=20261004-css">
+<link rel="stylesheet" href="../assets/css/content.css?v=20261005-review">
 <meta property="og:type" content="website"><meta property="og:title" content="Word &amp; Character Counter | Anvil Tools"><meta property="og:description" content="Count words, characters, sentences, and estimated reading time as you type."><meta property="og:url" content="https://anviltools.vercel.app/tools/word-counter.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript></head>
 <body class="public-site">
@@ -38,10 +38,10 @@
   <p class="lede">Paste in any text and see live counts update as you type or edit: words, characters, sentences, paragraphs, and an estimated reading time based on an average adult reading speed.</p>
 </section>
 
-<div class="tool-app">
+<div class="tool-app"><!-- action-note --><p class="small-note" id="tool-action-note">Words: whitespace-delimited tokens. Characters: UTF-16 units. Reading estimate: silent reading at 200 words/minute; empty text is zero minutes.</p><!-- /action-note -->
 
       <h2>Count your text</h2>
-      <label class="field-label" for="wc-input">Text to count</label><textarea id="wc-input" placeholder="Paste or type your text here…"></textarea>
+      <label class="field-label" for="wc-input">Text to count</label><textarea id="wc-input" placeholder="Paste or type your text here…" aria-describedby="tool-action-note"></textarea>
       <div class="tool-grid" style="margin-top:16px;">
         <div class="tool-card"><span class="category-tag">Words</span><h3 id="wc-words">0</h3></div>
         <div class="tool-card"><span class="category-tag">Characters</span><h3 id="wc-chars">0</h3></div>
@@ -55,7 +55,7 @@
 
 
 
-<!-- reading-surface --><div class="content-guide"><section class="info-section">
+<!-- reading-surface --><div class="content-guide"><!-- checked-example --><section class="info-section"><h2>Try a small count you can check</h2><p>Words use whitespace boundaries. Character totals use JavaScript UTF-16 code units, so one emoji can count as two. Sentence totals split on periods, question marks, and exclamation marks; paragraph totals use blank lines. Reading time is a rough silent-reading estimate at 200 words per minute, rounded up.</p><div class="table-scroll" role="region" aria-label="Input or check and Expected result or decision" tabindex="0"><table><thead><tr><th scope="col">Input or check</th><th scope="col">Expected result or decision</th></tr></thead><tbody><tr><td>Hello world. followed by a blank line and Next line!</td><td>4 words, 24 characters, 2 sentences, 2 paragraphs, 1 minute.</td></tr><tr><td>An empty box or only whitespace</td><td>0 words and 0 reading minutes; entered whitespace still contributes to characters.</td></tr><tr><td>One 🙂</td><td>1 whitespace-delimited token and 2 UTF-16 character units.</td></tr></tbody></table></div><button class="btn secondary" type="button" data-example-fields="{&quot;wc-input&quot;: &quot;Hello world.\n\nNext line!&quot;}">Try this sample</button><p class="status-msg" id="example-status" role="status" aria-live="polite"></p></section><!-- /checked-example --><section class="info-section">
   <h2>How it works</h2>
   <ul><li>Type or paste text into the box.</li>
 <li>Counts update instantly with every keystroke.</li>
@@ -63,20 +63,20 @@
 
   <h2>Common uses</h2>
   <ul><li>Checking whether a social media post or bio fits a character limit.</li>
-<li>Estimating how long a blog post or script will take to read aloud.</li>
+<li>Getting a rough silent-reading estimate for a draft; spoken delivery and technical reading can take longer.</li>
 <li>Tracking word count progress while drafting an essay or article.</li></ul>
 
   <div class="callout">Your privacy matters here: check the FAQ below for exactly what happens to anything you enter into this tool.</div>
 
-  <h2>Frequently asked questions</h2>
-  <details class="faq-item"><summary>Is my text saved or sent anywhere?</summary><p>No. All counting happens locally in your browser as you type; nothing is transmitted or stored.</p></details>
-<details class="faq-item"><summary>How is reading time calculated?</summary><p>Word count divided by 200 words per minute, rounded up to the nearest minute.</p></details>
-<details class="faq-item"><summary>Does it count numbers and punctuation as words?</summary><p>Numbers are counted as words if they're separated by spaces. Punctuation attached to a word doesn't count separately.</p></details>
+
+
+
+
 </section>
 
 
 
-<section class="info-section"><h2>Understand the count</h2><p>Words are counted by whitespace. Hyphenated words and text without spaces may differ from counts in a word processor. Reading time is an estimate, not a measure of comprehension.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Paste a draft of an article or essay, then watch its word and character totals as you shorten the text.</li><li>Compare the final count with the submission platform, especially when punctuation or languages without spaces are involved.</li><li>Read the totals above as you edit. Select and copy your source text manually if needed; there is no report download.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>Reading time is an estimate. A technical article usually takes longer to understand than a simple passage of the same length.</p></section><section class="info-section"><h2>More questions about Word &amp; Character Counter</h2><details class="faq-item"><summary>What should I check before using the result?</summary><p>Compare the final count with the submission platform, especially when punctuation or languages without spaces are involved.</p></details><details class="faq-item"><summary>What are the main limitations?</summary><p>Reading time is an estimate. A technical article usually takes longer to understand than a simple passage of the same length.</p></details><details class="faq-item"><summary>When a count differs from another app</summary><p>Compare the exact final text, including whitespace and line breaks. This counter uses whitespace for word boundaries and JavaScript string length for characters, so emoji and some languages can differ from another editor. The receiving form&#39;s counting rule determines its submission limit.</p></details></section><section class="info-section"><h2>What to use next</h2><p>Continue your task with these suggested tools. Suggestions follow the workflow and tool category; your input is not transferred between tools.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">Text tools</span><h3>Text Case Converter</h3><p>Convert text to upper, lower, title, sentence, camel, snake, and kebab case.</p><a class="tool-link" href="../tools/text-case-converter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Text tools</span><h3>Text Difference Checker</h3><p>Compare two texts line by line and highlight additions and removals.</p><a class="tool-link" href="../tools/text-diff-checker.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Developer tools</span><h3>CSV to JSON Converter</h3><p>Convert quoted CSV data into JSON arrays or objects locally.</p><a class="tool-link" href="../tools/csv-to-json.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Image tools</span><h3>Background Remover</h3><p>Remove the background from a photo automatically, processed locally in your browser.</p><a class="tool-link" href="../tools/background-remover.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Working with your results</h2><details class="faq-item"><summary>Why does another editor show a different count?</summary><p>Word boundaries vary between applications, particularly for punctuation, hyphenated words, and languages without spaces. Use the destination platform&#x27;s count when a submission has a strict limit.</p></details><details class="faq-item"><summary>Are character limits the same everywhere?</summary><p>No. Platforms can count line breaks, spaces, emoji, and Unicode characters differently. Check the final text in the place where it will be submitted.</p></details></section></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
+<section class="info-section"><h2>Understand the count</h2><p>Words are counted by whitespace. Hyphenated words and text without spaces may differ from counts in a word processor. Reading time is an estimate, not a measure of comprehension.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Paste a draft of an article or essay, then watch its word and character totals as you shorten the text.</li><li>Compare the final count with the submission platform, especially when punctuation or languages without spaces are involved.</li><li>Read the totals above as you edit. Select and copy your source text manually if needed; there is no report download.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>Reading time is an estimate. A technical article usually takes longer to understand than a simple passage of the same length.</p></section><section class="info-section"><h2>What to use next</h2><p>These tools open separately; inputs are not transferred.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">Text tools</span><h3>Text Case Converter</h3><p>Convert text to upper, lower, title, sentence, camel, snake, and kebab case.</p><a class="tool-link" href="../tools/text-case-converter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Text tools</span><h3>Text Difference Checker</h3><p>Compare two texts line by line and highlight additions and removals.</p><a class="tool-link" href="../tools/text-diff-checker.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Developer tools</span><h3>CSV to JSON Converter</h3><p>Convert quoted CSV data into JSON arrays or objects locally.</p><a class="tool-link" href="../tools/csv-to-json.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Image tools</span><h3>Background Remover</h3><p>Remove the background from a photo automatically, processed locally in your browser.</p><a class="tool-link" href="../tools/background-remover.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Questions and troubleshooting</h2><details class="faq-item"><summary>Is my text saved or sent anywhere?</summary><p>No. All counting happens locally in your browser as you type; nothing is transmitted or stored.</p></details><details class="faq-item"><summary>How is reading time calculated?</summary><p>Word count divided by 200 words per minute, rounded up to the nearest minute.</p></details><details class="faq-item"><summary>Does it count numbers and punctuation as words?</summary><p>Numbers are counted as words if they're separated by spaces. Punctuation attached to a word doesn't count separately.</p></details><details class="faq-item"><summary>When a count differs from another app</summary><p>Compare the exact final text, including whitespace and line breaks. This counter uses whitespace for word boundaries and JavaScript string length for characters, so emoji and some languages can differ from another editor. The receiving form&#x27;s counting rule determines its submission limit.</p></details><details class="faq-item"><summary>Why does another editor show a different count?</summary><p>Word boundaries vary between applications, particularly for punctuation, hyphenated words, and languages without spaces. Use the destination platform&#x27;s count when a submission has a strict limit.</p></details><details class="faq-item"><summary>Are character limits the same everywhere?</summary><p>No. Platforms can count line breaks, spaces, emoji, and Unicode characters differently. Check the final text in the place where it will be submitted.</p></details></section></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -85,7 +85,7 @@
         <p class="small-note">Free, browser-based tools for email, images, PDFs, and everyday developer tasks. No installs, no accounts required for most tools.</p>
       </div>
       <div>
-        <h4>Tools</h4>
+        <h3>Tools</h3>
         <ul>
           <li><a href="../tools/temp-mail.html">Temp mail</a></li>
           <li><a href="../tools/background-remover.html">Background remover</a></li>
@@ -94,7 +94,7 @@
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h3>Company</h3>
         <ul>
           <li><a href="../about.html">About</a></li>
           <li><a href="../blog/index.html">Blogs</a></li>
@@ -102,7 +102,7 @@
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <ul>
           <li><a href="../privacy-policy.html">Privacy policy</a></li>
           <li><a href="../terms-of-service.html">Terms of service</a></li>
@@ -121,8 +121,8 @@
 
 
 
-<script src="../assets/js/main.js"></script>
-<script src="../assets/js/tools/word-counter.js"></script>
+<script src="../assets/js/main.js?v=20261005-review"></script>
+<script src="../assets/js/tools/word-counter.js?v=20261005-review"></script>
 <script src="../assets/js/tool-ux.js"></script>
-</body>
+<script src="../assets/js/tool-examples.js?v=20261005-review"></script></body>
 </html>

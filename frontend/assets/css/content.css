@@ -21,11 +21,25 @@
 .public-site :is(input,textarea,select) { max-width:100%; font-size:16px; }
 .public-site :is(button,.btn,.nav-toggle) { min-height:44px; }
 .public-site :is(a,button,input,textarea,select,summary,[tabindex]):focus-visible { outline:3px solid #254ec7; outline-offset:4px; }
-.public-site :is(.info-section,.legal-content,.about-story) p a { text-decoration:underline; text-underline-offset:3px; }
+.public-site :is(.info-section,.legal-content,.about-story) :is(p,li,td) a,
+.public-site .breadcrumbs a,.public-site .contact-disclosure a { text-decoration:underline; text-underline-offset:3px; }
+.public-site .temp-mail-empty { color:#58677f; }
 .public-site .site-footer :is(a,.privacy-settings) { display:inline-block; padding-block:6px; font-size:14px; }
 .public-site .ad-slot { display:none!important; }
 .public-site :is(.tool-app,.content-guide,.contact-form-card,.contact-note) { min-width:0; }
 .public-site :is(pre,.table-scroll) { max-width:100%; overflow:auto; }
+.content-guide .table-scroll { margin:20px 0; }
+.content-guide table { width:100%; border-collapse:collapse; font-size:15px; }
+.content-guide :is(th,td) { border:1px solid #dfe5ef; padding:12px; text-align:left; vertical-align:top; min-width:140px; }
+.content-guide th { background:#f4f7fc; }
+.content-guide pre { padding:16px; border-radius:12px; background:#f4f7fc; white-space:pre-wrap; overflow-wrap:anywhere; }
+.content-guide figure { margin:20px 0; }
+.content-guide figure img { max-width:100%; height:auto; border:1px solid #dfe5ef; border-radius:12px; }
+.content-guide figcaption { margin-top:10px; font-size:14px; color:#516179; }
+.tool-directory-controls { display:flex; gap:16px; flex-wrap:wrap; margin:24px 0; }
+.tool-directory-controls label { flex:1 1 220px; font-weight:600; }
+.tool-directory-controls :is(input,select) { display:block; width:100%; margin-top:8px; }
+.public-site [hidden] { display:none!important; }
 .public-site :is(.info-section,.legal-content,.tool-card,.contact-note) { overflow-wrap:anywhere; }
 .public-site .field-label { display:block; margin:12px 0 6px; font-weight:600; }
 .editorial-library { margin:40px 0; }

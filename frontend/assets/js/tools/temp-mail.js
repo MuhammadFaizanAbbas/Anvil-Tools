@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const messagesEl = document.getElementById('tm-messages');
   const viewerEl = document.getElementById('tm-viewer');
   const countEl = document.getElementById('tm-count');
+  const expiryEl = document.getElementById('tm-expiry');
   const copyBtn = document.getElementById('tm-copy');
   const newBtn = document.getElementById('tm-new');
   const refreshBtn = document.getElementById('tm-refresh');
@@ -13,6 +14,24 @@ document.addEventListener('DOMContentLoaded', () => {
   let capability = storage('getItem');
   let generation = 0, selection = 0, pollTimer, creating = false, polling = false, copying = false;
   let messageSnapshot = '';
+  let expiresAt = 0, expiryTimer;
+  const updateExpiry = value => {
+    if (!expiryEl) return;
+    clearTimeout(expiryTimer);
+    if (Number.isFinite(Number(value)) && Number(value) > 0) expiresAt = Number(value);
+    if (!expiresAt || !capability) {
+      expiryEl.textContent = 'No active website inbox access.';
+      return;
+    }
+    const tick = () => {
+      const seconds = Math.max(0, Math.ceil((expiresAt - Date.now()) / 1000));
+      expiryEl.textContent = seconds
+        ? `Website inbox access: ${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')} remaining. Provider message retention is separate.`
+        : 'Website access time reached. Use Refresh to confirm whether this inbox has expired.';
+      if (seconds && capability) expiryTimer = setTimeout(tick, 1000);
+    };
+    tick();
+  };
   const setStatus = (text, error = false) => {
     statusEl.textContent = text;
     statusEl.style.color = error ? '#b42318' : '#5d6b85';
@@ -36,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const expire = () => {
     generation++; selection++; capability = null;
     storage('removeItem'); clearTimeout(pollTimer);
+    expiresAt = 0; updateExpiry();
     addressEl.textContent = 'No active inbox';
     messagesEl.replaceChildren(); showReaderEmpty(); messageSnapshot = '';
     if (countEl) countEl.textContent = '0 messages';
@@ -97,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = await request(`/api/temp-mail/messages?cap=${encodeURIComponent(cap)}`);
       if (current !== generation) return;
       if (data.address) addressEl.textContent = data.address;
+      updateExpiry(data.expiresAt);
       renderMessages(data.messages || []);
       setStatus(`${data.messages?.length || 0} messages. Checking for new mail every 15 seconds.`);
     } catch (error) {
@@ -117,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = await request('/api/temp-mail/create', { method: 'POST' });
       if (!data.capability || !data.address) throw new Error('The server did not return an inbox. Please try again.');
       capability = data.capability; storage('setItem', capability);
+      expiresAt = 0; updateExpiry(data.expiresAt);
       addressEl.textContent = data.address;
       showReaderEmpty(); messagesEl.replaceChildren(); messageSnapshot = '';
       if (countEl) countEl.textContent = '0 messages';

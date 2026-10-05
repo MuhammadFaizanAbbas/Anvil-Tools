@@ -136,7 +136,7 @@ add_tool(
 
 add_tool(
     slug="image-to-pdf", name="Image to PDF Converter", category="pdf",
-    short_desc="Turn one or more JPG or PNG images into a single downloadable PDF.",
+    short_desc="Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.",
     icon="pdf-image",
     widget_html='''
       <h2>Convert images to a PDF</h2>
@@ -165,8 +165,8 @@ add_tool(
         "Creating a simple PDF portfolio from a set of images.",
     ],
     faqs=[
-        ("What image formats are supported?", "JPG and PNG. Convert other formats to one of these first using your device's photo editor."),
-        ("Can I control the page order?", "Yes, pages are created in the order the images were added, so add them in the order you want them to appear."),
+        ("What image formats are supported?", "JPG, PNG, and WebP. If your browser cannot decode an image, export a working copy as PNG or JPEG and retry."),
+        ("Can I control the page order?", "Yes. Use Move up, Move down, or Remove in the selected-image list before converting. Each remaining image becomes one PDF page in that order."),
         ("Will the images be resized?", "Each page is sized to match its image, so nothing is cropped or stretched."),
     ],
 )
@@ -277,7 +277,7 @@ add_tool(
     ],
     use_cases=[
         "Checking whether a social media post or bio fits a character limit.",
-        "Estimating how long a blog post or script will take to read aloud.",
+        "Getting a rough silent-reading estimate for a draft; spoken delivery and technical reading can take longer.",
         "Tracking word count progress while drafting an essay or article.",
     ],
     faqs=[
@@ -345,7 +345,7 @@ add_tool(
     ''',
     extra_head="",
     tool_js="base64-tool.js",
-    intro="Base64 turns arbitrary text or binary data into a plain-text string safe for things like URLs, config files, or embedding in HTML. Paste text in either direction and convert it instantly.",
+    intro="Encode UTF-8 text as standard Base64, or decode a standard Base64 value back to text. This tool does not accept binary files. URL-safe Base64 uses a different alphabet; use the JWT Decoder for JWT header and payload sections.",
     how_it_works=[
         "Paste plain text and click encode to get its Base64 representation.",
         "Paste a Base64 string and click decode to recover the original text.",
@@ -365,7 +365,7 @@ add_tool(
 
 add_tool(
     slug="user-agent-generator", name="User Agent Generator", category="developer",
-    short_desc="Grab realistic browser and bot user-agent strings for testing how your site responds.",
+    short_desc="Choose fixed browser and bot user-agent strings for parser and request-header tests.",
     icon="agent",
     widget_html='''
       <h2>Get a user-agent string</h2>

@@ -8,7 +8,7 @@ OUTPUT = ROOT / 'deployment'
 OUTPUT.mkdir(exist_ok=True)
 
 def allowed(path):
-    return path.is_file() and not any(part in {'.git', '.vercel', 'node_modules', '__pycache__'} for part in path.parts) and not path.name.startswith('.env')
+    return path.is_file() and path.name != 'ads.txt' and not any(part in {'.git', '.vercel', 'node_modules', '__pycache__'} for part in path.parts) and not path.name.startswith('.env')
 
 frontend = ROOT / 'frontend'
 with ZipFile(OUTPUT / 'adsense-fixes-frontend.zip', 'w', ZIP_DEFLATED, compresslevel=6) as archive:
@@ -34,7 +34,7 @@ for name in ['adsense-fixes-frontend.zip', 'adsense-fixes-backend.zip']:
         assert not any(Path(name).name.startswith('.env') and Path(name).name != '.env.example' for name in names)
         if 'frontend' in name:
             assert '.htaccess' in names and 'blog-index.php' in names
-            assert 'blog/merge-pdfs-locally.html' in names
+            assert 'blog/index.html' in names and 'ads.txt' not in names
         else:
             assert 'backend/src/templates/blog.html' in names
             assert 'server.js' in names

@@ -324,7 +324,9 @@ Sitemap: {SITE_URL}/sitemap-index.xml
 '''
     write("robots.txt", robots)
 
-    write("ads.txt", "# Advertising is disabled. Add only your verified seller line before serving ads.\n")
+    # Preserve an owner's existing seller declarations when rebuilding the site.
+    if not os.path.exists(os.path.join(ROOT, "ads.txt")):
+        write("ads.txt", "# Advertising is disabled. Add only your verified seller line before serving ads.\n")
 
 if __name__ == "__main__":
     build_home()
