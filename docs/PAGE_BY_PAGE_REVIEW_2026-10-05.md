@@ -4,7 +4,7 @@ This release addresses the verifiable findings in `Nevco_Page_by_Page_AdSense_Au
 
 `ads.txt` is unchanged. Both release archives exclude it. Its local SHA-256 remains `005e774214410091a356e270d2a86b112ccdedfc544c7b3ab9a69fec82204089`. Advertising remains disabled; no publisher value, verification token, reviewer identity, or active consent integration has been invented.
 
-The code release is pushed to both `main` branches: frontend `bbb9fb4`, backend `f8ff1a2`. Both Vercel deployments report success. All 39 deployed pages passed both viewport checks and all 21 tool/directory functionality and populated-result accessibility checks. The three prepared guide updates were subsequently published to the correct Supabase project at `2026-10-05 12:21:15 UTC` and verified through SQL and the public API. They are live on `nevco.online` too. The user will upload the contents of `frontend` to cPanel, skipping `ads.txt`; the static-page release still needs that upload.
+The current runtime release is pushed to both `main` branches: frontend `e05c642`, backend `aeefe31`. Both Vercel deployments report success; exact commit and deployment records are in `audits/submission-deployments.json`. The three prepared guide updates were published to the correct Supabase project at `2026-10-05 12:21:15 UTC` and verified through SQL and the public API. They are live on `nevco.online` too. The user will upload the contents of `frontend` to cPanel, skipping `ads.txt`; the 35 static pages still need that upload.
 
 ## Prepared changes
 
@@ -26,20 +26,24 @@ The code release is pushed to both `main` branches: frontend `bbb9fb4`, backend 
 | Homepage, blog index, About, disclaimer | Concrete workflows, guide introduction, accurate correction process, and task-specific links |
 | Public shared layout | Correct footer heading order, stronger small-text contrast, visible text-link styling, versioned shared loader/recommendation URLs, and versioned changed tool scripts |
 
-The source generator preserves an existing `ads.txt` on future runs. The final refinement is repeatable: running it and the editorial builder a second time produced no HTML changes. The legacy expansion no longer adds the two generic repeat questions. Both PHP and Node apply the same public asset version, `20261005-review2`.
+The source generator preserves an existing `ads.txt` on future runs. The final refinement is repeatable: running it and the editorial builder a second time produced no HTML changes. The legacy expansion no longer adds the two generic repeat questions. Both PHP and Node apply the same public asset version, `20261005-review4`.
 
 The performance follow-up hosts the existing Inter and Space Grotesk families locally, retains all supplied language subsets, and bundles both SIL Open Font Licenses. Static pages preload their Latin subsets; shared CSS supplies the font faces for articles too. Background removal imports its pinned library only after image selection. Three screenshot examples have responsive WebP copies, with the original PNG evidence and downloads retained. Known article screenshots also have explicit dimensions. Upload the fonts, responsive images, CSS, scripts, HTML, and PHP together when updating cPanel.
+
+The fonts use `font-display: optional` to avoid a late change in typography and a second layout on slow first visits. If a font is not ready for initial rendering, the existing system fallback remains for that page view; later visits can use the cached font. Navigation relationships are present in the initial HTML, and the loader avoids rewriting the current year and already-correct navigation attributes. [Chrome's explanation of optional fonts and preloading](https://web.dev/articles/preload-optional-fonts).
+
+Homepage search and its initial count are now in the HTML, so the loader reuses the controls without inserting them into an already-rendered catalog. Filtering and no-result recovery are unchanged. The search is hidden when JavaScript is disabled, and all 20 tool cards remain visible.
 
 ## Verification
 
 - `npm test`: 107 passed, no failures or skips.
 - `npm run verify`: syntax and script-reference checks passed for 106 files.
-- `scripts/check-submission-pages.cjs`: 39 canonical public pages at 320 and 1440 pixels, with all tool FAQ answers expanded; no observed horizontal overflow, broken loaded images, page exceptions, or detected axe violations in the prepared release. Generated output states are checked separately by the same script.
+- `scripts/check-submission-pages.cjs`: the complete prepared and live runs on runtime `00819c9` passed 78 viewport checks across 39 canonical public pages at 320 and 1440 pixels, with all tool FAQ answers expanded. All 21 tool/directory functionality cases and 21 populated-result states passed on both releases. Neither run requested Google Fonts. After the final font-display and navigation refinement, all 78 prepared layout checks passed again. There was no observed horizontal overflow, broken loaded image, page exception, or detected axe violation.
 - All 20 tools plus the directory have browser functionality checks. QR output is independently decoded; downloaded PDFs are independently reopened for page count and order; background removal uses the actual local model and verifies both transparent and opaque pixels in its downloaded PNG.
 - `scripts/audit-submission-content.py`: 20 exact repeated main paragraphs before this release, zero after; all 20 pages include a concrete example. This compares normalized paragraphs of at least 12 words within each tool, not internet originality or authorship.
 - The guarded article transaction passed six isolated PostgreSQL validation cases in the earlier follow-up and was then executed once against production. All three old bodies were preserved as complete revisions; metadata and the fourth developer article remained unchanged.
 
-Evidence is in `audits/submission-pages-local.json`, `audits/submission-pages-live.json`, `audits/submission-content.json`, `audits/submission-database-publication.json`, and both regression logs. The separate backend repository passed all 58 tests. The newly published guide pages also passed six viewport checks on `nevco.online` in `audits/submission-targeted-pages-live.json`. The browser checks use Edge and emulated viewports. Axe incomplete results need manual judgment; automated results do not establish full WCAG conformance. Temporary-mail layout and expiry use clearly synthetic responses, with no message sent. Physical-device, screen-reader, contact receipt/reply, real incoming-mail delivery, field Core Web Vitals, and future ad-placement checks are not represented as completed.
+Evidence is in `audits/submission-pages-local.json`, `audits/submission-pages-live.json`, `audits/submission-font-layouts.json`, `audits/submission-content.json`, `audits/submission-database-publication.json`, and both regression logs. After the catalog change, the homepage and developer category passed four viewport checks locally and on the deployed version in `audits/submission-targeted-pages-local.json` and `audits/submission-targeted-pages-live.json`. Filtering, no-result recovery, mobile navigation/Escape, and the homepage without JavaScript passed in `audits/submission-catalog.json`. The separate backend repository passed all 58 tests; its final renderer/integration changes passed all ten targeted tests. The newly published guide pages also passed six viewport checks on `nevco.online` in `audits/submission-guides-nevco-layouts.json`. The browser checks use Edge and emulated viewports. Axe incomplete results need manual judgment; automated results do not establish full WCAG conformance. Temporary-mail layout and expiry use clearly synthetic responses, with no message sent. Physical-device, screen-reader, contact receipt/reply, real incoming-mail delivery, field Core Web Vitals, and future ad-placement checks are not represented as completed.
 
 ## Publication and remaining access
 
@@ -55,9 +59,9 @@ Build the comprehensive release files with:
 python scripts/package-submission-release.py
 ```
 
-`deployment/page-review-2026-10-05/frontend.zip` is an incremental cPanel update with public pages, PHP helpers, shared CSS/scripts, PDF examples, and the five existing example images. Paths are relative to the document root. It excludes `ads.txt`, the private workspace, secrets, and the large existing background-removal model. Upload it over the existing public site; do not delete unrelated files or change `ads.txt`.
+`deployment/page-review-2026-10-05/frontend.zip` is an incremental cPanel update with public pages, PHP helpers, shared CSS/scripts, licensed local fonts, PDF examples, and the original and responsive example images. Paths are relative to the document root. It excludes `ads.txt`, the private workspace, secrets, and the large existing background-removal model. Upload it over the existing public site; do not delete unrelated files or change `ads.txt`. Uploading directly from `frontend` is also supported: copy its contents into the existing document root, including `.htaccess`, and skip `ads.txt`.
 
-`deployment/page-review-2026-10-05/article-release.zip` contains the published bodies, review metrics, these instructions, and the executed `publish.sql` for release records. Do not execute that transaction again: it intentionally rejects repeated publication. It required the reviewed old bodies and metadata, locked each record, saved complete revisions, and updated only body and modification date. Do not run historical schema migrations, seeds, cleanup SQL, or remove the transaction guards. See [the earlier publication instructions](ADSENSE_AUDIT_FOLLOWUP.md).
+`deployment/page-review-2026-10-05/article-release.zip` contains the published bodies, preparation metrics, publication/API verification records, these instructions, and the executed `publish.sql` for release records. Do not execute that transaction again: it intentionally rejects repeated publication. It required the reviewed old bodies and metadata, locked each record, saved complete revisions, and updated only body and modification date. Do not run historical schema migrations, seeds, cleanup SQL, or remove the transaction guards. See [the earlier publication instructions](ADSENSE_AUDIT_FOLLOWUP.md).
 
 After publishing, run:
 
@@ -78,7 +82,18 @@ It caches the pinned PDF/QR vendors and publicly served guide covers locally. `-
 
 The initial default mobile measurements on Vercel gave 100 for accessibility, best practices, and SEO on the homepage, Word Counter, Background Remover, and published background guide. Performance was 98, 98, 96, and 100 respectively. The actual findings prompted local font hosting, deferred background-library loading, responsive screenshots, image dimensions, and upload controls whose accessible names include the visible text. Both the standard axe tags and the label/name rule are checked by the browser helper.
 
-`audits/submission-lighthouse-before.json` records that baseline. `audits/submission-lighthouse-anviltools.vercel.app.json` records the latest measured release. These are representative lab navigation scores with Lighthouse 12.8.2 and Edge, not an all-page audit, field Core Web Vitals, complete accessibility certification, or an AdSense score. Scores can vary with network, host, machine load, and tool version.
+The final runtime `e05c642` was measured once across the same four routes with the unchanged default mobile audit settings:
+
+| Page | Performance | Accessibility | Best practices | SEO |
+| --- | ---: | ---: | ---: | ---: |
+| Homepage | 89 | 100 | 100 | 100 |
+| Word Counter | 92 | 100 | 100 | 100 |
+| Background Remover | 96 | 100 | 100 | 100 |
+| Background-removal guide | 93 | 100 | 100 | 100 |
+
+These measurements do not establish a performance-score improvement over the baseline. Earlier runs reached 100 performance on the two tool pages, but the final run is recorded without selecting the highest scores. Initial layout work remains measurable on the homepage and Word Counter; article delivery, render-blocking CSS, and oversized cover delivery remain diagnostic findings. The changed static pages had zero measured layout shift in this run. No claim of 100 across every category or every page is made.
+
+`audits/submission-lighthouse-before.json` records the original baseline, `audits/submission-lighthouse-font-swap.json` and `audits/submission-lighthouse-before-catalog.json` preserve the intermediate runs, and `audits/submission-lighthouse-anviltools.vercel.app.json` records the final measured release. These are representative lab navigation scores with Lighthouse 12.8.2 and Edge, not an all-page audit, field Core Web Vitals, complete accessibility certification, or an AdSense score. Scores can vary with network, host, machine load, and tool version. The complete cPanel release must be uploaded before measuring the updated review domain.
 
 Reproduce the measurement separately from production dependencies:
 
@@ -87,7 +102,7 @@ npm install --prefix deployment/lighthouse-review --no-save --ignore-scripts lig
 node scripts/check-submission-lighthouse.mjs https://anviltools.vercel.app
 ```
 
-The detailed HTML/JSON reports are saved under `deployment/page-review-2026-10-05/lighthouse/`. The first installation attempt was not executed because automatic approval review hit a usage limit; a subsequent approved attempt succeeded. No audit rule or throttle was changed to manufacture a perfect score.
+The detailed HTML/JSON reports are saved under `deployment/page-review-2026-10-05/lighthouse/`. No audit rule or throttle was changed to manufacture a perfect score.
 
 ## AdSense submission and advertising
 

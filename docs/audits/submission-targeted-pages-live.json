@@ -1,169 +1,78 @@
 {
-  "checkedAt": "2026-10-05T12:23:43.116Z",
-  "scope": "https://nevco.online",
+  "checkedAt": "2026-10-05T13:07:23.539Z",
+  "scope": "https://anviltools.vercel.app",
   "axeVersion": "4.13.0",
   "pages": [
     {
-      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "route": "/",
       "width": 320,
       "status": 200,
       "h1": 1,
-      "title": "Background Removal for Design and Product Photography | Anvil Tools",
-      "description": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
-      "canonical": "https://nevco.online/journal/best-practices-for-background-removal-when-working-with-design",
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "canonical": "https://anviltools.vercel.app/",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
       "violations": [],
       "incomplete": [
         {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
-        {
           "id": "color-contrast",
-          "nodes": 8
-        },
-        {
-          "id": "link-in-text-block",
           "nodes": 1
         }
       ]
     },
     {
-      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "route": "/",
       "width": 1440,
       "status": 200,
       "h1": 1,
-      "title": "Background Removal for Design and Product Photography | Anvil Tools",
-      "description": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
-      "canonical": "https://nevco.online/journal/best-practices-for-background-removal-when-working-with-design",
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "canonical": "https://anviltools.vercel.app/",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
       "violations": [],
       "incomplete": [
         {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
-        {
           "id": "color-contrast",
-          "nodes": 7
-        },
-        {
-          "id": "link-in-text-block",
-          "nodes": 1
+          "nodes": 2
         }
       ]
     },
     {
-      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "route": "/categories/developer-tools.html",
       "width": 320,
       "status": 200,
       "h1": 1,
-      "title": "Temporary Email Best Practices for Signups | Anvil Tools",
-      "description": "Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.",
-      "canonical": "https://nevco.online/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "title": "Developer tools | Anvil Tools",
+      "description": "Small utilities that save time during coding and testing.",
+      "canonical": "https://anviltools.vercel.app/categories/developer-tools.html",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
       "violations": [],
       "incomplete": [
         {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
-        {
           "id": "color-contrast",
-          "nodes": 8
-        },
-        {
-          "id": "link-in-text-block",
           "nodes": 1
         }
       ]
     },
     {
-      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "route": "/categories/developer-tools.html",
       "width": 1440,
       "status": 200,
       "h1": 1,
-      "title": "Temporary Email Best Practices for Signups | Anvil Tools",
-      "description": "Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.",
-      "canonical": "https://nevco.online/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "title": "Developer tools | Anvil Tools",
+      "description": "Small utilities that save time during coding and testing.",
+      "canonical": "https://anviltools.vercel.app/categories/developer-tools.html",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
       "violations": [],
-      "incomplete": [
-        {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
-        {
-          "id": "color-contrast",
-          "nodes": 7
-        },
-        {
-          "id": "link-in-text-block",
-          "nodes": 1
-        }
-      ]
-    },
-    {
-      "route": "/journal/simple-pdf-workflow-without-software",
-      "width": 320,
-      "status": 200,
-      "h1": 1,
-      "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result | Anvil Tools",
-      "description": "Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.",
-      "canonical": "https://nevco.online/journal/simple-pdf-workflow-without-software",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
-        {
-          "id": "color-contrast",
-          "nodes": 8
-        },
-        {
-          "id": "link-in-text-block",
-          "nodes": 1
-        }
-      ]
-    },
-    {
-      "route": "/journal/simple-pdf-workflow-without-software",
-      "width": 1440,
-      "status": 200,
-      "h1": 1,
-      "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result | Anvil Tools",
-      "description": "Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.",
-      "canonical": "https://nevco.online/journal/simple-pdf-workflow-without-software",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
-        {
-          "id": "color-contrast",
-          "nodes": 7
-        },
-        {
-          "id": "link-in-text-block",
-          "nodes": 1
-        }
-      ]
+      "incomplete": []
     }
   ],
   "functionality": [],
@@ -173,5 +82,6 @@
     "Inbox layout and expiry checks use synthetic responses; no email or contact message is sent.",
     "Physical-device, screen-reader, and future advertising checks remain separate."
   ],
+  "externalFontRequests": [],
   "failures": []
 }

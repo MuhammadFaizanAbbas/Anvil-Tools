@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-05T12:27:19.627Z",
+  "checkedAt": "2026-10-05T13:07:31.977Z",
   "origin": "https://anviltools.vercel.app",
   "pages": [
     {
@@ -813,25 +813,25 @@
   ],
   "assets": [
     {
-      "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review",
+      "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review4",
       "status": 200,
       "type": "text/css; charset=utf-8",
       "cache": "public, max-age=0, must-revalidate"
     },
     {
-      "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review",
+      "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review4",
       "status": 200,
       "type": "text/css; charset=utf-8",
       "cache": "public, max-age=0, must-revalidate"
     },
     {
-      "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review",
+      "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review4",
       "status": 200,
       "type": "text/css; charset=utf-8",
       "cache": "public, max-age=0, must-revalidate"
     },
     {
-      "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review",
+      "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review4",
       "status": 200,
       "type": "text/css; charset=utf-8",
       "cache": "public, max-age=0, must-revalidate"
@@ -846,6 +846,18 @@
       "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261005-pdf",
       "status": 200,
       "type": "text/css; charset=utf-8",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/fonts/inter-latin.woff2",
+      "status": 200,
+      "type": "font/woff2",
+      "cache": "public, max-age=0, must-revalidate"
+    },
+    {
+      "url": "https://anviltools.vercel.app/assets/fonts/space-grotesk-latin.woff2",
+      "status": 200,
+      "type": "font/woff2",
       "cache": "public, max-age=0, must-revalidate"
     },
     {
@@ -891,7 +903,7 @@
       "cache": "public, max-age=0, must-revalidate"
     },
     {
-      "url": "https://anviltools.vercel.app/assets/js/main.js?v=20261005-review",
+      "url": "https://anviltools.vercel.app/assets/js/main.js?v=20261005-review4",
       "status": 200,
       "type": "application/javascript; charset=utf-8",
       "cache": "public, max-age=0, must-revalidate"
@@ -903,13 +915,13 @@
       "cache": "public, max-age=0, must-revalidate"
     },
     {
-      "url": "https://anviltools.vercel.app/assets/js/tool-directory.js?v=20261005-review",
+      "url": "https://anviltools.vercel.app/assets/js/tool-directory.js?v=20261005-review4",
       "status": 200,
       "type": "application/javascript; charset=utf-8",
       "cache": "public, max-age=0, must-revalidate"
     },
     {
-      "url": "https://anviltools.vercel.app/assets/js/tool-examples.js?v=20261005-review",
+      "url": "https://anviltools.vercel.app/assets/js/tool-examples.js?v=20261005-review4",
       "status": 200,
       "type": "application/javascript; charset=utf-8",
       "cache": "public, max-age=0, must-revalidate"
@@ -981,13 +993,13 @@
       "cache": "public, max-age=0, must-revalidate"
     },
     {
-      "url": "https://anviltools.vercel.app/assets/js/tools/qr-code-generator.js?v=20261005-review",
+      "url": "https://anviltools.vercel.app/assets/js/tools/qr-code-generator.js?v=20261005-review4",
       "status": 200,
       "type": "application/javascript; charset=utf-8",
       "cache": "public, max-age=0, must-revalidate"
     },
     {
-      "url": "https://anviltools.vercel.app/assets/js/tools/temp-mail.js?v=20261005-review",
+      "url": "https://anviltools.vercel.app/assets/js/tools/temp-mail.js?v=20261005-review4",
       "status": 200,
       "type": "application/javascript; charset=utf-8",
       "cache": "public, max-age=0, must-revalidate"
@@ -1035,7 +1047,7 @@
       "cache": "public, max-age=0, must-revalidate"
     },
     {
-      "url": "https://anviltools.vercel.app/assets/js/tools/word-counter.js?v=20261005-review",
+      "url": "https://anviltools.vercel.app/assets/js/tools/word-counter.js?v=20261005-review4",
       "status": 200,
       "type": "application/javascript; charset=utf-8",
       "cache": "public, max-age=0, must-revalidate"

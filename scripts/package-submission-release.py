@@ -45,7 +45,9 @@ archive('frontend.zip', [(path, path.relative_to(SITE).as_posix()) for path in f
 article_entries = [(ROOT / 'content/editorial' / name, name) for name in ['background-removal.md', 'temporary-email.md', 'pdf-workflows.md']]
 article_entries.extend([(ROOT / 'deployment/adsense-followup-2026-10-05/publish.sql', 'publish.sql'),
                         (ROOT / 'docs/PAGE_BY_PAGE_REVIEW_2026-10-05.md', 'README.md'),
-                        (ROOT / 'docs/audits/adsense-followup-editorial.json', 'editorial-review.json')])
+                        (ROOT / 'docs/audits/adsense-followup-editorial.json', 'editorial-review.json'),
+                        (ROOT / 'docs/audits/submission-database-publication.json', 'publication.json'),
+                        (ROOT / 'docs/audits/submission-published-guides.json', 'public-api-verification.json')])
 archive('article-release.zip', article_entries)
 assert (SITE / 'ads.txt').read_bytes() == ads_before
 print('ads.txt unchanged and absent from both archives.')

@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-05T12:49:28.341Z",
-  "scope": "https://anviltools.vercel.app",
+  "checkedAt": "2026-10-05T12:57:00.677Z",
+  "scope": "local prepared release",
   "axeVersion": "4.13.0",
   "pages": [
     {
@@ -81,7 +81,7 @@
       "h1": 1,
       "title": "Blog | Anvil Tools",
       "description": "Blogs and practical tips from Anvil Tools.",
-      "canonical": "https://anviltools.vercel.app/blog/index.html",
+      "canonical": "http://127.0.0.1:63357/blog/index.html",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
@@ -100,7 +100,7 @@
       "h1": 1,
       "title": "Blog | Anvil Tools",
       "description": "Blogs and practical tips from Anvil Tools.",
-      "canonical": "https://anviltools.vercel.app/blog/index.html",
+      "canonical": "http://127.0.0.1:63357/blog/index.html",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
@@ -411,16 +411,12 @@
       "h1": 1,
       "title": "Background Removal for Design and Product Photography | Anvil Tools",
       "description": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
-      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
+      "canonical": "http://127.0.0.1:63357/journal/best-practices-for-background-removal-when-working-with-design",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
       "violations": [],
       "incomplete": [
-        {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
         {
           "id": "color-contrast",
           "nodes": 8
@@ -438,16 +434,12 @@
       "h1": 1,
       "title": "Background Removal for Design and Product Photography | Anvil Tools",
       "description": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
-      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
+      "canonical": "http://127.0.0.1:63357/journal/best-practices-for-background-removal-when-working-with-design",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
       "violations": [],
       "incomplete": [
-        {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
         {
           "id": "color-contrast",
           "nodes": 7
@@ -465,16 +457,12 @@
       "h1": 1,
       "title": "Temporary Email Best Practices for Signups | Anvil Tools",
       "description": "Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.",
-      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "canonical": "http://127.0.0.1:63357/journal/best-practices-for-temporary-email-when-working-with-signups",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
       "violations": [],
       "incomplete": [
-        {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
         {
           "id": "color-contrast",
           "nodes": 8
@@ -492,16 +480,12 @@
       "h1": 1,
       "title": "Temporary Email Best Practices for Signups | Anvil Tools",
       "description": "Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.",
-      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "canonical": "http://127.0.0.1:63357/journal/best-practices-for-temporary-email-when-working-with-signups",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
       "violations": [],
       "incomplete": [
-        {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
         {
           "id": "color-contrast",
           "nodes": 7
@@ -519,16 +503,12 @@
       "h1": 1,
       "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result | Anvil Tools",
       "description": "Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.",
-      "canonical": "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software",
+      "canonical": "http://127.0.0.1:63357/journal/simple-pdf-workflow-without-software",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
       "violations": [],
       "incomplete": [
-        {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
         {
           "id": "color-contrast",
           "nodes": 8
@@ -546,16 +526,12 @@
       "h1": 1,
       "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result | Anvil Tools",
       "description": "Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.",
-      "canonical": "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software",
+      "canonical": "http://127.0.0.1:63357/journal/simple-pdf-workflow-without-software",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
       "violations": [],
       "incomplete": [
-        {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
         {
           "id": "color-contrast",
           "nodes": 7
@@ -573,16 +549,12 @@
       "h1": 1,
       "title": "Debug API Data with JSON, Base64, and Browser Tools | Anvil Tools",
       "description": "Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.",
-      "canonical": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time",
+      "canonical": "http://127.0.0.1:63357/journal/small-tools-that-save-developers-time",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
       "violations": [],
       "incomplete": [
-        {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
         {
           "id": "color-contrast",
           "nodes": 8
@@ -600,16 +572,12 @@
       "h1": 1,
       "title": "Debug API Data with JSON, Base64, and Browser Tools | Anvil Tools",
       "description": "Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.",
-      "canonical": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time",
+      "canonical": "http://127.0.0.1:63357/journal/small-tools-that-save-developers-time",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
       "violations": [],
       "incomplete": [
-        {
-          "id": "aria-prohibited-attr",
-          "nodes": 1
-        },
         {
           "id": "color-contrast",
           "nodes": 7
@@ -1385,581 +1353,8 @@
       "incomplete": []
     }
   ],
-  "functionality": [
-    {
-      "tool": "directory",
-      "searchAndCategoryAndNoResults": true
-    },
-    {
-      "tool": "word-counter",
-      "emptyAndWorkedExample": true
-    },
-    {
-      "tool": "csv-to-json",
-      "leadingZeroQuotedCommaBlankAndQuote": true
-    },
-    {
-      "tool": "json-formatter",
-      "typesPreservedAndInvalidRejected": true
-    },
-    {
-      "tool": "base64-tool",
-      "knownEncodingAndUnicode": true
-    },
-    {
-      "tool": "url-encoder-decoder",
-      "unicodeAndPlusEncoding": true
-    },
-    {
-      "tool": "unit-converter",
-      "temperatureOffset": true
-    },
-    {
-      "tool": "hash-generator",
-      "knownDigest": true
-    },
-    {
-      "tool": "text-case-converter",
-      "unicodeIdentifier": true
-    },
-    {
-      "tool": "text-diff-checker",
-      "replacementCounts": true
-    },
-    {
-      "tool": "unix-timestamp-converter",
-      "explicitEpochUnit": true
-    },
-    {
-      "tool": "jwt-decoder",
-      "harmlessUnverifiedSample": true
-    },
-    {
-      "tool": "password-generator",
-      "supportedRange": true
-    },
-    {
-      "tool": "user-agent-generator",
-      "fixedFixtureSelection": true
-    },
-    {
-      "tool": "color-palette-generator",
-      "lockedColorAndCssExport": true
-    },
-    {
-      "tool": "uuid-generator",
-      "versionAndVariantAndDistinctBatch": true
-    },
-    {
-      "tool": "qr-code-generator",
-      "actualPngDecodedIndependently": true
-    },
-    {
-      "tool": "pdf-merge",
-      "actualDownloadedFourPageOrder": true
-    },
-    {
-      "tool": "image-to-pdf",
-      "actualPngPageDimensions": true
-    },
-    {
-      "tool": "background-remover",
-      "librariesDeferredUntilInput": true,
-      "realModelAndDownloadedAlphaChannel": true,
-      "clearPixels": 87446,
-      "opaquePixels": 30
-    },
-    {
-      "tool": "temp-mail",
-      "syntheticServerExpiryDisplayed": true,
-      "realDeliveryTested": false
-    }
-  ],
-  "interactiveStates": [
-    {
-      "tool": "directory",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "word-counter",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "csv-to-json",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "json-formatter",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "base64-tool",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "url-encoder-decoder",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "unit-converter",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "hash-generator",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 2,
-          "details": [
-            {
-              "target": [
-                ".logo[href=\"../index.html\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-            },
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "text-case-converter",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "text-diff-checker",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 8,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            },
-            {
-              "target": [
-                ".diff-same.diff-row:nth-child(1) > span:nth-child(1)"
-              ],
-              "reason": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
-            },
-            {
-              "target": [
-                ".diff-same.diff-row:nth-child(1) > span:nth-child(2)"
-              ],
-              "reason": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
-            },
-            {
-              "target": [
-                ".diff-added > span:nth-child(2)"
-              ],
-              "reason": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
-            },
-            {
-              "target": [
-                ".diff-removed > span:nth-child(1)"
-              ],
-              "reason": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
-            },
-            {
-              "target": [
-                ".diff-removed > span:nth-child(3)"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            },
-            {
-              "target": [
-                ".diff-same.diff-row:nth-child(4) > span:nth-child(1)"
-              ],
-              "reason": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
-            },
-            {
-              "target": [
-                ".diff-same.diff-row:nth-child(4) > span:nth-child(2)"
-              ],
-              "reason": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "unix-timestamp-converter",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "jwt-decoder",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "password-generator",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "user-agent-generator",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "color-palette-generator",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 2,
-          "details": [
-            {
-              "target": [
-                ".logo[href=\"../index.html\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
-            },
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "uuid-generator",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "qr-code-generator",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "pdf-merge",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "image-to-pdf",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "background-remover",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1,
-          "details": [
-            {
-              "target": [
-                "span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tool": "temp-mail",
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 6,
-          "details": [
-            {
-              "target": [
-                ".nav-toggle > span[aria-hidden=\"true\"]"
-              ],
-              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
-            },
-            {
-              "target": [
-                "#temp-mail-title"
-              ],
-              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-            },
-            {
-              "target": [
-                ".temp-mail-live"
-              ],
-              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-            },
-            {
-              "target": [
-                ".inbox-address-wrap > span"
-              ],
-              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-            },
-            {
-              "target": [
-                "#tm-status"
-              ],
-              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-            },
-            {
-              "target": [
-                "#tm-expiry"
-              ],
-              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  "functionality": [],
+  "interactiveStates": [],
   "limits": [
     "Automated axe checks and emulated widths do not establish complete accessibility.",
     "Inbox layout and expiry checks use synthetic responses; no email or contact message is sent.",

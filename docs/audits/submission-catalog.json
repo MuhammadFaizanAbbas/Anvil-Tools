@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-05T13:04:46.710Z",
+  "scope": "local prepared release",
+  "cases": [
+    {
+      "route": "/",
+      "unfilteredCards": 20,
+      "noResultAndRecovery": true,
+      "mobileNavigationAndEscape": true
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "unfilteredCards": 8,
+      "noResultAndRecovery": true,
+      "mobileNavigationAndEscape": true
+    }
+  ],
+  "noJavaScript": {
+    "searchHidden": true,
+    "allHomepageCardsVisible": true
+  }
+}

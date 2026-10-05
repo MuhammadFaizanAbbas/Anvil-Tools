@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-05T13:08:56.611Z",
+  "checkedAt": "2026-10-05T13:00:05.631Z",
   "origin": "https://anviltools.vercel.app",
   "environment": "Lighthouse 12.8.2, Edge headless, default mobile simulation",
   "limits": [
@@ -15,51 +15,69 @@
       "finalUrl": "https://anviltools.vercel.app/",
       "warnings": [],
       "scores": {
-        "performance": 89,
+        "performance": 92,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
         "first-contentful-paint": {
-          "value": 980.764,
-          "display": "1.0 s"
+          "value": 1366.8405,
+          "display": "1.4 s"
         },
         "largest-contentful-paint": {
-          "value": 1848.2600000000002,
-          "display": "1.8 s"
+          "value": 1962.3405000000002,
+          "display": "2.0 s"
         },
         "total-blocking-time": {
-          "value": 430.0000000000001,
-          "display": "430 ms"
+          "value": 301.0000000000002,
+          "display": "300 ms"
         },
         "cumulative-layout-shift": {
           "value": 0,
           "display": "0"
         },
         "speed-index": {
-          "value": 1738.7022081629252,
-          "display": "1.7 s"
+          "value": 2122.2981052798127,
+          "display": "2.1 s"
         }
       },
       "findings": [
         {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.97,
+          "display": "1.4 s"
+        },
+        {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.98,
-          "display": "1.8 s"
+          "score": 0.97,
+          "display": "2.0 s"
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.99,
+          "display": "2.1 s"
         },
         {
           "id": "total-blocking-time",
           "title": "Total Blocking Time",
-          "score": 0.65,
-          "display": "430 ms"
+          "score": 0.78,
+          "display": "300 ms"
         },
         {
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
-          "score": 0.11,
-          "display": "460 ms"
+          "score": 0.38,
+          "display": "290 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99,
+          "display": "2.1 s"
         },
         {
           "id": "render-blocking-resources",
@@ -69,9 +87,9 @@
           "savingsMs": 0,
           "items": [
             {
-              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review4",
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review3",
               "wastedMs": 150,
-              "totalBytes": 4491
+              "totalBytes": 4469
             }
           ]
         },
@@ -89,23 +107,24 @@
           "id": "render-blocking-insight",
           "title": "Render blocking requests",
           "score": 0.5,
+          "display": "Est savings of 10 ms",
           "items": [
             {
-              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review4",
-              "totalBytes": 3313
-            },
-            {
-              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review4",
-              "totalBytes": 2470
-            },
-            {
-              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review4",
-              "totalBytes": 1803
-            },
-            {
-              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review4",
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review3",
               "wastedMs": 150,
-              "totalBytes": 4491
+              "totalBytes": 4469
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review3",
+              "totalBytes": 2471
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review3",
+              "totalBytes": 1833
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review3",
+              "totalBytes": 3330
             }
           ]
         }
@@ -117,51 +136,45 @@
       "finalUrl": "https://anviltools.vercel.app/tools/word-counter.html",
       "warnings": [],
       "scores": {
-        "performance": 92,
+        "performance": 100,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
         "first-contentful-paint": {
-          "value": 961.5889999999999,
-          "display": "1.0 s"
+          "value": 1179.271,
+          "display": "1.2 s"
         },
         "largest-contentful-paint": {
-          "value": 1643.089,
-          "display": "1.6 s"
+          "value": 1421.271,
+          "display": "1.4 s"
         },
         "total-blocking-time": {
-          "value": 338,
-          "display": "340 ms"
+          "value": 27,
+          "display": "30 ms"
         },
         "cumulative-layout-shift": {
           "value": 0,
           "display": "0"
         },
         "speed-index": {
-          "value": 1561.5147039399353,
-          "display": "1.6 s"
+          "value": 1846.3756921908168,
+          "display": "1.8 s"
         }
       },
       "findings": [
         {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
           "score": 0.99,
-          "display": "1.6 s"
-        },
-        {
-          "id": "total-blocking-time",
-          "title": "Total Blocking Time",
-          "score": 0.74,
-          "display": "340 ms"
+          "display": "1.2 s"
         },
         {
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
-          "score": 0.11,
-          "display": "460 ms"
+          "score": 0.28,
+          "display": "330 ms"
         },
         {
           "id": "render-blocking-resources",
@@ -171,9 +184,9 @@
           "savingsMs": 0,
           "items": [
             {
-              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review4",
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review3",
               "wastedMs": 150,
-              "totalBytes": 4470
+              "totalBytes": 4469
             }
           ]
         },
@@ -190,29 +203,28 @@
         {
           "id": "render-blocking-insight",
           "title": "Render blocking requests",
-          "score": 0,
-          "display": "Est savings of 80 ms",
+          "score": 0.5,
           "items": [
             {
-              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review4",
-              "totalBytes": 2519
-            },
-            {
-              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review4",
-              "totalBytes": 1857
-            },
-            {
-              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review4",
-              "wastedMs": 150,
-              "totalBytes": 4470
-            },
-            {
               "url": "https://anviltools.vercel.app/assets/css/tool-ux.css",
-              "totalBytes": 2516
+              "totalBytes": 2489
             },
             {
-              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review4",
-              "totalBytes": 3357
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review3",
+              "totalBytes": 3338
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review3",
+              "totalBytes": 1803
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review3",
+              "wastedMs": 150,
+              "totalBytes": 4469
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review3",
+              "totalBytes": 2519
             }
           ]
         }
@@ -224,45 +236,39 @@
       "finalUrl": "https://anviltools.vercel.app/tools/background-remover.html",
       "warnings": [],
       "scores": {
-        "performance": 96,
+        "performance": 100,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
         "first-contentful-paint": {
-          "value": 936.3785,
-          "display": "0.9 s"
+          "value": 1056.8139999999999,
+          "display": "1.1 s"
         },
         "largest-contentful-paint": {
-          "value": 1386.3785,
+          "value": 1417.8139999999999,
           "display": "1.4 s"
         },
         "total-blocking-time": {
-          "value": 232,
-          "display": "230 ms"
+          "value": 24,
+          "display": "20 ms"
         },
         "cumulative-layout-shift": {
           "value": 0,
           "display": "0"
         },
         "speed-index": {
-          "value": 1330.0427107602245,
-          "display": "1.3 s"
+          "value": 1466.1272340751143,
+          "display": "1.5 s"
         }
       },
       "findings": [
         {
-          "id": "total-blocking-time",
-          "title": "Total Blocking Time",
-          "score": 0.86,
-          "display": "230 ms"
-        },
-        {
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
-          "score": 0.42,
-          "display": "280 ms"
+          "score": 0.63,
+          "display": "210 ms"
         },
         {
           "id": "render-blocking-resources",
@@ -272,9 +278,9 @@
           "savingsMs": 0,
           "items": [
             {
-              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review4",
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review3",
               "wastedMs": 150,
-              "totalBytes": 4470
+              "totalBytes": 4469
             }
           ]
         },
@@ -328,29 +334,28 @@
         {
           "id": "render-blocking-insight",
           "title": "Render blocking requests",
-          "score": 0,
-          "display": "Est savings of 60 ms",
+          "score": 0.5,
           "items": [
             {
               "url": "https://anviltools.vercel.app/assets/css/tool-ux.css",
-              "totalBytes": 2516
+              "totalBytes": 2489
             },
             {
-              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review4",
-              "totalBytes": 1803
-            },
-            {
-              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review4",
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review3",
               "wastedMs": 150,
-              "totalBytes": 4470
+              "totalBytes": 4469
             },
             {
-              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review4",
-              "totalBytes": 3313
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review3",
+              "totalBytes": 2471
             },
             {
-              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review4",
-              "totalBytes": 2516
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review3",
+              "totalBytes": 1829
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review3",
+              "totalBytes": 3384
             }
           ]
         }
@@ -369,55 +374,55 @@
       },
       "metrics": {
         "first-contentful-paint": {
-          "value": 1309.283,
-          "display": "1.3 s"
+          "value": 1076.583,
+          "display": "1.1 s"
         },
         "largest-contentful-paint": {
-          "value": 3209.47,
+          "value": 3156.176,
           "display": "3.2 s"
         },
         "total-blocking-time": {
-          "value": 22,
-          "display": "20 ms"
+          "value": 27,
+          "display": "30 ms"
         },
         "cumulative-layout-shift": {
           "value": 0.02928705560721398,
           "display": "0.029"
         },
         "speed-index": {
-          "value": 2033.74824164542,
-          "display": "2.0 s"
+          "value": 2148.2014978772804,
+          "display": "2.1 s"
         }
       },
       "findings": [
         {
           "id": "first-contentful-paint",
           "title": "First Contentful Paint",
-          "score": 0.98,
-          "display": "1.3 s"
+          "score": 0.99,
+          "display": "1.1 s"
         },
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.72,
+          "score": 0.74,
           "display": "3.2 s"
         },
         {
           "id": "speed-index",
           "title": "Speed Index",
           "score": 0.99,
-          "display": "2.0 s"
+          "display": "2.1 s"
         },
         {
           "id": "max-potential-fid",
           "title": "Max Potential First Input Delay",
-          "score": 0.08,
-          "display": "500 ms"
+          "score": 0.45,
+          "display": "260 ms"
         },
         {
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 0.94,
+          "score": 0.95,
           "display": "3.2 s"
         },
         {
@@ -425,11 +430,11 @@
           "title": "Preconnect to required origins",
           "score": 0,
           "display": "Est savings of 300 ms",
-          "savingsMs": 300.924,
+          "savingsMs": 300,
           "items": [
             {
               "url": "https://anvil-tools-backend.vercel.app",
-              "wastedMs": 300.924
+              "wastedMs": 300
             }
           ]
         },
@@ -437,7 +442,7 @@
           "id": "largest-contentful-paint-element",
           "title": "Largest Contentful Paint element",
           "score": 0,
-          "display": "3,210 ms",
+          "display": "3,160 ms",
           "items": [
             {},
             {}
@@ -462,9 +467,9 @@
           "savingsMs": 0,
           "items": [
             {
-              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review4",
-              "wastedMs": 150,
-              "totalBytes": 4470
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review3",
+              "wastedMs": 157,
+              "totalBytes": 4469
             }
           ]
         },
@@ -473,7 +478,7 @@
           "title": "Properly size images",
           "score": 0,
           "display": "Est savings of 128 KiB",
-          "savingsMs": 750,
+          "savingsMs": 630,
           "items": [
             {
               "url": "https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
@@ -510,6 +515,12 @@
               }
             }
           ]
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "display": "Est savings of 540 ms"
         },
         {
           "id": "image-delivery-insight",
@@ -549,27 +560,27 @@
           "score": 0.5,
           "items": [
             {
-              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review4",
-              "totalBytes": 2471
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review3",
+              "wastedMs": 157,
+              "totalBytes": 4469
             },
             {
-              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review4",
-              "totalBytes": 3313
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review3",
+              "totalBytes": 1802
             },
             {
-              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261005-review4",
-              "wastedMs": 150,
-              "totalBytes": 4470
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261005-review3",
+              "totalBytes": 2497
             },
             {
-              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261005-review4",
-              "totalBytes": 1843
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261005-review3",
+              "totalBytes": 3413
             }
           ]
         }
       ]
     }
   ],
-  "runtimeCommit": "e05c642a10c7081e7d249144889b6eded42c7135",
-  "backendRuntimeCommit": "aeefe315b1067b68a0814acb04c23c9b62fc7d85"
+  "runtimeCommit": "619ec96090117f841eec69b2fdbe0d58314846c4",
+  "reportingNote": "The original summary formatter rejected a checklist object on the article; its completed Lighthouse JSON was used to restore the unchanged measurement. The formatter now checks arrays explicitly."
 }

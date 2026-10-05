@@ -1,9 +1,47 @@
 {
-  "checkedAt": "2026-10-05T12:05:26.549Z",
+  "checkedAt": "2026-10-05T13:05:24.274Z",
   "scope": "local prepared release",
   "axeVersion": "4.13.0",
   "pages": [
     {
+      "route": "/",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "canonical": "https://anviltools.vercel.app/",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "canonical": "https://anviltools.vercel.app/",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
       "route": "/categories/developer-tools.html",
       "width": 320,
       "status": 200,
@@ -30,204 +68,6 @@
       "title": "Developer tools | Anvil Tools",
       "description": "Small utilities that save time during coding and testing.",
       "canonical": "https://anviltools.vercel.app/categories/developer-tools.html",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": []
-    },
-    {
-      "route": "/categories/email-tools.html",
-      "width": 320,
-      "status": 200,
-      "h1": 1,
-      "title": "Email tools | Anvil Tools",
-      "description": "Tools for handling email addresses without exposing your real inbox.",
-      "canonical": "https://anviltools.vercel.app/categories/email-tools.html",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1
-        }
-      ]
-    },
-    {
-      "route": "/categories/email-tools.html",
-      "width": 1440,
-      "status": 200,
-      "h1": 1,
-      "title": "Email tools | Anvil Tools",
-      "description": "Tools for handling email addresses without exposing your real inbox.",
-      "canonical": "https://anviltools.vercel.app/categories/email-tools.html",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": []
-    },
-    {
-      "route": "/categories/generators.html",
-      "width": 320,
-      "status": 200,
-      "h1": 1,
-      "title": "Generators | Anvil Tools",
-      "description": "Create passwords, QR codes, palettes, and other quick outputs.",
-      "canonical": "https://anviltools.vercel.app/categories/generators.html",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1
-        }
-      ]
-    },
-    {
-      "route": "/categories/generators.html",
-      "width": 1440,
-      "status": 200,
-      "h1": 1,
-      "title": "Generators | Anvil Tools",
-      "description": "Create passwords, QR codes, palettes, and other quick outputs.",
-      "canonical": "https://anviltools.vercel.app/categories/generators.html",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": []
-    },
-    {
-      "route": "/categories/image-tools.html",
-      "width": 320,
-      "status": 200,
-      "h1": 1,
-      "title": "Image tools | Anvil Tools",
-      "description": "Edit and convert images directly in your browser.",
-      "canonical": "https://anviltools.vercel.app/categories/image-tools.html",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1
-        }
-      ]
-    },
-    {
-      "route": "/categories/image-tools.html",
-      "width": 1440,
-      "status": 200,
-      "h1": 1,
-      "title": "Image tools | Anvil Tools",
-      "description": "Edit and convert images directly in your browser.",
-      "canonical": "https://anviltools.vercel.app/categories/image-tools.html",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": []
-    },
-    {
-      "route": "/categories/pdf-tools.html",
-      "width": 320,
-      "status": 200,
-      "h1": 1,
-      "title": "PDF tools | Anvil Tools",
-      "description": "Combine, build, and convert PDF files without installing software.",
-      "canonical": "https://anviltools.vercel.app/categories/pdf-tools.html",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1
-        }
-      ]
-    },
-    {
-      "route": "/categories/pdf-tools.html",
-      "width": 1440,
-      "status": 200,
-      "h1": 1,
-      "title": "PDF tools | Anvil Tools",
-      "description": "Combine, build, and convert PDF files without installing software.",
-      "canonical": "https://anviltools.vercel.app/categories/pdf-tools.html",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": []
-    },
-    {
-      "route": "/categories/text-tools.html",
-      "width": 320,
-      "status": 200,
-      "h1": 1,
-      "title": "Text tools | Anvil Tools",
-      "description": "Analyze and clean up written text.",
-      "canonical": "https://anviltools.vercel.app/categories/text-tools.html",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1
-        }
-      ]
-    },
-    {
-      "route": "/categories/text-tools.html",
-      "width": 1440,
-      "status": 200,
-      "h1": 1,
-      "title": "Text tools | Anvil Tools",
-      "description": "Analyze and clean up written text.",
-      "canonical": "https://anviltools.vercel.app/categories/text-tools.html",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": []
-    },
-    {
-      "route": "/tools/index.html",
-      "width": 320,
-      "status": 200,
-      "h1": 1,
-      "title": "All tools | Anvil Tools",
-      "description": "Browse every free tool available on Anvil Tools.",
-      "canonical": "https://anviltools.vercel.app/tools/index.html",
-      "overflow": false,
-      "brokenImages": [],
-      "errors": [],
-      "violations": [],
-      "incomplete": [
-        {
-          "id": "color-contrast",
-          "nodes": 1
-        }
-      ]
-    },
-    {
-      "route": "/tools/index.html",
-      "width": 1440,
-      "status": 200,
-      "h1": 1,
-      "title": "All tools | Anvil Tools",
-      "description": "Browse every free tool available on Anvil Tools.",
-      "canonical": "https://anviltools.vercel.app/tools/index.html",
       "overflow": false,
       "brokenImages": [],
       "errors": [],
@@ -242,5 +82,6 @@
     "Inbox layout and expiry checks use synthetic responses; no email or contact message is sent.",
     "Physical-device, screen-reader, and future advertising checks remain separate."
   ],
+  "externalFontRequests": [],
   "failures": []
 }

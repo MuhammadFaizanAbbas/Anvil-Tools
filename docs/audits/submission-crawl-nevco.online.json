@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-05T12:27:19.603Z",
+  "checkedAt": "2026-10-05T12:49:18.782Z",
   "origin": "https://nevco.online",
   "pages": [
     {
@@ -869,10 +869,10 @@
       "url": "https://nevco.online/assets/js/main.js",
       "status": 200,
       "type": "text/javascript",
-      "cache": null
+      "cache": "public, max-age=0, must-revalidate"
     },
     {
-      "url": "https://nevco.online/assets/js/main.js?v=20261005-review",
+      "url": "https://nevco.online/assets/js/main.js?v=20261005-review2",
       "status": 200,
       "type": "text/javascript",
       "cache": "public, max-age=0, must-revalidate"
