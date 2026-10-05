@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-05T10:17:36.442Z",
+  "checkedAt": "2026-10-05T10:23:39.115Z",
   "checks": [
     {
       "origin": "https://anviltools.vercel.app",
@@ -52,8 +52,8 @@
       "path": "/assets/js/recommendations.js",
       "status": 200,
       "contentType": "application/javascript; charset=utf-8",
-      "correctArticleArrow": false,
-      "literalQuestionMark": true
+      "correctArticleArrow": true,
+      "literalQuestionMark": false
     },
     {
       "origin": "https://anviltools.vercel.app",
@@ -72,18 +72,18 @@
       "path": "/cookie-policy.html",
       "status": 200,
       "contentType": "text/html; charset=utf-8",
-      "hasFutureGoogleDisclosure": false,
+      "hasFutureGoogleDisclosure": true,
       "advertisingDisabled": true,
-      "certifiedConsentDisclosure": false
+      "certifiedConsentDisclosure": true
     },
     {
       "origin": "https://anviltools.vercel.app",
       "path": "/privacy-policy.html",
       "status": 200,
       "contentType": "text/html; charset=utf-8",
-      "hasFutureGoogleDisclosure": false,
+      "hasFutureGoogleDisclosure": true,
       "advertisingDisabled": true,
-      "certifiedConsentDisclosure": false
+      "certifiedConsentDisclosure": true
     },
     {
       "origin": "https://nevco.online",

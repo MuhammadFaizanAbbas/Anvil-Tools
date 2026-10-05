@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-05T10:23:43.816Z",
+  "origin": "https://anviltools.vercel.app",
+  "cases": [
+    {
+      "path": "/",
+      "width": 320,
+      "articleLinks": 4,
+      "correctArrow": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "path": "/privacy-policy.html",
+      "width": 320,
+      "currentDisabledState": true,
+      "futureGoogleDisclosure": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "path": "/cookie-policy.html",
+      "width": 320,
+      "currentDisabledState": true,
+      "futureGoogleDisclosure": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "articleLinks": 4,
+      "correctArrow": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "path": "/privacy-policy.html",
+      "width": 1440,
+      "currentDisabledState": true,
+      "futureGoogleDisclosure": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "path": "/cookie-policy.html",
+      "width": 1440,
+      "currentDisabledState": true,
+      "futureGoogleDisclosure": true,
+      "noHorizontalOverflow": true
+    }
+  ],
+  "automaticAdRequestsObserved": false
+}
