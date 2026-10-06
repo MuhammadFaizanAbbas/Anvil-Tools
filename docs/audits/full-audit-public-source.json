@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-06T10:49:30.997Z",
+  "files": 100,
+  "checks": [
+    {
+      "name": "local pinned PDF and QR bundles and licenses",
+      "passed": true
+    },
+    {
+      "name": "only intended deferred background module uses a CDN",
+      "passed": true
+    }
+  ],
+  "issues": [],
+  "externalScripts": [
+    {
+      "file": "frontend\\tools\\background-remover.html",
+      "url": "https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.5.5/+esm",
+      "deferred": true
+    }
+  ],
+  "limits": [
+    "A targeted source scan cannot prove absence of every possible vulnerability or editorial error.",
+    "Licensed vendor bundles are preserved; npm advisories are checked separately."
+  ],
+  "passed": true
+}

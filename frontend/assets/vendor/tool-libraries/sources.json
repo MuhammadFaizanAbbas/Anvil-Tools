@@ -1,0 +1,26 @@
+[
+  {
+    "name": "pdf-lib-1.17.1.min.js",
+    "source": "https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js",
+    "bytes": 525099,
+    "sha256": "0f9a5cad07941f0826586c94e089d89b918c46e5c17cf2d5a3c6f666e3bc694f"
+  },
+  {
+    "name": "pdf-lib-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/Hopding/pdf-lib/v1.17.1/LICENSE.md",
+    "bytes": 1070,
+    "sha256": "f2c9fc00fdb66eb99ac156ba52d734af66d8d309f65753ae809ad34ee2883bcb"
+  },
+  {
+    "name": "qrcode-1.0.0.min.js",
+    "source": "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js",
+    "bytes": 19927,
+    "sha256": "c541ef06327885a8415bca8df6071e14189b4855336def4f36db54bde8484f36"
+  },
+  {
+    "name": "qrcode-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/davidshimjs/qrcodejs/master/LICENSE",
+    "bytes": 1098,
+    "sha256": "aaa1f349028a59432eb00222b8ddfe4d2ccebdce04cf8348dcb8d41b7068107b"
+  }
+]

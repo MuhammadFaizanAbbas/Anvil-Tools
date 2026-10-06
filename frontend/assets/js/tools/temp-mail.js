@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const current = generation, selected = ++selection, cap = capability;
     setStatus('Loading message…');
     try {
-      const detail = await request(`/api/temp-mail/messages/${encodeURIComponent(message.id)}?cap=${encodeURIComponent(cap)}`);
+      const detail = await request(`/api/temp-mail/messages/${encodeURIComponent(message.id)}`, { headers: { 'X-Inbox-Capability': cap } });
       if (current !== generation || selected !== selection) return;
       const title = document.createElement('h3'); title.textContent = decode(detail.subject) || 'Message';
       const sender = document.createElement('p'); sender.textContent = `From: ${decode(detail.from?.address || detail.from || 'Unknown')}`;
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const current = generation, cap = capability;
     polling = true; clearTimeout(pollTimer); buttons();
     try {
-      const data = await request(`/api/temp-mail/messages?cap=${encodeURIComponent(cap)}`);
+      const data = await request('/api/temp-mail/messages', { headers: { 'X-Inbox-Capability': cap } });
       if (current !== generation) return;
       if (data.address) addressEl.textContent = data.address;
       updateExpiry(data.expiresAt);

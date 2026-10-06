@@ -62,5 +62,21 @@
     "width": 480,
     "height": 640,
     "candidates": []
+  },
+  "/assets/images/editorial/json-precision-experiment.png": {
+    "width": 1052,
+    "height": 546
+  },
+  "/assets/images/editorial/csv-newline-experiment.png": {
+    "width": 1052,
+    "height": 678
+  },
+  "/assets/images/editorial/unicode-count-experiment.png": {
+    "width": 1052,
+    "height": 658
+  },
+  "/assets/images/editorial/image-format-experiment.png": {
+    "width": 1052,
+    "height": 488
   }
 }

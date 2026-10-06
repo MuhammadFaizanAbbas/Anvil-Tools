@@ -1,0 +1,6 @@
+{
+  "checkedAt": "2026-10-06T10:51:02.600Z",
+  "test": "Previously public published cover no longer readable through direct public bucket URL",
+  "status": 400,
+  "passed": true
+}

@@ -1,0 +1,136 @@
+[
+  {
+    "id": "quoted-comma",
+    "input": "name,note\nAda,\"red, blue\"",
+    "headers": true,
+    "expected": [
+      {
+        "name": "Ada",
+        "note": "red, blue"
+      }
+    ]
+  },
+  {
+    "id": "escaped-quote",
+    "input": "name,note\nAda,\"She said \"\"hello\"\"\"",
+    "headers": true,
+    "expected": [
+      {
+        "name": "Ada",
+        "note": "She said \"hello\""
+      }
+    ]
+  },
+  {
+    "id": "quoted-newline",
+    "input": "name,note\nAda,\"first\nsecond\"",
+    "headers": true,
+    "expected": [
+      {
+        "name": "Ada",
+        "note": "first\nsecond"
+      }
+    ]
+  },
+  {
+    "id": "unicode",
+    "input": "name,note\nZoë,你好 🙂",
+    "headers": true,
+    "expected": [
+      {
+        "name": "Zoë",
+        "note": "你好 🙂"
+      }
+    ]
+  },
+  {
+    "id": "blank-fields",
+    "input": "name,note\nAda,\n,empty name",
+    "headers": true,
+    "expected": [
+      {
+        "name": "Ada",
+        "note": ""
+      },
+      {
+        "name": "",
+        "note": "empty name"
+      }
+    ]
+  },
+  {
+    "id": "numeric-strings",
+    "input": "id,enabled\n0012,false",
+    "headers": true,
+    "expected": [
+      {
+        "id": "0012",
+        "enabled": "false"
+      }
+    ]
+  },
+  {
+    "id": "utf8-bom",
+    "input": "﻿name,note\nAda,ok",
+    "headers": true,
+    "expected": [
+      {
+        "name": "Ada",
+        "note": "ok"
+      }
+    ]
+  },
+  {
+    "id": "headers-off",
+    "input": "a,b\n1,2",
+    "headers": false,
+    "expected": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ]
+  },
+  {
+    "id": "duplicate-header",
+    "input": "name,name\nAda,Lee",
+    "headers": true,
+    "expected": null,
+    "error": "Header names must be unique."
+  },
+  {
+    "id": "short-row",
+    "input": "name,note\nAda",
+    "headers": true,
+    "expected": null,
+    "error": "Row 2 has 1 columns; expected 2."
+  },
+  {
+    "id": "extra-column",
+    "input": "name,note\nAda,ok,extra",
+    "headers": true,
+    "expected": null,
+    "error": "Row 2 has 3 columns; expected 2."
+  },
+  {
+    "id": "unclosed-quote",
+    "input": "name,note\nAda,\"unfinished",
+    "headers": true,
+    "expected": null,
+    "error": "The CSV ends inside a quoted field."
+  },
+  {
+    "id": "semicolon-input",
+    "input": "name;note\nAda;ok",
+    "headers": true,
+    "expected": [
+      {
+        "name;note": "Ada;ok"
+      }
+    ]
+  }
+]

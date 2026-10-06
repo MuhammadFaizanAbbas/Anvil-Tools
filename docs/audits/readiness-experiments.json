@@ -1,0 +1,909 @@
+{
+  "checkedAt": "2026-10-06T07:07:55.220Z",
+  "timezone": "Asia/Karachi",
+  "source": "Actual local browser tools; synthetic public fixtures.",
+  "runs": [
+    {
+      "browser": "Chrome",
+      "version": "154.0.8037.97",
+      "viewport": {
+        "width": 1100,
+        "height": 850
+      },
+      "json": [
+        {
+          "id": "trailing-comma",
+          "input": "{\"a\":1,}",
+          "output": "",
+          "status": "Expected double-quoted property name in JSON at position 7 (line 1 column 8)",
+          "passed": true
+        },
+        {
+          "id": "single-quotes",
+          "input": "{'a':1}",
+          "output": "",
+          "status": "Expected property name or '}' in JSON at position 1 (line 1 column 2)",
+          "passed": true
+        },
+        {
+          "id": "unquoted-key",
+          "input": "{a:1}",
+          "output": "",
+          "status": "Expected property name or '}' in JSON at position 1 (line 1 column 2)",
+          "passed": true
+        },
+        {
+          "id": "comment",
+          "input": "{\"a\":1/* note */}",
+          "output": "",
+          "status": "Expected ',' or '}' after property value in JSON at position 6 (line 1 column 7)",
+          "passed": true
+        },
+        {
+          "id": "unterminated-string",
+          "input": "{\"a\":\"unfinished}",
+          "output": "",
+          "status": "Unterminated string in JSON at position 17 (line 1 column 18)",
+          "passed": true
+        },
+        {
+          "id": "leading-zero",
+          "input": "{\"a\":01}",
+          "output": "",
+          "status": "Unexpected number in JSON at position 6 (line 1 column 7)",
+          "passed": true
+        },
+        {
+          "id": "nan",
+          "input": "{\"a\":NaN}",
+          "output": "",
+          "status": "Unexpected token 'N', \"{\"a\":NaN}\" is not valid JSON",
+          "passed": true
+        },
+        {
+          "id": "undefined",
+          "input": "{\"a\":undefined}",
+          "output": "",
+          "status": "Unexpected token 'u', \"{\"a\":undefined}\" is not valid JSON",
+          "passed": true
+        },
+        {
+          "id": "extra-brace",
+          "input": "{\"a\":1}}",
+          "output": "",
+          "status": "Unexpected non-whitespace character after JSON at position 7 (line 1 column 8)",
+          "passed": true
+        },
+        {
+          "id": "missing-colon",
+          "input": "{\"a\" 1}",
+          "output": "",
+          "status": "Expected ':' after property name in JSON at position 5 (line 1 column 6)",
+          "passed": true
+        },
+        {
+          "id": "valid-nested",
+          "input": "{\"items\":[1,true,null],\"name\":\"café\"}",
+          "output": "{\"items\":[1,true,null],\"name\":\"café\"}",
+          "status": "JSON is valid.",
+          "passed": true
+        },
+        {
+          "id": "duplicate-key",
+          "input": "{\"role\":\"reader\",\"role\":\"editor\"}",
+          "output": "{\"role\":\"editor\"}",
+          "status": "JSON is valid.",
+          "passed": true
+        },
+        {
+          "id": "unsafe-integer",
+          "input": "{\"id\":9007199254740993}",
+          "output": "{\"id\":9007199254740992}",
+          "status": "JSON is valid.",
+          "passed": true
+        },
+        {
+          "id": "string-id",
+          "input": "{\"id\":\"9007199254740993\"}",
+          "output": "{\"id\":\"9007199254740993\"}",
+          "status": "JSON is valid.",
+          "passed": true
+        }
+      ],
+      "csv": [
+        {
+          "id": "quoted-comma",
+          "input": "name,note\nAda,\"red, blue\"",
+          "headers": true,
+          "output": [
+            {
+              "name": "Ada",
+              "note": "red, blue"
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "escaped-quote",
+          "input": "name,note\nAda,\"She said \"\"hello\"\"\"",
+          "headers": true,
+          "output": [
+            {
+              "name": "Ada",
+              "note": "She said \"hello\""
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "quoted-newline",
+          "input": "name,note\nAda,\"first\nsecond\"",
+          "headers": true,
+          "output": [
+            {
+              "name": "Ada",
+              "note": "first\nsecond"
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "unicode",
+          "input": "name,note\nZoë,你好 🙂",
+          "headers": true,
+          "output": [
+            {
+              "name": "Zoë",
+              "note": "你好 🙂"
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "blank-fields",
+          "input": "name,note\nAda,\n,empty name",
+          "headers": true,
+          "output": [
+            {
+              "name": "Ada",
+              "note": ""
+            },
+            {
+              "name": "",
+              "note": "empty name"
+            }
+          ],
+          "status": "Converted 2 data rows. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "numeric-strings",
+          "input": "id,enabled\n0012,false",
+          "headers": true,
+          "output": [
+            {
+              "id": "0012",
+              "enabled": "false"
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "utf8-bom",
+          "input": "﻿name,note\nAda,ok",
+          "headers": true,
+          "output": [
+            {
+              "name": "Ada",
+              "note": "ok"
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "headers-off",
+          "input": "a,b\n1,2",
+          "headers": false,
+          "output": [
+            [
+              "a",
+              "b"
+            ],
+            [
+              "1",
+              "2"
+            ]
+          ],
+          "status": "Converted 2 data rows. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "duplicate-header",
+          "input": "name,name\nAda,Lee",
+          "headers": true,
+          "output": null,
+          "status": "Header names must be unique.",
+          "passed": true
+        },
+        {
+          "id": "short-row",
+          "input": "name,note\nAda",
+          "headers": true,
+          "output": null,
+          "status": "Row 2 has 1 columns; expected 2.",
+          "passed": true
+        },
+        {
+          "id": "extra-column",
+          "input": "name,note\nAda,ok,extra",
+          "headers": true,
+          "output": null,
+          "status": "Row 2 has 3 columns; expected 2.",
+          "passed": true
+        },
+        {
+          "id": "unclosed-quote",
+          "input": "name,note\nAda,\"unfinished",
+          "headers": true,
+          "output": null,
+          "status": "The CSV ends inside a quoted field.",
+          "passed": true
+        },
+        {
+          "id": "semicolon-input",
+          "input": "name;note\nAda;ok",
+          "headers": true,
+          "output": [
+            {
+              "name;note": "Ada;ok"
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        }
+      ],
+      "wordCounter": [
+        {
+          "id": "empty",
+          "input": "",
+          "output": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "ordinary",
+          "input": "Hello world.",
+          "output": [
+            2,
+            12,
+            11,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "emoji",
+          "input": "🙂 🙂",
+          "output": [
+            2,
+            5,
+            4,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "family-emoji",
+          "input": "👨‍👩‍👧‍👦",
+          "output": [
+            1,
+            11,
+            11,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "composed-accent",
+          "input": "café",
+          "output": [
+            1,
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "combining-accent",
+          "input": "café",
+          "output": [
+            1,
+            5,
+            5,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "chinese",
+          "input": "你好世界",
+          "output": [
+            1,
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "zero-width-space",
+          "input": "one​two",
+          "output": [
+            1,
+            7,
+            7,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "nonbreaking-space",
+          "input": "one two",
+          "output": [
+            2,
+            7,
+            6,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "hyphen",
+          "input": "well-known fact",
+          "output": [
+            2,
+            15,
+            14,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "punctuation",
+          "input": "Hi...there?",
+          "output": [
+            1,
+            11,
+            11,
+            2,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "paragraphs",
+          "input": "One.\n\nTwo!",
+          "output": [
+            2,
+            10,
+            8,
+            2,
+            2,
+            1
+          ],
+          "passed": true
+        }
+      ],
+      "pdf": [
+        {
+          "format": "jpg",
+          "inputBytes": 16987,
+          "outputBytes": 17925,
+          "outputFile": "frontend/assets/examples/experiments/format-jpg.pdf",
+          "sha256": "dd5de7ab55042530c7a70fb49167ca19be6d3890c92a0121480d42777e8a67ce",
+          "download": "/assets/examples/experiments/format-jpg.pdf"
+        },
+        {
+          "format": "png",
+          "inputBytes": 18067,
+          "outputBytes": 17268,
+          "outputFile": "frontend/assets/examples/experiments/format-png.pdf",
+          "sha256": "6cfc463f964fb2cde156b1884475c3b69b1e44b6d2c1a1fcf344b27257db4f9c",
+          "download": "/assets/examples/experiments/format-png.pdf"
+        },
+        {
+          "format": "webp",
+          "inputBytes": 8250,
+          "outputBytes": 17372,
+          "outputFile": "frontend/assets/examples/experiments/format-webp.pdf",
+          "sha256": "9d483e8d8bc83bf62863dc7cc244e528007d12263087046125447cf64daf0d5d",
+          "download": "/assets/examples/experiments/format-webp.pdf"
+        }
+      ],
+      "clearsStaleJsonOutput": true
+    },
+    {
+      "browser": "Edge",
+      "version": "154.0.4258.53",
+      "viewport": {
+        "width": 1100,
+        "height": 850
+      },
+      "json": [
+        {
+          "id": "trailing-comma",
+          "input": "{\"a\":1,}",
+          "output": "",
+          "status": "Expected double-quoted property name in JSON at position 7 (line 1 column 8)",
+          "passed": true
+        },
+        {
+          "id": "single-quotes",
+          "input": "{'a':1}",
+          "output": "",
+          "status": "Expected property name or '}' in JSON at position 1 (line 1 column 2)",
+          "passed": true
+        },
+        {
+          "id": "unquoted-key",
+          "input": "{a:1}",
+          "output": "",
+          "status": "Expected property name or '}' in JSON at position 1 (line 1 column 2)",
+          "passed": true
+        },
+        {
+          "id": "comment",
+          "input": "{\"a\":1/* note */}",
+          "output": "",
+          "status": "Expected ',' or '}' after property value in JSON at position 6 (line 1 column 7)",
+          "passed": true
+        },
+        {
+          "id": "unterminated-string",
+          "input": "{\"a\":\"unfinished}",
+          "output": "",
+          "status": "Unterminated string in JSON at position 17 (line 1 column 18)",
+          "passed": true
+        },
+        {
+          "id": "leading-zero",
+          "input": "{\"a\":01}",
+          "output": "",
+          "status": "Unexpected number in JSON at position 6 (line 1 column 7)",
+          "passed": true
+        },
+        {
+          "id": "nan",
+          "input": "{\"a\":NaN}",
+          "output": "",
+          "status": "Unexpected token 'N', \"{\"a\":NaN}\" is not valid JSON",
+          "passed": true
+        },
+        {
+          "id": "undefined",
+          "input": "{\"a\":undefined}",
+          "output": "",
+          "status": "Unexpected token 'u', \"{\"a\":undefined}\" is not valid JSON",
+          "passed": true
+        },
+        {
+          "id": "extra-brace",
+          "input": "{\"a\":1}}",
+          "output": "",
+          "status": "Unexpected non-whitespace character after JSON at position 7 (line 1 column 8)",
+          "passed": true
+        },
+        {
+          "id": "missing-colon",
+          "input": "{\"a\" 1}",
+          "output": "",
+          "status": "Expected ':' after property name in JSON at position 5 (line 1 column 6)",
+          "passed": true
+        },
+        {
+          "id": "valid-nested",
+          "input": "{\"items\":[1,true,null],\"name\":\"café\"}",
+          "output": "{\"items\":[1,true,null],\"name\":\"café\"}",
+          "status": "JSON is valid.",
+          "passed": true
+        },
+        {
+          "id": "duplicate-key",
+          "input": "{\"role\":\"reader\",\"role\":\"editor\"}",
+          "output": "{\"role\":\"editor\"}",
+          "status": "JSON is valid.",
+          "passed": true
+        },
+        {
+          "id": "unsafe-integer",
+          "input": "{\"id\":9007199254740993}",
+          "output": "{\"id\":9007199254740992}",
+          "status": "JSON is valid.",
+          "passed": true
+        },
+        {
+          "id": "string-id",
+          "input": "{\"id\":\"9007199254740993\"}",
+          "output": "{\"id\":\"9007199254740993\"}",
+          "status": "JSON is valid.",
+          "passed": true
+        }
+      ],
+      "csv": [
+        {
+          "id": "quoted-comma",
+          "input": "name,note\nAda,\"red, blue\"",
+          "headers": true,
+          "output": [
+            {
+              "name": "Ada",
+              "note": "red, blue"
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "escaped-quote",
+          "input": "name,note\nAda,\"She said \"\"hello\"\"\"",
+          "headers": true,
+          "output": [
+            {
+              "name": "Ada",
+              "note": "She said \"hello\""
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "quoted-newline",
+          "input": "name,note\nAda,\"first\nsecond\"",
+          "headers": true,
+          "output": [
+            {
+              "name": "Ada",
+              "note": "first\nsecond"
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "unicode",
+          "input": "name,note\nZoë,你好 🙂",
+          "headers": true,
+          "output": [
+            {
+              "name": "Zoë",
+              "note": "你好 🙂"
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "blank-fields",
+          "input": "name,note\nAda,\n,empty name",
+          "headers": true,
+          "output": [
+            {
+              "name": "Ada",
+              "note": ""
+            },
+            {
+              "name": "",
+              "note": "empty name"
+            }
+          ],
+          "status": "Converted 2 data rows. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "numeric-strings",
+          "input": "id,enabled\n0012,false",
+          "headers": true,
+          "output": [
+            {
+              "id": "0012",
+              "enabled": "false"
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "utf8-bom",
+          "input": "﻿name,note\nAda,ok",
+          "headers": true,
+          "output": [
+            {
+              "name": "Ada",
+              "note": "ok"
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "headers-off",
+          "input": "a,b\n1,2",
+          "headers": false,
+          "output": [
+            [
+              "a",
+              "b"
+            ],
+            [
+              "1",
+              "2"
+            ]
+          ],
+          "status": "Converted 2 data rows. Values remain strings.",
+          "passed": true
+        },
+        {
+          "id": "duplicate-header",
+          "input": "name,name\nAda,Lee",
+          "headers": true,
+          "output": null,
+          "status": "Header names must be unique.",
+          "passed": true
+        },
+        {
+          "id": "short-row",
+          "input": "name,note\nAda",
+          "headers": true,
+          "output": null,
+          "status": "Row 2 has 1 columns; expected 2.",
+          "passed": true
+        },
+        {
+          "id": "extra-column",
+          "input": "name,note\nAda,ok,extra",
+          "headers": true,
+          "output": null,
+          "status": "Row 2 has 3 columns; expected 2.",
+          "passed": true
+        },
+        {
+          "id": "unclosed-quote",
+          "input": "name,note\nAda,\"unfinished",
+          "headers": true,
+          "output": null,
+          "status": "The CSV ends inside a quoted field.",
+          "passed": true
+        },
+        {
+          "id": "semicolon-input",
+          "input": "name;note\nAda;ok",
+          "headers": true,
+          "output": [
+            {
+              "name;note": "Ada;ok"
+            }
+          ],
+          "status": "Converted 1 data row. Values remain strings.",
+          "passed": true
+        }
+      ],
+      "wordCounter": [
+        {
+          "id": "empty",
+          "input": "",
+          "output": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "ordinary",
+          "input": "Hello world.",
+          "output": [
+            2,
+            12,
+            11,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "emoji",
+          "input": "🙂 🙂",
+          "output": [
+            2,
+            5,
+            4,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "family-emoji",
+          "input": "👨‍👩‍👧‍👦",
+          "output": [
+            1,
+            11,
+            11,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "composed-accent",
+          "input": "café",
+          "output": [
+            1,
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "combining-accent",
+          "input": "café",
+          "output": [
+            1,
+            5,
+            5,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "chinese",
+          "input": "你好世界",
+          "output": [
+            1,
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "zero-width-space",
+          "input": "one​two",
+          "output": [
+            1,
+            7,
+            7,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "nonbreaking-space",
+          "input": "one two",
+          "output": [
+            2,
+            7,
+            6,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "hyphen",
+          "input": "well-known fact",
+          "output": [
+            2,
+            15,
+            14,
+            1,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "punctuation",
+          "input": "Hi...there?",
+          "output": [
+            1,
+            11,
+            11,
+            2,
+            1,
+            1
+          ],
+          "passed": true
+        },
+        {
+          "id": "paragraphs",
+          "input": "One.\n\nTwo!",
+          "output": [
+            2,
+            10,
+            8,
+            2,
+            2,
+            1
+          ],
+          "passed": true
+        }
+      ],
+      "pdf": [
+        {
+          "format": "jpg",
+          "inputBytes": 16987,
+          "outputBytes": 17925,
+          "outputFile": "frontend/assets/examples/experiments/format-edge-jpg.pdf",
+          "sha256": "347191031355d220fc83386310bf46bd40829122802f414b40445ca0bb94a0e9",
+          "download": "/assets/examples/experiments/format-edge-jpg.pdf"
+        },
+        {
+          "format": "png",
+          "inputBytes": 18067,
+          "outputBytes": 17268,
+          "outputFile": "frontend/assets/examples/experiments/format-edge-png.pdf",
+          "sha256": "835a86219e03388c332b29f1381795af146339a766d7c0b99ddce3f605d3eb39",
+          "download": "/assets/examples/experiments/format-edge-png.pdf"
+        },
+        {
+          "format": "webp",
+          "inputBytes": 8250,
+          "outputBytes": 17372,
+          "outputFile": "frontend/assets/examples/experiments/format-edge-webp.pdf",
+          "sha256": "026810a1acda939eb520508bc7eaddee744dbd6b8c6c35d09804a003c5650bd0",
+          "download": "/assets/examples/experiments/format-edge-webp.pdf"
+        }
+      ],
+      "clearsStaleJsonOutput": true
+    }
+  ]
+}

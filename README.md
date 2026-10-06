@@ -1,5 +1,7 @@
 # Anvil Tools
 
+The [October 6 full website audit](docs/FULL_SITE_AUDIT_2026-10-06.md) covers all 43 public pages, 20 tools, phone/API performance, loading recovery and database/storage privacy. The [readiness release](docs/ADSENSE_READINESS_COMPLETION_2026-10-06.md) adds four recorded experiments and fixes blog/navigation, metadata and disclosures. Production deployment evidence is recorded separately for Vercel and the nevco.online cPanel host; new static articles need no database publication.
+
 Static frontend on **Vercel or cPanel**, Express API on **Vercel**, and database + admin authentication on **Supabase**.
 
 ```text

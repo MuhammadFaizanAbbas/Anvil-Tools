@@ -14,7 +14,7 @@
     status.textContent = 'Saving your message…';
     const fields = Object.fromEntries(new FormData(form));
     try {
-      const response = await AnvilAPI.fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...fields, id }) });
+      const response = await AnvilAPI.fetch('/api/contact', { method: 'POST', timeoutMs: 35000, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...fields, id }) });
       const data = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(response.status >= 500 ? 'The contact service is temporarily unavailable. Please email info@velloxtech.com.' : (data.error || 'Unable to submit your message. Please try again.'));
       status.className = 'success';

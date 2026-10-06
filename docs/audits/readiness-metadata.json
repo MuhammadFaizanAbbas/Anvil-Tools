@@ -1,0 +1,279 @@
+{
+  "checkedAt": "2026-10-06T10:46:16.652Z",
+  "scope": "repository metadata and canonical sources; Google search cache is external",
+  "pages": [
+    {
+      "file": "frontend/about.html",
+      "title": "About | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/about.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/blog/csv-quotes-unicode-and-blank-fields.html",
+      "title": "CSV Edge Cases: Quotes, Unicode, Newlines, and Blank Fields | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/blog/csv-quotes-unicode-and-blank-fields.html",
+      "schemas": 1,
+      "passed": true
+    },
+    {
+      "file": "frontend/blog/index.html",
+      "title": "Blog | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/blog/index.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/blog/jpeg-png-webp-to-pdf-test.html",
+      "title": "JPEG vs PNG vs WebP: Our Image-to-PDF Conversion Test | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/blog/jpeg-png-webp-to-pdf-test.html",
+      "schemas": 1,
+      "passed": true
+    },
+    {
+      "file": "frontend/blog/json-formatter-edge-cases.html",
+      "title": "10 Malformed JSON Inputs Tested in Our Formatter | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/blog/json-formatter-edge-cases.html",
+      "schemas": 1,
+      "passed": true
+    },
+    {
+      "file": "frontend/blog/word-counter-unicode-experiment.html",
+      "title": "How Our Word Counter Counts Emoji, Accents, and Chinese Text | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/blog/word-counter-unicode-experiment.html",
+      "schemas": 1,
+      "passed": true
+    },
+    {
+      "file": "frontend/categories/developer-tools.html",
+      "title": "Developer tools | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/categories/developer-tools.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/categories/email-tools.html",
+      "title": "Email tools | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/categories/email-tools.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/categories/generators.html",
+      "title": "Generators | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/categories/generators.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/categories/image-tools.html",
+      "title": "Image tools | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/categories/image-tools.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/categories/pdf-tools.html",
+      "title": "PDF tools | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/categories/pdf-tools.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/categories/text-tools.html",
+      "title": "Text tools | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/categories/text-tools.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/contact.html",
+      "title": "Contact | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/contact.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/cookie-policy.html",
+      "title": "Cookie policy | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/cookie-policy.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/disclaimer.html",
+      "title": "Disclaimer | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/disclaimer.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/index.html",
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/privacy-policy.html",
+      "title": "Privacy policy | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/privacy-policy.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/terms-of-service.html",
+      "title": "Terms of service | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/terms-of-service.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/background-remover.html",
+      "title": "Background Remover | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/background-remover.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/base64-tool.html",
+      "title": "Base64 Encoder & Decoder | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/base64-tool.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/color-palette-generator.html",
+      "title": "Color Palette Generator | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/color-palette-generator.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/csv-to-json.html",
+      "title": "CSV to JSON Converter | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/hash-generator.html",
+      "title": "Hash Generator | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/image-to-pdf.html",
+      "title": "Image to PDF Converter | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/index.html",
+      "title": "All tools | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/index.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/json-formatter.html",
+      "title": "JSON Formatter & Validator | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/jwt-decoder.html",
+      "title": "JWT Decoder | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/jwt-decoder.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/password-generator.html",
+      "title": "Password Generator | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/password-generator.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/pdf-merge.html",
+      "title": "PDF Merge | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/qr-code-generator.html",
+      "title": "QR Code Generator | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/temp-mail.html",
+      "title": "Temporary Email Generator | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/text-case-converter.html",
+      "title": "Text Case Converter | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/text-diff-checker.html",
+      "title": "Text Difference Checker | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/text-diff-checker.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/unit-converter.html",
+      "title": "Unit Converter | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/unit-converter.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/unix-timestamp-converter.html",
+      "title": "Unix Timestamp Converter | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/unix-timestamp-converter.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/url-encoder-decoder.html",
+      "title": "URL Encoder & Decoder | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/url-encoder-decoder.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/user-agent-generator.html",
+      "title": "User Agent Generator | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/user-agent-generator.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/uuid-generator.html",
+      "title": "UUID Generator | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "schemas": 0,
+      "passed": true
+    },
+    {
+      "file": "frontend/tools/word-counter.html",
+      "title": "Word & Character Counter | Anvil Tools",
+      "canonical": "https://anviltools.vercel.app/tools/word-counter.html",
+      "schemas": 0,
+      "passed": true
+    }
+  ]
+}

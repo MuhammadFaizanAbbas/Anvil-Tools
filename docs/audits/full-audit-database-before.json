@@ -1,0 +1,280 @@
+{
+  "projectId": "epxzxcqsonxscyvbopqt",
+  "scope": "Permissions and configuration only; no private message or token rows read",
+  "tables": [
+    {
+      "rls": true,
+      "name": "analytics_events",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "blog_posts",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "categories",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "consent_stats",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "contact_messages",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "profiles",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "tools",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "analytics_daily",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "audit_logs",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "categories",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "contact_mail_jobs",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "contact_requests",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "media_assets",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "post_revisions",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "posts",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "posts_removed_backup",
+      "schema": "public",
+      "anon_select": true,
+      "authenticated_select": true
+    },
+    {
+      "rls": true,
+      "name": "profiles",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": true
+    },
+    {
+      "rls": true,
+      "name": "site_pages",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "site_settings",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "temp_mail_client_limits",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "temp_mail_rate_limits",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "temp_mail_sessions",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "tools",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    }
+  ],
+  "storage": [
+    {
+      "name": "editorial-media",
+      "public": true
+    }
+  ],
+  "policies": [
+    {
+      "cmd": "SELECT",
+      "qual": "(id = auth.uid())",
+      "roles": [
+        "authenticated"
+      ],
+      "tablename": "profiles",
+      "policyname": "own_profile",
+      "schemaname": "public",
+      "with_check": null
+    },
+    {
+      "cmd": "ALL",
+      "qual": "false",
+      "roles": [
+        "public"
+      ],
+      "tablename": "temp_mail_rate_limits",
+      "policyname": "rate_limit_no_client_access",
+      "schemaname": "public",
+      "with_check": "false"
+    },
+    {
+      "cmd": "ALL",
+      "qual": "false",
+      "roles": [
+        "public"
+      ],
+      "tablename": "temp_mail_sessions",
+      "policyname": "temp_mail_no_access",
+      "schemaname": "public",
+      "with_check": "false"
+    }
+  ],
+  "functions": [
+    {
+      "name": "change_user_access",
+      "schema": "public",
+      "settings": [
+        "search_path=public"
+      ],
+      "anon_execute": false,
+      "security_definer": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "cleanup_expired_state",
+      "schema": "public",
+      "settings": [
+        "search_path=public"
+      ],
+      "anon_execute": false,
+      "security_definer": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "consume_temp_mail_limit",
+      "schema": "public",
+      "settings": [
+        "search_path=public"
+      ],
+      "anon_execute": false,
+      "security_definer": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "create_contact_request",
+      "schema": "public",
+      "settings": [
+        "search_path=public"
+      ],
+      "anon_execute": false,
+      "security_definer": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "record_tool_view",
+      "schema": "public",
+      "settings": [
+        "search_path=public"
+      ],
+      "anon_execute": false,
+      "security_definer": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "save_post_document",
+      "schema": "public",
+      "settings": [
+        "search_path=public"
+      ],
+      "anon_execute": false,
+      "security_definer": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "sync_auth_profile",
+      "schema": "public",
+      "settings": [
+        "search_path=public"
+      ],
+      "anon_execute": false,
+      "security_definer": true,
+      "authenticated_execute": false
+    }
+  ]
+}

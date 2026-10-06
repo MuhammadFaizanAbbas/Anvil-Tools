@@ -57,7 +57,7 @@
   if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>3*1024*1024){$('imageUploadStatus').textContent='Choose a JPEG, PNG or WebP under 3 MB.';return;}
   const generation=editorGeneration,save=$('postForm').querySelector('button[type=submit]');
   uploading=true;save.disabled=true;event.target.disabled=true;$('imageUploadStatus').textContent='Uploading and optimizing your image...';
-  try{const response=await AnvilAPI.fetch(`/api/admin/media?name=${encodeURIComponent(file.name)}`,{method:'POST',headers:{'Content-Type':file.type},body:file});const asset=await response.json();if(!response.ok)throw Error(asset.error||'Image upload failed.');if(generation===editorGeneration){$('postCoverId').value=asset.id;paintCover(asset.url);$('imageUploadStatus').textContent='Image uploaded. Save the article to attach it.';}}
+  try{const response=await AnvilAPI.fetch(`/api/admin/media?name=${encodeURIComponent(file.name)}`,{method:'POST',timeoutMs:60000,headers:{'Content-Type':file.type},body:file});const asset=await response.json();if(!response.ok)throw Error(asset.error||'Image upload failed.');if(generation===editorGeneration){$('postCoverId').value=asset.id;paintCover(asset.url);$('imageUploadStatus').textContent='Image uploaded. Save the article to attach it.';}}
   catch(error){$('imageUploadStatus').textContent=error.message;}finally{uploading=false;event.target.disabled=false;updateDirty();}
  });
  async function library(){

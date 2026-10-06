@@ -9,7 +9,7 @@
   try {
     const base = (window.ANVIL_CONFIG?.API_BASE_URL || '').replace(/\/$/, '');
     const siteBase = (window.ANVIL_CONFIG?.SITE_URL || location.origin || '').replace(/\/$/, '');
-    const response = await fetch(`${base}/api/public/recommendations?limit=6${slug ? '&slug=' + encodeURIComponent(slug) : ''}`, { credentials:'omit' });
+    const response = await fetch(`${base}/api/public/recommendations?limit=6${slug ? '&slug=' + encodeURIComponent(slug) : ''}`, { credentials:'omit', signal: AbortSignal.timeout(20000) });
     if (!response.ok) return;
     const posts = await response.json();
     if (!Array.isArray(posts) || !posts.length) return;

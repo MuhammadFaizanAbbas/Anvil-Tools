@@ -1,0 +1,374 @@
+{
+  "checkedAt": "2026-10-06T10:39:32.135Z",
+  "origin": "https://anvil-tools-backend.vercel.app",
+  "latency": [
+    {
+      "path": "/api/health",
+      "samples": [
+        {
+          "status": 200,
+          "ms": 1705,
+          "bytes": 59
+        },
+        {
+          "status": 200,
+          "ms": 402,
+          "bytes": 59
+        },
+        {
+          "status": 200,
+          "ms": 271,
+          "bytes": 59
+        },
+        {
+          "status": 200,
+          "ms": 506,
+          "bytes": 59
+        },
+        {
+          "status": 200,
+          "ms": 270,
+          "bytes": 59
+        }
+      ],
+      "p50Ms": 402,
+      "maxMs": 1705,
+      "successful": true
+    },
+    {
+      "path": "/api/tools",
+      "samples": [
+        {
+          "status": 200,
+          "ms": 566,
+          "bytes": 4463
+        },
+        {
+          "status": 200,
+          "ms": 313,
+          "bytes": 4463
+        },
+        {
+          "status": 200,
+          "ms": 314,
+          "bytes": 4463
+        },
+        {
+          "status": 200,
+          "ms": 361,
+          "bytes": 4463
+        },
+        {
+          "status": 200,
+          "ms": 316,
+          "bytes": 4463
+        }
+      ],
+      "p50Ms": 316,
+      "maxMs": 566,
+      "successful": true
+    },
+    {
+      "path": "/api/public/posts",
+      "samples": [
+        {
+          "status": 200,
+          "ms": 315,
+          "bytes": 2379
+        },
+        {
+          "status": 200,
+          "ms": 288,
+          "bytes": 2379
+        },
+        {
+          "status": 200,
+          "ms": 284,
+          "bytes": 2379
+        },
+        {
+          "status": 200,
+          "ms": 307,
+          "bytes": 2379
+        },
+        {
+          "status": 200,
+          "ms": 293,
+          "bytes": 2379
+        }
+      ],
+      "p50Ms": 293,
+      "maxMs": 315,
+      "successful": true
+    },
+    {
+      "path": "/api/public/recommendations?limit=6",
+      "samples": [
+        {
+          "status": 200,
+          "ms": 291,
+          "bytes": 2379
+        },
+        {
+          "status": 200,
+          "ms": 316,
+          "bytes": 2379
+        },
+        {
+          "status": 200,
+          "ms": 356,
+          "bytes": 2379
+        },
+        {
+          "status": 200,
+          "ms": 312,
+          "bytes": 2379
+        },
+        {
+          "status": 200,
+          "ms": 316,
+          "bytes": 2379
+        }
+      ],
+      "p50Ms": 316,
+      "maxMs": 356,
+      "successful": true
+    },
+    {
+      "path": "/api/public/blog",
+      "samples": [
+        {
+          "status": 200,
+          "ms": 289,
+          "bytes": 8347
+        },
+        {
+          "status": 200,
+          "ms": 314,
+          "bytes": 8347
+        },
+        {
+          "status": 200,
+          "ms": 308,
+          "bytes": 8347
+        },
+        {
+          "status": 200,
+          "ms": 298,
+          "bytes": 8347
+        },
+        {
+          "status": 200,
+          "ms": 308,
+          "bytes": 8347
+        }
+      ],
+      "p50Ms": 308,
+      "maxMs": 314,
+      "successful": true
+    },
+    {
+      "path": "/api/public/articles/best-practices-for-background-removal-when-working-with-design",
+      "samples": [
+        {
+          "status": 200,
+          "ms": 331,
+          "bytes": 21505
+        },
+        {
+          "status": 200,
+          "ms": 313,
+          "bytes": 21505
+        },
+        {
+          "status": 200,
+          "ms": 312,
+          "bytes": 21505
+        },
+        {
+          "status": 200,
+          "ms": 306,
+          "bytes": 21505
+        },
+        {
+          "status": 200,
+          "ms": 329,
+          "bytes": 21505
+        }
+      ],
+      "p50Ms": 313,
+      "maxMs": 331,
+      "successful": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "private endpoint rejects unauthenticated access",
+      "path": "/api/admin/me",
+      "invalidToken": false,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "private endpoint rejects unauthenticated access",
+      "path": "/api/admin/me",
+      "invalidToken": true,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "private endpoint rejects unauthenticated access",
+      "path": "/api/admin/users",
+      "invalidToken": false,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "private endpoint rejects unauthenticated access",
+      "path": "/api/admin/users",
+      "invalidToken": true,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "private endpoint rejects unauthenticated access",
+      "path": "/api/admin/contacts",
+      "invalidToken": false,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "private endpoint rejects unauthenticated access",
+      "path": "/api/admin/contacts",
+      "invalidToken": true,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "private endpoint rejects unauthenticated access",
+      "path": "/api/admin/media",
+      "invalidToken": false,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "private endpoint rejects unauthenticated access",
+      "path": "/api/admin/media",
+      "invalidToken": true,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "private endpoint rejects unauthenticated access",
+      "path": "/api/admin/audit",
+      "invalidToken": false,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "private endpoint rejects unauthenticated access",
+      "path": "/api/admin/audit",
+      "invalidToken": true,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "private endpoint rejects unauthenticated access",
+      "path": "/api/admin/stats",
+      "invalidToken": false,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "private endpoint rejects unauthenticated access",
+      "path": "/api/admin/stats",
+      "invalidToken": true,
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "invalid public input fails safely",
+      "path": "/api/temp-mail/messages",
+      "status": 404,
+      "expected": 404,
+      "passed": true
+    },
+    {
+      "name": "invalid public input fails safely",
+      "path": "/api/temp-mail/messages/42",
+      "status": 404,
+      "expected": 404,
+      "passed": true
+    },
+    {
+      "name": "invalid public input fails safely",
+      "path": "/api/public/posts/does-not-exist-audit",
+      "status": 404,
+      "expected": 404,
+      "passed": true
+    },
+    {
+      "name": "invalid public input fails safely",
+      "path": "/api/public/posts?page=banana",
+      "status": 200,
+      "expected": 400,
+      "passed": false
+    },
+    {
+      "name": "invalid public input fails safely",
+      "path": "/api/public/post-images/not-an-id",
+      "status": 404,
+      "expected": 404,
+      "passed": true
+    },
+    {
+      "name": "cross-origin inbox header allowed",
+      "status": 204,
+      "allowed": "Content-Type,Authorization,X-Frontend-Origin",
+      "passed": false
+    },
+    {
+      "name": "public auth config contains only a public key",
+      "status": 200,
+      "role": "anon",
+      "passed": true
+    },
+    {
+      "name": "anonymous REST role has no private table access",
+      "table": "contacts",
+      "status": 404,
+      "passed": true
+    },
+    {
+      "name": "anonymous REST role has no private table access",
+      "table": "contact_requests",
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "anonymous REST role has no private table access",
+      "table": "temp_mail_sessions",
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "anonymous REST role has no private table access",
+      "table": "media_assets",
+      "status": 401,
+      "passed": true
+    },
+    {
+      "name": "anonymous REST role has no private table access",
+      "table": "posts_removed_backup",
+      "status": 401,
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Five sequential samples per endpoint are a latency sample, not a stress/load test.",
+    "No administrator credentials, outgoing mail, or contact submissions are used.",
+    "Desktop network measurements are separate from browser phone emulation."
+  ],
+  "passed": false,
+  "error": "Inspect API audit findings\n\nfalse !== true\n"
+}

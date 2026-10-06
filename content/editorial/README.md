@@ -1,5 +1,7 @@
 # Editorial release state
 
+The [October 6 readiness release](../../docs/ADSENSE_READINESS_COMPLETION_2026-10-06.md) adds four tested static articles defined in `experiments.json`, with Markdown under `experiments/`. `npm run build:editorial` renders them, adds blog/tool links, and includes them in the static sitemap. They require no database publication. The existing four database guides remain defined in `published-library.json`; their live temporary-email article is already shortened. The new frontend/backend release is prepared locally and has not been deployed.
+
 The current public library is defined in `published-library.json`: four distinct covered guides. `developer-data.md` and `pdf-workflows.md` contain the expanded replacements for those topics. The older eight-guide consolidation plan is historical planning input; its six unfinished destinations are not the publication target for this cleanup. See [the cleanup record](../../docs/EDITORIAL_CLEANUP.md) for the verified database changes, backups, and deployment instructions.
 
 ## October 5 audit follow-up, prepared locally

@@ -1,0 +1,108 @@
+{
+  "engine": "pypdf",
+  "version": "6.1.1",
+  "outputs": [
+    {
+      "browser": "Chrome",
+      "format": "jpg",
+      "file": "format-jpg.pdf",
+      "pages": 1,
+      "dimensionsPoints": [
+        640.0,
+        400.0
+      ],
+      "embeddedImageDimensions": [
+        640,
+        400
+      ],
+      "softMask": false,
+      "selectableText": "",
+      "passed": true
+    },
+    {
+      "browser": "Chrome",
+      "format": "png",
+      "file": "format-png.pdf",
+      "pages": 1,
+      "dimensionsPoints": [
+        640.0,
+        400.0
+      ],
+      "embeddedImageDimensions": [
+        640,
+        400
+      ],
+      "softMask": true,
+      "selectableText": "",
+      "passed": true
+    },
+    {
+      "browser": "Chrome",
+      "format": "webp",
+      "file": "format-webp.pdf",
+      "pages": 1,
+      "dimensionsPoints": [
+        640.0,
+        400.0
+      ],
+      "embeddedImageDimensions": [
+        640,
+        400
+      ],
+      "softMask": true,
+      "selectableText": "",
+      "passed": true
+    },
+    {
+      "browser": "Edge",
+      "format": "jpg",
+      "file": "format-edge-jpg.pdf",
+      "pages": 1,
+      "dimensionsPoints": [
+        640.0,
+        400.0
+      ],
+      "embeddedImageDimensions": [
+        640,
+        400
+      ],
+      "softMask": false,
+      "selectableText": "",
+      "passed": true
+    },
+    {
+      "browser": "Edge",
+      "format": "png",
+      "file": "format-edge-png.pdf",
+      "pages": 1,
+      "dimensionsPoints": [
+        640.0,
+        400.0
+      ],
+      "embeddedImageDimensions": [
+        640,
+        400
+      ],
+      "softMask": true,
+      "selectableText": "",
+      "passed": true
+    },
+    {
+      "browser": "Edge",
+      "format": "webp",
+      "file": "format-edge-webp.pdf",
+      "pages": 1,
+      "dimensionsPoints": [
+        640.0,
+        400.0
+      ],
+      "embeddedImageDimensions": [
+        640,
+        400
+      ],
+      "softMask": true,
+      "selectableText": "",
+      "passed": true
+    }
+  ]
+}

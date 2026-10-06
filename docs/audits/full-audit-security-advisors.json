@@ -1,0 +1,157 @@
+{
+  "checkedAt": "2026-10-06T10:51:33.724Z",
+  "lints": [
+    {
+      "name": "rls_enabled_no_policy",
+      "title": "RLS Enabled No Policy",
+      "level": "INFO",
+      "facing": "EXTERNAL",
+      "categories": [
+        "SECURITY"
+      ],
+      "description": "Detects cases where row level security (RLS) has been enabled on a table but no RLS policies have been created.",
+      "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy",
+      "count": 13,
+      "findings": [
+        {
+          "detail": "Table \\`public.analytics_daily\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "analytics_daily",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        },
+        {
+          "detail": "Table \\`public.audit_logs\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "audit_logs",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        },
+        {
+          "detail": "Table \\`public.categories\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "categories",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        },
+        {
+          "detail": "Table \\`public.contact_mail_jobs\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "contact_mail_jobs",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        },
+        {
+          "detail": "Table \\`public.contact_requests\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "contact_requests",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        },
+        {
+          "detail": "Table \\`public.media_assets\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "media_assets",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        },
+        {
+          "detail": "Table \\`public.post_revisions\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "post_revisions",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        },
+        {
+          "detail": "Table \\`public.posts\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "posts",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        },
+        {
+          "detail": "Table \\`public.posts_removed_backup\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "posts_removed_backup",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        },
+        {
+          "detail": "Table \\`public.site_pages\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "site_pages",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        },
+        {
+          "detail": "Table \\`public.site_settings\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "site_settings",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        },
+        {
+          "detail": "Table \\`public.temp_mail_client_limits\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "temp_mail_client_limits",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        },
+        {
+          "detail": "Table \\`public.tools\\` has RLS enabled, but no policies exist",
+          "metadata": {
+            "name": "tools",
+            "type": "table",
+            "schema": "public"
+          },
+          "observed_at": "2026-10-06T10:50:57.908Z"
+        }
+      ]
+    },
+    {
+      "name": "auth_leaked_password_protection",
+      "title": "Leaked Password Protection Disabled",
+      "level": "WARN",
+      "facing": "EXTERNAL",
+      "categories": [
+        "SECURITY"
+      ],
+      "description": "Leaked password protection is currently disabled.",
+      "remediation": "https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection",
+      "count": 1,
+      "findings": [
+        {
+          "detail": "Supabase Auth prevents the use of compromised passwords by checking against HaveIBeenPwned.org. Enable this feature to enhance security.",
+          "metadata": {
+            "type": "auth",
+            "entity": "Auth"
+          }
+        }
+      ]
+    }
+  ]
+}

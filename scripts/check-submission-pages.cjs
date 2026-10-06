@@ -13,7 +13,7 @@ const { renderArticle } = require('../backend/src/lib/articles');
 const { renderBlog } = require('../backend/src/lib/blog');
 const library = require('../content/editorial/published-library.json');
 const baselines = require('../docs/audits/editorial-cleanup-database.json');
-const directory = 'deployment/page-review-2026-10-05';
+const directory = process.argv.find(arg => arg.startsWith('--folder='))?.slice('--folder='.length) || 'deployment/page-review-2026-10-05';
 const live = process.argv[2] === '--live' ? new URL(process.argv[3]).origin : null;
 const toolsOnly = process.argv.includes('--tools-only');
 const onlyRoutes = process.argv.find(arg => arg.startsWith('--routes='))?.slice('--routes='.length).split(',');
@@ -100,8 +100,9 @@ async function fixtures() {
     await context.route('**/qrcode.min.js', route => route.fulfill({ path: qrFile, contentType: 'text/javascript' }));
     let paths = ['/', '/about.html', '/contact.html', '/privacy-policy.html', '/cookie-policy.html', '/terms-of-service.html', '/disclaimer.html', '/tools/index.html', '/blog/index.html',
       ...fs.readdirSync('frontend/categories').filter(file => file.endsWith('.html')).map(file => `/categories/${file}`),
-      ...Object.keys(require('./site-generator/tool-examples.json')).map(slug => `/tools/${slug}.html`), ...library.map(guide => `/journal/${guide.slug}`)];
-    assert.equal(paths.length, 39);
+      ...Object.keys(require('./site-generator/tool-examples.json')).map(slug => `/tools/${slug}.html`), ...library.map(guide => `/journal/${guide.slug}`),
+      ...require('../content/editorial/experiments.json').map(article => `/blog/${article.slug}.html`)];
+    assert.equal(paths.length, 43);
     if (onlyRoutes) {
       assert.ok(onlyRoutes.every(route => paths.includes(route)), 'Requested route must be in the reviewed public catalog');
       paths = paths.filter(route => onlyRoutes.includes(route));
@@ -118,7 +119,7 @@ async function fixtures() {
           page.on('pageerror', onError);
           const response = await page.goto(origin + route, { waitUntil: 'domcontentloaded' });
           if (route === '/' || route.startsWith('/journal/')) await page.locator('#suggested-guides .tool-link').first().waitFor();
-          for (const width of [320, 1440]) {
+          for (const width of [320, 390, 1440]) {
             await page.setViewportSize({ width, height: 900 });
             await page.evaluate(() => document.querySelectorAll('details.faq-item').forEach(node => { node.open = true; }));
             await page.addScriptTag({ content: axe.source });
@@ -135,7 +136,7 @@ async function fixtures() {
               incomplete: result.incomplete.map(item => ({ id: item.id, nodes: item.nodes.length })) });
           }
           page.off('pageerror', onError);
-          if (report.pages.length % 26 === 0) console.log(`Checked ${report.pages.length / 2} of 39 public pages.`);
+          if (report.pages.length % 30 === 0) console.log(`Checked ${report.pages.length / 3} of ${paths.length} public pages.`);
         }
       } finally { await page.close(); }
     }));

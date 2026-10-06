@@ -6,7 +6,7 @@ declare(strict_types=1);
  *
  * @return array{body:string|false,status:int,contentType:string,location:string}
  */
-function fetch_public_backend(string $url, string $accept, string $origin, int $timeoutSeconds = 20): array
+function fetch_public_backend_once(string $url, string $accept, string $origin, int $timeoutSeconds): array
 {
     $body = false;
     $status = 502;
@@ -56,4 +56,16 @@ function fetch_public_backend(string $url, string $accept, string $origin, int $
     }
 
     return ['body' => $body, 'status' => $status, 'contentType' => $contentType, 'location' => $location];
+}
+
+/** Retry one transient public GET failure within a single bounded deadline. */
+function fetch_public_backend(string $url, string $accept, string $origin, int $timeoutSeconds = 20): array
+{
+    $started = microtime(true);
+    $response = fetch_public_backend_once($url, $accept, $origin, min(10, $timeoutSeconds));
+    if ($response['body'] !== false && !in_array($response['status'], [0, 502, 503, 504], true)) {
+        return $response;
+    }
+    $remaining = (int) floor($timeoutSeconds - (microtime(true) - $started));
+    return $remaining > 0 ? fetch_public_backend_once($url, $accept, $origin, $remaining) : $response;
 }

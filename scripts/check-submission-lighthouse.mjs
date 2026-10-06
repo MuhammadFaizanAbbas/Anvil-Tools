@@ -5,13 +5,19 @@ import { launch } from '../deployment/lighthouse-review/node_modules/chrome-laun
 
 const origin = new URL(process.argv[2] || 'https://anviltools.vercel.app').origin;
 const routeArgument = process.argv.find(argument => argument.startsWith('--routes='));
-const routes = routeArgument ? routeArgument.slice('--routes='.length).split(',') : ['/', '/tools/word-counter.html', '/tools/background-remover.html', '/journal/best-practices-for-background-removal-when-working-with-design'];
+const allRoutes = ['/', '/about.html', '/contact.html', '/privacy-policy.html', '/cookie-policy.html', '/terms-of-service.html', '/disclaimer.html', '/tools/index.html', '/blog/index.html',
+  ...fs.readdirSync('frontend/categories').filter(file => file.endsWith('.html')).map(file => '/categories/' + file),
+  ...Object.keys(JSON.parse(fs.readFileSync('scripts/site-generator/tool-examples.json', 'utf8'))).map(slug => '/tools/' + slug + '.html'),
+  ...JSON.parse(fs.readFileSync('content/editorial/published-library.json', 'utf8')).map(guide => '/journal/' + guide.slug),
+  ...JSON.parse(fs.readFileSync('content/editorial/experiments.json', 'utf8')).map(article => '/blog/' + article.slug + '.html')];
+const routes = process.argv.includes('--all') ? allRoutes : routeArgument ? routeArgument.slice('--routes='.length).split(',') : ['/', '/tools/word-counter.html', '/tools/background-remover.html', '/journal/best-practices-for-background-removal-when-working-with-design'];
 const folder = process.argv.find(argument => argument.startsWith('--folder='))?.slice('--folder='.length) || 'deployment/page-review-2026-10-05/lighthouse';
 const reportPath = process.argv.find(argument => argument.startsWith('--report='))?.slice('--report='.length) || `docs/audits/submission-lighthouse-${new URL(origin).hostname}.json`;
 const browserPath = process.argv.includes('--chrome') ? 'C:/Program Files/Google/Chrome/Application/chrome.exe' : 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
 fs.mkdirSync(folder, { recursive: true });
 const summary = { checkedAt: new Date().toISOString(), origin, environment: `Lighthouse 12.8.2, ${process.argv.includes('--chrome') ? 'Chrome' : 'Edge'} headless, default mobile simulation`,
-  limits: ['Lab scores vary with network, machine load, and tool versions.', 'Representative pages only; not an all-page performance or field Core Web Vitals result.', 'Tool processing after user input, screen readers, and future ad layouts are outside this navigation measurement.', 'No score is an AdSense approval score.'], pages: [] };
+  scope: process.argv.includes('--all') ? 'All 43 public catalog pages' : 'Selected pages',
+  limits: ['Lab scores vary with network, machine load, and tool versions.', 'Navigation lab measurements are not field Core Web Vitals or physical-device results.', 'Tool processing after user input, screen readers, and future ad layouts are outside this navigation measurement.', 'No score is an AdSense approval score.'], pages: [] };
 
 for (let index = 0; index < routes.length; index++) {
   const route = routes[index];
@@ -20,6 +26,7 @@ for (let index = 0; index < routes.length; index++) {
     chrome = await launch({ chromePath: browserPath, chromeFlags: ['--headless', '--disable-gpu'] });
     const result = await lighthouse(origin + route, { port: chrome.port, logLevel: 'error', output: ['html', 'json'], onlyCategories: ['performance', 'accessibility', 'best-practices', 'seo'] });
     const lhr = result.lhr;
+    if (lhr.runtimeError) process.exitCode = 1;
     fs.writeFileSync(`${folder}/${new URL(origin).hostname}-${index}.html`, result.report[0]);
     fs.writeFileSync(`${folder}/${new URL(origin).hostname}-${index}.json`, result.report[1]);
     const failed = Object.values(lhr.audits).filter(audit => audit.score !== null && audit.score < 1);

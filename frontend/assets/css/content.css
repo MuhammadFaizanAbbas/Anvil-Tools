@@ -56,6 +56,7 @@
 .article-toc ol { columns:2 280px; padding-left:24px; }
 .article-toc li { break-inside:avoid; padding:3px 0; }
 .article-toc a,.article-content a { text-decoration:underline; text-underline-offset:3px; }
+.experiments-library p a { text-decoration:underline; text-underline-offset:3px; }
 .article-content :is(h2,h3,h4,h5,h6) { scroll-margin-top:100px; }
 .article-content pre { padding:20px; background:#14263d; color:#edf4ff; border-radius:12px; line-height:1.65; }
 .article-content code { overflow-wrap:anywhere; font-size:.9em; }

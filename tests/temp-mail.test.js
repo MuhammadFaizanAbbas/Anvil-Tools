@@ -40,6 +40,15 @@ test('resuming inbox restores address, and forgetting invalidates the local capa
  const r=await originalFetch(base+'/messages?cap='+session.capability);assert.equal(r.status,200);assert.equal((await r.json()).address,session.address);
  const d=await originalFetch(base+'/delete',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({cap:session.capability})});assert.equal(d.status,200);assert.equal(deleted,true);
 });
+
+test('inbox capability can travel in a header instead of a logged URL',async()=>{
+ failure='';
+ const response=await originalFetch(base+'/messages',{headers:{'X-Inbox-Capability':session.capability}});
+ assert.equal(response.status,200);assert.equal((await response.json()).address,session.address);
+ assert.equal((await originalFetch(base+'/messages',{headers:{'X-Inbox-Capability':'invalid'}})).status,404);
+ const preflight=await originalFetch(base+'/messages',{method:'OPTIONS',headers:{Origin:'https://nevco.online','Access-Control-Request-Headers':'X-Inbox-Capability'}});
+ assert.equal(preflight.status,204);assert.match(preflight.headers.get('access-control-allow-headers'),/X-Inbox-Capability/);
+});
 test('missing new limiter uses the production limiter while database failures stay closed',async()=>{
  failure='legacy';rpcCalls=[];
  assert.equal((await originalFetch(base+'/create',{method:'POST'})).status,200);

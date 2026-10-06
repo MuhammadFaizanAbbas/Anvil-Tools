@@ -1,0 +1,175 @@
+{
+  "bucket": {
+    "id": "editorial-media",
+    "public": false
+  },
+  "tables": [
+    {
+      "rls": true,
+      "name": "posts_removed_backup",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "profiles",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "tools",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "categories",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "blog_posts",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "contact_messages",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "analytics_events",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "consent_stats",
+      "schema": "legacy_archive",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "temp_mail_rate_limits",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "temp_mail_sessions",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "temp_mail_client_limits",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "contact_requests",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "contact_mail_jobs",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "tools",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "categories",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "post_revisions",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "audit_logs",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "site_settings",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "site_pages",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "analytics_daily",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "profiles",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": true
+    },
+    {
+      "rls": true,
+      "name": "media_assets",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    },
+    {
+      "rls": true,
+      "name": "posts",
+      "schema": "public",
+      "anon_select": false,
+      "authenticated_select": false
+    }
+  ],
+  "profile_policy": "(id = ( SELECT auth.uid() AS uid))",
+  "backup_select_anon": false,
+  "backup_truncate_anon": false,
+  "backup_select_authenticated": false,
+  "backup_truncate_authenticated": false,
+  "checkedAt": "2026-10-06T10:50:54.704Z"
+}

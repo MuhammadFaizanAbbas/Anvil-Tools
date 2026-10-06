@@ -9,6 +9,7 @@ const source = path.join(__dirname, 'site-generator');
 const allGuides = JSON.parse(fs.readFileSync(path.join(source, 'editorial-guides.json'), 'utf8'));
 const guides = allGuides.filter(guide => !Object.hasOwn(guide, 'retiredTo'));
 const publishedLibrary = JSON.parse(fs.readFileSync(path.join(root, 'content/editorial/published-library.json'), 'utf8'));
+const experiments = JSON.parse(fs.readFileSync(path.join(root, 'content/editorial/experiments.json'), 'utf8'));
 for (const guide of allGuides.filter(guide => Object.hasOwn(guide, 'retiredTo'))) {
   const file = path.join(frontend, 'blog', `${guide.slug}.html`);
   // Authored sources remain in site-generator/editorial; retired pages are not public.
@@ -21,6 +22,15 @@ const bySlug = new Map(guides.map(guide => [guide.slug, guide]));
 function writeChanged(file, content) {
   if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== content) fs.writeFileSync(file, content);
 }
+for (const experiment of experiments) {
+  const body = fs.readFileSync(path.join(root, 'content/editorial', experiment.bodyFile), 'utf8');
+  const html = renderArticle({ ...experiment, body, published_at: '2026-10-06T00:00:00+05:00' }, origin)
+    .replaceAll(`${origin}/journal/${experiment.slug}`, `${origin}/blog/${experiment.slug}.html`)
+    .replace(/<(?:link|a|script|img)\b[^>]*>/g, tag => tag.includes('rel="canonical"') ? tag : tag.replaceAll(origin + '/', '/'));
+  writeChanged(path.join(frontend, 'blog', `${experiment.slug}.html`), html);
+}
+const experimentCards = experiments.map(item => `<article class="tool-card"><img class="guide-cover" src="${item.cover_path}" alt="${escape(item.cover_alt)}" loading="lazy"><h3><a href="/blog/${item.slug}.html">${escape(item.title)}</a></h3><p>${escape(item.excerpt)}</p><a class="tool-link" href="/blog/${item.slug}.html">Read experiment &#8594;</a></article>`).join('\n');
+const experimentLibrary = `<!-- tested-experiments --><section class="experiments-library" aria-labelledby="experiments-title"><h2 id="experiments-title">Tested tool experiments</h2><p>Actual tool runs with synthetic inputs, screenshots, observed results, and downloadable fixtures. See <a href="/about.html#editorial-testing">how examples are checked</a>.</p><div class="tool-grid">${experimentCards}</div></section><!-- /tested-experiments -->`;
 for (const guide of guides) {
   const body = fs.readFileSync(path.join(source, 'editorial', `${guide.slug}.html`), 'utf8');
   const related = guide.related.map(slug => {
@@ -53,7 +63,10 @@ for (const file of walk(frontend)) {
   const noScript = '<noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript>';
   if (!html.includes('<noscript><style>.public-site .nav-toggle')) html = html.replace('</head>', `${noScript}</head>`);
   html = html.replace(/<span class="current-year"><\/span>/g, `<span class="current-year">${new Date().getUTCFullYear()}</span>`);
-  if (file === path.join(frontend, 'blog', 'index.html')) html = html.replace(/<!-- editorial-library -->[\s\S]*?<!-- \/editorial-library -->/, library);
+  if (file === path.join(frontend, 'blog', 'index.html')) {
+    html = html.replace(/<!-- tested-experiments -->[\s\S]*?<!-- \/tested-experiments -->/, '');
+    html = html.replace(/<!-- editorial-library -->[\s\S]*?<!-- \/editorial-library -->/, experimentLibrary + library);
+  }
   const tool = path.basename(file, '.html');
   if (['pdf-merge', 'image-to-pdf'].includes(tool)) {
     html = html.replace(/(assets\/css\/tool-ux\.css)(?:\?[^" ]*)?"/g, '$1?v=20261005-pdf"')
@@ -76,6 +89,12 @@ for (const file of walk(frontend)) {
         : html.replace('</main>', `<div class="content-guide">${section}</div></main>`);
     }
   }
+  const experiment = experiments.find(item => item.tools.includes(tool));
+  if (path.dirname(file) === path.join(frontend, 'tools') && experiment) {
+    html = html.replace(/<!-- experiment-tool-link -->[\s\S]*?<!-- \/experiment-tool-link -->/, '');
+    const section = `<!-- experiment-tool-link --><section class="info-section"><h2>See the recorded experiment</h2><p><a href="/blog/${experiment.slug}.html">${escape(experiment.title)}</a></p><p>${escape(experiment.excerpt)}</p></section><!-- /experiment-tool-link -->`;
+    html = html.replace('</div><!-- /reading-surface -->', `${section}</div><!-- /reading-surface -->`);
+  }
   if (file === path.join(frontend, '404.html')) {
     // ErrorDocument keeps the missing URL in the browser, at any path depth.
     html = html.replace(/(href|src)="(?![a-z]+:|\/|#)([^"]+)"/gi, '$1="/$2"');
@@ -89,4 +108,4 @@ writeChanged(path.join(templateDirectory, 'blog.html'), fs.readFileSync(path.joi
   // The API also renders for cPanel hosts that upload assets separately. CSS
   // discovers fonts when available; avoid preloading files before that upload.
   .replace(/<!-- local-font-preload -->[\s\S]*?<!-- \/local-font-preload -->/, ''));
-console.log(`Built ${guides.length} static guides, tool links, and the server-rendered blog template.`);
+console.log(`Built ${guides.length} legacy static guides, ${experiments.length} tested experiments, tool links, and the server-rendered blog template.`);

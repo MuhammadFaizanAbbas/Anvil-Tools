@@ -1,0 +1,72 @@
+[
+  {
+    "id": "trailing-comma",
+    "input": "{\"a\":1,}",
+    "expected": null
+  },
+  {
+    "id": "single-quotes",
+    "input": "{'a':1}",
+    "expected": null
+  },
+  {
+    "id": "unquoted-key",
+    "input": "{a:1}",
+    "expected": null
+  },
+  {
+    "id": "comment",
+    "input": "{\"a\":1/* note */}",
+    "expected": null
+  },
+  {
+    "id": "unterminated-string",
+    "input": "{\"a\":\"unfinished}",
+    "expected": null
+  },
+  {
+    "id": "leading-zero",
+    "input": "{\"a\":01}",
+    "expected": null
+  },
+  {
+    "id": "nan",
+    "input": "{\"a\":NaN}",
+    "expected": null
+  },
+  {
+    "id": "undefined",
+    "input": "{\"a\":undefined}",
+    "expected": null
+  },
+  {
+    "id": "extra-brace",
+    "input": "{\"a\":1}}",
+    "expected": null
+  },
+  {
+    "id": "missing-colon",
+    "input": "{\"a\" 1}",
+    "expected": null
+  },
+  {
+    "id": "valid-nested",
+    "input": "{\"items\":[1,true,null],\"name\":\"café\"}",
+    "expected": "{\"items\":[1,true,null],\"name\":\"café\"}"
+  },
+  {
+    "id": "duplicate-key",
+    "input": "{\"role\":\"reader\",\"role\":\"editor\"}",
+    "expected": "{\"role\":\"editor\"}"
+  },
+  {
+    "id": "unsafe-integer",
+    "input": "{\"id\":9007199254740993}",
+    "expected": "{\"id\":9007199254740992}"
+  },
+  {
+    "id": "string-id",
+    "input": "{\"id\":\"9007199254740993\"}",
+    "expected": "{\"id\":\"9007199254740993\"}"
+  }
+]

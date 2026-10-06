@@ -117,7 +117,7 @@
 .published-article h1 { max-width:760px; margin:16px 0; font-size:clamp(34px,6vw,58px); line-height:1.08; letter-spacing:-.035em; }
 .article-header .lede { max-width:720px; margin:0; color:#506078; font-size:clamp(17px,2vw,20px); line-height:1.7; }
 .article-meta { margin:20px 0 0; color:#718097; font-size:14px; }
-.article-cover { display:block; width:calc(100% - clamp(32px,8vw,80px)); max-height:520px; margin:clamp(28px,5vw,48px) auto 0; object-fit:cover; border-radius:16px; border:1px solid #e0e6ef; }
+.article-cover { display:block; width:calc(100% - clamp(32px,8vw,80px)); height:auto; max-height:520px; margin:clamp(28px,5vw,48px) auto 0; object-fit:cover; border-radius:16px; border:1px solid #e0e6ef; }
 .article-content { max-width:720px; margin:0 auto; padding:clamp(32px,6vw,64px) clamp(24px,5vw,44px) 36px; color:#27364d; font-size:17px; line-height:1.85; }
 .article-content h2 { margin:42px 0 12px; color:#13233d; font-size:27px; line-height:1.25; letter-spacing:-.018em; }
 .article-content h3,.article-content h4 { margin:32px 0 10px; color:#182b48; line-height:1.35; }

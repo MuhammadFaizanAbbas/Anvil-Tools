@@ -50,6 +50,7 @@ test('blog response includes escaped published cards, guides, and crawlable pagi
   assert.match(html, /href="\/journal\/article-0"/);
   assert.match(html, /&lt;script&gt;alert\(1\)&lt;\/script&gt;/);
   assert.doesNotMatch(html, /<script>alert|private-draft/);
+  assert.doesNotMatch(html, /Try again|id="blogsRetry"/);
   assert.match(html, /href="\/blog\/index.html\?page=2" rel="next"/);
   assert.doesNotMatch(html, /editorial-library|href="\/blog\/merge-pdfs-locally.html"/);
   assert.deepEqual(queries.at(-1).filters, [['status', 'published']]);
@@ -66,7 +67,7 @@ test('second blog page has its own canonical and links back; invalid and missing
   assert.match(html, /href="\/journal\/article-30"/);
   assert.doesNotMatch(html, /href="\/journal\/article-0"/);
   assert.match(html, /href="\/blog\/index.html" rel="prev"/);
-  assert.match(html, /id="blogsNext" hidden/);
+  assert.doesNotMatch(html, /id="blogsNext"/);
   assert.doesNotMatch(html, /href="\/blog\/index.html\?page=3"/);
   for (const page of ['0', '-1', '1.5', 'abc', '33335', '1&page=2']) assert.equal((await get(`?page=${page}`)).status, 400);
   const missing = await get('?page=3');
@@ -85,6 +86,7 @@ test('a database outage leaves the authored guides readable and allows a browser
     assert.match(html, /data-server-rendered="false"/);
     assert.match(html, /href="\/journal\/small-tools-that-save-developers-time"/);
     assert.match(html, /class="guide-cover"/);
+    assert.match(html, /id="blogsRetry" type="button">Try again/);
     assert.equal(response.headers.get('cache-control'), 'no-store');
   } finally { fail = false; }
 });
@@ -107,10 +109,10 @@ test('cPanel renderer escapes database content and preserves no-JS guide links a
   assert.doesNotMatch(html, /editorial-library|href="\/blog\/merge-pdfs-locally.html"/);
   for (const page of [1, 2]) {
     const lastPage = execFileSync(php, ['-r', code(page, false)], { encoding: 'utf8' });
-    assert.match(lastPage, /id="blogsNext" hidden/);
+    assert.doesNotMatch(lastPage, /id="blogsNext"|Try again/);
     assert.doesNotMatch(lastPage, /rel="next"|href="\/blog\/index.html\?page=3"/);
     if (page === 1) {
-      assert.match(lastPage, /id="blogsPrev" hidden/);
+      assert.doesNotMatch(lastPage, /id="blogsPrev"|id="blogPagination"|Page 1/);
       assert.doesNotMatch(lastPage, /rel="prev"|href="\/blog\/index.html\?page=1"/);
     }
   }

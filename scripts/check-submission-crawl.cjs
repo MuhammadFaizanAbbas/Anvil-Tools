@@ -23,8 +23,9 @@ async function concurrent(values, action) {
 (async () => {
   const paths = ['/', '/about.html', '/contact.html', '/privacy-policy.html', '/cookie-policy.html', '/terms-of-service.html', '/disclaimer.html', '/tools/index.html', '/blog/index.html',
     ...fs.readdirSync('frontend/categories').filter(file => file.endsWith('.html')).map(file => '/categories/' + file),
-    ...Object.keys(examples).map(slug => '/tools/' + slug + '.html'), ...library.map(guide => '/journal/' + guide.slug)];
-  assert.equal(paths.length, 39);
+    ...Object.keys(examples).map(slug => '/tools/' + slug + '.html'), ...library.map(guide => '/journal/' + guide.slug),
+    ...require('../content/editorial/experiments.json').map(article => `/blog/${article.slug}.html`)];
+  assert.equal(paths.length, 43);
   const documents = new Map(), links = new Set(), assets = new Set();
   await concurrent(paths, async route => {
     try {
@@ -105,7 +106,8 @@ async function concurrent(values, action) {
   report.directiveFailures = report.directives.filter(check => check.wrongOrigin?.length || (check.urls && !check.urls.length) || check.blocksPublicPages || (check.route === '/robots.txt' && !check.sitemap));
   report.releasePending = report.pages.filter(page => !page.sharedLoaderVersioned || (page.route.startsWith('/tools/') && page.route !== '/tools/index.html' && !page.workedExample)).map(page => page.route);
   report.unpublishedGuides = report.articles.filter(guide => !guide.matchesPreparedBody).map(guide => guide.slug);
-  fs.writeFileSync('docs/audits/submission-crawl-' + new URL(origin).hostname + '.json', JSON.stringify(report, null, 2) + '\n');
+  const reportPath = process.argv.find(arg => arg.startsWith('--report='))?.slice('--report='.length) || 'docs/audits/submission-crawl-' + new URL(origin).hostname + '.json';
+  fs.writeFileSync(reportPath, JSON.stringify(report, null, 2) + '\n');
   console.log(JSON.stringify({ origin, pages: report.pages.length, links: report.links.length, assets: report.assets.length, failedHttp: report.failedHttp.length,
     fragmentFailures: report.fragmentFailures.length, wrongCanonicals: report.pages.filter(page => !page.canonicalMatches).length, metadataFailures: report.metadataFailures.length,
     duplicateMetadata: report.duplicateMetadata.length, directiveFailures: report.directiveFailures.length,

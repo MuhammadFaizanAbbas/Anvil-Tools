@@ -1,0 +1,228 @@
+{
+  "checkedAt": "2026-10-06T10:44:27.821Z",
+  "scope": "local release; synthetic API responses",
+  "checks": [
+    {
+      "name": "Successful one-page blog HTML omits retry and pagination; four experiments are crawlable",
+      "passed": true
+    },
+    {
+      "name": "PHP renderer only emits retry after a real failure",
+      "passed": true
+    },
+    {
+      "name": "Successful recovery removes the retry button from the DOM",
+      "passed": true
+    },
+    {
+      "name": "Normal Next link loads a fresh page with correct canonical and five remaining articles",
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/index.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/about.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/privacy-policy.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/json-formatter-edge-cases.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/tools/json-formatter.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/tools/csv-to-json.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/tools/word-counter.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/tools/image-to-pdf.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/index.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/about.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/privacy-policy.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/json-formatter-edge-cases.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/tools/json-formatter.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/tools/csv-to-json.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/tools/word-counter.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/tools/image-to-pdf.html",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/index.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/about.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/privacy-policy.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/json-formatter-edge-cases.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/tools/json-formatter.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/tools/csv-to-json.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/tools/word-counter.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "name": "Responsive and axe check",
+      "route": "/tools/image-to-pdf.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "name": "All four experiments remain readable and navigable without JavaScript",
+      "passed": true
+    },
+    {
+      "name": "Every local asset and fixture linked from the four experiments responds successfully",
+      "passed": true
+    }
+  ]
+}

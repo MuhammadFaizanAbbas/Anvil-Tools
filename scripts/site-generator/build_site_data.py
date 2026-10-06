@@ -115,7 +115,7 @@ add_tool(
       </div>
       <p class="status-msg" id="pm-status"></p>
     ''',
-    extra_head='<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>',
+    extra_head='<script defer src="/assets/vendor/tool-libraries/pdf-lib-1.17.1.min.js"></script>',
     tool_js="pdf-merge.js",
     intro="Add two or more PDF files and they'll be stitched together into one document, in the order shown in the list. Everything happens in your browser, so your files are never uploaded to a server.",
     how_it_works=[
@@ -152,7 +152,7 @@ add_tool(
       </div>
       <p class="status-msg" id="ip-status"></p>
     ''',
-    extra_head='<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>',
+    extra_head='<script defer src="/assets/vendor/tool-libraries/pdf-lib-1.17.1.min.js"></script>',
     tool_js="image-to-pdf.js",
     intro="Select one or more photos or scans and this tool lays each one out on its own page of a new PDF, in the order you add them. Nothing is uploaded; the conversion happens on your device.",
     how_it_works=[
@@ -189,7 +189,7 @@ add_tool(
       <p class="status-msg" id="qr-status"></p>
       <div class="qr-preview" id="qr-canvas-wrap"></div>
     ''',
-    extra_head='<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>',
+    extra_head='<script defer src="/assets/vendor/tool-libraries/qrcode-1.0.0.min.js"></script>',
     tool_js="qr-code-generator.js",
     intro="Paste in a web address, a piece of text, or contact details, and get back a QR code that any phone camera can scan. The code is generated entirely in your browser and can be downloaded straight away as a PNG image.",
     how_it_works=[

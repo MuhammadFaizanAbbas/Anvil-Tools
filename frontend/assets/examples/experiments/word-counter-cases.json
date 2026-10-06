@@ -1,0 +1,146 @@
+[
+  {
+    "id": "empty",
+    "input": "",
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "ordinary",
+    "input": "Hello world.",
+    "expected": [
+      2,
+      12,
+      11,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "emoji",
+    "input": "🙂 🙂",
+    "expected": [
+      2,
+      5,
+      4,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "family-emoji",
+    "input": "👨‍👩‍👧‍👦",
+    "expected": [
+      1,
+      11,
+      11,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "composed-accent",
+    "input": "café",
+    "expected": [
+      1,
+      4,
+      4,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "combining-accent",
+    "input": "café",
+    "expected": [
+      1,
+      5,
+      5,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "chinese",
+    "input": "你好世界",
+    "expected": [
+      1,
+      4,
+      4,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "zero-width-space",
+    "input": "one​two",
+    "expected": [
+      1,
+      7,
+      7,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "nonbreaking-space",
+    "input": "one two",
+    "expected": [
+      2,
+      7,
+      6,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "hyphen",
+    "input": "well-known fact",
+    "expected": [
+      2,
+      15,
+      14,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "punctuation",
+    "input": "Hi...there?",
+    "expected": [
+      1,
+      11,
+      11,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "paragraphs",
+    "input": "One.\n\nTwo!",
+    "expected": [
+      2,
+      10,
+      8,
+      2,
+      2,
+      1
+    ]
+  }
+]

@@ -3,10 +3,11 @@
   const cards = document.getElementById('publishedGuideCards');
   const status = document.getElementById(article ? 'articleStatus' : 'blogsStatus');
   const pagination = document.getElementById('blogPagination');
-  const previous = document.getElementById('blogsPrev');
-  const next = document.getElementById('blogsNext');
-  const pageLabel = document.getElementById('blogsPage');
-  const retry = document.getElementById('blogsRetry');
+  let previous = document.getElementById('blogsPrev');
+  let next = document.getElementById('blogsNext');
+  let pageLabel = document.getElementById('blogsPage');
+  let retry = document.getElementById('blogsRetry');
+  const retrySlot = document.getElementById('blogRetrySlot');
   if (!article && !cards) return;
   const siteBase = (window.ANVIL_CONFIG?.SITE_URL || location.origin || '').replace(/\/$/, '');
 
@@ -23,7 +24,22 @@
   const initialPage = Number(new URLSearchParams(location.search).get('page') || 1);
   let page = Number.isInteger(initialPage) && initialPage > 0 && initialPage <= 33334 ? initialPage - 1 : 0;
   const serverRendered = cards?.getAttribute?.('data-server-rendered') === 'true';
-  let loading = false;
+
+  function clearRetry() {
+    if (retry) retry.remove();
+    retry = null;
+  }
+
+  function showRetry() {
+    if (!retry && retrySlot) {
+      retry = document.createElement('button');
+      retry.id = 'blogsRetry'; retry.className = 'btn'; retry.type = 'button';
+      retry.textContent = 'Try again';
+      retrySlot.append(retry);
+      retry.addEventListener('click', () => load());
+    }
+    if (retry) { retry.hidden = false; retry.disabled = false; }
+  }
 
   function renderBlogPage(posts, total) {
     const fragment = document.createDocumentFragment();
@@ -40,6 +56,12 @@
     if (fallback) fallback.hidden = posts.length > 0;
     cards.removeAttribute('aria-busy');
     const pages = Math.max(1, Math.ceil(total / limit));
+    if (pagination && total > limit && !pageLabel) {
+      previous = document.createElement('a'); previous.id = 'blogsPrev'; previous.className = 'btn'; previous.textContent = 'Previous'; previous.rel = 'prev';
+      pageLabel = document.createElement('span'); pageLabel.id = 'blogsPage';
+      next = document.createElement('a'); next.id = 'blogsNext'; next.className = 'btn'; next.textContent = 'Next'; next.rel = 'next';
+      pagination.append(previous, pageLabel, next);
+    }
     if (pagination) pagination.hidden = total <= limit;
     if (pageLabel) pageLabel.textContent = `Page ${page + 1} of ${pages} · ${total} blog${total === 1 ? '' : 's'}`;
     if (previous) { previous.disabled = page === 0; previous.hidden = page === 0; if (page > 0) previous.href = `/blog/index.html${page > 1 ? `?page=${page}` : ''}`; else previous.removeAttribute('href'); }
@@ -48,8 +70,7 @@
   }
 
   async function load(allowPageRecovery = true) {
-    loading = true;
-    if (retry) { retry.hidden = true; retry.disabled = true; }
+    clearRetry();
     if (status) status.textContent = article ? 'Loading article…' : 'Updating articles…';
     if (cards) {
       cards.setAttribute('aria-busy', 'true');
@@ -90,15 +111,13 @@
         ? 'Local API unavailable. Start npm run dev:api and npm run dev:frontend, then try again.'
         : error.message;
       if (article) article.querySelector('h1').textContent = 'Article unavailable';
-      if (pagination) pagination.hidden = false;
-      if (retry) { retry.hidden = false; retry.disabled = false; }
-    } finally {
-      loading = false;
+      if (pagination) pagination.hidden = true;
+      showRetry();
     }
   }
 
-  if (previous) previous.addEventListener('click', event => { event?.preventDefault(); if (!loading && page > 0) { page--; return load(); } });
-  if (next) next.addEventListener('click', event => { event?.preventDefault(); if (!loading && !next.disabled) { page++; return load(); } });
+  // Numbered pages use normal links so history, canonical metadata, and crawlers
+  // all receive the server-rendered document for that page.
   if (retry) retry.addEventListener('click', () => load());
   if (!serverRendered || article) await load();
 })();

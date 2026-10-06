@@ -1,0 +1,216 @@
+{
+  "checkedAt": "2026-10-06T07:14:44.654Z",
+  "state": "before-deployment-observation",
+  "redirects": [
+    {
+      "start": "http://nevco.online/",
+      "steps": [
+        {
+          "url": "http://nevco.online/",
+          "status": 301,
+          "location": "https://nevco.online/"
+        },
+        {
+          "url": "https://nevco.online/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "canonical": true,
+      "permanent": true
+    },
+    {
+      "start": "http://nevco.online/tools/json-formatter.html?review-check=1",
+      "steps": [
+        {
+          "url": "http://nevco.online/tools/json-formatter.html?review-check=1",
+          "status": 301,
+          "location": "https://nevco.online/tools/json-formatter.html?review-check=1"
+        },
+        {
+          "url": "https://nevco.online/tools/json-formatter.html?review-check=1",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "canonical": true,
+      "permanent": true
+    },
+    {
+      "start": "http://www.nevco.online/",
+      "steps": [
+        {
+          "url": "http://www.nevco.online/",
+          "status": 301,
+          "location": "https://www.nevco.online/"
+        },
+        {
+          "url": "https://www.nevco.online/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "canonical": false,
+      "permanent": true
+    },
+    {
+      "start": "http://www.nevco.online/tools/json-formatter.html?review-check=1",
+      "steps": [
+        {
+          "url": "http://www.nevco.online/tools/json-formatter.html?review-check=1",
+          "status": 301,
+          "location": "https://www.nevco.online/tools/json-formatter.html?review-check=1"
+        },
+        {
+          "url": "https://www.nevco.online/tools/json-formatter.html?review-check=1",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "canonical": false,
+      "permanent": true
+    },
+    {
+      "start": "https://www.nevco.online/",
+      "steps": [
+        {
+          "url": "https://www.nevco.online/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "canonical": false,
+      "permanent": true
+    },
+    {
+      "start": "https://www.nevco.online/tools/json-formatter.html?review-check=1",
+      "steps": [
+        {
+          "url": "https://www.nevco.online/tools/json-formatter.html?review-check=1",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "canonical": false,
+      "permanent": true
+    },
+    {
+      "start": "https://nevco.online/",
+      "steps": [
+        {
+          "url": "https://nevco.online/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "canonical": true,
+      "permanent": true
+    },
+    {
+      "start": "https://nevco.online/tools/json-formatter.html?review-check=1",
+      "steps": [
+        {
+          "url": "https://nevco.online/tools/json-formatter.html?review-check=1",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "canonical": true,
+      "permanent": true
+    }
+  ],
+  "pages": [
+    {
+      "route": "/robots.txt",
+      "status": 200,
+      "type": "text/plain; charset=UTF-8"
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "type": "application/xml; charset=UTF-8",
+      "wrongHost": []
+    },
+    {
+      "route": "/sitemap-index.xml",
+      "status": 200,
+      "type": "application/xml; charset=UTF-8",
+      "wrongHost": []
+    },
+    {
+      "route": "/journal-sitemap.xml",
+      "status": 200,
+      "type": "application/xml; charset=UTF-8",
+      "wrongHost": []
+    },
+    {
+      "route": "/blog/index.html",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "retryInHtml": true,
+      "unnecessaryPagination": true,
+      "experimentLinks": 0
+    },
+    {
+      "route": "/privacy-policy.html",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "adsSettings": false
+    },
+    {
+      "route": "/about.html",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "editorialDisclosure": false
+    },
+    {
+      "route": "/blog/json-formatter-edge-cases.html",
+      "status": 404,
+      "type": "text/html"
+    },
+    {
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "status": 404,
+      "type": "text/html"
+    },
+    {
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "status": 404,
+      "type": "text/html"
+    },
+    {
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "status": 404,
+      "type": "text/html"
+    },
+    {
+      "route": "/assets/examples/experiments/results.json",
+      "status": 404,
+      "type": "text/html"
+    },
+    {
+      "route": "/assets/examples/experiments/pdf-inspection.json",
+      "status": 404,
+      "type": "text/html"
+    }
+  ],
+  "problems": [
+    "Noncanonical or temporary redirect chain: http://www.nevco.online/",
+    "Noncanonical or temporary redirect chain: http://www.nevco.online/tools/json-formatter.html?review-check=1",
+    "Noncanonical or temporary redirect chain: https://www.nevco.online/",
+    "Noncanonical or temporary redirect chain: https://www.nevco.online/tools/json-formatter.html?review-check=1",
+    "/blog/word-counter-unicode-experiment.html returned 404",
+    "/assets/examples/experiments/pdf-inspection.json returned 404",
+    "/blog/csv-quotes-unicode-and-blank-fields.html returned 404",
+    "/blog/json-formatter-edge-cases.html returned 404",
+    "Explicit Ads Settings privacy link absent",
+    "Editorial disclosure absent",
+    "/assets/examples/experiments/results.json returned 404",
+    "/blog/jpeg-png-webp-to-pdf-test.html returned 404",
+    "Blog release absent or successful HTML includes unnecessary controls"
+  ],
+  "temporaryEmail": {
+    "status": 200,
+    "words": 1798
+  }
+}

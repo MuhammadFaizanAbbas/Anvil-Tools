@@ -1,0 +1,333 @@
+{
+  "checkedAt": "2026-10-06T10:49:16.586Z",
+  "scope": "local prepared release",
+  "axeVersion": "4.13.0",
+  "pages": [
+    {
+      "route": "/about.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "About | Anvil Tools",
+      "description": "About Anvil Tools and how our tools work.",
+      "canonical": "https://anviltools.vercel.app/about.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/about.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "About | Anvil Tools",
+      "description": "About Anvil Tools and how our tools work.",
+      "canonical": "https://anviltools.vercel.app/about.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/about.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "About | Anvil Tools",
+      "description": "About Anvil Tools and how our tools work.",
+      "canonical": "https://anviltools.vercel.app/about.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/privacy-policy.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Privacy policy | Anvil Tools",
+      "description": "How Anvil Tools handles your data.",
+      "canonical": "https://anviltools.vercel.app/privacy-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/privacy-policy.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Privacy policy | Anvil Tools",
+      "description": "How Anvil Tools handles your data.",
+      "canonical": "https://anviltools.vercel.app/privacy-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/privacy-policy.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Privacy policy | Anvil Tools",
+      "description": "How Anvil Tools handles your data.",
+      "canonical": "https://anviltools.vercel.app/privacy-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Image to PDF Converter | Anvil Tools",
+      "description": "Anvil Tools: Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.",
+      "canonical": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Image to PDF Converter | Anvil Tools",
+      "description": "Anvil Tools: Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.",
+      "canonical": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Image to PDF Converter | Anvil Tools",
+      "description": "Anvil Tools: Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.",
+      "canonical": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF Merge | Anvil Tools",
+      "description": "Anvil Tools: Combine multiple PDF files into a single document in the order you choose.",
+      "canonical": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF Merge | Anvil Tools",
+      "description": "Anvil Tools: Combine multiple PDF files into a single document in the order you choose.",
+      "canonical": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF Merge | Anvil Tools",
+      "description": "Anvil Tools: Combine multiple PDF files into a single document in the order you choose.",
+      "canonical": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "QR Code Generator | Anvil Tools",
+      "description": "Anvil Tools: Turn any link or short message into a scannable QR code you can download as an image.",
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "QR Code Generator | Anvil Tools",
+      "description": "Anvil Tools: Turn any link or short message into a scannable QR code you can download as an image.",
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "QR Code Generator | Anvil Tools",
+      "description": "Anvil Tools: Turn any link or short message into a scannable QR code you can download as an image.",
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Temporary Email Generator | Anvil Tools",
+      "description": "Anvil Tools: Get a disposable inbox in one click for signups you don't want landing in your real email.",
+      "canonical": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ]
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Temporary Email Generator | Anvil Tools",
+      "description": "Anvil Tools: Get a disposable inbox in one click for signups you don't want landing in your real email.",
+      "canonical": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ]
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Temporary Email Generator | Anvil Tools",
+      "description": "Anvil Tools: Get a disposable inbox in one click for signups you don't want landing in your real email.",
+      "canonical": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ]
+    }
+  ],
+  "functionality": [],
+  "interactiveStates": [],
+  "limits": [
+    "Automated axe checks and emulated widths do not establish complete accessibility.",
+    "Inbox layout and expiry checks use synthetic responses; no email or contact message is sent.",
+    "Physical-device, screen-reader, and future advertising checks remain separate."
+  ],
+  "externalFontRequests": [],
+  "failures": []
+}

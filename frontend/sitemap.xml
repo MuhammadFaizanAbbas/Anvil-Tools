@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://anviltools.vercel.app/</loc></url>
   <url><loc>https://anviltools.vercel.app/about.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/blog/csv-quotes-unicode-and-blank-fields.html</loc></url>
   <url><loc>https://anviltools.vercel.app/blog/index.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/blog/jpeg-png-webp-to-pdf-test.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/blog/json-formatter-edge-cases.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/blog/word-counter-unicode-experiment.html</loc></url>
   <url><loc>https://anviltools.vercel.app/categories/developer-tools.html</loc></url>
   <url><loc>https://anviltools.vercel.app/categories/email-tools.html</loc></url>
   <url><loc>https://anviltools.vercel.app/categories/generators.html</loc></url>

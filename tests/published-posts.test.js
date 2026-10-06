@@ -5,7 +5,8 @@ const vm = require('node:vm');
 
 class Element {
   constructor(tag) { this.tagName = tag; this.children = []; this.listeners = {}; this.style = {}; this.attributes = {}; this.hidden = false; this.disabled = false; }
-  append(...nodes) { for (const node of nodes) this.children.push(...(node.tagName === 'fragment' ? node.children : [node])); }
+  append(...nodes) { for (const node of nodes) for (const child of node.tagName === 'fragment' ? node.children : [node]) { child.parentElement = this; this.children.push(child); } }
+  remove() { if (this.parentElement) this.parentElement.children = this.parentElement.children.filter(node => node !== this); }
   replaceChildren(...nodes) { this.children = nodes.flatMap(node => node.tagName === 'fragment' ? node.children : [node]); }
   querySelector(selector) { return this.children.find(node => node.tagName === selector) || null; }
   addEventListener(event, handler) { this.listeners[event] = handler; }
@@ -21,8 +22,9 @@ class Element {
 async function setup(responses, article = false, { serverRendered = false, existingCard = null, search = '?slug=image-blog' } = {}) {
   const ids = article ? { publishedArticle: new Element('article'), articleStatus: new Element('p') } : {
     publishedGuideCards: new Element('div'), blogsStatus: new Element('p'), blogPagination: new Element('nav'),
-    blogsPrev: new Element('a'), blogsNext: new Element('a'), blogsPage: new Element('span'), blogsRetry: new Element('button')
+    blogsPrev: new Element('a'), blogsNext: new Element('a'), blogsPage: new Element('span'), blogRetrySlot: new Element('div')
   };
+  if (!article) Object.defineProperty(ids, 'blogsRetry', { get: () => ids.blogRetrySlot.children[0] });
   if (article) ids.publishedArticle.append(new Element('h1'), ids.articleStatus);
   if (!article && serverRendered) ids.publishedGuideCards.setAttribute('data-server-rendered', 'true');
   if (!article && existingCard) ids.publishedGuideCards.append(existingCard);
@@ -40,20 +42,22 @@ async function setup(responses, article = false, { serverRendered = false, exist
   return { ids, calls, urls };
 }
 
-test('blogs show 30 database posts and use numbered pagination without hardcoded cards', async () => {
+test('blogs show 30 posts and use ordinary numbered links with page-specific documents', async () => {
   const first = Array.from({ length: 30 }, (_, i) => ({ slug: `blog-${i}`, title: `Blog ${i}`, cover_image_id: `image-${i}`, cover_alt: `Cover ${i}` }));
-  const { ids, calls } = await setup([{ data: first, total: 31 }, { data: [{ slug: 'last-blog', title: 'Last blog' }], total: 31 }]);
+  const { ids, calls } = await setup([{ data: first, total: 31 }]);
   assert.equal(ids.publishedGuideCards.children.length, 30);
   assert.equal(ids.publishedGuideCards.children[0].children[0].src, 'https://site.example/journal-images/image-0');
   assert.equal(ids.blogsPage.textContent, 'Page 1 of 2 · 31 blogs');
   assert.equal(ids.blogsPrev.disabled, true); assert.equal(ids.blogsNext.disabled, false);
   assert.equal(ids.blogsPrev.getAttribute('href'), null);
   assert.equal(ids.blogsNext.href, '/blog/index.html?page=2');
-  await ids.blogsNext.listeners.click();
-  assert.deepEqual(calls, ['/api/public/posts?limit=30&offset=0', '/api/public/posts?limit=30&offset=30']);
-  assert.equal(ids.publishedGuideCards.children.length, 1); assert.equal(ids.blogsPrev.disabled, false); assert.equal(ids.blogsNext.disabled, true);
-  assert.equal(ids.blogsPrev.href, '/blog/index.html');
-  assert.equal(ids.blogsNext.getAttribute('href'), null);
+  assert.equal(ids.blogsNext.listeners.click, undefined);
+  assert.deepEqual(calls, ['/api/public/posts?limit=30&offset=0']);
+  const second = await setup([{ data: [{ slug: 'last-blog', title: 'Last blog' }], total: 31 }], false, { search: '?page=2' });
+  assert.deepEqual(second.calls, ['/api/public/posts?limit=30&offset=30']);
+  assert.equal(second.ids.publishedGuideCards.children.length, 1);
+  assert.equal(second.ids.blogsPrev.href, '/blog/index.html');
+  assert.equal(second.ids.blogsNext.getAttribute('href'), null);
 });
 
 test('failed blog requests show an error and retry the same page', async () => {
@@ -61,6 +65,7 @@ test('failed blog requests show an error and retry the same page', async () => {
   assert.equal(ids.blogsStatus.textContent, 'Connection failed'); assert.equal(ids.blogsRetry.hidden, false);
   await ids.blogsRetry.listeners.click();
   assert.equal(calls[0], calls[1]); assert.equal(ids.blogsStatus.textContent, 'No blogs published yet.');
+  assert.equal(ids.blogRetrySlot.children.length, 0);
 });
 
 test('legacy article page displays its cover and renders content as text', async () => {
@@ -75,6 +80,7 @@ test('server-rendered cards stay visible without an initial browser request', as
   const { ids, calls } = await setup([], false, { serverRendered: true, existingCard });
   assert.equal(calls.length, 0);
   assert.equal(ids.publishedGuideCards.children[0], existingCard);
+  assert.equal(ids.blogRetrySlot.children.length, 0);
 });
 
 test('a failed enhancement request preserves existing article cards', async () => {

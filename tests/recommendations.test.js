@@ -7,7 +7,7 @@ async function render({posts=[],fail=false}={}) {
   const element = () => ({children:[], append(...items){this.children.push(...items);},replaceChildren(...items){this.children=items;}});
   const section = element();
   const context = {
-    URLSearchParams, location:{pathname:'/journal/current',search:'',origin:'https://site.example'},
+    URLSearchParams, AbortSignal, location:{pathname:'/journal/current',search:'',origin:'https://site.example'},
     window:{ANVIL_CONFIG:{API_BASE_URL:'https://api.example',SITE_URL:'https://site.example'}},
     document:{getElementById:()=>section,querySelector:selector=>selector==='h1'?{textContent:'JSON developer guide'}:element(),createElement:element},
     fetch:async()=>{if(fail)throw Error('offline');return {ok:true,json:async()=>posts};}
