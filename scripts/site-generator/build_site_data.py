@@ -2,7 +2,7 @@
 from build_site import ICONS
 
 CATEGORIES = {
-    "email": {"label": "Email tools", "slug": "email-tools", "desc": "Tools for handling email addresses without exposing your real inbox."},
+    "email": {"label": "Email tools", "slug": "email-tools", "desc": "Email receipt for authorized testing and permitted non-sensitive messages."},
     "image": {"label": "Image tools", "slug": "image-tools", "desc": "Edit and convert images directly in your browser."},
     "pdf": {"label": "PDF tools", "slug": "pdf-tools", "desc": "Combine, build, and convert PDF files without installing software."},
     "developer": {"label": "Developer tools", "slug": "developer-tools", "desc": "Small utilities that save time during coding and testing."},
@@ -20,7 +20,7 @@ def add_tool(**kw):
 
 add_tool(
     slug="temp-mail", name="Temporary Email Generator", category="email",
-    short_desc="Get a disposable inbox in one click for signups you don't want landing in your real email.",
+    short_desc="Receive non-sensitive messages for authorized testing or where disposable addresses are permitted.",
     icon="mail",
     widget_html='''
       <h2>Your temporary inbox</h2>
@@ -35,7 +35,7 @@ add_tool(
     ''',
     extra_head="",
     tool_js="temp-mail.js",
-    intro="Use this when a site demands an email address before you can even look around, or when you're testing a signup flow and don't want ten confirmation emails cluttering your real inbox. The address below is live: anything sent to it shows up here automatically, and it disappears once you close the tab or generate a new one.",
+    intro="Use this only for authorized testing of an application you own or have permission to test, or for a non-sensitive message when the receiving service permits disposable addresses. It is not an account-recovery, anonymity, or identity-verification bypass service. Website inbox access expires after one hour; this does not establish deletion at the mail provider.",
     how_it_works=[
         "A random inbox address is created for you the moment the page loads, using the Guerrilla Mail service through our backend.",
         "The page checks for new mail every few seconds and lists messages as they arrive.",
@@ -43,14 +43,14 @@ add_tool(
         "Generating a new address abandons the old inbox permanently — there is no way to recover it later, so don't use this for anything you need long-term access to."
     ],
     use_cases=[
-        "Signing up for a newsletter, download, or free trial you only need once.",
-        "Testing what a signup or password-reset email looks like while building a website.",
-        "Keeping your real inbox free of promotional mail from a one-time purchase or forum account.",
+        "Receiving a non-sensitive one-time message when the receiving service permits disposable addresses.",
+        "Checking email templates and delivery using synthetic accounts in an application you own or have permission to test.",
+        "Checking authorized test messages without using customer data or real recovery credentials.",
     ],
     faqs=[
         ("Is this address private?", "The address is random and not tied to your identity, but treat it as public: anyone who guesses or is given the address can read what lands in it. Never use it for anything sensitive like banking, medical, or account-recovery email."),
         ("How long does the inbox last?", "The inbox stays active as long as this tab is open. Refreshing the page or clicking \"New address\" replaces it with a fresh one, and the old inbox and its messages become unreachable."),
-        ("Can I reply to emails from this address?", "This tool is built for receiving mail only, matching how most disposable-email use cases work: verifying a signup, not carrying on a conversation."),
+        ("Can I reply to emails from this address?", "This tool receives messages only. It does not send replies or provide lasting access to an account."),
         ("Will this work for every website?", "Most sites accept it, but some services specifically block known disposable-email domains. If a form rejects the address, that site is one of them."),
     ],
 )
@@ -365,8 +365,8 @@ add_tool(
 )
 
 add_tool(
-    slug="user-agent-generator", name="User Agent Generator", category="developer",
-    short_desc="Choose fixed browser and bot user-agent strings for parser and request-header tests.",
+    slug="user-agent-generator", name="User-Agent String Reference", heading="User-Agent String Reference for Authorized Testing", category="developer",
+    short_desc="Reference strings for parser and request-header tests in applications you own or are authorized to test.",
     icon="agent",
     widget_html='''
       <h2>Get a user-agent string</h2>
@@ -383,21 +383,21 @@ add_tool(
     ''',
     extra_head="",
     tool_js="user-agent-generator.js",
-    intro="A quick reference list of real-world user-agent strings for common browsers, devices, and crawlers, useful when testing how a site or script behaves under different clients. This is a reference and testing utility, not a way to disguise real traffic; most browsers' developer tools let you actually apply one of these strings to a test request.",
+    intro="Use these fixed browser and crawler strings as parser fixtures or request headers in an application you own or have permission to test. Copying a string does not change your browser, reproduce device behavior, or prove crawler identity. Respect access restrictions and verify actual crawler requests separately.",
     how_it_works=[
         "Pick a browser or device from the list, or click random pick.",
         "The matching user-agent string appears in the box below.",
-        "Copy it and paste it into your browser's device toolbar override, an API testing tool, or your own test scripts.",
+        "Copy a sample into a parser fixture or request-header test for an application you own or are authorized to test.",
     ],
     use_cases=[
-        "Testing that a responsive site correctly detects mobile versus desktop.",
-        "Checking how a page renders for a search engine crawler like Googlebot.",
-        "Reproducing a bug report that only happens on a specific browser or device.",
+        "Testing recognized and unfamiliar client strings in your own application. Use real devices to test responsive rendering.",
+        "Checking how your own parser handles a crawler sample without granting it special access.",
+        "Reproducing a reported parser issue with a fixed input string. Test real browsers separately when behavior matters.",
     ],
     faqs=[
-        ("Does picking a string change my real browser?", "No. This tool only displays reference text for you to copy. To actually change what your browser sends, use your browser's built-in developer tools or a testing proxy."),
-        ("Are these real, current user-agent strings?", "They're realistic examples of the current format used by each browser or crawler, meant for testing rather than as a live, constantly updated database."),
-        ("Can I use this to scrape sites while hiding my identity?", "This tool is meant for legitimate testing of your own sites and code. Using a fake user agent to evade a site's terms of service or access controls is a separate matter between you and that site's policies."),
+        ("Does picking a string change my real browser?", "No. Copying a sample only gives you text. It does not change your browser, emulate a device, or establish a verified crawler identity."),
+        ("What versions do the samples represent?", "The browser examples include fixed Chrome 126, Firefox 127, and Safari 17.5 strings. They are parser fixtures, not a current browser-version directory."),
+        ("What is an authorized use of these samples?", "Use them only to test applications you own or have permission to test. Do not use them to evade access restrictions, misrepresent crawler identity, or generate deceptive traffic."),
     ],
 )
 

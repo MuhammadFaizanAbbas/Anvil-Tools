@@ -1,0 +1,664 @@
+{
+  "checkedAt": "2026-10-06T20:19:43.808Z",
+  "scope": "Local release with real security headers; prepared guide versions; synthetic inbox, no email delivery",
+  "layouts": [
+    {
+      "route": "/",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/about.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/blog/index.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/blog/json-formatter-edge-cases.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/categories/email-tools.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/categories/generators.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/categories/image-tools.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/categories/pdf-tools.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/contact.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/cookie-policy.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/disclaimer.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/privacy-policy.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/terms-of-service.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/base64-tool.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/color-palette-generator.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/index.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/jwt-decoder.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/password-generator.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/text-diff-checker.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/unit-converter.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/unix-timestamp-converter.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/url-encoder-decoder.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/user-agent-generator.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/journal/simple-pdf-workflow-without-software",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/journal/small-tools-that-save-developers-time",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/about.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/blog/index.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/blog/json-formatter-edge-cases.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/categories/email-tools.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/categories/generators.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/categories/image-tools.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/categories/pdf-tools.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/contact.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/cookie-policy.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/disclaimer.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/privacy-policy.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/terms-of-service.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/base64-tool.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/color-palette-generator.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/index.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/jwt-decoder.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/password-generator.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/text-diff-checker.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/unit-converter.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/unix-timestamp-converter.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/url-encoder-decoder.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/user-agent-generator.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/journal/simple-pdf-workflow-without-software",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/journal/small-tools-that-save-developers-time",
+      "width": 768,
+      "passed": true
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/about.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/blog/index.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/blog/json-formatter-edge-cases.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/categories/email-tools.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/categories/generators.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/categories/image-tools.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/categories/pdf-tools.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/contact.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/cookie-policy.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/disclaimer.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/privacy-policy.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/terms-of-service.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/base64-tool.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/color-palette-generator.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/index.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/jwt-decoder.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/password-generator.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/text-diff-checker.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/unit-converter.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/unix-timestamp-converter.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/url-encoder-decoder.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/user-agent-generator.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/journal/simple-pdf-workflow-without-software",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "route": "/journal/small-tools-that-save-developers-time",
+      "width": 1440,
+      "passed": true
+    }
+  ],
+  "checks": [
+    "Permanent homepage redirect preserves query and does not loop; Journal index leads to the shared hub",
+    "129 responsive layouts pass with the longer shared navigation label",
+    "Synthetic temporary inbox retains controls, access expiry, and visible provider-retention warning",
+    "Authorized user-agent reference still selects and copies samples",
+    "JSON and quoted-newline CSV transformations work under the CSP",
+    "Background remover completes a real image using CDN scripts, WASM, local model files, and blob previews under the CSP",
+    "All eight articles expose author, original publication date, matched review date, and methodology without JavaScript"
+  ],
+  "cspViolations": [],
+  "errors": [],
+  "layoutCheckedAt": "2026-10-06T20:16:35.651Z",
+  "passed": true
+}

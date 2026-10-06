@@ -11,7 +11,7 @@ test('long guides have one title, unique anchors, and a working HTML outline', (
   for (const heading of rendered.headings) assert.ok(rendered.toc.includes(`href="#${heading.id}"`));
   const html = renderArticle({ slug: 'guide', title: 'Guide title', body }, 'https://example.test');
   assert.equal((html.match(/<h1>/g) || []).length, 1);
-  assert.match(html, /By <a[^>]+rel="author">Anvil Tools/);
+  assert.match(html, /By <a[^>]+rel="author">VelloxTech editorial team/);
   assert.doesNotMatch(html, /<h2[^>]*>Guide title/);
 });
 

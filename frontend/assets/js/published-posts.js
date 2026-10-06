@@ -66,7 +66,7 @@
     if (pageLabel) pageLabel.textContent = `Page ${page + 1} of ${pages} · ${total} blog${total === 1 ? '' : 's'}`;
     if (previous) { previous.disabled = page === 0; previous.hidden = page === 0; if (page > 0) previous.href = `/blog/index.html${page > 1 ? `?page=${page}` : ''}`; else previous.removeAttribute('href'); }
     if (next) { next.disabled = page + 1 >= pages; next.hidden = page + 1 >= pages; if (page + 1 < pages) next.href = `/blog/index.html?page=${page + 2}`; else next.removeAttribute('href'); }
-    if (status) status.textContent = posts.length ? '' : 'No blogs published yet.';
+    if (status) status.textContent = posts.length ? '' : 'No articles published yet.';
   }
 
   async function load(allowPageRecovery = true) {

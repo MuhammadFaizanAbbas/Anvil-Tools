@@ -64,7 +64,7 @@ test('failed blog requests show an error and retry the same page', async () => {
   const { ids, calls } = await setup([new Error('Connection failed'), { data: [], total: 0 }]);
   assert.equal(ids.blogsStatus.textContent, 'Connection failed'); assert.equal(ids.blogsRetry.hidden, false);
   await ids.blogsRetry.listeners.click();
-  assert.equal(calls[0], calls[1]); assert.equal(ids.blogsStatus.textContent, 'No blogs published yet.');
+  assert.equal(calls[0], calls[1]); assert.equal(ids.blogsStatus.textContent, 'No articles published yet.');
   assert.equal(ids.blogRetrySlot.children.length, 0);
 });
 
@@ -102,7 +102,7 @@ test('missing or invalid totals recover an old page with a single request to pag
   for (const totalHeader of [null, '', 'unknown', '-1', '1.5', 'Infinity', '9007199254740992']) {
     const { calls, ids, urls } = await setup([{ data: [], totalHeader }, { data: [], total: 0 }], false, { search: '?page=30000' });
     assert.deepEqual(calls, ['/api/public/posts?limit=30&offset=899970', '/api/public/posts?limit=30&offset=0']);
-    assert.equal(ids.blogsStatus.textContent, 'No blogs published yet.');
+    assert.equal(ids.blogsStatus.textContent, 'No articles published yet.');
     assert.equal(ids.blogPagination.hidden, true);
     assert.deepEqual(urls, ['/blog/index.html']);
   }

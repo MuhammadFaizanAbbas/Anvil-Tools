@@ -1,12 +1,14 @@
-# Temporary Email Best Practices for Signups
+# Temporary Email for Authorized Testing and Permitted Messages
 
-An email address often becomes the recovery route for an account. Choose it according to how long you need access, rather than how quickly a form can be completed. A disposable inbox can suit a low-stakes, one-time message; a purchase, ongoing subscription, work account, or service you need later deserves an address you control over time.
+Use temporary email only for authorized testing of an application you own or have permission to test, or for a non-sensitive message when the receiving service permits disposable addresses. It is not an account-recovery, anonymity, or identity-verification bypass service. Respect address restrictions; if a service rejects disposable mail, use an accepted address rather than trying other domains to evade its rules.
 
-This guide uses [Temporary Email](/tools/temp-mail.html) to explain an actual receiving workflow, delivery problems, and the point at which an alias or permanent mailbox is a better choice. The tool receives messages through a third-party mail provider. It is not an anonymity service or a dependable account-recovery mailbox.
+An email address often becomes the recovery route for an account. Choose it according to how long you need access. A purchase, ongoing subscription, work account, or service you need later deserves an address you control over time.
+
+This guide uses [Temporary Email](/tools/temp-mail.html) to explain a permitted receiving workflow, delivery problems, and the point at which an alias or permanent mailbox is a better choice. The tool receives messages through a third-party mail provider. Website access expiry does not establish deletion of messages or operational records at that provider.
 
 ## Choose an address by the consequence of losing it
 
-Before opening a signup form, ask what would happen if you could never receive another message at the chosen address. If the answer includes losing an account, missing a payment notice, or being unable to obtain support, use a durable mailbox. A signup that seems disposable today can become important after a purchase or stored work.
+Before choosing an address, ask what would happen if you could never receive another message there. If the answer includes losing an account, missing a payment notice, or being unable to obtain support, use a durable mailbox.
 
 | Situation | Practical choice | Reason |
 | --- | --- | --- |
@@ -15,7 +17,7 @@ Before opening a signup form, ask what would happen if you could never receive a
 | Paid trial or recurring subscription | Durable mailbox or an alias you maintain | Billing, cancellation, and recovery messages may arrive later |
 | Store purchase, warranty, or delivery updates | Durable mailbox | The transaction continues beyond the first confirmation |
 | Work, financial, medical, or identity-related account | Your appropriate permanent mailbox | Loss of access can have serious consequences |
-| Testing a signup flow you own | Test mailbox, alias, or disposable inbox as appropriate | The test has a defined owner, purpose, and cleanup plan |
+| Testing email receipt in an application you own or are authorized to test | Test mailbox, alias, or disposable inbox as permitted | The test has a defined owner, purpose, and cleanup plan |
 
 A managed alias usually forwards to an existing mailbox and can remain available while you maintain it. It lets you separate senders without giving up the destination mailbox. A secondary mailbox provides a separate inbox but still needs passwords, recovery settings, and regular attention. Neither is automatically permanent: check the provider's rules and keep account access current.
 
@@ -31,7 +33,7 @@ The page is built for receiving mail; it does not provide a normal outgoing mail
 
 ## Follow one receiving workflow from address to exit
 
-Use a harmless, permitted signup whose account you can afford to lose. For software testing, use a form and service you own or are authorized to test. Check the service's signup rules before selecting a disposable address. If it requires a durable address or rejects disposable domains, use an allowed alternative.
+Use a form and service you own or are authorized to test, with synthetic accounts and no real recovery credentials. For a one-time non-sensitive message, check that the receiving service permits disposable addresses. If it requires a durable address or rejects disposable domains, use an allowed alternative.
 
 1. Open Temporary Email and wait until a complete address appears.
 2. Copy the address and compare it with the email field in the signup form before submitting.

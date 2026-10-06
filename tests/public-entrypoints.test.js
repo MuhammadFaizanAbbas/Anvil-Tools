@@ -17,7 +17,7 @@ test('missing pages resolve assets and recovery links from nested incoming URLs'
       if (url.origin !== 'https://nevco.online') continue;
       assert.ok(fs.existsSync(path.join('frontend', url.pathname)), `${incoming}: ${url.pathname}`);
     }
-    assert.match(html, /href="\/index\.html">Go home/);
+    assert.match(html, /href="\/">Go home/);
     assert.match(html, /href="\/tools\/index\.html">Browse all tools/);
   }
 });

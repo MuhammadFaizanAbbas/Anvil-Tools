@@ -1,6 +1,54 @@
 [
-  {"slug":"json-formatter-edge-cases","title":"10 Malformed JSON Inputs Tested in Our Formatter","excerpt":"Actual browser results for ten syntax errors, duplicate keys, and an integer that changes during formatting, with reusable inputs.","bodyFile":"experiments/json-formatter.md","category_slug":"developer-tools","tools":["json-formatter"],"cover_path":"/assets/images/editorial/json-precision-experiment.png","cover_alt":"Actual formatter run: input integer 9007199254740993 becomes 9007199254740992."},
-  {"slug":"csv-quotes-unicode-and-blank-fields","title":"CSV Edge Cases: Quotes, Unicode, Newlines, and Blank Fields","excerpt":"Thirteen recorded CSV conversions show preserved strings, rejected headers, quoted newlines, and a semicolon-delimiter trap.","bodyFile":"experiments/csv-edge-cases.md","category_slug":"developer-tools","tools":["csv-to-json"],"cover_path":"/assets/images/editorial/csv-newline-experiment.png","cover_alt":"Actual CSV conversion with a newline inside a quoted field preserved in JSON."},
-  {"slug":"word-counter-unicode-experiment","title":"How Our Word Counter Counts Emoji, Accents, and Chinese Text","excerpt":"Twelve measured examples explain whitespace words, UTF-16 characters, combining accents, emoji, and rough reading-time estimates.","bodyFile":"experiments/word-counter.md","category_slug":"text-tools","tools":["word-counter"],"cover_path":"/assets/images/editorial/unicode-count-experiment.png","cover_alt":"Actual word counter showing one family emoji as one word and eleven character units."},
-  {"slug":"jpeg-png-webp-to-pdf-test","title":"JPEG vs PNG vs WebP: Our Image-to-PDF Conversion Test","excerpt":"The same 640 by 400 illustration converted from three formats, with actual downloads, independent PDF inspection, and transparency limits.","bodyFile":"experiments/image-formats.md","category_slug":"pdf-tools","tools":["image-to-pdf"],"cover_path":"/assets/images/editorial/image-format-experiment.png","cover_alt":"Actual image-to-PDF tool after exporting a WebP fixture as a one-page PDF."}
+  {
+    "slug": "json-formatter-edge-cases",
+    "title": "10 Malformed JSON Inputs Tested in Our Formatter",
+    "excerpt": "Actual browser results for ten syntax errors, duplicate keys, and an integer that changes during formatting, with reusable inputs.",
+    "bodyFile": "experiments/json-formatter.md",
+    "category_slug": "developer-tools",
+    "tools": [
+      "json-formatter"
+    ],
+    "cover_path": "/assets/images/editorial/json-precision-experiment.png",
+    "cover_alt": "Actual formatter run: input integer 9007199254740993 becomes 9007199254740992.",
+    "published_at": "2026-10-06T00:00:00+05:00"
+  },
+  {
+    "slug": "csv-quotes-unicode-and-blank-fields",
+    "title": "CSV Edge Cases: Quotes, Unicode, Newlines, and Blank Fields",
+    "excerpt": "Thirteen recorded CSV conversions show preserved strings, rejected headers, quoted newlines, and a semicolon-delimiter trap.",
+    "bodyFile": "experiments/csv-edge-cases.md",
+    "category_slug": "developer-tools",
+    "tools": [
+      "csv-to-json"
+    ],
+    "cover_path": "/assets/images/editorial/csv-newline-experiment.png",
+    "cover_alt": "Actual CSV conversion with a newline inside a quoted field preserved in JSON.",
+    "published_at": "2026-10-06T00:00:00+05:00"
+  },
+  {
+    "slug": "word-counter-unicode-experiment",
+    "title": "How Our Word Counter Counts Emoji, Accents, and Chinese Text",
+    "excerpt": "Twelve measured examples explain whitespace words, UTF-16 characters, combining accents, emoji, and rough reading-time estimates.",
+    "bodyFile": "experiments/word-counter.md",
+    "category_slug": "text-tools",
+    "tools": [
+      "word-counter"
+    ],
+    "cover_path": "/assets/images/editorial/unicode-count-experiment.png",
+    "cover_alt": "Actual word counter showing one family emoji as one word and eleven character units.",
+    "published_at": "2026-10-06T00:00:00+05:00"
+  },
+  {
+    "slug": "jpeg-png-webp-to-pdf-test",
+    "title": "JPEG vs PNG vs WebP: Our Image-to-PDF Conversion Test",
+    "excerpt": "The same 640 by 400 illustration converted from three formats, with actual downloads, independent PDF inspection, and transparency limits.",
+    "bodyFile": "experiments/image-formats.md",
+    "category_slug": "pdf-tools",
+    "tools": [
+      "image-to-pdf"
+    ],
+    "cover_path": "/assets/images/editorial/image-format-experiment.png",
+    "cover_alt": "Actual image-to-PDF tool after exporting a WebP fixture as a one-page PDF.",
+    "published_at": "2026-10-06T00:00:00+05:00"
+  }
 ]

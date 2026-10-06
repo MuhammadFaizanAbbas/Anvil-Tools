@@ -4,6 +4,11 @@ ErrorDocument 404 /404.html
 ErrorDocument 410 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # Match the original request only so the homepage PHP rendering cannot loop.
+  RewriteCond %{THE_REQUEST} \s/+index\.html[/?\s] [NC]
+  RewriteRule ^index\.html/?$ / [R=301,L,NC]
+  # One editorial hub; existing guide and experiment URLs remain stable.
+  RewriteRule ^journal/?$ /blog/index.html [R=301,L,NC]
   # One permanent HTTPS hostname for the review domain. Preserve path/query.
   # Other hosts remain available for local development and the Vercel preview.
   RewriteCond %{HTTP_HOST} ^www\.nevco\.online(?::\d+)?$ [NC]
@@ -53,7 +58,12 @@ ErrorDocument 410 /404.html
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "no-referrer"
   Header always set X-Frame-Options "DENY"
-  Header always set Content-Security-Policy "object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://epxzxcqsonxscyvbopqt.supabase.co; font-src 'self'; connect-src 'self' https://anvil-tools-backend.vercel.app https://epxzxcqsonxscyvbopqt.supabase.co wss://epxzxcqsonxscyvbopqt.supabase.co https://cdn.jsdelivr.net; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; frame-src 'none'; frame-ancestors 'none'; form-action 'self'"
+  # Dynamic JS is required only by the image-processing bundle.
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://epxzxcqsonxscyvbopqt.supabase.co; font-src 'self'; connect-src 'self' blob: https://anvil-tools-backend.vercel.app https://epxzxcqsonxscyvbopqt.supabase.co wss://epxzxcqsonxscyvbopqt.supabase.co https://cdn.jsdelivr.net; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; frame-src 'none'; frame-ancestors 'none'; form-action 'self'" "expr=%{THE_REQUEST} =~ m#\s/+tools/background-remover\.html/?[?\s]#"
+  # HTTPS only, scoped to this host; do not assert unverified subdomain support.
+  Header always set Strict-Transport-Security "max-age=604800" "expr=%{HTTPS} == 'on'"
+  Header always unset X-Powered-By
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
   <FilesMatch "\.(?:css|js)$">
     Header set Cache-Control "public, max-age=0, must-revalidate"
@@ -61,4 +71,11 @@ ErrorDocument 410 /404.html
   <FilesMatch "^(?:pdf-lib-1\.17\.1|qrcode-1\.0\.0)\.min\.js$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
+</IfModule>
+<IfModule mod_mime.c>
+  AddType application/json .json
+  AddType text/csv .csv
+  AddType text/plain .txt
+  AddType application/pdf .pdf
+  AddType image/webp .webp
 </IfModule>

@@ -24,7 +24,7 @@ function writeChanged(file, content) {
 }
 for (const experiment of experiments) {
   const body = fs.readFileSync(path.join(root, 'content/editorial', experiment.bodyFile), 'utf8');
-  const html = renderArticle({ ...experiment, body, published_at: '2026-10-06T00:00:00+05:00' }, origin)
+  const html = renderArticle({ ...experiment, body, published_at: experiment.published_at }, origin)
     .replaceAll(`${origin}/journal/${experiment.slug}`, `${origin}/blog/${experiment.slug}.html`)
     .replace(/<(?:link|a|script|img)\b[^>]*>/g, tag => tag.includes('rel="canonical"') ? tag : tag.replaceAll(origin + '/', '/'));
   writeChanged(path.join(frontend, 'blog', `${experiment.slug}.html`), html);
@@ -60,6 +60,12 @@ const walk = directory => fs.readdirSync(directory, { withFileTypes: true }).fla
 });
 for (const file of walk(frontend)) {
   let html = fs.readFileSync(file, 'utf8').replaceAll('Developed by VelloxTech', 'Anvil Tools is a VelloxTech project.');
+  const pageUrl = origin + '/' + path.relative(frontend, file).replaceAll('\\', '/');
+  html = html.replace(/(<a\b[^>]*href=")([^" ]+)(")/g, (tag, prefix, href, suffix) => {
+    const url = new URL(href, pageUrl);
+    return url.origin === origin && ['/', '/index.html'].includes(url.pathname) ? `${prefix}/${url.search}${url.hash}${suffix}` : tag;
+  })
+    .replace(/(<a\b[^>]*href="[^"]*\/blog\/index\.html"[^>]*>)(?:Blog|Blogs)(<\/a>)/g, '$1Guides &amp; experiments$2');
   const noScript = '<noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript>';
   if (!html.includes('<noscript><style>.public-site .nav-toggle')) html = html.replace('</head>', `${noScript}</head>`);
   html = html.replace(/<span class="current-year"><\/span>/g, `<span class="current-year">${new Date().getUTCFullYear()}</span>`);
@@ -68,6 +74,7 @@ for (const file of walk(frontend)) {
     html = html.replace(/<!-- editorial-library -->[\s\S]*?<!-- \/editorial-library -->/, experimentLibrary + library);
   }
   const tool = path.basename(file, '.html');
+  if (tool === 'privacy-policy') html = html.replace('<h2>Workspace accounts and temporary mail</h2>', '<h2 id="temporary-mail">Workspace accounts and temporary mail</h2>');
   if (['pdf-merge', 'image-to-pdf'].includes(tool)) {
     html = html.replace(/(assets\/css\/tool-ux\.css)(?:\?[^" ]*)?"/g, '$1?v=20261005-pdf"')
       .replace(/(assets\/js\/tools\/(?:pdf-merge|image-to-pdf)\.js)(?:\?[^" ]*)?"/g, '$1?v=20261005-pdf"');

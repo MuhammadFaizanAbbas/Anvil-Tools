@@ -98,7 +98,7 @@ def build_tool_pages():
 {breadcrumbs(depth, [("Home","index.html"), (cat["label"], "categories/"+cat["slug"]+".html"), (t["name"], None)])}
 <section class="hero" style="padding-bottom:8px;">
   <span class="eyebrow">{cat["label"]}</span>
-  <h1>{t["name"]}</h1>
+  <h1>{t.get("heading", t["name"])}</h1>
   <p class="lede">{t["intro"]}</p>
 </section>
 

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>User Agent Generator | Anvil Tools</title>
-<meta name="description" content="Anvil Tools: Choose fixed browser and bot user-agent strings for parser and request-header tests.">
+<title>User-Agent String Reference | Anvil Tools</title>
+<meta name="description" content="Anvil Tools: Reference strings for parser and request-header tests in applications you own or are authorized to test.">
 <link rel="canonical" href="https://anviltools.vercel.app/tools/user-agent-generator.html">
 <link rel="stylesheet" href="../assets/css/style.css?v=20261006-audit1">
 <link rel="stylesheet" href="../assets/css/refinements.css?v=20261006-audit1">
@@ -13,27 +13,27 @@
 <link rel="stylesheet" href="../assets/css/design.css?v=20261006-audit1">
 <link rel="stylesheet" href="../assets/css/tool-ux.css?v=20261006-audit1">
 <link rel="stylesheet" href="../assets/css/content.css?v=20261006-audit1">
-<meta property="og:type" content="website"><meta property="og:title" content="User Agent Generator | Anvil Tools"><meta property="og:description" content="Anvil Tools: Choose fixed browser and bot user-agent strings for parser and request-header tests."><meta property="og:url" content="https://anviltools.vercel.app/tools/user-agent-generator.html"><meta name="twitter:card" content="summary">
+<meta property="og:type" content="website"><meta property="og:title" content="User-Agent String Reference | Anvil Tools"><meta property="og:description" content="Anvil Tools: Reference strings for parser and request-header tests in applications you own or are authorized to test."><meta property="og:url" content="https://anviltools.vercel.app/tools/user-agent-generator.html"><meta name="twitter:card" content="summary">
 <noscript><style>.public-site .nav-toggle{display:none}.public-site .header-row{flex-wrap:wrap}.public-site .main-nav{display:flex;position:static;width:100%;flex-wrap:wrap;flex-direction:row;padding:8px 0;border:0;box-shadow:none}.public-site .main-nav a{width:auto}</style></noscript><!-- local-font-preload --><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin><!-- /local-font-preload --></head>
 <body class="public-site">
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
   <div class="header-row">
-    <a class="logo" href="../index.html">
+    <a class="logo" href="/">
       <img class="brand-mark" src="../assets/images/anvil-mark.svg" width="36" height="36" alt="">
       Anvil Tools
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-navigation"><span aria-hidden="true">&#9776;</span></button>
-    <nav class="main-nav" id="main-navigation"><a href="../">Home</a><a href="../tools/index.html" aria-current="page">All tools</a><a href="../blog/index.html">Blogs</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav>
+    <nav class="main-nav" id="main-navigation"><a href="/">Home</a><a href="../tools/index.html" aria-current="page">All tools</a><a href="../blog/index.html">Guides &amp; experiments</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav>
   </div>
 </header>
 <main class="wrap" id="main-content">
 
-<p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="../categories/developer-tools.html">Developer tools</a> / <span>User Agent Generator</span></p>
+<p class="breadcrumbs"><a href="/">Home</a> / <a href="../categories/developer-tools.html">Developer tools</a> / <span>User-Agent String Reference</span></p>
 <section class="hero" style="padding-bottom:8px;">
   <span class="eyebrow">Developer tools</span>
-  <h1>User Agent Generator</h1>
-  <p class="lede">A quick reference list of real-world user-agent strings for common browsers, devices, and crawlers, useful when testing how a site or script behaves under different clients. This is a reference and testing utility, not a way to disguise real traffic; most browsers' developer tools let you actually apply one of these strings to a test request.</p>
+  <h1>User-Agent String Reference for Authorized Testing</h1>
+  <p class="lede">Use these fixed browser and crawler strings as parser fixtures or request headers in an application you own or have permission to test. Copying a string does not change your browser, reproduce device behavior, or prove crawler identity. Respect access restrictions and verify actual crawler requests separately.</p>
 </section>
 
 <div class="tool-app">
@@ -58,12 +58,12 @@
   <h2>How it works</h2>
   <ul><li>Pick a browser or device from the list, or click random pick.</li>
 <li>The matching user-agent string appears in the box below.</li>
-<li>Copy it and paste it into your browser's device toolbar override, an API testing tool, or your own test scripts.</li></ul>
+<li>Copy a sample into a parser fixture or request-header test for an application you own or are authorized to test.</li></ul>
 
   <h2>Common uses</h2>
-  <ul><li>Testing that a responsive site correctly detects mobile versus desktop.</li>
-<li>Checking how a page renders for a search engine crawler like Googlebot.</li>
-<li>Reproducing a bug report that only happens on a specific browser or device.</li></ul>
+  <ul><li>Testing recognized and unfamiliar client strings in your own application. Use real devices to test responsive rendering.</li>
+<li>Checking how your own parser handles a crawler sample without granting it special access.</li>
+<li>Reproducing a reported parser issue with a fixed input string. Test real browsers separately when behavior matters.</li></ul>
 
   <div class="callout">Your privacy matters here: check the FAQ below for exactly what happens to anything you enter into this tool.</div>
 
@@ -75,7 +75,7 @@
 
 
 
-<section class="info-section"><h2>Use samples for authorized testing</h2><p>A user-agent string describes a client but does not make your browser emulate it. Use the samples to test parsing and display logic. Browser versions in these samples are illustrative, not a live release catalog.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Choose a browser sample and copy its user-agent string into a test fixture for your application.</li><li>Test both recognized and unexpected strings so your application has a useful fallback.</li><li>Copy the selected sample string into your authorized test environment. It does not change this browser or prove a crawler identity.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>These are sample strings, not a live browser-version directory. Changing a string does not reproduce a browser engine or device.</p></section><section class="info-section"><h2>What to use next</h2><p>These tools open separately; inputs are not transferred.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">Developer tools</span><h3>JSON Formatter &amp; Validator</h3><p>Pretty-print, minify, and validate JSON directly in your browser.</p><a class="tool-link" href="../tools/json-formatter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>UUID Generator</h3><p>Generate cryptographically random RFC 4122 version 4 UUIDs.</p><a class="tool-link" href="../tools/uuid-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Developer tools</span><h3>URL Encoder &amp; Decoder</h3><p>Encode text for a URL or decode percent-encoded values safely.</p><a class="tool-link" href="../tools/url-encoder-decoder.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Developer tools</span><h3>Base64 Encoder &amp; Decoder</h3><p>Convert text to Base64 and back, entirely in your browser.</p><a class="tool-link" href="../tools/base64-tool.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Questions and troubleshooting</h2><details class="faq-item"><summary>Does picking a string change my real browser?</summary><p>No. This tool only displays reference text for you to copy. To actually change what your browser sends, use your browser's built-in developer tools or a testing proxy.</p></details><details class="faq-item"><summary>Are these real, current user-agent strings?</summary><p>They're realistic examples of the current format used by each browser or crawler, meant for testing rather than as a live, constantly updated database.</p></details><details class="faq-item"><summary>Can I use this to scrape sites while hiding my identity?</summary><p>This tool is meant for legitimate testing of your own sites and code. Using a fake user agent to evade a site's terms of service or access controls is a separate matter between you and that site's policies.</p></details><details class="faq-item"><summary>When a sample does not match your test</summary><p>Select the intended browser or crawler sample, then check the receiving application&#x27;s parser with that string. Samples do not update the browser&#x27;s real identity or reproduce device capabilities. Use a real browser test when rendering behavior matters.</p></details><details class="faq-item"><summary>Does this change my browser identity?</summary><p>No. It creates a sample text string for your test data. It does not change the current browser, emulate a device, or bypass access restrictions.</p></details><details class="faq-item"><summary>Are the samples the latest browser releases?</summary><p>Treat the strings as examples, not a current release directory. Verify any exact version requirement separately and test real browsers when behavior matters.</p></details></section><!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/small-tools-that-save-developers-time">Debug API Data with JSON, Base64, and Browser Tools</a></p><p>Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.</p></section><!-- /editorial-tool-link --></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
+<section class="info-section"><h2>Use samples for authorized testing</h2><p>A user-agent string describes a client but does not make your browser emulate it. Use the samples to test parsing and display logic. Browser versions in these samples are illustrative, not a live release catalog.</p></section><!-- expanded-content --><section class="info-section"><h2>A practical walkthrough</h2><ol><li>Choose a browser sample and copy its user-agent string into a test fixture for your application.</li><li>Test both recognized and unexpected strings so your application has a useful fallback.</li><li>Copy the selected sample string into your authorized test environment. It does not change this browser or prove a crawler identity.</li></ol></section><section class="info-section"><h2>Tips for a reliable result</h2><p>These are sample strings, not a live browser-version directory. Changing a string does not reproduce a browser engine or device.</p></section><section class="info-section"><h2>What to use next</h2><p>These tools open separately; inputs are not transferred.</p><div class="tool-grid"><article class="tool-card"><span class="category-tag">Developer tools</span><h3>JSON Formatter &amp; Validator</h3><p>Pretty-print, minify, and validate JSON directly in your browser.</p><a class="tool-link" href="../tools/json-formatter.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Generators</span><h3>UUID Generator</h3><p>Generate cryptographically random RFC 4122 version 4 UUIDs.</p><a class="tool-link" href="../tools/uuid-generator.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Developer tools</span><h3>URL Encoder &amp; Decoder</h3><p>Encode text for a URL or decode percent-encoded values safely.</p><a class="tool-link" href="../tools/url-encoder-decoder.html">Open tool &#8594;</a></article><article class="tool-card"><span class="category-tag">Developer tools</span><h3>Base64 Encoder &amp; Decoder</h3><p>Convert text to Base64 and back, entirely in your browser.</p><a class="tool-link" href="../tools/base64-tool.html">Open tool &#8594;</a></article></div></section><!-- reviewed-faq --><section class="info-section"><h2>Questions and troubleshooting</h2><details class="faq-item"><summary>Does picking a string change my real browser?</summary><p>No. Copying a sample only gives you text. It does not change your browser, emulate a device, or establish a verified crawler identity.</p></details><details class="faq-item"><summary>What versions do the samples represent?</summary><p>The browser examples include fixed Chrome 126, Firefox 127, and Safari 17.5 strings. They are parser fixtures, not a current browser-version directory.</p></details><details class="faq-item"><summary>What is an authorized use of these samples?</summary><p>Use them only to test applications you own or have permission to test. Do not use them to evade access restrictions, misrepresent crawler identity, or generate deceptive traffic.</p></details><details class="faq-item"><summary>When a sample does not match your test</summary><p>Select the intended browser or crawler sample, then check the receiving application&#x27;s parser with that string. Samples do not update the browser&#x27;s real identity or reproduce device capabilities. Use a real browser test when rendering behavior matters.</p></details><details class="faq-item"><summary>Does this change my browser identity?</summary><p>No. It creates a sample text string for your test data. It does not change the current browser, emulate a device, or bypass access restrictions.</p></details><details class="faq-item"><summary>Are the samples the latest browser releases?</summary><p>Treat the strings as examples, not a current release directory. Verify any exact version requirement separately and test real browsers when behavior matters.</p></details></section><!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/small-tools-that-save-developers-time">Debug API Data with JSON, Base64, and Browser Tools</a></p><p>Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.</p></section><!-- /editorial-tool-link --></div><!-- /reading-surface --><!-- /reviewed-faq --><!-- /expanded-content --></main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
@@ -96,7 +96,7 @@
         <h3>Company</h3>
         <ul>
           <li><a href="../about.html">About</a></li>
-          <li><a href="../blog/index.html">Blogs</a></li>
+          <li><a href="../blog/index.html">Guides &amp; experiments</a></li>
           <li><a href="../contact.html">Contact</a></li>
         </ul>
       </div>

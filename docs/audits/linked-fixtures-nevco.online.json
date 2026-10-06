@@ -1,0 +1,1847 @@
+{
+  "checkedAt": "2026-10-06T20:21:17.052Z",
+  "origin": "https://nevco.online",
+  "mode": "live GET requests",
+  "pages": [
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/about.html",
+      "status": 200
+    },
+    {
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "status": 200
+    },
+    {
+      "route": "/blog/index.html",
+      "status": 200
+    },
+    {
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "status": 200
+    },
+    {
+      "route": "/blog/json-formatter-edge-cases.html",
+      "status": 200
+    },
+    {
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "status": 200
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "status": 200
+    },
+    {
+      "route": "/categories/email-tools.html",
+      "status": 200
+    },
+    {
+      "route": "/categories/generators.html",
+      "status": 200
+    },
+    {
+      "route": "/categories/image-tools.html",
+      "status": 200
+    },
+    {
+      "route": "/categories/pdf-tools.html",
+      "status": 200
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "status": 200
+    },
+    {
+      "route": "/contact.html",
+      "status": 200
+    },
+    {
+      "route": "/cookie-policy.html",
+      "status": 200
+    },
+    {
+      "route": "/disclaimer.html",
+      "status": 200
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "status": 200
+    },
+    {
+      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "status": 200
+    },
+    {
+      "route": "/journal/simple-pdf-workflow-without-software",
+      "status": 200
+    },
+    {
+      "route": "/journal/small-tools-that-save-developers-time",
+      "status": 200
+    },
+    {
+      "route": "/privacy-policy.html",
+      "status": 200
+    },
+    {
+      "route": "/terms-of-service.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/base64-tool.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/color-palette-generator.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/index.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/jwt-decoder.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/password-generator.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/text-diff-checker.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/unit-converter.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/unix-timestamp-converter.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/url-encoder-decoder.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/user-agent-generator.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "status": 200
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "status": 200
+    }
+  ],
+  "resources": [
+    {
+      "route": "/assets/css/content.css",
+      "referrers": [
+        "/",
+        "/about.html",
+        "/blog/csv-quotes-unicode-and-blank-fields.html",
+        "/blog/index.html",
+        "/blog/jpeg-png-webp-to-pdf-test.html",
+        "/blog/json-formatter-edge-cases.html",
+        "/blog/word-counter-unicode-experiment.html",
+        "/categories/developer-tools.html",
+        "/categories/email-tools.html",
+        "/categories/generators.html",
+        "/categories/image-tools.html",
+        "/categories/pdf-tools.html",
+        "/categories/text-tools.html",
+        "/contact.html",
+        "/cookie-policy.html",
+        "/disclaimer.html",
+        "/journal/best-practices-for-background-removal-when-working-with-design",
+        "/journal/best-practices-for-temporary-email-when-working-with-signups",
+        "/journal/simple-pdf-workflow-without-software",
+        "/journal/small-tools-that-save-developers-time",
+        "/privacy-policy.html",
+        "/terms-of-service.html",
+        "/tools/background-remover.html",
+        "/tools/base64-tool.html",
+        "/tools/color-palette-generator.html",
+        "/tools/csv-to-json.html",
+        "/tools/hash-generator.html",
+        "/tools/image-to-pdf.html",
+        "/tools/index.html",
+        "/tools/json-formatter.html",
+        "/tools/jwt-decoder.html",
+        "/tools/password-generator.html",
+        "/tools/pdf-merge.html",
+        "/tools/qr-code-generator.html",
+        "/tools/temp-mail.html",
+        "/tools/text-case-converter.html",
+        "/tools/text-diff-checker.html",
+        "/tools/unit-converter.html",
+        "/tools/unix-timestamp-converter.html",
+        "/tools/url-encoder-decoder.html",
+        "/tools/user-agent-generator.html",
+        "/tools/uuid-generator.html",
+        "/tools/word-counter.html"
+      ],
+      "status": 200,
+      "type": "text/css",
+      "finalUrl": "https://nevco.online/assets/css/content.css",
+      "bytes": 5534,
+      "sha256": "8362ec8367eb22c2876a591692b4b389a8c730a1009b3d07b0e4c6d861001df6",
+      "validText": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/css/design.css",
+      "referrers": [
+        "/",
+        "/about.html",
+        "/blog/csv-quotes-unicode-and-blank-fields.html",
+        "/blog/index.html",
+        "/blog/jpeg-png-webp-to-pdf-test.html",
+        "/blog/json-formatter-edge-cases.html",
+        "/blog/word-counter-unicode-experiment.html",
+        "/categories/developer-tools.html",
+        "/categories/email-tools.html",
+        "/categories/generators.html",
+        "/categories/image-tools.html",
+        "/categories/pdf-tools.html",
+        "/categories/text-tools.html",
+        "/contact.html",
+        "/cookie-policy.html",
+        "/disclaimer.html",
+        "/journal/best-practices-for-background-removal-when-working-with-design",
+        "/journal/best-practices-for-temporary-email-when-working-with-signups",
+        "/journal/simple-pdf-workflow-without-software",
+        "/journal/small-tools-that-save-developers-time",
+        "/privacy-policy.html",
+        "/terms-of-service.html",
+        "/tools/background-remover.html",
+        "/tools/base64-tool.html",
+        "/tools/color-palette-generator.html",
+        "/tools/csv-to-json.html",
+        "/tools/hash-generator.html",
+        "/tools/image-to-pdf.html",
+        "/tools/index.html",
+        "/tools/json-formatter.html",
+        "/tools/jwt-decoder.html",
+        "/tools/password-generator.html",
+        "/tools/pdf-merge.html",
+        "/tools/qr-code-generator.html",
+        "/tools/temp-mail.html",
+        "/tools/text-case-converter.html",
+        "/tools/text-diff-checker.html",
+        "/tools/unit-converter.html",
+        "/tools/unix-timestamp-converter.html",
+        "/tools/url-encoder-decoder.html",
+        "/tools/user-agent-generator.html",
+        "/tools/uuid-generator.html",
+        "/tools/word-counter.html"
+      ],
+      "status": 200,
+      "type": "text/css",
+      "finalUrl": "https://nevco.online/assets/css/design.css",
+      "bytes": 15409,
+      "sha256": "5646cb32d95b8913dfde19b21df46cdff291b0387f8a2e7ff44989c679223d34",
+      "validText": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/css/refinements.css",
+      "referrers": [
+        "/",
+        "/about.html",
+        "/blog/csv-quotes-unicode-and-blank-fields.html",
+        "/blog/index.html",
+        "/blog/jpeg-png-webp-to-pdf-test.html",
+        "/blog/json-formatter-edge-cases.html",
+        "/blog/word-counter-unicode-experiment.html",
+        "/categories/developer-tools.html",
+        "/categories/email-tools.html",
+        "/categories/generators.html",
+        "/categories/image-tools.html",
+        "/categories/pdf-tools.html",
+        "/categories/text-tools.html",
+        "/contact.html",
+        "/cookie-policy.html",
+        "/disclaimer.html",
+        "/journal/best-practices-for-background-removal-when-working-with-design",
+        "/journal/best-practices-for-temporary-email-when-working-with-signups",
+        "/journal/simple-pdf-workflow-without-software",
+        "/journal/small-tools-that-save-developers-time",
+        "/privacy-policy.html",
+        "/terms-of-service.html",
+        "/tools/background-remover.html",
+        "/tools/base64-tool.html",
+        "/tools/color-palette-generator.html",
+        "/tools/csv-to-json.html",
+        "/tools/hash-generator.html",
+        "/tools/image-to-pdf.html",
+        "/tools/index.html",
+        "/tools/json-formatter.html",
+        "/tools/jwt-decoder.html",
+        "/tools/password-generator.html",
+        "/tools/pdf-merge.html",
+        "/tools/qr-code-generator.html",
+        "/tools/temp-mail.html",
+        "/tools/text-case-converter.html",
+        "/tools/text-diff-checker.html",
+        "/tools/unit-converter.html",
+        "/tools/unix-timestamp-converter.html",
+        "/tools/url-encoder-decoder.html",
+        "/tools/user-agent-generator.html",
+        "/tools/uuid-generator.html",
+        "/tools/word-counter.html"
+      ],
+      "status": 200,
+      "type": "text/css",
+      "finalUrl": "https://nevco.online/assets/css/refinements.css",
+      "bytes": 6595,
+      "sha256": "9ae8259c06a80cd858e605318ce48cace11db3b452c056978524efe77e681927",
+      "validText": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/css/style.css",
+      "referrers": [
+        "/",
+        "/about.html",
+        "/blog/csv-quotes-unicode-and-blank-fields.html",
+        "/blog/index.html",
+        "/blog/jpeg-png-webp-to-pdf-test.html",
+        "/blog/json-formatter-edge-cases.html",
+        "/blog/word-counter-unicode-experiment.html",
+        "/categories/developer-tools.html",
+        "/categories/email-tools.html",
+        "/categories/generators.html",
+        "/categories/image-tools.html",
+        "/categories/pdf-tools.html",
+        "/categories/text-tools.html",
+        "/contact.html",
+        "/cookie-policy.html",
+        "/disclaimer.html",
+        "/journal/best-practices-for-background-removal-when-working-with-design",
+        "/journal/best-practices-for-temporary-email-when-working-with-signups",
+        "/journal/simple-pdf-workflow-without-software",
+        "/journal/small-tools-that-save-developers-time",
+        "/privacy-policy.html",
+        "/terms-of-service.html",
+        "/tools/background-remover.html",
+        "/tools/base64-tool.html",
+        "/tools/color-palette-generator.html",
+        "/tools/csv-to-json.html",
+        "/tools/hash-generator.html",
+        "/tools/image-to-pdf.html",
+        "/tools/index.html",
+        "/tools/json-formatter.html",
+        "/tools/jwt-decoder.html",
+        "/tools/password-generator.html",
+        "/tools/pdf-merge.html",
+        "/tools/qr-code-generator.html",
+        "/tools/temp-mail.html",
+        "/tools/text-case-converter.html",
+        "/tools/text-diff-checker.html",
+        "/tools/unit-converter.html",
+        "/tools/unix-timestamp-converter.html",
+        "/tools/url-encoder-decoder.html",
+        "/tools/user-agent-generator.html",
+        "/tools/uuid-generator.html",
+        "/tools/word-counter.html"
+      ],
+      "status": 200,
+      "type": "text/css",
+      "finalUrl": "https://nevco.online/assets/css/style.css",
+      "bytes": 12854,
+      "sha256": "4915c378f4cb1faee197b526be9ca9508c1e4906782432fd37ade4f023556254",
+      "validText": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/css/tool-ux.css",
+      "referrers": [
+        "/tools/background-remover.html",
+        "/tools/base64-tool.html",
+        "/tools/color-palette-generator.html",
+        "/tools/csv-to-json.html",
+        "/tools/hash-generator.html",
+        "/tools/image-to-pdf.html",
+        "/tools/index.html",
+        "/tools/json-formatter.html",
+        "/tools/jwt-decoder.html",
+        "/tools/password-generator.html",
+        "/tools/pdf-merge.html",
+        "/tools/qr-code-generator.html",
+        "/tools/temp-mail.html",
+        "/tools/text-case-converter.html",
+        "/tools/text-diff-checker.html",
+        "/tools/unit-converter.html",
+        "/tools/unix-timestamp-converter.html",
+        "/tools/url-encoder-decoder.html",
+        "/tools/user-agent-generator.html",
+        "/tools/uuid-generator.html",
+        "/tools/word-counter.html"
+      ],
+      "status": 200,
+      "type": "text/css",
+      "finalUrl": "https://nevco.online/assets/css/tool-ux.css",
+      "bytes": 7134,
+      "sha256": "4eb6c93ea368233a7acd4239365a8d96ba8d24461fe1c16b4977b77386f04ef8",
+      "validText": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/developer/expected.base64.txt",
+      "referrers": [
+        "/journal/small-tools-that-save-developers-time"
+      ],
+      "status": 200,
+      "type": "text/plain",
+      "finalUrl": "https://nevco.online/assets/examples/developer/expected.base64.txt",
+      "bytes": 160,
+      "sha256": "e4b7138bf075006b519c913fcdb6cccc6d927465befd728f004e77e047b77ca9",
+      "validText": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/developer/expected.json",
+      "referrers": [
+        "/categories/developer-tools.html",
+        "/journal/small-tools-that-save-developers-time",
+        "/tools/csv-to-json.html"
+      ],
+      "status": 200,
+      "type": "application/json",
+      "finalUrl": "https://nevco.online/assets/examples/developer/expected.json",
+      "bytes": 168,
+      "sha256": "bf79ffac27ccc4800ec8363184d4450c70f3b55a61f6158aade5004207779f4f",
+      "validJson": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/developer/expected.min.json",
+      "referrers": [
+        "/journal/small-tools-that-save-developers-time"
+      ],
+      "status": 200,
+      "type": "application/json",
+      "finalUrl": "https://nevco.online/assets/examples/developer/expected.min.json",
+      "bytes": 118,
+      "sha256": "116cfe62138e4a0a755d1abbb8e8b9e8d7719c48fd813bc568ed2cf3baf69c45",
+      "validJson": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/developer/quoted-newline.csv",
+      "referrers": [
+        "/categories/developer-tools.html",
+        "/journal/small-tools-that-save-developers-time",
+        "/tools/csv-to-json.html"
+      ],
+      "status": 200,
+      "type": "text/csv",
+      "finalUrl": "https://nevco.online/assets/examples/developer/quoted-newline.csv",
+      "bytes": 81,
+      "sha256": "909ec5e0dc4f485bff424dd9442a1cd5f0c241d0393df3249769a2c47ed15976",
+      "rows": 3,
+      "columns": 3,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/developer/workflow.json",
+      "referrers": [
+        "/journal/small-tools-that-save-developers-time"
+      ],
+      "status": 200,
+      "type": "application/json",
+      "finalUrl": "https://nevco.online/assets/examples/developer/workflow.json",
+      "bytes": 361,
+      "sha256": "208c02ce7b36b97db4bf4a5167625828f65c813dbe3c74f7519256f4245c5480",
+      "validJson": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/csv-cases.json",
+      "referrers": [
+        "/blog/csv-quotes-unicode-and-blank-fields.html"
+      ],
+      "status": 200,
+      "type": "application/json",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/csv-cases.json",
+      "bytes": 2417,
+      "sha256": "c337d569e8b30eae86e8201e589e5ddf509491ce90fc3124db9221a7e554ac22",
+      "validJson": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/format-edge-jpg.pdf",
+      "referrers": [
+        "/blog/jpeg-png-webp-to-pdf-test.html"
+      ],
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/format-edge-jpg.pdf",
+      "bytes": 17925,
+      "sha256": "347191031355d220fc83386310bf46bd40829122802f414b40445ca0bb94a0e9",
+      "pages": 1,
+      "pageSizes": [
+        {
+          "width": 640,
+          "height": 400
+        }
+      ],
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/format-edge-png.pdf",
+      "referrers": [
+        "/blog/jpeg-png-webp-to-pdf-test.html"
+      ],
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/format-edge-png.pdf",
+      "bytes": 17268,
+      "sha256": "835a86219e03388c332b29f1381795af146339a766d7c0b99ddce3f605d3eb39",
+      "pages": 1,
+      "pageSizes": [
+        {
+          "width": 640,
+          "height": 400
+        }
+      ],
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/format-edge-webp.pdf",
+      "referrers": [
+        "/blog/jpeg-png-webp-to-pdf-test.html"
+      ],
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/format-edge-webp.pdf",
+      "bytes": 17372,
+      "sha256": "026810a1acda939eb520508bc7eaddee744dbd6b8c6c35d09804a003c5650bd0",
+      "pages": 1,
+      "pageSizes": [
+        {
+          "width": 640,
+          "height": 400
+        }
+      ],
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/format-jpg.pdf",
+      "referrers": [
+        "/blog/jpeg-png-webp-to-pdf-test.html"
+      ],
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/format-jpg.pdf",
+      "bytes": 17925,
+      "sha256": "dd5de7ab55042530c7a70fb49167ca19be6d3890c92a0121480d42777e8a67ce",
+      "pages": 1,
+      "pageSizes": [
+        {
+          "width": 640,
+          "height": 400
+        }
+      ],
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/format-png.pdf",
+      "referrers": [
+        "/blog/jpeg-png-webp-to-pdf-test.html"
+      ],
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/format-png.pdf",
+      "bytes": 17268,
+      "sha256": "6cfc463f964fb2cde156b1884475c3b69b1e44b6d2c1a1fcf344b27257db4f9c",
+      "pages": 1,
+      "pageSizes": [
+        {
+          "width": 640,
+          "height": 400
+        }
+      ],
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/format-sample.jpg",
+      "referrers": [
+        "/blog/jpeg-png-webp-to-pdf-test.html"
+      ],
+      "status": 200,
+      "type": "image/jpeg",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/format-sample.jpg",
+      "bytes": 16987,
+      "sha256": "975d9c0282d66138421d6bccb8877f9518327f9d29c733615656e34f9334577a",
+      "width": 640,
+      "height": 400,
+      "format": "jpeg",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/format-sample.png",
+      "referrers": [
+        "/blog/jpeg-png-webp-to-pdf-test.html"
+      ],
+      "status": 200,
+      "type": "image/png",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/format-sample.png",
+      "bytes": 18067,
+      "sha256": "8f704228d8ffa8adfc334650cd898bb9b77359b138feec8ef445fe49731ead7d",
+      "width": 640,
+      "height": 400,
+      "format": "png",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/format-sample.webp",
+      "referrers": [
+        "/blog/jpeg-png-webp-to-pdf-test.html"
+      ],
+      "status": 200,
+      "type": "image/webp",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/format-sample.webp",
+      "bytes": 8250,
+      "sha256": "1d92e33ab54533020568b9cb316d5370cde9bbfcdf64db372ac84c9b0bf51482",
+      "width": 640,
+      "height": 400,
+      "format": "webp",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/format-webp.pdf",
+      "referrers": [
+        "/blog/jpeg-png-webp-to-pdf-test.html"
+      ],
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/format-webp.pdf",
+      "bytes": 17372,
+      "sha256": "9d483e8d8bc83bf62863dc7cc244e528007d12263087046125447cf64daf0d5d",
+      "pages": 1,
+      "pageSizes": [
+        {
+          "width": 640,
+          "height": 400
+        }
+      ],
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/json-cases.json",
+      "referrers": [
+        "/blog/json-formatter-edge-cases.html"
+      ],
+      "status": 200,
+      "type": "application/json",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/json-cases.json",
+      "bytes": 1386,
+      "sha256": "0e07b6f583cea05768162d7361b4c1503e793f84076e983e15c71fede86cc375",
+      "validJson": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/pdf-inspection.json",
+      "referrers": [
+        "/blog/jpeg-png-webp-to-pdf-test.html"
+      ],
+      "status": 200,
+      "type": "application/json",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/pdf-inspection.json",
+      "bytes": 2114,
+      "sha256": "6c77cf96e1327d82d69fb0ff2e4ef7df4d340fa9d1c5a6d731ce9f924fb33113",
+      "validJson": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/results.json",
+      "referrers": [
+        "/blog/csv-quotes-unicode-and-blank-fields.html",
+        "/blog/jpeg-png-webp-to-pdf-test.html",
+        "/blog/json-formatter-edge-cases.html",
+        "/blog/word-counter-unicode-experiment.html"
+      ],
+      "status": 200,
+      "type": "application/json",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/results.json",
+      "bytes": 24057,
+      "sha256": "9683ade9d65468fb69bbe2dd024480f22bbab3e55362228d388810a7141ae49a",
+      "validJson": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/experiments/word-counter-cases.json",
+      "referrers": [
+        "/blog/word-counter-unicode-experiment.html"
+      ],
+      "status": 200,
+      "type": "application/json",
+      "finalUrl": "https://nevco.online/assets/examples/experiments/word-counter-cases.json",
+      "bytes": 1668,
+      "sha256": "adc2543bdb4a4de2cccc0ea6afbac8226a7798d11826602791f9d615ede1dc09",
+      "validJson": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/images/mug-photo-output.png",
+      "referrers": [
+        "/categories/image-tools.html",
+        "/journal/best-practices-for-background-removal-when-working-with-design",
+        "/tools/background-remover.html"
+      ],
+      "status": 200,
+      "type": "image/png",
+      "finalUrl": "https://nevco.online/assets/examples/images/mug-photo-output.png",
+      "bytes": 335268,
+      "sha256": "ea063447cf12502c69c821840ba5805f6988d6ff0c855c2724a8ef5300b9f831",
+      "width": 960,
+      "height": 1280,
+      "format": "png",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/images/mug-photo.jpg",
+      "referrers": [
+        "/categories/image-tools.html",
+        "/journal/best-practices-for-background-removal-when-working-with-design",
+        "/tools/background-remover.html"
+      ],
+      "status": 200,
+      "type": "image/jpeg",
+      "finalUrl": "https://nevco.online/assets/examples/images/mug-photo.jpg",
+      "bytes": 117361,
+      "sha256": "f46f6bc74eb235b489bcd75430f31f66a7ff4a84a87ed239f9bc8aa47b163a5f",
+      "width": 960,
+      "height": 1280,
+      "format": "jpeg",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/images/SOURCE.json",
+      "referrers": [
+        "/categories/image-tools.html",
+        "/journal/best-practices-for-background-removal-when-working-with-design",
+        "/tools/background-remover.html"
+      ],
+      "status": 200,
+      "type": "application/json",
+      "finalUrl": "https://nevco.online/assets/examples/images/SOURCE.json",
+      "bytes": 504,
+      "sha256": "7bae3f92292b129c80fee0a6325a414fb171651b5c31628c81c4412041d7b450",
+      "validJson": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/pdf/application.pdf",
+      "referrers": [
+        "/journal/simple-pdf-workflow-without-software",
+        "/tools/pdf-merge.html"
+      ],
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://nevco.online/assets/examples/pdf/application.pdf",
+      "bytes": 1111,
+      "sha256": "11d3c92a9f8b9ba37c3fa49b40c92e097eab44beda5fe6cf8c2ca205647dbe40",
+      "pages": 2,
+      "pageSizes": [
+        {
+          "width": 400,
+          "height": 600
+        },
+        {
+          "width": 401,
+          "height": 601
+        }
+      ],
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/pdf/cover.pdf",
+      "referrers": [
+        "/journal/simple-pdf-workflow-without-software",
+        "/tools/pdf-merge.html"
+      ],
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://nevco.online/assets/examples/pdf/cover.pdf",
+      "bytes": 867,
+      "sha256": "a29a16bda558024c655983d3e5c4b882c8d1f1aa8b20c4d482f328819d3bc6a8",
+      "pages": 1,
+      "pageSizes": [
+        {
+          "width": 420,
+          "height": 594
+        }
+      ],
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/pdf/merged-example.pdf",
+      "referrers": [
+        "/categories/pdf-tools.html",
+        "/journal/simple-pdf-workflow-without-software",
+        "/tools/pdf-merge.html"
+      ],
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://nevco.online/assets/examples/pdf/merged-example.pdf",
+      "bytes": 1563,
+      "sha256": "aad13c88a8db2d33df99ce03b33c7fd3bf83482755e972d8950dca3c64646d63",
+      "pages": 4,
+      "pageSizes": [
+        {
+          "width": 420,
+          "height": 594
+        },
+        {
+          "width": 400,
+          "height": 600
+        },
+        {
+          "width": 401,
+          "height": 601
+        },
+        {
+          "width": 360,
+          "height": 480
+        }
+      ],
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/pdf/support.pdf",
+      "referrers": [
+        "/journal/simple-pdf-workflow-without-software",
+        "/tools/pdf-merge.html"
+      ],
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://nevco.online/assets/examples/pdf/support.pdf",
+      "bytes": 869,
+      "sha256": "b4cb150a591eee905f7eabe0de9f34885a938833cc25cbbd617248b0d94736d5",
+      "pages": 1,
+      "pageSizes": [
+        {
+          "width": 360,
+          "height": 480
+        }
+      ],
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/qr-check.png",
+      "referrers": [
+        "/categories/generators.html",
+        "/tools/qr-code-generator.html"
+      ],
+      "status": 200,
+      "type": "image/png",
+      "finalUrl": "https://nevco.online/assets/examples/qr-check.png",
+      "bytes": 2611,
+      "sha256": "381760fd2649661a0a0d2870867118ef53182cb8001620b5ff9cd3b856ee728b",
+      "width": 180,
+      "height": 180,
+      "format": "png",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/examples/qr-print-check.pdf",
+      "referrers": [
+        "/categories/generators.html",
+        "/tools/qr-code-generator.html"
+      ],
+      "status": 200,
+      "type": "application/pdf",
+      "finalUrl": "https://nevco.online/assets/examples/qr-print-check.pdf",
+      "bytes": 2633,
+      "sha256": "6c9f7214a380703208f17d612a2764b27d57920687d29bc453a1dcc29c3d6a25",
+      "pages": 1,
+      "pageSizes": [
+        {
+          "width": 595,
+          "height": 842
+        }
+      ],
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/fonts/inter-latin.woff2",
+      "referrers": [
+        "/",
+        "/about.html",
+        "/blog/index.html",
+        "/categories/developer-tools.html",
+        "/categories/email-tools.html",
+        "/categories/generators.html",
+        "/categories/image-tools.html",
+        "/categories/pdf-tools.html",
+        "/categories/text-tools.html",
+        "/contact.html",
+        "/cookie-policy.html",
+        "/disclaimer.html",
+        "/privacy-policy.html",
+        "/terms-of-service.html",
+        "/tools/background-remover.html",
+        "/tools/base64-tool.html",
+        "/tools/color-palette-generator.html",
+        "/tools/csv-to-json.html",
+        "/tools/hash-generator.html",
+        "/tools/image-to-pdf.html",
+        "/tools/index.html",
+        "/tools/json-formatter.html",
+        "/tools/jwt-decoder.html",
+        "/tools/password-generator.html",
+        "/tools/pdf-merge.html",
+        "/tools/qr-code-generator.html",
+        "/tools/temp-mail.html",
+        "/tools/text-case-converter.html",
+        "/tools/text-diff-checker.html",
+        "/tools/unit-converter.html",
+        "/tools/unix-timestamp-converter.html",
+        "/tools/url-encoder-decoder.html",
+        "/tools/user-agent-generator.html",
+        "/tools/uuid-generator.html",
+        "/tools/word-counter.html"
+      ],
+      "status": 200,
+      "type": "font/woff2",
+      "finalUrl": "https://nevco.online/assets/fonts/inter-latin.woff2",
+      "bytes": 48256,
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "validWoff2Header": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/fonts/space-grotesk-latin.woff2",
+      "referrers": [
+        "/",
+        "/about.html",
+        "/blog/index.html",
+        "/categories/developer-tools.html",
+        "/categories/email-tools.html",
+        "/categories/generators.html",
+        "/categories/image-tools.html",
+        "/categories/pdf-tools.html",
+        "/categories/text-tools.html",
+        "/contact.html",
+        "/cookie-policy.html",
+        "/disclaimer.html",
+        "/privacy-policy.html",
+        "/terms-of-service.html",
+        "/tools/background-remover.html",
+        "/tools/base64-tool.html",
+        "/tools/color-palette-generator.html",
+        "/tools/csv-to-json.html",
+        "/tools/hash-generator.html",
+        "/tools/image-to-pdf.html",
+        "/tools/index.html",
+        "/tools/json-formatter.html",
+        "/tools/jwt-decoder.html",
+        "/tools/password-generator.html",
+        "/tools/pdf-merge.html",
+        "/tools/qr-code-generator.html",
+        "/tools/temp-mail.html",
+        "/tools/text-case-converter.html",
+        "/tools/text-diff-checker.html",
+        "/tools/unit-converter.html",
+        "/tools/unix-timestamp-converter.html",
+        "/tools/url-encoder-decoder.html",
+        "/tools/user-agent-generator.html",
+        "/tools/uuid-generator.html",
+        "/tools/word-counter.html"
+      ],
+      "status": 200,
+      "type": "font/woff2",
+      "finalUrl": "https://nevco.online/assets/fonts/space-grotesk-latin.woff2",
+      "bytes": 22288,
+      "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+      "validWoff2Header": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/images/anvil-mark.svg",
+      "referrers": [
+        "/",
+        "/about.html",
+        "/blog/csv-quotes-unicode-and-blank-fields.html",
+        "/blog/index.html",
+        "/blog/jpeg-png-webp-to-pdf-test.html",
+        "/blog/json-formatter-edge-cases.html",
+        "/blog/word-counter-unicode-experiment.html",
+        "/categories/developer-tools.html",
+        "/categories/email-tools.html",
+        "/categories/generators.html",
+        "/categories/image-tools.html",
+        "/categories/pdf-tools.html",
+        "/categories/text-tools.html",
+        "/contact.html",
+        "/cookie-policy.html",
+        "/disclaimer.html",
+        "/journal/best-practices-for-background-removal-when-working-with-design",
+        "/journal/best-practices-for-temporary-email-when-working-with-signups",
+        "/journal/simple-pdf-workflow-without-software",
+        "/journal/small-tools-that-save-developers-time",
+        "/privacy-policy.html",
+        "/terms-of-service.html",
+        "/tools/background-remover.html",
+        "/tools/base64-tool.html",
+        "/tools/color-palette-generator.html",
+        "/tools/csv-to-json.html",
+        "/tools/hash-generator.html",
+        "/tools/image-to-pdf.html",
+        "/tools/index.html",
+        "/tools/json-formatter.html",
+        "/tools/jwt-decoder.html",
+        "/tools/password-generator.html",
+        "/tools/pdf-merge.html",
+        "/tools/qr-code-generator.html",
+        "/tools/temp-mail.html",
+        "/tools/text-case-converter.html",
+        "/tools/text-diff-checker.html",
+        "/tools/unit-converter.html",
+        "/tools/unix-timestamp-converter.html",
+        "/tools/url-encoder-decoder.html",
+        "/tools/user-agent-generator.html",
+        "/tools/uuid-generator.html",
+        "/tools/word-counter.html"
+      ],
+      "status": 200,
+      "type": "image/svg+xml",
+      "finalUrl": "https://nevco.online/assets/images/anvil-mark.svg",
+      "bytes": 326,
+      "sha256": "15cd8293feb77eb180b04c0a01d7eafd13b1c24c39791173f3e81422ea3be8e3",
+      "validText": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/images/editorial/background-removal-example.png",
+      "referrers": [
+        "/",
+        "/categories/image-tools.html",
+        "/journal/best-practices-for-background-removal-when-working-with-design",
+        "/tools/background-remover.html"
+      ],
+      "status": 200,
+      "type": "image/png",
+      "finalUrl": "https://nevco.online/assets/images/editorial/background-removal-example.png",
+      "bytes": 59456,
+      "sha256": "3abb82c454660cf604a1a1457215201819e2c9a0c5c6aebf4cb05e59d014860e",
+      "width": 976,
+      "height": 566,
+      "format": "png",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/images/editorial/background-removal-input.png",
+      "referrers": [
+        "/categories/image-tools.html",
+        "/journal/best-practices-for-background-removal-when-working-with-design",
+        "/tools/background-remover.html",
+        "/tools/image-to-pdf.html"
+      ],
+      "status": 200,
+      "type": "image/png",
+      "finalUrl": "https://nevco.online/assets/images/editorial/background-removal-input.png",
+      "bytes": 12633,
+      "sha256": "7e93b8756cea87b463330f5542b7cfdca75b21485b78bdaf804f10fc14b9f676",
+      "width": 480,
+      "height": 360,
+      "format": "png",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/images/editorial/background-removal-output.png",
+      "referrers": [
+        "/journal/best-practices-for-background-removal-when-working-with-design",
+        "/tools/background-remover.html"
+      ],
+      "status": 200,
+      "type": "image/png",
+      "finalUrl": "https://nevco.online/assets/images/editorial/background-removal-output.png",
+      "bytes": 186262,
+      "sha256": "884a8d095771913c018b6feee5a7ff7765e0246263f467469dcb47733f2fd4f7",
+      "width": 480,
+      "height": 360,
+      "format": "png",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/images/editorial/csv-newline-experiment.png",
+      "referrers": [
+        "/blog/csv-quotes-unicode-and-blank-fields.html",
+        "/blog/index.html"
+      ],
+      "status": 200,
+      "type": "image/png",
+      "finalUrl": "https://nevco.online/assets/images/editorial/csv-newline-experiment.png",
+      "bytes": 34108,
+      "sha256": "a5c6471ed95b3be5f6a7e068b8fc7b463aff4050b95aee94d11b43fbc8e288ea",
+      "width": 1052,
+      "height": 678,
+      "format": "png",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/images/editorial/image-format-experiment.png",
+      "referrers": [
+        "/blog/index.html",
+        "/blog/jpeg-png-webp-to-pdf-test.html"
+      ],
+      "status": 200,
+      "type": "image/png",
+      "finalUrl": "https://nevco.online/assets/images/editorial/image-format-experiment.png",
+      "bytes": 45146,
+      "sha256": "9aceebeaef63e235425100c7e3dc703cecc55ff8136c5013f88bd600fd15f199",
+      "width": 1052,
+      "height": 488,
+      "format": "png",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/images/editorial/json-precision-experiment.png",
+      "referrers": [
+        "/blog/index.html",
+        "/blog/json-formatter-edge-cases.html"
+      ],
+      "status": 200,
+      "type": "image/png",
+      "finalUrl": "https://nevco.online/assets/images/editorial/json-precision-experiment.png",
+      "bytes": 34147,
+      "sha256": "acddd1ce28fae74541d1ffcf0d2126dfc6e6d227cf2d5c6f0fa80952ac9301ef",
+      "width": 1052,
+      "height": 546,
+      "format": "png",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/images/editorial/mug-photo-input.webp",
+      "referrers": [
+        "/journal/best-practices-for-background-removal-when-working-with-design"
+      ],
+      "status": 200,
+      "type": "image/webp",
+      "finalUrl": "https://nevco.online/assets/images/editorial/mug-photo-input.webp",
+      "bytes": 38716,
+      "sha256": "76f1c1dbf6c91f22aeea0d52695787bb4c52506d57b0fb35c30a6083424a9da4",
+      "width": 480,
+      "height": 640,
+      "format": "webp",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/images/editorial/mug-photo-output.webp",
+      "referrers": [
+        "/journal/best-practices-for-background-removal-when-working-with-design"
+      ],
+      "status": 200,
+      "type": "image/webp",
+      "finalUrl": "https://nevco.online/assets/images/editorial/mug-photo-output.webp",
+      "bytes": 22258,
+      "sha256": "339efcb636a2edf4d97736cfe2ec4fb0f8f437f728b431c750d91b701e279980",
+      "width": 480,
+      "height": 640,
+      "format": "webp",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/images/editorial/pdf-ordering-example.png",
+      "referrers": [
+        "/journal/simple-pdf-workflow-without-software",
+        "/tools/pdf-merge.html"
+      ],
+      "status": 200,
+      "type": "image/png",
+      "finalUrl": "https://nevco.online/assets/images/editorial/pdf-ordering-example.png",
+      "bytes": 49553,
+      "sha256": "9ecd72b5dc5740deb9cee02daa229294bc18989047c4256e50291b909b1ba3b8",
+      "width": 976,
+      "height": 623,
+      "format": "png",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/images/editorial/temporary-email-example.png",
+      "referrers": [
+        "/journal/best-practices-for-temporary-email-when-working-with-signups"
+      ],
+      "status": 200,
+      "type": "image/png",
+      "finalUrl": "https://nevco.online/assets/images/editorial/temporary-email-example.png",
+      "bytes": 93017,
+      "sha256": "9bb34797b8fb5549ae77cd3b8b386600231552f9afe29815a499c4cfc4cae2c1",
+      "width": 976,
+      "height": 734,
+      "format": "png",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/images/editorial/unicode-count-experiment.png",
+      "referrers": [
+        "/blog/index.html",
+        "/blog/word-counter-unicode-experiment.html"
+      ],
+      "status": 200,
+      "type": "image/png",
+      "finalUrl": "https://nevco.online/assets/images/editorial/unicode-count-experiment.png",
+      "bytes": 32636,
+      "sha256": "e3275441d0e2b4883387004ed45d71148d637d7bed7041925b1efb9f89590468",
+      "width": 1052,
+      "height": 658,
+      "format": "png",
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/api.js",
+      "referrers": [
+        "/blog/index.html",
+        "/contact.html",
+        "/tools/temp-mail.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/api.js",
+      "bytes": 1424,
+      "sha256": "5c9beb5d73e147dc5bb089b884e771bb351c72b591227fa35fb6d2809e457edc",
+      "validJavaScript": true,
+      "matchesLocalFile": false,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/config.js",
+      "referrers": [
+        "/blog/index.html",
+        "/contact.html",
+        "/tools/temp-mail.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/config.js",
+      "bytes": 386,
+      "sha256": "7350e2bc9df1927066420dce36b2b1f53ae415b69500eaf3d466dcbf9bb7f4c3",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/contact.js",
+      "referrers": [
+        "/contact.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/contact.js",
+      "bytes": 1688,
+      "sha256": "16f0704b87ad822dd11207a0f7421f5f8490f031a2f82de09e224a7e9c3408d9",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/main.js",
+      "referrers": [
+        "/",
+        "/about.html",
+        "/blog/csv-quotes-unicode-and-blank-fields.html",
+        "/blog/index.html",
+        "/blog/jpeg-png-webp-to-pdf-test.html",
+        "/blog/json-formatter-edge-cases.html",
+        "/blog/word-counter-unicode-experiment.html",
+        "/categories/developer-tools.html",
+        "/categories/email-tools.html",
+        "/categories/generators.html",
+        "/categories/image-tools.html",
+        "/categories/pdf-tools.html",
+        "/categories/text-tools.html",
+        "/contact.html",
+        "/cookie-policy.html",
+        "/disclaimer.html",
+        "/journal/best-practices-for-background-removal-when-working-with-design",
+        "/journal/best-practices-for-temporary-email-when-working-with-signups",
+        "/journal/simple-pdf-workflow-without-software",
+        "/journal/small-tools-that-save-developers-time",
+        "/privacy-policy.html",
+        "/terms-of-service.html",
+        "/tools/background-remover.html",
+        "/tools/base64-tool.html",
+        "/tools/color-palette-generator.html",
+        "/tools/csv-to-json.html",
+        "/tools/hash-generator.html",
+        "/tools/image-to-pdf.html",
+        "/tools/index.html",
+        "/tools/json-formatter.html",
+        "/tools/jwt-decoder.html",
+        "/tools/password-generator.html",
+        "/tools/pdf-merge.html",
+        "/tools/qr-code-generator.html",
+        "/tools/temp-mail.html",
+        "/tools/text-case-converter.html",
+        "/tools/text-diff-checker.html",
+        "/tools/unit-converter.html",
+        "/tools/unix-timestamp-converter.html",
+        "/tools/url-encoder-decoder.html",
+        "/tools/user-agent-generator.html",
+        "/tools/uuid-generator.html",
+        "/tools/word-counter.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/main.js",
+      "bytes": 5233,
+      "sha256": "55e03d4609bba930d8fc1c8ecae09298d1f041a32699f37526a83e293a06169c",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/published-posts.js",
+      "referrers": [
+        "/blog/index.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/published-posts.js",
+      "bytes": 5956,
+      "sha256": "2e8f596d0262af12e148d47929a9716be7c64d51b523e54dcc9ad691e1e22e9c",
+      "validJavaScript": true,
+      "matchesLocalFile": false,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tool-directory.js",
+      "referrers": [
+        "/tools/index.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tool-directory.js",
+      "bytes": 932,
+      "sha256": "89d5080251af1955913f71c16945ade45bebdfd32d37a2f7f5dc8f672918d01a",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tool-examples.js",
+      "referrers": [
+        "/tools/base64-tool.html",
+        "/tools/csv-to-json.html",
+        "/tools/hash-generator.html",
+        "/tools/json-formatter.html",
+        "/tools/jwt-decoder.html",
+        "/tools/qr-code-generator.html",
+        "/tools/text-case-converter.html",
+        "/tools/text-diff-checker.html",
+        "/tools/unit-converter.html",
+        "/tools/unix-timestamp-converter.html",
+        "/tools/url-encoder-decoder.html",
+        "/tools/word-counter.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tool-examples.js",
+      "bytes": 901,
+      "sha256": "66e63e77a5343fb2258c053480ef41dfc1199980491f4061025e6112ec921b57",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tool-ux.js",
+      "referrers": [
+        "/tools/background-remover.html",
+        "/tools/base64-tool.html",
+        "/tools/color-palette-generator.html",
+        "/tools/csv-to-json.html",
+        "/tools/hash-generator.html",
+        "/tools/image-to-pdf.html",
+        "/tools/index.html",
+        "/tools/json-formatter.html",
+        "/tools/jwt-decoder.html",
+        "/tools/password-generator.html",
+        "/tools/pdf-merge.html",
+        "/tools/qr-code-generator.html",
+        "/tools/temp-mail.html",
+        "/tools/text-case-converter.html",
+        "/tools/text-diff-checker.html",
+        "/tools/unit-converter.html",
+        "/tools/unix-timestamp-converter.html",
+        "/tools/url-encoder-decoder.html",
+        "/tools/user-agent-generator.html",
+        "/tools/uuid-generator.html",
+        "/tools/word-counter.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tool-ux.js",
+      "bytes": 986,
+      "sha256": "5ae5bec8bbd4de3f54327312210bc64fd222a4de0d7928ca4c3706cd11312259",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/background-remover.js",
+      "referrers": [
+        "/tools/background-remover.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/background-remover.js",
+      "bytes": 5605,
+      "sha256": "bf1e5c76dce967f8f38625688ad8899de9d0c00a0bb136a6f7f49797ad6b3386",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/base64-tool.js",
+      "referrers": [
+        "/tools/base64-tool.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/base64-tool.js",
+      "bytes": 1483,
+      "sha256": "95ae269b25af50cf2f3e8c8e9217cf55bd24b72b67478df63e003b76dc766fce",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/color-palette-generator.js",
+      "referrers": [
+        "/tools/color-palette-generator.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/color-palette-generator.js",
+      "bytes": 4546,
+      "sha256": "09b5525a5b9aaa24c3df58d794a7de47e23b51735a7c7f6138ca4d35fed9b535",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/csv-to-json.js",
+      "referrers": [
+        "/tools/csv-to-json.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/csv-to-json.js",
+      "bytes": 3929,
+      "sha256": "e555144ba6054520474d03b38611a19ef7ba201508706997d56f3b2d9b7ee4b8",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/hash-generator.js",
+      "referrers": [
+        "/tools/hash-generator.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/hash-generator.js",
+      "bytes": 1481,
+      "sha256": "2ea431a02570606ae12244979de644c42c288e3fc0ec32caf87cb80b8a48184a",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/image-to-pdf.js",
+      "referrers": [
+        "/tools/image-to-pdf.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/image-to-pdf.js",
+      "bytes": 6481,
+      "sha256": "434c2b68c731e1b368bc318fdf05aa5f6b3b22156d99410505e61737c4733a6f",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/json-formatter.js",
+      "referrers": [
+        "/tools/json-formatter.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/json-formatter.js",
+      "bytes": 1438,
+      "sha256": "893575a031ad3fec81c7d8f3f0e00dc9c54d81c0a532ddba22f0e6a673401331",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/jwt-decoder.js",
+      "referrers": [
+        "/tools/jwt-decoder.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/jwt-decoder.js",
+      "bytes": 2428,
+      "sha256": "db45aa1d106a2f42d6c4eaadca477831701b16d133b54db85b6b8d149da51048",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/password-generator.js",
+      "referrers": [
+        "/tools/password-generator.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/password-generator.js",
+      "bytes": 4009,
+      "sha256": "a6b37e8d6b58964294d00f3fc6fa26c1e2c14724bfd7782e691ced2d753ab1ad",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/pdf-merge.js",
+      "referrers": [
+        "/tools/pdf-merge.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/pdf-merge.js",
+      "bytes": 5654,
+      "sha256": "9fd64168e918b777547a10dfc0b9ab765f768df90a1ec220eb33b88121621f6a",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/qr-code-generator.js",
+      "referrers": [
+        "/tools/qr-code-generator.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/qr-code-generator.js",
+      "bytes": 2245,
+      "sha256": "012d977729cf8088efe662308fc30df252470b6b1e0197eb60b2c2daf7060941",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/temp-mail.js",
+      "referrers": [
+        "/tools/temp-mail.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/temp-mail.js",
+      "bytes": 8813,
+      "sha256": "7ea2326b52b581bb12540cabe2c9ee78f01db38ff4eaa640b91ebeb85a80d1a6",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/text-case-converter.js",
+      "referrers": [
+        "/tools/text-case-converter.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/text-case-converter.js",
+      "bytes": 1745,
+      "sha256": "9bbb9d72ec6c4561bd13735c952acc3645c6a0994f23f0b2af4f4b8d40566362",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/text-diff-checker.js",
+      "referrers": [
+        "/tools/text-diff-checker.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/text-diff-checker.js",
+      "bytes": 2820,
+      "sha256": "d3bbaea13f067542659ca1371cd8e8b6df3befec7b8d2c9e9fda176f5ee1266f",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/unit-converter.js",
+      "referrers": [
+        "/tools/unit-converter.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/unit-converter.js",
+      "bytes": 3094,
+      "sha256": "ad4e9cff87f51bdeb82ba98cbbd457f5f63eeca62d0d8f5c727dec517eedb2dc",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/unix-timestamp-converter.js",
+      "referrers": [
+        "/tools/unix-timestamp-converter.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/unix-timestamp-converter.js",
+      "bytes": 1864,
+      "sha256": "7b760dad5757a84b890a367349d8785d551bc3bcd3d95023b2e38591da941c45",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/url-encoder-decoder.js",
+      "referrers": [
+        "/tools/url-encoder-decoder.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/url-encoder-decoder.js",
+      "bytes": 1378,
+      "sha256": "469afc2053f3eabce47d9228a3f3882f5062159e2c69f22b7ed34d679c00fac6",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/user-agent-generator.js",
+      "referrers": [
+        "/tools/user-agent-generator.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/user-agent-generator.js",
+      "bytes": 2166,
+      "sha256": "439bdd5054b1bfa418b8d930926a51e630bd2b9ad33e1ec5f602d6b85c940e10",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/uuid-generator.js",
+      "referrers": [
+        "/tools/uuid-generator.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/uuid-generator.js",
+      "bytes": 1903,
+      "sha256": "c364c6faab4c4c82b7c8708664ca638661c3939d422c4133cba38cda94814bc1",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/js/tools/word-counter.js",
+      "referrers": [
+        "/tools/word-counter.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/js/tools/word-counter.js",
+      "bytes": 1406,
+      "sha256": "7dfcd52e8631e9a6ed8fa420f0043841fe4e81ee627079b914663710279c9197",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/vendor/tool-libraries/pdf-lib-1.17.1.min.js",
+      "referrers": [
+        "/tools/image-to-pdf.html",
+        "/tools/pdf-merge.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/vendor/tool-libraries/pdf-lib-1.17.1.min.js",
+      "bytes": 525099,
+      "sha256": "0f9a5cad07941f0826586c94e089d89b918c46e5c17cf2d5a3c6f666e3bc694f",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/assets/vendor/tool-libraries/qrcode-1.0.0.min.js",
+      "referrers": [
+        "/tools/qr-code-generator.html"
+      ],
+      "status": 200,
+      "type": "text/javascript",
+      "finalUrl": "https://nevco.online/assets/vendor/tool-libraries/qrcode-1.0.0.min.js",
+      "bytes": 19927,
+      "sha256": "c541ef06327885a8415bca8df6071e14189b4855336def4f36db54bde8484f36",
+      "validJavaScript": true,
+      "matchesLocalFile": true,
+      "valid": true
+    },
+    {
+      "route": "/journal-images/925334fc-7e67-49b0-96fd-6d4b1c2ddc67",
+      "referrers": [
+        "/blog/index.html",
+        "/journal/small-tools-that-save-developers-time"
+      ],
+      "status": 200,
+      "type": "image/svg+xml",
+      "finalUrl": "https://nevco.online/journal-images/925334fc-7e67-49b0-96fd-6d4b1c2ddc67",
+      "bytes": 1638,
+      "sha256": "34a5cd6ab68ad43ca8f267e3aa53d6472521fa9714b5d9d8021c1c127a5528f3",
+      "validText": true,
+      "valid": true
+    },
+    {
+      "route": "/journal-images/c4244f15-2995-4aaf-b544-b37a356716db",
+      "referrers": [
+        "/blog/index.html",
+        "/journal/simple-pdf-workflow-without-software"
+      ],
+      "status": 200,
+      "type": "image/svg+xml",
+      "finalUrl": "https://nevco.online/journal-images/c4244f15-2995-4aaf-b544-b37a356716db",
+      "bytes": 1410,
+      "sha256": "f9fc0b22e0504f19f219b22ac2c208651c11ae5c347d03dae2b6f4c214618ada",
+      "validText": true,
+      "valid": true
+    },
+    {
+      "route": "/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+      "referrers": [
+        "/blog/index.html",
+        "/journal/best-practices-for-background-removal-when-working-with-design"
+      ],
+      "status": 200,
+      "type": "image/webp",
+      "finalUrl": "https://nevco.online/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+      "bytes": 150166,
+      "sha256": "c42dc7b0fe731c88c6dce216aa2b3c39347d58503431e0066650fbc4445344bb",
+      "width": 1672,
+      "height": 941,
+      "format": "webp",
+      "valid": true
+    },
+    {
+      "route": "/journal-images/f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+      "referrers": [
+        "/blog/index.html",
+        "/journal/best-practices-for-temporary-email-when-working-with-signups"
+      ],
+      "status": 200,
+      "type": "image/webp",
+      "finalUrl": "https://nevco.online/journal-images/f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+      "bytes": 110572,
+      "sha256": "c1dc606fd7ee1b2b0e1da8df71a7a99975c4917c98749f744c5b254456cc8950",
+      "width": 1672,
+      "height": 941,
+      "format": "webp",
+      "valid": true
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "fixtureAndCoverCount": 43
+}

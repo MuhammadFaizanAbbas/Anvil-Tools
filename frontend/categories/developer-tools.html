@@ -18,17 +18,17 @@
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
   <div class="header-row">
-    <a class="logo" href="../index.html">
+    <a class="logo" href="/">
       <img class="brand-mark" src="../assets/images/anvil-mark.svg" width="36" height="36" alt="">
       Anvil Tools
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-navigation"><span aria-hidden="true">&#9776;</span></button>
-    <nav class="main-nav" id="main-navigation"><a href="../">Home</a><a href="../tools/index.html" aria-current="page">All tools</a><a href="../blog/index.html">Blogs</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav>
+    <nav class="main-nav" id="main-navigation"><a href="/">Home</a><a href="../tools/index.html" aria-current="page">All tools</a><a href="../blog/index.html">Guides &amp; experiments</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav>
   </div>
 </header>
 <main class="wrap" id="main-content">
 
-<p class="breadcrumbs"><a href="../index.html">Home</a> / <a href="../tools/index.html">All tools</a> / <span>Developer tools</span></p>
+<p class="breadcrumbs"><a href="/">Home</a> / <a href="../tools/index.html">All tools</a> / <span>Developer tools</span></p>
 <section class="hero">
   <h1>Developer tools</h1>
   <p class="lede">Small utilities that save time during coding and testing.</p>
@@ -52,8 +52,8 @@
 <div class="tool-card">
   <div class="tool-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="12" rx="2"/><circle cx="9" cy="13" r="1.2"/><circle cx="15" cy="13" r="1.2"/><path d="M12 3v4M8 3h8"/></svg></div>
   <span class="category-tag">Developer tools</span>
-  <h3>User Agent Generator</h3>
-  <p>Choose fixed browser and bot user-agent strings for parser and request-header tests.</p>
+  <h3>User-Agent String Reference</h3>
+  <p>Reference strings for parser and request-header tests in applications you own or are authorized to test.</p>
   <span class="processing-label">Runs in your browser</span><a class="tool-link" href="../tools/user-agent-generator.html">Open tool →</a>
 </div>
 
@@ -68,7 +68,7 @@
 </section>
 
 
-<!-- expanded-content --><!-- reading-surface --><div class="content-guide"><section class="info-section"><h2>Find the transformation boundary</h2><div class="table-scroll" role="region" aria-label="Developer debugging choices" tabindex="0"><table><thead><tr><th scope="col">Problem</th><th scope="col">Tool</th><th scope="col">Boundary to preserve</th></tr></thead><tbody><tr><td>A configuration fails to parse</td><td><a href="../tools/json-formatter.html">JSON Formatter</a></td><td>Valid syntax, intended types, duplicate keys, and large identifiers.</td></tr><tr><td>A spreadsheet export needs API fixtures</td><td><a href="../tools/csv-to-json.html">CSV to JSON</a></td><td>Quoted commas, consistent columns, and string identifiers such as 001.</td></tr><tr><td>A query value contains spaces or reserved characters</td><td><a href="../tools/url-encoder-decoder.html">URL Encoder/Decoder</a></td><td>One component versus the separators of a complete URL.</td></tr><tr><td>A text payload uses an encoded representation</td><td><a href="../tools/base64-tool.html">Base64 Encoder/Decoder</a></td><td>UTF-8 text, standard Base64 versus Base64url, and unchanged bytes.</td></tr><tr><td>A test token's claims need inspection</td><td><a href="../tools/jwt-decoder.html">JWT Decoder</a></td><td>Decoded claims remain unverified; never use a live login token as a public example.</td></tr><tr><td>A timestamp or digest differs</td><td><a href="../tools/unix-timestamp-converter.html">Timestamp Converter</a> or <a href="../tools/hash-generator.html">Hash Generator</a></td><td>Seconds versus milliseconds and timezone, or exact UTF-8 text and line endings.</td></tr><tr><td>A client parser needs sample input</td><td><a href="../tools/user-agent-generator.html">User Agent Generator</a></td><td>Fixed fixtures versus real browser behavior and authenticated identities.</td></tr></tbody></table></div></section>
+<!-- expanded-content --><!-- reading-surface --><div class="content-guide"><section class="info-section"><h2>Find the transformation boundary</h2><div class="table-scroll" role="region" aria-label="Developer debugging choices" tabindex="0"><table><thead><tr><th scope="col">Problem</th><th scope="col">Tool</th><th scope="col">Boundary to preserve</th></tr></thead><tbody><tr><td>A configuration fails to parse</td><td><a href="../tools/json-formatter.html">JSON Formatter</a></td><td>Valid syntax, intended types, duplicate keys, and large identifiers.</td></tr><tr><td>A spreadsheet export needs API fixtures</td><td><a href="../tools/csv-to-json.html">CSV to JSON</a></td><td>Quoted commas, consistent columns, and string identifiers such as 001.</td></tr><tr><td>A query value contains spaces or reserved characters</td><td><a href="../tools/url-encoder-decoder.html">URL Encoder/Decoder</a></td><td>One component versus the separators of a complete URL.</td></tr><tr><td>A text payload uses an encoded representation</td><td><a href="../tools/base64-tool.html">Base64 Encoder/Decoder</a></td><td>UTF-8 text, standard Base64 versus Base64url, and unchanged bytes.</td></tr><tr><td>A test token's claims need inspection</td><td><a href="../tools/jwt-decoder.html">JWT Decoder</a></td><td>Decoded claims remain unverified; never use a live login token as a public example.</td></tr><tr><td>A timestamp or digest differs</td><td><a href="../tools/unix-timestamp-converter.html">Timestamp Converter</a> or <a href="../tools/hash-generator.html">Hash Generator</a></td><td>Seconds versus milliseconds and timezone, or exact UTF-8 text and line endings.</td></tr><tr><td>A client parser needs sample input</td><td><a href="../tools/user-agent-generator.html">User-Agent String Reference</a></td><td>Fixed fixtures versus real browser behavior and authenticated identities.</td></tr></tbody></table></div></section>
 <section class="info-section"><h2>Debug one fictional record</h2><p>Convert <code>id,name</code> followed by <code>001,Amina</code> from CSV to JSON. With headers enabled, the result contains <code>{"id":"001","name":"Amina"}</code>; the leading-zero identifier stays a string. Format it to inspect the types, then encode only the intended query value if it needs to enter a URL. If a later digest differs, compare the exact text and line endings before suspecting the algorithm.</p><p>The <a href="/journal/small-tools-that-save-developers-time">developer debugging guide</a> works through connected examples and shows why decoding, formatting, hashing, and server-side validation solve different problems.</p></section>
 <!-- crawler-recheck-example --><section class="info-section"><h2>Reproduce a transformation boundary</h2><p><code>id,id</code> followed by <code>001,002</code> produces <code>Header names must be unique.</code> A quoted newline belongs to one field. <a href="/assets/examples/developer/quoted-newline.csv">Download the CSV</a> and compare <a href="/assets/examples/developer/expected.json">the expected JSON</a>.</p></section>
 </div><!-- /reading-surface --><!-- /expanded-content --></main>
@@ -92,7 +92,7 @@
         <h3>Company</h3>
         <ul>
           <li><a href="../about.html">About</a></li>
-          <li><a href="../blog/index.html">Blogs</a></li>
+          <li><a href="../blog/index.html">Guides &amp; experiments</a></li>
           <li><a href="../contact.html">Contact</a></li>
         </ul>
       </div>

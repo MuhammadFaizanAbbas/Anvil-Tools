@@ -2,6 +2,15 @@ const express = require('express');
 const path = require('node:path');
 const app = express();
 const root = path.resolve(__dirname, '../frontend');
+const { securityHeadersForPath } = require('../backend/src/lib/public-security');
+app.disable('x-powered-by');
+app.use((req, res, next) => {
+  const publicSecurityHeaders = securityHeadersForPath(req.path);
+  res.set({ ...publicSecurityHeaders, 'Content-Security-Policy': publicSecurityHeaders['Content-Security-Policy'].replace("connect-src 'self'", "connect-src 'self' http://localhost:3000 http://127.0.0.1:3000") });
+  next();
+});
+app.get(/^\/index\.html\/?$/i, (req, res) => res.redirect(301, `/${req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : ''}`));
+app.get(['/journal', '/journal/'], (req, res) => res.redirect(301, `/blog/index.html${req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : ''}`));
 const retiredGuides = require('./site-generator/editorial-guides.json').filter(guide => Object.hasOwn(guide, 'retiredTo'));
 for (const guide of retiredGuides) app.get(`/blog/${guide.slug}.html`, (req, res) => guide.retiredTo ? res.redirect(301, guide.retiredTo) : res.status(410).sendFile(path.join(root, '404.html')));
 app.get(/^\/snowy-peaks-solitaire(?:\/(?:index\.(?:html?|php))?)?\/?$/i, (req, res) => res.redirect(301, '/'));

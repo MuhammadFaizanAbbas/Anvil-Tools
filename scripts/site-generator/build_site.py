@@ -31,7 +31,7 @@ ICONS = {
 NAV_LINKS = [
     ("/", "Home"),
     ("/tools/", "All tools"),
-    ("/blog/", "Blog"),
+    ("/blog/", "Guides &amp; experiments"),
     ("/about.html", "About"),
 ]
 
@@ -43,10 +43,10 @@ def header_html(active_path, depth_prefix):
     links = ""
     for href, label in NAV_LINKS:
         target = "/tools/index.html" if href == "/tools/" else ("/blog/index.html" if href == "/blog/" else href)
-        full = depth_prefix + (target.lstrip("/") or "index.html")
+        full = "/" if target == "/" else depth_prefix + target.lstrip("/")
         cur = ' aria-current="page"' if href == active_path else ""
         links += f'<a href="{full}"{cur}>{label}</a>'
-    logo_href = depth_prefix + "index.html"
+    logo_href = "/"
     return f'''<header class="site-header">
   <div class="header-row">
     <a class="logo" href="{logo_href}">
@@ -80,7 +80,7 @@ def footer_html(depth_prefix):
         <h3>Company</h3>
         <ul>
           <li><a href="{p}about.html">About</a></li>
-          <li><a href="{p}blog/index.html">Blog</a></li>
+          <li><a href="{p}blog/index.html">Guides &amp; experiments</a></li>
           <li><a href="{p}contact.html">Contact</a></li>
         </ul>
       </div>
@@ -147,7 +147,8 @@ def breadcrumbs(depth_prefix, trail):
     parts = []
     for label, href in trail:
         if href:
-            parts.append(f'<a href="{depth_prefix}{href}">{label}</a>')
+            target = "/" if href == "index.html" and label == "Home" else depth_prefix + href
+            parts.append(f'<a href="{target}">{label}</a>')
         else:
             parts.append(f'<span>{label}</span>')
     return '<p class="breadcrumbs">' + ' / '.join(parts) + '</p>'
