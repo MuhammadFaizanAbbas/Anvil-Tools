@@ -8,5 +8,6 @@ text = text.replace(/(<h2>Local processing and network requests<\/h2>)<p>[\s\S]*
 fs.writeFileSync(file, text);
 for (const file of ['frontend/privacy-policy.html', 'scripts/site-generator/generate.py', 'scripts/prepare-readiness-fixes.cjs']) {
   const source = fs.readFileSync(file, 'utf8');
-  fs.writeFileSync(file, source.replaceAll('https://www.aboutads.info/choices/', 'https://youradchoices.com/control'));
+  fs.writeFileSync(file, source.replace(/https?:\/\/(?:www\.)?aboutads\.info\/choices\/?/g, 'https://youradchoices.com/control'));
 }
+assert.ok(fs.readFileSync('frontend/privacy-policy.html', 'utf8').includes('https://youradchoices.com/control'));
