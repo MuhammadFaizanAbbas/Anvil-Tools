@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-10-06T10:53:49.738Z",
+  "articles": [
+    {
+      "slug": "best-practices-for-temporary-email-when-working-with-signups",
+      "expectedBodyMd5": "f542083184b6026754508eee49bedeb4",
+      "bodyMd5": "f8c9282d84d5e39d9b58c5a74abc41ad",
+      "bytes": 12100,
+      "metadata": {
+        "id": "best-practices-for-temporary-email-when-working-with-signups",
+        "slug": "best-practices-for-temporary-email-when-working-with-signups",
+        "tags": [
+          "temporary email",
+          "email aliases",
+          "account recovery",
+          "inbox organization"
+        ],
+        "title": "Temporary Email Best Practices for Signups",
+        "status": "published",
+        "excerpt": "Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.",
+        "author_id": null,
+        "cover_alt": "Laptop showing a signup form beside an email inbox, with an envelope and account-protection illustration",
+        "seo_title": "Temporary Email Best Practices for Signups",
+        "created_at": "2026-09-29T06:00:31.666188+00:00",
+        "updated_at": "2026-10-05T12:21:15.072438+00:00",
+        "published_at": "2026-09-29T06:00:31.666188+00:00",
+        "category_slug": "email-tools",
+        "cover_image_id": "f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+        "seo_description": "Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems."
+      }
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "expectedBodyMd5": "21b0ecca0300ead9826cab5c145debaf",
+      "bodyMd5": "2aefea27586a982c827dd249aa7ab3b7",
+      "bytes": 13071,
+      "metadata": {
+        "id": "best-practices-for-background-removal-when-working-with-design",
+        "slug": "best-practices-for-background-removal-when-working-with-design",
+        "tags": [
+          "background removal",
+          "product photography",
+          "transparent images",
+          "graphic design"
+        ],
+        "title": "Background Removal for Design and Product Photography",
+        "status": "published",
+        "excerpt": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
+        "author_id": null,
+        "cover_alt": "Design workspace comparing a sneaker photograph with a transparent cutout, alongside layer and edge-quality controls",
+        "seo_title": "Background Removal for Design and Product Photography",
+        "created_at": "2026-09-29T13:56:31.666188+00:00",
+        "updated_at": "2026-10-05T12:21:15.072438+00:00",
+        "published_at": "2026-09-29T13:56:31.666188+00:00",
+        "category_slug": "image-tools",
+        "cover_image_id": "d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+        "seo_description": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings."
+      }
+    },
+    {
+      "slug": "simple-pdf-workflow-without-software",
+      "expectedBodyMd5": "4c7d93990386cc959ab3394b6ed8f8dc",
+      "bodyMd5": "6eed47aa5bb1a569efe8d59075312c97",
+      "bytes": 11695,
+      "metadata": {
+        "id": "simple-pdf-workflow-without-software",
+        "slug": "simple-pdf-workflow-without-software",
+        "tags": [
+          "pdf workflow",
+          "merge pdf",
+          "image to pdf",
+          "document tools"
+        ],
+        "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result",
+        "status": "published",
+        "excerpt": "Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.",
+        "author_id": null,
+        "cover_alt": "Several document files combined in a browser based PDF workflow",
+        "seo_title": "PDF Workflows: Merge Files, Convert Images, and Check the Result",
+        "created_at": "2026-09-28T12:00:52.392843+00:00",
+        "updated_at": "2026-10-05T12:21:15.072438+00:00",
+        "published_at": "2026-09-29T12:13:39.490357+00:00",
+        "category_slug": "pdf-tools",
+        "cover_image_id": "c4244f15-2995-4aaf-b544-b37a356716db",
+        "seo_description": "Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download."
+      }
+    },
+    {
+      "slug": "small-tools-that-save-developers-time",
+      "expectedBodyMd5": "1a828a7a0c5a24a87c7e7a139d9cdbd0",
+      "bodyMd5": "fffae3a824314a2e5ffdcff4cfd4fcd1",
+      "bytes": 14029,
+      "metadata": {
+        "id": "small-tools-that-save-developers-time",
+        "slug": "small-tools-that-save-developers-time",
+        "tags": [
+          "developer tools",
+          "json",
+          "base64",
+          "testing",
+          "browser tools"
+        ],
+        "title": "Debug API Data with JSON, Base64, and Browser Tools",
+        "status": "published",
+        "excerpt": "Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.",
+        "author_id": null,
+        "cover_alt": "Small developer utilities used during browser testing",
+        "seo_title": "Debug API Data with JSON, Base64, and Browser Tools",
+        "created_at": "2026-09-28T12:00:52.392843+00:00",
+        "updated_at": "2026-10-04T13:00:51.606309+00:00",
+        "published_at": "2026-09-15T00:00:00+00:00",
+        "category_slug": "developer-tools",
+        "cover_image_id": "925334fc-7e67-49b0-96fd-6d4b1c2ddc67",
+        "seo_description": "Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples."
+      }
+    }
+  ],
+  "sqlSha256": "aa63eb0e97584fb8a938d66391e3c3ec4908000f2121f24c6c94d0b1c7045eef",
+  "sourceMatch": true,
+  "transactionSavesRevisions": true
+}
