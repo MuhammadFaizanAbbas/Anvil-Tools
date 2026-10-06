@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-06T18:54:03.687Z",
+  "steps": [
+    {
+      "name": "create one real provider-backed inbox",
+      "status": 200,
+      "ms": 4629
+    },
+    {
+      "name": "restore and poll with header capability",
+      "status": 200,
+      "ms": 653,
+      "sameAddress": true,
+      "messageCount": 0
+    },
+    {
+      "name": "another capability cannot access the test inbox",
+      "status": 404,
+      "ms": 343
+    },
+    {
+      "name": "forget own test inbox",
+      "status": 200,
+      "ms": 1116
+    },
+    {
+      "name": "deleted capability no longer works",
+      "status": 404,
+      "ms": 332
+    }
+  ],
+  "limits": [
+    "One fresh inbox; this is not a delivery, throughput or sender-to-reader test.",
+    "Inbox address and access capability are kept in memory and excluded from this report."
+  ],
+  "passed": true
+}

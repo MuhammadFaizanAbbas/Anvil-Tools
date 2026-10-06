@@ -1,0 +1,19 @@
+{
+  "checkedOn": "2026-10-07",
+  "method": "Independent web tool opening of primary pages",
+  "externalCrawlFinding": {
+    "url": "https://commons.wikimedia.org/wiki/File:Mug_image.jpg",
+    "automatedResult": "Node fetch failed; retained in full-audit-crawl-vercel.json",
+    "independentResult": "Page opened successfully; photograph attribution and CC0 dedication available",
+    "limit": "Independent availability does not guarantee every crawler or network can fetch the page"
+  },
+  "policyPagesOpened": [
+    "https://support.google.com/adsense/answer/48182",
+    "https://support.google.com/adsense/answer/1348695",
+    "https://support.google.com/adsense/answer/13554116"
+  ],
+  "limits": [
+    "Review of these public requirements does not certify every law, private account state, traffic practice or future advertising configuration.",
+    "Advertising is disabled; actual ad activation and applicable consent require separate account configuration."
+  ]
+}

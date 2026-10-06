@@ -1,6 +1,6 @@
 # AdSense readiness review completion — October 6, 2026
 
-The attached 91/100 review has been addressed in the repository. The subsequent [full website audit](FULL_SITE_AUDIT_2026-10-06.md) adds API deadlines, local PDF/QR libraries and database/storage privacy fixes. The backend is deployed and verified, and the frontend release is prepared for Vercel publication. The separate nevco.online cPanel files still require deployment access. Google search-cache refresh and Search Console actions require the property owner's account. No AdSense score or approval probability is guaranteed.
+Updated October 7. The attached 91/100 review has been addressed in the repository. The subsequent [full website audit](FULL_SITE_AUDIT_2026-10-06.md) adds API deadlines, local PDF/QR libraries and database/storage privacy fixes. Both frontend and backend are deployed and verified on Vercel; the incremental privacy migration and four corrected database guide bodies are published. The separate nevco.online cPanel files still require deployment access. Google search-cache refresh and Search Console actions require the property owner's account. No AdSense score or approval probability is guaranteed.
 
 | Review item | Result |
 | --- | --- |
@@ -25,7 +25,7 @@ The attached 91/100 review has been addressed in the repository. The subsequent 
 
 The evidence is under `frontend/assets/examples/experiments/` and `docs/audits/readiness-*`. Screenshots are actual tool controls, not generated mockups. Browser results record Chrome 154.0.8037.97 and Edge 154.0.4258.53. These are desktop lab checks; they do not establish behavior on every physical phone or printer.
 
-## Verification
+## Initial readiness verification
 
 - All 110 regression tests passed, with zero failures or skips.
 - Source verifier passed for 110 files. PHP renderer syntax passed.
@@ -34,6 +34,8 @@ The evidence is under `frontend/assets/examples/experiments/` and `docs/audits/r
 - Both browsers passed 14 JSON, 13 CSV, 12 counter, and 3 image-conversion cases. All six PDFs passed independent page/image/alpha/text checks.
 
 Automated accessibility checks are bounded checks rather than full accessibility certification. Google makes the final approval and indexing decisions.
+
+The subsequent full audit expanded regression coverage to 118 tests, checked all 43 public pages at three widths locally and on live Vercel, exercised all 20 tools, and measured all 43 pages with mobile Lighthouse. See the full audit for the final results, API latency, real inbox lifecycle check and the slow-device image-processing limitation.
 
 ## Deployment files
 
@@ -47,7 +49,7 @@ Rebuild using `npm run build:editorial`, then `py -3.9 scripts/package-readiness
 
 ## Remaining live/account steps
 
-1. Upload the frontend update to the cPanel document root and deploy the matching backend. No cPanel connection is available in this workspace; these uploads have not occurred.
+1. Upload the frontend update to the cPanel document root. No cPanel connection is available in this workspace, so this static upload has not occurred. The matching backend and Vercel frontend are already deployed and verified.
 2. Verify permanent redirects for http/https and www/non-www on a tool path and a query-bearing URL. Verify successful blog HTML has no Try again or unnecessary pagination, all eight articles are discoverable, and all new downloads return 200.
 
    Run `node scripts/check-readiness-live.cjs --after` for the read-only rollout checks; it saves a separate report and fails if the release or hostname fix is absent.
@@ -56,4 +58,4 @@ Rebuild using `npm run build:editorial`, then `py -3.9 scripts/package-readiness
 
 The fresh public observation that HTTPS www serves duplicate content is saved in `audits/readiness-live-before.json`. Live rollout must be checked separately from the passing local release.
 
-Primary references: [Google's required privacy content](https://support.google.com/adsense/answer/1348695), [canonical URL signals](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls), and [requesting recrawling](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl). The original article-length check was read-only. The subsequent full audit applied and verified the incremental privacy migration and made the media bucket private through the Storage API; article bodies were not changed.
+Primary references: [Google's required privacy content](https://support.google.com/adsense/answer/1348695), [canonical URL signals](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls), and [requesting recrawling](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl). The original article-length check was read-only. The subsequent full audit applied and verified the incremental privacy migration, made the media bucket private through the Storage API, and published the four reviewed guide corrections through a guarded transaction that saved previous records and preserved publication dates/covers.

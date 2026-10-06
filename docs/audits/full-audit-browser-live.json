@@ -1,0 +1,3019 @@
+{
+  "checkedAt": "2026-10-06T10:52:42.927Z",
+  "scope": "https://anviltools.vercel.app",
+  "axeVersion": "4.13.0",
+  "pages": [
+    {
+      "route": "/",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Anvil Tools: Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "canonical": "https://anviltools.vercel.app/",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Anvil Tools: Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "canonical": "https://anviltools.vercel.app/",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Anvil Tools: Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "canonical": "https://anviltools.vercel.app/",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "route": "/about.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "About | Anvil Tools",
+      "description": "About Anvil Tools and how our tools work.",
+      "canonical": "https://anviltools.vercel.app/about.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/about.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "About | Anvil Tools",
+      "description": "About Anvil Tools and how our tools work.",
+      "canonical": "https://anviltools.vercel.app/about.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/about.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "About | Anvil Tools",
+      "description": "About Anvil Tools and how our tools work.",
+      "canonical": "https://anviltools.vercel.app/about.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "CSV Edge Cases: Quotes, Unicode, Newlines, and Blank Fields | Anvil Tools",
+      "description": "Anvil Tools: Thirteen recorded CSV conversions show preserved strings, rejected headers, quoted newlines, and a semicolon-delimiter trap.",
+      "canonical": "https://anviltools.vercel.app/blog/csv-quotes-unicode-and-blank-fields.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "CSV Edge Cases: Quotes, Unicode, Newlines, and Blank Fields | Anvil Tools",
+      "description": "Anvil Tools: Thirteen recorded CSV conversions show preserved strings, rejected headers, quoted newlines, and a semicolon-delimiter trap.",
+      "canonical": "https://anviltools.vercel.app/blog/csv-quotes-unicode-and-blank-fields.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "CSV Edge Cases: Quotes, Unicode, Newlines, and Blank Fields | Anvil Tools",
+      "description": "Anvil Tools: Thirteen recorded CSV conversions show preserved strings, rejected headers, quoted newlines, and a semicolon-delimiter trap.",
+      "canonical": "https://anviltools.vercel.app/blog/csv-quotes-unicode-and-blank-fields.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/index.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Blog | Anvil Tools",
+      "description": "Blogs and practical tips from Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/blog/index.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/index.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Blog | Anvil Tools",
+      "description": "Blogs and practical tips from Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/blog/index.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/index.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Blog | Anvil Tools",
+      "description": "Blogs and practical tips from Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/blog/index.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "JPEG vs PNG vs WebP: Our Image-to-PDF Conversion Test | Anvil Tools",
+      "description": "Anvil Tools: The same 640 by 400 illustration converted from three formats, with actual downloads, independent PDF inspection, and transparency limits.",
+      "canonical": "https://anviltools.vercel.app/blog/jpeg-png-webp-to-pdf-test.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "JPEG vs PNG vs WebP: Our Image-to-PDF Conversion Test | Anvil Tools",
+      "description": "Anvil Tools: The same 640 by 400 illustration converted from three formats, with actual downloads, independent PDF inspection, and transparency limits.",
+      "canonical": "https://anviltools.vercel.app/blog/jpeg-png-webp-to-pdf-test.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "JPEG vs PNG vs WebP: Our Image-to-PDF Conversion Test | Anvil Tools",
+      "description": "Anvil Tools: The same 640 by 400 illustration converted from three formats, with actual downloads, independent PDF inspection, and transparency limits.",
+      "canonical": "https://anviltools.vercel.app/blog/jpeg-png-webp-to-pdf-test.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/json-formatter-edge-cases.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "10 Malformed JSON Inputs Tested in Our Formatter | Anvil Tools",
+      "description": "Anvil Tools: Actual browser results for ten syntax errors, duplicate keys, and an integer that changes during formatting, with reusable inputs.",
+      "canonical": "https://anviltools.vercel.app/blog/json-formatter-edge-cases.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/json-formatter-edge-cases.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "10 Malformed JSON Inputs Tested in Our Formatter | Anvil Tools",
+      "description": "Anvil Tools: Actual browser results for ten syntax errors, duplicate keys, and an integer that changes during formatting, with reusable inputs.",
+      "canonical": "https://anviltools.vercel.app/blog/json-formatter-edge-cases.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/json-formatter-edge-cases.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "10 Malformed JSON Inputs Tested in Our Formatter | Anvil Tools",
+      "description": "Anvil Tools: Actual browser results for ten syntax errors, duplicate keys, and an integer that changes during formatting, with reusable inputs.",
+      "canonical": "https://anviltools.vercel.app/blog/json-formatter-edge-cases.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "How Our Word Counter Counts Emoji, Accents, and Chinese Text | Anvil Tools",
+      "description": "Anvil Tools: Twelve measured examples explain whitespace words, UTF-16 characters, combining accents, emoji, and rough reading-time estimates.",
+      "canonical": "https://anviltools.vercel.app/blog/word-counter-unicode-experiment.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "How Our Word Counter Counts Emoji, Accents, and Chinese Text | Anvil Tools",
+      "description": "Anvil Tools: Twelve measured examples explain whitespace words, UTF-16 characters, combining accents, emoji, and rough reading-time estimates.",
+      "canonical": "https://anviltools.vercel.app/blog/word-counter-unicode-experiment.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "How Our Word Counter Counts Emoji, Accents, and Chinese Text | Anvil Tools",
+      "description": "Anvil Tools: Twelve measured examples explain whitespace words, UTF-16 characters, combining accents, emoji, and rough reading-time estimates.",
+      "canonical": "https://anviltools.vercel.app/blog/word-counter-unicode-experiment.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Developer tools | Anvil Tools",
+      "description": "Anvil Tools: Small utilities that save time during coding and testing.",
+      "canonical": "https://anviltools.vercel.app/categories/developer-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Developer tools | Anvil Tools",
+      "description": "Anvil Tools: Small utilities that save time during coding and testing.",
+      "canonical": "https://anviltools.vercel.app/categories/developer-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Developer tools | Anvil Tools",
+      "description": "Anvil Tools: Small utilities that save time during coding and testing.",
+      "canonical": "https://anviltools.vercel.app/categories/developer-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/categories/email-tools.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Email tools | Anvil Tools",
+      "description": "Anvil Tools: Tools for handling email addresses without exposing your real inbox.",
+      "canonical": "https://anviltools.vercel.app/categories/email-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/email-tools.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Email tools | Anvil Tools",
+      "description": "Anvil Tools: Tools for handling email addresses without exposing your real inbox.",
+      "canonical": "https://anviltools.vercel.app/categories/email-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/email-tools.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Email tools | Anvil Tools",
+      "description": "Anvil Tools: Tools for handling email addresses without exposing your real inbox.",
+      "canonical": "https://anviltools.vercel.app/categories/email-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/categories/generators.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Generators | Anvil Tools",
+      "description": "Anvil Tools: Create passwords, QR codes, palettes, and other quick outputs.",
+      "canonical": "https://anviltools.vercel.app/categories/generators.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/generators.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Generators | Anvil Tools",
+      "description": "Anvil Tools: Create passwords, QR codes, palettes, and other quick outputs.",
+      "canonical": "https://anviltools.vercel.app/categories/generators.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/generators.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Generators | Anvil Tools",
+      "description": "Anvil Tools: Create passwords, QR codes, palettes, and other quick outputs.",
+      "canonical": "https://anviltools.vercel.app/categories/generators.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/categories/image-tools.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Image tools | Anvil Tools",
+      "description": "Anvil Tools: Edit and convert images directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/categories/image-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/image-tools.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Image tools | Anvil Tools",
+      "description": "Anvil Tools: Edit and convert images directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/categories/image-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/image-tools.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Image tools | Anvil Tools",
+      "description": "Anvil Tools: Edit and convert images directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/categories/image-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/categories/pdf-tools.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF tools | Anvil Tools",
+      "description": "Anvil Tools: Combine, build, and convert PDF files without installing software.",
+      "canonical": "https://anviltools.vercel.app/categories/pdf-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/pdf-tools.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF tools | Anvil Tools",
+      "description": "Anvil Tools: Combine, build, and convert PDF files without installing software.",
+      "canonical": "https://anviltools.vercel.app/categories/pdf-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/pdf-tools.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF tools | Anvil Tools",
+      "description": "Anvil Tools: Combine, build, and convert PDF files without installing software.",
+      "canonical": "https://anviltools.vercel.app/categories/pdf-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Text tools | Anvil Tools",
+      "description": "Anvil Tools: Analyze and clean up written text.",
+      "canonical": "https://anviltools.vercel.app/categories/text-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Text tools | Anvil Tools",
+      "description": "Anvil Tools: Analyze and clean up written text.",
+      "canonical": "https://anviltools.vercel.app/categories/text-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Text tools | Anvil Tools",
+      "description": "Anvil Tools: Analyze and clean up written text.",
+      "canonical": "https://anviltools.vercel.app/categories/text-tools.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/contact.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Contact | Anvil Tools",
+      "description": "Get in touch with Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/contact.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/contact.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Contact | Anvil Tools",
+      "description": "Get in touch with Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/contact.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/contact.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Contact | Anvil Tools",
+      "description": "Get in touch with Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/contact.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/cookie-policy.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Cookie policy | Anvil Tools",
+      "description": "How Anvil Tools uses cookies.",
+      "canonical": "https://anviltools.vercel.app/cookie-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/cookie-policy.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Cookie policy | Anvil Tools",
+      "description": "How Anvil Tools uses cookies.",
+      "canonical": "https://anviltools.vercel.app/cookie-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/cookie-policy.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Cookie policy | Anvil Tools",
+      "description": "How Anvil Tools uses cookies.",
+      "canonical": "https://anviltools.vercel.app/cookie-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/disclaimer.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Disclaimer | Anvil Tools",
+      "description": "Usage disclaimer for Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/disclaimer.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/disclaimer.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Disclaimer | Anvil Tools",
+      "description": "Usage disclaimer for Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/disclaimer.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/disclaimer.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Disclaimer | Anvil Tools",
+      "description": "Usage disclaimer for Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/disclaimer.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Background Removal for Design and Product Photography | Anvil Tools",
+      "description": "Anvil Tools: Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
+      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Background Removal for Design and Product Photography | Anvil Tools",
+      "description": "Anvil Tools: Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
+      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Background Removal for Design and Product Photography | Anvil Tools",
+      "description": "Anvil Tools: Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
+      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Temporary Email Best Practices for Signups | Anvil Tools",
+      "description": "Anvil Tools: Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.",
+      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Temporary Email Best Practices for Signups | Anvil Tools",
+      "description": "Anvil Tools: Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.",
+      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Temporary Email Best Practices for Signups | Anvil Tools",
+      "description": "Anvil Tools: Choose the right inbox for a signup, understand temporary mail limits, protect account recovery, and work through real delivery and verification problems.",
+      "canonical": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/journal/simple-pdf-workflow-without-software",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result | Anvil Tools",
+      "description": "Anvil Tools: Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.",
+      "canonical": "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/journal/simple-pdf-workflow-without-software",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result | Anvil Tools",
+      "description": "Anvil Tools: Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.",
+      "canonical": "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/journal/simple-pdf-workflow-without-software",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result | Anvil Tools",
+      "description": "Anvil Tools: Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.",
+      "canonical": "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/journal/small-tools-that-save-developers-time",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Debug API Data with JSON, Base64, and Browser Tools | Anvil Tools",
+      "description": "Anvil Tools: Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.",
+      "canonical": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/journal/small-tools-that-save-developers-time",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Debug API Data with JSON, Base64, and Browser Tools | Anvil Tools",
+      "description": "Anvil Tools: Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.",
+      "canonical": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 8
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/journal/small-tools-that-save-developers-time",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Debug API Data with JSON, Base64, and Browser Tools | Anvil Tools",
+      "description": "Anvil Tools: Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.",
+      "canonical": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "nodes": 7
+        },
+        {
+          "id": "link-in-text-block",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/privacy-policy.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Privacy policy | Anvil Tools",
+      "description": "How Anvil Tools handles your data.",
+      "canonical": "https://anviltools.vercel.app/privacy-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/privacy-policy.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Privacy policy | Anvil Tools",
+      "description": "How Anvil Tools handles your data.",
+      "canonical": "https://anviltools.vercel.app/privacy-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/privacy-policy.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Privacy policy | Anvil Tools",
+      "description": "How Anvil Tools handles your data.",
+      "canonical": "https://anviltools.vercel.app/privacy-policy.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/terms-of-service.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Terms of service | Anvil Tools",
+      "description": "Terms for using Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/terms-of-service.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/terms-of-service.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Terms of service | Anvil Tools",
+      "description": "Terms for using Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/terms-of-service.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/terms-of-service.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Terms of service | Anvil Tools",
+      "description": "Terms for using Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/terms-of-service.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Background Remover | Anvil Tools",
+      "description": "Anvil Tools: Remove the background from a photo automatically, processed locally in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/background-remover.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Background Remover | Anvil Tools",
+      "description": "Anvil Tools: Remove the background from a photo automatically, processed locally in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/background-remover.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Background Remover | Anvil Tools",
+      "description": "Anvil Tools: Remove the background from a photo automatically, processed locally in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/background-remover.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/base64-tool.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Base64 Encoder & Decoder | Anvil Tools",
+      "description": "Anvil Tools: Convert text to Base64 and back, entirely in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/base64-tool.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/base64-tool.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Base64 Encoder & Decoder | Anvil Tools",
+      "description": "Anvil Tools: Convert text to Base64 and back, entirely in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/base64-tool.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/base64-tool.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Base64 Encoder & Decoder | Anvil Tools",
+      "description": "Anvil Tools: Convert text to Base64 and back, entirely in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/base64-tool.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/color-palette-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Color Palette Generator | Anvil Tools",
+      "description": "Anvil Tools: Generate a five-color palette for design work, with the option to lock colors you like.",
+      "canonical": "https://anviltools.vercel.app/tools/color-palette-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/color-palette-generator.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Color Palette Generator | Anvil Tools",
+      "description": "Anvil Tools: Generate a five-color palette for design work, with the option to lock colors you like.",
+      "canonical": "https://anviltools.vercel.app/tools/color-palette-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/color-palette-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Color Palette Generator | Anvil Tools",
+      "description": "Anvil Tools: Generate a five-color palette for design work, with the option to lock colors you like.",
+      "canonical": "https://anviltools.vercel.app/tools/color-palette-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "CSV to JSON Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert quoted CSV data into JSON arrays or objects locally.",
+      "canonical": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "CSV to JSON Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert quoted CSV data into JSON arrays or objects locally.",
+      "canonical": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "CSV to JSON Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert quoted CSV data into JSON arrays or objects locally.",
+      "canonical": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Hash Generator | Anvil Tools",
+      "description": "Anvil Tools: Generate SHA-256, SHA-384, or SHA-512 hashes from UTF-8 text.",
+      "canonical": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Hash Generator | Anvil Tools",
+      "description": "Anvil Tools: Generate SHA-256, SHA-384, or SHA-512 hashes from UTF-8 text.",
+      "canonical": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Hash Generator | Anvil Tools",
+      "description": "Anvil Tools: Generate SHA-256, SHA-384, or SHA-512 hashes from UTF-8 text.",
+      "canonical": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Image to PDF Converter | Anvil Tools",
+      "description": "Anvil Tools: Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.",
+      "canonical": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Image to PDF Converter | Anvil Tools",
+      "description": "Anvil Tools: Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.",
+      "canonical": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Image to PDF Converter | Anvil Tools",
+      "description": "Anvil Tools: Turn JPG, PNG, or WebP images into ordered pages in one downloadable PDF.",
+      "canonical": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/index.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "All tools | Anvil Tools",
+      "description": "Browse every free tool available on Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/tools/index.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/index.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "All tools | Anvil Tools",
+      "description": "Browse every free tool available on Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/tools/index.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/index.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "All tools | Anvil Tools",
+      "description": "Browse every free tool available on Anvil Tools.",
+      "canonical": "https://anviltools.vercel.app/tools/index.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "JSON Formatter & Validator | Anvil Tools",
+      "description": "Anvil Tools: Pretty-print, minify, and validate JSON directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "JSON Formatter & Validator | Anvil Tools",
+      "description": "Anvil Tools: Pretty-print, minify, and validate JSON directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "JSON Formatter & Validator | Anvil Tools",
+      "description": "Anvil Tools: Pretty-print, minify, and validate JSON directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/jwt-decoder.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "JWT Decoder | Anvil Tools",
+      "description": "Anvil Tools: Inspect a JWT header and payload without uploading the token.",
+      "canonical": "https://anviltools.vercel.app/tools/jwt-decoder.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/jwt-decoder.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "JWT Decoder | Anvil Tools",
+      "description": "Anvil Tools: Inspect a JWT header and payload without uploading the token.",
+      "canonical": "https://anviltools.vercel.app/tools/jwt-decoder.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/jwt-decoder.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "JWT Decoder | Anvil Tools",
+      "description": "Anvil Tools: Inspect a JWT header and payload without uploading the token.",
+      "canonical": "https://anviltools.vercel.app/tools/jwt-decoder.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/password-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Password Generator | Anvil Tools",
+      "description": "Anvil Tools: Create a strong, random password with adjustable length and character types.",
+      "canonical": "https://anviltools.vercel.app/tools/password-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/password-generator.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Password Generator | Anvil Tools",
+      "description": "Anvil Tools: Create a strong, random password with adjustable length and character types.",
+      "canonical": "https://anviltools.vercel.app/tools/password-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/password-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Password Generator | Anvil Tools",
+      "description": "Anvil Tools: Create a strong, random password with adjustable length and character types.",
+      "canonical": "https://anviltools.vercel.app/tools/password-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF Merge | Anvil Tools",
+      "description": "Anvil Tools: Combine multiple PDF files into a single document in the order you choose.",
+      "canonical": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF Merge | Anvil Tools",
+      "description": "Anvil Tools: Combine multiple PDF files into a single document in the order you choose.",
+      "canonical": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "PDF Merge | Anvil Tools",
+      "description": "Anvil Tools: Combine multiple PDF files into a single document in the order you choose.",
+      "canonical": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "QR Code Generator | Anvil Tools",
+      "description": "Anvil Tools: Turn any link or short message into a scannable QR code you can download as an image.",
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "QR Code Generator | Anvil Tools",
+      "description": "Anvil Tools: Turn any link or short message into a scannable QR code you can download as an image.",
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "QR Code Generator | Anvil Tools",
+      "description": "Anvil Tools: Turn any link or short message into a scannable QR code you can download as an image.",
+      "canonical": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Temporary Email Generator | Anvil Tools",
+      "description": "Anvil Tools: Get a disposable inbox in one click for signups you don't want landing in your real email.",
+      "canonical": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ]
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Temporary Email Generator | Anvil Tools",
+      "description": "Anvil Tools: Get a disposable inbox in one click for signups you don't want landing in your real email.",
+      "canonical": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6
+        }
+      ]
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Temporary Email Generator | Anvil Tools",
+      "description": "Anvil Tools: Get a disposable inbox in one click for signups you don't want landing in your real email.",
+      "canonical": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 5
+        }
+      ]
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Case Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert text to upper, lower, title, sentence, camel, snake, and kebab case.",
+      "canonical": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Case Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert text to upper, lower, title, sentence, camel, snake, and kebab case.",
+      "canonical": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Case Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert text to upper, lower, title, sentence, camel, snake, and kebab case.",
+      "canonical": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/text-diff-checker.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Difference Checker | Anvil Tools",
+      "description": "Anvil Tools: Compare two texts line by line and highlight additions and removals.",
+      "canonical": "https://anviltools.vercel.app/tools/text-diff-checker.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/text-diff-checker.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Difference Checker | Anvil Tools",
+      "description": "Anvil Tools: Compare two texts line by line and highlight additions and removals.",
+      "canonical": "https://anviltools.vercel.app/tools/text-diff-checker.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/text-diff-checker.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Difference Checker | Anvil Tools",
+      "description": "Anvil Tools: Compare two texts line by line and highlight additions and removals.",
+      "canonical": "https://anviltools.vercel.app/tools/text-diff-checker.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/unit-converter.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Unit Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert between common length, weight, and temperature units instantly.",
+      "canonical": "https://anviltools.vercel.app/tools/unit-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/unit-converter.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Unit Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert between common length, weight, and temperature units instantly.",
+      "canonical": "https://anviltools.vercel.app/tools/unit-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/unit-converter.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Unit Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert between common length, weight, and temperature units instantly.",
+      "canonical": "https://anviltools.vercel.app/tools/unit-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/unix-timestamp-converter.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Unix Timestamp Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert Unix seconds or milliseconds to readable local and UTC dates.",
+      "canonical": "https://anviltools.vercel.app/tools/unix-timestamp-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/unix-timestamp-converter.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Unix Timestamp Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert Unix seconds or milliseconds to readable local and UTC dates.",
+      "canonical": "https://anviltools.vercel.app/tools/unix-timestamp-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/unix-timestamp-converter.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Unix Timestamp Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert Unix seconds or milliseconds to readable local and UTC dates.",
+      "canonical": "https://anviltools.vercel.app/tools/unix-timestamp-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/url-encoder-decoder.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "URL Encoder & Decoder | Anvil Tools",
+      "description": "Anvil Tools: Encode text for a URL or decode percent-encoded values safely.",
+      "canonical": "https://anviltools.vercel.app/tools/url-encoder-decoder.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/url-encoder-decoder.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "URL Encoder & Decoder | Anvil Tools",
+      "description": "Anvil Tools: Encode text for a URL or decode percent-encoded values safely.",
+      "canonical": "https://anviltools.vercel.app/tools/url-encoder-decoder.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/url-encoder-decoder.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "URL Encoder & Decoder | Anvil Tools",
+      "description": "Anvil Tools: Encode text for a URL or decode percent-encoded values safely.",
+      "canonical": "https://anviltools.vercel.app/tools/url-encoder-decoder.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/user-agent-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "User Agent Generator | Anvil Tools",
+      "description": "Anvil Tools: Choose fixed browser and bot user-agent strings for parser and request-header tests.",
+      "canonical": "https://anviltools.vercel.app/tools/user-agent-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/user-agent-generator.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "User Agent Generator | Anvil Tools",
+      "description": "Anvil Tools: Choose fixed browser and bot user-agent strings for parser and request-header tests.",
+      "canonical": "https://anviltools.vercel.app/tools/user-agent-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/user-agent-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "User Agent Generator | Anvil Tools",
+      "description": "Anvil Tools: Choose fixed browser and bot user-agent strings for parser and request-header tests.",
+      "canonical": "https://anviltools.vercel.app/tools/user-agent-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "UUID Generator | Anvil Tools",
+      "description": "Anvil Tools: Generate cryptographically random RFC 4122 version 4 UUIDs.",
+      "canonical": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "UUID Generator | Anvil Tools",
+      "description": "Anvil Tools: Generate cryptographically random RFC 4122 version 4 UUIDs.",
+      "canonical": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "UUID Generator | Anvil Tools",
+      "description": "Anvil Tools: Generate cryptographically random RFC 4122 version 4 UUIDs.",
+      "canonical": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Word & Character Counter | Anvil Tools",
+      "description": "Anvil Tools: Count words, characters, sentences, and estimated reading time as you type.",
+      "canonical": "https://anviltools.vercel.app/tools/word-counter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Word & Character Counter | Anvil Tools",
+      "description": "Anvil Tools: Count words, characters, sentences, and estimated reading time as you type.",
+      "canonical": "https://anviltools.vercel.app/tools/word-counter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Word & Character Counter | Anvil Tools",
+      "description": "Anvil Tools: Count words, characters, sentences, and estimated reading time as you type.",
+      "canonical": "https://anviltools.vercel.app/tools/word-counter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "functionality": [
+    {
+      "tool": "directory",
+      "searchAndCategoryAndNoResults": true
+    },
+    {
+      "tool": "word-counter",
+      "emptyAndWorkedExample": true
+    },
+    {
+      "tool": "csv-to-json",
+      "leadingZeroQuotedCommaBlankAndQuote": true
+    },
+    {
+      "tool": "json-formatter",
+      "typesPreservedAndInvalidRejected": true
+    },
+    {
+      "tool": "base64-tool",
+      "knownEncodingAndUnicode": true
+    },
+    {
+      "tool": "url-encoder-decoder",
+      "unicodeAndPlusEncoding": true
+    },
+    {
+      "tool": "unit-converter",
+      "temperatureOffset": true
+    },
+    {
+      "tool": "hash-generator",
+      "knownDigest": true
+    },
+    {
+      "tool": "text-case-converter",
+      "unicodeIdentifier": true
+    },
+    {
+      "tool": "text-diff-checker",
+      "replacementCounts": true
+    },
+    {
+      "tool": "unix-timestamp-converter",
+      "explicitEpochUnit": true
+    },
+    {
+      "tool": "jwt-decoder",
+      "harmlessUnverifiedSample": true
+    },
+    {
+      "tool": "password-generator",
+      "supportedRange": true
+    },
+    {
+      "tool": "user-agent-generator",
+      "fixedFixtureSelection": true
+    },
+    {
+      "tool": "color-palette-generator",
+      "lockedColorAndCssExport": true
+    },
+    {
+      "tool": "uuid-generator",
+      "versionAndVariantAndDistinctBatch": true
+    },
+    {
+      "tool": "qr-code-generator",
+      "actualPngDecodedIndependently": true
+    },
+    {
+      "tool": "pdf-merge",
+      "actualDownloadedFourPageOrder": true
+    },
+    {
+      "tool": "image-to-pdf",
+      "actualPngPageDimensions": true
+    },
+    {
+      "tool": "background-remover",
+      "librariesDeferredUntilInput": true,
+      "realModelAndDownloadedAlphaChannel": true,
+      "clearPixels": 87446,
+      "opaquePixels": 30
+    },
+    {
+      "tool": "temp-mail",
+      "syntheticServerExpiryDisplayed": true,
+      "realDeliveryTested": false
+    }
+  ],
+  "interactiveStates": [
+    {
+      "tool": "directory",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "word-counter",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "csv-to-json",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "json-formatter",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "base64-tool",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "url-encoder-decoder",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "unit-converter",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "hash-generator",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2,
+          "details": [
+            {
+              "target": [
+                ".logo[href=\"../index.html\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "text-case-converter",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "text-diff-checker",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 8,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".diff-same.diff-row:nth-child(1) > span:nth-child(1)"
+              ],
+              "reason": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".diff-same.diff-row:nth-child(1) > span:nth-child(2)"
+              ],
+              "reason": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".diff-added > span:nth-child(2)"
+              ],
+              "reason": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".diff-removed > span:nth-child(1)"
+              ],
+              "reason": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".diff-removed > span:nth-child(3)"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".diff-same.diff-row:nth-child(4) > span:nth-child(1)"
+              ],
+              "reason": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".diff-same.diff-row:nth-child(4) > span:nth-child(2)"
+              ],
+              "reason": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "unix-timestamp-converter",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "jwt-decoder",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "password-generator",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "user-agent-generator",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "color-palette-generator",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2,
+          "details": [
+            {
+              "target": [
+                ".logo[href=\"../index.html\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "uuid-generator",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "qr-code-generator",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "pdf-merge",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "image-to-pdf",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "background-remover",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1,
+          "details": [
+            {
+              "target": [
+                "span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "temp-mail",
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 6,
+          "details": [
+            {
+              "target": [
+                ".nav-toggle > span[aria-hidden=\"true\"]"
+              ],
+              "reason": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "#temp-mail-title"
+              ],
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".temp-mail-live"
+              ],
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".inbox-address-wrap > span"
+              ],
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#tm-status"
+              ],
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#tm-expiry"
+              ],
+              "reason": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Automated axe checks and emulated widths do not establish complete accessibility.",
+    "Inbox layout and expiry checks use synthetic responses; no email or contact message is sent.",
+    "Physical-device, screen-reader, and future advertising checks remain separate."
+  ],
+  "externalFontRequests": [],
+  "failures": []
+}

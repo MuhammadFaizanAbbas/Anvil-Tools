@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-10-06T19:14:00.283Z",
+  "origin": "https://anviltools.vercel.app",
+  "checks": [
+    {
+      "asset": "assets/js/main.js",
+      "sha256": "9e3cab9d1da4f314c43992ce0b17e6a2c6886a56f77cbd2dd0e7f46ad39f13c2",
+      "comparison": "Source text with LF line endings",
+      "passed": true
+    },
+    {
+      "route": "/assets/js/main.js?v=20261006-audit1",
+      "passed": true
+    },
+    {
+      "route": "/about.html",
+      "passed": true
+    },
+    {
+      "route": "/",
+      "passed": true
+    },
+    {
+      "route": "/privacy-policy.html",
+      "passed": true
+    },
+    {
+      "asset": "assets/vendor/tool-libraries/qrcode-1.0.0.min.js",
+      "sha256": "c541ef06327885a8415bca8df6071e14189b4855336def4f36db54bde8484f36",
+      "comparison": "Exact bytes",
+      "passed": true
+    },
+    {
+      "route": "/assets/vendor/tool-libraries/qrcode-1.0.0.min.js?v=20261006-audit1",
+      "passed": true
+    },
+    {
+      "asset": "assets/vendor/tool-libraries/pdf-lib-1.17.1.min.js",
+      "sha256": "0f9a5cad07941f0826586c94e089d89b918c46e5c17cf2d5a3c6f666e3bc694f",
+      "comparison": "Exact bytes",
+      "passed": true
+    },
+    {
+      "route": "/assets/vendor/tool-libraries/pdf-lib-1.17.1.min.js?v=20261006-audit1",
+      "passed": true
+    },
+    {
+      "route": "/blog/index.html",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "limits": [
+    "Checks apply to the Vercel frontend; the separate cPanel upload remains pending.",
+    "These public checks do not certify private account state, future ads or every security property."
+  ]
+}

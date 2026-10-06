@@ -60,6 +60,6 @@ review += [(ROOT / 'docs/FULL_SITE_AUDIT_2026-10-06.md', 'FULL_SITE_AUDIT.md')]
 archive('review.zip', review)
 shutil.copyfile(OUT / 'frontend.zip', ROOT / 'frontend.zip')
 assert hashlib.sha256((SITE / 'ads.txt').read_bytes()).hexdigest() == seller_hash
-manifest = {'state':'prepared-cpanel-upload', 'adsTxtChanged':False, 'adsTxtSha256':seller_hash, 'newArticles':4, 'databaseChanges':'Incremental privacy migration applied and verified; no article-body publication needed', 'frontend':'frontend.zip', 'backend':'backend.zip', 'review':'review.zip', 'installedModelFiles':'preserve existing assets/vendor/background-removal files', 'adminFilesIncluded':True}
+manifest = {'state':'prepared-cpanel-upload', 'vercelFrontend':'deployed', 'vercelBackend':'deployed', 'adsTxtChanged':False, 'adsTxtSha256':seller_hash, 'newArticles':4, 'databaseChanges':'Incremental privacy migration and four guarded guide corrections applied and verified; new static experiments need no SQL', 'frontend':'frontend.zip', 'backend':'backend.zip', 'review':'review.zip', 'installedModelFiles':'preserve existing assets/vendor/background-removal files', 'adminFilesIncluded':True}
 (OUT / 'release.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
 print('Updated root frontend.zip; ads.txt unchanged and excluded. No database publication is required for the new static experiments.')

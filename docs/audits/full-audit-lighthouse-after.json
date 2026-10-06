@@ -1,0 +1,5206 @@
+{
+  "checkedAt": "2026-10-06T10:56:24.928Z",
+  "origin": "https://anviltools.vercel.app",
+  "environment": "Lighthouse 12.8.2, Chrome headless, default mobile simulation",
+  "scope": "All 43 public catalog pages",
+  "limits": [
+    "Lab scores vary with network, machine load, and tool versions.",
+    "Navigation lab measurements are not field Core Web Vitals or physical-device results.",
+    "Tool processing after user input, screen readers, and future ad layouts are outside this navigation measurement.",
+    "No score is an AdSense approval score."
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/",
+      "warnings": [],
+      "scores": {
+        "performance": 88,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1055.3695,
+          "display": "1.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1706.3695,
+          "display": "1.7 s"
+        },
+        "total-blocking-time": {
+          "value": 460,
+          "display": "460 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1829.3096119894258,
+          "display": "1.8 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.7 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.62,
+          "display": "460 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.1,
+          "display": "470 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3361
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/about.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/about.html",
+      "warnings": [],
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 935.284,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1385.284,
+          "display": "1.4 s"
+        },
+        "total-blocking-time": {
+          "value": 168.0000000000001,
+          "display": "170 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 3807.6405833522126,
+          "display": "3.8 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.84,
+          "display": "3.8 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.93,
+          "display": "170 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.66,
+          "display": "200 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4526
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 110 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4526
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/contact.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/contact.html",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1033.786,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1232.786,
+          "display": "1.2 s"
+        },
+        "total-blocking-time": {
+          "value": 20,
+          "display": "20 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 2372.819321652364,
+          "display": "2.4 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.98,
+          "display": "2.4 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.59,
+          "display": "220 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1825
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1825
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2520
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/privacy-policy.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/privacy-policy.html",
+      "warnings": [],
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 965.194,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1415.194,
+          "display": "1.4 s"
+        },
+        "total-blocking-time": {
+          "value": 156,
+          "display": "160 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1255.6521747288566,
+          "display": "1.3 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.94,
+          "display": "160 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.71,
+          "display": "190 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4481
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 60 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4481
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2475
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3362
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/cookie-policy.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/cookie-policy.html",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 932.0465,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1307.0465,
+          "display": "1.3 s"
+        },
+        "total-blocking-time": {
+          "value": 47,
+          "display": "50 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1001.1765388337224,
+          "display": "1.0 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.97,
+          "display": "100 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 110 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3362
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/terms-of-service.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/terms-of-service.html",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 929.3375,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1304.3375,
+          "display": "1.3 s"
+        },
+        "total-blocking-time": {
+          "value": 11,
+          "display": "10 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1004.4000086194095,
+          "display": "1.0 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.97,
+          "display": "100 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 110 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2520
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/disclaimer.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/disclaimer.html",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 933.9205,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1308.9205,
+          "display": "1.3 s"
+        },
+        "total-blocking-time": {
+          "value": 13,
+          "display": "10 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1019.3087720135255,
+          "display": "1.0 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.99,
+          "display": "80 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 110 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3317
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2520
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/index.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/index.html",
+      "warnings": [],
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 958.855,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1569.855,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 197,
+          "display": "200 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1296.688038055317,
+          "display": "1.3 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.6 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.9,
+          "display": "200 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.3,
+          "display": "320 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 70 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2518
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2520
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/blog/index.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/blog/index.html",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1049.444,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1116.444,
+          "display": "1.1 s"
+        },
+        "total-blocking-time": {
+          "value": 17,
+          "display": "20 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1542.878131081296,
+          "display": "1.5 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.5,
+          "display": "250 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "modern-image-formats",
+          "title": "Serve images in next-gen formats",
+          "score": 0.5,
+          "display": "Est savings of 29 KiB",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/csv-newline-experiment.png",
+              "wastedBytes": 15415.849999999999,
+              "totalBytes": 34108,
+              "node": "<img class=\"guide-cover\" src=\"/assets/images/editorial/csv-newline-experiment.png\" alt=\"Actual CSV conversion with a newline inside a quoted field preserved in JS…\" loading=\"lazy\">"
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/json-precision-experiment.png",
+              "wastedBytes": 13829.599999999999,
+              "totalBytes": 34147,
+              "node": "<img class=\"guide-cover\" src=\"/assets/images/editorial/json-precision-experiment.png\" alt=\"Actual formatter run: input integer 9007199254740993 becomes 9007199254740…\" loading=\"lazy\">"
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0.5,
+          "display": "Est savings of 278 KiB",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "wastedBytes": 134546,
+              "totalBytes": 150166,
+              "node": "<img class=\"guide-cover\" src=\"https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70…\" alt=\"Design workspace comparing a sneaker photograph with a transparent cutout,…\" loading=\"lazy\">"
+            },
+            {
+              "url": "https://anviltools.vercel.app/journal-images/f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+              "wastedBytes": 99070,
+              "totalBytes": 110572,
+              "node": "<img class=\"guide-cover\" src=\"https://anviltools.vercel.app/journal-images/f804a811-ae6e-47e0-a4bb-40a28…\" alt=\"Laptop showing a signup form beside an email inbox, with an envelope and a…\" loading=\"lazy\">"
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/csv-newline-experiment.png",
+              "wastedBytes": 26282,
+              "totalBytes": 34108,
+              "node": "<img class=\"guide-cover\" src=\"/assets/images/editorial/csv-newline-experiment.png\" alt=\"Actual CSV conversion with a newline inside a quoted field preserved in JS…\" loading=\"lazy\">"
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/json-precision-experiment.png",
+              "wastedBytes": 24418,
+              "totalBytes": 34147,
+              "node": "<img class=\"guide-cover\" src=\"/assets/images/editorial/json-precision-experiment.png\" alt=\"Actual formatter run: input integer 9007199254740993 becomes 9007199254740…\" loading=\"lazy\">"
+            }
+          ]
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 301 KiB",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "wastedBytes": 143125,
+              "totalBytes": 150166,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1672x801) for its displayed dimensions (334x188). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 143125
+                  }
+                ]
+              }
+            },
+            {
+              "url": "https://anviltools.vercel.app/journal-images/f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+              "wastedBytes": 105388,
+              "totalBytes": 110572,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1672x801) for its displayed dimensions (334x188). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 105388
+                  }
+                ]
+              }
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/json-precision-experiment.png",
+              "wastedBytes": 30425,
+              "totalBytes": 34147,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1052x505) for its displayed dimensions (334x173). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 30425
+                  }
+                ]
+              }
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/csv-newline-experiment.png",
+              "wastedBytes": 29467,
+              "totalBytes": 34108,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1052x502) for its displayed dimensions (334x215). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 29467
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2553
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/categories/developer-tools.html",
+      "warnings": [],
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 930.027,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1501.527,
+          "display": "1.5 s"
+        },
+        "total-blocking-time": {
+          "value": 205,
+          "display": "210 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1258.759505040856,
+          "display": "1.3 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.89,
+          "display": "210 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.52,
+          "display": "240 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0,
+          "display": "Est savings of 90 ms",
+          "savingsMs": 88,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 90 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3362
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/categories/email-tools.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/categories/email-tools.html",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 937.3515,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1312.3515,
+          "display": "1.3 s"
+        },
+        "total-blocking-time": {
+          "value": 64,
+          "display": "60 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1067.3414744164463,
+          "display": "1.1 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.87,
+          "display": "140 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 90 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3363
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/categories/generators.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/categories/generators.html",
+      "warnings": [],
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 925.8925,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1375.8925,
+          "display": "1.4 s"
+        },
+        "total-blocking-time": {
+          "value": 109.99999999999989,
+          "display": "110 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1128.7643461091993,
+          "display": "1.1 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.97,
+          "display": "110 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.79,
+          "display": "160 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1825
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 80 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1825
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3363
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/categories/image-tools.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/categories/image-tools.html",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 930.505,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1305.505,
+          "display": "1.3 s"
+        },
+        "total-blocking-time": {
+          "value": 36,
+          "display": "40 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1046.6054405762575,
+          "display": "1.0 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.88,
+          "display": "140 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0.5,
+          "display": "Est savings of 15 KiB",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/background-removal-example-960.webp",
+              "wastedBytes": 15699,
+              "totalBytes": 25470,
+              "node": "<img src=\"https://anviltools.vercel.app/assets/images/editorial/background-removal-e…\" loading=\"lazy\" alt=\"Before and after background removal on a synthetic mug; large beige backgr…\" width=\"976\" height=\"566\">"
+            }
+          ]
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 22 KiB",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/background-removal-example-960.webp",
+              "wastedBytes": 22275,
+              "totalBytes": 25470,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (960x557) for its displayed dimensions (340x197). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 22275
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 100 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2521
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/categories/pdf-tools.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/categories/pdf-tools.html",
+      "warnings": [],
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1090.4,
+          "display": "1.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1233.4,
+          "display": "1.2 s"
+        },
+        "total-blocking-time": {
+          "value": 130,
+          "display": "130 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1266.0887413210774,
+          "display": "1.3 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.1 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.96,
+          "display": "130 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.39,
+          "display": "290 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1871
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1871
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/categories/text-tools.html",
+      "warnings": [],
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 931.852,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1306.8519999999999,
+          "display": "1.3 s"
+        },
+        "total-blocking-time": {
+          "value": 124.99999999999989,
+          "display": "120 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 3806.145088422685,
+          "display": "3.8 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.84,
+          "display": "3.8 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.96,
+          "display": "120 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.73,
+          "display": "180 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 110 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "totalBytes": 4483
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3362
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/temp-mail.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/temp-mail.html",
+      "warnings": [],
+      "scores": {
+        "performance": 93,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1020.6288800000002,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1362.8093200000003,
+          "display": "1.4 s"
+        },
+        "total-blocking-time": {
+          "value": 321.90977999999996,
+          "display": "320 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1480.1935385021688,
+          "display": "1.5 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.76,
+          "display": "320 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.34,
+          "display": "310 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99,
+          "display": "2.0 s"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 171,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 100 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2717
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 185,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2544
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/background-remover.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/background-remover.html",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1208.9479999999999,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1381.9479999999999,
+          "display": "1.4 s"
+        },
+        "total-blocking-time": {
+          "value": 34,
+          "display": "30 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1456.2549359760264,
+          "display": "1.5 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.2 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.19,
+          "display": "390 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4599
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0.5,
+          "display": "Est savings of 15 KiB",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/background-removal-example-960.webp",
+              "wastedBytes": 15699,
+              "totalBytes": 25470,
+              "node": "<img src=\"https://anviltools.vercel.app/assets/images/editorial/background-removal-e…\" loading=\"lazy\" alt=\"Actual synthetic mug before and after automatic background removal; large …\" width=\"976\" height=\"566\">"
+            }
+          ]
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 22 KiB",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/background-removal-example-960.webp",
+              "wastedBytes": 22275,
+              "totalBytes": 25470,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (960x557) for its displayed dimensions (340x197). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 22275
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2651
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4599
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3362
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/pdf-merge.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/pdf-merge.html",
+      "warnings": [],
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1199.149,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2598.149,
+          "display": "2.6 s"
+        },
+        "total-blocking-time": {
+          "value": 253,
+          "display": "250 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1398.4080285735656,
+          "display": "1.4 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.2 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.88,
+          "display": "2.6 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.84,
+          "display": "250 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.26,
+          "display": "350 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.98,
+          "display": "2.6 s"
+        },
+        {
+          "id": "largest-contentful-paint-element",
+          "title": "Largest Contentful Paint element",
+          "score": 0,
+          "display": "2,600 ms",
+          "items": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "valid-source-maps",
+          "title": "Missing source maps for large first-party JavaScript",
+          "score": 0,
+          "items": [
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "error": "Large JavaScript file is missing a source map"
+                  },
+                  {
+                    "error": "Error: Failed fetching source map (403)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4526
+            }
+          ]
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "display": "Est savings of 110 KiB",
+          "savingsMs": 600,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/vendor/tool-libraries/pdf-lib-1.17.1.min.js",
+              "wastedBytes": 112620,
+              "totalBytes": 187906
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0.5,
+          "display": "Est savings of 19 KiB",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/pdf-ordering-example-960.webp",
+              "wastedBytes": 19722,
+              "totalBytes": 32014,
+              "node": "<img src=\"https://anviltools.vercel.app/assets/images/editorial/pdf-ordering-example…\" loading=\"lazy\" alt=\"PDF queue with cover, application, and support files arranged using Move u…\" width=\"976\" height=\"623\">"
+            }
+          ]
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 27 KiB",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/pdf-ordering-example-960.webp",
+              "wastedBytes": 27999,
+              "totalBytes": 32014,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (960x613) for its displayed dimensions (340x217). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 27999
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2513
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2475
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4526
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/image-to-pdf.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/image-to-pdf.html",
+      "warnings": [],
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1117.905,
+          "display": "1.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2514.9049999999997,
+          "display": "2.5 s"
+        },
+        "total-blocking-time": {
+          "value": 191,
+          "display": "190 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1262.4121573944924,
+          "display": "1.3 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.1 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.89,
+          "display": "2.5 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.9,
+          "display": "190 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.38,
+          "display": "290 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.98,
+          "display": "2.5 s"
+        },
+        {
+          "id": "largest-contentful-paint-element",
+          "title": "Largest Contentful Paint element",
+          "score": 0.5,
+          "display": "2,510 ms",
+          "items": [
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "valid-source-maps",
+          "title": "Missing source maps for large first-party JavaScript",
+          "score": 0,
+          "items": [
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "error": "Large JavaScript file is missing a source map"
+                  },
+                  {
+                    "error": "Error: Failed fetching source map (403)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "display": "Est savings of 90 KiB",
+          "savingsMs": 450,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/vendor/tool-libraries/pdf-lib-1.17.1.min.js",
+              "wastedBytes": 92632,
+              "totalBytes": 154557
+            }
+          ]
+        },
+        {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "score": 0,
+          "items": [
+            {}
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2495
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2521
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/qr-code-generator.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/qr-code-generator.html",
+      "warnings": [],
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 932.2429999999999,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1701.243,
+          "display": "1.7 s"
+        },
+        "total-blocking-time": {
+          "value": 351,
+          "display": "350 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1439.3639638801112,
+          "display": "1.4 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.7 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.73,
+          "display": "350 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.31,
+          "display": "320 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4481
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 80 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1844
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2495
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4481
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3363
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/password-generator.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/password-generator.html",
+      "warnings": [],
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 934.242,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1384.242,
+          "display": "1.4 s"
+        },
+        "total-blocking-time": {
+          "value": 159,
+          "display": "160 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1116.7093470327668,
+          "display": "1.1 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.94,
+          "display": "160 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.7,
+          "display": "190 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 100 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2518
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2520
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/word-counter.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/word-counter.html",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1178.9065,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1419.4065,
+          "display": "1.4 s"
+        },
+        "total-blocking-time": {
+          "value": 52,
+          "display": "50 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1465.7577645349872,
+          "display": "1.5 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.2 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.27,
+          "display": "340 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4599
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1871
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4599
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2495
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3363
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "warnings": [],
+      "scores": {
+        "performance": 84,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 944.129,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1673.629,
+          "display": "1.7 s"
+        },
+        "total-blocking-time": {
+          "value": 621.9999999999999,
+          "display": "620 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1815.8133883883074,
+          "display": "1.8 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.7 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.48,
+          "display": "620 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.05,
+          "display": "560 ms"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "display": "2.0 s",
+          "items": [
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 70 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 2006
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2495
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3363
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/base64-tool.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/base64-tool.html",
+      "warnings": [],
+      "scores": {
+        "performance": 93,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 966.3445,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1604.3445000000002,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 326,
+          "display": "330 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1502.9498210589302,
+          "display": "1.5 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.6 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.76,
+          "display": "330 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.21,
+          "display": "380 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4500
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 80 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1984
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2495
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/user-agent-generator.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/user-agent-generator.html",
+      "warnings": [],
+      "scores": {
+        "performance": 90,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 956.071,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1580.071,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 391.9999999999999,
+          "display": "390 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1510.2356230686548,
+          "display": "1.5 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.6 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.69,
+          "display": "390 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.25,
+          "display": "350 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 60 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1981
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2495
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3317
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2544
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/color-palette-generator.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/color-palette-generator.html",
+      "warnings": [],
+      "scores": {
+        "performance": 90,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 936.2139999999999,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1647.214,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 397,
+          "display": "400 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1488.7074653634559,
+          "display": "1.5 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.6 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.68,
+          "display": "400 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.07,
+          "display": "520 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4481
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 80 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2494
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1825
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4481
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3363
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/unit-converter.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/unit-converter.html",
+      "warnings": [],
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 959.6075,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1558.6075,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 281.0000000000001,
+          "display": "280 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1374.7011519809028,
+          "display": "1.4 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.6 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.81,
+          "display": "280 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.36,
+          "display": "300 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 90 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3324
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2495
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1871
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/url-encoder-decoder.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/url-encoder-decoder.html",
+      "warnings": [],
+      "scores": {
+        "performance": 91,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 931.6129999999999,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1551.6129999999998,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 362.9999999999999,
+          "display": "360 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1431.9263939858793,
+          "display": "1.4 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.6 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.72,
+          "display": "360 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.27,
+          "display": "340 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 80 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2522
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3363
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/jwt-decoder.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/jwt-decoder.html",
+      "warnings": [],
+      "scores": {
+        "performance": 93,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 943.0775,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1663.0774999999999,
+          "display": "1.7 s"
+        },
+        "total-blocking-time": {
+          "value": 258,
+          "display": "260 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 3832.333361159297,
+          "display": "3.8 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.7 s"
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.83,
+          "display": "3.8 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.83,
+          "display": "260 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.44,
+          "display": "270 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 110 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2654
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2520
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/unix-timestamp-converter.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/unix-timestamp-converter.html",
+      "warnings": [],
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 933.294,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1620.7939999999999,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 274.9999999999999,
+          "display": "270 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1462.4816328156871,
+          "display": "1.5 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.6 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.81,
+          "display": "270 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.3,
+          "display": "330 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4500
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 70 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4500
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3320
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 2096
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2503
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2540
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/hash-generator.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/hash-generator.html",
+      "warnings": [],
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 951.19,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1548.19,
+          "display": "1.5 s"
+        },
+        "total-blocking-time": {
+          "value": 169,
+          "display": "170 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1325.145731474069,
+          "display": "1.3 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.5 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.93,
+          "display": "170 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.37,
+          "display": "290 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4526
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 80 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1825
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2521
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4526
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "warnings": [],
+      "scores": {
+        "performance": 87,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 931.646,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1555.146,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 508,
+          "display": "510 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1589.6217603641362,
+          "display": "1.6 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.6 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.57,
+          "display": "510 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.26,
+          "display": "350 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 70 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2515
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3363
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "warnings": [],
+      "scores": {
+        "performance": 88,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 960.7075,
+          "display": "1.0 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1578.7075,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 472,
+          "display": "470 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1606.0636526570452,
+          "display": "1.6 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.6 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.61,
+          "display": "470 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.28,
+          "display": "340 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 2540
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 60 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3339
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2503
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 2540
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/text-diff-checker.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/text-diff-checker.html",
+      "warnings": [],
+      "scores": {
+        "performance": 93,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 938.463,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1540.463,
+          "display": "1.5 s"
+        },
+        "total-blocking-time": {
+          "value": 328,
+          "display": "330 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1408.2772868246998,
+          "display": "1.4 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.75,
+          "display": "330 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.35,
+          "display": "300 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 90 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1833
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2495
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2521
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "warnings": [],
+      "scores": {
+        "performance": 80,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 936.284,
+          "display": "0.9 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1749.784,
+          "display": "1.7 s"
+        },
+        "total-blocking-time": {
+          "value": 832.5000000000001,
+          "display": "830 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1948.548836160068,
+          "display": "1.9 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.7 s"
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.35,
+          "display": "830 ms"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.01,
+          "display": "730 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99,
+          "display": "2.0 s"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "display": "2.5 s",
+          "items": [
+            {},
+            {},
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4661
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 60 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4661
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/tool-ux.css?v=20261006-audit1",
+              "totalBytes": 2589
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3363
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "warnings": [],
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1271.298,
+          "display": "1.3 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1834.4029999999998,
+          "display": "1.8 s"
+        },
+        "total-blocking-time": {
+          "value": 21.999999999999773,
+          "display": "20 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.03870075205238991,
+          "display": "0.039"
+        },
+        "speed-index": {
+          "value": 2313.3372188558483,
+          "display": "2.3 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.98,
+          "display": "1.3 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.98,
+          "display": "1.8 s"
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.99,
+          "display": "2.3 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.11,
+          "display": "460 ms"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+              "node": "<img class=\"article-cover\" src=\"https://anviltools.vercel.app/journal-images/f804a811-ae6e-47e0-a4bb-40a28…\" alt=\"Laptop showing a signup form beside an email inbox, with an envelope and a…\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0,
+          "display": "Est savings of 94 KiB",
+          "savingsMs": 460,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+              "wastedBytes": 96324,
+              "totalBytes": 110572,
+              "node": "<img class=\"article-cover\" src=\"https://anviltools.vercel.app/journal-images/f804a811-ae6e-47e0-a4bb-40a28…\" alt=\"Laptop showing a signup form beside an email inbox, with an envelope and a…\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "display": "2 failure reasons",
+          "items": [
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "frameUrl": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups"
+                  }
+                ]
+              }
+            },
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "frameUrl": "https://anviltools.vercel.app/journal/best-practices-for-temporary-email-when-working-with-signups"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "display": "Est savings of 103 KiB",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+              "wastedBytes": 105918,
+              "totalBytes": 110572,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1672x941) for its displayed dimensions (343x193). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 105918
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1926
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design",
+      "warnings": [],
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1161.8600000000001,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 2066.8360000000002,
+          "display": "2.1 s"
+        },
+        "total-blocking-time": {
+          "value": 18,
+          "display": "20 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.02928705560721398,
+          "display": "0.029"
+        },
+        "speed-index": {
+          "value": 1773.0395224686426,
+          "display": "1.8 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.2 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.96,
+          "display": "2.1 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.24,
+          "display": "360 ms"
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99,
+          "display": "2.1 s"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "node": "<img class=\"article-cover\" src=\"https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70…\" alt=\"Design workspace comparing a sneaker photograph with a transparent cutout,…\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 151,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0,
+          "display": "Est savings of 128 KiB",
+          "savingsMs": 620,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "wastedBytes": 130816,
+              "totalBytes": 150166,
+              "node": "<img class=\"article-cover\" src=\"https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70…\" alt=\"Design workspace comparing a sneaker photograph with a transparent cutout,…\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "display": "2 failure reasons",
+          "items": [
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "frameUrl": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design"
+                  }
+                ]
+              }
+            },
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "frameUrl": "https://anviltools.vercel.app/journal/best-practices-for-background-removal-when-working-with-design"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "display": "Est savings of 140 KiB",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+              "wastedBytes": 143846,
+              "totalBytes": 150166,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1672x941) for its displayed dimensions (343x193). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 143846
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1825
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 151,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3419
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/journal/simple-pdf-workflow-without-software",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1070.853,
+          "display": "1.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1304.853,
+          "display": "1.3 s"
+        },
+        "total-blocking-time": {
+          "value": 20,
+          "display": "20 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.02927283283638086,
+          "display": "0.029"
+        },
+        "speed-index": {
+          "value": 1550.6259915701157,
+          "display": "1.6 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.1 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.41,
+          "display": "280 ms"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/c4244f15-2995-4aaf-b544-b37a356716db",
+              "node": "<img class=\"article-cover\" src=\"https://anviltools.vercel.app/journal-images/c4244f15-2995-4aaf-b544-b37a3…\" alt=\"Several document files combined in a browser based PDF workflow\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "display": "2 failure reasons",
+          "items": [
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "frameUrl": "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software"
+                  }
+                ]
+              }
+            },
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "frameUrl": "https://anviltools.vercel.app/journal/simple-pdf-workflow-without-software"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3419
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/journal/small-tools-that-save-developers-time",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1103.779,
+          "display": "1.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1249.279,
+          "display": "1.2 s"
+        },
+        "total-blocking-time": {
+          "value": 13,
+          "display": "10 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.03868195767664613,
+          "display": "0.039"
+        },
+        "speed-index": {
+          "value": 1661.3000942991694,
+          "display": "1.7 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.1 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.34,
+          "display": "310 ms"
+        },
+        {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/journal-images/925334fc-7e67-49b0-96fd-6d4b1c2ddc67",
+              "node": "<img class=\"article-cover\" src=\"https://anviltools.vercel.app/journal-images/925334fc-7e67-49b0-96fd-6d4b1…\" alt=\"Small developer utilities used during browser testing\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 2554
+            }
+          ]
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "display": "2 failure reasons",
+          "items": [
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "frameUrl": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time"
+                  }
+                ]
+              }
+            },
+            {
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "frameUrl": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 2554
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/blog/json-formatter-edge-cases.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/blog/json-formatter-edge-cases.html",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1107.254,
+          "display": "1.1 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1188.254,
+          "display": "1.2 s"
+        },
+        "total-blocking-time": {
+          "value": 31,
+          "display": "30 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1172.4616439927727,
+          "display": "1.2 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.1 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.32,
+          "display": "310 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "modern-image-formats",
+          "title": "Serve images in next-gen formats",
+          "score": 0,
+          "display": "Est savings of 14 KiB",
+          "savingsMs": 70,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/json-precision-experiment.png",
+              "wastedBytes": 13829.599999999999,
+              "totalBytes": 34147,
+              "node": "<img src=\"/assets/images/editorial/json-precision-experiment.png\" alt=\"Recorded JSON formatter run showing the changed numeric identifier.\" width=\"1052\" height=\"546\" loading=\"lazy\" decoding=\"async\" style=\"display:block;max-width:100%;height:auto\">"
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0,
+          "display": "Est savings of 22 KiB",
+          "savingsMs": 110,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/json-precision-experiment.png",
+              "wastedBytes": 23031,
+              "totalBytes": 34147,
+              "node": "<img class=\"article-cover\" src=\"/assets/images/editorial/json-precision-experiment.png\" alt=\"Actual formatter run: input integer 9007199254740993 becomes 9007199254740…\" width=\"1052\" height=\"546\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 30 KiB",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/json-precision-experiment.png",
+              "wastedBytes": 30516,
+              "totalBytes": 34147,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1052x546) for its displayed dimensions (343x178). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 30516
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2521
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/blog/csv-quotes-unicode-and-blank-fields.html",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1229.259,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1617.259,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 19,
+          "display": "20 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1229.259,
+          "display": "1.2 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.2 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.6 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.98,
+          "display": "90 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "modern-image-formats",
+          "title": "Serve images in next-gen formats",
+          "score": 0,
+          "display": "Est savings of 15 KiB",
+          "savingsMs": 150,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/csv-newline-experiment.png",
+              "wastedBytes": 15415.849999999999,
+              "totalBytes": 34108,
+              "node": "<img src=\"/assets/images/editorial/csv-newline-experiment.png\" alt=\"Actual conversion of a quoted multiline CSV value to one JSON record.\" width=\"1052\" height=\"678\" loading=\"lazy\" decoding=\"async\" style=\"display:block;max-width:100%;height:auto\">"
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0,
+          "display": "Est savings of 22 KiB",
+          "savingsMs": 150,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/csv-newline-experiment.png",
+              "wastedBytes": 23007,
+              "totalBytes": 34108,
+              "node": "<img class=\"article-cover\" src=\"/assets/images/editorial/csv-newline-experiment.png\" alt=\"Actual CSV conversion with a newline inside a quoted field preserved in JS…\" width=\"1052\" height=\"678\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "display": "Est savings of 30 KiB",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/csv-newline-experiment.png",
+              "wastedBytes": 30481,
+              "totalBytes": 34108,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1052x678) for its displayed dimensions (343x221). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 30481
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 150 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3318
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2545
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/blog/word-counter-unicode-experiment.html",
+      "warnings": [],
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1153.103,
+          "display": "1.2 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1234.103,
+          "display": "1.2 s"
+        },
+        "total-blocking-time": {
+          "value": 31,
+          "display": "30 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1243.4079396898899,
+          "display": "1.2 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.2 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.23,
+          "display": "360 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0.5,
+          "display": "Est savings of 0 ms",
+          "savingsMs": 0,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "modern-image-formats",
+          "title": "Serve images in next-gen formats",
+          "score": 0,
+          "display": "Est savings of 10 KiB",
+          "savingsMs": 50,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/unicode-count-experiment.png",
+              "wastedBytes": 10258.95,
+              "totalBytes": 32636,
+              "node": "<img src=\"/assets/images/editorial/unicode-count-experiment.png\" alt=\"Actual word-counter run for a family emoji: one word, eleven character uni…\" width=\"1052\" height=\"658\" loading=\"lazy\" decoding=\"async\" style=\"display:block;max-width:100%;height:auto\">"
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0,
+          "display": "Est savings of 21 KiB",
+          "savingsMs": 100,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/unicode-count-experiment.png",
+              "wastedBytes": 21988,
+              "totalBytes": 32636,
+              "node": "<img class=\"article-cover\" src=\"/assets/images/editorial/unicode-count-experiment.png\" alt=\"Actual word counter showing one family emoji as one word and eleven charac…\" width=\"1052\" height=\"658\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 28 KiB",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/unicode-count-experiment.png",
+              "wastedBytes": 29166,
+              "totalBytes": 32636,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1052x658) for its displayed dimensions (343x215). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 29166
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0.5,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3363
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "lighthouseVersion": "12.8.2",
+      "finalUrl": "https://anviltools.vercel.app/blog/jpeg-png-webp-to-pdf-test.html",
+      "warnings": [],
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1382.713,
+          "display": "1.4 s"
+        },
+        "largest-contentful-paint": {
+          "value": 1612.713,
+          "display": "1.6 s"
+        },
+        "total-blocking-time": {
+          "value": 30,
+          "display": "30 ms"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0"
+        },
+        "speed-index": {
+          "value": 1382.713,
+          "display": "1.4 s"
+        }
+      },
+      "findings": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.97,
+          "display": "1.4 s"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.6 s"
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.99,
+          "display": "80 ms"
+        },
+        {
+          "id": "render-blocking-resources",
+          "title": "Eliminate render-blocking resources",
+          "score": 0,
+          "display": "Est savings of 160 ms",
+          "savingsMs": 161,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            }
+          ]
+        },
+        {
+          "id": "modern-image-formats",
+          "title": "Serve images in next-gen formats",
+          "score": 0,
+          "display": "Est savings of 20 KiB",
+          "savingsMs": 100,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/image-format-experiment.png",
+              "wastedBytes": 20616.2,
+              "totalBytes": 45146,
+              "node": "<img src=\"/assets/images/editorial/image-format-experiment.png\" alt=\"Actual WebP conversion in the image-to-PDF tool after the one-page downloa…\" width=\"1052\" height=\"488\" loading=\"lazy\" decoding=\"async\" style=\"display:block;max-width:100%;height:auto\">"
+            }
+          ]
+        },
+        {
+          "id": "uses-responsive-images",
+          "title": "Properly size images",
+          "score": 0,
+          "display": "Est savings of 30 KiB",
+          "savingsMs": 150,
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/image-format-experiment.png",
+              "wastedBytes": 30458,
+              "totalBytes": 45146,
+              "node": "<img class=\"article-cover\" src=\"/assets/images/editorial/image-format-experiment.png\" alt=\"Actual image-to-PDF tool after exporting a WebP fixture as a one-page PDF.\" width=\"1052\" height=\"488\" decoding=\"async\" fetchpriority=\"high\">"
+            }
+          ]
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "display": "Est savings of 39 KiB",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/images/editorial/image-format-experiment.png",
+              "wastedBytes": 40346,
+              "totalBytes": 45146,
+              "subItems": {
+                "type": "subitems",
+                "items": [
+                  {
+                    "reason": "This image file is larger than it needs to be (1052x488) for its displayed dimensions (343x159). Use responsive images to reduce the image download size.",
+                    "wastedBytes": 40346
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "items": [
+            {},
+            {},
+            {}
+          ]
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render blocking requests",
+          "score": 0,
+          "display": "Est savings of 310 ms",
+          "items": [
+            {
+              "url": "https://anviltools.vercel.app/assets/css/refinements.css?v=20261006-audit1",
+              "totalBytes": 2476
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/design.css?v=20261006-audit1",
+              "wastedMs": 150,
+              "totalBytes": 4482
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/content.css?v=20261006-audit1",
+              "totalBytes": 1826
+            },
+            {
+              "url": "https://anviltools.vercel.app/assets/css/style.css?v=20261006-audit1",
+              "totalBytes": 3363
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

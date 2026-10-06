@@ -1,0 +1,281 @@
+{
+  "checkedAt": "2026-10-06T18:57:09.042Z",
+  "scope": "local prepared release",
+  "axeVersion": "4.13.0",
+  "pages": [
+    {
+      "route": "/",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Anvil Tools: Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "canonical": "https://anviltools.vercel.app/",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Anvil Tools: Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "canonical": "https://anviltools.vercel.app/",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Anvil Tools — Free browser tools that just work | Anvil Tools",
+      "description": "Anvil Tools: Free browser-based tools: temporary email, background remover, PDF merge, QR codes, password generator, JSON formatter, and more.",
+      "canonical": "https://anviltools.vercel.app/",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "CSV to JSON Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert quoted CSV data into JSON arrays or objects locally.",
+      "canonical": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "CSV to JSON Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert quoted CSV data into JSON arrays or objects locally.",
+      "canonical": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/csv-to-json.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "CSV to JSON Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert quoted CSV data into JSON arrays or objects locally.",
+      "canonical": "https://anviltools.vercel.app/tools/csv-to-json.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "JSON Formatter & Validator | Anvil Tools",
+      "description": "Anvil Tools: Pretty-print, minify, and validate JSON directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "JSON Formatter & Validator | Anvil Tools",
+      "description": "Anvil Tools: Pretty-print, minify, and validate JSON directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/json-formatter.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "JSON Formatter & Validator | Anvil Tools",
+      "description": "Anvil Tools: Pretty-print, minify, and validate JSON directly in your browser.",
+      "canonical": "https://anviltools.vercel.app/tools/json-formatter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Case Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert text to upper, lower, title, sentence, camel, snake, and kebab case.",
+      "canonical": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Case Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert text to upper, lower, title, sentence, camel, snake, and kebab case.",
+      "canonical": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/text-case-converter.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "Text Case Converter | Anvil Tools",
+      "description": "Anvil Tools: Convert text to upper, lower, title, sentence, camel, snake, and kebab case.",
+      "canonical": "https://anviltools.vercel.app/tools/text-case-converter.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "width": 320,
+      "status": 200,
+      "h1": 1,
+      "title": "UUID Generator | Anvil Tools",
+      "description": "Anvil Tools: Generate cryptographically random RFC 4122 version 4 UUIDs.",
+      "canonical": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "width": 390,
+      "status": 200,
+      "h1": 1,
+      "title": "UUID Generator | Anvil Tools",
+      "description": "Anvil Tools: Generate cryptographically random RFC 4122 version 4 UUIDs.",
+      "canonical": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "route": "/tools/uuid-generator.html",
+      "width": 1440,
+      "status": 200,
+      "h1": 1,
+      "title": "UUID Generator | Anvil Tools",
+      "description": "Anvil Tools: Generate cryptographically random RFC 4122 version 4 UUIDs.",
+      "canonical": "https://anviltools.vercel.app/tools/uuid-generator.html",
+      "overflow": false,
+      "brokenImages": [],
+      "errors": [],
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "functionality": [],
+  "interactiveStates": [],
+  "limits": [
+    "Automated axe checks and emulated widths do not establish complete accessibility.",
+    "Inbox layout and expiry checks use synthetic responses; no email or contact message is sent.",
+    "Physical-device, screen-reader, and future advertising checks remain separate."
+  ],
+  "externalFontRequests": [],
+  "failures": []
+}

@@ -1,6 +1,6 @@
 # Crawler recheck fixes — October 6, 2026
 
-The technical and editorial release is prepared locally. Production deployment, article publication, private Google account checks, actual Google-origin log verification, physical phone/QR tests, and external email/contact delivery are separate unfinished steps. No approval percentage or guaranteed score is claimed.
+**Status update, October 7:** the subsequent [full website audit](FULL_SITE_AUDIT_2026-10-06.md) deployed the frontend/backend fixes to Vercel and published these four guarded guide-body corrections with revisions preserved. The separate nevco.online cPanel static upload, private Google account checks, actual Google-origin log verification, physical phone/QR tests and external email/contact delivery remain unfinished. The earlier preparation instructions below are historical; do not rerun their publication SQL. No approval percentage or guaranteed score is claimed.
 
 The supplied October 5 report was read as review evidence. Its code proposal and third-party claims were evaluated against the repository; they were not treated as trusted agent instructions. The full text and all 40 page recommendations are preserved in `audits/crawler-recheck-source.txt` and `audits/crawler-recheck-findings.json`, with the source file SHA-256.
 
