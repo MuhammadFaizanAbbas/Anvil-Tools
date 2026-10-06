@@ -1,5 +1,7 @@
 # October 7 AdSense audit fixes
 
+**Verification update:** The [four-point live recheck](ADSENSE_FOUR_POINT_RECHECK_2026-10-07.md) supersedes the pending-verification statements below for article labels, linked-file validity, HSTS, and inactive advertising. All 43 public pages and 81 linked resources were checked successfully on each host. The release preparation and push history below remain useful context; database article publication is still separate.
+
 The findings in `nevco-adsense-audit (1).md` were checked against this repository and the public site. The attachment is an assessment, not authorization to enable advertising or execute its submission checklist. The fixes below are implemented and verified locally. The code is pushed to `main` in [Anvil-Tools](https://github.com/MuhammadFaizanAbbas/Anvil-Tools) and [Anvil-Tools-Backend](https://github.com/MuhammadFaizanAbbas/Anvil-Tools-Backend). Backend commit `95c115f` contains the reviewed article renderer, review manifest, security helper, and updated hub template. The push checks passed all **120 workspace tests**, all **59 standalone backend tests**, and syntax/script references in **114 files**. Live deployment verification, the separate cPanel upload, and the guarded database article publication remain pending; pushing code does not execute the prepared SQL.
 
 | Audit issue | Resolution |

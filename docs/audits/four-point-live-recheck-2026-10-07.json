@@ -1,0 +1,1238 @@
+{
+  "checkedAt": "2026-10-06T20:52:36.740Z",
+  "pages": [
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/about.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/blog/index.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/blog/json-formatter-edge-cases.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/categories/developer-tools.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/categories/email-tools.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/categories/generators.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/categories/image-tools.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/categories/pdf-tools.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/categories/text-tools.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/contact.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/cookie-policy.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/disclaimer.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/journal/simple-pdf-workflow-without-software",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/journal/small-tools-that-save-developers-time",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/privacy-policy.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/terms-of-service.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/background-remover.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/base64-tool.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/color-palette-generator.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/csv-to-json.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/hash-generator.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/image-to-pdf.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/index.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/json-formatter.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/jwt-decoder.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/password-generator.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/pdf-merge.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/qr-code-generator.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/temp-mail.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/text-case-converter.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/text-diff-checker.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/unit-converter.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/unix-timestamp-converter.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/url-encoder-decoder.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/user-agent-generator.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/uuid-generator.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "route": "/tools/word-counter.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/about.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/blog/index.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/blog/json-formatter-edge-cases.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/blog/word-counter-unicode-experiment.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/categories/developer-tools.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/categories/email-tools.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/categories/generators.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/categories/image-tools.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/categories/pdf-tools.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/categories/text-tools.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/contact.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/cookie-policy.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/disclaimer.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/journal/simple-pdf-workflow-without-software",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/journal/small-tools-that-save-developers-time",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments",
+        "&#8592; Back to guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/privacy-policy.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/terms-of-service.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/background-remover.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/base64-tool.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/color-palette-generator.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/csv-to-json.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/hash-generator.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/image-to-pdf.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/index.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/json-formatter.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/jwt-decoder.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/password-generator.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/pdf-merge.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/qr-code-generator.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/temp-mail.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/text-case-converter.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/text-diff-checker.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/unit-converter.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/unix-timestamp-converter.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/url-encoder-decoder.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/user-agent-generator.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/uuid-generator.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    },
+    {
+      "origin": "https://nevco.online",
+      "route": "/tools/word-counter.html",
+      "status": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "hsts": "max-age=604800",
+      "labels": [
+        "Guides & experiments",
+        "Guides & experiments"
+      ],
+      "oldBlogsLabel": false,
+      "adScripts": [],
+      "adSlots": []
+    }
+  ],
+  "entrypoints": [
+    {
+      "url": "https://nevco.online/index.html",
+      "status": 301,
+      "location": "https://nevco.online/",
+      "hsts": "max-age=604800"
+    },
+    {
+      "url": "https://nevco.online/journal/",
+      "status": 301,
+      "location": "https://nevco.online/blog/index.html",
+      "hsts": "max-age=604800"
+    },
+    {
+      "url": "https://anviltools.vercel.app/index.html",
+      "status": 308,
+      "location": "/",
+      "hsts": "max-age=63072000; includeSubDomains; preload"
+    },
+    {
+      "url": "https://anviltools.vercel.app/journal/",
+      "status": 308,
+      "location": "/blog/index.html",
+      "hsts": "max-age=63072000; includeSubDomains; preload"
+    },
+    {
+      "url": "http://nevco.online/",
+      "status": 301,
+      "location": "https://nevco.online/",
+      "hsts": null
+    },
+    {
+      "url": "https://www.nevco.online/",
+      "status": 301,
+      "location": "https://nevco.online/",
+      "hsts": "max-age=604800"
+    }
+  ],
+  "errors": []
+}

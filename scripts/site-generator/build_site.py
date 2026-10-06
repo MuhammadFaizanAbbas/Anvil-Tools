@@ -154,4 +154,6 @@ def breadcrumbs(depth_prefix, trail):
     return '<p class="breadcrumbs">' + ' / '.join(parts) + '</p>'
 
 def ad_slot(label="Advertisement"):
-    return f'<div class="ad-slot"><span class="ad-label">{label}</span>Ad space — activate after AdSense approval</div>'
+    # Advertising is disabled. Future placements require an explicit content-page
+    # review and must exclude inboxes, tool controls, downloads, and result panels.
+    return ""
