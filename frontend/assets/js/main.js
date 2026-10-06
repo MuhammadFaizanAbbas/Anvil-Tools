@@ -4,9 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const script = document.createElement('script'); script.src = src;
       script.onload = resolve; script.onerror = reject; document.head.append(script);
     });
+    const loader = document.querySelector('script[src*="/assets/js/main.js"]');
+    const version = loader ? new URL(loader.src).searchParams.get('v') : '';
+    const query = version ? '?v=' + encodeURIComponent(version) : '';
     Promise.all([
-      window.ANVIL_CONFIG ? Promise.resolve() : loadScript('/assets/js/config.js')
-    ]).then(() => loadScript('/assets/js/recommendations.js?v=20261005-review')).catch(() => {});
+      window.ANVIL_CONFIG ? Promise.resolve() : loadScript('/assets/js/config.js' + query)
+    ]).then(() => loadScript('/assets/js/recommendations.js' + query)).catch(() => {});
   }
   const yearEls = document.querySelectorAll('.current-year');
   const currentYear = String(new Date().getFullYear());
@@ -17,6 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.main-nav');
   if (toggle && nav) {
+    // Read the media state before changing navigation attributes, so the
+    // browser can batch those changes with the rest of the initial layout.
+    const navigationWidth = window.matchMedia('(min-width: 761px)');
     if (nav.id !== 'main-navigation') nav.id = 'main-navigation';
     if (toggle.getAttribute('aria-controls') !== nav.id) toggle.setAttribute('aria-controls', nav.id);
     const closeMenu = () => {
@@ -35,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape' && nav.classList.contains('open')) { closeMenu(); toggle.focus(); }
     });
-    window.matchMedia('(min-width: 761px)').addEventListener('change', closeMenu);
+    navigationWidth.addEventListener('change', closeMenu);
   }
 
   // Catalog search progressively enhances full tool lists, not related-tool cards.
