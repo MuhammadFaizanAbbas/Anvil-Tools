@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-07T16:14:42.253Z",
+  "hosts": [
+    {
+      "origin": "https://anviltools.vercel.app",
+      "oldUrlStatus": 301,
+      "redirect": "https://anviltools.vercel.app/journal/temporary-email-for-authorized-testing-and-permitted-messages",
+      "newUrlStatus": 200,
+      "titleAndCanonicalPassed": true,
+      "restrictionsPresent": true,
+      "adsAbsent": true,
+      "staticSitemapUrls": 39,
+      "dynamicSitemapUrls": 4,
+      "homepageWordingUpdated": true,
+      "sampleLoaderUpdated": true,
+      "recommendationsUpdated": true
+    },
+    {
+      "origin": "https://nevco.online",
+      "oldUrlStatus": 301,
+      "redirect": "https://nevco.online/journal/temporary-email-for-authorized-testing-and-permitted-messages",
+      "newUrlStatus": 200,
+      "titleAndCanonicalPassed": true,
+      "restrictionsPresent": true,
+      "adsAbsent": true,
+      "staticSitemapUrls": 39,
+      "dynamicSitemapUrls": 4,
+      "homepageWordingUpdated": false,
+      "sampleLoaderUpdated": false,
+      "recommendationsUpdated": false
+    }
+  ],
+  "passed": true
+}
