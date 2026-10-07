@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-07T15:19:27.849Z",
+  "renderers": [
+    {
+      "url": "https://anvil-tools-backend.vercel.app/api/public/blog",
+      "frontendOrigin": "https://nevco.online",
+      "status": 200,
+      "faviconLinks": "passed"
+    },
+    {
+      "url": "https://anvil-tools-backend.vercel.app/api/public/articles/small-tools-that-save-developers-time",
+      "frontendOrigin": "https://nevco.online",
+      "status": 200,
+      "faviconLinks": "passed"
+    },
+    {
+      "url": "https://anvil-tools-backend.vercel.app/api/public/blog",
+      "frontendOrigin": "https://anviltools.vercel.app",
+      "status": 200,
+      "faviconLinks": "passed"
+    },
+    {
+      "url": "https://anvil-tools-backend.vercel.app/api/public/articles/small-tools-that-save-developers-time",
+      "frontendOrigin": "https://anviltools.vercel.app",
+      "status": 200,
+      "faviconLinks": "passed"
+    },
+    {
+      "url": "https://anviltools.vercel.app/blog/index.html",
+      "status": 200,
+      "faviconLinks": "passed"
+    },
+    {
+      "url": "https://anviltools.vercel.app/journal/small-tools-that-save-developers-time",
+      "status": 200,
+      "faviconLinks": "passed"
+    }
+  ],
+  "cpanel": [
+    {
+      "url": "https://nevco.online/",
+      "status": 200,
+      "mime": "text/html; charset=UTF-8",
+      "faviconLinks": "old SVG declaration; cPanel upload required"
+    },
+    {
+      "url": "https://nevco.online/assets/images/favicon-48.png",
+      "status": 404,
+      "mime": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://nevco.online/favicon.ico",
+      "status": 404,
+      "mime": "text/html; charset=UTF-8"
+    },
+    {
+      "url": "https://nevco.online/assets/images/apple-touch-icon.png",
+      "status": 404,
+      "mime": "text/html"
+    }
+  ]
+}

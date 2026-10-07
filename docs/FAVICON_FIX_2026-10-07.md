@@ -22,3 +22,11 @@ node scripts/check-favicons.cjs https://nevco.online
 Pushing `Anvil-Tools` updates the Vercel frontend. The guide renderer and index template also need their corresponding push to `Anvil-Tools-Backend`. The separate cPanel host requires extracting `deployment/favicon-2026-10-07/cpanel-favicon-update.zip` into its `public_html` document root; repository pushes do not deploy that host. The ZIP contains the changed HTML pages and three icon assets, with the favicon changes applied to committed page versions so unrelated working-copy edits are excluded.
 
 After the intended homepage serves the updated declarations and files, use URL Inspection in its verified Google Search Console property to request indexing. No Search Console connection is available in this workspace, so an indexing request is a separate account action. Google's [favicon documentation](https://developers.google.com/search/docs/appearance/favicon-in-search) recommends a square favicon larger than 48×48 (provided by the ICO), a stable URL, and crawlable files. Processing may take days or weeks, and display is not guaranteed.
+
+## Production verification
+
+The favicon code was pushed to `main` in both repositories: frontend `d4a6135` and backend `7332379`. Both Vercel deployments completed successfully. A fresh run of `node scripts/check-favicons.cjs https://anviltools.vercel.app` passed: all three URLs returned HTTP 200 with the expected MIME types, square dimensions, exact source-mark pixels, and crawlable paths. The live Vercel guide index and a published guide also returned the updated declarations. The backend renderer returned correct frontend-origin favicon links for both hostnames.
+
+The separate `https://nevco.online/` homepage still declares the SVG favicon, and all three requested raster icon URLs returned HTTP 404. The cPanel ZIP is prepared, but no cPanel deployment connection is available in this workspace. Upload that ZIP before requesting indexing for the nevco.online homepage. No Search Console indexing request was submitted.
+
+Evidence: [live renderer and cPanel results](audits/favicon-live-2026-10-07.json) and [Vercel deployment status for both code commits](audits/favicon-deployments-2026-10-07.json).
