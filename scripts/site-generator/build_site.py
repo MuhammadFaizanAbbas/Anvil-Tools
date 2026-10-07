@@ -116,7 +116,9 @@ def page(title, description, active_path, depth_prefix, body_html, extra_head=""
 <link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{depth_prefix}assets/css/style.css">
 <link rel="stylesheet" href="{depth_prefix}assets/css/refinements.css">
-<link rel="icon" type="image/svg+xml" href="{depth_prefix}assets/images/anvil-mark.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon-48.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
 <link rel="stylesheet" href="{depth_prefix}assets/css/design.css">
 {extra_head}
 </head>
