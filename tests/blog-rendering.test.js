@@ -152,7 +152,7 @@ test('retired static articles leave the catalog and sitemap; covered guides prov
 test('overlapping article URLs redirect directly and removed topics return a styled Gone page', async () => {
   const redirects = require('../backend/src/lib/article-redirects.json');
   const retained = new Set(require('../content/editorial/published-library.json').map(row => row.slug));
-  assert.equal(Object.keys(redirects).length, 486);
+  assert.equal(Object.keys(redirects).length, 487);
   for (const target of Object.values(redirects).filter(Boolean)) assert.ok(retained.has(target));
   const beforeCount = queries.length;
   const old = '/api/public/articles/common-mistakes-with-background-removal-in-ecommerce';

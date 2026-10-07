@@ -9,7 +9,7 @@
       "jwt-decoding"
     ],
     "category": "Email tools",
-    "retiredTo": "/journal/best-practices-for-temporary-email-when-working-with-signups"
+    "retiredTo": "/journal/temporary-email-for-authorized-testing-and-permitted-messages"
   },
   {
     "slug": "merge-pdfs-locally",

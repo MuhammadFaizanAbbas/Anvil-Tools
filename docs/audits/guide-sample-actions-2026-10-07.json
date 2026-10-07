@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-07T15:55:02.514Z",
+  "baseline": false,
+  "cases": [
+    {
+      "slug": "base64-tool",
+      "repetitions": 10,
+      "noWaitBetweenClicks": true,
+      "outputPassed": true,
+      "emitsBothEvents": true
+    },
+    {
+      "slug": "json-formatter",
+      "repetitions": 10,
+      "noWaitBetweenClicks": true,
+      "outputPassed": true,
+      "emitsBothEvents": true
+    },
+    {
+      "slug": "csv-to-json",
+      "repetitions": 10,
+      "noWaitBetweenClicks": true,
+      "outputPassed": true,
+      "emitsBothEvents": true
+    },
+    {
+      "slug": "jwt-decoder",
+      "repetitions": 10,
+      "noWaitBetweenClicks": true,
+      "outputPassed": true,
+      "emitsBothEvents": true
+    },
+    {
+      "slug": "unix-timestamp-converter",
+      "repetitions": 10,
+      "noWaitBetweenClicks": true,
+      "outputPassed": true,
+      "emitsBothEvents": true
+    },
+    {
+      "slug": "url-encoder-decoder",
+      "repetitions": 10,
+      "noWaitBetweenClicks": true,
+      "outputPassed": true,
+      "emitsBothEvents": true
+    },
+    {
+      "slug": "text-case-converter",
+      "repetitions": 10,
+      "noWaitBetweenClicks": true,
+      "outputPassed": true,
+      "emitsBothEvents": true
+    },
+    {
+      "slug": "text-diff-checker",
+      "repetitions": 10,
+      "noWaitBetweenClicks": true,
+      "outputPassed": true,
+      "emitsBothEvents": true
+    },
+    {
+      "slug": "qr-code-generator",
+      "repetitions": 10,
+      "noWaitBetweenClicks": true,
+      "outputPassed": true,
+      "emitsBothEvents": true
+    }
+  ],
+  "errors": [],
+  "origin": "http://127.0.0.1:55206",
+  "passed": true
+}

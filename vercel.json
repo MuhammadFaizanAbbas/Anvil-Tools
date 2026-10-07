@@ -36,7 +36,7 @@
       "src": "^/blog/temporary-email-vs-aliases\\.html/?$",
       "status": 308,
       "headers": {
-        "Location": "/journal/best-practices-for-temporary-email-when-working-with-signups"
+        "Location": "/journal/temporary-email-for-authorized-testing-and-permitted-messages"
       }
     },
     {

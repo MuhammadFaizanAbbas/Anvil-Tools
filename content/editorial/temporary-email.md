@@ -2,6 +2,8 @@
 
 Use temporary email only for authorized testing of an application you own or have permission to test, or for a non-sensitive message when the receiving service permits disposable addresses. It is not an account-recovery, anonymity, or identity-verification bypass service. Respect address restrictions; if a service rejects disposable mail, use an accepted address rather than trying other domains to evade its rules.
 
+Do not use temporary inboxes for account recovery, identity bypass, fake accounts, trial abuse, ban evasion, repeated registrations, spam, or sensitive information. Receiving-service rules apply to every permitted delivery test.
+
 An email address often becomes the recovery route for an account. Choose it according to how long you need access. A purchase, ongoing subscription, work account, or service you need later deserves an address you control over time.
 
 This guide uses [Temporary Email](/tools/temp-mail.html) to explain a permitted receiving workflow, delivery problems, and the point at which an alias or permanent mailbox is a better choice. The tool receives messages through a third-party mail provider. Website access expiry does not establish deletion of messages or operational records at that provider.
@@ -21,7 +23,7 @@ Before choosing an address, ask what would happen if you could never receive ano
 
 A managed alias usually forwards to an existing mailbox and can remain available while you maintain it. It lets you separate senders without giving up the destination mailbox. A secondary mailbox provides a separate inbox but still needs passwords, recovery settings, and regular attention. Neither is automatically permanent: check the provider's rules and keep account access current.
 
-A temporary address can limit how often you disclose your everyday address. It does not prevent the signup service from seeing other information you provide, and it does not prevent ordinary browser or connection records. Treat 'keeps my main inbox separate' and 'makes me anonymous' as different claims.
+A temporary address can keep permitted test messages separate from your everyday mailbox. It does not prevent the receiving application from seeing other information you provide, and it does not prevent ordinary browser or connection records. Treat 'keeps test messages separate' and 'makes me anonymous' as different claims.
 
 ## Understand what this tool keeps and what it cannot promise
 
@@ -36,21 +38,21 @@ The page is built for receiving mail; it does not provide a normal outgoing mail
 Use a form and service you own or are authorized to test, with synthetic accounts and no real recovery credentials. For a one-time non-sensitive message, check that the receiving service permits disposable addresses. If it requires a durable address or rejects disposable domains, use an allowed alternative.
 
 1. Open Temporary Email and wait until a complete address appears.
-2. Copy the address and compare it with the email field in the signup form before submitting.
+2. Copy the address and compare it with the email field in the authorized test form before submitting.
 3. Keep the inbox tab open and wait for the expected message. Use Refresh inbox if needed.
 4. Check the subject and sender before opening the message. Inspect any destination link before following it.
-5. Complete the permitted one-time task, then decide whether the account now needs a durable address.
+5. Check the expected non-sensitive message and record the result of the permitted delivery test.
 6. Save the information you are entitled to keep before using New address or ending the session.
 
-The example below shows the real inbox interface after address creation. Creating an address establishes that the page and provider can allocate an inbox; it does not establish that another service can deliver to it. A welcome message supplied by the provider is also different from an independently delivered verification email.
+The example below shows the real inbox interface after address creation. Creating an address establishes that the page and provider can allocate an inbox; it does not establish that another service can deliver to it. A welcome message supplied by the provider is also different from an independently delivered test message.
 
 ![Actual temporary-mail browser check: a generated inbox with Copy address, Refresh inbox, and New address controls](/assets/images/editorial/temporary-email-example.png)
 
-Do not treat Copy address feedback as proof that the signup service accepted the value. Inspect the submitted form's success or error state. Likewise, an empty inbox is not proof that the sender never sent a message. Delivery, address acceptance, message expiry, and the page's ability to retrieve mail are separate stages.
+Do not treat Copy address feedback as proof that the receiving application accepted the value. Inspect the submitted form's success or error state. Likewise, an empty inbox is not proof that the sender never sent a message. Delivery, address acceptance, message expiry, and the page's ability to retrieve mail are separate stages.
 
 ## Use a small test record to locate delivery problems
 
-For an authorized signup test, record the expected subject, the approximate send time, and the visible result. Use invented names and sample data. Do not paste a live recovery link or inbox capability into a public bug report. Those values may allow someone else to act on the message or read the inbox.
+For a permitted delivery test in an application you own or are authorized to test, record the expected subject, the approximate send time, and the visible result. Use invented names and sample data. Do not paste a live recovery link or inbox capability into a public bug report. Those values may allow someone else to act on the message or read the inbox.
 
 A sample test plan for a form you own might be:
 
@@ -60,23 +62,23 @@ A sample test plan for a form you own might be:
 | Submit the form once | Form accepts the address and confirms submission | Validation, rate limit, or form failure |
 | Wait and refresh | Expected subject appears in the list | Delivery or retrieval needs investigation |
 | Open the message | Expected plain text and recognizable sender | Rendering, wrong template, or wrong destination |
-| Complete confirmation | Your test application shows the intended state | Expired link, wrong token, or application failure |
+| Check the test workflow | Your application records the intended delivery result | Unexpected content or application-state failure |
 
 This table is a plan, not a claim that an external delivery test has passed. To establish delivery, the application's operator must send a non-sensitive message from an authorized source and verify that it arrives. Keep that result separate from local tests that simulate messages or test the rendering code.
 
-## Troubleshoot without repeated signups or domain evasion
+## Troubleshoot within receiving-service rules
 
 If the form rejects the address immediately, read its error message. It may block disposable addresses or require another format. Respect that requirement. Do not rotate domains to evade the service's restrictions or use a new inbox to claim repeated trials or benefits.
 
-If the form reports success but the inbox is empty, check the exact address first. A copied space, missing character, or newly generated inbox can send you to the wrong destination. Check whether the page still displays the original address and whether Refresh inbox reports a connection problem. Wait according to the sender's instructions rather than creating repeated signup requests.
+If the form reports success but the inbox is empty, check the exact address first. A copied space, missing character, or newly generated inbox can send you to the wrong destination. Check whether the page still displays the original address and whether Refresh inbox reports a connection problem. Wait according to the sender's instructions; do not create repeated registrations or requests to evade its limits.
 
 Where you operate the sending application, check its own mail-delivery records for a rejection, deferral, or provider error. A 'queued' application response is not the same as acceptance by the destination mail server. Temporary mail cannot diagnose a sending service's private delivery pipeline; the operator needs those records to distinguish the stages.
 
-If a confirmation link has expired, use the service's documented resend process while you still control the address. Avoid submitting repeatedly without knowing which link is current. If the inbox has been replaced or expired, do not assume it can be recovered. For an important account, contact the service through its normal recovery process and use an address that can remain available.
+If an expected test message expires, use the receiving application's documented test workflow while you still control the address. Avoid repeated requests without knowing their status. If the inbox has been replaced or expired, do not assume it can be recovered. For an important account, contact the service through its normal recovery process and use an address that can remain available.
 
 ## Read incoming messages as third-party content
 
-A message visible in the inbox is content supplied by its sender. It is not an endorsement by Anvil. A familiar subject or display name can be misleading; inspect the sender and the destination service before following a link. Unexpected requests for credentials, payments, or private documents should not become part of a simple signup workflow.
+A message visible in the inbox is content supplied by its sender. It is not an endorsement by Anvil. A familiar subject or display name can be misleading; inspect the sender and the destination service before following a link. Unexpected requests for credentials, payments, or private documents should not become part of a permitted delivery test.
 
 This interface displays message text rather than treating arbitrary email markup as trusted page content. That reduces exposure to embedded scripts or remote content in the reader, but it does not make every linked website safe. A visible URL can still lead to a different service from the one you intended to use. Navigate to a known service directly when a message is unexpected.
 
@@ -84,7 +86,7 @@ Keep support examples small. Report 'the expected subject did not appear after t
 
 ## Move continuing accounts to a durable address
 
-If a test or one-time signup becomes useful, change its email while you can still access the account. Use the service's settings, confirm the new address, and check where future notices will go. Some services require approval from both the old and new inbox, so waiting until the temporary address disappears can complicate the change.
+Use a durable address from the outset for any account that needs lasting access. If an authorized test account will be retained, use your application's documented process to assign an appropriate maintained address while access is available. Check where future notices will go. Do not depend on an expiring inbox for account recovery.
 
 For a subscription, verify where renewal receipts and cancellation confirmations will arrive. Deleting access to a temporary inbox does not cancel an account or stop a payment. Complete cancellation through the service's documented process and retain the confirmation in a durable place when needed.
 

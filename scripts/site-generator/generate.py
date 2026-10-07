@@ -47,7 +47,7 @@ def build_home():
 </section>
 
 <section>
-  <h2>From the blog</h2>
+  <h2>Guides &amp; experiments</h2>
   <p><a href="blog/index.html">Read guides on getting the most out of these tools →</a></p>
 </section>
 '''

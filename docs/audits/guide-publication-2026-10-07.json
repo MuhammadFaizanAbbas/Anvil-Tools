@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-07T16:13:06.284Z",
+  "project": "anvil",
+  "article": {
+    "id": "best-practices-for-temporary-email-when-working-with-signups",
+    "slug": "temporary-email-for-authorized-testing-and-permitted-messages",
+    "title": "Temporary Email for Authorized Testing and Permitted Messages",
+    "status": "published",
+    "published_at": "2026-09-29 06:00:31.666188+00",
+    "cover_image_id": "f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+    "updated_at": "2026-10-07 16:11:21.897535+00",
+    "body_md5": "da4b02d29bd52400913d93ec590632cd",
+    "published_guides": 4,
+    "old_slug_rows": 0,
+    "original_revision_count": 1
+  },
+  "preservation": {
+    "id": true,
+    "cover": true,
+    "publishedAt": true,
+    "originalRevision": true
+  },
+  "publicationValidation": {
+    "isolatedPostgresPassed": true,
+    "staleReplayRefused": true,
+    "productionSnapshotGuardPassed": true
+  },
+  "contact": {
+    "httpStatus": 202,
+    "reference": "7bd03f62-88ae-45d4-8c6b-590ffc93b369",
+    "submissions": 1,
+    "persisted": true,
+    "alert": "sent",
+    "receipt": "sent",
+    "userConfirmedReceipt": true
+  }
+}

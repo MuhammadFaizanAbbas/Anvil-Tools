@@ -1,7 +1,7 @@
 [
   {
     "key": "temporary-email",
-    "slug": "best-practices-for-temporary-email-when-working-with-signups",
+    "slug": "temporary-email-for-authorized-testing-and-permitted-messages",
     "bodyFile": "temporary-email.md",
     "tools": [
       "temp-mail"

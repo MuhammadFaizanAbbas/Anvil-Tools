@@ -47,7 +47,7 @@ test('blogs show 30 posts and use ordinary numbered links with page-specific doc
   const { ids, calls } = await setup([{ data: first, total: 31 }]);
   assert.equal(ids.publishedGuideCards.children.length, 30);
   assert.equal(ids.publishedGuideCards.children[0].children[0].src, 'https://site.example/journal-images/image-0');
-  assert.equal(ids.blogsPage.textContent, 'Page 1 of 2 · 31 blogs');
+  assert.equal(ids.blogsPage.textContent, 'Page 1 of 2 · 31 guides');
   assert.equal(ids.blogsPrev.disabled, true); assert.equal(ids.blogsNext.disabled, false);
   assert.equal(ids.blogsPrev.getAttribute('href'), null);
   assert.equal(ids.blogsNext.href, '/blog/index.html?page=2');

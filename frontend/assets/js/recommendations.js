@@ -13,7 +13,7 @@
     if (!response.ok) return;
     const posts = await response.json();
     if (!Array.isArray(posts) || !posts.length) return;
-    const heading = document.createElement('h2'); heading.textContent = slug ? 'More from the blog' : 'Latest from the blog';
+    const heading = document.createElement('h2'); heading.textContent = slug ? 'More guides & experiments' : 'Latest guides & experiments';
     const grid = document.createElement('div'); grid.className = 'tool-grid';
     for (const post of posts) {
       const card = document.createElement('article'); card.className = 'tool-card';

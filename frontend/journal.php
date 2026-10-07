@@ -36,7 +36,7 @@ if ($response['body'] === false || !in_array($response['status'], [200, 404, 410
     header('Content-Type: text/html; charset=UTF-8');
     header('Cache-Control: no-store');
     header('X-Robots-Tag: noindex, follow');
-    echo '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Article temporarily unavailable</title><h1>Article temporarily unavailable</h1><p>Please try again shortly.</p><p><a href="/blog/index.html">Return to blogs</a></p></html>';
+    echo '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Article temporarily unavailable</title><h1>Article temporarily unavailable</h1><p>Please try again shortly.</p><p><a href="/blog/index.html">Return to guides &amp; experiments</a></p></html>';
     exit;
 }
 

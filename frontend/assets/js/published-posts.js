@@ -47,7 +47,7 @@
       const card = document.createElement('article'); card.className = 'tool-card';
       const title = document.createElement('h3'); title.textContent = post.title;
       const excerpt = document.createElement('p'); excerpt.textContent = post.excerpt;
-      const link = document.createElement('a'); link.href = `/journal/${encodeURIComponent(post.slug)}`; link.textContent = 'Read blog →'; link.className = 'tool-link';
+      const link = document.createElement('a'); link.href = `/journal/${encodeURIComponent(post.slug)}`; link.textContent = 'Read guide →'; link.className = 'tool-link';
       if (post.cover_image_id) card.append(cover(post, 'guide-cover'));
       card.append(title, excerpt, link); fragment.append(card);
     }
@@ -63,7 +63,7 @@
       pagination.append(previous, pageLabel, next);
     }
     if (pagination) pagination.hidden = total <= limit;
-    if (pageLabel) pageLabel.textContent = `Page ${page + 1} of ${pages} · ${total} blog${total === 1 ? '' : 's'}`;
+    if (pageLabel) pageLabel.textContent = `Page ${page + 1} of ${pages} · ${total} guide${total === 1 ? '' : 's'}`;
     if (previous) { previous.disabled = page === 0; previous.hidden = page === 0; if (page > 0) previous.href = `/blog/index.html${page > 1 ? `?page=${page}` : ''}`; else previous.removeAttribute('href'); }
     if (next) { next.disabled = page + 1 >= pages; next.hidden = page + 1 >= pages; if (page + 1 < pages) next.href = `/blog/index.html?page=${page + 2}`; else next.removeAttribute('href'); }
     if (status) status.textContent = posts.length ? '' : 'No articles published yet.';
@@ -81,7 +81,7 @@
       const slug = new URLSearchParams(location.search).get('slug');
       const path = article ? `/api/public/posts/${encodeURIComponent(slug || '')}` : `/api/public/posts?limit=${limit}&offset=${page * limit}`;
       const response = await AnvilAPI.fetch(path);
-      if (!response.ok) throw new Error('Unable to load blogs. Please try again.');
+      if (!response.ok) throw new Error('Unable to load guides. Please try again.');
       const data = await response.json();
       if (article) {
         document.title = `${data.title} | Anvil Tools`;
