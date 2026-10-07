@@ -5,6 +5,7 @@
     "excerpt": "Actual browser results for ten syntax errors, duplicate keys, and an integer that changes during formatting, with reusable inputs.",
     "bodyFile": "experiments/json-formatter.md",
     "category_slug": "developer-tools",
+    "tags": ["JSON formatter", "JSON syntax errors", "duplicate JSON keys", "JavaScript integer precision"],
     "tools": [
       "json-formatter"
     ],
@@ -18,6 +19,7 @@
     "excerpt": "Thirteen recorded CSV conversions show preserved strings, rejected headers, quoted newlines, and a semicolon-delimiter trap.",
     "bodyFile": "experiments/csv-edge-cases.md",
     "category_slug": "developer-tools",
+    "tags": ["CSV to JSON", "quoted CSV fields", "CSV newlines", "Unicode", "blank fields"],
     "tools": [
       "csv-to-json"
     ],
@@ -31,6 +33,7 @@
     "excerpt": "Twelve measured examples explain whitespace words, UTF-16 characters, combining accents, emoji, and rough reading-time estimates.",
     "bodyFile": "experiments/word-counter.md",
     "category_slug": "text-tools",
+    "tags": ["word counter", "Unicode character count", "UTF-16", "emoji", "combining accents"],
     "tools": [
       "word-counter"
     ],
@@ -44,6 +47,7 @@
     "excerpt": "The same 640 by 400 illustration converted from three formats, with actual downloads, independent PDF inspection, and transparency limits.",
     "bodyFile": "experiments/image-formats.md",
     "category_slug": "pdf-tools",
+    "tags": ["image to PDF", "JPEG to PDF", "PNG to PDF", "WebP to PDF", "PDF transparency"],
     "tools": [
       "image-to-pdf"
     ],

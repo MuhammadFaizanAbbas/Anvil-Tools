@@ -13,6 +13,8 @@ test('long guides have one title, unique anchors, and a working HTML outline', (
   assert.equal((html.match(/<h1>/g) || []).length, 1);
   assert.match(html, /By <a[^>]+rel="author">VelloxTech editorial team/);
   assert.doesNotMatch(html, /<h2[^>]*>Guide title/);
+  const structuredData = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+  assert.equal(Object.hasOwn(structuredData, 'keywords'), false);
 });
 
 test('markup preserves code and supports accessible tables without JavaScript', () => {

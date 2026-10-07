@@ -96,7 +96,7 @@ For timestamps, use [Unix Timestamp Converter](/tools/unix-timestamp-converter.h
 
 [UUID Generator](/tools/uuid-generator.html) supplies test identifiers. An identifier is not permission to access the associated object; authorization belongs in the application. Likewise, [User-Agent Generator](/tools/user-agent-generator.html) supplies sample browser strings for controlled tests. A user-agent string alone does not establish a visitor's identity or prove actual device capabilities.
 
-For signup testing that needs an inbox, use a suitable test account and plan for recovery. A temporary inbox is a poor recovery channel for an account that must remain accessible. The separate [temporary-email guide](/journal/best-practices-for-temporary-email-when-working-with-signups) covers that decision and the provider's privacy limits.
+For signup testing that needs an inbox, use a suitable test account and plan for recovery. A temporary inbox is a poor recovery channel for an account that must remain accessible. The separate [temporary-email guide](/journal/temporary-email-for-authorized-testing-and-permitted-messages) covers that decision and the provider's privacy limits.
 
 ## Finish with a reproducible result
 
