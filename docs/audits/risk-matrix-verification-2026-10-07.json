@@ -1,0 +1,1536 @@
+{
+  "checkedAt": "2026-10-06T21:24:51.822Z",
+  "scope": "Prepared local HTML; live content was recorded separately",
+  "layouts": [
+    {
+      "route": "/tools/index.html",
+      "width": 320,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "width": 320,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "width": 320,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "route": "/about.html",
+      "width": 320,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "route": "/contact.html",
+      "width": 320,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "route": "/terms-of-service.html",
+      "width": 320,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "route": "/cookie-policy.html",
+      "width": 320,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "route": "/tools/index.html",
+      "width": 768,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "width": 768,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "width": 768,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/about.html",
+      "width": 768,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/contact.html",
+      "width": 768,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/terms-of-service.html",
+      "width": 768,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/cookie-policy.html",
+      "width": 768,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/tools/index.html",
+      "width": 1440,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/categories/developer-tools.html",
+      "width": 1440,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/categories/text-tools.html",
+      "width": 1440,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/about.html",
+      "width": 1440,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/contact.html",
+      "width": 1440,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/terms-of-service.html",
+      "width": 1440,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/cookie-policy.html",
+      "width": 1440,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": []
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "noHorizontalOverflow": true,
+      "axeViolations": 0,
+      "axeIncomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "javaScriptEnabled": false,
+      "staticGuidanceAvailable": true
+    },
+    {
+      "route": "/tools/index.html",
+      "width": 320,
+      "javaScriptEnabled": false,
+      "staticGuidanceAvailable": true
+    },
+    {
+      "route": "/about.html",
+      "width": 320,
+      "javaScriptEnabled": false,
+      "staticGuidanceAvailable": true
+    }
+  ],
+  "links": [
+    {
+      "from": "/",
+      "to": "/#main-content",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/#all-tools",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/categories/email-tools.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/categories/image-tools.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/categories/pdf-tools.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/categories/developer-tools.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/categories/text-tools.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/categories/generators.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/temp-mail.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/background-remover.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/pdf-merge.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/image-to-pdf.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/qr-code-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/password-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/word-counter.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/json-formatter.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/base64-tool.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/user-agent-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/color-palette-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/unit-converter.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/url-encoder-decoder.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/jwt-decoder.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/unix-timestamp-converter.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/hash-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/csv-to-json.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/text-case-converter.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/text-diff-checker.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/uuid-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/background-remover.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/image-to-pdf.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/pdf-merge.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/privacy-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/blog/jpeg-png-webp-to-pdf-test.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/blog/json-formatter-edge-cases.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/blog/word-counter-unicode-experiment.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/about.html#editorial-testing",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/temp-mail.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/background-remover.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/pdf-merge.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/privacy-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/terms-of-service.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/cookie-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/",
+      "to": "/disclaimer.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/index.html#main-content",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/temp-mail.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/background-remover.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/pdf-merge.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/image-to-pdf.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/qr-code-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/password-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/word-counter.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/json-formatter.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/base64-tool.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/user-agent-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/color-palette-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/unit-converter.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/url-encoder-decoder.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/jwt-decoder.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/unix-timestamp-converter.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/hash-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/csv-to-json.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/text-case-converter.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/text-diff-checker.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/uuid-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/pdf-merge.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/image-to-pdf.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/background-remover.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/categories/text-tools.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/categories/developer-tools.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/categories/generators.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/temp-mail.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/blog/word-counter-unicode-experiment.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/temp-mail.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/background-remover.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/pdf-merge.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/privacy-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/terms-of-service.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/cookie-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/tools/index.html",
+      "to": "/disclaimer.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/categories/developer-tools.html#main-content",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/json-formatter.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/base64-tool.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/user-agent-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/url-encoder-decoder.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/jwt-decoder.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/unix-timestamp-converter.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/hash-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/csv-to-json.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/json-formatter.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/csv-to-json.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/url-encoder-decoder.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/base64-tool.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/jwt-decoder.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/unix-timestamp-converter.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/hash-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/user-agent-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/assets/examples/developer/quoted-newline.csv",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/assets/examples/developer/expected.json",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/blog/json-formatter-edge-cases.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/blog/csv-quotes-unicode-and-blank-fields.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/uuid-generator.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/temp-mail.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/background-remover.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/pdf-merge.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/privacy-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/terms-of-service.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/cookie-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/developer-tools.html",
+      "to": "/disclaimer.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/categories/text-tools.html#main-content",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/tools/word-counter.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/tools/text-case-converter.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/tools/text-diff-checker.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/tools/word-counter.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/tools/text-case-converter.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/tools/text-diff-checker.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/blog/word-counter-unicode-experiment.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/tools/temp-mail.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/tools/background-remover.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/tools/pdf-merge.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/privacy-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/terms-of-service.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/cookie-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/categories/text-tools.html",
+      "to": "/disclaimer.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/about.html#main-content",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/privacy-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/tools/temp-mail.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/tools/background-remover.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/tools/pdf-merge.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/privacy-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/terms-of-service.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/cookie-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/about.html",
+      "to": "/disclaimer.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/contact.html#main-content",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/privacy-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/tools/temp-mail.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/tools/background-remover.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/tools/pdf-merge.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/privacy-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/terms-of-service.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/cookie-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/contact.html",
+      "to": "/disclaimer.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/terms-of-service.html#main-content",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/tools/temp-mail.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/tools/background-remover.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/tools/pdf-merge.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/privacy-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/terms-of-service.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/cookie-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/terms-of-service.html",
+      "to": "/disclaimer.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/cookie-policy.html#main-content",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/privacy-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/tools/temp-mail.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/tools/background-remover.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/tools/pdf-merge.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/tools/index.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/about.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/blog/index.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/contact.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/privacy-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/terms-of-service.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/cookie-policy.html",
+      "exists": true
+    },
+    {
+      "from": "/cookie-policy.html",
+      "to": "/disclaimer.html",
+      "exists": true
+    }
+  ],
+  "regressions": {
+    "command": "node --test tests/public-readiness.test.js tests/review-readiness.test.js tests/article-review-metadata.test.js tests/cpanel-sitemap.test.js tests/editorial-markdown.test.js",
+    "passed": 14,
+    "failed": 0
+  },
+  "adRequests": [],
+  "limits": [
+    "Desktop Edge at emulated widths; physical devices and full assistive-technology review are separate.",
+    "No form submission, inbox creation, external email, or ad activation performed."
+  ],
+  "sourceVerification": {
+    "pythonSyntaxFiles": [
+      "scripts/refine-submission-pages.py",
+      "scripts/correct-review-findings.py",
+      "scripts/expand-content.py",
+      "scripts/site-generator/generate.py"
+    ],
+    "isolatedRefinementPassed": true,
+    "preservedEditorialDisclosure": true,
+    "preservedGuideLinks": true,
+    "workspaceWasNotRegenerated": true
+  },
+  "passed": true
+}

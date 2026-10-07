@@ -225,7 +225,7 @@ def build_static_pages():
 
     terms_body = f'''
 {breadcrumbs(depth, [("Home","index.html"), ("Terms of service", None)])}
-<section class="hero"><h1>Terms of service</h1><p class="lede">Last updated: September 30, 2026.</p></section>
+<section class="hero"><h1>Terms of service</h1><p class="lede">Last updated: October 7, 2026.</p></section>
 <section class="legal-content">
 <h2>Using this site</h2>
 <p>By using {SITE_NAME}, you agree to these terms. If you don't agree, please don't use the site.</p>
@@ -235,9 +235,11 @@ def build_static_pages():
 
 <h2>Acceptable use</h2>
 <p>You agree not to use this site to violate any law, infringe anyone's rights, distribute malware, or attempt to disrupt or gain unauthorized access to the site or its infrastructure. The temporary email tool may not be used to impersonate another person, commit fraud, or evade a service's legitimate identity verification requirements.</p>
+<p>Use temporary email only for authorized, non-sensitive testing or messages where disposable addresses are permitted. Do not use it for spam, fake accounts, trial abuse, account recovery, or attempts to evade address restrictions. Use user-agent samples only in applications you own or are authorized to test; they do not verify crawler identity or authorize anti-bot evasion. JWT, hash, and password tools are for defensive inspection or generation, not token forging, credential recovery, cracking, or collecting another person's secrets.</p>
 
 <h2>Intellectual property</h2>
 <p>The site's design, code, and written content are owned by {SITE_NAME} or its licensors. Files, text, and images you process using the tools remain yours; we claim no ownership over content you create or upload.</p>
+<p>Use only source material you own or have permission to process. Conversion, background removal, or downloading an example does not grant rights to third-party content. Report suspected misuse or a content-rights concern through the contact page with the affected page and a non-sensitive description.</p>
 
 <h2>Third-party services</h2>
 <p>Some tools rely on third-party services or libraries (for example, the temporary email tool's email provider). We aren't responsible for the availability or behavior of third-party services outside our control.</p>
@@ -256,12 +258,13 @@ def build_static_pages():
 
     cookie_body = f'''
 {breadcrumbs(depth, [("Home","index.html"), ("Cookie policy", None)])}
-<section class="hero"><h1>Cookie policy</h1><p class="lede">Last updated: October 5, 2026.</p></section>
+<section class="hero"><h1>Cookie policy</h1><p class="lede">Last updated: October 7, 2026.</p></section>
 <section class="legal-content">
 <h2>Current cookies and browser storage</h2>
 <p>Advertising and automatic browser analytics are disabled. The first-party application uses browser storage for the functions described below; it does not currently set optional advertising or analytics cookies.</p>
 <h2>Necessary session storage</h2>
 <p>The temporary inbox uses the tm_cap entry in session storage to restore access while the inbox remains active. The private workspace uses anvil_admin_session for its access token and expiry. These values support the service you request and are not advertising preferences.</p>
+<div class="table-scroll" role="region" aria-label="Browser storage purposes and duration" tabindex="0"><table><thead><tr><th scope="col">Entry and storage</th><th scope="col">Purpose</th><th scope="col">Duration and removal</th></tr></thead><tbody><tr><td><code>tm_cap</code> · session storage</td><td>Restore access to a temporary inbox.</td><td>Website access expires one hour after creation. The entry is replaced for a new inbox and cleared when expiry is recognized or browser session data is cleared; this does not establish deletion at Guerrilla Mail.</td></tr><tr><td><code>anvil_admin_session</code> · session storage</td><td>Private-workspace access token and supplied expiry.</td><td>Access ends at the token's expiry. Signing out, recognizing an expired session, or clearing browser session data removes the entry.</td></tr><tr><td><code>anvil_consent_v1</code> · legacy local storage</td><td>Unused preference left by an earlier version.</td><td>It can persist until site data is cleared. It does not load ads or analytics and does not grant future consent.</td></tr></tbody></table></div>
 <h2>Preferences from earlier versions</h2>
 <p>An earlier version stored optional preferences under anvil_consent_v1 in local storage. The current pages do not use that entry to load advertising or analytics. You can remove it by clearing site data.</p>
 <h2>Managing stored data</h2>

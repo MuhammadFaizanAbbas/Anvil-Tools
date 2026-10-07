@@ -1,0 +1,651 @@
+{
+  "checkedAt": "2026-10-06T21:22:42.180Z",
+  "assets": [
+    {
+      "route": "/assets/examples/developer/expected.base64.txt",
+      "bytes": 160,
+      "sha256": "e4b7138bf075006b519c913fcdb6cccc6d927465befd728f004e77e047b77ca9",
+      "origin": "Authored fictional developer-workflow fixture",
+      "evidence": [
+        "scripts/prepare-crawler-recheck.cjs",
+        "frontend/assets/examples/developer/workflow.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/developer/expected.json",
+      "bytes": 168,
+      "sha256": "bf79ffac27ccc4800ec8363184d4450c70f3b55a61f6158aade5004207779f4f",
+      "origin": "Authored fictional developer-workflow fixture",
+      "evidence": [
+        "scripts/prepare-crawler-recheck.cjs",
+        "frontend/assets/examples/developer/workflow.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/developer/expected.min.json",
+      "bytes": 118,
+      "sha256": "116cfe62138e4a0a755d1abbb8e8b9e8d7719c48fd813bc568ed2cf3baf69c45",
+      "origin": "Authored fictional developer-workflow fixture",
+      "evidence": [
+        "scripts/prepare-crawler-recheck.cjs",
+        "frontend/assets/examples/developer/workflow.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/developer/quoted-newline.csv",
+      "bytes": 81,
+      "sha256": "909ec5e0dc4f485bff424dd9442a1cd5f0c241d0393df3249769a2c47ed15976",
+      "origin": "Authored fictional developer-workflow fixture",
+      "evidence": [
+        "scripts/prepare-crawler-recheck.cjs",
+        "frontend/assets/examples/developer/workflow.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/developer/workflow.json",
+      "bytes": 361,
+      "sha256": "208c02ce7b36b97db4bf4a5167625828f65c813dbe3c74f7519256f4245c5480",
+      "origin": "Authored fictional developer-workflow fixture",
+      "evidence": [
+        "scripts/prepare-crawler-recheck.cjs",
+        "frontend/assets/examples/developer/workflow.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/csv-cases.json",
+      "bytes": 2417,
+      "sha256": "c337d569e8b30eae86e8201e589e5ddf509491ce90fc3124db9221a7e554ac22",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/format-edge-jpg.pdf",
+      "bytes": 17925,
+      "sha256": "347191031355d220fc83386310bf46bd40829122802f414b40445ca0bb94a0e9",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/format-edge-png.pdf",
+      "bytes": 17268,
+      "sha256": "835a86219e03388c332b29f1381795af146339a766d7c0b99ddce3f605d3eb39",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/format-edge-webp.pdf",
+      "bytes": 17372,
+      "sha256": "026810a1acda939eb520508bc7eaddee744dbd6b8c6c35d09804a003c5650bd0",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/format-jpg.pdf",
+      "bytes": 17925,
+      "sha256": "dd5de7ab55042530c7a70fb49167ca19be6d3890c92a0121480d42777e8a67ce",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/format-png.pdf",
+      "bytes": 17268,
+      "sha256": "6cfc463f964fb2cde156b1884475c3b69b1e44b6d2c1a1fcf344b27257db4f9c",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/format-sample.jpg",
+      "bytes": 16987,
+      "sha256": "975d9c0282d66138421d6bccb8877f9518327f9d29c733615656e34f9334577a",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/format-sample.png",
+      "bytes": 18067,
+      "sha256": "8f704228d8ffa8adfc334650cd898bb9b77359b138feec8ef445fe49731ead7d",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/format-sample.webp",
+      "bytes": 8250,
+      "sha256": "1d92e33ab54533020568b9cb316d5370cde9bbfcdf64db372ac84c9b0bf51482",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/format-webp.pdf",
+      "bytes": 17372,
+      "sha256": "9d483e8d8bc83bf62863dc7cc244e528007d12263087046125447cf64daf0d5d",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/json-cases.json",
+      "bytes": 1386,
+      "sha256": "0e07b6f583cea05768162d7361b4c1503e793f84076e983e15c71fede86cc375",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/pdf-inspection.json",
+      "bytes": 2114,
+      "sha256": "6c77cf96e1327d82d69fb0ff2e4ef7df4d340fa9d1c5a6d731ce9f924fb33113",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/results.json",
+      "bytes": 24057,
+      "sha256": "9683ade9d65468fb69bbe2dd024480f22bbab3e55362228d388810a7141ae49a",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/experiments/word-counter-cases.json",
+      "bytes": 1668,
+      "sha256": "adc2543bdb4a4de2cccc0ea6afbac8226a7798d11826602791f9d615ede1dc09",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/images/mug-photo-output.png",
+      "bytes": 335268,
+      "sha256": "ea063447cf12502c69c821840ba5805f6988d6ff0c855c2724a8ef5300b9f831",
+      "origin": "Original CC0 mug photograph or an explicitly recorded derivative",
+      "evidence": [
+        "frontend/assets/examples/images/SOURCE.json",
+        "scripts/record-crawler-photo.cjs"
+      ],
+      "rightsStatus": "CC0 1.0 attribution record present",
+      "attribution": {
+        "title": "Mug image.jpg",
+        "author": "Mohanraj55",
+        "license": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mug_image.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/00/Mug_image.jpg",
+        "originalSha1": "f6059ba70211d748ae1a658e26bd414721e9bdae",
+        "originalDimensions": [
+          960,
+          1280
+        ],
+        "derivedWebpDimensions": [
+          480,
+          640
+        ],
+        "transformation": "Resized and encoded as WebP; no retouch or manual cutout",
+        "checkedAt": "2026-10-05"
+      }
+    },
+    {
+      "route": "/assets/examples/images/mug-photo.jpg",
+      "bytes": 117361,
+      "sha256": "f46f6bc74eb235b489bcd75430f31f66a7ff4a84a87ed239f9bc8aa47b163a5f",
+      "origin": "Original CC0 mug photograph or an explicitly recorded derivative",
+      "evidence": [
+        "frontend/assets/examples/images/SOURCE.json",
+        "scripts/record-crawler-photo.cjs"
+      ],
+      "rightsStatus": "CC0 1.0 attribution record present",
+      "attribution": {
+        "title": "Mug image.jpg",
+        "author": "Mohanraj55",
+        "license": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mug_image.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/00/Mug_image.jpg",
+        "originalSha1": "f6059ba70211d748ae1a658e26bd414721e9bdae",
+        "originalDimensions": [
+          960,
+          1280
+        ],
+        "derivedWebpDimensions": [
+          480,
+          640
+        ],
+        "transformation": "Resized and encoded as WebP; no retouch or manual cutout",
+        "checkedAt": "2026-10-05"
+      }
+    },
+    {
+      "route": "/assets/examples/images/mug-photo.webp",
+      "bytes": 38716,
+      "sha256": "76f1c1dbf6c91f22aeea0d52695787bb4c52506d57b0fb35c30a6083424a9da4",
+      "origin": "Original CC0 mug photograph or an explicitly recorded derivative",
+      "evidence": [
+        "frontend/assets/examples/images/SOURCE.json",
+        "scripts/record-crawler-photo.cjs"
+      ],
+      "rightsStatus": "CC0 1.0 attribution record present",
+      "attribution": {
+        "title": "Mug image.jpg",
+        "author": "Mohanraj55",
+        "license": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mug_image.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/00/Mug_image.jpg",
+        "originalSha1": "f6059ba70211d748ae1a658e26bd414721e9bdae",
+        "originalDimensions": [
+          960,
+          1280
+        ],
+        "derivedWebpDimensions": [
+          480,
+          640
+        ],
+        "transformation": "Resized and encoded as WebP; no retouch or manual cutout",
+        "checkedAt": "2026-10-05"
+      }
+    },
+    {
+      "route": "/assets/examples/pdf/application.pdf",
+      "bytes": 1111,
+      "sha256": "11d3c92a9f8b9ba37c3fa49b40c92e097eab44beda5fe6cf8c2ca205647dbe40",
+      "origin": "Synthetic PDF source or actual merged download",
+      "evidence": [
+        "scripts/check-submission-pages.cjs"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/pdf/cover.pdf",
+      "bytes": 867,
+      "sha256": "a29a16bda558024c655983d3e5c4b882c8d1f1aa8b20c4d482f328819d3bc6a8",
+      "origin": "Synthetic PDF source or actual merged download",
+      "evidence": [
+        "scripts/check-submission-pages.cjs"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/pdf/merged-example.pdf",
+      "bytes": 1563,
+      "sha256": "aad13c88a8db2d33df99ce03b33c7fd3bf83482755e972d8950dca3c64646d63",
+      "origin": "Synthetic PDF source or actual merged download",
+      "evidence": [
+        "scripts/check-submission-pages.cjs"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/pdf/support.pdf",
+      "bytes": 869,
+      "sha256": "b4cb150a591eee905f7eabe0de9f34885a938833cc25cbbd617248b0d94736d5",
+      "origin": "Synthetic PDF source or actual merged download",
+      "evidence": [
+        "scripts/check-submission-pages.cjs"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/qr-check.png",
+      "bytes": 2611,
+      "sha256": "381760fd2649661a0a0d2870867118ef53182cb8001620b5ff9cd3b856ee728b",
+      "origin": "Actual generated QR output or print fixture for the public homepage",
+      "evidence": [
+        "scripts/check-crawler-recheck.cjs"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/examples/qr-print-check.pdf",
+      "bytes": 2633,
+      "sha256": "6c9f7214a380703208f17d612a2764b27d57920687d29bc453a1dcc29c3d6a25",
+      "origin": "Actual generated QR output or print fixture for the public homepage",
+      "evidence": [
+        "scripts/check-crawler-recheck.cjs"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/background-removal-example-480.webp",
+      "bytes": 9890,
+      "sha256": "f19a6d96b2308434df8d694896763cf0ee90c7bef72e75b5345457fe9909a86a",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/background-removal-example-960.webp",
+      "bytes": 25470,
+      "sha256": "b109ec9d92c8a3df39895b5622f057be13660d4d98523769dc93e840ffa43186",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/background-removal-example-976.webp",
+      "bytes": 28150,
+      "sha256": "002a8ecb913de7232c8ec64a5d1210903e9ff625f48292148803323fd712cffb",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/background-removal-example.png",
+      "bytes": 59456,
+      "sha256": "3abb82c454660cf604a1a1457215201819e2c9a0c5c6aebf4cb05e59d014860e",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/background-removal-input.png",
+      "bytes": 12633,
+      "sha256": "7e93b8756cea87b463330f5542b7cfdca75b21485b78bdaf804f10fc14b9f676",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/background-removal-output.png",
+      "bytes": 186262,
+      "sha256": "884a8d095771913c018b6feee5a7ff7765e0246263f467469dcb47733f2fd4f7",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/csv-newline-experiment.png",
+      "bytes": 34108,
+      "sha256": "a5c6471ed95b3be5f6a7e068b8fc7b463aff4050b95aee94d11b43fbc8e288ea",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/image-format-experiment.png",
+      "bytes": 45146,
+      "sha256": "9aceebeaef63e235425100c7e3dc703cecc55ff8136c5013f88bd600fd15f199",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/json-precision-experiment.png",
+      "bytes": 34147,
+      "sha256": "acddd1ce28fae74541d1ffcf0d2126dfc6e6d227cf2d5c6f0fa80952ac9301ef",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/mug-photo-input.webp",
+      "bytes": 38716,
+      "sha256": "76f1c1dbf6c91f22aeea0d52695787bb4c52506d57b0fb35c30a6083424a9da4",
+      "origin": "Original CC0 mug photograph or an explicitly recorded derivative",
+      "evidence": [
+        "frontend/assets/examples/images/SOURCE.json",
+        "scripts/record-crawler-photo.cjs"
+      ],
+      "rightsStatus": "CC0 1.0 attribution record present",
+      "attribution": {
+        "title": "Mug image.jpg",
+        "author": "Mohanraj55",
+        "license": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mug_image.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/00/Mug_image.jpg",
+        "originalSha1": "f6059ba70211d748ae1a658e26bd414721e9bdae",
+        "originalDimensions": [
+          960,
+          1280
+        ],
+        "derivedWebpDimensions": [
+          480,
+          640
+        ],
+        "transformation": "Resized and encoded as WebP; no retouch or manual cutout",
+        "checkedAt": "2026-10-05"
+      }
+    },
+    {
+      "route": "/assets/images/editorial/mug-photo-output.webp",
+      "bytes": 22258,
+      "sha256": "339efcb636a2edf4d97736cfe2ec4fb0f8f437f728b431c750d91b701e279980",
+      "origin": "Original CC0 mug photograph or an explicitly recorded derivative",
+      "evidence": [
+        "frontend/assets/examples/images/SOURCE.json",
+        "scripts/record-crawler-photo.cjs"
+      ],
+      "rightsStatus": "CC0 1.0 attribution record present",
+      "attribution": {
+        "title": "Mug image.jpg",
+        "author": "Mohanraj55",
+        "license": "CC0 1.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mug_image.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/00/Mug_image.jpg",
+        "originalSha1": "f6059ba70211d748ae1a658e26bd414721e9bdae",
+        "originalDimensions": [
+          960,
+          1280
+        ],
+        "derivedWebpDimensions": [
+          480,
+          640
+        ],
+        "transformation": "Resized and encoded as WebP; no retouch or manual cutout",
+        "checkedAt": "2026-10-05"
+      }
+    },
+    {
+      "route": "/assets/images/editorial/pdf-ordering-example-480.webp",
+      "bytes": 11684,
+      "sha256": "1e48edd2a421a5238df68453273ff0801dd38ced1efa173cf155f21e5c878923",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/pdf-ordering-example-960.webp",
+      "bytes": 32014,
+      "sha256": "395b866f17b5fe72ae98b8a84745bb52f7610646518d05833489bb43f7cd74ef",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/pdf-ordering-example-976.webp",
+      "bytes": 34436,
+      "sha256": "fb4c43fc9c637c0611f600e66f775408c6fc7e239ce68e94833bdb17b82c0b23",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/pdf-ordering-example.png",
+      "bytes": 49553,
+      "sha256": "9ecd72b5dc5740deb9cee02daa229294bc18989047c4256e50291b909b1ba3b8",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/temporary-email-example-480.webp",
+      "bytes": 9556,
+      "sha256": "e1ed2989e49163fbf4a48858cb45c010e529103159af516db07423ded3986018",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/temporary-email-example-960.webp",
+      "bytes": 29162,
+      "sha256": "191610dff7cab158c2ed39c100f9a599252d100795b65b589198e4e788726d61",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/temporary-email-example-976.webp",
+      "bytes": 28964,
+      "sha256": "8512ac653e05abe393b82b45b28b8583fc60f3980c71f3dcb6a3b58eb0b5d0cb",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/temporary-email-example.png",
+      "bytes": 93017,
+      "sha256": "9bb34797b8fb5549ae77cd3b8b386600231552f9afe29815a499c4cfc4cae2c1",
+      "origin": "Synthetic mug fixture, actual browser screenshot, or responsive derivative",
+      "evidence": [
+        "scripts/check-adsense-followup-browser.cjs",
+        "scripts/prepare-responsive-examples.cjs"
+      ],
+      "rightsStatus": "Repository-created test evidence; no separate reuse license declared"
+    },
+    {
+      "route": "/assets/images/editorial/unicode-count-experiment.png",
+      "bytes": 32636,
+      "sha256": "e3275441d0e2b4883387004ed45d71148d637d7bed7041925b1efb9f89590468",
+      "origin": "Synthetic input, actual tool output, screenshot, or recorded inspection",
+      "evidence": [
+        "scripts/record-readiness-experiments.cjs",
+        "frontend/assets/examples/experiments/results.json"
+      ],
+      "rightsStatus": "Repository-created synthetic evidence; no separate reuse license declared"
+    }
+  ],
+  "existingCovers": [
+    {
+      "route": "/journal-images/f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+      "article": "/journal/best-practices-for-temporary-email-when-working-with-signups",
+      "rightsStatus": "Original source or permission not established in this review",
+      "note": "Existing cover retained; prepared cover-prompts.md documents different later artwork and does not prove this cover provenance."
+    },
+    {
+      "route": "/journal-images/d276a16e-5ceb-4aea-90a1-94c70c6785d2",
+      "article": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "rightsStatus": "Original source or permission not established in this review",
+      "note": "Existing cover retained; prepared cover-prompts.md documents different later artwork and does not prove this cover provenance."
+    },
+    {
+      "route": "/journal-images/c4244f15-2995-4aaf-b544-b37a356716db",
+      "article": "/journal/simple-pdf-workflow-without-software",
+      "rightsStatus": "Original source or permission not established in this review",
+      "note": "Existing cover retained; prepared cover-prompts.md documents different later artwork and does not prove this cover provenance."
+    },
+    {
+      "route": "/journal-images/925334fc-7e67-49b0-96fd-6d4b1c2ddc67",
+      "article": "/journal/small-tools-that-save-developers-time",
+      "rightsStatus": "Original source or permission not established in this review",
+      "note": "Existing cover retained; prepared cover-prompts.md documents different later artwork and does not prove this cover provenance."
+    }
+  ],
+  "licenses": {
+    "toolLibraries": "frontend/assets/vendor/tool-libraries/sources.json",
+    "fonts": "frontend/assets/fonts/sources.json"
+  },
+  "limits": [
+    "This inventory records origins and hashes; it does not grant a reuse license or certify all rights.",
+    "Four existing journal covers require their original source, generation record, or permission evidence."
+  ]
+}

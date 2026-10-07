@@ -206,7 +206,7 @@ write(path, html)
 for path in [SITE / 'about.html', SOURCE / 'templates/about.html']:
     html = path.read_text(encoding='utf-8')
     html = re.sub(r'<!-- review-process -->.*?<!-- /review-process -->', '', html, flags=re.S)
-    process = '<!-- review-process --><section><h3>How examples and corrections are checked</h3><p>Our examples use non-sensitive text and synthetic files so the output can be checked without sharing private material. Automated checks exercise parsing errors, file ordering, downloads, and browser layouts. We inspect the result as well as the ready message; these checks do not cover every device, source file, or external-service condition.</p><p>VelloxTech maintains the site and receives correction reports through the <a href="contact.html">contact page</a>. A published example records the behavior observed in that workflow; it is not a claim of independent certification or a named human review.</p></section><!-- /review-process -->'
+    process = (SOURCE / 'templates/editorial-process.html').read_text(encoding='utf-8').strip()
     html = html.replace('<div class="hero-actions">', process + '<div class="hero-actions">', 1)
     write(path, html)
 
