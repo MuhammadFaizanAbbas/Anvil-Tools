@@ -8,6 +8,7 @@ const { securityHeadersForPath } = require('../backend/src/lib/public-security')
 let playwright;
 try { playwright = require('playwright'); } catch { playwright = require('../deployment/browser-check/node_modules/playwright'); }
 const directory = 'backend/assets/experiments';
+const liveOrigin = process.argv.find(value => /^https?:\/\//.test(value));
 for (const group of ['url-encoding', 'sha256']) fs.mkdirSync(`${directory}/${group}`, { recursive: true });
 const urlCases = [
   ['space-plus-unicode', 'component', 'encode', 'red shoes + café', 'red%20shoes%20%2B%20caf%C3%A9'],
@@ -37,7 +38,7 @@ const hashCases = [
   expectedBase64: createHash('sha256').update(expectedBrowserInput, 'utf8').digest('base64'),
   expectedUtf8Bytes: Buffer.byteLength(expectedBrowserInput, 'utf8') }));
 const write = (file, value) => fs.writeFileSync(file, JSON.stringify(value, null, 2) + '\n');
-write(`${directory}/url-encoding/cases.json`, urlCases); write(`${directory}/sha256/cases.json`, hashCases);
+if (!liveOrigin) { write(`${directory}/url-encoding/cases.json`, urlCases); write(`${directory}/sha256/cases.json`, hashCases); }
 const report = { checkedAt: new Date().toISOString(), timezone: 'Asia/Karachi', method: 'Actual Anvil browser controls; synthetic inputs; independent Node crypto digest comparison.', runs: [] };
 let server, browser;
 (async () => {
@@ -45,7 +46,7 @@ let server, browser;
   app.get('/api/public/recommendations', (req, res) => res.json([])); app.use(express.static('frontend'));
   server = app.listen(0, '127.0.0.1'); await new Promise(resolve => server.once('listening', resolve));
   const origin = `http://127.0.0.1:${server.address().port}`;
-  const live = process.argv.find(value => /^https?:\/\//.test(value));
+  const live = liveOrigin;
   const executables = [process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe', process.env.EDGE_PATH || 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'].filter(file => fs.existsSync(file));
   assert.ok(executables.length, 'Provide CHROME_PATH for an installed Chromium browser.');
   for (const executablePath of executables) {
@@ -72,7 +73,7 @@ let server, browser;
     assert.equal(run.queryParsing.formPlus, 'a b c'); assert.equal(run.queryParsing.encodedPlus, 'a+b c');
     assert.equal(run.queryParsing.serialized, 'q=red+shoes+%2B+caf%C3%A9'); assert.equal(run.queryParsing.parsedSerialized, 'red shoes + café');
     assert.deepEqual(run.queryParsing.extraParameters, [['q', 'tea '], [' coffee', '']]);
-    if (report.runs.length === 0) {
+    if (!live && report.runs.length === 0) {
       await page.selectOption('#url-mode', 'component'); await page.fill('#url-input', 'red shoes + café'); await page.click('#url-encode');
       await page.locator('.tool-app').screenshot({ path: `${directory}/url-encoding/tool-run.png` });
     }
@@ -87,13 +88,13 @@ let server, browser;
       assert.equal(actualInput, item.expectedBrowserInput, item.id); assert.equal(hex, item.expectedHex, item.id); assert.equal(base64, item.expectedBase64, item.id);
       assert.equal(status, `SHA-256 generated from ${item.expectedUtf8Bytes} UTF-8 bytes.`);
       run.sha256.push({ ...item, actualInput, hex, base64, status, passed: true });
-      if (report.runs.length === 0 && item.id === 'decomposed-accent') await page.locator('.tool-app').screenshot({ path: `${directory}/sha256/tool-run.png` });
+      if (!live && report.runs.length === 0 && item.id === 'decomposed-accent') await page.locator('.tool-app').screenshot({ path: `${directory}/sha256/tool-run.png` });
     }
     assert.deepEqual(errors, []); report.runs.push(run); await browser.close(); browser = null;
     console.log(`${run.browser} ${run.version}: 15 URL cases, 13 SHA-256 cases, and query-parser checks passed.`);
   }
   report.passed = true;
-  const output = process.argv.includes('--live') ? 'deployment/editorial-expansion-2026-10-07/experiments-live.json' : 'docs/audits/encoding-hash-experiments-2026-10-07.json';
+  const output = live ? 'deployment/editorial-expansion-2026-10-07/experiments-live.json' : 'docs/audits/encoding-hash-experiments-2026-10-07.json';
   write(output, report);
-  for (const [group, key] of [['url-encoding', 'urlEncoding'], ['sha256', 'sha256']]) write(`${directory}/${group}/results.json`, { checkedAt: report.checkedAt, method: report.method, runs: report.runs.map(run => ({ browser: run.browser, version: run.version, cases: run[key], ...(group === 'url-encoding' ? { queryParsing: run.queryParsing } : {}) })) });
+  if (!live) for (const [group, key] of [['url-encoding', 'urlEncoding'], ['sha256', 'sha256']]) write(`${directory}/${group}/results.json`, { checkedAt: report.checkedAt, method: report.method, runs: report.runs.map(run => ({ browser: run.browser, version: run.version, cases: run[key], ...(group === 'url-encoding' ? { queryParsing: run.queryParsing } : {}) })) });
 })().catch(error => { console.error(error); process.exitCode = 1; }).finally(async () => { if (browser) await browser.close(); if (server) { server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); } });

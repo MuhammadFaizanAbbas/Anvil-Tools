@@ -36,7 +36,7 @@
       "image-to-pdf"
     ],
     "cover_image_id": "c4244f15-2995-4aaf-b544-b37a356716db",
-    "cover_alt": "Several document files combined in a browser based PDF workflow",
+    "cover_alt": "Editorial illustration of ordered document pages and supporting photos assembled into a PDF, with a magnifier for final inspection.",
     "category_slug": "pdf-tools"
   },
   {
@@ -59,7 +59,49 @@
       "user-agent-generator"
     ],
     "cover_image_id": "925334fc-7e67-49b0-96fd-6d4b1c2ddc67",
-    "cover_alt": "Small developer utilities used during browser testing",
+    "cover_alt": "Editorial illustration of a laptop with structured API data connected to CSV, encoded-text, and checksum comparison cards.",
+    "category_slug": "developer-tools"
+  },
+  {
+    "key": "url-encoding-experiment",
+    "bodyFile": "url-encoding-experiment.md",
+    "slug": "url-encoding-mistakes-spaces-plus-unicode",
+    "title": "URL Encoding Mistakes: Spaces, Plus Signs, Unicode, and Double Encoding",
+    "excerpt": "Fifteen tested URL-encoding cases explain literal plus signs, form-query spaces, Unicode, reserved characters, and double encoding, with reusable fixtures.",
+    "seo_title": "URL Encoding Mistakes: Plus Signs, Unicode & Double Encoding",
+    "tags": [
+      "URL encoding",
+      "encodeURIComponent",
+      "URLSearchParams",
+      "double encoding",
+      "browser experiment"
+    ],
+    "tools": [
+      "url-encoder-decoder"
+    ],
+    "cover_image_id": "7e293e61-2dae-472e-a4bd-f090b7760c7d",
+    "cover_alt": "Editorial illustration comparing a space and a plus sign, with URL parameter cards and one versus two encoding stages.",
+    "category_slug": "developer-tools"
+  },
+  {
+    "key": "sha256-text-experiment",
+    "bodyFile": "sha256-text-experiment.md",
+    "slug": "why-sha256-hashes-differ-for-identical-looking-text",
+    "title": "Why SHA-256 Hashes Differ for Identical-Looking Text",
+    "excerpt": "Thirteen browser tests compare SHA-256 results for whitespace, Unicode, CRLF normalization, and JSON formatting, with independent checks and fixtures.",
+    "seo_title": "Why SHA-256 Hashes Differ: Unicode, Newlines & JSON",
+    "tags": [
+      "SHA-256",
+      "hash mismatch",
+      "Unicode normalization",
+      "JSON formatting",
+      "browser experiment"
+    ],
+    "tools": [
+      "hash-generator"
+    ],
+    "cover_image_id": "5864e47d-beec-4ad6-a1e7-c3686ec1c55c",
+    "cover_alt": "Editorial illustration of similar text panes containing a line-break and accent difference, producing different byte comparisons.",
     "category_slug": "developer-tools"
   }
 ]

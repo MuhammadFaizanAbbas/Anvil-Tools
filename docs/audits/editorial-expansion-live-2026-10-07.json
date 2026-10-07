@@ -1,0 +1,150 @@
+{
+  "checkedAt": "2026-10-07T16:49:06.266Z",
+  "hosts": [
+    {
+      "origin": "https://nevco.online",
+      "articles": [
+        {
+          "slug": "small-tools-that-save-developers-time",
+          "status": 200,
+          "canonicalCorrect": true,
+          "coverUrl": "https://nevco.online/journal-images/925334fc-7e67-49b0-96fd-6d4b1c2ddc67?v=9a0a3b2d61d5",
+          "coverStatus": 200,
+          "mime": "image/webp",
+          "width": 1672,
+          "height": 941,
+          "coverBytesMatch": true
+        },
+        {
+          "slug": "simple-pdf-workflow-without-software",
+          "status": 200,
+          "canonicalCorrect": true,
+          "coverUrl": "https://nevco.online/journal-images/c4244f15-2995-4aaf-b544-b37a356716db?v=612622ba9b46",
+          "coverStatus": 200,
+          "mime": "image/webp",
+          "width": 1672,
+          "height": 941,
+          "coverBytesMatch": true
+        },
+        {
+          "slug": "url-encoding-mistakes-spaces-plus-unicode",
+          "status": 200,
+          "canonicalCorrect": true,
+          "coverUrl": "https://nevco.online/journal-images/7e293e61-2dae-472e-a4bd-f090b7760c7d?v=cb6808ea4d87",
+          "coverStatus": 200,
+          "mime": "image/webp",
+          "width": 1672,
+          "height": 941,
+          "coverBytesMatch": true
+        },
+        {
+          "slug": "why-sha256-hashes-differ-for-identical-looking-text",
+          "status": 200,
+          "canonicalCorrect": true,
+          "coverUrl": "https://nevco.online/journal-images/5864e47d-beec-4ad6-a1e7-c3686ec1c55c?v=bbdd0e2ff8fb",
+          "coverStatus": 200,
+          "mime": "image/webp",
+          "width": 1672,
+          "height": 941,
+          "coverBytesMatch": true
+        }
+      ],
+      "hubContainsNewArticles": true,
+      "staticUrls": 39,
+      "dynamicUrls": 6,
+      "totalPublicPages": 45
+    },
+    {
+      "origin": "https://anviltools.vercel.app",
+      "articles": [
+        {
+          "slug": "small-tools-that-save-developers-time",
+          "status": 200,
+          "canonicalCorrect": true,
+          "coverUrl": "https://anviltools.vercel.app/journal-images/925334fc-7e67-49b0-96fd-6d4b1c2ddc67?v=9a0a3b2d61d5",
+          "coverStatus": 200,
+          "mime": "image/webp",
+          "width": 1672,
+          "height": 941,
+          "coverBytesMatch": true
+        },
+        {
+          "slug": "simple-pdf-workflow-without-software",
+          "status": 200,
+          "canonicalCorrect": true,
+          "coverUrl": "https://anviltools.vercel.app/journal-images/c4244f15-2995-4aaf-b544-b37a356716db?v=612622ba9b46",
+          "coverStatus": 200,
+          "mime": "image/webp",
+          "width": 1672,
+          "height": 941,
+          "coverBytesMatch": true
+        },
+        {
+          "slug": "url-encoding-mistakes-spaces-plus-unicode",
+          "status": 200,
+          "canonicalCorrect": true,
+          "coverUrl": "https://anviltools.vercel.app/journal-images/7e293e61-2dae-472e-a4bd-f090b7760c7d?v=cb6808ea4d87",
+          "coverStatus": 200,
+          "mime": "image/webp",
+          "width": 1672,
+          "height": 941,
+          "coverBytesMatch": true
+        },
+        {
+          "slug": "why-sha256-hashes-differ-for-identical-looking-text",
+          "status": 200,
+          "canonicalCorrect": true,
+          "coverUrl": "https://anviltools.vercel.app/journal-images/5864e47d-beec-4ad6-a1e7-c3686ec1c55c?v=bbdd0e2ff8fb",
+          "coverStatus": 200,
+          "mime": "image/webp",
+          "width": 1672,
+          "height": 941,
+          "coverBytesMatch": true
+        }
+      ],
+      "hubContainsNewArticles": true,
+      "staticUrls": 39,
+      "dynamicUrls": 6,
+      "totalPublicPages": 45
+    }
+  ],
+  "fixtures": [
+    {
+      "url": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/url-encoding/cases.json",
+      "status": 200,
+      "mime": "application/json; charset=UTF-8",
+      "bytesMatch": true
+    },
+    {
+      "url": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/url-encoding/results.json",
+      "status": 200,
+      "mime": "application/json; charset=UTF-8",
+      "bytesMatch": true
+    },
+    {
+      "url": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/url-encoding/tool-run.png",
+      "status": 200,
+      "mime": "image/png",
+      "bytesMatch": true
+    },
+    {
+      "url": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/sha256/cases.json",
+      "status": 200,
+      "mime": "application/json; charset=UTF-8",
+      "bytesMatch": true
+    },
+    {
+      "url": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/sha256/results.json",
+      "status": 200,
+      "mime": "application/json; charset=UTF-8",
+      "bytesMatch": true
+    },
+    {
+      "url": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/sha256/tool-run.png",
+      "status": 200,
+      "mime": "image/png",
+      "bytesMatch": true
+    }
+  ],
+  "passed": true
+}

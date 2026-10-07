@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-10-07T16:51:33.575Z",
+  "runs": [
+    {
+      "url": "https://nevco.online/journal/small-tools-that-save-developers-time",
+      "width": 1280,
+      "title": "Debug API Data with JSON, Base64, and Browser Tools",
+      "source": "https://nevco.online/journal-images/925334fc-7e67-49b0-96fd-6d4b1c2ddc67?v=9a0a3b2d61d5",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "alt": "Editorial illustration of a laptop with structured API data connected to CSV, encoded-text, and checksum comparison cards.",
+      "noPageOverflow": true
+    },
+    {
+      "url": "https://nevco.online/journal/simple-pdf-workflow-without-software",
+      "width": 1280,
+      "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result",
+      "source": "https://nevco.online/journal-images/c4244f15-2995-4aaf-b544-b37a356716db?v=612622ba9b46",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "alt": "Editorial illustration of ordered document pages and supporting photos assembled into a PDF, with a magnifier for final inspection.",
+      "noPageOverflow": true
+    },
+    {
+      "url": "https://nevco.online/journal/url-encoding-mistakes-spaces-plus-unicode",
+      "width": 1280,
+      "title": "URL Encoding Mistakes: Spaces, Plus Signs, Unicode, and Double Encoding",
+      "source": "https://nevco.online/journal-images/7e293e61-2dae-472e-a4bd-f090b7760c7d?v=cb6808ea4d87",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "alt": "Editorial illustration comparing a space and a plus sign, with URL parameter cards and one versus two encoding stages.",
+      "noPageOverflow": true
+    },
+    {
+      "url": "https://nevco.online/journal/why-sha256-hashes-differ-for-identical-looking-text",
+      "width": 1280,
+      "title": "Why SHA-256 Hashes Differ for Identical-Looking Text",
+      "source": "https://nevco.online/journal-images/5864e47d-beec-4ad6-a1e7-c3686ec1c55c?v=bbdd0e2ff8fb",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "alt": "Editorial illustration of similar text panes containing a line-break and accent difference, producing different byte comparisons.",
+      "noPageOverflow": true
+    },
+    {
+      "url": "https://nevco.online/journal/small-tools-that-save-developers-time",
+      "width": 390,
+      "title": "Debug API Data with JSON, Base64, and Browser Tools",
+      "source": "https://nevco.online/journal-images/925334fc-7e67-49b0-96fd-6d4b1c2ddc67?v=9a0a3b2d61d5",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "alt": "Editorial illustration of a laptop with structured API data connected to CSV, encoded-text, and checksum comparison cards.",
+      "noPageOverflow": true
+    },
+    {
+      "url": "https://nevco.online/journal/simple-pdf-workflow-without-software",
+      "width": 390,
+      "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result",
+      "source": "https://nevco.online/journal-images/c4244f15-2995-4aaf-b544-b37a356716db?v=612622ba9b46",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "alt": "Editorial illustration of ordered document pages and supporting photos assembled into a PDF, with a magnifier for final inspection.",
+      "noPageOverflow": true
+    },
+    {
+      "url": "https://nevco.online/journal/url-encoding-mistakes-spaces-plus-unicode",
+      "width": 390,
+      "title": "URL Encoding Mistakes: Spaces, Plus Signs, Unicode, and Double Encoding",
+      "source": "https://nevco.online/journal-images/7e293e61-2dae-472e-a4bd-f090b7760c7d?v=cb6808ea4d87",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "alt": "Editorial illustration comparing a space and a plus sign, with URL parameter cards and one versus two encoding stages.",
+      "noPageOverflow": true
+    },
+    {
+      "url": "https://nevco.online/journal/why-sha256-hashes-differ-for-identical-looking-text",
+      "width": 390,
+      "title": "Why SHA-256 Hashes Differ for Identical-Looking Text",
+      "source": "https://nevco.online/journal-images/5864e47d-beec-4ad6-a1e7-c3686ec1c55c?v=bbdd0e2ff8fb",
+      "naturalWidth": 1672,
+      "naturalHeight": 941,
+      "alt": "Editorial illustration of similar text panes containing a line-break and accent difference, producing different byte comparisons.",
+      "noPageOverflow": true
+    }
+  ],
+  "passed": true
+}

@@ -1,7 +1,7 @@
 // Build authored static guides and keep their links and backend template in sync.
 const fs = require('node:fs');
 const path = require('node:path');
-const { renderArticle, escape } = require('../backend/src/lib/articles');
+const { renderArticle, escape, imageUrl } = require('../backend/src/lib/articles');
 const { versionPublicStyles } = require('../backend/src/lib/public-assets');
 const root = path.resolve(__dirname, '..');
 const frontend = path.join(root, 'frontend');
@@ -51,7 +51,7 @@ for (const guide of guides) {
   html = html.replace(`rel="canonical" href="${guideLink(guide)}"`, `rel="canonical" href="${origin}${guideLink(guide)}"`);
   writeChanged(path.join(frontend, 'blog', `${guide.slug}.html`), html);
 }
-const cards = publishedLibrary.map(guide => `<article class="tool-card"><img class="guide-cover" src="/journal-images/${escape(guide.cover_image_id)}" alt="${escape(guide.cover_alt)}" loading="lazy"><h3><a href="/journal/${guide.slug}">${escape(guide.title)}</a></h3><p>${escape(guide.excerpt)}</p><a class="tool-link" href="/journal/${guide.slug}">Read guide &#8594;</a></article>`).join('\n');
+const cards = publishedLibrary.map(guide => `<article class="tool-card"><img class="guide-cover" src="${escape(imageUrl(guide, ''))}" alt="${escape(guide.cover_alt)}" loading="lazy"><h3><a href="/journal/${guide.slug}">${escape(guide.title)}</a></h3><p>${escape(guide.excerpt)}</p><a class="tool-link" href="/journal/${guide.slug}">Read guide &#8594;</a></article>`).join('\n');
 const library = `<!-- editorial-library --><section class="editorial-library" aria-labelledby="editorial-title"><h2 id="editorial-title">Practical guides</h2><p>Step-by-step workflows, examples, and checks for the tools. Read any guide directly, then open its tool when you are ready.</p><div class="tool-grid" id="editorialGuideCards">${cards}</div></section><!-- /editorial-library -->`;
 const walk = directory => fs.readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
   if (['assets', 'admin-panel'].includes(entry.name)) return [];
@@ -85,9 +85,12 @@ for (const file of walk(frontend)) {
     html = html.replace(/<div class="content-guide"><!-- editorial-tool-link -->[\s\S]*?<!-- \/editorial-tool-link --><\/div>/, '')
       .replace(/<!-- editorial-tool-link -->[\s\S]*?<!-- \/editorial-tool-link -->/, '')
       .replaceAll('<div class="content-guide"></div>', '');
-    const guide = publishedLibrary.find(item => item.tools.includes(tool));
+    const toolGuides = publishedLibrary.filter(item => item.tools.includes(tool));
+    const guide = toolGuides[0];
     if (guide) {
-      const section = `<!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/${guide.slug}">${escape(guide.title)}</a></p><p>${escape(guide.excerpt)}</p></section><!-- /editorial-tool-link -->`;
+      const section = toolGuides.length === 1
+        ? `<!-- editorial-tool-link --><section class="info-section"><h2>Read the practical guide</h2><p><a href="/journal/${guide.slug}">${escape(guide.title)}</a></p><p>${escape(guide.excerpt)}</p></section><!-- /editorial-tool-link -->`
+        : `<!-- editorial-tool-link --><section class="info-section"><h2>Explore practical guides and experiments</h2>${toolGuides.map(item => `<p><a href="/journal/${item.slug}">${escape(item.title)}</a></p><p>${escape(item.excerpt)}</p>`).join('')}</section><!-- /editorial-tool-link -->`;
       html = html.replace(/<div class="content-guide"><!-- editorial-tool-link -->[\s\S]*?<!-- \/editorial-tool-link --><\/div>/, '')
         .replace(/<!-- editorial-tool-link -->[\s\S]*?<!-- \/editorial-tool-link -->/, '')
         .replaceAll('<div class="content-guide"></div>', '');

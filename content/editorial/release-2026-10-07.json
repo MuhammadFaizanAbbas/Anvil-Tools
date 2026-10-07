@@ -1,0 +1,101 @@
+{
+  "release": "editorial-expansion-2026-10-07",
+  "covers": [
+    {
+      "key": "developer-data-cover-20261007",
+      "id": "925334fc-7e67-49b0-96fd-6d4b1c2ddc67",
+      "slug": "small-tools-that-save-developers-time",
+      "replace": true,
+      "alt": "Editorial illustration of a laptop with structured API data connected to CSV, encoded-text, and checksum comparison cards.",
+      "source": "backend/assets/editorial/developer-data-cover-20261007.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 101822,
+      "sha256": "9a0a3b2d61d561146289c5b175063ccab8f6bbf8a4aaebb1a02eb8a0c13572c6",
+      "storage_path": "articles/small-tools-that-save-developers-time/cover-20261007-9a0a3b2d61d5.webp"
+    },
+    {
+      "key": "pdf-workflows-cover-20261007",
+      "id": "c4244f15-2995-4aaf-b544-b37a356716db",
+      "slug": "simple-pdf-workflow-without-software",
+      "replace": true,
+      "alt": "Editorial illustration of ordered document pages and supporting photos assembled into a PDF, with a magnifier for final inspection.",
+      "source": "backend/assets/editorial/pdf-workflows-cover-20261007.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 122442,
+      "sha256": "612622ba9b46679e07ed81c392df667651a683f7f1c249748bdc48d2982b7402",
+      "storage_path": "articles/simple-pdf-workflow-without-software/cover-20261007-612622ba9b46.webp"
+    },
+    {
+      "key": "url-encoding-cover-20261007",
+      "id": "7e293e61-2dae-472e-a4bd-f090b7760c7d",
+      "slug": "url-encoding-mistakes-spaces-plus-unicode",
+      "replace": false,
+      "alt": "Editorial illustration comparing a space and a plus sign, with URL parameter cards and one versus two encoding stages.",
+      "source": "backend/assets/editorial/url-encoding-cover-20261007.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 98342,
+      "sha256": "cb6808ea4d8743bba798c0c7a80356db8bae4840850fc4f7a481e4636f0582cb",
+      "storage_path": "articles/url-encoding-mistakes-spaces-plus-unicode/cover-20261007-cb6808ea4d87.webp"
+    },
+    {
+      "key": "sha256-cover-20261007",
+      "id": "5864e47d-beec-4ad6-a1e7-c3686ec1c55c",
+      "slug": "why-sha256-hashes-differ-for-identical-looking-text",
+      "replace": false,
+      "alt": "Editorial illustration of similar text panes containing a line-break and accent difference, producing different byte comparisons.",
+      "source": "backend/assets/editorial/sha256-cover-20261007.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 87564,
+      "sha256": "bbdd0e2ff8fbb4168e16000930a78a74bec93cfb7a2cf1496c7dbd1f8a398dde",
+      "storage_path": "articles/why-sha256-hashes-differ-for-identical-looking-text/cover-20261007-bbdd0e2ff8fb.webp"
+    }
+  ],
+  "posts": [
+    {
+      "key": "url-encoding-experiment",
+      "bodyFile": "url-encoding-experiment.md",
+      "slug": "url-encoding-mistakes-spaces-plus-unicode",
+      "title": "URL Encoding Mistakes: Spaces, Plus Signs, Unicode, and Double Encoding",
+      "excerpt": "Fifteen tested URL-encoding cases explain literal plus signs, form-query spaces, Unicode, reserved characters, and double encoding, with reusable fixtures.",
+      "seo_title": "URL Encoding Mistakes: Plus Signs, Unicode & Double Encoding",
+      "tags": [
+        "URL encoding",
+        "encodeURIComponent",
+        "URLSearchParams",
+        "double encoding",
+        "browser experiment"
+      ],
+      "tools": [
+        "url-encoder-decoder"
+      ],
+      "cover_image_id": "7e293e61-2dae-472e-a4bd-f090b7760c7d",
+      "cover_alt": "Editorial illustration comparing a space and a plus sign, with URL parameter cards and one versus two encoding stages.",
+      "category_slug": "developer-tools"
+    },
+    {
+      "key": "sha256-text-experiment",
+      "bodyFile": "sha256-text-experiment.md",
+      "slug": "why-sha256-hashes-differ-for-identical-looking-text",
+      "title": "Why SHA-256 Hashes Differ for Identical-Looking Text",
+      "excerpt": "Thirteen browser tests compare SHA-256 results for whitespace, Unicode, CRLF normalization, and JSON formatting, with independent checks and fixtures.",
+      "seo_title": "Why SHA-256 Hashes Differ: Unicode, Newlines & JSON",
+      "tags": [
+        "SHA-256",
+        "hash mismatch",
+        "Unicode normalization",
+        "JSON formatting",
+        "browser experiment"
+      ],
+      "tools": [
+        "hash-generator"
+      ],
+      "cover_image_id": "5864e47d-beec-4ad6-a1e7-c3686ec1c55c",
+      "cover_alt": "Editorial illustration of similar text panes containing a line-break and accent difference, producing different byte comparisons.",
+      "category_slug": "developer-tools"
+    }
+  ]
+}
