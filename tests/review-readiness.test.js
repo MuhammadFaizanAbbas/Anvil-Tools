@@ -25,8 +25,9 @@ test('recorded experiment pages and fixtures are discoverable without JavaScript
     assert.match(html, /results\.json/); assert.match(html, /<h2/);
     assert.ok(html.includes(item.cover_path));
     const structuredData = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
-    assert.equal(structuredData.keywords, item.tags.join(', '));
-    assert.ok(structuredData.keywords.trim());
+    const article = structuredData['@graph'].find(entry => entry['@type'] === 'BlogPosting');
+    assert.equal(article.keywords, item.tags.join(', '));
+    assert.ok(article.keywords.trim());
     for (const tool of item.tools) assert.ok(fs.readFileSync(`frontend/tools/${tool}.html`, 'utf8').includes(url));
   }
   const results = JSON.parse(fs.readFileSync('frontend/assets/examples/experiments/results.json', 'utf8'));

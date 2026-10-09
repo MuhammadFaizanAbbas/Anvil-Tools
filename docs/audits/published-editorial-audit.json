@@ -1,0 +1,794 @@
+{
+  "summary": {
+    "checked_at": "2026-10-09T17:57:16.720Z",
+    "published_posts": 26,
+    "local_sources_present": 26,
+    "local_sources_matching_live": 26,
+    "check_failures": {
+      "title_matches_h1": 0,
+      "seo_title_at_most_65": 0,
+      "excerpt_100_to_170": 0,
+      "seo_description_100_to_170": 0,
+      "at_least_1200_words": 0,
+      "at_least_five_h2s": 0,
+      "has_external_reference": 0,
+      "has_internal_link": 0,
+      "no_placeholders": 0,
+      "live_hash_matches_manifest": 0,
+      "local_source_present": 0,
+      "local_source_matches_live": 0
+    },
+    "maximum_pairwise_seven_word_shingle_jaccard": {
+      "left": "safe-filename-rules-windows-macos-web",
+      "right": "title-case-vs-sentence-case-editing-guide",
+      "score": 0.0037743345252284465
+    },
+    "cross_article_repeated_substantive_paragraph_groups": 0,
+    "cross_article_repeated_sentence_groups": 1,
+    "note": "Corpus hashes and overlap are triage signals; they do not prove external originality or a plagiarism-checker percentage."
+  },
+  "articles": [
+    {
+      "slug": "are-uuid-v4-identifiers-unique-collisions-security",
+      "title": "Are UUIDs Really Unique? Version 4 Collisions, Security, and Database IDs",
+      "words": 2995,
+      "h2s": 19,
+      "external_links": 5,
+      "internal_links": 2,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "065349f3596884c9363bc9b118bfc31253b69bb054930c40e71de5812c1067ff",
+      "local_body_sha256": "065349f3596884c9363bc9b118bfc31253b69bb054930c40e71de5812c1067ff"
+    },
+    {
+      "slug": "best-practices-for-background-removal-when-working-with-design",
+      "title": "Background Removal for Design and Product Photography",
+      "words": 2023,
+      "h2s": 8,
+      "external_links": 1,
+      "internal_links": 1,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "23c60c0246af2820806a25d3f93a4db3ce8bae0d56779b8d79e1d29e19f3463a",
+      "local_body_sha256": "23c60c0246af2820806a25d3f93a4db3ce8bae0d56779b8d79e1d29e19f3463a"
+    },
+    {
+      "slug": "choosing-sha-256-sha-384-or-sha-512-a-practical-hashing-decision-guide",
+      "title": "Choosing SHA-256, SHA-384, or SHA-512: A Practical Hashing Decision Guide",
+      "words": 2875,
+      "h2s": 23,
+      "external_links": 4,
+      "internal_links": 1,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "d4687c26b5e8571aee74891dd1fb670f6e2f6d55ed674e637471cbb5bd19c5ad",
+      "local_body_sha256": "d4687c26b5e8571aee74891dd1fb670f6e2f6d55ed674e637471cbb5bd19c5ad"
+    },
+    {
+      "slug": "image-to-pdf-page-size-pixels-points-a4",
+      "title": "Why Image-to-PDF Files Have Giant Pages: Pixels, Points, A4, and Print Scaling",
+      "words": 3311,
+      "h2s": 20,
+      "external_links": 4,
+      "internal_links": 4,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "0ba398904bf54902a827ef4e307c162c082777435c4252464cc7f3a6141a9171",
+      "local_body_sha256": "0ba398904bf54902a827ef4e307c162c082777435c4252464cc7f3a6141a9171"
+    },
+    {
+      "slug": "merge-digitally-signed-pdfs-signature-validation",
+      "title": "Can You Merge Digitally Signed PDFs? What Happens to Signature Verification",
+      "words": 2708,
+      "h2s": 15,
+      "external_links": 5,
+      "internal_links": 2,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "45681bc839185dbd3098848b5687c56d892cff0cb3cb7223130e589f04fba5d2",
+      "local_body_sha256": "45681bc839185dbd3098848b5687c56d892cff0cb3cb7223130e589f04fba5d2"
+    },
+    {
+      "slug": "photo-exif-metadata-gps-privacy-after-editing",
+      "title": "What Your Photos Reveal: EXIF Metadata, GPS Location, and Privacy After Editing",
+      "words": 2616,
+      "h2s": 22,
+      "external_links": 4,
+      "internal_links": 1,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "35050234313cc4094b5191368ca5e73049a727f40960d765ea0d725163eb433a",
+      "local_body_sha256": "35050234313cc4094b5191368ca5e73049a727f40960d765ea0d725163eb433a"
+    },
+    {
+      "slug": "qr-codes-scan-reliably-print-screen-guide",
+      "title": "QR Codes That Scan Reliably: A Preflight Guide for Print, Screens, and Posters",
+      "words": 3001,
+      "h2s": 21,
+      "external_links": 4,
+      "internal_links": 1,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "f7aee92442a3f0e587acace537ba0f4b982c89a0131976c465319700a0339125",
+      "local_body_sha256": "f7aee92442a3f0e587acace537ba0f4b982c89a0131976c465319700a0339125"
+    },
+    {
+      "slug": "review-text-changes-before-publishing",
+      "title": "How to Review Text Changes Before Publishing: A Practical Guide to Line-by-Line Diffs",
+      "words": 2756,
+      "h2s": 22,
+      "external_links": 3,
+      "internal_links": 1,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "b7b74c1c78f878787d6d813f38982b33c29aab8f5824ea59d89f72e2a034dc01",
+      "local_body_sha256": "b7b74c1c78f878787d6d813f38982b33c29aab8f5824ea59d89f72e2a034dc01"
+    },
+    {
+      "slug": "safe-filename-rules-windows-macos-web",
+      "title": "Why Filenames Work on One Device but Fail on Another: Safe Naming Across Windows, macOS, and the Web",
+      "words": 2959,
+      "h2s": 19,
+      "external_links": 5,
+      "internal_links": 3,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "ce224d5fc3c28e41578312f8c049400bb7bcc34a85c61fb59f8ccb7cd4f0a308",
+      "local_body_sha256": "ce224d5fc3c28e41578312f8c049400bb7bcc34a85c61fb59f8ccb7cd4f0a308"
+    },
+    {
+      "slug": "simple-pdf-workflow-without-software",
+      "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result",
+      "words": 1801,
+      "h2s": 10,
+      "external_links": 1,
+      "internal_links": 2,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "8c0ebf798ce0c042ad636c9127e370bb42a25c0cece4a89c5e8d0690e06cc834",
+      "local_body_sha256": "8c0ebf798ce0c042ad636c9127e370bb42a25c0cece4a89c5e8d0690e06cc834"
+    },
+    {
+      "slug": "small-tools-that-save-developers-time",
+      "title": "Debug API Data with JSON, Base64, and Browser Tools",
+      "words": 2015,
+      "h2s": 11,
+      "external_links": 3,
+      "internal_links": 15,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "193d3afd1cabe5aaa7eeaa0fd9b3958f5d16c6c87b2269a49b0399e2f623e313",
+      "local_body_sha256": "193d3afd1cabe5aaa7eeaa0fd9b3958f5d16c6c87b2269a49b0399e2f623e313"
+    },
+    {
+      "slug": "spf-dkim-dmarc-email-authentication-alignment",
+      "title": "SPF, DKIM, and DMARC Explained: Why an Authenticated Email Can Still Fail",
+      "words": 3448,
+      "h2s": 20,
+      "external_links": 7,
+      "internal_links": 3,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "e28b4dde43f440b5a036e87e0a0dfece607c992e82450dc40b9d1af55dadf8d1",
+      "local_body_sha256": "e28b4dde43f440b5a036e87e0a0dfece607c992e82450dc40b9d1af55dadf8d1"
+    },
+    {
+      "slug": "temperature-changes-celsius-fahrenheit-kelvin",
+      "title": "Why Temperature Changes Convert Differently: Celsius, Fahrenheit, and Kelvin Explained",
+      "words": 2431,
+      "h2s": 21,
+      "external_links": 3,
+      "internal_links": 1,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "0cb91aec6abe9de16a7531d8b6389e55e7970d0115aef5c3d9487ad173d12d0f",
+      "local_body_sha256": "0cb91aec6abe9de16a7531d8b6389e55e7970d0115aef5c3d9487ad173d12d0f"
+    },
+    {
+      "slug": "temporary-email-for-authorized-testing-and-permitted-messages",
+      "title": "Temporary Email for Authorized Testing and Permitted Messages",
+      "words": 1964,
+      "h2s": 9,
+      "external_links": 2,
+      "internal_links": 1,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "bd11a3b766a2122da49afaefe816f00f15996a79f2994ef2f3527a4cc2065640",
+      "local_body_sha256": "bd11a3b766a2122da49afaefe816f00f15996a79f2994ef2f3527a4cc2065640"
+    },
+    {
+      "slug": "title-case-vs-sentence-case-editing-guide",
+      "title": "Title Case vs Sentence Case: Editing Headlines, Labels, and Text Without Losing Meaning",
+      "words": 2774,
+      "h2s": 23,
+      "external_links": 4,
+      "internal_links": 1,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "64ab37c65be81675ba5e66f45d929b641dc1701f16889b0aaed7408ed7adde4b",
+      "local_body_sha256": "64ab37c65be81675ba5e66f45d929b641dc1701f16889b0aaed7408ed7adde4b"
+    },
+    {
+      "slug": "turn-color-palette-into-accessible-ui",
+      "title": "From Five Colors to a Usable Interface: Building an Accessible UI Palette",
+      "words": 2979,
+      "h2s": 25,
+      "external_links": 4,
+      "internal_links": 1,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "0a6c1327820fb9b3531be78017d7893b363e4a9d6329f533d5a64df92309d338",
+      "local_body_sha256": "0a6c1327820fb9b3531be78017d7893b363e4a9d6329f533d5a64df92309d338"
+    },
+    {
+      "slug": "url-encoding-mistakes-spaces-plus-unicode",
+      "title": "URL Encoding Mistakes: Spaces, Plus Signs, Unicode, and Double Encoding",
+      "words": 1502,
+      "h2s": 9,
+      "external_links": 6,
+      "internal_links": 4,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "cb9d71af681ea9ca128d2927bcd9236fd161db43d663f568268fb8fa432a2ebe",
+      "local_body_sha256": "cb9d71af681ea9ca128d2927bcd9236fd161db43d663f568268fb8fa432a2ebe"
+    },
+    {
+      "slug": "valid-json-api-errors-types-nulls-structure",
+      "title": "Why Valid JSON Still Breaks APIs: Types, Nulls, Numbers, and Structure",
+      "words": 3285,
+      "h2s": 23,
+      "external_links": 3,
+      "internal_links": 1,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "5efa79e3e05195e1907cf397593b82a65bc9d0bd832e308d9e86290429a3d08f",
+      "local_body_sha256": "5efa79e3e05195e1907cf397593b82a65bc9d0bd832e308d9e86290429a3d08f"
+    },
+    {
+      "slug": "voiceover-script-length-words-per-minute-video-timing",
+      "title": "How Long Should a Voiceover Script Be? Calculate Video and Presentation Timing",
+      "words": 3446,
+      "h2s": 21,
+      "external_links": 7,
+      "internal_links": 3,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "24e2f40304bb7ba77cac7a71ededea05f4213aa0a3ecce8a3528b1a6b62ece97",
+      "local_body_sha256": "24e2f40304bb7ba77cac7a71ededea05f4213aa0a3ecce8a3528b1a6b62ece97"
+    },
+    {
+      "slug": "what-makes-a-password-strong-length-randomness-uniqueness-mfa",
+      "title": "What Actually Makes a Password Strong? Length, Randomness, Uniqueness, and MFA",
+      "words": 3186,
+      "h2s": 25,
+      "external_links": 5,
+      "internal_links": 1,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "c7a4ee230eba9b35a4d4e0fd9e953c706427fad794e8e86405aa92c47fccc155",
+      "local_body_sha256": "c7a4ee230eba9b35a4d4e0fd9e953c706427fad794e8e86405aa92c47fccc155"
+    },
+    {
+      "slug": "why-email-verification-links-fail",
+      "title": "Why Email Verification Links Fail: Expiration, Security Scanners, and One-Time Tokens",
+      "words": 3257,
+      "h2s": 19,
+      "external_links": 6,
+      "internal_links": 3,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "de5a0167463946a1b6a854783ff760a6794927a05b1a1039fc9d12eeba13b844",
+      "local_body_sha256": "de5a0167463946a1b6a854783ff760a6794927a05b1a1039fc9d12eeba13b844"
+    },
+    {
+      "slug": "why-html-emails-look-different-plain-text-css-mime",
+      "title": "Why HTML Emails Look Different Across Inboxes: Plain Text, Images, CSS, and MIME",
+      "words": 3563,
+      "h2s": 22,
+      "external_links": 8,
+      "internal_links": 3,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "2b0e16f833bd169c5e5119765c0815ac79e2e13fe4661fbf51aef273b09695a8",
+      "local_body_sha256": "2b0e16f833bd169c5e5119765c0815ac79e2e13fe4661fbf51aef273b09695a8"
+    },
+    {
+      "slug": "why-image-colors-change-after-export-srgb-p3",
+      "title": "Why Your Image Colors Change After Export: sRGB, Display P3, and Color Profiles",
+      "words": 3168,
+      "h2s": 23,
+      "external_links": 6,
+      "internal_links": 1,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "598a06ab8fa34cefacae9e6eb8b5e95ebd3b0331d011068a67a86726f707b7e5",
+      "local_body_sha256": "598a06ab8fa34cefacae9e6eb8b5e95ebd3b0331d011068a67a86726f707b7e5"
+    },
+    {
+      "slug": "why-images-look-blurry-on-websites-resolution-dpr",
+      "title": "Why Images Look Blurry on Websites: Resolution, Retina Screens, and Responsive Images",
+      "words": 3972,
+      "h2s": 24,
+      "external_links": 9,
+      "internal_links": 4,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "e4c69b14b6a07a218148748cb4396a04d2eaf52ee6d46dc6f44516e6d6f7120c",
+      "local_body_sha256": "e4c69b14b6a07a218148748cb4396a04d2eaf52ee6d46dc6f44516e6d6f7120c"
+    },
+    {
+      "slug": "why-scanned-pdf-not-searchable-ocr-text-layers",
+      "title": "Why You Can't Search a Scanned PDF: Understanding OCR, Text Layers, and Accessibility",
+      "words": 3567,
+      "h2s": 26,
+      "external_links": 4,
+      "internal_links": 2,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "6c70206cc2bc6aecf5ca14d3c163dd1f81fd19699005c4e6f424a37248789038",
+      "local_body_sha256": "6c70206cc2bc6aecf5ca14d3c163dd1f81fd19699005c4e6f424a37248789038"
+    },
+    {
+      "slug": "why-sha256-hashes-differ-for-identical-looking-text",
+      "title": "Why SHA-256 Hashes Differ for Identical-Looking Text",
+      "words": 1725,
+      "h2s": 11,
+      "external_links": 6,
+      "internal_links": 7,
+      "repeated_sentences_within_article": 0,
+      "checks": {
+        "title_matches_h1": true,
+        "seo_title_at_most_65": true,
+        "excerpt_100_to_170": true,
+        "seo_description_100_to_170": true,
+        "at_least_1200_words": true,
+        "at_least_five_h2s": true,
+        "has_external_reference": true,
+        "has_internal_link": true,
+        "no_placeholders": true,
+        "live_hash_matches_manifest": true,
+        "local_source_present": true,
+        "local_source_matches_live": true
+      },
+      "body_sha256": "dafc11cb6a20c0d7ec881c99752da2649d7aa7283015c5cb294022d284f3f06f",
+      "local_body_sha256": "dafc11cb6a20c0d7ec881c99752da2649d7aa7283015c5cb294022d284f3f06f"
+    }
+  ],
+  "highest_pairwise_similarities": [
+    {
+      "left": "safe-filename-rules-windows-macos-web",
+      "right": "title-case-vs-sentence-case-editing-guide",
+      "score": 0.0037743345252284465
+    },
+    {
+      "left": "spf-dkim-dmarc-email-authentication-alignment",
+      "right": "why-email-verification-links-fail",
+      "score": 0.0032517807370703003
+    },
+    {
+      "left": "spf-dkim-dmarc-email-authentication-alignment",
+      "right": "why-html-emails-look-different-plain-text-css-mime",
+      "score": 0.0026726057906458797
+    },
+    {
+      "left": "small-tools-that-save-developers-time",
+      "right": "url-encoding-mistakes-spaces-plus-unicode",
+      "score": 0.0020337013364323067
+    },
+    {
+      "left": "why-email-verification-links-fail",
+      "right": "why-html-emails-look-different-plain-text-css-mime",
+      "score": 0.0019522450818441207
+    },
+    {
+      "left": "photo-exif-metadata-gps-privacy-after-editing",
+      "right": "why-image-colors-change-after-export-srgb-p3",
+      "score": 0.0012580877066858376
+    },
+    {
+      "left": "choosing-sha-256-sha-384-or-sha-512-a-practical-hashing-decision-guide",
+      "right": "why-sha256-hashes-differ-for-identical-looking-text",
+      "score": 0.0011665888940737283
+    },
+    {
+      "left": "why-image-colors-change-after-export-srgb-p3",
+      "right": "why-images-look-blurry-on-websites-resolution-dpr",
+      "score": 0.0011462960309499928
+    },
+    {
+      "left": "url-encoding-mistakes-spaces-plus-unicode",
+      "right": "why-sha256-hashes-differ-for-identical-looking-text",
+      "score": 0.0010114632501685772
+    },
+    {
+      "left": "image-to-pdf-page-size-pixels-points-a4",
+      "right": "why-scanned-pdf-not-searchable-ocr-text-layers",
+      "score": 0.0009101941747572816
+    },
+    {
+      "left": "image-to-pdf-page-size-pixels-points-a4",
+      "right": "simple-pdf-workflow-without-software",
+      "score": 0.000778816199376947
+    },
+    {
+      "left": "best-practices-for-background-removal-when-working-with-design",
+      "right": "temporary-email-for-authorized-testing-and-permitted-messages",
+      "score": 0.0007596859964547987
+    },
+    {
+      "left": "small-tools-that-save-developers-time",
+      "right": "why-email-verification-links-fail",
+      "score": 0.0005626406601650412
+    },
+    {
+      "left": "small-tools-that-save-developers-time",
+      "right": "why-sha256-hashes-differ-for-identical-looking-text",
+      "score": 0.0005277044854881266
+    },
+    {
+      "left": "small-tools-that-save-developers-time",
+      "right": "temporary-email-for-authorized-testing-and-permitted-messages",
+      "score": 0.0004915212582944212
+    },
+    {
+      "left": "photo-exif-metadata-gps-privacy-after-editing",
+      "right": "why-images-look-blurry-on-websites-resolution-dpr",
+      "score": 0.00047281323877068556
+    },
+    {
+      "left": "temporary-email-for-authorized-testing-and-permitted-messages",
+      "right": "why-email-verification-links-fail",
+      "score": 0.0003897116134060795
+    },
+    {
+      "left": "merge-digitally-signed-pdfs-signature-validation",
+      "right": "why-scanned-pdf-not-searchable-ocr-text-layers",
+      "score": 0.0003370975897522333
+    },
+    {
+      "left": "simple-pdf-workflow-without-software",
+      "right": "url-encoding-mistakes-spaces-plus-unicode",
+      "score": 0.0003156565656565657
+    },
+    {
+      "left": "image-to-pdf-page-size-pixels-points-a4",
+      "right": "why-images-look-blurry-on-websites-resolution-dpr",
+      "score": 0.00027917364600781687
+    }
+  ],
+  "cross_article_repeated_substantive_paragraphs": [],
+  "cross_article_repeated_sentences": [
+    {
+      "sentence": "try the anvil tools background remover tools background remover html",
+      "articles": [
+        "photo-exif-metadata-gps-privacy-after-editing",
+        "why-image-colors-change-after-export-srgb-p3"
+      ]
+    }
+  ]
+}

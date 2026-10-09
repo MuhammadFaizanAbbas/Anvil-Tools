@@ -1,0 +1,10 @@
+Created by Anvil Tools
+Synthetic test data
+No personal information
+Permitted for testing
+
+SHORT
+https://example.com/lab/qr?case=medium&value=AnvilTools
+Unicode: café — مرحبا — 你好 — 🙂
+
+The QR report records how payload length and correction level change the module grid. It does not claim that every camera, printer, material, or lighting condition will scan the same way.

@@ -1,16 +1,646 @@
 [
   {
-    "key": "temporary-email",
-    "slug": "temporary-email-for-authorized-testing-and-permitted-messages",
-    "bodyFile": "temporary-email.md",
+    "key": "why-html-emails-look-different-plain-text-css-mime",
+    "slug": "why-html-emails-look-different-plain-text-css-mime",
+    "bodyFile": "published/why-html-emails-look-different-plain-text-css-mime.md",
     "tools": [
       "temp-mail"
     ],
-    "title": "Temporary Email for Authorized Testing and Permitted Messages",
-    "excerpt": "Test email receipt in applications you own or are authorized to test, respect address restrictions, and understand provider retention and recovery limits.",
-    "cover_image_id": "f804a811-ae6e-47e0-a4bb-40a28b251ebb",
-    "cover_alt": "Authorized email-receipt test form beside a temporary inbox",
-    "category_slug": "email-tools"
+    "title": "Why HTML Emails Look Different Across Inboxes: Plain Text, Images, CSS, and MIME",
+    "excerpt": "Why do HTML emails lose images, buttons, or formatting? Understand MIME, plain-text alternatives, CSS support, and safe email testing.",
+    "seo_title": "Why HTML Emails Look Different in Gmail, Outlook & Other Inboxes",
+    "tags": [
+      "HTML Email",
+      "Plain Text Email",
+      "MIME",
+      "Email Rendering",
+      "Email CSS",
+      "Email Images",
+      "Multipart Alternative",
+      "Email Compatibility",
+      "Transactional Email",
+      "Email Testing",
+      "Email Sanitization",
+      "Temporary Email"
+    ],
+    "cover_image_id": "53424351-e2c5-43bf-9e41-bab507fb1dc2",
+    "cover_alt": "Comparison of the same email displayed as a styled HTML message, a version with blocked images, and a readable plain-text alternative, explaining email-client rendering differences.",
+    "category_slug": "email-tools",
+    "published_at": "2026-10-09T14:04:46.264552+00:00",
+    "seo_description": "Why do HTML emails lose images, buttons, or formatting? Understand MIME, plain-text alternatives, CSS support, and safe email testing."
+  },
+  {
+    "key": "safe-filename-rules-windows-macos-web",
+    "slug": "safe-filename-rules-windows-macos-web",
+    "bodyFile": "published/safe-filename-rules-windows-macos-web.md",
+    "tools": [
+      "text-case-converter"
+    ],
+    "title": "Why Filenames Work on One Device but Fail on Another: Safe Naming Across Windows, macOS, and the Web",
+    "excerpt": "Why do filenames fail across Windows, Mac, Linux, or websites? Learn about invalid characters, reserved names, case sensitivity, extensions, and safe naming.",
+    "seo_title": "Safe Filename Rules for Windows, Mac, Linux & Web",
+    "tags": [
+      "Filename Rules",
+      "Safe Filenames",
+      "Windows Filenames",
+      "macOS Files",
+      "Linux Filenames",
+      "Case Sensitivity",
+      "File Naming",
+      "URL Slugs",
+      "Kebab Case",
+      "Text Case Converter",
+      "File Extensions",
+      "Cross Platform Files"
+    ],
+    "cover_image_id": "376d26ed-553d-42e8-a4bd-2d440b59e643",
+    "cover_alt": "Comparison of a problematic filename across Windows, macOS, Linux, and a website, showing invalid characters, case-sensitivity differences, and a corrected portable filename.",
+    "category_slug": "text-tools",
+    "published_at": "2026-10-09T13:46:58.114517+00:00",
+    "seo_description": "Why do filenames fail across Windows, Mac, Linux, or websites? Learn about invalid characters, reserved names, case sensitivity, extensions, and safe naming."
+  },
+  {
+    "key": "image-to-pdf-page-size-pixels-points-a4",
+    "slug": "image-to-pdf-page-size-pixels-points-a4",
+    "bodyFile": "published/image-to-pdf-page-size-pixels-points-a4.md",
+    "tools": [
+      "image-to-pdf"
+    ],
+    "title": "Why Image-to-PDF Files Have Giant Pages: Pixels, Points, A4, and Print Scaling",
+    "excerpt": "Why does an image-to-PDF conversion create huge pages? Understand pixels, PDF points, A4 and Letter sizes, print scaling, white borders, and cropping.",
+    "seo_title": "Why Image-to-PDF Pages Are Huge: A4, Pixels & Points",
+    "tags": [
+      "Image to PDF",
+      "PDF Page Size",
+      "A4 PDF",
+      "PDF Printing",
+      "PDF Points",
+      "Image Resolution",
+      "Print Scaling",
+      "PDF Margins",
+      "PDF Cropping",
+      "US Letter",
+      "DPI vs PPI",
+      "Image Conversion"
+    ],
+    "cover_image_id": "b0933ab9-96dc-42b6-b062-5224354ba89d",
+    "cover_alt": "Comparison of an oversized image-based PDF page and correctly sized A4 paper, explaining the difference between image pixels, PDF points, and print scaling.",
+    "category_slug": "pdf-tools",
+    "published_at": "2026-10-09T13:19:45.717682+00:00",
+    "seo_description": "Why does an image-to-PDF conversion create huge pages? Understand pixels, PDF points, A4 and Letter sizes, print scaling, white borders, and cropping."
+  },
+  {
+    "key": "are-uuid-v4-identifiers-unique-collisions-security",
+    "slug": "are-uuid-v4-identifiers-unique-collisions-security",
+    "bodyFile": "published/are-uuid-v4-identifiers-unique-collisions-security.md",
+    "tools": [
+      "uuid-generator"
+    ],
+    "title": "Are UUIDs Really Unique? Version 4 Collisions, Security, and Database IDs",
+    "excerpt": "Can UUIDv4 identifiers collide? Learn collision probabilities, database uniqueness, UUID security, and when random or time-ordered IDs work best.",
+    "seo_title": "Are UUIDs Unique? UUIDv4 Collisions & Security",
+    "tags": [
+      "UUID",
+      "UUIDv4",
+      "UUID Generator",
+      "UUID Collisions",
+      "Unique Identifiers",
+      "Database IDs",
+      "Random Identifiers",
+      "RFC 9562",
+      "UUID Security",
+      "Database Design",
+      "UUIDv7",
+      "Distributed Systems"
+    ],
+    "cover_image_id": "a6f428ea-6a89-4d1e-aaae-5ebd86218f32",
+    "cover_alt": "Two applications generating UUIDv4 identifiers independently and writing them to a database protected by a unique constraint, with notes about collision risk and access control.",
+    "category_slug": "generators",
+    "published_at": "2026-10-09T12:59:46.671978+00:00",
+    "seo_description": "Can UUIDv4 identifiers collide? Learn collision probabilities, database uniqueness, UUID security, and when random or time-ordered IDs work best."
+  },
+  {
+    "key": "why-images-look-blurry-on-websites-resolution-dpr",
+    "slug": "why-images-look-blurry-on-websites-resolution-dpr",
+    "bodyFile": "published/why-images-look-blurry-on-websites-resolution-dpr.md",
+    "tools": [
+      "background-remover"
+    ],
+    "title": "Why Images Look Blurry on Websites: Resolution, Retina Screens, and Responsive Images",
+    "excerpt": "Images look blurry after upload? Learn how resolution, CSS scaling, Retina displays, compression, and responsive images affect sharpness and how to fix it.",
+    "seo_title": "Why Images Look Blurry on Websites (and How to Fix It)",
+    "tags": [
+      "Blurry Website Images",
+      "Image Resolution",
+      "Retina Displays",
+      "Device Pixel Ratio",
+      "Responsive Images",
+      "Image Sharpness",
+      "CSS Image Scaling",
+      "Website Image Quality",
+      "Product Photography",
+      "Image Optimization",
+      "High DPI Screens",
+      "Background Remover"
+    ],
+    "cover_image_id": "6ec2291c-02a7-4b88-8197-12a4b62c9a15",
+    "cover_alt": "Comparison of a blurry low-resolution product image and a sharp high-resolution image on a website, illustrating CSS display size, Retina screen pixel density, and responsive image selection.",
+    "category_slug": "image-tools",
+    "published_at": "2026-10-09T12:36:35.121977+00:00",
+    "seo_description": "Images look blurry after upload? Learn how resolution, CSS scaling, Retina displays, compression, and responsive images affect sharpness and how to fix it."
+  },
+  {
+    "key": "voiceover-script-length-words-per-minute-video-timing",
+    "slug": "voiceover-script-length-words-per-minute-video-timing",
+    "bodyFile": "published/voiceover-script-length-words-per-minute-video-timing.md",
+    "tools": [
+      "word-counter"
+    ],
+    "title": "How Long Should a Voiceover Script Be? Calculate Video and Presentation Timing",
+    "excerpt": "Estimate voiceover script length for videos and presentations. Calculate speaking time from word count, narration pace, pauses, and visual timing.",
+    "seo_title": "Voiceover Script Length: Words per Minute & Video Timing",
+    "tags": [
+      "Voiceover Script",
+      "Script Length",
+      "Video Script Timing",
+      "Words Per Minute",
+      "Speaking Rate",
+      "Presentation Timing",
+      "Narration",
+      "Educational Video",
+      "Voiceover Planning",
+      "Word Counter",
+      "Script Editing",
+      "Video Production"
+    ],
+    "cover_image_id": "c450b87d-a379-4bfa-b1c7-b18981278f74",
+    "cover_alt": "A voiceover script timing worksheet showing spoken word count, narration pace, and reserved visual pauses for planning a 90-second educational video.",
+    "category_slug": "text-tools",
+    "published_at": "2026-10-09T11:41:48.242095+00:00",
+    "seo_description": "Estimate voiceover script length for videos and presentations. Calculate speaking time from word count, narration pace, pauses, and visual timing."
+  },
+  {
+    "key": "spf-dkim-dmarc-email-authentication-alignment",
+    "slug": "spf-dkim-dmarc-email-authentication-alignment",
+    "bodyFile": "published/spf-dkim-dmarc-email-authentication-alignment.md",
+    "tools": [
+      "temp-mail"
+    ],
+    "title": "SPF, DKIM, and DMARC Explained: Why an Authenticated Email Can Still Fail",
+    "excerpt": "Why can SPF and DKIM pass while DMARC fails? Learn email domain alignment, read authentication results, and diagnose common delivery problems.",
+    "seo_title": "SPF vs DKIM vs DMARC: Email Alignment Explained",
+    "tags": [
+      "SPF",
+      "DKIM",
+      "DMARC",
+      "Email Authentication",
+      "Domain Alignment",
+      "Email Deliverability",
+      "Email Security",
+      "DNS Records",
+      "Sender Authentication",
+      "Email Headers",
+      "Email Testing",
+      "DMARC Failure"
+    ],
+    "cover_image_id": "0cfd54e0-b291-4ce9-a818-c600c4981118",
+    "cover_alt": "Email authentication comparison showing SPF and DKIM passing while DMARC fails because the authenticated sending domains do not align with the visible From address.",
+    "category_slug": "email-tools",
+    "published_at": "2026-10-09T11:26:40.960068+00:00",
+    "seo_description": "Why can SPF and DKIM pass while DMARC fails? Learn email domain alignment, read authentication results, and diagnose common delivery problems."
+  },
+  {
+    "key": "why-email-verification-links-fail",
+    "slug": "why-email-verification-links-fail",
+    "bodyFile": "published/why-email-verification-links-fail.md",
+    "tools": [
+      "temp-mail"
+    ],
+    "title": "Why Email Verification Links Fail: Expiration, Security Scanners, and One-Time Tokens",
+    "excerpt": "Why do email verification links expire or fail? Understand one-time tokens, security scanners, link rewriting, and safe ways to test verification flows.",
+    "seo_title": "Why Email Verification Links Fail: Causes & Fixes",
+    "tags": [
+      "Email Verification",
+      "Expired Verification Links",
+      "One-Time Tokens",
+      "Email Link Scanners",
+      "Transactional Email",
+      "Verification Testing",
+      "Account Confirmation",
+      "Link Rewriting",
+      "Temporary Email",
+      "Email Delivery Testing",
+      "Token Expiration",
+      "Secure Signup"
+    ],
+    "cover_image_id": "86965c84-9e6e-4817-b6ea-ed9e25e02799",
+    "cover_alt": "Email verification process showing a received message, a one-time verification link, and possible failure conditions including token expiration, link reuse, and automated security scanning.",
+    "category_slug": "email-tools",
+    "published_at": "2026-10-09T10:02:24.698152+00:00",
+    "seo_description": "Why do email verification links expire or fail? Understand one-time tokens, security scanners, link rewriting, and safe ways to test verification flows."
+  },
+  {
+    "key": "merge-digitally-signed-pdfs-signature-validation",
+    "slug": "merge-digitally-signed-pdfs-signature-validation",
+    "bodyFile": "published/merge-digitally-signed-pdfs-signature-validation.md",
+    "tools": [
+      "pdf-merge"
+    ],
+    "title": "Can You Merge Digitally Signed PDFs? What Happens to Signature Verification",
+    "excerpt": "Can you merge digitally signed PDFs without losing verification? Learn what happens to signatures, how to validate them, and safer ways to combine documents.",
+    "seo_title": "Can You Merge Signed PDFs? Signature Validity Explained",
+    "tags": [
+      "PDF Merge",
+      "Digital Signatures",
+      "Signed PDF",
+      "Signature Validation",
+      "PDF Security",
+      "Electronic Signatures",
+      "PDF Certificates",
+      "Document Integrity",
+      "PDF Verification",
+      "Digital Certificates",
+      "PDF Signing",
+      "Document Authentication"
+    ],
+    "cover_image_id": "3c36ae3b-192e-4b37-9cad-3643d9f66adf",
+    "cover_alt": "A digitally signed PDF beside a merged PDF, showing that a visible signature may remain while cryptographic verification must be checked separately.",
+    "category_slug": "pdf-tools",
+    "published_at": "2026-10-08T19:33:46.857785+00:00",
+    "seo_description": "Can you merge digitally signed PDFs without losing verification? Learn what happens to signatures, how to validate them, and safer ways to combine documents."
+  },
+  {
+    "key": "why-image-colors-change-after-export-srgb-p3",
+    "slug": "why-image-colors-change-after-export-srgb-p3",
+    "bodyFile": "published/why-image-colors-change-after-export-srgb-p3.md",
+    "tools": [
+      "background-remover"
+    ],
+    "title": "Why Your Image Colors Change After Export: sRGB, Display P3, and Color Profiles",
+    "excerpt": "Why do image colors change after export? Learn how sRGB, Display P3, ICC profiles, browsers, and screen settings affect colors and how to fix differences.",
+    "seo_title": "Why Image Colors Change After Export: sRGB & P3",
+    "tags": [
+      "Image Color Profiles",
+      "sRGB",
+      "Display P3",
+      "ICC Profiles",
+      "Color Management",
+      "Image Export",
+      "Color Gamut",
+      "Web Image Colors",
+      "Color Accuracy",
+      "Photo Editing",
+      "Browser Color Rendering",
+      "Image Color Correction"
+    ],
+    "cover_image_id": "f93f09ff-70a8-4222-8ab6-f9c9014203db",
+    "cover_alt": "Comparison of a product photograph in sRGB and Display P3 color spaces, illustrating how ICC profiles, image exports, and different screens can affect color appearance.",
+    "category_slug": "image-tools",
+    "published_at": "2026-10-08T19:17:59.970099+00:00",
+    "seo_description": "Why do image colors change after export? Learn how sRGB, Display P3, ICC profiles, browsers, and screen settings affect colors and how to fix differences."
+  },
+  {
+    "key": "review-text-changes-before-publishing",
+    "slug": "review-text-changes-before-publishing",
+    "bodyFile": "published/review-text-changes-before-publishing.md",
+    "tools": [
+      "text-diff-checker"
+    ],
+    "title": "How to Review Text Changes Before Publishing: A Practical Guide to Line-by-Line Diffs",
+    "excerpt": "Learn how to compare original and revised text before publishing. Identify added, removed, or moved lines and review changes that affect meaning.",
+    "seo_title": "How to Compare Text Changes Before Publishing",
+    "tags": [
+      "Text Comparison",
+      "Text Difference Checker",
+      "Line Diff",
+      "Document Revisions",
+      "Content Editing",
+      "Website Publishing",
+      "Editorial Review",
+      "Version Comparison",
+      "Change Tracking",
+      "Release Review",
+      "Content Quality",
+      "Plain Text Diff"
+    ],
+    "cover_image_id": "1e4aa953-d6a3-4280-84a2-350c396a0814",
+    "cover_alt": "Side-by-side comparison of original and revised website copy, highlighting removed, added, and unchanged lines during an editorial review before publishing.",
+    "category_slug": "text-tools",
+    "published_at": "2026-10-08T19:03:35.117807+00:00",
+    "seo_description": "Learn how to compare original and revised text before publishing. Identify added, removed, or moved lines and review changes that affect meaning."
+  },
+  {
+    "key": "photo-exif-metadata-gps-privacy-after-editing",
+    "slug": "photo-exif-metadata-gps-privacy-after-editing",
+    "bodyFile": "published/photo-exif-metadata-gps-privacy-after-editing.md",
+    "tools": [
+      "background-remover"
+    ],
+    "title": "What Your Photos Reveal: EXIF Metadata, GPS Location, and Privacy After Editing",
+    "excerpt": "Discover what EXIF photo metadata can reveal, including GPS, timestamps and camera details. Learn what editing changes and how to check images before sharing.",
+    "seo_title": "Photo EXIF Metadata: GPS, Privacy & Editing Explained",
+    "tags": [
+      "EXIF Metadata",
+      "Photo Privacy",
+      "GPS Metadata",
+      "Image Metadata",
+      "Photo Editing",
+      "Camera Metadata",
+      "EXIF Removal",
+      "Image Export",
+      "Photo Location Data",
+      "Metadata Inspection",
+      "Image File Privacy",
+      "Background Remover"
+    ],
+    "cover_image_id": "2091e797-3e49-4f86-bcbc-7991f26e1491",
+    "cover_alt": "Photograph with a metadata inspection panel showing camera model, capture date, GPS location, and orientation, illustrating hidden EXIF data and privacy considerations before image sharing.",
+    "category_slug": "image-tools",
+    "published_at": "2026-10-08T18:46:37.303965+00:00",
+    "seo_description": "Discover what EXIF photo metadata can reveal, including GPS, timestamps and camera details. Learn what editing changes and how to check images before sharing."
+  },
+  {
+    "key": "temperature-changes-celsius-fahrenheit-kelvin",
+    "slug": "temperature-changes-celsius-fahrenheit-kelvin",
+    "bodyFile": "published/temperature-changes-celsius-fahrenheit-kelvin.md",
+    "tools": [
+      "unit-converter"
+    ],
+    "title": "Why Temperature Changes Convert Differently: Celsius, Fahrenheit, and Kelvin Explained",
+    "excerpt": "Learn why converting a 5°C temperature increase differs from converting 5°C itself. Understand Celsius, Fahrenheit, Kelvin, offsets, intervals, and formulas.",
+    "seo_title": "Temperature Changes: Celsius vs Fahrenheit vs Kelvin",
+    "tags": [
+      "Temperature Conversion",
+      "Celsius",
+      "Fahrenheit",
+      "Kelvin",
+      "Temperature Difference",
+      "Unit Converter",
+      "Temperature Interval",
+      "Conversion Formulas",
+      "Measurement Accuracy",
+      "Spreadsheet Formulas",
+      "Temperature Scale",
+      "SI Units"
+    ],
+    "cover_image_id": "5e74c9d3-a054-41ab-b765-78dff5078b3a",
+    "cover_alt": "Comparison of absolute temperature and temperature change conversions using Celsius, Fahrenheit, and Kelvin, showing why a 5°C increase equals 9°F rather than 41°F.",
+    "category_slug": "generators",
+    "published_at": "2026-10-08T18:41:12.948473+00:00",
+    "seo_description": "Learn why converting a 5°C temperature increase differs from converting 5°C itself. Understand Celsius, Fahrenheit, Kelvin, offsets, intervals, and formulas."
+  },
+  {
+    "key": "why-scanned-pdf-not-searchable-ocr-text-layers",
+    "slug": "why-scanned-pdf-not-searchable-ocr-text-layers",
+    "bodyFile": "published/why-scanned-pdf-not-searchable-ocr-text-layers.md",
+    "tools": [
+      "image-to-pdf",
+      "pdf-merge"
+    ],
+    "title": "Why You Can't Search a Scanned PDF: Understanding OCR, Text Layers, and Accessibility",
+    "excerpt": "Can't search or copy text from a scanned PDF? Learn why image-only PDFs behave differently, how OCR works, and how to check text accuracy and accessibility.",
+    "seo_title": "Why Can't I Search My PDF? OCR & Text Layers Explained",
+    "tags": [
+      "Scanned PDF",
+      "Searchable PDF",
+      "PDF OCR",
+      "Optical Character Recognition",
+      "PDF Text Layer",
+      "PDF Accessibility",
+      "PDF Text Extraction",
+      "Image-Only PDF",
+      "PDF Troubleshooting",
+      "Document Scanning",
+      "PDF Conversion",
+      "OCR Accuracy"
+    ],
+    "cover_image_id": "6271adc9-79df-42fb-9058-c5be6c60989d",
+    "cover_alt": "Three versions of an invoice PDF compared: a digitally created document, an image-only scan, and an OCR-processed searchable PDF, highlighting text selection and search differences.",
+    "category_slug": "pdf-tools",
+    "published_at": "2026-10-08T18:31:39.450636+00:00",
+    "seo_description": "Can't search or copy text from a scanned PDF? Learn why image-only PDFs behave differently, how OCR works, and how to check text accuracy and accessibility."
+  },
+  {
+    "key": "title-case-vs-sentence-case-editing-guide",
+    "slug": "title-case-vs-sentence-case-editing-guide",
+    "bodyFile": "published/title-case-vs-sentence-case-editing-guide.md",
+    "tools": [
+      "text-case-converter"
+    ],
+    "title": "Title Case vs Sentence Case: Editing Headlines, Labels, and Text Without Losing Meaning",
+    "excerpt": "Learn when to use title case, sentence case, and identifier styles. Edit headings without damaging acronyms, brand names, or technical text.",
+    "seo_title": "Title Case vs Sentence Case: A Practical Editing Guide",
+    "tags": [
+      "Title Case",
+      "Sentence Case",
+      "Text Case Converter",
+      "Capitalization",
+      "Headline Editing",
+      "Editorial Style",
+      "Writing Tools",
+      "Camel Case",
+      "Snake Case",
+      "Kebab Case",
+      "Acronyms",
+      "Content Editing"
+    ],
+    "cover_image_id": "34334e2a-8802-4d95-9733-858ad11d1e67",
+    "cover_alt": "Editorial comparison of title case, sentence case, and code identifier styles, showing how headlines, acronyms, and brand names are corrected for publication.",
+    "category_slug": "text-tools",
+    "published_at": "2026-10-08T18:21:15.882797+00:00",
+    "seo_description": "Learn when to use title case, sentence case, and identifier styles. Edit headings without damaging acronyms, brand names, or technical text."
+  },
+  {
+    "key": "what-makes-a-password-strong-length-randomness-uniqueness-mfa",
+    "slug": "what-makes-a-password-strong-length-randomness-uniqueness-mfa",
+    "bodyFile": "published/what-makes-a-password-strong-length-randomness-uniqueness-mfa.md",
+    "tools": [
+      "password-generator"
+    ],
+    "title": "What Actually Makes a Password Strong? Length, Randomness, Uniqueness, and MFA",
+    "excerpt": "Learn what actually makes passwords strong: length, randomness, uniqueness, password managers, MFA, recovery, and when password changes are really needed.",
+    "seo_title": "Strong Passwords: Length, Randomness, Reuse & MFA",
+    "tags": [
+      "Password Security",
+      "Strong Passwords",
+      "Password Generator",
+      "Password Length",
+      "Random Passwords",
+      "Password Manager",
+      "MFA",
+      "Passphrases",
+      "Account Security",
+      "Password Reuse",
+      "Credential Stuffing",
+      "NIST Password Guidance"
+    ],
+    "cover_image_id": "74145ab8-a99d-4281-937c-f592a9a5c409",
+    "cover_alt": "Password security illustration showing a long random password protected by unique account credentials, a password manager, multi-factor authentication, and secure recovery.",
+    "category_slug": "generators",
+    "published_at": "2026-10-08T18:11:37.090367+00:00",
+    "seo_description": "Learn what actually makes passwords strong: length, randomness, uniqueness, password managers, MFA, recovery, and when password changes are really needed."
+  },
+  {
+    "key": "turn-color-palette-into-accessible-ui",
+    "slug": "turn-color-palette-into-accessible-ui",
+    "bodyFile": "published/turn-color-palette-into-accessible-ui.md",
+    "tools": [
+      "color-palette-generator"
+    ],
+    "title": "From Five Colors to a Usable Interface: Building an Accessible UI Palette",
+    "excerpt": "Turn five color swatches into a usable UI system with semantic roles, accessible contrast, button states, status colors, design tokens, and WCAG checks.",
+    "seo_title": "How to Turn a Color Palette into an Accessible UI",
+    "tags": [
+      "Color Palette",
+      "UI Color System",
+      "Accessible Design",
+      "WCAG Contrast",
+      "Design Tokens",
+      "Web Design",
+      "UI States",
+      "Color Contrast",
+      "Brand Colors",
+      "CSS Variables",
+      "Color Accessibility",
+      "Palette Generator"
+    ],
+    "cover_image_id": "29cd5274-70f3-4202-941a-a80c6a48208c",
+    "cover_alt": "Five generated color swatches being transformed into semantic UI roles for text, backgrounds, buttons, success, warning, and accessible interface design.",
+    "category_slug": "generators",
+    "published_at": "2026-10-07T19:33:51.592238+00:00",
+    "seo_description": "Turn five color swatches into a usable UI system with semantic roles, accessible contrast, button states, status colors, design tokens, and WCAG checks."
+  },
+  {
+    "key": "choosing-sha-256-sha-384-or-sha-512-a-practical-hashing-decision-guide",
+    "slug": "choosing-sha-256-sha-384-or-sha-512-a-practical-hashing-decision-guide",
+    "bodyFile": "published/choosing-sha-256-sha-384-or-sha-512-a-practical-hashing-decision-guide.md",
+    "tools": [
+      "hash-generator"
+    ],
+    "title": "Choosing SHA-256, SHA-384, or SHA-512: A Practical Hashing Decision Guide",
+    "excerpt": "Compare SHA-256, SHA-384 and SHA-512 for integrity checks, text hashing, APIs and authentication, and learn when hashing is the wrong tool.",
+    "seo_title": "SHA-256 vs SHA-384 vs SHA-512: Which Should You Use?",
+    "tags": [
+      "SHA-256",
+      "SHA-384",
+      "SHA-512",
+      "Hash Generator",
+      "Cryptographic Hashing",
+      "Data Integrity",
+      "Message Digests",
+      "SHA-2",
+      "HMAC",
+      "Password Hashing",
+      "Checksums",
+      "UTF-8"
+    ],
+    "cover_image_id": "d73c5d17-e2e7-4dd0-8f06-e5d22fe1b475",
+    "cover_alt": "Decision guide comparing SHA-256, SHA-384 and SHA-512 for data integrity, protocol requirements, authentication and password-storage use cases.",
+    "category_slug": "developer-tools",
+    "published_at": "2026-10-07T18:51:58.119893+00:00",
+    "seo_description": "Compare SHA-256, SHA-384 and SHA-512 for integrity checks, text hashing, APIs and authentication, and learn when hashing is the wrong tool."
+  },
+  {
+    "key": "qr-codes-scan-reliably-print-screen-guide",
+    "slug": "qr-codes-scan-reliably-print-screen-guide",
+    "bodyFile": "published/qr-codes-scan-reliably-print-screen-guide.md",
+    "tools": [
+      "qr-code-generator"
+    ],
+    "title": "QR Codes That Scan Reliably: A Preflight Guide for Print, Screens, and Posters",
+    "excerpt": "Learn how to make QR codes scan reliably on flyers, posters, screens, menus and print. Check margins, sizing, contrast, placement and final output.",
+    "seo_title": "QR Codes That Scan Reliably: Print & Screen Guide",
+    "tags": [
+      "QR Codes",
+      "QR Code Generator",
+      "QR Code Printing",
+      "QR Code Testing",
+      "QR Code Design",
+      "QR Code Scan Reliability",
+      "QR Code Quiet Zone",
+      "QR Code Contrast",
+      "QR Code for Posters",
+      "QR Code for Print",
+      "QR Code on Screens",
+      "QR Code Best Practices"
+    ],
+    "cover_image_id": "65fcc063-dd7f-44da-87cf-a1a8ae682580",
+    "cover_alt": "QR code shown on a laptop screen, printed menu, and outdoor poster, illustrating reliable scanning through clear spacing, strong contrast, sharp output, and real-world testing.",
+    "category_slug": "generators",
+    "published_at": "2026-10-07T18:35:46.564617+00:00",
+    "seo_description": "Learn how to make QR codes scan reliably on flyers, posters, screens, menus and print. Check margins, sizing, contrast, placement and final output."
+  },
+  {
+    "key": "valid-json-api-errors-types-nulls-structure",
+    "slug": "valid-json-api-errors-types-nulls-structure",
+    "bodyFile": "published/valid-json-api-errors-types-nulls-structure.md",
+    "tools": [
+      "json-formatter"
+    ],
+    "title": "Why Valid JSON Still Breaks APIs: Types, Nulls, Numbers, and Structure",
+    "excerpt": "Learn why valid JSON can still fail an API. Debug strings vs numbers, null and missing fields, arrays, nesting, duplicate keys, booleans and payload structure.",
+    "seo_title": "Valid JSON but API Fails? Types, Nulls & Structure Explained",
+    "tags": [
+      "JSON",
+      "API Debugging",
+      "JSON Validation",
+      "API Payloads",
+      "Data Types",
+      "JSON Structure",
+      "JSON Null",
+      "JSON Arrays"
+    ],
+    "cover_image_id": "0f0e6c19-4d3e-4cfe-8e69-cde114abe7b4",
+    "cover_alt": "Why valid JSON still breaks APIs due to data type mismatches, null values, missing fields, arrays, objects, and incorrect payload structure.",
+    "category_slug": "developer-tools",
+    "published_at": "2026-10-07T18:11:00.66886+00:00",
+    "seo_description": "Learn why valid JSON can still fail an API. Debug strings vs numbers, null and missing fields, arrays, nesting, duplicate keys, booleans and payload structure."
+  },
+  {
+    "key": "url-encoding-experiment",
+    "slug": "url-encoding-mistakes-spaces-plus-unicode",
+    "bodyFile": "url-encoding-experiment.md",
+    "tools": [
+      "url-encoder-decoder"
+    ],
+    "title": "URL Encoding Mistakes: Spaces, Plus Signs, Unicode, and Double Encoding",
+    "excerpt": "Fifteen tested URL-encoding cases explain literal plus signs, form-query spaces, Unicode, reserved characters, and double encoding, with reusable fixtures.",
+    "seo_title": "URL Encoding Mistakes: Plus Signs, Unicode & Double Encoding",
+    "tags": [
+      "URL encoding",
+      "encodeURIComponent",
+      "URLSearchParams",
+      "double encoding",
+      "browser experiment"
+    ],
+    "cover_image_id": "7e293e61-2dae-472e-a4bd-f090b7760c7d",
+    "cover_alt": "Editorial illustration comparing a space and a plus sign, with URL parameter cards and one versus two encoding stages.",
+    "category_slug": "developer-tools",
+    "published_at": "2026-10-07T16:43:14.098001+00:00",
+    "seo_description": "Fifteen tested URL-encoding cases explain literal plus signs, form-query spaces, Unicode, reserved characters, and double encoding, with reusable fixtures."
+  },
+  {
+    "key": "sha256-text-experiment",
+    "slug": "why-sha256-hashes-differ-for-identical-looking-text",
+    "bodyFile": "sha256-text-experiment.md",
+    "tools": [
+      "hash-generator"
+    ],
+    "title": "Why SHA-256 Hashes Differ for Identical-Looking Text",
+    "excerpt": "Thirteen browser tests compare SHA-256 results for whitespace, Unicode, CRLF normalization, and JSON formatting, with independent checks and fixtures.",
+    "seo_title": "Why SHA-256 Hashes Differ: Unicode, Newlines & JSON",
+    "tags": [
+      "SHA-256",
+      "hash mismatch",
+      "Unicode normalization",
+      "JSON formatting",
+      "browser experiment"
+    ],
+    "cover_image_id": "5864e47d-beec-4ad6-a1e7-c3686ec1c55c",
+    "cover_alt": "Editorial illustration of similar text panes containing a line-break and accent difference, producing different byte comparisons.",
+    "category_slug": "developer-tools",
+    "published_at": "2026-10-07T16:43:14.098001+00:00",
+    "seo_description": "Thirteen browser tests compare SHA-256 results for whitespace, Unicode, CRLF normalization, and JSON formatting, with independent checks and fixtures."
   },
   {
     "key": "background-removal",
@@ -21,30 +651,68 @@
     ],
     "title": "Background Removal for Design and Product Photography",
     "excerpt": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings.",
+    "seo_title": "Background Removal for Design and Product Photography",
+    "tags": [
+      "background removal",
+      "product photography",
+      "transparent images",
+      "graphic design"
+    ],
     "cover_image_id": "d276a16e-5ceb-4aea-90a1-94c70c6785d2",
     "cover_alt": "Design workspace comparing a sneaker photograph with a transparent cutout, alongside layer and edge-quality controls",
-    "category_slug": "image-tools"
+    "category_slug": "image-tools",
+    "published_at": "2026-09-29T13:56:31.666188+00:00",
+    "seo_description": "Prepare natural cutouts, inspect difficult edges, preserve product details, and export images for websites, design projects, and marketplace listings."
   },
   {
     "key": "pdf-workflows",
     "slug": "simple-pdf-workflow-without-software",
     "bodyFile": "pdf-workflows.md",
-    "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result",
-    "excerpt": "Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.",
     "tools": [
       "pdf-merge",
       "image-to-pdf"
     ],
+    "title": "PDF Workflows: Merge Files, Convert Images, and Check the Result",
+    "excerpt": "Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download.",
+    "seo_title": "PDF Workflows: Merge Files, Convert Images, and Check the Result",
+    "tags": [
+      "pdf workflow",
+      "merge pdf",
+      "image to pdf",
+      "document tools"
+    ],
     "cover_image_id": "c4244f15-2995-4aaf-b544-b37a356716db",
     "cover_alt": "Editorial illustration of ordered document pages and supporting photos assembled into a PDF, with a magnifier for final inspection.",
-    "category_slug": "pdf-tools"
+    "category_slug": "pdf-tools",
+    "published_at": "2026-09-29T12:13:39.490357+00:00",
+    "seo_description": "Prepare readable images, assemble PDFs in the right order, and check page dimensions, protected files, forms, signatures, and the final download."
+  },
+  {
+    "key": "temporary-email",
+    "slug": "temporary-email-for-authorized-testing-and-permitted-messages",
+    "bodyFile": "temporary-email.md",
+    "tools": [
+      "temp-mail"
+    ],
+    "title": "Temporary Email for Authorized Testing and Permitted Messages",
+    "excerpt": "Test email receipt in applications you own or are authorized to test, respect address restrictions, and understand provider retention and recovery limits.",
+    "seo_title": "Temporary Email for Authorized Testing and Permitted Messages",
+    "tags": [
+      "temporary email",
+      "authorized testing",
+      "email delivery",
+      "provider limits"
+    ],
+    "cover_image_id": "f804a811-ae6e-47e0-a4bb-40a28b251ebb",
+    "cover_alt": "Authorized email-receipt test form beside a temporary inbox",
+    "category_slug": "email-tools",
+    "published_at": "2026-09-29T06:00:31.666188+00:00",
+    "seo_description": "Test email receipt in applications you own or are authorized to test, respect address restrictions, and understand provider retention and recovery limits."
   },
   {
     "key": "developer-data",
     "slug": "small-tools-that-save-developers-time",
     "bodyFile": "developer-data.md",
-    "title": "Debug API Data with JSON, Base64, and Browser Tools",
-    "excerpt": "Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.",
     "tools": [
       "json-formatter",
       "base64-tool",
@@ -58,50 +726,20 @@
       "uuid-generator",
       "user-agent-generator"
     ],
+    "title": "Debug API Data with JSON, Base64, and Browser Tools",
+    "excerpt": "Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples.",
+    "seo_title": "Debug API Data with JSON, Base64, and Browser Tools",
+    "tags": [
+      "developer tools",
+      "json",
+      "base64",
+      "testing",
+      "browser tools"
+    ],
     "cover_image_id": "925334fc-7e67-49b0-96fd-6d4b1c2ddc67",
     "cover_alt": "Editorial illustration of a laptop with structured API data connected to CSV, encoded-text, and checksum comparison cards.",
-    "category_slug": "developer-tools"
-  },
-  {
-    "key": "url-encoding-experiment",
-    "bodyFile": "url-encoding-experiment.md",
-    "slug": "url-encoding-mistakes-spaces-plus-unicode",
-    "title": "URL Encoding Mistakes: Spaces, Plus Signs, Unicode, and Double Encoding",
-    "excerpt": "Fifteen tested URL-encoding cases explain literal plus signs, form-query spaces, Unicode, reserved characters, and double encoding, with reusable fixtures.",
-    "seo_title": "URL Encoding Mistakes: Plus Signs, Unicode & Double Encoding",
-    "tags": [
-      "URL encoding",
-      "encodeURIComponent",
-      "URLSearchParams",
-      "double encoding",
-      "browser experiment"
-    ],
-    "tools": [
-      "url-encoder-decoder"
-    ],
-    "cover_image_id": "7e293e61-2dae-472e-a4bd-f090b7760c7d",
-    "cover_alt": "Editorial illustration comparing a space and a plus sign, with URL parameter cards and one versus two encoding stages.",
-    "category_slug": "developer-tools"
-  },
-  {
-    "key": "sha256-text-experiment",
-    "bodyFile": "sha256-text-experiment.md",
-    "slug": "why-sha256-hashes-differ-for-identical-looking-text",
-    "title": "Why SHA-256 Hashes Differ for Identical-Looking Text",
-    "excerpt": "Thirteen browser tests compare SHA-256 results for whitespace, Unicode, CRLF normalization, and JSON formatting, with independent checks and fixtures.",
-    "seo_title": "Why SHA-256 Hashes Differ: Unicode, Newlines & JSON",
-    "tags": [
-      "SHA-256",
-      "hash mismatch",
-      "Unicode normalization",
-      "JSON formatting",
-      "browser experiment"
-    ],
-    "tools": [
-      "hash-generator"
-    ],
-    "cover_image_id": "5864e47d-beec-4ad6-a1e7-c3686ec1c55c",
-    "cover_alt": "Editorial illustration of similar text panes containing a line-break and accent difference, producing different byte comparisons.",
-    "category_slug": "developer-tools"
+    "category_slug": "developer-tools",
+    "published_at": "2026-09-15T00:00:00+00:00",
+    "seo_description": "Work through JSON types, encoding, URL components, JWT claims, hashes, CSV conversion, and timestamps with small reproducible examples."
   }
 ]

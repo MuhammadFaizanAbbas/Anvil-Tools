@@ -62,6 +62,14 @@
 .article-content code { overflow-wrap:anywhere; font-size:.9em; }
 .article-content p code { background:#eef2f8; padding:2px 4px; border-radius:3px; }
 .article-content hr { border:0; border-top:1px solid #e4e9f2; margin:32px 0; }
+.lab-test-card dl { display:grid; grid-template-columns:minmax(150px,220px) minmax(0,1fr); gap:0; margin:20px 0; border:1px solid #dfe5ef; border-radius:14px; overflow:hidden; }
+.lab-test-card :is(dt,dd) { margin:0; padding:13px 16px; border-bottom:1px solid #dfe5ef; }
+.lab-test-card dt { background:#f4f7fc; font-weight:700; }
+.lab-test-card :is(dt,dd):nth-last-child(-n+2) { border-bottom:0; }
+.table-scroll td code { overflow-wrap:anywhere; word-break:break-all; }
+.article-lab-evidence { max-width:720px; margin:0 auto 32px; padding:24px clamp(24px,5vw,44px); border-block:1px solid #dfe5ef; background:#f7f9fe; }
+.article-lab-evidence h2 { margin:0 0 10px; font-size:22px; }
+.article-lab-evidence p { margin:0; line-height:1.75; }
 @media(max-width:800px) { .public-site .content-guide > .info-section { padding:24px; } }
 @media(max-width:480px) {
  .public-site .wrap,.public-site .header-row { width:calc(100% - 32px); }
@@ -69,5 +77,9 @@
  .public-site .tool-app { padding:20px 16px; }
  .public-site .hero h1 { font-size:36px; }
  .public-site .hero { padding:24px 0; }
+ .lab-test-card dl { grid-template-columns:1fr; }
+ .lab-test-card dt { border-bottom:0; }
+ .lab-test-card :is(dt,dd):nth-last-child(-n+2) { border-bottom:1px solid #dfe5ef; }
+ .lab-test-card dd:last-child { border-bottom:0; }
 }
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; animation-duration:.01ms!important; transition-duration:.01ms!important; } }

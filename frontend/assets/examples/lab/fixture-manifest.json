@@ -1,0 +1,85 @@
+{
+  "created_by": "Anvil Tools",
+  "data": "Synthetic test data; no personal information; permitted for testing.",
+  "generated_at": "2026-10-09",
+  "files": [
+    {
+      "label": "JSON duplicate keys, Unicode, and escapes",
+      "href": "/assets/examples/lab/duplicate-keys-unicode.json",
+      "bytes": 321,
+      "sha256": "5d07a776f81a5d1591b14cfadbe969b3870b110ddd54dd6ce11a435063dda14a"
+    },
+    {
+      "label": "Synthetic HTML email link source",
+      "href": "/assets/examples/lab/html-email-link-fixture.txt",
+      "bytes": 393,
+      "sha256": "40a9a6dcbba6f40630a23bd9b5ad57f920000da80c1d620c4dcb77420edc9fff"
+    },
+    {
+      "label": "CSV commas, quotes, newlines, and Unicode",
+      "href": "/assets/examples/lab/quoted-unicode.csv",
+      "bytes": 413,
+      "sha256": "11e24064d56c7ede63b29cebfef4db43d0a0d493ca99e6ab5cfe33fcf2f9061c"
+    },
+    {
+      "label": "RTL, emoji, and combining text",
+      "href": "/assets/examples/lab/rtl-emoji-combining.txt",
+      "bytes": 305,
+      "sha256": "999f443fbebe66fdb77a906effcf792ecb48c7dd75f0a358930bde4d4f391cd1"
+    },
+    {
+      "label": "Sample QR payloads",
+      "href": "/assets/examples/lab/qr-strings.txt",
+      "bytes": 391,
+      "sha256": "52c3679e94069fd3fbb330cdc0dbba48df0f59212e1cb00292c28b689f92850b"
+    },
+    {
+      "label": "JPEG comparison image",
+      "href": "/assets/examples/experiments/format-sample.jpg",
+      "bytes": 16987,
+      "sha256": "975d9c0282d66138421d6bccb8877f9518327f9d29c733615656e34f9334577a"
+    },
+    {
+      "label": "PNG comparison image",
+      "href": "/assets/examples/experiments/format-sample.png",
+      "bytes": 18067,
+      "sha256": "8f704228d8ffa8adfc334650cd898bb9b77359b138feec8ef445fe49731ead7d"
+    },
+    {
+      "label": "WebP comparison image",
+      "href": "/assets/examples/experiments/format-sample.webp",
+      "bytes": 8250,
+      "sha256": "1d92e33ab54533020568b9cb316d5370cde9bbfcdf64db372ac84c9b0bf51482"
+    },
+    {
+      "label": "One-page cover PDF",
+      "href": "/assets/examples/pdf/cover.pdf",
+      "bytes": 867,
+      "sha256": "a29a16bda558024c655983d3e5c4b882c8d1f1aa8b20c4d482f328819d3bc6a8"
+    },
+    {
+      "label": "Two-page application PDF",
+      "href": "/assets/examples/pdf/application.pdf",
+      "bytes": 1111,
+      "sha256": "11d3c92a9f8b9ba37c3fa49b40c92e097eab44beda5fe6cf8c2ca205647dbe40"
+    },
+    {
+      "label": "One-page support PDF",
+      "href": "/assets/examples/pdf/support.pdf",
+      "bytes": 869,
+      "sha256": "b4cb150a591eee905f7eabe0de9f34885a938833cc25cbbd617248b0d94736d5"
+    },
+    {
+      "label": "Recorded four-page merged PDF",
+      "href": "/assets/examples/pdf/merged-example.pdf",
+      "bytes": 1563,
+      "sha256": "aad13c88a8db2d33df99ce03b33c7fd3bf83482755e972d8950dca3c64646d63"
+    },
+    {
+      "label": "Recorded QR PNG",
+      "href": "/assets/examples/qr-check.png",
+      "bytes": 2611,
+      "sha256": "381760fd2649661a0a0d2870867118ef53182cb8001620b5ff9cd3b856ee728b"
+    }
+  ]
+}

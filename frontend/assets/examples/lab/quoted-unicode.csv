@@ -1,0 +1,7 @@
+case,value,expected_note
+provenance,"Created by Anvil Tools","Synthetic test data; no personal information; permitted for testing"
+quoted,"comma, and a ""quoted"" word","one field containing a comma and quotes"
+newline,"line one
+line two","one field containing a newline"
+unicode,"Zoë — مرحبا — こんにちは","UTF-8 names, punctuation, RTL, and CJK text"
+blank,,"an intentionally empty middle field"

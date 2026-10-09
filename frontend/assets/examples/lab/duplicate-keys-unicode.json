@@ -1,0 +1,12 @@
+{
+  "_fixture": "Created by Anvil Tools",
+  "_provenance": "Synthetic test data",
+  "_privacy": "No personal information",
+  "_permission": "Permitted for testing",
+  "label": "café",
+  "direction": "مرحبا",
+  "emoji": "🙂",
+  "role": "reader",
+  "role": "editor",
+  "escaped": "line one\nline two\t\"quoted\""
+}

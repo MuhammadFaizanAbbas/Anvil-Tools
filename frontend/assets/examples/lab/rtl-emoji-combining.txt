@@ -1,0 +1,11 @@
+Created by Anvil Tools
+Synthetic test data
+No personal information
+Permitted for testing
+
+Latin composed: café
+Latin combining: café
+Arabic RTL: مرحبا بالعالم
+Hebrew RTL: שלום עולם
+Emoji sequence: 👨‍👩‍👧‍👦 🙂
+Mixed direction: Reference 123 — مرحبا — ABC

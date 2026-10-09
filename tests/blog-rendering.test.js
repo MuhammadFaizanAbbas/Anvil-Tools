@@ -141,7 +141,7 @@ test('retired static articles leave the catalog and sitemap; covered guides prov
     const journal = config.routes.find(route => route.dest?.endsWith('/api/public/articles/$1'));
     assert.equal(journal.headers['Cache-Control'], 'no-store');
   }
-  assert.equal(library.length, 6);
+  assert.equal(library.length, 26);
   for (const guide of library) {
     assert.ok(index.includes(`/journal/${guide.slug}`));
     assert.ok(index.includes(`/journal-images/${guide.cover_image_id}`));

@@ -16,6 +16,16 @@
   <url><loc>https://anviltools.vercel.app/contact.html</loc></url>
   <url><loc>https://anviltools.vercel.app/cookie-policy.html</loc></url>
   <url><loc>https://anviltools.vercel.app/disclaimer.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/editorial-policy.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/lab/compatibility.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/lab/fixtures.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/lab/index.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/lab/reports/html-email-link-encoding.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/lab/reports/jpeg-png-webp-image-to-pdf.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/lab/reports/json-duplicate-keys-unicode-escapes.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/lab/reports/pdf-merge-page-types-order.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/lab/reports/qr-capacity-error-correction.html</loc></url>
+  <url><loc>https://anviltools.vercel.app/lab/reports/unicode-emoji-rtl-word-count.html</loc></url>
   <url><loc>https://anviltools.vercel.app/privacy-policy.html</loc></url>
   <url><loc>https://anviltools.vercel.app/terms-of-service.html</loc></url>
   <url><loc>https://anviltools.vercel.app/tools/background-remover.html</loc></url>

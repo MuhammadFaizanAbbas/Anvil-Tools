@@ -1,0 +1,1530 @@
+{
+  "checked_at": "2026-10-09T17:58:05.583Z",
+  "published_posts": 26,
+  "internal_links": 52,
+  "external_links": 111,
+  "broken_internal": [],
+  "automated_external_fetch_exceptions": [
+    {
+      "href": "https://commons.wikimedia.org/wiki/File:Mug_image.jpg",
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design"
+      ],
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "href": "https://pdfa.org/how-to-perform-ocr-on-pdf-documents/",
+      "slugs": [
+        "why-scanned-pdf-not-searchable-ocr-text-layers"
+      ],
+      "ok": false,
+      "status": 403,
+      "final_url": "https://pdfa.org/how-to-perform-ocr-on-pdf-documents/"
+    },
+    {
+      "href": "https://pdfa.org/recently-identified-pdf-digital-signature-vulnerabilities/",
+      "slugs": [
+        "merge-digitally-signed-pdfs-signature-validation"
+      ],
+      "ok": false,
+      "status": 403,
+      "final_url": "https://pdfa.org/recently-identified-pdf-digital-signature-vulnerabilities/"
+    },
+    {
+      "href": "https://pdfa.org/what-is-a-scanned-pdf-and-how-to-make-it-accessible/",
+      "slugs": [
+        "why-scanned-pdf-not-searchable-ocr-text-layers"
+      ],
+      "ok": false,
+      "status": 403,
+      "final_url": "https://pdfa.org/what-is-a-scanned-pdf-and-how-to-make-it-accessible/"
+    },
+    {
+      "href": "https://pdfa.org/wp-content/uploads/2017/07/PDFraster10.pdf",
+      "slugs": [
+        "image-to-pdf-page-size-pixels-points-a4"
+      ],
+      "ok": false,
+      "status": 403,
+      "final_url": "https://pdfa.org/wp-content/uploads/2017/07/PDFraster10.pdf"
+    },
+    {
+      "href": "https://pdfa.org/wp-content/uploads/2025/10/0-1-16_15-YulianEugene-Document_Security_Authenticity.pdf",
+      "slugs": [
+        "merge-digitally-signed-pdfs-signature-validation"
+      ],
+      "ok": false,
+      "status": 403,
+      "final_url": "https://pdfa.org/wp-content/uploads/2025/10/0-1-16_15-YulianEugene-Document_Security_Authenticity.pdf"
+    }
+  ],
+  "internal_results": [
+    {
+      "href": "/journal/why-email-verification-links-fail",
+      "slugs": [
+        "why-html-emails-look-different-plain-text-css-mime",
+        "spf-dkim-dmarc-email-authentication-alignment"
+      ],
+      "ok": true,
+      "kind": "journal"
+    },
+    {
+      "href": "/tools/temp-mail.html",
+      "slugs": [
+        "why-html-emails-look-different-plain-text-css-mime",
+        "why-html-emails-look-different-plain-text-css-mime",
+        "spf-dkim-dmarc-email-authentication-alignment",
+        "spf-dkim-dmarc-email-authentication-alignment",
+        "why-email-verification-links-fail",
+        "why-email-verification-links-fail",
+        "temporary-email-for-authorized-testing-and-permitted-messages"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/text-case-converter.html",
+      "slugs": [
+        "safe-filename-rules-windows-macos-web",
+        "safe-filename-rules-windows-macos-web",
+        "title-case-vs-sentence-case-editing-guide"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/journal/title-case-vs-sentence-case-editing-guide",
+      "slugs": [
+        "safe-filename-rules-windows-macos-web"
+      ],
+      "ok": true,
+      "kind": "journal"
+    },
+    {
+      "href": "/tools/image-to-pdf.html",
+      "slugs": [
+        "image-to-pdf-page-size-pixels-points-a4",
+        "image-to-pdf-page-size-pixels-points-a4",
+        "why-scanned-pdf-not-searchable-ocr-text-layers",
+        "simple-pdf-workflow-without-software"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/journal/why-scanned-pdf-not-searchable-ocr-text-layers",
+      "slugs": [
+        "image-to-pdf-page-size-pixels-points-a4"
+      ],
+      "ok": true,
+      "kind": "journal"
+    },
+    {
+      "href": "/journal/simple-pdf-workflow-without-software",
+      "slugs": [
+        "image-to-pdf-page-size-pixels-points-a4"
+      ],
+      "ok": true,
+      "kind": "journal"
+    },
+    {
+      "href": "/tools/uuid-generator.html",
+      "slugs": [
+        "are-uuid-v4-identifiers-unique-collisions-security",
+        "are-uuid-v4-identifiers-unique-collisions-security",
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/journal/why-image-colors-change-after-export-srgb-p3",
+      "slugs": [
+        "why-images-look-blurry-on-websites-resolution-dpr"
+      ],
+      "ok": true,
+      "kind": "journal"
+    },
+    {
+      "href": "/tools/background-remover.html",
+      "slugs": [
+        "why-images-look-blurry-on-websites-resolution-dpr",
+        "why-images-look-blurry-on-websites-resolution-dpr",
+        "why-image-colors-change-after-export-srgb-p3",
+        "photo-exif-metadata-gps-privacy-after-editing",
+        "best-practices-for-background-removal-when-working-with-design"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/journal/best-practices-for-background-removal-when-working-with-design",
+      "slugs": [
+        "why-images-look-blurry-on-websites-resolution-dpr"
+      ],
+      "ok": true,
+      "kind": "journal"
+    },
+    {
+      "href": "/tools/word-counter.html",
+      "slugs": [
+        "voiceover-script-length-words-per-minute-video-timing",
+        "voiceover-script-length-words-per-minute-video-timing"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/blog/word-counter-unicode-experiment.html",
+      "slugs": [
+        "voiceover-script-length-words-per-minute-video-timing"
+      ],
+      "ok": true,
+      "kind": "static-blog"
+    },
+    {
+      "href": "/journal/temporary-email-for-authorized-testing-and-permitted-messages",
+      "slugs": [
+        "why-email-verification-links-fail",
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "journal"
+    },
+    {
+      "href": "/tools/pdf-merge.html",
+      "slugs": [
+        "merge-digitally-signed-pdfs-signature-validation",
+        "merge-digitally-signed-pdfs-signature-validation",
+        "why-scanned-pdf-not-searchable-ocr-text-layers",
+        "simple-pdf-workflow-without-software"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/text-diff-checker.html",
+      "slugs": [
+        "review-text-changes-before-publishing",
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/unit-converter.html",
+      "slugs": [
+        "temperature-changes-celsius-fahrenheit-kelvin",
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/password-generator.html",
+      "slugs": [
+        "what-makes-a-password-strong-length-randomness-uniqueness-mfa"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/color-palette-generator.html",
+      "slugs": [
+        "turn-color-palette-into-accessible-ui"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/hash-generator.html",
+      "slugs": [
+        "choosing-sha-256-sha-384-or-sha-512-a-practical-hashing-decision-guide",
+        "why-sha256-hashes-differ-for-identical-looking-text",
+        "why-sha256-hashes-differ-for-identical-looking-text",
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/qr-code-generator.html",
+      "slugs": [
+        "qr-codes-scan-reliably-print-screen-guide"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/json-formatter.html",
+      "slugs": [
+        "valid-json-api-errors-types-nulls-structure",
+        "why-sha256-hashes-differ-for-identical-looking-text",
+        "small-tools-that-save-developers-time",
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/url-encoder-decoder.html",
+      "slugs": [
+        "url-encoding-mistakes-spaces-plus-unicode",
+        "url-encoding-mistakes-spaces-plus-unicode",
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/privacy-policy.html",
+      "slugs": [
+        "url-encoding-mistakes-spaces-plus-unicode",
+        "why-sha256-hashes-differ-for-identical-looking-text",
+        "best-practices-for-background-removal-when-working-with-design",
+        "simple-pdf-workflow-without-software",
+        "temporary-email-for-authorized-testing-and-permitted-messages",
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/journal/small-tools-that-save-developers-time",
+      "slugs": [
+        "url-encoding-mistakes-spaces-plus-unicode",
+        "why-sha256-hashes-differ-for-identical-looking-text"
+      ],
+      "ok": true,
+      "kind": "journal"
+    },
+    {
+      "href": "/journal/why-sha256-hashes-differ-for-identical-looking-text",
+      "slugs": [
+        "url-encoding-mistakes-spaces-plus-unicode"
+      ],
+      "ok": true,
+      "kind": "journal"
+    },
+    {
+      "href": "/blog/json-formatter-edge-cases.html",
+      "slugs": [
+        "why-sha256-hashes-differ-for-identical-looking-text"
+      ],
+      "ok": true,
+      "kind": "static-blog"
+    },
+    {
+      "href": "/tools/base64-tool.html",
+      "slugs": [
+        "why-sha256-hashes-differ-for-identical-looking-text",
+        "small-tools-that-save-developers-time",
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/journal/url-encoding-mistakes-spaces-plus-unicode",
+      "slugs": [
+        "why-sha256-hashes-differ-for-identical-looking-text"
+      ],
+      "ok": true,
+      "kind": "journal"
+    },
+    {
+      "href": "/assets/images/editorial/background-removal-example.png",
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/images/editorial/background-removal-input.png",
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/images/editorial/background-removal-output.png",
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/images/editorial/mug-photo-input.webp",
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/images/editorial/mug-photo-output.webp",
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/examples/images/mug-photo.jpg",
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/examples/images/mug-photo-output.png",
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/examples/images/SOURCE.json",
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/images/editorial/pdf-ordering-example.png",
+      "slugs": [
+        "simple-pdf-workflow-without-software"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/examples/pdf/cover.pdf",
+      "slugs": [
+        "simple-pdf-workflow-without-software"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/examples/pdf/application.pdf",
+      "slugs": [
+        "simple-pdf-workflow-without-software"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/examples/pdf/support.pdf",
+      "slugs": [
+        "simple-pdf-workflow-without-software"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/examples/pdf/merged-example.pdf",
+      "slugs": [
+        "simple-pdf-workflow-without-software"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/images/editorial/temporary-email-example.png",
+      "slugs": [
+        "temporary-email-for-authorized-testing-and-permitted-messages"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/jwt-decoder.html",
+      "slugs": [
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/csv-to-json.html",
+      "slugs": [
+        "small-tools-that-save-developers-time",
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/unix-timestamp-converter.html",
+      "slugs": [
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/tools/user-agent-generator.html",
+      "slugs": [
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/examples/developer/quoted-newline.csv",
+      "slugs": [
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/examples/developer/expected.json",
+      "slugs": [
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/examples/developer/expected.min.json",
+      "slugs": [
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/examples/developer/expected.base64.txt",
+      "slugs": [
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    },
+    {
+      "href": "/assets/examples/developer/workflow.json",
+      "slugs": [
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "kind": "static-file"
+    }
+  ],
+  "external_results": [
+    {
+      "href": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/sha256/cases.json",
+      "slugs": [
+        "why-sha256-hashes-differ-for-identical-looking-text"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/sha256/cases.json"
+    },
+    {
+      "href": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/sha256/results.json",
+      "slugs": [
+        "why-sha256-hashes-differ-for-identical-looking-text"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/sha256/results.json"
+    },
+    {
+      "href": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/sha256/tool-run.png",
+      "slugs": [
+        "why-sha256-hashes-differ-for-identical-looking-text"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/sha256/tool-run.png"
+    },
+    {
+      "href": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/url-encoding/cases.json",
+      "slugs": [
+        "url-encoding-mistakes-spaces-plus-unicode"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/url-encoding/cases.json"
+    },
+    {
+      "href": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/url-encoding/results.json",
+      "slugs": [
+        "url-encoding-mistakes-spaces-plus-unicode"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/url-encoding/results.json"
+    },
+    {
+      "href": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/url-encoding/tool-run.png",
+      "slugs": [
+        "url-encoding-mistakes-spaces-plus-unicode"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://anvil-tools-backend.vercel.app/api/public/experiment-assets/url-encoding/tool-run.png"
+    },
+    {
+      "href": "https://apastyle.apa.org/style-grammar-guidelines/capitalization/sentence-case",
+      "slugs": [
+        "title-case-vs-sentence-case-editing-guide"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://apastyle.apa.org/style-grammar-guidelines/capitalization/sentence-case"
+    },
+    {
+      "href": "https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case",
+      "slugs": [
+        "title-case-vs-sentence-case-editing-guide"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case"
+    },
+    {
+      "href": "https://auth0.com/docs/manage-users/user-accounts/verify-emails",
+      "slugs": [
+        "why-email-verification-links-fail"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://auth0.com/docs/manage-users/user-accounts/verify-emails"
+    },
+    {
+      "href": "https://biblio.ugent.be/publication/8647789",
+      "slugs": [
+        "voiceover-script-length-words-per-minute-video-timing"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://biblio.ugent.be/publication/8647789"
+    },
+    {
+      "href": "https://blog.adobe.com/en/publish/2005/11/18/understanding-f",
+      "slugs": [
+        "why-scanned-pdf-not-searchable-ocr-text-layers"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://blog.adobe.com/en/publish/2005/11/18/understanding-f"
+    },
+    {
+      "href": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+      "slugs": [
+        "what-makes-a-password-strong-length-randomness-uniqueness-mfa"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html"
+    },
+    {
+      "href": "https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.html",
+      "slugs": [
+        "what-makes-a-password-strong-length-randomness-uniqueness-mfa"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.html"
+    },
+    {
+      "href": "https://cheatsheetseries.owasp.org/cheatsheets/Email_Validation_and_Verification_Cheat_Sheet.html",
+      "slugs": [
+        "why-email-verification-links-fail"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Email_Validation_and_Verification_Cheat_Sheet.html"
+    },
+    {
+      "href": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html",
+      "slugs": [
+        "safe-filename-rules-windows-macos-web"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html"
+    },
+    {
+      "href": "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html",
+      "slugs": [
+        "why-email-verification-links-fail"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+    },
+    {
+      "href": "https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html",
+      "slugs": [
+        "are-uuid-v4-identifiers-unique-collisions-security"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html"
+    },
+    {
+      "href": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html",
+      "slugs": [
+        "choosing-sha-256-sha-384-or-sha-512-a-practical-hashing-decision-guide"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
+    },
+    {
+      "href": "https://commons.wikimedia.org/wiki/File:Mug_image.jpg",
+      "slugs": [
+        "best-practices-for-background-removal-when-working-with-design"
+      ],
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "href": "https://csrc.nist.gov/projects/hash-functions/nist-policy-on-hash-functions",
+      "slugs": [
+        "choosing-sha-256-sha-384-or-sha-512-a-practical-hashing-decision-guide"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://csrc.nist.gov/projects/hash-functions/nist-policy-on-hash-functions"
+    },
+    {
+      "href": "https://csrc.nist.gov/pubs/fips/180-4/final",
+      "slugs": [
+        "choosing-sha-256-sha-384-or-sha-512-a-practical-hashing-decision-guide"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://csrc.nist.gov/pubs/fips/180-4/final"
+    },
+    {
+      "href": "https://developer.apple.com/documentation/technologyoverviews/files-and-directories",
+      "slugs": [
+        "safe-filename-rules-windows-macos-web"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.apple.com/documentation/technologyoverviews/files-and-directories"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Glossary/Gamut",
+      "slugs": [
+        "why-image-colors-change-after-export-srgb-p3"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Glossary/Gamut"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID",
+      "slugs": [
+        "are-uuid-v4-identifiers-unique-collisions-security"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Crypto/randomUUID"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob",
+      "slugs": [
+        "why-image-colors-change-after-export-srgb-p3",
+        "photo-exif-metadata-gps-privacy-after-editing"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL",
+      "slugs": [
+        "photo-exif-metadata-gps-privacy-after-editing"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/naturalWidth",
+      "slugs": [
+        "why-images-look-blurry-on-websites-resolution-dpr",
+        "why-images-look-blurry-on-websites-resolution-dpr"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/naturalWidth"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest",
+      "slugs": [
+        "why-sha256-hashes-differ-for-identical-looking-text"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/digest"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder",
+      "slugs": [
+        "why-sha256-hashes-differ-for-identical-looking-text"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams",
+      "slugs": [
+        "url-encoding-mistakes-spaces-plus-unicode"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/API/Window/atob",
+      "slugs": [
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/atob"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/%40media/color-gamut",
+      "slugs": [
+        "why-image-colors-change-after-export-srgb-p3"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/%40media/color-gamut"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/image-rendering",
+      "slugs": [
+        "why-images-look-blurry-on-websites-resolution-dpr",
+        "why-images-look-blurry-on-websites-resolution-dpr"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/image-rendering"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit",
+      "slugs": [
+        "why-images-look-blurry-on-websites-resolution-dpr"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/object-fit"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform",
+      "slugs": [
+        "title-case-vs-sentence-case-editing-guide"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-transform"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images",
+      "slugs": [
+        "why-images-look-blurry-on-websites-resolution-dpr",
+        "why-images-look-blurry-on-websites-resolution-dpr"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img",
+      "slugs": [
+        "why-images-look-blurry-on-websites-resolution-dpr"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI",
+      "slugs": [
+        "url-encoding-mistakes-spaces-plus-unicode"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent",
+      "slugs": [
+        "url-encoding-mistakes-spaces-plus-unicode"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+      "slugs": [
+        "valid-json-api-errors-types-nulls-structure",
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify",
+      "slugs": [
+        "valid-json-api-errors-types-nulls-structure"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify"
+    },
+    {
+      "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize",
+      "slugs": [
+        "why-sha256-hashes-differ-for-identical-looking-text"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize"
+    },
+    {
+      "href": "https://developers.google.com/search/docs/crawling-indexing/url-structure",
+      "slugs": [
+        "safe-filename-rules-windows-macos-web"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://developers.google.com/search/docs/crawling-indexing/url-structure?hl=pt-br"
+    },
+    {
+      "href": "https://emailmarkup.org/en/docs/sanitizer/",
+      "slugs": [
+        "why-html-emails-look-different-plain-text-css-mime"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://emailmarkup.org/en/docs/sanitizer/"
+    },
+    {
+      "href": "https://exiftool.org/",
+      "slugs": [
+        "photo-exif-metadata-gps-privacy-after-editing"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://exiftool.org/"
+    },
+    {
+      "href": "https://exiftool.org/faq.html",
+      "slugs": [
+        "photo-exif-metadata-gps-privacy-after-editing"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://exiftool.org/faq.html"
+    },
+    {
+      "href": "https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History",
+      "slugs": [
+        "review-text-changes-before-publishing"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History"
+    },
+    {
+      "href": "https://git-scm.com/docs/git-diff",
+      "slugs": [
+        "review-text-changes-before-publishing"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://git-scm.com/docs/git-diff"
+    },
+    {
+      "href": "https://helpx.adobe.com/acrobat/desktop/e-sign-documents/learn-about-signatures/signed-pdf-limitations.html",
+      "slugs": [
+        "merge-digitally-signed-pdfs-signature-validation"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://helpx.adobe.com/acrobat/desktop/e-sign-documents/learn-about-signatures/signed-pdf-limitations.html"
+    },
+    {
+      "href": "https://helpx.adobe.com/acrobat/desktop/print-documents/set-up-and-print-pdfs/page-size.html",
+      "slugs": [
+        "image-to-pdf-page-size-pixels-points-a4"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://helpx.adobe.com/acrobat/desktop/print-documents/set-up-and-print-pdfs/page-size.html"
+    },
+    {
+      "href": "https://helpx.adobe.com/acrobat/web/e-sign-documents/fill-and-sign/types-of-signatures.html",
+      "slugs": [
+        "merge-digitally-signed-pdfs-signature-validation"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://helpx.adobe.com/acrobat/web/e-sign-documents/fill-and-sign/types-of-signatures.html"
+    },
+    {
+      "href": "https://helpx.adobe.com/ca/acrobat/desktop/create-documents/scan-documents-to-pdfs/recognize-text.html",
+      "slugs": [
+        "why-scanned-pdf-not-searchable-ocr-text-layers"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://helpx.adobe.com/ca/acrobat/desktop/create-documents/scan-documents-to-pdfs/recognize-text.html"
+    },
+    {
+      "href": "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-profiles/change-a-documents-color-profile.html",
+      "slugs": [
+        "why-image-colors-change-after-export-srgb-p3"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-profiles/change-a-documents-color-profile.html"
+    },
+    {
+      "href": "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-profiles/manage-documents-colors-for-online-viewing.html",
+      "slugs": [
+        "why-image-colors-change-after-export-srgb-p3"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://helpx.adobe.com/photoshop/desktop/adjust-color/color-profiles/manage-documents-colors-for-online-viewing.html"
+    },
+    {
+      "href": "https://helpx.adobe.com/sa_en/acrobat/desktop/e-sign-documents/manage-digital-signatures/validate-digital-sign.html",
+      "slugs": [
+        "merge-digitally-signed-pdfs-signature-validation"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://helpx.adobe.com/sa_en/acrobat/desktop/e-sign-documents/manage-digital-signatures/validate-digital-sign.html"
+    },
+    {
+      "href": "https://learn.microsoft.com/en-us/defender-office-365/safe-links-about",
+      "slugs": [
+        "why-email-verification-links-fail"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/defender-office-365/safe-links-about"
+    },
+    {
+      "href": "https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file",
+      "slugs": [
+        "safe-filename-rules-windows-macos-web"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file"
+    },
+    {
+      "href": "https://man7.org/linux/man-pages/man7/filename.7.html",
+      "slugs": [
+        "safe-filename-rules-windows-macos-web"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://man7.org/linux/man-pages/man7/filename.7.html"
+    },
+    {
+      "href": "https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/apa_headings_and_seriation.html",
+      "slugs": [
+        "title-case-vs-sentence-case-editing-guide"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/apa_headings_and_seriation.html"
+    },
+    {
+      "href": "https://pages.nist.gov/800-63-4-Implementation-Resources/",
+      "slugs": [
+        "what-makes-a-password-strong-length-randomness-uniqueness-mfa"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://pages.nist.gov/800-63-4-Implementation-Resources/"
+    },
+    {
+      "href": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "slugs": [
+        "what-makes-a-password-strong-length-randomness-uniqueness-mfa"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://pages.nist.gov/800-63-4/sp800-63b.html"
+    },
+    {
+      "href": "https://pdf-lib.js.org/",
+      "slugs": [
+        "simple-pdf-workflow-without-software"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://pdf-lib.js.org/"
+    },
+    {
+      "href": "https://pdf-lib.js.org/docs/api/classes/pdfimage",
+      "slugs": [
+        "image-to-pdf-page-size-pixels-points-a4"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://pdf-lib.js.org/docs/api/classes/pdfimage"
+    },
+    {
+      "href": "https://pdf-lib.js.org/docs/api/classes/pdfpage",
+      "slugs": [
+        "image-to-pdf-page-size-pixels-points-a4"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://pdf-lib.js.org/docs/api/classes/pdfpage"
+    },
+    {
+      "href": "https://pdfa.org/how-to-perform-ocr-on-pdf-documents/",
+      "slugs": [
+        "why-scanned-pdf-not-searchable-ocr-text-layers"
+      ],
+      "ok": false,
+      "status": 403,
+      "final_url": "https://pdfa.org/how-to-perform-ocr-on-pdf-documents/"
+    },
+    {
+      "href": "https://pdfa.org/recently-identified-pdf-digital-signature-vulnerabilities/",
+      "slugs": [
+        "merge-digitally-signed-pdfs-signature-validation"
+      ],
+      "ok": false,
+      "status": 403,
+      "final_url": "https://pdfa.org/recently-identified-pdf-digital-signature-vulnerabilities/"
+    },
+    {
+      "href": "https://pdfa.org/what-is-a-scanned-pdf-and-how-to-make-it-accessible/",
+      "slugs": [
+        "why-scanned-pdf-not-searchable-ocr-text-layers"
+      ],
+      "ok": false,
+      "status": 403,
+      "final_url": "https://pdfa.org/what-is-a-scanned-pdf-and-how-to-make-it-accessible/"
+    },
+    {
+      "href": "https://pdfa.org/wp-content/uploads/2017/07/PDFraster10.pdf",
+      "slugs": [
+        "image-to-pdf-page-size-pixels-points-a4"
+      ],
+      "ok": false,
+      "status": 403,
+      "final_url": "https://pdfa.org/wp-content/uploads/2017/07/PDFraster10.pdf"
+    },
+    {
+      "href": "https://pdfa.org/wp-content/uploads/2025/10/0-1-16_15-YulianEugene-Document_Security_Authenticity.pdf",
+      "slugs": [
+        "merge-digitally-signed-pdfs-signature-validation"
+      ],
+      "ok": false,
+      "status": 403,
+      "final_url": "https://pdfa.org/wp-content/uploads/2025/10/0-1-16_15-YulianEugene-Document_Security_Authenticity.pdf"
+    },
+    {
+      "href": "https://student.kent.ac.uk/studies/giving-an-oral-presentation",
+      "slugs": [
+        "voiceover-script-length-words-per-minute-video-timing",
+        "voiceover-script-length-words-per-minute-video-timing"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://student.kent.ac.uk/studies/giving-an-oral-presentation"
+    },
+    {
+      "href": "https://support.auth0.com/center/s/article/Login-links-in-emails-and-Safe-Links-scanners-leading-to-rate-limit-issues",
+      "slugs": [
+        "why-email-verification-links-fail"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://support.auth0.com/center/s/article/Login-links-in-emails-and-Safe-Links-scanners-leading-to-rate-limit-issues"
+    },
+    {
+      "href": "https://support.google.com/mail/answer/145919",
+      "slugs": [
+        "why-html-emails-look-different-plain-text-css-mime"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://support.google.com/mail/answer/145919"
+    },
+    {
+      "href": "https://support.google.com/mail/answer/180707",
+      "slugs": [
+        "spf-dkim-dmarc-email-authentication-alignment"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://support.google.com/mail/answer/180707"
+    },
+    {
+      "href": "https://support.google.com/mail/answer/81126",
+      "slugs": [
+        "spf-dkim-dmarc-email-authentication-alignment"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://support.google.com/mail/answer/81126"
+    },
+    {
+      "href": "https://support.microsoft.com/en-us/outlook/block-or-unblock-automatic-picture-downloads-in-classic-outlook-email-messages",
+      "slugs": [
+        "why-html-emails-look-different-plain-text-css-mime"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://support.microsoft.com/en-us/outlook/block-or-unblock-automatic-picture-downloads-in-classic-outlook-email-messages"
+    },
+    {
+      "href": "https://web.dev/learn/design/responsive-images",
+      "slugs": [
+        "why-images-look-blurry-on-websites-resolution-dpr"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://web.dev/learn/design/responsive-images"
+    },
+    {
+      "href": "https://www.caniemail.com/",
+      "slugs": [
+        "why-html-emails-look-different-plain-text-css-mime",
+        "why-html-emails-look-different-plain-text-css-mime"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.caniemail.com/"
+    },
+    {
+      "href": "https://www.gnu.org/software/diffutils/manual/",
+      "slugs": [
+        "review-text-changes-before-publishing"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.gnu.org/software/diffutils/manual/"
+    },
+    {
+      "href": "https://www.guerrillamail.com/about",
+      "slugs": [
+        "temporary-email-for-authorized-testing-and-permitted-messages"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.guerrillamail.com/about"
+    },
+    {
+      "href": "https://www.guerrillamail.com/tos",
+      "slugs": [
+        "temporary-email-for-authorized-testing-and-permitted-messages"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.guerrillamail.com/tos"
+    },
+    {
+      "href": "https://www.nist.gov/cybersecurity-and-privacy/how-do-i-create-good-password",
+      "slugs": [
+        "what-makes-a-password-strong-length-randomness-uniqueness-mfa"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.nist.gov/cybersecurity-and-privacy/how-do-i-create-good-password"
+    },
+    {
+      "href": "https://www.nist.gov/pml/owm/si-units-temperature",
+      "slugs": [
+        "temperature-changes-celsius-fahrenheit-kelvin"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.nist.gov/pml/owm/si-units-temperature"
+    },
+    {
+      "href": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9",
+      "slugs": [
+        "temperature-changes-celsius-fahrenheit-kelvin"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b9"
+    },
+    {
+      "href": "https://www.nist.gov/si-redefinition/kelvin-introduction",
+      "slugs": [
+        "temperature-changes-celsius-fahrenheit-kelvin"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.nist.gov/si-redefinition/kelvin-introduction"
+    },
+    {
+      "href": "https://www.postgresql.org/docs/current/datatype-uuid.html",
+      "slugs": [
+        "are-uuid-v4-identifiers-unique-collisions-security"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.postgresql.org/docs/current/datatype-uuid.html"
+    },
+    {
+      "href": "https://www.postgresql.org/docs/current/functions-uuid.html",
+      "slugs": [
+        "are-uuid-v4-identifiers-unique-collisions-security"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.postgresql.org/docs/current/functions-uuid.html"
+    },
+    {
+      "href": "https://www.qrcode.com/en/about/standards.html",
+      "slugs": [
+        "qr-codes-scan-reliably-print-screen-guide"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.qrcode.com/en/about/standards.html"
+    },
+    {
+      "href": "https://www.qrcode.com/en/about/version.html",
+      "slugs": [
+        "qr-codes-scan-reliably-print-screen-guide"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.qrcode.com/en/about/version.html"
+    },
+    {
+      "href": "https://www.qrcode.com/en/howto/cell.html",
+      "slugs": [
+        "qr-codes-scan-reliably-print-screen-guide"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.qrcode.com/en/howto/cell.html"
+    },
+    {
+      "href": "https://www.qrcode.com/en/howto/code.html",
+      "slugs": [
+        "qr-codes-scan-reliably-print-screen-guide"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.qrcode.com/en/howto/code.html"
+    },
+    {
+      "href": "https://www.rfc-editor.org/info/rfc2045/",
+      "slugs": [
+        "why-html-emails-look-different-plain-text-css-mime"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc2045/"
+    },
+    {
+      "href": "https://www.rfc-editor.org/info/rfc2046/",
+      "slugs": [
+        "why-html-emails-look-different-plain-text-css-mime"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc2046/"
+    },
+    {
+      "href": "https://www.rfc-editor.org/info/rfc2392/",
+      "slugs": [
+        "why-html-emails-look-different-plain-text-css-mime"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc2392/"
+    },
+    {
+      "href": "https://www.rfc-editor.org/info/rfc6376",
+      "slugs": [
+        "spf-dkim-dmarc-email-authentication-alignment"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc6376/"
+    },
+    {
+      "href": "https://www.rfc-editor.org/info/rfc7208",
+      "slugs": [
+        "spf-dkim-dmarc-email-authentication-alignment"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc7208/"
+    },
+    {
+      "href": "https://www.rfc-editor.org/info/rfc7960",
+      "slugs": [
+        "spf-dkim-dmarc-email-authentication-alignment"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc7960/"
+    },
+    {
+      "href": "https://www.rfc-editor.org/info/rfc8601",
+      "slugs": [
+        "spf-dkim-dmarc-email-authentication-alignment"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc8601/"
+    },
+    {
+      "href": "https://www.rfc-editor.org/info/rfc9989",
+      "slugs": [
+        "spf-dkim-dmarc-email-authentication-alignment"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc9989/"
+    },
+    {
+      "href": "https://www.rfc-editor.org/rfc/rfc2104",
+      "slugs": [
+        "choosing-sha-256-sha-384-or-sha-512-a-practical-hashing-decision-guide"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc2104/"
+    },
+    {
+      "href": "https://www.rfc-editor.org/rfc/rfc7519",
+      "slugs": [
+        "small-tools-that-save-developers-time"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc7519/"
+    },
+    {
+      "href": "https://www.rfc-editor.org/rfc/rfc8259",
+      "slugs": [
+        "valid-json-api-errors-types-nulls-structure"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/info/rfc8259/"
+    },
+    {
+      "href": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "slugs": [
+        "why-email-verification-links-fail"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9110.html"
+    },
+    {
+      "href": "https://www.rfc-editor.org/rfc/rfc9562.html",
+      "slugs": [
+        "are-uuid-v4-identifiers-unique-collisions-security"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc9562.html"
+    },
+    {
+      "href": "https://www.trentu.ca/academicskills/how-guides/how-present-university-and-beyond/delivering-oral-presentation-public-speaking",
+      "slugs": [
+        "voiceover-script-length-words-per-minute-video-timing"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.trentu.ca/academicskills/how-guides/how-present-university-and-beyond/delivering-oral-presentation-public-speaking"
+    },
+    {
+      "href": "https://www.w3.org/TR/css-color-4/",
+      "slugs": [
+        "why-image-colors-change-after-export-srgb-p3"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.w3.org/TR/css-color-4/"
+    },
+    {
+      "href": "https://www.w3.org/TR/WCAG22/",
+      "slugs": [
+        "turn-color-palette-into-accessible-ui"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "href": "https://www.w3.org/TR/WCAG22/#use-of-color",
+      "slugs": [
+        "turn-color-palette-into-accessible-ui"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.w3.org/TR/WCAG22/"
+    },
+    {
+      "href": "https://www.w3.org/WAI/media/av/captions/",
+      "slugs": [
+        "voiceover-script-length-words-per-minute-video-timing"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.w3.org/WAI/media/av/captions/"
+    },
+    {
+      "href": "https://www.w3.org/WAI/media/av/description/",
+      "slugs": [
+        "voiceover-script-length-words-per-minute-video-timing",
+        "voiceover-script-length-words-per-minute-video-timing"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.w3.org/WAI/media/av/description/"
+    },
+    {
+      "href": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum",
+      "slugs": [
+        "turn-color-palette-into-accessible-ui"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum"
+    },
+    {
+      "href": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "slugs": [
+        "turn-color-palette-into-accessible-ui"
+      ],
+      "ok": true,
+      "status": 200,
+      "final_url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html"
+    }
+  ]
+}

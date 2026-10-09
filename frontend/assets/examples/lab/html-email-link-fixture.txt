@@ -1,0 +1,14 @@
+Created by Anvil Tools
+Synthetic test data
+No personal information
+Permitted for testing
+
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Synthetic HTML email link fixture</title>
+<body>
+<p><a href="https://example.com/confirm?token=A%2BB%2FC&amp;name=Zo%C3%AB">Confirm synthetic address</a></p>
+<p>Expected decoded query values: token = A+B/C; name = Zoë.</p>
+</body>
+</html>

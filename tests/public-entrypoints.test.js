@@ -35,8 +35,7 @@ test('PHP and Node renderers bypass old cached CSS and retain the same asset pat
     const legacy = html.replace(/(assets\/css\/[^"?]+\.css)\?[^" ]+/g, '$1');
     assert.equal(versionPublicStyles(legacy), html);
     assert.equal(versionPublicStyles(html), html);
-    const input = Buffer.from(legacy).toString('base64');
-    const phpHtml = execFileSync(process.env.PHP_PATH || 'php', ['-r', `require '${helper}'; echo version_public_styles(base64_decode('${input}'));`], { encoding: 'utf8' });
+    const phpHtml = execFileSync(process.env.PHP_PATH || 'php', ['-r', `require '${helper}'; echo version_public_styles(stream_get_contents(STDIN));`], { encoding: 'utf8', input: legacy });
     assert.equal(phpHtml, html);
   }
 });
