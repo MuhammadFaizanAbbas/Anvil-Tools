@@ -36,6 +36,16 @@ test('Lab ships six category reports with reproducibility and correction section
   }
 });
 
+test('Lab and editorial pages reuse the established public header navigation', () => {
+  const expected = ['Home', 'All tools', 'Guides &amp; experiments', 'About', 'Contact'];
+  for (const relative of ['editorial-policy.html', 'lab/index.html', 'lab/fixtures.html', 'lab/compatibility.html']) {
+    const html = read(relative);
+    const nav = html.match(/<nav class="main-nav"[^>]*>([\s\S]*?)<\/nav>/)?.[1] || '';
+    assert.deepEqual([...nav.matchAll(/<a[^>]*>(.*?)<\/a>/g)].map(match => match[1]), expected, relative);
+    assert.doesNotMatch(nav, />Lab<\/a>/, relative);
+  }
+});
+
 test('fixture manifest records exact sizes and SHA-256 hashes', () => {
   const manifest = JSON.parse(read('assets/examples/lab/fixture-manifest.json'));
   assert.ok(manifest.files.length >= 12);
