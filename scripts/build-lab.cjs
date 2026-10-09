@@ -4,6 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const { categoryLabel, displayDate } = require('../backend/src/lib/articles');
+const { canonicalFooter, canonicalHeader } = require('./public-chrome.cjs');
 
 const root = path.resolve(__dirname, '..');
 const frontend = path.join(root, 'frontend');
@@ -32,13 +33,9 @@ const toolNames = {
   'uuid-generator': 'UUID Generator', 'word-counter': 'Word & Character Counter',
 };
 
-function footer(prefix = '') {
-  return `<footer class="site-footer"><div class="wrap"><div class="footer-grid"><div><div class="logo" style="margin-bottom:10px;"><img class="brand-mark" src="${prefix}assets/images/anvil-mark.svg" width="36" height="36" alt="">Anvil Tools</div><p class="small-note">Free, browser-based tools with reproducible checks, honest limits, and no account required for most tools.</p></div><div><h3>Tools</h3><ul><li><a href="${prefix}tools/index.html">All tools</a></li><li><a href="${prefix}lab/index.html">Anvil Tools Lab</a></li></ul></div><div><h3>Company</h3><ul><li><a href="${prefix}about.html">About</a></li><li><a href="${prefix}editorial-policy.html">Editorial policy</a></li><li><a href="${prefix}contact.html">Contact</a></li></ul></div><div><h3>Legal</h3><ul><li><a href="${prefix}privacy-policy.html">Privacy policy</a></li><li><a href="${prefix}terms-of-service.html">Terms of service</a></li><li><a href="${prefix}disclaimer.html">Disclaimer</a></li></ul></div></div><div class="footer-bottom"><span>&copy; 2026 Anvil Tools.</span><span>Anvil Tools is a VelloxTech project.</span></div></div></footer>`;
-}
-
 function page({ title, description, pathname, body, prefix = '' }) {
   const canonical = origin + pathname;
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)} | Anvil Tools</title><meta name="description" content="${escape(description)}"><link rel="canonical" href="${canonical}"><link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon-48.png"><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png"><link rel="stylesheet" href="${prefix}assets/css/style.css"><link rel="stylesheet" href="${prefix}assets/css/refinements.css"><link rel="stylesheet" href="${prefix}assets/css/design.css"><link rel="stylesheet" href="${prefix}assets/css/content.css"><meta property="og:type" content="website"><meta property="og:title" content="${escape(title)} | Anvil Tools"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary"></head><body class="public-site"><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="header-row"><a class="logo" href="/"><img class="brand-mark" src="${prefix}assets/images/anvil-mark.svg" width="36" height="36" alt="">Anvil Tools</a><button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-navigation"><span aria-hidden="true">&#9776;</span></button><nav class="main-nav" id="main-navigation"><a href="/">Home</a><a href="/tools/index.html">All tools</a><a href="/blog/index.html">Guides &amp; experiments</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav></div></header><main class="wrap" id="main-content">${body}</main>${footer(prefix)}<script src="${prefix}assets/js/main.js" defer></script></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)} | Anvil Tools</title><meta name="description" content="${escape(description)}"><link rel="canonical" href="${canonical}"><link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon-48.png"><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png"><link rel="stylesheet" href="${prefix}assets/css/style.css"><link rel="stylesheet" href="${prefix}assets/css/refinements.css"><link rel="stylesheet" href="${prefix}assets/css/design.css"><link rel="stylesheet" href="${prefix}assets/css/content.css"><meta property="og:type" content="website"><meta property="og:title" content="${escape(title)} | Anvil Tools"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary"></head><body class="public-site"><a class="skip-link" href="#main-content">Skip to content</a>${canonicalHeader(pathname)}<main class="wrap" id="main-content">${body}</main>${canonicalFooter()}<script src="${prefix}assets/js/main.js" defer></script></body></html>`;
 }
 
 const policyLd = JSON.stringify({
@@ -174,20 +171,6 @@ for (const [slug, values] of Object.entries(testCards)) {
   const card = `<!-- lab-test-card --><section class="info-section lab-test-card"><h2>Tool test card</h2><dl>${labels.map((label, index) => `<dt>${label}</dt><dd>${escape(values[index])}</dd>`).join('')}</dl><p><a href="/lab/reports/${values[6]}.html">Read the related reproducible Lab report</a></p></section><!-- /lab-test-card -->`;
   html = html.replace('<!-- reviewed-faq -->', `${card}<!-- reviewed-faq -->`);
   writeChanged(file, html);
-}
-
-// Keep the Lab, methodology, and correction path visible throughout the static site.
-for (const file of fs.readdirSync(frontend, { recursive: true })
-  .filter(name => name.endsWith('.html') && !name.startsWith('admin-panel'))) {
-  const fullPath = path.join(frontend, file);
-  let html = fs.readFileSync(fullPath, 'utf8');
-  if (!html.includes('/editorial-policy.html')) {
-    html = html.replace(/(<li><a href="[^"]*about\.html">About<\/a><\/li>)/, '$1<li><a href="/editorial-policy.html">Editorial policy</a></li>');
-  }
-  if (!html.includes('/lab/index.html')) {
-    html = html.replace(/(<li><a href="\/editorial-policy\.html">Editorial policy<\/a><\/li>)/, '$1<li><a href="/lab/index.html">Anvil Tools Lab</a></li>');
-  }
-  writeChanged(fullPath, html);
 }
 
 console.log(`Built editorial policy, ${reports.length} Lab reports, fixture and compatibility pages, six category hubs, and ${Object.keys(testCards).length} tool test cards.`);
