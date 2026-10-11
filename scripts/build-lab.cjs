@@ -130,9 +130,57 @@ const reports = [
   },
 ];
 
+const reportPublished = '2026-10-09';
+
+function reportStructuredData(report) {
+  const pageUrl = `${origin}/lab/reports/${report.slug}.html`;
+  const image = origin + (report.image || '/assets/images/editorial/temporary-email-example.png');
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': `${origin}/#organization`,
+        name: 'VelloxTech',
+        url: `${origin}/about.html`,
+      },
+      {
+        '@type': 'Organization',
+        '@id': `${origin}/editorial-policy.html#velloxtech-editorial-team`,
+        name: 'VelloxTech Editorial Team',
+        url: `${origin}/editorial-policy.html`,
+        parentOrganization: { '@id': `${origin}/#organization` },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${pageUrl}#breadcrumb`,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${origin}/` },
+          { '@type': 'ListItem', position: 2, name: 'Anvil Tools Lab', item: `${origin}/lab/index.html` },
+          { '@type': 'ListItem', position: 3, name: report.title, item: pageUrl },
+        ],
+      },
+      {
+        '@type': 'Article',
+        '@id': `${pageUrl}#article`,
+        headline: report.title,
+        description: report.question,
+        author: { '@id': `${origin}/editorial-policy.html#velloxtech-editorial-team` },
+        publisher: { '@id': `${origin}/#organization` },
+        datePublished: reportPublished,
+        dateModified: reportPublished,
+        image,
+        articleSection: report.category,
+        mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+        breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
+      },
+    ],
+  }).replace(/</g, '\\u003c');
+}
+
 function reportBody(report) {
   const visual = report.image ? `<figure class="article-example"><img src="${report.image}" alt="Recorded output for ${escape(report.title)}" loading="lazy"><figcaption>Recorded first-party output associated with this report.</figcaption></figure>` : `<div class="callout"><strong>Output sample</strong><pre><code>${escape(report.sample)}</code></pre></div>`;
-  return `<p class="breadcrumbs"><a href="/">Home</a> / <a href="/lab/index.html">Lab</a> / <span>${escape(report.category)}</span></p><article class="published-article"><header class="article-header"><span class="eyebrow">${escape(report.category)}</span><h1>${escape(report.title)}</h1><p class="lede">${escape(report.question)}</p><p class="article-meta">Written by: <a href="/editorial-policy.html#velloxtech-editorial-team" rel="author">VelloxTech Editorial Team</a></p><p class="article-meta">Last tested: <time datetime="${report.tested}">${displayDate(report.tested)}</time></p><p class="article-meta"><a href="/contact.html">Report an error or suggest a correction</a></p></header>${visual}<div class="article-content"><h2>Test environment</h2><p>${escape(report.environment)}</p><h2>Fixture and expected result</h2><p>${escape(report.expected)}</p><h2>Reproduction steps</h2><ol>${report.steps.map(step => `<li>${escape(step)}</li>`).join('')}</ol><h2>Observed result</h2><p>${escape(report.observed)}</p><h2>Downloadable evidence</h2><ul>${report.fixtures.map(href => `<li><a href="${href}" download>${escape(path.basename(href))}</a></li>`).join('')}</ul><p>The <a href="/lab/fixtures.html">fixture library</a> publishes SHA-256 hashes for exact-byte verification.</p><h2>What this test does not establish</h2><p>${escape(report.limitations)}</p><h2>Related tool and guide</h2><p><a href="/tools/${report.tool[0]}.html">${escape(report.tool[1])}</a> · <a href="/journal/${report.guide[0]}">${escape(report.guide[1])}</a></p><h2>Change history</h2><ul><li><time datetime="2026-10-09">October 9, 2026</time>: Report organized under Anvil Tools Lab; evidence and limitations reviewed.</li></ul></div></article>`;
+  return `<script type="application/ld+json">${reportStructuredData(report)}</script><p class="breadcrumbs"><a href="/">Home</a> / <a href="/lab/index.html">Lab</a> / <span>${escape(report.category)}</span></p><article class="published-article"><header class="article-header"><span class="eyebrow">${escape(report.category)}</span><h1>${escape(report.title)}</h1><p class="lede">${escape(report.question)}</p><p class="article-meta">Written by: <a href="/editorial-policy.html#velloxtech-editorial-team" rel="author">VelloxTech Editorial Team</a></p><p class="article-meta">Last tested: <time datetime="${report.tested}">${displayDate(report.tested)}</time></p><p class="article-meta"><a href="/contact.html">Report an error or suggest a correction</a></p></header>${visual}<div class="article-content"><h2>Test environment</h2><p>${escape(report.environment)}</p><h2>Fixture and expected result</h2><p>${escape(report.expected)}</p><h2>Reproduction steps</h2><ol>${report.steps.map(step => `<li>${escape(step)}</li>`).join('')}</ol><h2>Observed result</h2><p>${escape(report.observed)}</p><h2>Downloadable evidence</h2><ul>${report.fixtures.map(href => `<li><a href="${href}" download>${escape(path.basename(href))}</a></li>`).join('')}</ul><p>The <a href="/lab/fixtures.html">fixture library</a> publishes SHA-256 hashes for exact-byte verification.</p><h2>What this test does not establish</h2><p>${escape(report.limitations)}</p><h2>Related tool and guide</h2><p><a href="/tools/${report.tool[0]}.html">${escape(report.tool[1])}</a> · <a href="/journal/${report.guide[0]}">${escape(report.guide[1])}</a></p><h2>Change history</h2><ul><li><time datetime="2026-10-09">October 9, 2026</time>: Report organized under Anvil Tools Lab; evidence and limitations reviewed.</li></ul></div></article>`;
 }
 for (const report of reports) writeChanged(path.join(frontend, 'lab/reports', `${report.slug}.html`), page({ title: report.title, description: report.question, pathname: `/lab/reports/${report.slug}.html`, prefix: '../../', body: reportBody(report) }));
 

@@ -31,6 +31,7 @@ for (const experiment of experiments) {
 }
 const experimentCards = experiments.map(item => `<article class="tool-card"><img class="guide-cover" src="${item.cover_path}" alt="${escape(item.cover_alt)}" loading="lazy"><h3><a href="/blog/${item.slug}.html">${escape(item.title)}</a></h3><p>${escape(item.excerpt)}</p><a class="tool-link" href="/blog/${item.slug}.html">Read experiment &#8594;</a></article>`).join('\n');
 const experimentLibrary = `<!-- tested-experiments --><section class="experiments-library" aria-labelledby="experiments-title"><h2 id="experiments-title">Tested tool experiments</h2><p>Actual tool runs with synthetic inputs, screenshots, observed results, and downloadable fixtures. See <a href="/about.html#editorial-testing">how examples are checked</a>.</p><div class="tool-grid">${experimentCards}</div></section><!-- /tested-experiments -->`;
+const labFeature = `<!-- lab-feature --><section class="info-section lab-feature" aria-labelledby="lab-feature-title"><span class="section-kicker">FIRST-PARTY EVIDENCE</span><h2 id="lab-feature-title">Explore the Anvil Tools Lab</h2><p>Reproducible tests, synthetic fixtures, observed outputs, and compatibility notes across developer, email, generator, image, PDF, and text tools.</p><div class="btn-row"><a class="btn primary" href="/lab/index.html">Explore the Lab</a><a class="tool-link" href="/lab/fixtures.html">Browse test fixtures &#8594;</a></div></section><!-- /lab-feature -->`;
 for (const guide of guides) {
   const body = fs.readFileSync(path.join(source, 'editorial', `${guide.slug}.html`), 'utf8');
   const related = guide.related.map(slug => {
@@ -70,6 +71,8 @@ for (const file of walk(frontend)) {
   if (!html.includes('<noscript><style>.public-site .nav-toggle')) html = html.replace('</head>', `${noScript}</head>`);
   html = html.replace(/<span class="current-year"><\/span>/g, `<span class="current-year">${new Date().getUTCFullYear()}</span>`);
   if (file === path.join(frontend, 'blog', 'index.html')) {
+    html = html.replace(/<!-- lab-feature -->[\s\S]*?<!-- \/lab-feature -->/, '');
+    html = html.replace('<section id="publishedBlogs"', `${labFeature}<section id="publishedBlogs"`);
     html = html.replace(/<!-- tested-experiments -->[\s\S]*?<!-- \/tested-experiments -->/, '');
     html = html.replace(/<!-- editorial-library -->[\s\S]*?<!-- \/editorial-library -->/, experimentLibrary + library);
   }

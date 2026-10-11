@@ -36,6 +36,41 @@ test('Lab ships six category reports with reproducibility and correction section
   }
 });
 
+test('every Lab report exposes complete Article and breadcrumb structured data', () => {
+  const directory = path.join(frontend, 'lab/reports');
+  const reports = fs.readdirSync(directory).filter(file => file.endsWith('.html'));
+  for (const report of reports) {
+    const html = fs.readFileSync(path.join(directory, report), 'utf8');
+    const block = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1];
+    assert.ok(block, `${report}: JSON-LD`);
+    const graph = JSON.parse(block)['@graph'];
+    const article = graph.find(item => item['@type'] === 'Article');
+    const breadcrumbs = graph.find(item => item['@type'] === 'BreadcrumbList');
+    const author = graph.find(item => item.name === 'VelloxTech Editorial Team');
+    assert.ok(article?.headline, `${report}: headline`);
+    assert.ok(article?.description, `${report}: description`);
+    assert.ok(article?.datePublished, `${report}: datePublished`);
+    assert.ok(article?.dateModified, `${report}: dateModified`);
+    assert.match(article?.image || '', /^https:\/\/anviltools\.vercel\.app\//, `${report}: image`);
+    assert.equal(article?.mainEntityOfPage?.['@id'], `https://anviltools.vercel.app/lab/reports/${report}`);
+    assert.equal(article?.author?.['@id'], author?.['@id']);
+    assert.equal(breadcrumbs?.itemListElement?.length, 3, `${report}: breadcrumbs`);
+  }
+});
+
+test('guides index features the Lab prominently and the static sitemap contains all Lab URLs', () => {
+  const blog = read('blog/index.html');
+  assert.equal((blog.match(/<!-- lab-feature -->/g) || []).length, 1);
+  assert.ok(blog.indexOf('<!-- lab-feature -->') < blog.indexOf('id="publishedBlogs"'));
+  assert.match(blog, /Explore the Anvil Tools Lab/);
+  assert.match(blog, /href="\/lab\/index\.html"/);
+
+  const sitemap = read('sitemap.xml');
+  const expected = ['index.html', 'fixtures.html', 'compatibility.html', ...fs.readdirSync(path.join(frontend, 'lab/reports')).filter(file => file.endsWith('.html')).map(file => `reports/${file}`)];
+  assert.equal(expected.length, 9);
+  for (const relative of expected) assert.ok(sitemap.includes(`/lab/${relative}`), relative);
+});
+
 test('Lab and editorial pages reuse the established public header navigation', () => {
   const expected = ['Home', 'All tools', 'Guides &amp; experiments', 'About', 'Contact'];
   for (const relative of ['editorial-policy.html', 'lab/index.html', 'lab/fixtures.html', 'lab/compatibility.html']) {
