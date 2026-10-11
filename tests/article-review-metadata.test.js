@@ -41,9 +41,19 @@ test('article structured data connects organization, breadcrumbs, and article au
   const organizations = data['@graph'].filter(item => item['@type'] === 'Organization');
   const breadcrumbs = data['@graph'].find(item => item['@type'] === 'BreadcrumbList');
   const article = data['@graph'].find(item => item['@type'] === 'BlogPosting');
-  const publisher = organizations.find(item => item.name === 'VelloxTech');
+  const publisher = organizations.find(item => item.name === 'Anvil Tools');
+  const parentOrganization = organizations.find(item => item.name === 'VelloxTech');
   const author = organizations.find(item => item.name === 'VelloxTech Editorial Team');
   assert.equal(breadcrumbs.itemListElement.length, 3);
+  assert.equal(publisher['@id'], 'https://nevco.online/#organization');
+  assert.deepEqual(publisher.logo, {
+    '@type': 'ImageObject',
+    url: 'https://nevco.online/assets/images/apple-touch-icon.png',
+    width: 180,
+    height: 180,
+  });
+  assert.equal(publisher.parentOrganization['@id'], parentOrganization['@id']);
+  assert.equal(parentOrganization['@id'], 'https://nevco.online/about.html#velloxtech');
   assert.equal(article.author['@id'], author['@id']);
   assert.equal(article.publisher['@id'], publisher['@id']);
   assert.equal(author.parentOrganization['@id'], publisher['@id']);

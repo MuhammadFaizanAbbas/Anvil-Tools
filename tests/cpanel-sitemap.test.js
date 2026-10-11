@@ -46,3 +46,43 @@ test('cPanel routes public metadata through domain-aware handlers', () => {
     assert.match(source, /fetch_public_backend/);
   }
 });
+
+test('cPanel PHP helpers are internal-only and directory indexes have canonical redirects', () => {
+  const htaccess = fs.readFileSync('frontend/.htaccess', 'utf8');
+  const helpers = [
+    'backend-proxy',
+    'blog-index',
+    'blog-render',
+    'journal',
+    'journal-image',
+    'journal-sitemap',
+    'public-assets',
+    'site-metadata',
+    'site-origin',
+    'static-page',
+  ];
+  const guardRule = htaccess.split(/\r?\n/).find(line => line.includes('R=404') && line.includes('\\.php$'));
+
+  assert.ok(guardRule, 'direct PHP guard');
+  for (const helper of helpers) assert.ok(guardRule.includes(helper), `${helper}.php is guarded`);
+  assert.match(htaccess, /RewriteCond %\{ENV:REDIRECT_STATUS\} \^\$/);
+  assert.match(htaccess, /RewriteCond %\{THE_REQUEST\}[^\n]+backend-proxy[^\n]+static-page[^\n]+\\\.php/);
+
+  // The direct-request guard must run before every friendly URL is internally
+  // dispatched to a PHP helper. THE_REQUEST keeps these substitutions usable.
+  const guardIndex = htaccess.indexOf(guardRule);
+  for (const substitution of [
+    'blog-index.php',
+    'journal.php?slug=$1',
+    'journal-image.php?id=$1',
+    'site-metadata.php?document=sitemap',
+    'journal-sitemap.php',
+    'static-page.php?path=index.html',
+    'static-page.php?path=$1',
+  ]) {
+    assert.ok(htaccess.indexOf(substitution) > guardIndex, `${substitution} remains an internal rewrite`);
+  }
+
+  assert.ok(htaccess.includes('RewriteCond %{THE_REQUEST} \\s/+(?:blog|tools|lab)/?(?:[?\\s]|$) [NC]'));
+  assert.ok(htaccess.includes('RewriteRule ^(blog|tools|lab)/?$ /$1/index.html [R=301,L,NE,NC]'));
+});

@@ -4,6 +4,13 @@ ErrorDocument 404 /404.html
 ErrorDocument 410 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # PHP files below are internal routing helpers, not public page URLs. Match
+  # the original browser request so friendly-URL rewrites can still execute.
+  # REDIRECT_STATUS prevents the custom 404 document from re-entering this
+  # guard after a rejected direct request.
+  RewriteCond %{ENV:REDIRECT_STATUS} ^$
+  RewriteCond %{THE_REQUEST} \s/+[^?\s]*(?:backend-proxy|blog-index|blog-render|journal|journal-image|journal-sitemap|public-assets|site-metadata|site-origin|static-page)\.php(?:[?\s]|$) [NC]
+  RewriteRule ^(?:backend-proxy|blog-index|blog-render|journal|journal-image|journal-sitemap|public-assets|site-metadata|site-origin|static-page)\.php$ - [R=404,L,NC]
   # Match the original request only so the homepage PHP rendering cannot loop.
   RewriteCond %{THE_REQUEST} \s/+index\.html[/?\s] [NC]
   RewriteRule ^index\.html/?$ / [R=301,L,NC]
@@ -17,6 +24,10 @@ ErrorDocument 410 /404.html
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP:X-Forwarded-Proto} !^https$ [NC]
   RewriteRule ^ https://nevco.online%{REQUEST_URI} [R=301,L,NE]
+  # Keep one crawlable URL for each public directory index. THE_REQUEST keeps
+  # the later internal blog renderer from redirecting itself.
+  RewriteCond %{THE_REQUEST} \s/+(?:blog|tools|lab)/?(?:[?\s]|$) [NC]
+  RewriteRule ^(blog|tools|lab)/?$ /$1/index.html [R=301,L,NE,NC]
   # Retired unillustrated guides
   RewriteRule ^blog/temporary-email-vs-aliases\.html/?$ /journal/temporary-email-for-authorized-testing-and-permitted-messages [R=301,L,NC]
   RewriteRule ^blog/merge-pdfs-locally\.html/?$ /journal/simple-pdf-workflow-without-software [R=301,L,NC]

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
+import subprocess
 from build_site import (ROOT, SITE_NAME, SITE_TAGLINE, SITE_URL, CONTACT_EMAIL,
                          page, write, breadcrumbs, ad_slot)
 from build_site_data import TOOLS, TOOLS_BY_SLUG, CATEGORIES
@@ -300,32 +301,10 @@ def build_static_pages():
 
 # ---------------------------------------------------------------- sitemap / robots / ads.txt
 def build_seo_files():
-    urls = ["", "about.html", "contact.html", "privacy-policy.html", "terms-of-service.html",
-            "cookie-policy.html", "disclaimer.html", "tools/index.html", "blog/index.html"]
-    urls += [f"tools/{t['slug']}.html" for t in TOOLS]
-    urls += [f"categories/{c['slug']}.html" for c in CATEGORIES.values()]
-
-    entries = "\n".join(f"  <url><loc>{SITE_URL}/{u}</loc></url>" for u in urls)
-    sitemap = f'''<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{entries}
-</urlset>
-'''
-    write("sitemap.xml", sitemap)
-    write("sitemap-index.xml", f'''<?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap><loc>{SITE_URL}/sitemap.xml</loc></sitemap>
-  <sitemap><loc>{SITE_URL}/journal-sitemap.xml</loc></sitemap>
-</sitemapindex>
-''')
-
-    robots = f'''User-agent: *
-Allow: /
-Disallow: /admin-panel/
-
-Sitemap: {SITE_URL}/sitemap-index.xml
-'''
-    write("robots.txt", robots)
+    # Keep one canonical crawler-file generator so Lab/report URLs and explicit
+    # tracked last-modified dates cannot diverge from the main build.
+    sitemap_script = os.path.normpath(os.path.join(os.path.dirname(__file__), "..", "build-sitemap.js"))
+    subprocess.run(["node", sitemap_script], check=True)
 
     # Preserve an owner's existing seller declarations when rebuilding the site.
     if not os.path.exists(os.path.join(ROOT, "ads.txt")):
