@@ -1,82 +1,139 @@
 {
   "created_by": "Anvil Tools",
-  "data": "Synthetic test data; no personal information; permitted for testing.",
-  "generated_at": "2026-10-09",
+  "data": "Safe to use for testing; contains no personal data.",
+  "generated_at": "2026-10-11",
   "files": [
     {
-      "label": "JSON duplicate keys, Unicode, and escapes",
+      "label": "Sample JSON fixture",
+      "tool": "JSON Formatter",
+      "expected": "Valid JSON is formatted; the duplicate role key resolves to its final value and Unicode remains readable.",
+      "id": "json",
       "href": "/assets/examples/lab/duplicate-keys-unicode.json",
       "bytes": 321,
       "sha256": "5d07a776f81a5d1591b14cfadbe969b3870b110ddd54dd6ce11a435063dda14a"
     },
     {
-      "label": "Synthetic HTML email link source",
-      "href": "/assets/examples/lab/html-email-link-fixture.txt",
-      "bytes": 393,
-      "sha256": "40a9a6dcbba6f40630a23bd9b5ad57f920000da80c1d620c4dcb77420edc9fff"
-    },
-    {
-      "label": "CSV commas, quotes, newlines, and Unicode",
+      "label": "Sample CSV fixture",
+      "tool": "CSV to JSON",
+      "expected": "Quoted commas, escaped quotes, embedded newlines, and Unicode are parsed into the expected rows.",
+      "id": "csv",
       "href": "/assets/examples/lab/quoted-unicode.csv",
       "bytes": 413,
       "sha256": "11e24064d56c7ede63b29cebfef4db43d0a0d493ca99e6ab5cfe33fcf2f9061c"
     },
     {
-      "label": "RTL, emoji, and combining text",
-      "href": "/assets/examples/lab/rtl-emoji-combining.txt",
-      "bytes": 305,
-      "sha256": "999f443fbebe66fdb77a906effcf792ecb48c7dd75f0a358930bde4d4f391cd1"
+      "label": "Sample transparent PNG fixture",
+      "tool": "Background Remover / Image to PDF",
+      "expected": "The PNG retains its alpha channel; PDF conversion preserves the transparent image mask.",
+      "id": "transparent-png",
+      "href": "/assets/images/editorial/background-removal-output.png",
+      "bytes": 186262,
+      "sha256": "884a8d095771913c018b6feee5a7ff7765e0246263f467469dcb47733f2fd4f7"
     },
     {
-      "label": "Sample QR payloads",
+      "label": "Sample PDF fixture",
+      "tool": "PDF Merge",
+      "expected": "The one-page cover remains first when combined with the application and support fixtures.",
+      "id": "pdf",
+      "href": "/assets/examples/pdf/cover.pdf",
+      "bytes": 867,
+      "sha256": "a29a16bda558024c655983d3e5c4b882c8d1f1aa8b20c4d482f328819d3bc6a8"
+    },
+    {
+      "label": "Sample QR payload fixture",
+      "tool": "QR Code Generator",
+      "expected": "Each line can be generated separately; the decoded result should exactly match the chosen line.",
+      "id": "qr-payload",
       "href": "/assets/examples/lab/qr-strings.txt",
       "bytes": 391,
       "sha256": "52c3679e94069fd3fbb330cdc0dbba48df0f59212e1cb00292c28b689f92850b"
     },
     {
+      "label": "Sample text-diff fixture",
+      "tool": "Text Difference Checker",
+      "expected": "Comparing the VERSION A and VERSION B blocks exposes the status, notes, and approval line changes.",
+      "id": "text-diff",
+      "href": "/assets/examples/lab/text-diff-sample.txt",
+      "bytes": 257,
+      "sha256": "9f3c64662b2c2ee7eb8cf8475766d648fe33d291f21bf13b537f19194cccafb6"
+    },
+    {
+      "label": "Sample Unicode and emoji fixture",
+      "tool": "Word Counter / Text Case Converter",
+      "expected": "Counts follow the documented whitespace and UTF-16 rules; visually similar Unicode can have different code-unit counts.",
+      "id": "unicode-text",
+      "href": "/assets/examples/lab/rtl-emoji-combining.txt",
+      "bytes": 305,
+      "sha256": "999f443fbebe66fdb77a906effcf792ecb48c7dd75f0a358930bde4d4f391cd1"
+    },
+    {
+      "label": "Synthetic HTML email link source",
+      "tool": "URL Encoder / Temporary Email",
+      "expected": "Encoded plus, slash, and Unicode query values decode without using a live recipient or token.",
+      "id": "email-link",
+      "href": "/assets/examples/lab/html-email-link-fixture.txt",
+      "bytes": 393,
+      "sha256": "40a9a6dcbba6f40630a23bd9b5ad57f920000da80c1d620c4dcb77420edc9fff"
+    },
+    {
       "label": "JPEG comparison image",
+      "tool": "Image to PDF",
+      "expected": "The generated PDF contains one image page with the recorded dimensions.",
+      "id": "jpeg",
       "href": "/assets/examples/experiments/format-sample.jpg",
       "bytes": 16987,
       "sha256": "975d9c0282d66138421d6bccb8877f9518327f9d29c733615656e34f9334577a"
     },
     {
       "label": "PNG comparison image",
+      "tool": "Image to PDF",
+      "expected": "The generated PDF contains one image page and retains the source alpha mask.",
+      "id": "png",
       "href": "/assets/examples/experiments/format-sample.png",
       "bytes": 18067,
       "sha256": "8f704228d8ffa8adfc334650cd898bb9b77359b138feec8ef445fe49731ead7d"
     },
     {
       "label": "WebP comparison image",
+      "tool": "Image to PDF",
+      "expected": "The generated PDF contains one image page and retains the source alpha mask.",
+      "id": "webp",
       "href": "/assets/examples/experiments/format-sample.webp",
       "bytes": 8250,
       "sha256": "1d92e33ab54533020568b9cb316d5370cde9bbfcdf64db372ac84c9b0bf51482"
     },
     {
-      "label": "One-page cover PDF",
-      "href": "/assets/examples/pdf/cover.pdf",
-      "bytes": 867,
-      "sha256": "a29a16bda558024c655983d3e5c4b882c8d1f1aa8b20c4d482f328819d3bc6a8"
-    },
-    {
       "label": "Two-page application PDF",
+      "tool": "PDF Merge",
+      "expected": "Both application pages remain adjacent and in source order.",
+      "id": "application-pdf",
       "href": "/assets/examples/pdf/application.pdf",
       "bytes": 1111,
       "sha256": "11d3c92a9f8b9ba37c3fa49b40c92e097eab44beda5fe6cf8c2ca205647dbe40"
     },
     {
       "label": "One-page support PDF",
+      "tool": "PDF Merge",
+      "expected": "The support page remains last in the recorded merge order.",
+      "id": "support-pdf",
       "href": "/assets/examples/pdf/support.pdf",
       "bytes": 869,
       "sha256": "b4cb150a591eee905f7eabe0de9f34885a938833cc25cbbd617248b0d94736d5"
     },
     {
       "label": "Recorded four-page merged PDF",
+      "tool": "PDF Merge",
+      "expected": "The output has four pages in cover, application page 1, application page 2, support order.",
+      "id": "merged-pdf",
       "href": "/assets/examples/pdf/merged-example.pdf",
       "bytes": 1563,
       "sha256": "aad13c88a8db2d33df99ce03b33c7fd3bf83482755e972d8950dca3c64646d63"
     },
     {
       "label": "Recorded QR PNG",
+      "tool": "QR Code Generator",
+      "expected": "An independent scanner decodes the controlled destination recorded in the Lab report.",
+      "id": "qr-image",
       "href": "/assets/examples/qr-check.png",
       "bytes": 2611,
       "sha256": "381760fd2649661a0a0d2870867118ef53182cb8001620b5ff9cd3b856ee728b"

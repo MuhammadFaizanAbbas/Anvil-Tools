@@ -1,0 +1,14 @@
+VERSION A
+Project: Example Atlas
+Status: draft
+Owner: Synthetic Team
+Notes: Review the blue and green samples.
+
+---
+
+VERSION B
+Project: Example Atlas
+Status: reviewed
+Owner: Synthetic Team
+Notes: Review the blue, green, and amber samples.
+Approval: pending

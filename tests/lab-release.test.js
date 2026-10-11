@@ -36,7 +36,7 @@ test('Lab ships six category reports with reproducibility and correction section
   }
 });
 
-test('every Lab report exposes complete Article and breadcrumb structured data', () => {
+test('every Lab report exposes complete TechArticle and breadcrumb structured data', () => {
   const directory = path.join(frontend, 'lab/reports');
   const reports = fs.readdirSync(directory).filter(file => file.endsWith('.html'));
   for (const report of reports) {
@@ -44,7 +44,7 @@ test('every Lab report exposes complete Article and breadcrumb structured data',
     const block = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1];
     assert.ok(block, `${report}: JSON-LD`);
     const graph = JSON.parse(block)['@graph'];
-    const article = graph.find(item => item['@type'] === 'Article');
+    const article = graph.find(item => item['@type'] === 'TechArticle');
     const breadcrumbs = graph.find(item => item['@type'] === 'BreadcrumbList');
     const author = graph.find(item => item.name === 'VelloxTech Editorial Team');
     assert.ok(article?.headline, `${report}: headline`);
@@ -66,14 +66,14 @@ test('guides index features the Lab prominently and the static sitemap contains 
   assert.match(blog, /href="\/lab\/index\.html"/);
 
   const sitemap = read('sitemap.xml');
-  const expected = ['index.html', 'fixtures.html', 'compatibility.html', ...fs.readdirSync(path.join(frontend, 'lab/reports')).filter(file => file.endsWith('.html')).map(file => `reports/${file}`)];
-  assert.equal(expected.length, 9);
+  const expected = ['index.html', 'fixtures.html', 'privacy.html', 'compatibility.html', ...fs.readdirSync(path.join(frontend, 'lab/reports')).filter(file => file.endsWith('.html')).map(file => `reports/${file}`)];
+  assert.equal(expected.length, 10);
   for (const relative of expected) assert.ok(sitemap.includes(`/lab/${relative}`), relative);
 });
 
 test('Lab and editorial pages reuse the established public header navigation', () => {
   const expected = ['Home', 'All tools', 'Guides &amp; experiments', 'About', 'Contact'];
-  for (const relative of ['editorial-policy.html', 'lab/index.html', 'lab/fixtures.html', 'lab/compatibility.html']) {
+  for (const relative of ['editorial-policy.html', 'lab/index.html', 'lab/fixtures.html', 'lab/privacy.html', 'lab/compatibility.html']) {
     const html = read(relative);
     const nav = html.match(/<nav class="main-nav"[^>]*>([\s\S]*?)<\/nav>/)?.[1] || '';
     assert.deepEqual([...nav.matchAll(/<a[^>]*>(.*?)<\/a>/g)].map(match => match[1]), expected, relative);
@@ -89,6 +89,16 @@ test('fixture manifest records exact sizes and SHA-256 hashes', () => {
     const bytes = fs.readFileSync(path.join(frontend, relative));
     assert.equal(item.bytes, bytes.length, relative);
     assert.equal(item.sha256, crypto.createHash('sha256').update(bytes).digest('hex'), relative);
+    assert.ok(item.tool, `${relative}: tool`);
+    assert.ok(item.expected, `${relative}: expected result`);
+  }
+});
+
+test('fixture library provides every requested safe test-data format', () => {
+  const html = read('lab/fixtures.html');
+  assert.match(html, /Safe to use for testing; contains no personal data/);
+  for (const id of ['csv', 'json', 'transparent-png', 'pdf', 'qr-payload', 'text-diff', 'unicode-text']) {
+    assert.match(html, new RegExp(`id="${id}"`), id);
   }
 });
 

@@ -10,9 +10,14 @@ const root = path.resolve(__dirname, '..');
 const frontend = path.join(root, 'frontend');
 const origin = 'https://anviltools.vercel.app';
 const library = require('../content/editorial/published-library.json');
+const experiments = require('../content/editorial/experiments.json');
+const toolReadiness = require('../content/tool-readiness.json');
 const reviews = require('../backend/src/lib/article-reviews.json');
 const recorded = require('../frontend/assets/examples/experiments/results.json');
 const browsers = recorded.runs.map(run => `${run.browser} ${run.version}`).join(' and ');
+const reviewedAt = '2026-10-11';
+const oldTempMailDescription = 'Receive non-sensitive messages for authorized testing or where disposable addresses are permitted.';
+const tempMailDescription = 'Receive non-sensitive test messages for services you own, manage, or are allowed to test.';
 const escape = value => String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 const sha256 = file => crypto.createHash('sha256').update(fs.readFileSync(path.join(frontend, file))).digest('hex');
 const writeChanged = (file, content) => {
@@ -33,9 +38,34 @@ const toolNames = {
   'uuid-generator': 'UUID Generator', 'word-counter': 'Word & Character Counter',
 };
 
-function page({ title, description, pathname, body, prefix = '' }) {
+const jsonLd = data => `<script type="application/ld+json">${JSON.stringify(data).replace(/</g, '\\u003c')}</script>`;
+const organization = {
+  '@type': 'Organization', '@id': `${origin}/#organization`, name: 'VelloxTech',
+  url: `${origin}/about.html`, logo: `${origin}/assets/images/favicon-48.png`,
+};
+const breadcrumbs = (pathname, names) => ({
+  '@type': 'BreadcrumbList', '@id': `${origin}${pathname}#breadcrumb`,
+  itemListElement: names.map((entry, index) => ({
+    '@type': 'ListItem', position: index + 1, name: entry.name, item: `${origin}${entry.path}`,
+  })),
+});
+function injectManagedSchema(html, data) {
+  const block = `<!-- page-structured-data -->${jsonLd(data)}<!-- /page-structured-data -->`;
+  const clean = html.replace(/<!-- page-structured-data -->[\s\S]*?<!-- \/page-structured-data -->/, '');
+  return clean.replace('</head>', `${block}</head>`);
+}
+
+const reportImageDimensions = {
+  '/assets/images/editorial/json-precision-experiment.png': [1052, 546],
+  '/assets/examples/qr-check.png': [180, 180],
+  '/assets/images/editorial/image-format-experiment.png': [1052, 488],
+  '/assets/images/editorial/pdf-ordering-example.png': [976, 623],
+  '/assets/images/editorial/unicode-count-experiment.png': [1052, 658],
+};
+
+function page({ title, description, pathname, body, prefix = '', structuredData = null }) {
   const canonical = origin + pathname;
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)} | Anvil Tools</title><meta name="description" content="${escape(description)}"><link rel="canonical" href="${canonical}"><link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon-48.png"><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png"><link rel="stylesheet" href="${prefix}assets/css/style.css"><link rel="stylesheet" href="${prefix}assets/css/refinements.css"><link rel="stylesheet" href="${prefix}assets/css/design.css"><link rel="stylesheet" href="${prefix}assets/css/content.css"><meta property="og:type" content="website"><meta property="og:title" content="${escape(title)} | Anvil Tools"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary"></head><body class="public-site"><a class="skip-link" href="#main-content">Skip to content</a>${canonicalHeader(pathname)}<main class="wrap" id="main-content">${body}</main>${canonicalFooter()}<script src="${prefix}assets/js/main.js" defer></script></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escape(title)} | Anvil Tools</title><meta name="description" content="${escape(description)}"><link rel="canonical" href="${canonical}"><link rel="icon" type="image/png" sizes="48x48" href="/assets/images/favicon-48.png"><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png"><link rel="stylesheet" href="${prefix}assets/css/style.css"><link rel="stylesheet" href="${prefix}assets/css/refinements.css"><link rel="stylesheet" href="${prefix}assets/css/design.css"><link rel="stylesheet" href="${prefix}assets/css/content.css"><meta property="og:type" content="website"><meta property="og:title" content="${escape(title)} | Anvil Tools"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary">${structuredData ? jsonLd(structuredData) : ''}</head><body class="public-site"><a class="skip-link" href="#main-content">Skip to content</a>${canonicalHeader(pathname)}<main class="wrap" id="main-content">${body}</main>${canonicalFooter()}<script src="${prefix}assets/js/main.js" defer></script></body></html>`;
 }
 
 const policyLd = JSON.stringify({
@@ -46,25 +76,27 @@ const policyBody = `<script type="application/ld+json">${policyLd}</script><p cl
 writeChanged(path.join(frontend, 'editorial-policy.html'), page({ title: 'Editorial and testing methodology', description: 'How VelloxTech tests Anvil Tools, reviews sources and AI-assisted drafts, records evidence, and handles corrections.', pathname: '/editorial-policy.html', body: policyBody }));
 
 const evidenceFiles = [
-  ['examples/lab/duplicate-keys-unicode.json', 'JSON duplicate keys, Unicode, and escapes'],
-  ['examples/lab/html-email-link-fixture.txt', 'Synthetic HTML email link source'],
-  ['examples/lab/quoted-unicode.csv', 'CSV commas, quotes, newlines, and Unicode'],
-  ['examples/lab/rtl-emoji-combining.txt', 'RTL, emoji, and combining text'],
-  ['examples/lab/qr-strings.txt', 'Sample QR payloads'],
-  ['examples/experiments/format-sample.jpg', 'JPEG comparison image'],
-  ['examples/experiments/format-sample.png', 'PNG comparison image'],
-  ['examples/experiments/format-sample.webp', 'WebP comparison image'],
-  ['examples/pdf/cover.pdf', 'One-page cover PDF'],
-  ['examples/pdf/application.pdf', 'Two-page application PDF'],
-  ['examples/pdf/support.pdf', 'One-page support PDF'],
-  ['examples/pdf/merged-example.pdf', 'Recorded four-page merged PDF'],
-  ['examples/qr-check.png', 'Recorded QR PNG'],
-].map(([relative, label]) => {
+  ['examples/lab/duplicate-keys-unicode.json', 'Sample JSON fixture', 'JSON Formatter', 'Valid JSON is formatted; the duplicate role key resolves to its final value and Unicode remains readable.', 'json'],
+  ['examples/lab/quoted-unicode.csv', 'Sample CSV fixture', 'CSV to JSON', 'Quoted commas, escaped quotes, embedded newlines, and Unicode are parsed into the expected rows.', 'csv'],
+  ['images/editorial/background-removal-output.png', 'Sample transparent PNG fixture', 'Background Remover / Image to PDF', 'The PNG retains its alpha channel; PDF conversion preserves the transparent image mask.', 'transparent-png'],
+  ['examples/pdf/cover.pdf', 'Sample PDF fixture', 'PDF Merge', 'The one-page cover remains first when combined with the application and support fixtures.', 'pdf'],
+  ['examples/lab/qr-strings.txt', 'Sample QR payload fixture', 'QR Code Generator', 'Each line can be generated separately; the decoded result should exactly match the chosen line.', 'qr-payload'],
+  ['examples/lab/text-diff-sample.txt', 'Sample text-diff fixture', 'Text Difference Checker', 'Comparing the VERSION A and VERSION B blocks exposes the status, notes, and approval line changes.', 'text-diff'],
+  ['examples/lab/rtl-emoji-combining.txt', 'Sample Unicode and emoji fixture', 'Word Counter / Text Case Converter', 'Counts follow the documented whitespace and UTF-16 rules; visually similar Unicode can have different code-unit counts.', 'unicode-text'],
+  ['examples/lab/html-email-link-fixture.txt', 'Synthetic HTML email link source', 'URL Encoder / Temporary Email', 'Encoded plus, slash, and Unicode query values decode without using a live recipient or token.', 'email-link'],
+  ['examples/experiments/format-sample.jpg', 'JPEG comparison image', 'Image to PDF', 'The generated PDF contains one image page with the recorded dimensions.', 'jpeg'],
+  ['examples/experiments/format-sample.png', 'PNG comparison image', 'Image to PDF', 'The generated PDF contains one image page and retains the source alpha mask.', 'png'],
+  ['examples/experiments/format-sample.webp', 'WebP comparison image', 'Image to PDF', 'The generated PDF contains one image page and retains the source alpha mask.', 'webp'],
+  ['examples/pdf/application.pdf', 'Two-page application PDF', 'PDF Merge', 'Both application pages remain adjacent and in source order.', 'application-pdf'],
+  ['examples/pdf/support.pdf', 'One-page support PDF', 'PDF Merge', 'The support page remains last in the recorded merge order.', 'support-pdf'],
+  ['examples/pdf/merged-example.pdf', 'Recorded four-page merged PDF', 'PDF Merge', 'The output has four pages in cover, application page 1, application page 2, support order.', 'merged-pdf'],
+  ['examples/qr-check.png', 'Recorded QR PNG', 'QR Code Generator', 'An independent scanner decodes the controlled destination recorded in the Lab report.', 'qr-image'],
+].map(([relative, label, tool, expected, id]) => {
   const file = `assets/${relative}`;
-  return { label, href: '/' + file.replaceAll('\\', '/'), bytes: fs.statSync(path.join(frontend, file)).size, sha256: sha256(file) };
+  return { label, tool, expected, id, href: '/' + file.replaceAll('\\', '/'), bytes: fs.statSync(path.join(frontend, file)).size, sha256: sha256(file) };
 });
 writeChanged(path.join(frontend, 'assets/examples/lab/fixture-manifest.json'), JSON.stringify({
-  created_by: 'Anvil Tools', data: 'Synthetic test data; no personal information; permitted for testing.', generated_at: '2026-10-09', files: evidenceFiles,
+  created_by: 'Anvil Tools', data: 'Safe to use for testing; contains no personal data.', generated_at: reviewedAt, files: evidenceFiles,
 }, null, 2) + '\n');
 
 const reports = [
@@ -161,14 +193,14 @@ function reportStructuredData(report) {
         ],
       },
       {
-        '@type': 'Article',
+        '@type': 'TechArticle',
         '@id': `${pageUrl}#article`,
         headline: report.title,
         description: report.question,
         author: { '@id': `${origin}/editorial-policy.html#velloxtech-editorial-team` },
         publisher: { '@id': `${origin}/#organization` },
         datePublished: reportPublished,
-        dateModified: reportPublished,
+        dateModified: reviewedAt,
         image,
         articleSection: report.category,
         mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
@@ -179,19 +211,63 @@ function reportStructuredData(report) {
 }
 
 function reportBody(report) {
-  const visual = report.image ? `<figure class="article-example"><img src="${report.image}" alt="Recorded output for ${escape(report.title)}" loading="lazy"><figcaption>Recorded first-party output associated with this report.</figcaption></figure>` : `<div class="callout"><strong>Output sample</strong><pre><code>${escape(report.sample)}</code></pre></div>`;
-  return `<script type="application/ld+json">${reportStructuredData(report)}</script><p class="breadcrumbs"><a href="/">Home</a> / <a href="/lab/index.html">Lab</a> / <span>${escape(report.category)}</span></p><article class="published-article"><header class="article-header"><span class="eyebrow">${escape(report.category)}</span><h1>${escape(report.title)}</h1><p class="lede">${escape(report.question)}</p><p class="article-meta">Written by: <a href="/editorial-policy.html#velloxtech-editorial-team" rel="author">VelloxTech Editorial Team</a></p><p class="article-meta">Last tested: <time datetime="${report.tested}">${displayDate(report.tested)}</time></p><p class="article-meta"><a href="/contact.html">Report an error or suggest a correction</a></p></header>${visual}<div class="article-content"><h2>Test environment</h2><p>${escape(report.environment)}</p><h2>Fixture and expected result</h2><p>${escape(report.expected)}</p><h2>Reproduction steps</h2><ol>${report.steps.map(step => `<li>${escape(step)}</li>`).join('')}</ol><h2>Observed result</h2><p>${escape(report.observed)}</p><h2>Downloadable evidence</h2><ul>${report.fixtures.map(href => `<li><a href="${href}" download>${escape(path.basename(href))}</a></li>`).join('')}</ul><p>The <a href="/lab/fixtures.html">fixture library</a> publishes SHA-256 hashes for exact-byte verification.</p><h2>What this test does not establish</h2><p>${escape(report.limitations)}</p><h2>Related tool and guide</h2><p><a href="/tools/${report.tool[0]}.html">${escape(report.tool[1])}</a> · <a href="/journal/${report.guide[0]}">${escape(report.guide[1])}</a></p><h2>Change history</h2><ul><li><time datetime="2026-10-09">October 9, 2026</time>: Report organized under Anvil Tools Lab; evidence and limitations reviewed.</li></ul></div></article>`;
+  const dimensions = reportImageDimensions[report.image];
+  const size = dimensions ? ` width="${dimensions[0]}" height="${dimensions[1]}"` : '';
+  const visual = report.image ? `<figure class="article-example"><img src="${report.image}" alt="Recorded output for ${escape(report.title)}"${size} loading="lazy" decoding="async"><figcaption>Recorded first-party output associated with this report.</figcaption></figure>` : `<div class="callout"><strong>Output sample</strong><pre><code>${escape(report.sample)}</code></pre></div>`;
+  return `<script type="application/ld+json">${reportStructuredData(report)}</script><p class="breadcrumbs"><a href="/">Home</a> / <a href="/lab/index.html">Lab</a> / <span>${escape(report.category)}</span></p><article class="published-article"><header class="article-header"><span class="eyebrow">${escape(report.category)}</span><h1>${escape(report.title)}</h1><p class="lede">${escape(report.question)}</p><p class="article-meta">Written by: <a href="/editorial-policy.html#velloxtech-editorial-team" rel="author">VelloxTech Editorial Team</a></p><p class="article-meta">Last tested: <time datetime="${report.tested}">${displayDate(report.tested)}</time></p><p class="article-meta">Last reviewed: <time datetime="${reviewedAt}">${displayDate(reviewedAt)}</time></p><p class="article-meta"><a href="/contact.html">Report an error or suggest a correction</a></p></header>${visual}<div class="article-content"><h2>Test environment</h2><p>${escape(report.environment)}</p><h2>Fixture and expected result</h2><p>${escape(report.expected)}</p><h2>Reproduction steps</h2><ol>${report.steps.map(step => `<li>${escape(step)}</li>`).join('')}</ol><h2>Observed result</h2><p>${escape(report.observed)}</p><h2>Downloadable evidence</h2><ul>${report.fixtures.map(href => `<li><a href="${href}" download>${escape(path.basename(href))}</a></li>`).join('')}</ul><p>The <a href="/lab/fixtures.html">fixture library</a> publishes SHA-256 hashes for exact-byte verification.</p><h2>What this test does not establish</h2><p>${escape(report.limitations)}</p><h2>Related tool and guide</h2><p><a href="/tools/${report.tool[0]}.html">${escape(report.tool[1])}</a> · <a href="/journal/${report.guide[0]}">${escape(report.guide[1])}</a></p><h2>Change history</h2><ul><li><time datetime="2026-10-11">October 11, 2026</time>: Structured data, image dimensions, and fixture links reviewed.</li><li><time datetime="2026-10-09">October 9, 2026</time>: Report organized under Anvil Tools Lab; evidence and limitations reviewed.</li></ul></div></article>`;
 }
 for (const report of reports) writeChanged(path.join(frontend, 'lab/reports', `${report.slug}.html`), page({ title: report.title, description: report.question, pathname: `/lab/reports/${report.slug}.html`, prefix: '../../', body: reportBody(report) }));
 
 const cards = reports.map(report => `<article class="tool-card"><span class="category-tag">${escape(report.category)}</span><h2><a href="/lab/reports/${report.slug}.html">${escape(report.title)}</a></h2><p>${escape(report.question)}</p><p class="small-note">Last tested ${displayDate(report.tested)}</p><a class="tool-link" href="/lab/reports/${report.slug}.html">Read reproducible report &#8594;</a></article>`).join('');
-writeChanged(path.join(frontend, 'lab/index.html'), page({ title: 'Anvil Tools Lab', description: 'Reproducible edge-case reports with synthetic fixtures, recorded environments, observed results, limitations, and exact hashes.', pathname: '/lab/index.html', prefix: '../', body: `<p class="breadcrumbs"><a href="/">Home</a> / <span>Lab</span></p><section class="hero"><span class="eyebrow">First-party evidence</span><h1>Anvil Tools Lab</h1><p class="lede">Reproducible edge-case reports built from synthetic inputs, actual tool runs, recorded outputs, and limitations—not generic compatibility promises.</p><div class="hero-actions"><a class="btn primary" href="/lab/fixtures.html">Browse fixtures</a><a href="/lab/compatibility.html">Compatibility matrix &#8594;</a></div></section><section><h2>Six category reports</h2><div class="tool-grid">${cards}</div></section><section class="info-section"><h2>How to read a report</h2><p>A report answers one narrow question. It names its environment and date, publishes the exact fixture or result, separates expected from observed behavior, and states what the run cannot prove. Read the <a href="/editorial-policy.html">editorial and testing methodology</a> for the full review process.</p></section>` }));
+function labPageStructuredData(pathname, title, description) {
+  const pageUrl = `${origin}${pathname}`;
+  const trail = pathname === '/lab/index.html'
+    ? [{ name: 'Home', path: '/' }, { name: title, path: pathname }]
+    : [{ name: 'Home', path: '/' }, { name: 'Anvil Tools Lab', path: '/lab/index.html' }, { name: title, path: pathname }];
+  return {
+    '@context': 'https://schema.org', '@graph': [
+      organization,
+      breadcrumbs(pathname, trail),
+      {
+        '@type': 'TechArticle', '@id': `${pageUrl}#article`, headline: title, description,
+        author: { '@id': `${origin}/editorial-policy.html#velloxtech-editorial-team` }, publisher: { '@id': `${origin}/#organization` },
+        datePublished: '2026-10-09', dateModified: reviewedAt,
+        mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl }, breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
+      },
+    ],
+  };
+}
 
-const fixtureRows = evidenceFiles.map(file => `<tr><td><a href="${file.href}" download>${escape(file.label)}</a></td><td>${file.bytes.toLocaleString('en-US')}</td><td><code>${file.sha256}</code></td></tr>`).join('');
-writeChanged(path.join(frontend, 'lab/fixtures.html'), page({ title: 'Synthetic fixture library', description: 'Harmless Anvil Tools test fixtures with provenance, byte sizes, and SHA-256 hashes for reproducible checks.', pathname: '/lab/fixtures.html', prefix: '../', body: `<p class="breadcrumbs"><a href="/">Home</a> / <a href="/lab/index.html">Lab</a> / <span>Fixtures</span></p><section class="hero"><span class="eyebrow">Download and verify</span><h1>Synthetic fixture library</h1><p class="lede">Created by Anvil Tools. Synthetic test data. No personal information. Permitted for testing.</p></section><section class="info-section"><h2>Fixture manifest</h2><p>Download the <a href="/assets/examples/lab/fixture-manifest.json">machine-readable manifest</a>. Hashes identify exact bytes; they do not certify that a file is safe for an unrelated workflow.</p><div class="table-scroll" role="region" aria-label="Fixture hashes" tabindex="0"><table><thead><tr><th>Fixture</th><th>Bytes</th><th>SHA-256</th></tr></thead><tbody>${fixtureRows}</tbody></table></div></section><section class="info-section"><h2>Handling rules</h2><ul><li>Keep fixtures separate from production records.</li><li>Never replace sample tokens with live credentials.</li><li>Review downloaded PDFs and images before forwarding them.</li><li>Use only systems you own or are authorized to test.</li></ul></section>` }));
+const labDescription = 'Reproducible edge-case reports with synthetic fixtures, recorded environments, observed results, limitations, and exact hashes.';
+writeChanged(path.join(frontend, 'lab/index.html'), page({
+  title: 'Anvil Tools Lab', description: labDescription, pathname: '/lab/index.html', prefix: '../',
+  structuredData: labPageStructuredData('/lab/index.html', 'Anvil Tools Lab', labDescription),
+  body: `<p class="breadcrumbs"><a href="/">Home</a> / <span>Lab</span></p><section class="hero"><span class="eyebrow">First-party evidence</span><h1>Anvil Tools Lab</h1><p class="lede">Reproducible edge-case reports built from synthetic inputs, actual tool runs, recorded outputs, and limitations—not generic compatibility promises.</p><div class="hero-actions"><a class="btn primary" href="/lab/fixtures.html">Browse fixtures</a><a href="/lab/privacy.html">Tool privacy matrix &#8594;</a><a href="/lab/compatibility.html">Browser compatibility &#8594;</a></div></section><section><h2>Six category reports</h2><div class="tool-grid">${cards}</div></section><section class="info-section"><h2>How to read a report</h2><p>A report answers one narrow question. It names its environment and date, publishes the exact fixture or result, separates expected from observed behavior, and states what the run cannot prove. Read the <a href="/editorial-policy.html">editorial and testing methodology</a> for the full review process.</p></section>`,
+}));
 
-const compatibilityRows = reports.map(report => `<tr><td><a href="/lab/reports/${report.slug}.html">${escape(report.category)}</a></td><td>${escape(report.environment)}</td><td>${displayDate(report.tested)}</td><td>${escape(report.limitations)}</td></tr>`).join('');
-writeChanged(path.join(frontend, 'lab/compatibility.html'), page({ title: 'Lab compatibility matrix', description: 'Recorded environments and explicit coverage limits for Anvil Tools Lab reports.', pathname: '/lab/compatibility.html', prefix: '../', body: `<p class="breadcrumbs"><a href="/">Home</a> / <a href="/lab/index.html">Lab</a> / <span>Compatibility</span></p><section class="hero"><span class="eyebrow">Measured, not assumed</span><h1>Compatibility matrix</h1><p class="lede">A compact record of what was tested, when it was tested, and what still requires a separate check.</p></section><section class="info-section"><div class="table-scroll" role="region" aria-label="Lab compatibility" tabindex="0"><table><thead><tr><th>Report</th><th>Recorded environment</th><th>Last tested</th><th>Coverage limit</th></tr></thead><tbody>${compatibilityRows}</tbody></table></div><p>Browser versions are frozen evidence from the recorded run, not a promise about future releases. See the <a href="/editorial-policy.html">testing methodology</a>.</p></section>` }));
+const fixtureRows = evidenceFiles.map(file => `<tr id="${escape(file.id)}"><td><a href="${file.href}" download>${escape(file.label)}</a></td><td>${escape(file.tool)}</td><td>${escape(file.expected)}</td><td>${file.bytes.toLocaleString('en-US')}</td><td><code>${file.sha256}</code></td></tr>`).join('');
+const fixtureDescription = 'Safe synthetic CSV, JSON, PNG, PDF, QR, text-diff, and Unicode fixtures with expected results and SHA-256 hashes.';
+writeChanged(path.join(frontend, 'lab/fixtures.html'), page({
+  title: 'Safe Test Data for Browser Tool Testing', description: fixtureDescription, pathname: '/lab/fixtures.html', prefix: '../',
+  structuredData: labPageStructuredData('/lab/fixtures.html', 'Safe Test Data for Browser Tool Testing', fixtureDescription),
+  body: `<p class="breadcrumbs"><a href="/">Home</a> / <a href="/lab/index.html">Lab</a> / <span>Safe test data</span></p><section class="hero"><span class="eyebrow">Download, reproduce, verify</span><h1>Safe Test Data for Browser Tool Testing</h1><p class="lede"><strong>Safe to use for testing; contains no personal data.</strong> Every file was created or generated for Anvil Tools and has a stated expected result.</p></section><section class="info-section"><h2>Fixture manifest and downloads</h2><p>Use the download link in each fixture name or download the <a href="/assets/examples/lab/fixture-manifest.json">machine-readable manifest</a>. SHA-256 hashes identify exact bytes; they do not certify that a file is safe for an unrelated workflow.</p><div class="table-scroll" role="region" aria-label="Safe fixture downloads, expected results, and hashes" tabindex="0"><table><thead><tr><th>Fixture / download</th><th>Tool</th><th>Expected result</th><th>Bytes</th><th>SHA-256</th></tr></thead><tbody>${fixtureRows}</tbody></table></div></section><section class="info-section"><h2>How to use the library</h2><ol><li>Download the fixture without changing it.</li><li>Confirm its SHA-256 hash when exact-byte reproduction matters.</li><li>Run it through the named tool and compare the observed output with the expected result.</li><li>Record the browser, date, and any difference instead of replacing the fixture with production data.</li></ol><h2>Handling rules</h2><ul><li>Keep fixtures separate from production records.</li><li>Never replace sample tokens with live credentials.</li><li>Review downloaded PDFs and images before forwarding them.</li><li>Use only systems you own or are authorized to test.</li></ul></section>`,
+}));
+
+const compatibilityRows = reports.map(report => `<tr><td><a href="/lab/reports/${report.slug}.html">${escape(report.title)}</a></td><td>Passed (${escape(recorded.runs[0].version)})</td><td>Passed (${escape(recorded.runs[1].version)})</td><td>Not recorded</td><td>Physical device not recorded</td><td>${escape(report.limitations)}</td><td>${displayDate(report.tested)}</td></tr>`).join('');
+const compatibilityDescription = 'A user-facing Chrome, Edge, Firefox, and mobile browser test matrix with dates and explicit coverage limits.';
+writeChanged(path.join(frontend, 'lab/compatibility.html'), page({
+  title: 'Browser Compatibility Matrix', description: compatibilityDescription, pathname: '/lab/compatibility.html', prefix: '../',
+  structuredData: labPageStructuredData('/lab/compatibility.html', 'Browser Compatibility Matrix', compatibilityDescription),
+  body: `<p class="breadcrumbs"><a href="/">Home</a> / <a href="/lab/index.html">Lab</a> / <span>Compatibility</span></p><section class="hero"><span class="eyebrow">Measured, not assumed</span><h1>Browser Compatibility Matrix</h1><p class="lede">Recorded browser results, untested environments, known limitations, and the date of each run.</p></section><section class="info-section"><div class="table-scroll" role="region" aria-label="Browser compatibility by Lab report" tabindex="0"><table><thead><tr><th>Test</th><th>Chrome</th><th>Edge</th><th>Firefox</th><th>Mobile browser</th><th>Known limitations</th><th>Last tested</th></tr></thead><tbody>${compatibilityRows}</tbody></table></div><p><strong>Coverage note:</strong> Firefox and physical mobile browsers have not been recorded for these fixtures. Responsive layout checks are not a substitute for a real-device functional run. Browser versions are frozen evidence, not a promise about future releases. See the <a href="/editorial-policy.html">testing methodology</a>.</p></section>`,
+}));
+
+const privacyRows = toolReadiness.map(item => `<tr><td><a href="/tools/${item.slug}.html">${escape(toolNames[item.slug])}</a></td><td>${item.runsLocally ? 'Yes' : 'No'}</td><td>${item.uploadsFiles ? 'Yes' : 'No'}</td><td>${escape(item.externalService)}</td><td>${escape(item.sensitiveData)}</td><td>${escape(item.notes)}</td></tr>`).join('');
+const privacyDescription = 'Compare which Anvil Tools run locally, upload files, use an external service, and are appropriate for sensitive data.';
+writeChanged(path.join(frontend, 'lab/privacy.html'), page({
+  title: 'Which Anvil Tools Run Locally and Which Use a Service?', description: privacyDescription, pathname: '/lab/privacy.html', prefix: '../',
+  structuredData: labPageStructuredData('/lab/privacy.html', 'Which Anvil Tools Run Locally and Which Use a Service?', privacyDescription),
+  body: `<p class="breadcrumbs"><a href="/">Home</a> / <a href="/lab/index.html">Lab</a> / <span>Tool privacy</span></p><section class="hero"><span class="eyebrow">Tool Privacy Matrix</span><h1>Which Anvil Tools Run Locally and Which Use a Service?</h1><p class="lede">A tool-by-tool account of local processing, file uploads, external services, and suitability for sensitive data.</p></section><section class="info-section"><div class="table-scroll" role="region" aria-label="Tool privacy matrix" tabindex="0"><table><thead><tr><th>Tool</th><th>Runs locally?</th><th>Uploads files?</th><th>Uses external service?</th><th>Best for sensitive data?</th><th>Notes</th></tr></thead><tbody>${privacyRows}</tbody></table></div><p>“Runs locally” describes the tool calculation, not the ordinary network requests used to load the website. Device security, browser extensions, shared computers, backups, and the final destination still matter. Temporary Email is the exception because receiving mail requires the Anvil backend and an external mailbox provider.</p><p>Last reviewed: <time datetime="${reviewedAt}">${displayDate(reviewedAt)}</time>.</p></section>`,
+}));
 
 // Expand each public category page into a complete guide hub.
 for (const category of ['developer-tools', 'email-tools', 'generators', 'image-tools', 'pdf-tools', 'text-tools']) {
@@ -203,6 +279,89 @@ for (const category of ['developer-tools', 'email-tools', 'generators', 'image-t
   html = html.replace('</main>', `${hub}</main>`);
   writeChanged(file, html);
 }
+
+// Add page-specific structured data to public indexes.
+const websiteItems = toolReadiness.map((item, index) => ({
+  '@type': 'ListItem', position: index + 1, name: toolNames[item.slug], url: `${origin}/tools/${item.slug}.html`,
+}));
+const homeFile = path.join(frontend, 'index.html');
+let homeHtml = fs.readFileSync(homeFile, 'utf8')
+  .replace('Small tools.<br><span>More possibility.</span>', 'Private browser tools for everyday files, text, and testing.')
+  .replace('Simple to start. Useful from the first click.', 'Open a tool, complete the task, and check the result before you share it.')
+  .replaceAll(oldTempMailDescription, tempMailDescription);
+homeHtml = injectManagedSchema(homeHtml, {
+  '@context': 'https://schema.org', '@graph': [
+    organization,
+    { '@type': 'WebSite', '@id': `${origin}/#website`, name: 'Anvil Tools', url: `${origin}/`, publisher: { '@id': `${origin}/#organization` } },
+    { '@type': 'ItemList', '@id': `${origin}/#tools`, name: 'Anvil Tools directory', numberOfItems: websiteItems.length, itemListElement: websiteItems },
+  ],
+});
+writeChanged(homeFile, homeHtml);
+
+const toolsIndexFile = path.join(frontend, 'tools/index.html');
+let toolsIndexHtml = fs.readFileSync(toolsIndexFile, 'utf8').replaceAll(oldTempMailDescription, tempMailDescription);
+toolsIndexHtml = injectManagedSchema(toolsIndexHtml, {
+  '@context': 'https://schema.org', '@graph': [
+    organization,
+    { '@type': 'CollectionPage', '@id': `${origin}/tools/index.html#page`, name: 'All Anvil Tools', url: `${origin}/tools/index.html`, isPartOf: { '@id': `${origin}/#website` }, mainEntity: { '@id': `${origin}/tools/index.html#list` } },
+    { '@type': 'ItemList', '@id': `${origin}/tools/index.html#list`, numberOfItems: websiteItems.length, itemListElement: websiteItems },
+  ],
+});
+writeChanged(toolsIndexFile, toolsIndexHtml);
+
+const blogItems = [
+  ...experiments.map(item => ({ name: item.title, url: `${origin}/blog/${item.slug}.html` })),
+  ...library.map(item => ({ name: item.title, url: `${origin}/journal/${item.slug}` })),
+].map((item, index) => ({ '@type': 'ListItem', position: index + 1, ...item }));
+const blogSchema = {
+  '@context': 'https://schema.org', '@graph': [
+    organization,
+    { '@type': 'Blog', '@id': `${origin}/blog/index.html#blog`, name: 'Anvil Tools guides and experiments', url: `${origin}/blog/index.html`, publisher: { '@id': `${origin}/#organization` }, mainEntity: { '@id': `${origin}/blog/index.html#list` } },
+    { '@type': 'ItemList', '@id': `${origin}/blog/index.html#list`, numberOfItems: blogItems.length, itemListElement: blogItems },
+  ],
+};
+for (const blogIndexFile of [path.join(frontend, 'blog/index.html'), path.join(root, 'backend/src/templates/blog.html')]) {
+  if (fs.existsSync(blogIndexFile)) writeChanged(blogIndexFile, injectManagedSchema(fs.readFileSync(blogIndexFile, 'utf8'), blogSchema));
+}
+
+// Add review, privacy, limitations, evidence links, and WebApplication data to every tool page.
+for (const item of toolReadiness) {
+  const file = path.join(frontend, 'tools', `${item.slug}.html`);
+  if (!fs.existsSync(file)) throw new Error(`Missing tool page for ${item.slug}`);
+  let html = fs.readFileSync(file, 'utf8')
+    .replaceAll(oldTempMailDescription, tempMailDescription)
+    .replace(/<!-- tool-review-date -->[\s\S]*?<!-- \/tool-review-date -->/, '')
+    .replace(/<!-- tool-readiness-sections -->[\s\S]*?<!-- \/tool-readiness-sections -->/, '');
+  const meta = html.match(/<meta name="description" content="([^"]+)">/i);
+  const description = (meta?.[1] || item.dataHandling).replace(/^Anvil Tools:\s*/, '');
+  const guide = library.find(entry => entry.tools.includes(item.slug)) || experiments.find(entry => entry.tools.includes(item.slug));
+  const guideHref = guide ? (library.includes(guide) ? `/journal/${guide.slug}` : `/blog/${guide.slug}.html`) : '/blog/index.html';
+  const guideTitle = guide?.title || 'Guides and experiments';
+  const reviewLine = `<!-- tool-review-date --><p class="article-meta">Last reviewed: <time datetime="${reviewedAt}">${displayDate(reviewedAt)}</time></p><!-- /tool-review-date -->`;
+  html = html.replace(/(<section class="hero"[\s\S]*?<p class="lede">[\s\S]*?<\/p>)/, `$1${reviewLine}`);
+  const readinessSections = `<!-- tool-readiness-sections --><section class="info-section"><h2>How this tool handles your data</h2><p>${escape(item.dataHandling)}</p><p><a href="/lab/privacy.html">Compare privacy behavior across all tools</a>.</p></section><section class="info-section"><h2>Known limitations</h2><p>${escape(item.limitations)}</p></section><section class="info-section"><h2>Related guide and Lab test</h2><ul><li><a href="${guideHref}">${escape(guideTitle)}</a></li><li><a href="${item.lab.href}">${escape(item.lab.title)}</a></li></ul></section><!-- /tool-readiness-sections -->`;
+  html = html.includes('<!-- reviewed-faq -->') ? html.replace('<!-- reviewed-faq -->', `${readinessSections}<!-- reviewed-faq -->`) : html.replace('</main>', `${readinessSections}</main>`);
+  html = injectManagedSchema(html, {
+    '@context': 'https://schema.org', '@graph': [
+      organization,
+      {
+        '@type': 'WebApplication', '@id': `${origin}/tools/${item.slug}.html#application`, name: toolNames[item.slug], description,
+        url: `${origin}/tools/${item.slug}.html`, applicationCategory: item.category, operatingSystem: 'Any operating system with a supported web browser',
+        browserRequirements: 'JavaScript enabled', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+        author: { '@id': `${origin}/#organization` }, dateModified: reviewedAt,
+      },
+    ],
+  });
+  if (item.slug === 'temp-mail') {
+    html = html
+      .replace(/<[^>]+class="[^"]*\bad-slot\b[^"]*"[^>]*>[\s\S]*?<\/[^>]+>/gi, '')
+      .replace(/<script\b[^>]*(?:adsbygoogle|googlesyndication|doubleclick)[^>]*>[\s\S]*?<\/script>/gi, '');
+  }
+  writeChanged(file, html);
+}
+
+const emailCategoryFile = path.join(frontend, 'categories/email-tools.html');
+if (fs.existsSync(emailCategoryFile)) writeChanged(emailCategoryFile, fs.readFileSync(emailCategoryFile, 'utf8').replaceAll(oldTempMailDescription, tempMailDescription));
 
 const testCards = {
   'json-formatter': ['October 6, 2026', 'JSON text', 'Runs in this browser', '14 fixed cases; no general maximum claimed', 'Duplicate keys collapse during parsing; unsafe integers can change.', 'Input stays in the browser.', 'json-duplicate-keys-unicode-escapes'],
@@ -221,4 +380,4 @@ for (const [slug, values] of Object.entries(testCards)) {
   writeChanged(file, html);
 }
 
-console.log(`Built editorial policy, ${reports.length} Lab reports, fixture and compatibility pages, six category hubs, and ${Object.keys(testCards).length} tool test cards.`);
+console.log(`Built editorial policy, ${reports.length} Lab reports, fixture, privacy and compatibility pages, index schemas, ${toolReadiness.length} tool readiness sections, six category hubs, and ${Object.keys(testCards).length} tool test cards.`);

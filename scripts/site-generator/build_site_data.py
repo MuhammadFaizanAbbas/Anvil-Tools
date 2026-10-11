@@ -20,7 +20,7 @@ def add_tool(**kw):
 
 add_tool(
     slug="temp-mail", name="Temporary Email Generator", category="email",
-    short_desc="Receive non-sensitive messages for authorized testing or where disposable addresses are permitted.",
+    short_desc="Receive non-sensitive test messages for services you own, manage, or are allowed to test.",
     icon="mail",
     widget_html='''
       <h2>Your temporary inbox</h2>

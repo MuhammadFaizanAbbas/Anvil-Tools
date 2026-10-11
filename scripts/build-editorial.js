@@ -10,6 +10,7 @@ const allGuides = JSON.parse(fs.readFileSync(path.join(source, 'editorial-guides
 const guides = allGuides.filter(guide => !Object.hasOwn(guide, 'retiredTo'));
 const publishedLibrary = JSON.parse(fs.readFileSync(path.join(root, 'content/editorial/published-library.json'), 'utf8'));
 const experiments = JSON.parse(fs.readFileSync(path.join(root, 'content/editorial/experiments.json'), 'utf8'));
+const editorialImages = JSON.parse(fs.readFileSync(path.join(root, 'backend/src/lib/editorial-images.json'), 'utf8'));
 for (const guide of allGuides.filter(guide => Object.hasOwn(guide, 'retiredTo'))) {
   const file = path.join(frontend, 'blog', `${guide.slug}.html`);
   // Authored sources remain in site-generator/editorial; retired pages are not public.
@@ -29,7 +30,10 @@ for (const experiment of experiments) {
     .replace(/<(?:link|a|script|img)\b[^>]*>/g, tag => tag.includes('rel="canonical"') ? tag : tag.replaceAll(origin + '/', '/'));
   writeChanged(path.join(frontend, 'blog', `${experiment.slug}.html`), html);
 }
-const experimentCards = experiments.map(item => `<article class="tool-card"><img class="guide-cover" src="${item.cover_path}" alt="${escape(item.cover_alt)}" loading="lazy"><h3><a href="/blog/${item.slug}.html">${escape(item.title)}</a></h3><p>${escape(item.excerpt)}</p><a class="tool-link" href="/blog/${item.slug}.html">Read experiment &#8594;</a></article>`).join('\n');
+const experimentCards = experiments.map(item => {
+  const size = editorialImages[item.cover_path];
+  return `<article class="tool-card"><img class="guide-cover" src="${item.cover_path}" alt="${escape(item.cover_alt)}"${size ? ` width="${size.width}" height="${size.height}"` : ''} loading="lazy" decoding="async"><h3><a href="/blog/${item.slug}.html">${escape(item.title)}</a></h3><p>${escape(item.excerpt)}</p><a class="tool-link" href="/blog/${item.slug}.html">Read experiment &#8594;</a></article>`;
+}).join('\n');
 const experimentLibrary = `<!-- tested-experiments --><section class="experiments-library" aria-labelledby="experiments-title"><h2 id="experiments-title">Tested tool experiments</h2><p>Actual tool runs with synthetic inputs, screenshots, observed results, and downloadable fixtures. See <a href="/about.html#editorial-testing">how examples are checked</a>.</p><div class="tool-grid">${experimentCards}</div></section><!-- /tested-experiments -->`;
 const labFeature = `<!-- lab-feature --><section class="info-section lab-feature" aria-labelledby="lab-feature-title"><span class="section-kicker">FIRST-PARTY EVIDENCE</span><h2 id="lab-feature-title">Explore the Anvil Tools Lab</h2><p>Reproducible tests, synthetic fixtures, observed outputs, and compatibility notes across developer, email, generator, image, PDF, and text tools.</p><div class="btn-row"><a class="btn primary" href="/lab/index.html">Explore the Lab</a><a class="tool-link" href="/lab/fixtures.html">Browse test fixtures &#8594;</a></div></section><!-- /lab-feature -->`;
 for (const guide of guides) {
@@ -52,7 +56,7 @@ for (const guide of guides) {
   html = html.replace(`rel="canonical" href="${guideLink(guide)}"`, `rel="canonical" href="${origin}${guideLink(guide)}"`);
   writeChanged(path.join(frontend, 'blog', `${guide.slug}.html`), html);
 }
-const cards = publishedLibrary.map(guide => `<article class="tool-card"><img class="guide-cover" src="${escape(imageUrl(guide, ''))}" alt="${escape(guide.cover_alt)}" loading="lazy"><h3><a href="/journal/${guide.slug}">${escape(guide.title)}</a></h3><p>${escape(guide.excerpt)}</p><a class="tool-link" href="/journal/${guide.slug}">Read guide &#8594;</a></article>`).join('\n');
+const cards = publishedLibrary.map(guide => `<article class="tool-card"><img class="guide-cover" src="${escape(imageUrl(guide, ''))}" alt="${escape(guide.cover_alt)}" width="1672" height="941" loading="lazy" decoding="async"><h3><a href="/journal/${guide.slug}">${escape(guide.title)}</a></h3><p>${escape(guide.excerpt)}</p><a class="tool-link" href="/journal/${guide.slug}">Read guide &#8594;</a></article>`).join('\n');
 const library = `<!-- editorial-library --><section class="editorial-library" aria-labelledby="editorial-title"><h2 id="editorial-title">Practical guides</h2><p>Step-by-step workflows, examples, and checks for the tools. Read any guide directly, then open its tool when you are ready.</p><div class="tool-grid" id="editorialGuideCards">${cards}</div></section><!-- /editorial-library -->`;
 const walk = directory => fs.readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
   if (['assets', 'admin-panel'].includes(entry.name)) return [];

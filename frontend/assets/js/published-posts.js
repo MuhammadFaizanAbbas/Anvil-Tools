@@ -15,6 +15,9 @@
     const image = document.createElement('img');
     image.src = `${siteBase}/journal-images/${encodeURIComponent(post.cover_image_id)}`;
     image.alt = post.cover_alt || '';
+    image.width = 1672;
+    image.height = 941;
+    image.decoding = 'async';
     image.className = className;
     image.loading = className === 'guide-cover' ? 'lazy' : 'eager';
     return image;

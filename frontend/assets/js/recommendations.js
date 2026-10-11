@@ -22,7 +22,7 @@
       const link = document.createElement('a'); link.className = 'tool-link'; link.textContent = 'Read article \u2192'; link.href = `/journal/${encodeURIComponent(post.slug)}`;
       if (post.cover_image_id) {
         const image = document.createElement('img'); image.src = `${siteBase}/journal-images/${encodeURIComponent(post.cover_image_id)}`;
-        image.alt = post.cover_alt || ''; image.className = 'guide-cover'; image.loading = 'lazy'; card.append(image);
+        image.alt = post.cover_alt || ''; image.width = 1672; image.height = 941; image.decoding = 'async'; image.className = 'guide-cover'; image.loading = 'lazy'; card.append(image);
       }
       card.append(title,excerpt,link); grid.append(card);
     }
