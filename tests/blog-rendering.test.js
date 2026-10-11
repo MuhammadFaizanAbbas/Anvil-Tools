@@ -103,6 +103,7 @@ test('cPanel renderer escapes database content and preserves no-JS guide links a
   assert.match(html, /&lt;script&gt;alert\(1\)&lt;\/script&gt;/);
   assert.doesNotMatch(html, /<script>alert/);
   assert.match(html, /href="\/journal\/article-0"/);
+  assert.match(html, /class="guide-cover"[^>]*width="1672" height="941" loading="lazy" decoding="async"/);
   assert.match(html, /rel="canonical" href="https:\/\/nevco.online\/blog\/index.html\?page=2"/);
   assert.match(html, /href="\/blog\/index.html\?page=3" rel="next"/);
   assert.match(html, /href="\/blog\/index.html" rel="prev"/);

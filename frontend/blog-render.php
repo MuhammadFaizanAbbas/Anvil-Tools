@@ -12,7 +12,7 @@ function render_blog_index(string $template, array $posts, string $origin, int $
             continue;
         }
         $link = '/journal/' . rawurlencode($post['slug']);
-        $cover = empty($post['cover_image_id']) ? '' : '<img class="guide-cover" src="' . $escape($origin) . '/journal-images/' . rawurlencode($post['cover_image_id']) . '" alt="' . $escape($post['cover_alt'] ?? '') . '" loading="lazy">';
+        $cover = empty($post['cover_image_id']) ? '' : '<img class="guide-cover" src="' . $escape($origin) . '/journal-images/' . rawurlencode($post['cover_image_id']) . '" alt="' . $escape($post['cover_alt'] ?? '') . '" width="1672" height="941" loading="lazy" decoding="async">';
         $cards[] = '<article class="tool-card">' . $cover . '<h2><a href="' . $link . '">' . $escape($post['title']) . '</a></h2><p>' . $escape($post['excerpt'] ?? '') . '</p><a class="tool-link" href="' . $link . '">Read article &#8594;</a></article>';
     }
     $html = str_replace('<!-- published-cards -->', implode("\n", $cards), $html);
